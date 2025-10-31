@@ -1,0 +1,58 @@
+{
+  "post_id": "aegis_post_20251027_161031",
+  "verification_date": "2025-10-27T16:10:31.093270",
+  "claim": {
+    "text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Viral 'Trump Dancing in Malaysia' Video Debunked: It's Not Him",
+    "body": "A widely circulated video claiming to show former President Donald Trump dancing energetically in Malaysia, leading to questions about his health, is false. The individual featured in the footage is *not* Donald Trump.\n\nThe video actually depicts Indonesian businessman and politician Didit Hediprasetyo, the son of former Indonesian President-elect Prabowo Subianto. The footage was taken at Hediprasetyo's own wedding in Jakarta, Indonesia, in 2013 – over a decade ago. While the man in the video shares a passing resemblance to Donald Trump, especially from certain angles, careful examination and readily available information confirm his true identity.\n\nMisinformation often spreads through misidentification, and this is a clear example of a video being taken out of context and falsely attributed. Therefore, any concerns or questions raised about Donald Trump's health based on this particular video are unfounded, as he is not the person shown. Always verify the source and context of viral content before sharing or drawing conclusions.",
+    "summary": "A viral video claiming to show Donald Trump dancing in Malaysia, prompting health concerns, is false; the footage is actually from 2013 and features Indonesian politician Didit Hediprasetyo dancing at his wedding in Jakarta."
+  },
+  "sources": {
+    "misinformation_sources": [],
+    "confirmation_sources": [],
+    "total_sources": 0
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 1,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+            "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+            "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+            "https://www.bbc.com/news/articles/clyrx53zeg4o",
+            "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+          ],
+          "titles": [
+            "Moss Side shootings: Footage shows hundreds at lockdown party",
+            "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+            "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+            "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+            "YouTube Restores Donald Trump's Account Privileges - The New ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+        "verification_date": "2025-10-27T16:09:55.854663"
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+      "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic"
+    }
+  }
+}

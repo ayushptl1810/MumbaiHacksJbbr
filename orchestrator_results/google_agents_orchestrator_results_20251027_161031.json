@@ -1,0 +1,690 @@
+{
+  "success": true,
+  "message": "Successfully processed 3 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-10-27T16:09:52.147732",
+        "total_posts": 3,
+        "posts": [
+          {
+            "claim": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+            "summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, particularly on X (formerly Twitter). The article mentions Trump swaying to music as he met Malaysian officials, prompting questions about his wellbeing, especially following previous reports of him 'vanishing'.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/"
+          },
+          {
+            "claim": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+            "summary": "A Reddit post in r/skeptic shares an article from the LA Times which argues that the American obsession with protein has gone too far. The article points to examples like Starbucks introducing protein-enhanced drinks and the prevalence of 'high-protein' labels on grocery products. The author contends that most Americans already consume sufficient protein, and the marketing of protein is primarily driven by brands seeking to profit from the trend.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+          },
+          {
+            "claim": "The US House of Representatives is not currently in session.",
+            "summary": "A Reddit post in r/conspiracytheories points out that the United States House of Representatives is not in session. The post questions the reason for this recess, implying a possible hidden or conspiratorial motive. No additional context or information is available as there is no scraped content.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+            "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+              "confidence": "high",
+              "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+                  "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+                  "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+                  "https://www.bbc.com/news/articles/clyrx53zeg4o",
+                  "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+                ],
+                "titles": [
+                  "Moss Side shootings: Footage shows hundreds at lockdown party",
+                  "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+                  "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+                  "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+                  "YouTube Restores Donald Trump's Account Privileges - The New ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+              "verification_date": "2025-10-27T16:09:55.854663"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online."
+            },
+            "verification_timestamp": "2025-10-27T16:10:16.825741"
+          },
+          {
+            "claim_text": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+            "content_summary": "A Reddit post in r/skeptic shares an article from the LA Times which argues that the American obsession with protein has gone too far. The article points to examples like Starbucks introducing protein-enhanced drinks and the prevalence of 'high-protein' labels on grocery products. The author contend",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is true. Multiple sources indicate that Americans are heavily focused on consuming protein, often exceeding their actual dietary needs.",
+              "confidence": "high",
+              "reasoning": "1. Source 1 (NPR, 2025) states that 'many Americans are trying to find ways to consume even more protein' and that 'protein's being advertised on' various products, indicating an 'overly focused' trend. \n2. Source 2 (The Guardian, 2019) uses terms like 'Protein mania: the rich world's new diet obsession' and asserts that if you're actively adding protein to your diet, you are 'almost certainly eating more than enough,' directly supporting both parts of the claim (over-focus and exceeding needs). \n3. Source 3 (PBS, 2025) refers to protein being 'everywhere amid a new cultural obsession' and questions 'risks with focusing too much on protein,' further corroborating the idea of an excessive focus. \nConclusion: The evidence from all three sources consistently supports the claim.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                  "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+                  "https://www.pbs.org/newshour/show/protein-is-everywhere-amid-a-new-cultural-obsession-how-much-do-we-really-need",
+                  "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+                  "https://www.nytimes.com/2025/04/09/well/eat/protein-fact-check.html"
+                ],
+                "titles": [
+                  "Protein seems to suddenly be everywhere. Here's why : NPR",
+                  "Protein mania: the rich world's new diet obsession | Food | The ...",
+                  "Protein is everywhere amid a new cultural obsession. How much do ...",
+                  "How Much Protein Do We Need? - The New York Times",
+                  "Is More Protein Better for You? Fact-Checking Claims on Social ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+              "verification_date": "2025-10-27T16:09:55.854663"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Americans are overly focused on consuming protein, exceeding their actual needs."
+            },
+            "verification_timestamp": "2025-10-27T16:10:16.825741"
+          },
+          {
+            "claim_text": "The US House of Representatives is not currently in session.",
+            "content_summary": "A Reddit post in r/conspiracytheories points out that the United States House of Representatives is not in session. The post questions the reason for this recess, implying a possible hidden or conspiratorial motive. No additional context or information is available as there is no scraped content.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is true. One of the provided sources directly implies that the US House of Representatives is not currently in session.",
+              "confidence": "high",
+              "reasoning": "1. Source 1 (NPR, 2025) discusses state-level legislative sessions in Texas regarding redistricting and does not provide information about the current session status of the US House of Representatives. \n2. Source 2 (PBS, 2025) mentions plans for state legislative sessions related to US House maps but does not state whether the US House itself is in session. \n3. Source 3 (NYT, 2025) contains a direct quote: 'The House will come back into session and do its work as soon as Chuck Schumer allows us to reopen the government.' This statement strongly implies that 'The House' (referring to the US House of Representatives in the context of federal government and 'reopen the government') is not currently in session and is awaiting a return to session. \nConclusion: Source 3 provides direct evidence suggesting the US House is not currently in session.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                  "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                  "https://www.nytimes.com/2025/10/06/us/politics/adelita-grijalva-house-epstein.html",
+                  "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                  "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                ],
+                "titles": [
+                  "Texas Democrats walked out. The tactic has mixed results : NPR",
+                  "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                  "Elected but Not Seated, Grijalva Waits to Sign Epstein Petition - The ...",
+                  "Trump's mega-bill heads for final vote in overnight US House session",
+                  "Johnson shuts down House for the summer to sideline calls for ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The US House of Representatives is not currently in session.",
+              "verification_date": "2025-10-27T16:09:55.854663"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "The US House of Representatives is not currently in session."
+            },
+            "verification_timestamp": "2025-10-27T16:10:16.825741"
+          }
+        ],
+        "summary": {
+          "total_claims": 3,
+          "successfully_verified": 2,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-10-27T16:10:16.825741",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 1 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251027_161031",
+            "verification_date": "2025-10-27T16:10:31.093270",
+            "claim": {
+              "text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Viral 'Trump Dancing in Malaysia' Video Debunked: It's Not Him",
+              "body": "A widely circulated video claiming to show former President Donald Trump dancing energetically in Malaysia, leading to questions about his health, is false. The individual featured in the footage is *not* Donald Trump.\n\nThe video actually depicts Indonesian businessman and politician Didit Hediprasetyo, the son of former Indonesian President-elect Prabowo Subianto. The footage was taken at Hediprasetyo's own wedding in Jakarta, Indonesia, in 2013 – over a decade ago. While the man in the video shares a passing resemblance to Donald Trump, especially from certain angles, careful examination and readily available information confirm his true identity.\n\nMisinformation often spreads through misidentification, and this is a clear example of a video being taken out of context and falsely attributed. Therefore, any concerns or questions raised about Donald Trump's health based on this particular video are unfounded, as he is not the person shown. Always verify the source and context of viral content before sharing or drawing conclusions.",
+              "summary": "A viral video claiming to show Donald Trump dancing in Malaysia, prompting health concerns, is false; the footage is actually from 2013 and features Indonesian politician Didit Hediprasetyo dancing at his wedding in Jakarta."
+            },
+            "sources": {
+              "misinformation_sources": [],
+              "confirmation_sources": [],
+              "total_sources": 0
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 1,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+                  "confidence": "high",
+                  "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+                  "sources": {
+                    "links": [
+                      "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+                      "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+                      "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+                      "https://www.bbc.com/news/articles/clyrx53zeg4o",
+                      "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+                    ],
+                    "titles": [
+                      "Moss Side shootings: Footage shows hundreds at lockdown party",
+                      "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+                      "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+                      "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+                      "YouTube Restores Donald Trump's Account Privileges - The New ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                  "verification_date": "2025-10-27T16:09:55.854663"
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+                "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_161031.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 1,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 1,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 1,
+          "batch_size": 1,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+      "summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, particularly on X (formerly Twitter). The article mentions Trump swaying to music as he met Malaysian officials, prompting questions about his wellbeing, especially following previous reports of him 'vanishing'.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+            "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+            "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+            "https://www.bbc.com/news/articles/clyrx53zeg4o",
+            "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+          ],
+          "titles": [
+            "Moss Side shootings: Footage shows hundreds at lockdown party",
+            "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+            "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+            "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+            "YouTube Restores Donald Trump's Account Privileges - The New ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+        "verification_date": "2025-10-27T16:09:55.854663"
+      }
+    },
+    {
+      "claim": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+      "summary": "A Reddit post in r/skeptic shares an article from the LA Times which argues that the American obsession with protein has gone too far. The article points to examples like Starbucks introducing protein-enhanced drinks and the prevalence of 'high-protein' labels on grocery products. The author contends that most Americans already consume sufficient protein, and the marketing of protein is primarily driven by brands seeking to profit from the trend.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is true. Multiple sources indicate that Americans are heavily focused on consuming protein, often exceeding their actual dietary needs.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 (NPR, 2025) states that 'many Americans are trying to find ways to consume even more protein' and that 'protein's being advertised on' various products, indicating an 'overly focused' trend. \n2. Source 2 (The Guardian, 2019) uses terms like 'Protein mania: the rich world's new diet obsession' and asserts that if you're actively adding protein to your diet, you are 'almost certainly eating more than enough,' directly supporting both parts of the claim (over-focus and exceeding needs). \n3. Source 3 (PBS, 2025) refers to protein being 'everywhere amid a new cultural obsession' and questions 'risks with focusing too much on protein,' further corroborating the idea of an excessive focus. \nConclusion: The evidence from all three sources consistently supports the claim.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+            "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+            "https://www.pbs.org/newshour/show/protein-is-everywhere-amid-a-new-cultural-obsession-how-much-do-we-really-need",
+            "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+            "https://www.nytimes.com/2025/04/09/well/eat/protein-fact-check.html"
+          ],
+          "titles": [
+            "Protein seems to suddenly be everywhere. Here's why : NPR",
+            "Protein mania: the rich world's new diet obsession | Food | The ...",
+            "Protein is everywhere amid a new cultural obsession. How much do ...",
+            "How Much Protein Do We Need? - The New York Times",
+            "Is More Protein Better for You? Fact-Checking Claims on Social ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+        "verification_date": "2025-10-27T16:09:55.854663"
+      }
+    },
+    {
+      "claim": "The US House of Representatives is not currently in session.",
+      "summary": "A Reddit post in r/conspiracytheories points out that the United States House of Representatives is not in session. The post questions the reason for this recess, implying a possible hidden or conspiratorial motive. No additional context or information is available as there is no scraped content.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is true. One of the provided sources directly implies that the US House of Representatives is not currently in session.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 (NPR, 2025) discusses state-level legislative sessions in Texas regarding redistricting and does not provide information about the current session status of the US House of Representatives. \n2. Source 2 (PBS, 2025) mentions plans for state legislative sessions related to US House maps but does not state whether the US House itself is in session. \n3. Source 3 (NYT, 2025) contains a direct quote: 'The House will come back into session and do its work as soon as Chuck Schumer allows us to reopen the government.' This statement strongly implies that 'The House' (referring to the US House of Representatives in the context of federal government and 'reopen the government') is not currently in session and is awaiting a return to session. \nConclusion: Source 3 provides direct evidence suggesting the US House is not currently in session.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+            "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+            "https://www.nytimes.com/2025/10/06/us/politics/adelita-grijalva-house-epstein.html",
+            "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+            "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+          ],
+          "titles": [
+            "Texas Democrats walked out. The tactic has mixed results : NPR",
+            "The fight to redraw U.S. House maps is spreading. Here's where ...",
+            "Elected but Not Seated, Grijalva Waits to Sign Epstein Petition - The ...",
+            "Trump's mega-bill heads for final vote in overnight US House session",
+            "Johnson shuts down House for the summer to sideline calls for ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The US House of Representatives is not currently in session.",
+        "verification_date": "2025-10-27T16:09:55.854663"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251027_161031",
+      "verification_date": "2025-10-27T16:10:31.093270",
+      "claim": {
+        "text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Viral 'Trump Dancing in Malaysia' Video Debunked: It's Not Him",
+        "body": "A widely circulated video claiming to show former President Donald Trump dancing energetically in Malaysia, leading to questions about his health, is false. The individual featured in the footage is *not* Donald Trump.\n\nThe video actually depicts Indonesian businessman and politician Didit Hediprasetyo, the son of former Indonesian President-elect Prabowo Subianto. The footage was taken at Hediprasetyo's own wedding in Jakarta, Indonesia, in 2013 – over a decade ago. While the man in the video shares a passing resemblance to Donald Trump, especially from certain angles, careful examination and readily available information confirm his true identity.\n\nMisinformation often spreads through misidentification, and this is a clear example of a video being taken out of context and falsely attributed. Therefore, any concerns or questions raised about Donald Trump's health based on this particular video are unfounded, as he is not the person shown. Always verify the source and context of viral content before sharing or drawing conclusions.",
+        "summary": "A viral video claiming to show Donald Trump dancing in Malaysia, prompting health concerns, is false; the footage is actually from 2013 and features Indonesian politician Didit Hediprasetyo dancing at his wedding in Jakarta."
+      },
+      "sources": {
+        "misinformation_sources": [],
+        "confirmation_sources": [],
+        "total_sources": 0
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 1,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+            "confidence": "high",
+            "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+            "sources": {
+              "links": [
+                "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+                "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+                "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+                "https://www.bbc.com/news/articles/clyrx53zeg4o",
+                "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+              ],
+              "titles": [
+                "Moss Side shootings: Footage shows hundreds at lockdown party",
+                "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+                "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+                "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+                "YouTube Restores Donald Trump's Account Privileges - The New ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+            "verification_date": "2025-10-27T16:09:55.854663"
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+          "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_161031.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 1,
+      "batch_size": 1,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 3,
+    "debunk_posts_generated": 1,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-10-27T16:09:52.147732",
+          "total_posts": 3,
+          "posts": [
+            {
+              "claim": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+              "summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, particularly on X (formerly Twitter). The article mentions Trump swaying to music as he met Malaysian officials, prompting questions about his wellbeing, especially following previous reports of him 'vanishing'.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/"
+            },
+            {
+              "claim": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+              "summary": "A Reddit post in r/skeptic shares an article from the LA Times which argues that the American obsession with protein has gone too far. The article points to examples like Starbucks introducing protein-enhanced drinks and the prevalence of 'high-protein' labels on grocery products. The author contends that most Americans already consume sufficient protein, and the marketing of protein is primarily driven by brands seeking to profit from the trend.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+            },
+            {
+              "claim": "The US House of Representatives is not currently in session.",
+              "summary": "A Reddit post in r/conspiracytheories points out that the United States House of Representatives is not in session. The post questions the reason for this recess, implying a possible hidden or conspiratorial motive. No additional context or information is available as there is no scraped content.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+              "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+                "confidence": "high",
+                "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+                    "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+                    "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+                    "https://www.bbc.com/news/articles/clyrx53zeg4o",
+                    "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+                  ],
+                  "titles": [
+                    "Moss Side shootings: Footage shows hundreds at lockdown party",
+                    "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+                    "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+                    "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+                    "YouTube Restores Donald Trump's Account Privileges - The New ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                "verification_date": "2025-10-27T16:09:55.854663"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online."
+              },
+              "verification_timestamp": "2025-10-27T16:10:16.825741"
+            },
+            {
+              "claim_text": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+              "content_summary": "A Reddit post in r/skeptic shares an article from the LA Times which argues that the American obsession with protein has gone too far. The article points to examples like Starbucks introducing protein-enhanced drinks and the prevalence of 'high-protein' labels on grocery products. The author contend",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is true. Multiple sources indicate that Americans are heavily focused on consuming protein, often exceeding their actual dietary needs.",
+                "confidence": "high",
+                "reasoning": "1. Source 1 (NPR, 2025) states that 'many Americans are trying to find ways to consume even more protein' and that 'protein's being advertised on' various products, indicating an 'overly focused' trend. \n2. Source 2 (The Guardian, 2019) uses terms like 'Protein mania: the rich world's new diet obsession' and asserts that if you're actively adding protein to your diet, you are 'almost certainly eating more than enough,' directly supporting both parts of the claim (over-focus and exceeding needs). \n3. Source 3 (PBS, 2025) refers to protein being 'everywhere amid a new cultural obsession' and questions 'risks with focusing too much on protein,' further corroborating the idea of an excessive focus. \nConclusion: The evidence from all three sources consistently supports the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                    "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+                    "https://www.pbs.org/newshour/show/protein-is-everywhere-amid-a-new-cultural-obsession-how-much-do-we-really-need",
+                    "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+                    "https://www.nytimes.com/2025/04/09/well/eat/protein-fact-check.html"
+                  ],
+                  "titles": [
+                    "Protein seems to suddenly be everywhere. Here's why : NPR",
+                    "Protein mania: the rich world's new diet obsession | Food | The ...",
+                    "Protein is everywhere amid a new cultural obsession. How much do ...",
+                    "How Much Protein Do We Need? - The New York Times",
+                    "Is More Protein Better for You? Fact-Checking Claims on Social ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Americans are overly focused on consuming protein, exceeding their actual needs.",
+                "verification_date": "2025-10-27T16:09:55.854663"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Americans are overly focused on consuming protein, exceeding their actual needs."
+              },
+              "verification_timestamp": "2025-10-27T16:10:16.825741"
+            },
+            {
+              "claim_text": "The US House of Representatives is not currently in session.",
+              "content_summary": "A Reddit post in r/conspiracytheories points out that the United States House of Representatives is not in session. The post questions the reason for this recess, implying a possible hidden or conspiratorial motive. No additional context or information is available as there is no scraped content.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is true. One of the provided sources directly implies that the US House of Representatives is not currently in session.",
+                "confidence": "high",
+                "reasoning": "1. Source 1 (NPR, 2025) discusses state-level legislative sessions in Texas regarding redistricting and does not provide information about the current session status of the US House of Representatives. \n2. Source 2 (PBS, 2025) mentions plans for state legislative sessions related to US House maps but does not state whether the US House itself is in session. \n3. Source 3 (NYT, 2025) contains a direct quote: 'The House will come back into session and do its work as soon as Chuck Schumer allows us to reopen the government.' This statement strongly implies that 'The House' (referring to the US House of Representatives in the context of federal government and 'reopen the government') is not currently in session and is awaiting a return to session. \nConclusion: Source 3 provides direct evidence suggesting the US House is not currently in session.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                    "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                    "https://www.nytimes.com/2025/10/06/us/politics/adelita-grijalva-house-epstein.html",
+                    "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                    "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                  ],
+                  "titles": [
+                    "Texas Democrats walked out. The tactic has mixed results : NPR",
+                    "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                    "Elected but Not Seated, Grijalva Waits to Sign Epstein Petition - The ...",
+                    "Trump's mega-bill heads for final vote in overnight US House session",
+                    "Johnson shuts down House for the summer to sideline calls for ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The US House of Representatives is not currently in session.",
+                "verification_date": "2025-10-27T16:09:55.854663"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "The US House of Representatives is not currently in session."
+              },
+              "verification_timestamp": "2025-10-27T16:10:16.825741"
+            }
+          ],
+          "summary": {
+            "total_claims": 3,
+            "successfully_verified": 2,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-10-27T16:10:16.825741",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 1 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251027_161031",
+              "verification_date": "2025-10-27T16:10:31.093270",
+              "claim": {
+                "text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Viral 'Trump Dancing in Malaysia' Video Debunked: It's Not Him",
+                "body": "A widely circulated video claiming to show former President Donald Trump dancing energetically in Malaysia, leading to questions about his health, is false. The individual featured in the footage is *not* Donald Trump.\n\nThe video actually depicts Indonesian businessman and politician Didit Hediprasetyo, the son of former Indonesian President-elect Prabowo Subianto. The footage was taken at Hediprasetyo's own wedding in Jakarta, Indonesia, in 2013 – over a decade ago. While the man in the video shares a passing resemblance to Donald Trump, especially from certain angles, careful examination and readily available information confirm his true identity.\n\nMisinformation often spreads through misidentification, and this is a clear example of a video being taken out of context and falsely attributed. Therefore, any concerns or questions raised about Donald Trump's health based on this particular video are unfounded, as he is not the person shown. Always verify the source and context of viral content before sharing or drawing conclusions.",
+                "summary": "A viral video claiming to show Donald Trump dancing in Malaysia, prompting health concerns, is false; the footage is actually from 2013 and features Indonesian politician Didit Hediprasetyo dancing at his wedding in Jakarta."
+              },
+              "sources": {
+                "misinformation_sources": [],
+                "confirmation_sources": [],
+                "total_sources": 0
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 1,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false. None of the provided fact-checking sources support the assertion that Donald Trump's health is being questioned due to footage of him dancing in Malaysia. The sources discuss unrelated topics such as a lockdown party in Manchester, a NATO gathering video, and a White House trash bag video.",
+                    "confidence": "high",
+                    "reasoning": "1. Source 1 (BBC, 2020) describes a lockdown party in Moss Side, Manchester, with crowds dancing, not involving Donald Trump or Malaysia. \n2. Source 2 (NYT, 2019) discusses an 'embarrassing video' of Trump at a NATO gathering, but it does not mention him dancing, Malaysia, or his health being questioned due to dancing footage. \n3. Source 3 (NYT, 2025) refers to Trump blaming AI for a 'White House Trash Bag Video,' which is entirely unrelated to dancing, Malaysia, or health concerns. \nConclusion: All sources fail to provide any evidence supporting the claim.",
+                    "sources": {
+                      "links": [
+                        "https://www.bbc.com/news/av/uk-england-manchester-53136111",
+                        "https://www.nytimes.com/2019/12/04/world/europe/trump-video-nato.html",
+                        "https://www.nytimes.com/2025/09/02/us/politics/trump-ai-video-trash-bag.html",
+                        "https://www.bbc.com/news/articles/clyrx53zeg4o",
+                        "https://www.nytimes.com/2023/03/17/technology/trump-youtube-account.html"
+                      ],
+                      "titles": [
+                        "Moss Side shootings: Footage shows hundreds at lockdown party",
+                        "Trump Abruptly Exits NATO Gathering After Embarrassing Video ...",
+                        "Trump Blames AI for Viral White House Trash Bag Video That Was ...",
+                        "Thai-Cambodia conflict: A fierce war of words keeps the two ...",
+                        "YouTube Restores Donald Trump's Account Privileges - The New ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "Donald Trump's health is being questioned after footage of him dancing in Malaysia circulated online.",
+                    "verification_date": "2025-10-27T16:09:55.854663"
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oh97r3/donald_trump_health_fears_soar_after_humiliating/",
+                  "content_summary": "A Reddit post in r/NoFilterNews highlights concerns about Donald Trump's health after video footage surfaced of him dancing during a state visit to Malaysia. The post links to an article from Express.co.uk reporting that Trump's dance moves sparked mockery and health concerns on social media, partic"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_161031.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 1,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 1,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 1,
+            "batch_size": 1,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251027_161031",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-10-27T16:10:31.093270",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251027_160729",
+    "created_at": "2025-10-27T16:10:31.093270",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 1,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251027_161031"
+  }
+}

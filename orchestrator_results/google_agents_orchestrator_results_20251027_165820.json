@@ -1,0 +1,699 @@
+{
+  "success": true,
+  "message": "Successfully processed 3 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-10-27T16:57:35.990159",
+        "total_posts": 3,
+        "posts": [
+          {
+            "claim": "Donald Trump claims polls showing his low popularity are fake.",
+            "summary": "President Trump, while in Japan, posted on Truth Social claiming that polls indicating his declining popularity are fake and that he is actually receiving the best polling numbers he has ever received. This outburst followed advertisements, including one from Canada featuring Ronald Reagan criticizing tariffs, that portray him negatively. He attributed his alleged strong polling numbers to the strong economy and investment.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1ohaysy/they_are_fake_trump_melts_down_on_claims_hes/"
+          },
+          {
+            "claim": "American society is overly focused on consuming protein.",
+            "summary": "The article argues that America's obsession with protein has reached excessive levels, evidenced by Starbucks introducing protein-enhanced menu items. It claims that most Americans already consume sufficient protein, but companies market high-protein products as 'premium' and more profitable, suggesting a protein deficiency that doesn't exist.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+          },
+          {
+            "claim": "The United States House of Representatives is not currently in session.",
+            "summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump claims polls showing his low popularity are fake.",
+            "content_summary": "President Trump, while in Japan, posted on Truth Social claiming that polls indicating his declining popularity are fake and that he is actually receiving the best polling numbers he has ever received. This outburst followed advertisements, including one from Canada featuring Ronald Reagan criticizi",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1ohaysy/they_are_fake_trump_melts_down_on_claims_hes/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Donald Trump has claimed that polls showing his low popularity are not accurate or are subject to scrutiny. One source explicitly mentions him taking 'a sustained shot' at polls showing falling approval ratings.",
+              "confidence": "high",
+              "reasoning": "Source 1 states, 'With polls showing falling approval ratings, Trump took a sustained shot at...' This directly indicates that Trump challenged or criticized polls reflecting his low popularity. While it doesn't use the exact word 'fake,' 'took a sustained shot at' strongly implies he disputed their authenticity or accuracy, which is consistent with claiming they are 'fake.' The other sources mention Trump making claims about the popularity of other leaders (Zelenskyy) but do not address his claims about his own popularity polls.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2025/4/30/fact-checking-trumps-claims-at-100-day-rally-in-michigan",
+                  "https://www.bbc.com/news/articles/c9814k2jlxko",
+                  "https://www.aljazeera.com/economy/2025/2/21/musk-vows-to-fix-x-after-polls-show-high-support-for-ukraines-zelenskyy",
+                  "https://www.npr.org/2024/10/12/nx-s1-5147789/voting-election-2024-noncitizen-fact-check-trump",
+                  "https://www.npr.org/2024/08/11/nx-s1-5070566/trump-news-conference"
+                ],
+                "titles": [
+                  "Fact-checking Trump's claims at 100-day rally in Michigan | Donald ...",
+                  "Fact-checking Donald Trump's claims about war in Ukraine",
+                  "Musk vows to 'fix' X after polls show high support for Ukraine's ...",
+                  "6 facts about false noncitizen voting claims and the election",
+                  "We fact-checked Trump's recent news conference : NPR"
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump claims polls showing his low popularity are fake.",
+              "verification_date": "2025-10-27T16:57:39.731696"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump claims polls showing his low popularity are fake."
+            },
+            "verification_timestamp": "2025-10-27T16:57:58.669657"
+          },
+          {
+            "claim_text": "American society is overly focused on consuming protein.",
+            "content_summary": "The article argues that America's obsession with protein has reached excessive levels, evidenced by Starbucks introducing protein-enhanced menu items. It claims that most Americans already consume sufficient protein, but companies market high-protein products as 'premium' and more profitable, sugges",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "American society appears to be overly focused on consuming protein, as indicated by multiple sources highlighting a 'protein mania,' widespread emphasis on protein, and businesses catering to protein-rich diets, with average consumption often exceeding requirements.",
+              "confidence": "high",
+              "reasoning": "Source 1 describes 'Protein mania: the rich world's new diet obsession,' suggesting an excessive focus. Source 2 states that 'Protein seems to suddenly be everywhere' and notes 'the emphasis of protein,' confirming its pervasive focus. Source 3 supports this by mentioning 'Catering to protein-rich diets is a tasty business' and explicitly stating that 'the average American or Briton consumes too much' protein. All three sources collectively indicate that American society is indeed overly focused on protein consumption.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+                  "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                  "https://www.economist.com/business/2025/03/06/catering-to-protein-rich-diets-is-a-tasty-business",
+                  "https://www.npr.org/sections/health-shots/2024/02/18/1231552773/protein-diet-muscle-strength-training-muscle-loss-women",
+                  "https://www.nytimes.com/2007/01/28/magazine/28nutritionism.t.html"
+                ],
+                "titles": [
+                  "Protein mania: the rich world's new diet obsession | Food | The ...",
+                  "Protein seems to suddenly be everywhere. Here's why : NPR",
+                  "Catering to protein-rich diets is a tasty business",
+                  "Strength training is vital for women's muscle health. But protein is ...",
+                  "Unhappy Meals - Michael Pollan - The New York Times"
+                ],
+                "count": 10
+              },
+              "claim_text": "American society is overly focused on consuming protein.",
+              "verification_date": "2025-10-27T16:57:39.731696"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "American society is overly focused on consuming protein."
+            },
+            "verification_timestamp": "2025-10-27T16:57:58.669657"
+          },
+          {
+            "claim_text": "The United States House of Representatives is not currently in session.",
+            "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+              "confidence": "high",
+              "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                  "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                  "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                  "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+                  "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                ],
+                "titles": [
+                  "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                  "Texas Democrats walked out. The tactic has mixed results : NPR",
+                  "Trump's mega-bill heads for final vote in overnight US House session",
+                  "What could happen in the states entering redistricting fights? : NPR",
+                  "Johnson shuts down House for the summer to sideline calls for ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The United States House of Representatives is not currently in session.",
+              "verification_date": "2025-10-27T16:57:39.731696"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "The United States House of Representatives is not currently in session."
+            },
+            "verification_timestamp": "2025-10-27T16:57:58.669657"
+          }
+        ],
+        "summary": {
+          "total_claims": 3,
+          "successfully_verified": 2,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-10-27T16:57:58.669657",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 1 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251027_165820_141786_075b9433",
+            "verification_date": "2025-10-27T16:58:20.141786",
+            "claim": {
+              "text": "The United States House of Representatives is not currently in session.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "U.S. House: Currently In Session (Usually!)",
+              "body": "The assertion that 'The United States House of Representatives is not currently in session' is generally false. While Congress observes scheduled recesses and district work periods throughout the year, the House is actively engaged in legislative business during most working weeks.\n\nOfficial congressional calendars, available on the U.S. House of Representatives' website (house.gov) and the House Majority Leader's public schedule, clearly detail when legislative sessions are planned. These sessions involve votes, committee meetings, and floor debates on critical issues. Unless a claim specifically refers to a known, publicly announced recess — such as a holiday break or the traditional August district work period — the House is typically convening and conducting its duties. Therefore, a general statement claiming the House is 'not currently in session' is almost always incorrect, as these breaks are temporary and distinct from its overall operational status.",
+              "summary": "The U.S. House of Representatives is typically in session for legislative duties during most working weeks of the year, making the claim it is 'not currently in session' generally false unless during a specific, publicly announced recess."
+            },
+            "sources": {
+              "misinformation_sources": [],
+              "confirmation_sources": [],
+              "total_sources": 0
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 1,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The United States House of Representatives is not currently in session.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+                  "confidence": "high",
+                  "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                      "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                      "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                      "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+                      "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                    ],
+                    "titles": [
+                      "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                      "Texas Democrats walked out. The tactic has mixed results : NPR",
+                      "Trump's mega-bill heads for final vote in overnight US House session",
+                      "What could happen in the states entering redistricting fights? : NPR",
+                      "Johnson shuts down House for the summer to sideline calls for ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The United States House of Representatives is not currently in session.",
+                  "verification_date": "2025-10-27T16:57:39.731696"
+                },
+                "sources": {},
+                "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_165820_141786_075b9433.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 1,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 1,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 1,
+          "batch_size": 1,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump claims polls showing his low popularity are fake.",
+      "summary": "President Trump, while in Japan, posted on Truth Social claiming that polls indicating his declining popularity are fake and that he is actually receiving the best polling numbers he has ever received. This outburst followed advertisements, including one from Canada featuring Ronald Reagan criticizing tariffs, that portray him negatively. He attributed his alleged strong polling numbers to the strong economy and investment.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1ohaysy/they_are_fake_trump_melts_down_on_claims_hes/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Donald Trump has claimed that polls showing his low popularity are not accurate or are subject to scrutiny. One source explicitly mentions him taking 'a sustained shot' at polls showing falling approval ratings.",
+        "confidence": "high",
+        "reasoning": "Source 1 states, 'With polls showing falling approval ratings, Trump took a sustained shot at...' This directly indicates that Trump challenged or criticized polls reflecting his low popularity. While it doesn't use the exact word 'fake,' 'took a sustained shot at' strongly implies he disputed their authenticity or accuracy, which is consistent with claiming they are 'fake.' The other sources mention Trump making claims about the popularity of other leaders (Zelenskyy) but do not address his claims about his own popularity polls.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2025/4/30/fact-checking-trumps-claims-at-100-day-rally-in-michigan",
+            "https://www.bbc.com/news/articles/c9814k2jlxko",
+            "https://www.aljazeera.com/economy/2025/2/21/musk-vows-to-fix-x-after-polls-show-high-support-for-ukraines-zelenskyy",
+            "https://www.npr.org/2024/10/12/nx-s1-5147789/voting-election-2024-noncitizen-fact-check-trump",
+            "https://www.npr.org/2024/08/11/nx-s1-5070566/trump-news-conference"
+          ],
+          "titles": [
+            "Fact-checking Trump's claims at 100-day rally in Michigan | Donald ...",
+            "Fact-checking Donald Trump's claims about war in Ukraine",
+            "Musk vows to 'fix' X after polls show high support for Ukraine's ...",
+            "6 facts about false noncitizen voting claims and the election",
+            "We fact-checked Trump's recent news conference : NPR"
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump claims polls showing his low popularity are fake.",
+        "verification_date": "2025-10-27T16:57:39.731696"
+      }
+    },
+    {
+      "claim": "American society is overly focused on consuming protein.",
+      "summary": "The article argues that America's obsession with protein has reached excessive levels, evidenced by Starbucks introducing protein-enhanced menu items. It claims that most Americans already consume sufficient protein, but companies market high-protein products as 'premium' and more profitable, suggesting a protein deficiency that doesn't exist.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "American society appears to be overly focused on consuming protein, as indicated by multiple sources highlighting a 'protein mania,' widespread emphasis on protein, and businesses catering to protein-rich diets, with average consumption often exceeding requirements.",
+        "confidence": "high",
+        "reasoning": "Source 1 describes 'Protein mania: the rich world's new diet obsession,' suggesting an excessive focus. Source 2 states that 'Protein seems to suddenly be everywhere' and notes 'the emphasis of protein,' confirming its pervasive focus. Source 3 supports this by mentioning 'Catering to protein-rich diets is a tasty business' and explicitly stating that 'the average American or Briton consumes too much' protein. All three sources collectively indicate that American society is indeed overly focused on protein consumption.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+            "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+            "https://www.economist.com/business/2025/03/06/catering-to-protein-rich-diets-is-a-tasty-business",
+            "https://www.npr.org/sections/health-shots/2024/02/18/1231552773/protein-diet-muscle-strength-training-muscle-loss-women",
+            "https://www.nytimes.com/2007/01/28/magazine/28nutritionism.t.html"
+          ],
+          "titles": [
+            "Protein mania: the rich world's new diet obsession | Food | The ...",
+            "Protein seems to suddenly be everywhere. Here's why : NPR",
+            "Catering to protein-rich diets is a tasty business",
+            "Strength training is vital for women's muscle health. But protein is ...",
+            "Unhappy Meals - Michael Pollan - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "American society is overly focused on consuming protein.",
+        "verification_date": "2025-10-27T16:57:39.731696"
+      }
+    },
+    {
+      "claim": "The United States House of Representatives is not currently in session.",
+      "summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+        "confidence": "high",
+        "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+            "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+            "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+            "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+            "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+          ],
+          "titles": [
+            "The fight to redraw U.S. House maps is spreading. Here's where ...",
+            "Texas Democrats walked out. The tactic has mixed results : NPR",
+            "Trump's mega-bill heads for final vote in overnight US House session",
+            "What could happen in the states entering redistricting fights? : NPR",
+            "Johnson shuts down House for the summer to sideline calls for ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is not currently in session.",
+        "verification_date": "2025-10-27T16:57:39.731696"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251027_165820_141786_075b9433",
+      "verification_date": "2025-10-27T16:58:20.141786",
+      "claim": {
+        "text": "The United States House of Representatives is not currently in session.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "U.S. House: Currently In Session (Usually!)",
+        "body": "The assertion that 'The United States House of Representatives is not currently in session' is generally false. While Congress observes scheduled recesses and district work periods throughout the year, the House is actively engaged in legislative business during most working weeks.\n\nOfficial congressional calendars, available on the U.S. House of Representatives' website (house.gov) and the House Majority Leader's public schedule, clearly detail when legislative sessions are planned. These sessions involve votes, committee meetings, and floor debates on critical issues. Unless a claim specifically refers to a known, publicly announced recess — such as a holiday break or the traditional August district work period — the House is typically convening and conducting its duties. Therefore, a general statement claiming the House is 'not currently in session' is almost always incorrect, as these breaks are temporary and distinct from its overall operational status.",
+        "summary": "The U.S. House of Representatives is typically in session for legislative duties during most working weeks of the year, making the claim it is 'not currently in session' generally false unless during a specific, publicly announced recess."
+      },
+      "sources": {
+        "misinformation_sources": [],
+        "confirmation_sources": [],
+        "total_sources": 0
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 1,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The United States House of Representatives is not currently in session.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+            "confidence": "high",
+            "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+            "sources": {
+              "links": [
+                "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+                "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+              ],
+              "titles": [
+                "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                "Texas Democrats walked out. The tactic has mixed results : NPR",
+                "Trump's mega-bill heads for final vote in overnight US House session",
+                "What could happen in the states entering redistricting fights? : NPR",
+                "Johnson shuts down House for the summer to sideline calls for ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The United States House of Representatives is not currently in session.",
+            "verification_date": "2025-10-27T16:57:39.731696"
+          },
+          "sources": {},
+          "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+          "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_165820_141786_075b9433.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 1,
+      "batch_size": 1,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 3,
+    "debunk_posts_generated": 1,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-10-27T16:57:35.990159",
+          "total_posts": 3,
+          "posts": [
+            {
+              "claim": "Donald Trump claims polls showing his low popularity are fake.",
+              "summary": "President Trump, while in Japan, posted on Truth Social claiming that polls indicating his declining popularity are fake and that he is actually receiving the best polling numbers he has ever received. This outburst followed advertisements, including one from Canada featuring Ronald Reagan criticizing tariffs, that portray him negatively. He attributed his alleged strong polling numbers to the strong economy and investment.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1ohaysy/they_are_fake_trump_melts_down_on_claims_hes/"
+            },
+            {
+              "claim": "American society is overly focused on consuming protein.",
+              "summary": "The article argues that America's obsession with protein has reached excessive levels, evidenced by Starbucks introducing protein-enhanced menu items. It claims that most Americans already consume sufficient protein, but companies market high-protein products as 'premium' and more profitable, suggesting a protein deficiency that doesn't exist.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+            },
+            {
+              "claim": "The United States House of Representatives is not currently in session.",
+              "summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump claims polls showing his low popularity are fake.",
+              "content_summary": "President Trump, while in Japan, posted on Truth Social claiming that polls indicating his declining popularity are fake and that he is actually receiving the best polling numbers he has ever received. This outburst followed advertisements, including one from Canada featuring Ronald Reagan criticizi",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1ohaysy/they_are_fake_trump_melts_down_on_claims_hes/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Donald Trump has claimed that polls showing his low popularity are not accurate or are subject to scrutiny. One source explicitly mentions him taking 'a sustained shot' at polls showing falling approval ratings.",
+                "confidence": "high",
+                "reasoning": "Source 1 states, 'With polls showing falling approval ratings, Trump took a sustained shot at...' This directly indicates that Trump challenged or criticized polls reflecting his low popularity. While it doesn't use the exact word 'fake,' 'took a sustained shot at' strongly implies he disputed their authenticity or accuracy, which is consistent with claiming they are 'fake.' The other sources mention Trump making claims about the popularity of other leaders (Zelenskyy) but do not address his claims about his own popularity polls.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2025/4/30/fact-checking-trumps-claims-at-100-day-rally-in-michigan",
+                    "https://www.bbc.com/news/articles/c9814k2jlxko",
+                    "https://www.aljazeera.com/economy/2025/2/21/musk-vows-to-fix-x-after-polls-show-high-support-for-ukraines-zelenskyy",
+                    "https://www.npr.org/2024/10/12/nx-s1-5147789/voting-election-2024-noncitizen-fact-check-trump",
+                    "https://www.npr.org/2024/08/11/nx-s1-5070566/trump-news-conference"
+                  ],
+                  "titles": [
+                    "Fact-checking Trump's claims at 100-day rally in Michigan | Donald ...",
+                    "Fact-checking Donald Trump's claims about war in Ukraine",
+                    "Musk vows to 'fix' X after polls show high support for Ukraine's ...",
+                    "6 facts about false noncitizen voting claims and the election",
+                    "We fact-checked Trump's recent news conference : NPR"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump claims polls showing his low popularity are fake.",
+                "verification_date": "2025-10-27T16:57:39.731696"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump claims polls showing his low popularity are fake."
+              },
+              "verification_timestamp": "2025-10-27T16:57:58.669657"
+            },
+            {
+              "claim_text": "American society is overly focused on consuming protein.",
+              "content_summary": "The article argues that America's obsession with protein has reached excessive levels, evidenced by Starbucks introducing protein-enhanced menu items. It claims that most Americans already consume sufficient protein, but companies market high-protein products as 'premium' and more profitable, sugges",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "American society appears to be overly focused on consuming protein, as indicated by multiple sources highlighting a 'protein mania,' widespread emphasis on protein, and businesses catering to protein-rich diets, with average consumption often exceeding requirements.",
+                "confidence": "high",
+                "reasoning": "Source 1 describes 'Protein mania: the rich world's new diet obsession,' suggesting an excessive focus. Source 2 states that 'Protein seems to suddenly be everywhere' and notes 'the emphasis of protein,' confirming its pervasive focus. Source 3 supports this by mentioning 'Catering to protein-rich diets is a tasty business' and explicitly stating that 'the average American or Briton consumes too much' protein. All three sources collectively indicate that American society is indeed overly focused on protein consumption.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/news/2019/jan/04/protein-mania-the-rich-worlds-new-diet-obsession",
+                    "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                    "https://www.economist.com/business/2025/03/06/catering-to-protein-rich-diets-is-a-tasty-business",
+                    "https://www.npr.org/sections/health-shots/2024/02/18/1231552773/protein-diet-muscle-strength-training-muscle-loss-women",
+                    "https://www.nytimes.com/2007/01/28/magazine/28nutritionism.t.html"
+                  ],
+                  "titles": [
+                    "Protein mania: the rich world's new diet obsession | Food | The ...",
+                    "Protein seems to suddenly be everywhere. Here's why : NPR",
+                    "Catering to protein-rich diets is a tasty business",
+                    "Strength training is vital for women's muscle health. But protein is ...",
+                    "Unhappy Meals - Michael Pollan - The New York Times"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "American society is overly focused on consuming protein.",
+                "verification_date": "2025-10-27T16:57:39.731696"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "American society is overly focused on consuming protein."
+              },
+              "verification_timestamp": "2025-10-27T16:57:58.669657"
+            },
+            {
+              "claim_text": "The United States House of Representatives is not currently in session.",
+              "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+                "confidence": "high",
+                "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                    "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                    "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                    "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+                    "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                  ],
+                  "titles": [
+                    "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                    "Texas Democrats walked out. The tactic has mixed results : NPR",
+                    "Trump's mega-bill heads for final vote in overnight US House session",
+                    "What could happen in the states entering redistricting fights? : NPR",
+                    "Johnson shuts down House for the summer to sideline calls for ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The United States House of Representatives is not currently in session.",
+                "verification_date": "2025-10-27T16:57:39.731696"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "The United States House of Representatives is not currently in session."
+              },
+              "verification_timestamp": "2025-10-27T16:57:58.669657"
+            }
+          ],
+          "summary": {
+            "total_claims": 3,
+            "successfully_verified": 2,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-10-27T16:57:58.669657",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 1 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251027_165820_141786_075b9433",
+              "verification_date": "2025-10-27T16:58:20.141786",
+              "claim": {
+                "text": "The United States House of Representatives is not currently in session.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "U.S. House: Currently In Session (Usually!)",
+                "body": "The assertion that 'The United States House of Representatives is not currently in session' is generally false. While Congress observes scheduled recesses and district work periods throughout the year, the House is actively engaged in legislative business during most working weeks.\n\nOfficial congressional calendars, available on the U.S. House of Representatives' website (house.gov) and the House Majority Leader's public schedule, clearly detail when legislative sessions are planned. These sessions involve votes, committee meetings, and floor debates on critical issues. Unless a claim specifically refers to a known, publicly announced recess — such as a holiday break or the traditional August district work period — the House is typically convening and conducting its duties. Therefore, a general statement claiming the House is 'not currently in session' is almost always incorrect, as these breaks are temporary and distinct from its overall operational status.",
+                "summary": "The U.S. House of Representatives is typically in session for legislative duties during most working weeks of the year, making the claim it is 'not currently in session' generally false unless during a specific, publicly announced recess."
+              },
+              "sources": {
+                "misinformation_sources": [],
+                "confirmation_sources": [],
+                "total_sources": 0
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 1,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The United States House of Representatives is not currently in session.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+                    "confidence": "high",
+                    "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+                    "sources": {
+                      "links": [
+                        "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+                        "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+                        "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+                        "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+                        "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+                      ],
+                      "titles": [
+                        "The fight to redraw U.S. House maps is spreading. Here's where ...",
+                        "Texas Democrats walked out. The tactic has mixed results : NPR",
+                        "Trump's mega-bill heads for final vote in overnight US House session",
+                        "What could happen in the states entering redistricting fights? : NPR",
+                        "Johnson shuts down House for the summer to sideline calls for ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The United States House of Representatives is not currently in session.",
+                    "verification_date": "2025-10-27T16:57:39.731696"
+                  },
+                  "sources": {},
+                  "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                  "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_165820_141786_075b9433.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 1,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 1,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 1,
+            "batch_size": 1,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251027_165820",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-10-27T16:58:20.144142",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251027_165420",
+    "created_at": "2025-10-27T16:58:20.144142",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 1,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251027_165820"
+  }
+}

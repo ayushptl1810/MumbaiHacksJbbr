@@ -1,0 +1,61 @@
+{
+  "post_id": "aegis_post_20251027_165142",
+  "verification_date": "2025-10-27T16:51:42.797933",
+  "claim": {
+    "text": "The United States House of Representatives is currently not in session.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No, The U.S. House of Representatives IS In Session",
+    "body": "The claim that the United States House of Representatives is currently not in session is false. As of the current legislative calendar, the House of Representatives is actively convening to conduct its legislative duties. This includes holding debates, voting on bills, conducting committee meetings, and overseeing various government functions. While the House does observe scheduled recesses throughout the year, these are part of its regular calendar, and it remains an active, functioning body. For the most accurate and up-to-date information on the House's schedule, including session dates and legislative activity, official sources like the House of Representatives' own website (house.gov) should be consulted.",
+    "summary": "The U.S. House of Representatives is currently in session and actively conducting legislative business."
+  },
+  "sources": {
+    "misinformation_sources": [],
+    "confirmation_sources": [],
+    "total_sources": 0
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 2,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The United States House of Representatives is currently not in session.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim that the United States House of Representatives is currently not in session is false, as one source explicitly states it was in session.",
+        "confidence": "high",
+        "reasoning": "Source 2 explicitly states, 'The US House of Representatives worked through the night and into Thursday' on July 3, 2025. This directly contradicts the claim that the U.S. House of Representatives is currently not in session, proving it was in session at that time. Sources 1 and 3 refer to state-level legislative sessions or redistricting efforts, not the status of the federal U.S. House of Representatives being out of session.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+            "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+            "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+            "https://www.nytimes.com/2025/10/06/us/politics/adelita-grijalva-house-epstein.html",
+            "https://www.pbs.org/newshour/politics/speaker-johnson-has-yet-to-swear-in-newly-elected-arizona-lawmaker-adelita-grijalva"
+          ],
+          "titles": [
+            "The fight to redraw U.S. House maps is spreading. Here's where ...",
+            "Trump's mega-bill heads for final vote in overnight US House session",
+            "Texas Democrats walked out. The tactic has mixed results : NPR",
+            "Elected but Not Seated, Grijalva Waits to Sign Epstein Petition - The ...",
+            "Speaker Johnson has yet to swear in newly elected Arizona ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is currently not in session.",
+        "verification_date": "2025-10-27T16:50:57.864441"
+      },
+      "sources": {},
+      "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the inactivity. No further information or context is provided in the scraped content.",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

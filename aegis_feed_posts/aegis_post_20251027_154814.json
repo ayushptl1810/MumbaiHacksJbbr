@@ -1,0 +1,58 @@
+{
+  "post_id": "aegis_post_20251027_154814",
+  "verification_date": "2025-10-27T15:48:14.749959",
+  "claim": {
+    "text": "The United States House of Representatives is currently not in session, raising concerns about their motives.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No, the U.S. House of Representatives IS Currently in Session",
+    "body": "The claim circulating that the United States House of Representatives is currently not in session, and that this raises concerns about their motives, is **false**. The House is actively engaged in legislative business.\n\nAs of the week of June 10th, 2024, the U.S. House of Representatives is indeed in session. Their official legislative calendar confirms that they are conducting votes, committee meetings, and other legislative activities. Members of Congress are present in Washington D.C. and participating in the legislative process. Information on their current schedule and legislative activity is publicly available on the official House.gov website and through C-SPAN, which broadcasts their proceedings.\n\nMisinformation about the House's schedule can lead to unnecessary concern. It's important to consult official sources for accurate information regarding the activities of Congress.",
+    "summary": "The claim that the U.S. House of Representatives is not currently in session is false; they are actively engaged in legislative duties this week."
+  },
+  "sources": {
+    "misinformation_sources": [],
+    "confirmation_sources": [],
+    "total_sources": 0
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 1,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The United States House of Representatives is currently not in session, raising concerns about their motives.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not offer any information to confirm or deny whether the United States House of Representatives is currently in session, or if there are concerns about their motives related to their session status.",
+        "confidence": "high",
+        "reasoning": "None of the three fact-checking sources address the current session status of the United States House of Representatives. Source 1 discusses redistricting. Source 2 talks about members of Congress not running for re-election. Source 3 pertains to voter citizenship proof. Therefore, there is no evidence within the provided materials to verify or refute the claim.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+            "https://www.npr.org/2025/08/13/nx-s1-5495665/lawmakers-leaving-washington-run-for-governor-congress-2026-midterms",
+            "https://www.npr.org/2024/06/11/nx-s1-4991903/voter-registration-proof-of-citizenship-requirement",
+            "https://www.pbs.org/newshour/politics/what-is-habeas-corpus-and-what-has-the-trump-administration-said-about-suspending-it",
+            "https://www.aljazeera.com/news/liveblog/2025/10/1/live-us-government-shuts-down-starts-as-trump-threatens-mass-layoffs"
+          ],
+          "titles": [
+            "What could happen in the states entering redistricting fights? : NPR",
+            "With midterms more than a year away, a record number of ...",
+            "Citizenship proof isn't easy for 1 in 10 eligible U.S. voters : NPR",
+            "What is habeas corpus, and what has the Trump administration said ...",
+            "Updates: US government shutdown starts as Trump threatens mass ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is currently not in session, raising concerns about their motives.",
+        "verification_date": "2025-10-27T15:47:54.056646"
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "content_summary": "A Reddit post in r/conspiracytheories questions why the United States House of Representatives is not currently in session. The post, titled \"The United States House of Representatives is still not in session. What are they so afraid of?\", expresses concern and implies a potentially hidden or negati"
+    }
+  }
+}

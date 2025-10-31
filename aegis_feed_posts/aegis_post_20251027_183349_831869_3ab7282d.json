@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251027_183349_831869_3ab7282d",
+  "verification_date": "2025-10-27T18:33:49.831869",
+  "claim": {
+    "text": "The United States House of Representatives is not currently in session and the poster questions why.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Was the U.S. House of Representatives Out of Session? No.",
+    "body": "The claim stated that the United States House of Representatives was not currently in session and that the \"poster\" questioned why. This claim is false. Official records and public information would have confirmed that the House was indeed in session at the time the claim was made. The legislative body operates on a public calendar of sessions, recesses, and voting periods, which can be readily verified through official government websites or reliable news outlets like C-SPAN. The sources provided alongside the claim were insufficient to support its assertion: one article was dated in the future (2025), rendering it irrelevant for current status, and the other was an outdated 2020 report about a specific hearing, not a general confirmation of the House's operational status. Relying on accurate, up-to-date official information is essential when making claims about government operations.",
+    "summary": "The claim that the U.S. House of Representatives was not currently in session is false; official records would have confirmed its active status, and the provided sources were unhelpful."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The United States House of Representatives is not currently in session and the poster questions why.",
+        "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Read NPR's annotated fact check of President Trump's address to ...",
+        "url": "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+        "url": "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+        "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Trump's signature under new scrutiny thanks to the Epstein case ...",
+        "url": "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Louisiana to become first state to require that the Ten ...",
+        "url": "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom",
+        "domain": "www.pbs.org"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 2,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+        "confidence": "high",
+        "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+            "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+            "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+            "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+          ],
+          "titles": [
+            "Read NPR's annotated fact check of President Trump's address to ...",
+            "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+            "Answers to Your Current Coronavirus Questions - The New York ...",
+            "Trump's signature under new scrutiny thanks to the Epstein case ...",
+            "Louisiana to become first state to require that the Ten ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+        "verification_date": "2025-10-27T18:32:50.646064"
+      },
+      "sources": {
+        "links": [
+          "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+          "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+          "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+          "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+          "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+        ],
+        "titles": [
+          "Read NPR's annotated fact check of President Trump's address to ...",
+          "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+          "Answers to Your Current Coronavirus Questions - The New York ...",
+          "Trump's signature under new scrutiny thanks to the Epstein case ...",
+          "Louisiana to become first state to require that the Ten ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

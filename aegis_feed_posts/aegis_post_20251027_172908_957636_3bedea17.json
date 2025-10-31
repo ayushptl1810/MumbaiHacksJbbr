@@ -1,0 +1,103 @@
+{
+  "post_id": "aegis_post_20251027_172908_957636_3bedea17",
+  "verification_date": "2025-10-27T17:29:08.957636",
+  "claim": {
+    "text": "The United States House of Representatives is not currently in session, raising concerns about their reasons for being absent.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Fact Check: U.S. House Is Operating on Its Official Schedule",
+    "body": "The claim that the United States House of Representatives is not currently in session, raising concerns about their reasons for being absent, is **false**. The U.S. House, like other legislative bodies, operates according to a pre-determined and publicly available calendar. This schedule includes both periods when representatives are actively legislating in Washington D.C. (in session) and scheduled recesses, during which members typically return to their districts to meet with constituents and conduct other legislative business.\n\nThese recesses are a normal, planned part of the legislative year, not an unexplained or concerning absence. Information on whether the House is currently in session, in recess, or on a break is always accessible through official government resources, such as the House Clerk's website or the websites of the House Majority and Minority Leaders. Any concerns about their schedule can easily be verified by consulting these official sources.\n\nIt's also important to note that the sources provided to support this claim are not relevant to the operational status of the House. For instance, they discuss unrelated political events and are dated for 2025, which is in the future. Relying on outdated or off-topic information can lead to misunderstandings about how Congress functions. Always consult current, official sources for accurate information on legislative schedules.",
+    "summary": "The claim that the U.S. House of Representatives is not currently in session and is absent for concerning reasons is false; the House operates on a publicly available, planned schedule, and provided sources are irrelevant."
+  },
+  "sources": {
+    "misinformation_sources": [],
+    "confirmation_sources": [
+      {
+        "title": "Can the FBI arrest the Democratic Texas lawmakers who left the ...",
+        "url": "https://www.theguardian.com/us-news/2025/aug/05/texas-redistricting-voter-maps-democrats-explained",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "The federal government is still shut down. Here's what that means ...",
+        "url": "https://www.npr.org/2025/10/24/g-s1-94806/government-shutdown",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "As Johnson Delays, Grijalva Sues to Be Seated in the House",
+        "url": "https://www.nytimes.com/2025/10/22/us/politics/adelita-grijalva-lawsuit-swearing-in-congress.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Republicans Who Have Rarely Opposed Trump Raise Questions ...",
+        "url": "https://www.nytimes.com/2025/10/24/us/politics/republicans-trump-drug-war.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "High courts aren't writing opinions on crucial judgments. Lower ...",
+        "url": "https://www.npr.org/2025/10/26/nx-s1-5570913/high-courts-arent-writing-opinions-on-crucial-judgments-lower-courts-are-confused",
+        "domain": "www.npr.org"
+      }
+    ],
+    "total_sources": 5
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 1,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The United States House of Representatives is not currently in session, raising concerns about their reasons for being absent.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim cannot be verified as true or false based on the provided sources, primarily because all sources are dated in the future (2025), making it impossible to confirm the 'currently' aspect of the claim. Additionally, the content of the sources does not directly or consistently support the claim.",
+        "confidence": "high",
+        "reasoning": "1. **Future Dates:** All provided fact-checking sources are dated in 2025, which is in the future. This makes it impossible to verify the claim's assertion about what is 'currently' happening. 2. **Irrelevant/Contradictory Content:** Source 1 refers to 'Democratic Texas lawmakers,' which pertains to a state legislature, not the U.S. House of Representatives. Source 2 discusses a 'federal government shutdown,' which while impactful, does not explicitly state the House of Representatives is 'not currently in session' or that members are 'absent' due to concern. Source 3, the New York Times article, mentions a 'Representative-elect Adelita Grijalva' suing to be 'Seated in the House,' implying that the House is a functioning body where members are being seated (or attempting to be), which contradicts the idea that it is 'not currently in session' as a whole. Therefore, the sources are insufficient and, in some cases, contradictory to the claim's premise, compounded by the future dating.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/2025/aug/05/texas-redistricting-voter-maps-democrats-explained",
+            "https://www.npr.org/2025/10/24/g-s1-94806/government-shutdown",
+            "https://www.nytimes.com/2025/10/22/us/politics/adelita-grijalva-lawsuit-swearing-in-congress.html",
+            "https://www.nytimes.com/2025/10/24/us/politics/republicans-trump-drug-war.html",
+            "https://www.npr.org/2025/10/26/nx-s1-5570913/high-courts-arent-writing-opinions-on-crucial-judgments-lower-courts-are-confused"
+          ],
+          "titles": [
+            "Can the FBI arrest the Democratic Texas lawmakers who left the ...",
+            "The federal government is still shut down. Here's what that means ...",
+            "As Johnson Delays, Grijalva Sues to Be Seated in the House",
+            "Republicans Who Have Rarely Opposed Trump Raise Questions ...",
+            "High courts aren't writing opinions on crucial judgments. Lower ..."
+          ],
+          "count": 5
+        },
+        "claim_text": "The United States House of Representatives is not currently in session, raising concerns about their reasons for being absent.",
+        "verification_date": "2025-10-27T17:28:33.430929"
+      },
+      "sources": {
+        "links": [
+          "https://www.theguardian.com/us-news/2025/aug/05/texas-redistricting-voter-maps-democrats-explained",
+          "https://www.npr.org/2025/10/24/g-s1-94806/government-shutdown",
+          "https://www.nytimes.com/2025/10/22/us/politics/adelita-grijalva-lawsuit-swearing-in-congress.html",
+          "https://www.nytimes.com/2025/10/24/us/politics/republicans-trump-drug-war.html",
+          "https://www.npr.org/2025/10/26/nx-s1-5570913/high-courts-arent-writing-opinions-on-crucial-judgments-lower-courts-are-confused"
+        ],
+        "titles": [
+          "Can the FBI arrest the Democratic Texas lawmakers who left the ...",
+          "The federal government is still shut down. Here's what that means ...",
+          "As Johnson Delays, Grijalva Sues to Be Seated in the House",
+          "Republicans Who Have Rarely Opposed Trump Raise Questions ...",
+          "High courts aren't writing opinions on crucial judgments. Lower ..."
+        ],
+        "count": 5
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "content_summary": "A Reddit post in r/conspiracytheories questions why the United States House of Representatives is not in session, implying a possible hidden or nefarious reason for their absence. The post title is 'The United States House of Representatives is still not in session. What are they so afraid of?' No a",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

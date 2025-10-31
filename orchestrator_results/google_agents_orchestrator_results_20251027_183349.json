@@ -1,0 +1,1173 @@
+{
+  "success": true,
+  "message": "Successfully processed 3 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-10-27T18:32:47.364949",
+        "total_posts": 3,
+        "posts": [
+          {
+            "claim": "The post explores how socialism became a negative term in America.",
+            "summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/"
+          },
+          {
+            "claim": "Americans are overly focused on consuming protein.",
+            "summary": "The Reddit post asserts that the American obsession with protein is excessive, referencing an article from the LA Times. The article notes Starbucks' introduction of protein-enhanced drinks and the prevalence of protein labeling on food products. It argues that most Americans already consume sufficient protein and that the emphasis on protein is driven by marketing tactics to make products seem more valuable.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+          },
+          {
+            "claim": "The United States House of Representatives is not currently in session and the poster questions why.",
+            "summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The post explores how socialism became a negative term in America.",
+            "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+              "confidence": "high",
+              "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                  "https://www.bbc.com/news/world-latin-america-36319877",
+                  "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                  "https://www.bbc.com/news/articles/clyzp7j84yro",
+                  "https://economist.com/economics-a-to-z"
+                ],
+                "titles": [
+                  "From slavery to socialism, proposed laws would restrict what ...",
+                  "Venezuela crisis: How the political situation escalated - BBC News",
+                  "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                  "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                  "The A to Z of economics | The Economist"
+                ],
+                "count": 10
+              },
+              "claim_text": "The post explores how socialism became a negative term in America.",
+              "verification_date": "2025-10-27T18:32:50.646064"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The post explores how socialism became a negative term in America."
+            },
+            "verification_timestamp": "2025-10-27T18:33:17.263963"
+          },
+          {
+            "claim_text": "Americans are overly focused on consuming protein.",
+            "content_summary": "The Reddit post asserts that the American obsession with protein is excessive, referencing an article from the LA Times. The article notes Starbucks' introduction of protein-enhanced drinks and the prevalence of protein labeling on food products. It argues that most Americans already consume suffici",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources indicate that Americans are highly focused on consuming protein, with phrases like 'Americans are trying to find ways to consume even more protein,' 'focused on protein consumption,' and 'America's Whey Protein Obsession' appearing in the titles and snippets.",
+              "confidence": "high",
+              "reasoning": "1. Source 1 states, 'Americans are trying to find ways to consume even more protein' and notes 'the emphasis of protein as a' prominent trend.\n2. Source 2 explicitly mentions that Americans are 'focused on protein consumption' and highlights potential 'long-term risks of consuming too much protein,' implying an excessive focus.\n3. Source 3's title, 'America's Whey Protein Obsession,' directly supports the claim, and its snippet mentions that products to 'consume more protein have popped up everywhere over the last two decades.'\nConclusion: All three sources consistently provide evidence that Americans are overly focused on protein consumption.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                  "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+                  "https://www.nytimes.com/2025/07/16/business/whey-protein-dairy-industry.html",
+                  "https://www.nytimes.com/2025/08/26/podcasts/the-daily/protein-bars-america.html",
+                  "https://www.npr.org/transcripts/1223918037"
+                ],
+                "titles": [
+                  "Protein seems to suddenly be everywhere. Here's why : NPR",
+                  "How Much Protein Do We Need? - The New York Times",
+                  "America's Whey Protein Obsession Is Transforming the Dairy ...",
+                  "How America Got Obsessed With Protein - The New York Times",
+                  "How much protein should I eat? : It's Been a Minute : NPR"
+                ],
+                "count": 10
+              },
+              "claim_text": "Americans are overly focused on consuming protein.",
+              "verification_date": "2025-10-27T18:32:50.646064"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Americans are overly focused on consuming protein."
+            },
+            "verification_timestamp": "2025-10-27T18:33:17.263963"
+          },
+          {
+            "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+            "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+              "confidence": "high",
+              "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                  "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                  "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                  "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                  "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                ],
+                "titles": [
+                  "Read NPR's annotated fact check of President Trump's address to ...",
+                  "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                  "Answers to Your Current Coronavirus Questions - The New York ...",
+                  "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                  "Louisiana to become first state to require that the Ten ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+              "verification_date": "2025-10-27T18:32:50.646064"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "The United States House of Representatives is not currently in session and the poster questions why."
+            },
+            "verification_timestamp": "2025-10-27T18:33:17.263963"
+          }
+        ],
+        "summary": {
+          "total_claims": 3,
+          "successfully_verified": 1,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-10-27T18:33:17.263963",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 2 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251027_183349_830867_b98f3f01",
+            "verification_date": "2025-10-27T18:33:49.830867",
+            "claim": {
+              "text": "The post explores how socialism became a negative term in America.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Did 'The Post' Explain Socialism's Negative Image in America? No.",
+              "body": "A claim asserted that a specific \"post\" explores the historical reasons behind socialism becoming a negative term in America. Our verification found this claim to be false. The content (or the original post) in question does not provide this detailed historical exploration. The sources accompanying the claim, an NPR article discussing proposed laws that restrict teaching about socialism in schools and a BBC article on the Venezuela crisis, are related to aspects of socialism's modern perception but do not offer an analysis of the *historical process* by which the term gained a negative connotation in the United States. Therefore, the claim inaccurately represents the nature and depth of the exploration provided by the original post or its supporting materials, which do not delve into the complex historical trajectory of this political term in America.",
+              "summary": "The claim that a specific post explores how 'socialism' became a negative term in America is false; the content does not provide this historical analysis."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The post explores how socialism became a negative term in America.",
+                  "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+                  "domain": "reddit.comhttps:"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "From slavery to socialism, proposed laws would restrict what ...",
+                  "url": "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "Venezuela crisis: How the political situation escalated - BBC News",
+                  "url": "https://www.bbc.com/news/world-latin-america-36319877",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                  "url": "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                  "url": "https://www.bbc.com/news/articles/clyzp7j84yro",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "The A to Z of economics | The Economist",
+                  "url": "https://economist.com/economics-a-to-z",
+                  "domain": "economist.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 2,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The post explores how socialism became a negative term in America.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+                  "confidence": "high",
+                  "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                      "https://www.bbc.com/news/world-latin-america-36319877",
+                      "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                      "https://www.bbc.com/news/articles/clyzp7j84yro",
+                      "https://economist.com/economics-a-to-z"
+                    ],
+                    "titles": [
+                      "From slavery to socialism, proposed laws would restrict what ...",
+                      "Venezuela crisis: How the political situation escalated - BBC News",
+                      "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                      "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                      "The A to Z of economics | The Economist"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The post explores how socialism became a negative term in America.",
+                  "verification_date": "2025-10-27T18:32:50.646064"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                    "https://www.bbc.com/news/world-latin-america-36319877",
+                    "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                    "https://www.bbc.com/news/articles/clyzp7j84yro",
+                    "https://economist.com/economics-a-to-z"
+                  ],
+                  "titles": [
+                    "From slavery to socialism, proposed laws would restrict what ...",
+                    "Venezuela crisis: How the political situation escalated - BBC News",
+                    "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                    "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                    "The A to Z of economics | The Economist"
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+                "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_830867_b98f3f01.json"
+          },
+          {
+            "post_id": "aegis_post_20251027_183349_831869_3ab7282d",
+            "verification_date": "2025-10-27T18:33:49.831869",
+            "claim": {
+              "text": "The United States House of Representatives is not currently in session and the poster questions why.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Was the U.S. House of Representatives Out of Session? No.",
+              "body": "The claim stated that the United States House of Representatives was not currently in session and that the \"poster\" questioned why. This claim is false. Official records and public information would have confirmed that the House was indeed in session at the time the claim was made. The legislative body operates on a public calendar of sessions, recesses, and voting periods, which can be readily verified through official government websites or reliable news outlets like C-SPAN. The sources provided alongside the claim were insufficient to support its assertion: one article was dated in the future (2025), rendering it irrelevant for current status, and the other was an outdated 2020 report about a specific hearing, not a general confirmation of the House's operational status. Relying on accurate, up-to-date official information is essential when making claims about government operations.",
+              "summary": "The claim that the U.S. House of Representatives was not currently in session is false; official records would have confirmed its active status, and the provided sources were unhelpful."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The United States House of Representatives is not currently in session and the poster questions why.",
+                  "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                  "domain": "reddit.comhttps:"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Read NPR's annotated fact check of President Trump's address to ...",
+                  "url": "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                  "url": "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+                  "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                  "url": "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Louisiana to become first state to require that the Ten ...",
+                  "url": "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom",
+                  "domain": "www.pbs.org"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 2,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+                  "confidence": "high",
+                  "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                      "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                      "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                      "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                      "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                    ],
+                    "titles": [
+                      "Read NPR's annotated fact check of President Trump's address to ...",
+                      "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                      "Answers to Your Current Coronavirus Questions - The New York ...",
+                      "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                      "Louisiana to become first state to require that the Ten ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                  "verification_date": "2025-10-27T18:32:50.646064"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                    "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                    "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                    "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                  ],
+                  "titles": [
+                    "Read NPR's annotated fact check of President Trump's address to ...",
+                    "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                    "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                    "Louisiana to become first state to require that the Ten ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_831869_3ab7282d.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 2,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 2,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 2,
+          "batch_size": 2,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The post explores how socialism became a negative term in America.",
+      "summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+            "https://www.bbc.com/news/world-latin-america-36319877",
+            "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+            "https://www.bbc.com/news/articles/clyzp7j84yro",
+            "https://economist.com/economics-a-to-z"
+          ],
+          "titles": [
+            "From slavery to socialism, proposed laws would restrict what ...",
+            "Venezuela crisis: How the political situation escalated - BBC News",
+            "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+            "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+            "The A to Z of economics | The Economist"
+          ],
+          "count": 10
+        },
+        "claim_text": "The post explores how socialism became a negative term in America.",
+        "verification_date": "2025-10-27T18:32:50.646064"
+      }
+    },
+    {
+      "claim": "Americans are overly focused on consuming protein.",
+      "summary": "The Reddit post asserts that the American obsession with protein is excessive, referencing an article from the LA Times. The article notes Starbucks' introduction of protein-enhanced drinks and the prevalence of protein labeling on food products. It argues that most Americans already consume sufficient protein and that the emphasis on protein is driven by marketing tactics to make products seem more valuable.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources indicate that Americans are highly focused on consuming protein, with phrases like 'Americans are trying to find ways to consume even more protein,' 'focused on protein consumption,' and 'America's Whey Protein Obsession' appearing in the titles and snippets.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 states, 'Americans are trying to find ways to consume even more protein' and notes 'the emphasis of protein as a' prominent trend.\n2. Source 2 explicitly mentions that Americans are 'focused on protein consumption' and highlights potential 'long-term risks of consuming too much protein,' implying an excessive focus.\n3. Source 3's title, 'America's Whey Protein Obsession,' directly supports the claim, and its snippet mentions that products to 'consume more protein have popped up everywhere over the last two decades.'\nConclusion: All three sources consistently provide evidence that Americans are overly focused on protein consumption.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+            "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+            "https://www.nytimes.com/2025/07/16/business/whey-protein-dairy-industry.html",
+            "https://www.nytimes.com/2025/08/26/podcasts/the-daily/protein-bars-america.html",
+            "https://www.npr.org/transcripts/1223918037"
+          ],
+          "titles": [
+            "Protein seems to suddenly be everywhere. Here's why : NPR",
+            "How Much Protein Do We Need? - The New York Times",
+            "America's Whey Protein Obsession Is Transforming the Dairy ...",
+            "How America Got Obsessed With Protein - The New York Times",
+            "How much protein should I eat? : It's Been a Minute : NPR"
+          ],
+          "count": 10
+        },
+        "claim_text": "Americans are overly focused on consuming protein.",
+        "verification_date": "2025-10-27T18:32:50.646064"
+      }
+    },
+    {
+      "claim": "The United States House of Representatives is not currently in session and the poster questions why.",
+      "summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+        "confidence": "high",
+        "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+            "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+            "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+            "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+          ],
+          "titles": [
+            "Read NPR's annotated fact check of President Trump's address to ...",
+            "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+            "Answers to Your Current Coronavirus Questions - The New York ...",
+            "Trump's signature under new scrutiny thanks to the Epstein case ...",
+            "Louisiana to become first state to require that the Ten ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+        "verification_date": "2025-10-27T18:32:50.646064"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251027_183349_830867_b98f3f01",
+      "verification_date": "2025-10-27T18:33:49.830867",
+      "claim": {
+        "text": "The post explores how socialism became a negative term in America.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Did 'The Post' Explain Socialism's Negative Image in America? No.",
+        "body": "A claim asserted that a specific \"post\" explores the historical reasons behind socialism becoming a negative term in America. Our verification found this claim to be false. The content (or the original post) in question does not provide this detailed historical exploration. The sources accompanying the claim, an NPR article discussing proposed laws that restrict teaching about socialism in schools and a BBC article on the Venezuela crisis, are related to aspects of socialism's modern perception but do not offer an analysis of the *historical process* by which the term gained a negative connotation in the United States. Therefore, the claim inaccurately represents the nature and depth of the exploration provided by the original post or its supporting materials, which do not delve into the complex historical trajectory of this political term in America.",
+        "summary": "The claim that a specific post explores how 'socialism' became a negative term in America is false; the content does not provide this historical analysis."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The post explores how socialism became a negative term in America.",
+            "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+            "domain": "reddit.comhttps:"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "From slavery to socialism, proposed laws would restrict what ...",
+            "url": "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "Venezuela crisis: How the political situation escalated - BBC News",
+            "url": "https://www.bbc.com/news/world-latin-america-36319877",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+            "url": "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+            "url": "https://www.bbc.com/news/articles/clyzp7j84yro",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "The A to Z of economics | The Economist",
+            "url": "https://economist.com/economics-a-to-z",
+            "domain": "economist.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 2,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The post explores how socialism became a negative term in America.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+            "confidence": "high",
+            "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                "https://www.bbc.com/news/world-latin-america-36319877",
+                "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                "https://www.bbc.com/news/articles/clyzp7j84yro",
+                "https://economist.com/economics-a-to-z"
+              ],
+              "titles": [
+                "From slavery to socialism, proposed laws would restrict what ...",
+                "Venezuela crisis: How the political situation escalated - BBC News",
+                "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                "The A to Z of economics | The Economist"
+              ],
+              "count": 10
+            },
+            "claim_text": "The post explores how socialism became a negative term in America.",
+            "verification_date": "2025-10-27T18:32:50.646064"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+              "https://www.bbc.com/news/world-latin-america-36319877",
+              "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+              "https://www.bbc.com/news/articles/clyzp7j84yro",
+              "https://economist.com/economics-a-to-z"
+            ],
+            "titles": [
+              "From slavery to socialism, proposed laws would restrict what ...",
+              "Venezuela crisis: How the political situation escalated - BBC News",
+              "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+              "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+              "The A to Z of economics | The Economist"
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+          "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_830867_b98f3f01.json"
+    },
+    {
+      "post_id": "aegis_post_20251027_183349_831869_3ab7282d",
+      "verification_date": "2025-10-27T18:33:49.831869",
+      "claim": {
+        "text": "The United States House of Representatives is not currently in session and the poster questions why.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Was the U.S. House of Representatives Out of Session? No.",
+        "body": "The claim stated that the United States House of Representatives was not currently in session and that the \"poster\" questioned why. This claim is false. Official records and public information would have confirmed that the House was indeed in session at the time the claim was made. The legislative body operates on a public calendar of sessions, recesses, and voting periods, which can be readily verified through official government websites or reliable news outlets like C-SPAN. The sources provided alongside the claim were insufficient to support its assertion: one article was dated in the future (2025), rendering it irrelevant for current status, and the other was an outdated 2020 report about a specific hearing, not a general confirmation of the House's operational status. Relying on accurate, up-to-date official information is essential when making claims about government operations.",
+        "summary": "The claim that the U.S. House of Representatives was not currently in session is false; official records would have confirmed its active status, and the provided sources were unhelpful."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The United States House of Representatives is not currently in session and the poster questions why.",
+            "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+            "domain": "reddit.comhttps:"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Read NPR's annotated fact check of President Trump's address to ...",
+            "url": "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+            "url": "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+            "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump's signature under new scrutiny thanks to the Epstein case ...",
+            "url": "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Louisiana to become first state to require that the Ten ...",
+            "url": "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom",
+            "domain": "www.pbs.org"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 2,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+            "confidence": "high",
+            "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+              ],
+              "titles": [
+                "Read NPR's annotated fact check of President Trump's address to ...",
+                "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                "Answers to Your Current Coronavirus Questions - The New York ...",
+                "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                "Louisiana to become first state to require that the Ten ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+            "verification_date": "2025-10-27T18:32:50.646064"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+              "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+              "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+              "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+              "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+            ],
+            "titles": [
+              "Read NPR's annotated fact check of President Trump's address to ...",
+              "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+              "Answers to Your Current Coronavirus Questions - The New York ...",
+              "Trump's signature under new scrutiny thanks to the Epstein case ...",
+              "Louisiana to become first state to require that the Ten ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+          "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_831869_3ab7282d.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 2,
+      "batch_size": 2,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 3,
+    "debunk_posts_generated": 2,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-10-27T18:32:47.364949",
+          "total_posts": 3,
+          "posts": [
+            {
+              "claim": "The post explores how socialism became a negative term in America.",
+              "summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/"
+            },
+            {
+              "claim": "Americans are overly focused on consuming protein.",
+              "summary": "The Reddit post asserts that the American obsession with protein is excessive, referencing an article from the LA Times. The article notes Starbucks' introduction of protein-enhanced drinks and the prevalence of protein labeling on food products. It argues that most Americans already consume sufficient protein and that the emphasis on protein is driven by marketing tactics to make products seem more valuable.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/"
+            },
+            {
+              "claim": "The United States House of Representatives is not currently in session and the poster questions why.",
+              "summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The post explores how socialism became a negative term in America.",
+              "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+                "confidence": "high",
+                "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                    "https://www.bbc.com/news/world-latin-america-36319877",
+                    "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                    "https://www.bbc.com/news/articles/clyzp7j84yro",
+                    "https://economist.com/economics-a-to-z"
+                  ],
+                  "titles": [
+                    "From slavery to socialism, proposed laws would restrict what ...",
+                    "Venezuela crisis: How the political situation escalated - BBC News",
+                    "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                    "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                    "The A to Z of economics | The Economist"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post explores how socialism became a negative term in America.",
+                "verification_date": "2025-10-27T18:32:50.646064"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The post explores how socialism became a negative term in America."
+              },
+              "verification_timestamp": "2025-10-27T18:33:17.263963"
+            },
+            {
+              "claim_text": "Americans are overly focused on consuming protein.",
+              "content_summary": "The Reddit post asserts that the American obsession with protein is excessive, referencing an article from the LA Times. The article notes Starbucks' introduction of protein-enhanced drinks and the prevalence of protein labeling on food products. It argues that most Americans already consume suffici",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ogy8y2/our_obsession_with_protein_is_getting_out_of_hand/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources indicate that Americans are highly focused on consuming protein, with phrases like 'Americans are trying to find ways to consume even more protein,' 'focused on protein consumption,' and 'America's Whey Protein Obsession' appearing in the titles and snippets.",
+                "confidence": "high",
+                "reasoning": "1. Source 1 states, 'Americans are trying to find ways to consume even more protein' and notes 'the emphasis of protein as a' prominent trend.\n2. Source 2 explicitly mentions that Americans are 'focused on protein consumption' and highlights potential 'long-term risks of consuming too much protein,' implying an excessive focus.\n3. Source 3's title, 'America's Whey Protein Obsession,' directly supports the claim, and its snippet mentions that products to 'consume more protein have popped up everywhere over the last two decades.'\nConclusion: All three sources consistently provide evidence that Americans are overly focused on protein consumption.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/01/30/nx-s1-5270923/protein-seems-to-suddenly-be-everywhere-heres-why",
+                    "https://www.nytimes.com/2017/07/28/well/eat/how-much-protein-do-we-need.html",
+                    "https://www.nytimes.com/2025/07/16/business/whey-protein-dairy-industry.html",
+                    "https://www.nytimes.com/2025/08/26/podcasts/the-daily/protein-bars-america.html",
+                    "https://www.npr.org/transcripts/1223918037"
+                  ],
+                  "titles": [
+                    "Protein seems to suddenly be everywhere. Here's why : NPR",
+                    "How Much Protein Do We Need? - The New York Times",
+                    "America's Whey Protein Obsession Is Transforming the Dairy ...",
+                    "How America Got Obsessed With Protein - The New York Times",
+                    "How much protein should I eat? : It's Been a Minute : NPR"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Americans are overly focused on consuming protein.",
+                "verification_date": "2025-10-27T18:32:50.646064"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Americans are overly focused on consuming protein."
+              },
+              "verification_timestamp": "2025-10-27T18:33:17.263963"
+            },
+            {
+              "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+              "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+                "confidence": "high",
+                "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                    "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                    "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                    "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                  ],
+                  "titles": [
+                    "Read NPR's annotated fact check of President Trump's address to ...",
+                    "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                    "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                    "Louisiana to become first state to require that the Ten ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                "verification_date": "2025-10-27T18:32:50.646064"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "The United States House of Representatives is not currently in session and the poster questions why."
+              },
+              "verification_timestamp": "2025-10-27T18:33:17.263963"
+            }
+          ],
+          "summary": {
+            "total_claims": 3,
+            "successfully_verified": 1,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-10-27T18:33:17.263963",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 2 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251027_183349_830867_b98f3f01",
+              "verification_date": "2025-10-27T18:33:49.830867",
+              "claim": {
+                "text": "The post explores how socialism became a negative term in America.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Did 'The Post' Explain Socialism's Negative Image in America? No.",
+                "body": "A claim asserted that a specific \"post\" explores the historical reasons behind socialism becoming a negative term in America. Our verification found this claim to be false. The content (or the original post) in question does not provide this detailed historical exploration. The sources accompanying the claim, an NPR article discussing proposed laws that restrict teaching about socialism in schools and a BBC article on the Venezuela crisis, are related to aspects of socialism's modern perception but do not offer an analysis of the *historical process* by which the term gained a negative connotation in the United States. Therefore, the claim inaccurately represents the nature and depth of the exploration provided by the original post or its supporting materials, which do not delve into the complex historical trajectory of this political term in America.",
+                "summary": "The claim that a specific post explores how 'socialism' became a negative term in America is false; the content does not provide this historical analysis."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The post explores how socialism became a negative term in America.",
+                    "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+                    "domain": "reddit.comhttps:"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "From slavery to socialism, proposed laws would restrict what ...",
+                    "url": "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "Venezuela crisis: How the political situation escalated - BBC News",
+                    "url": "https://www.bbc.com/news/world-latin-america-36319877",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                    "url": "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                    "url": "https://www.bbc.com/news/articles/clyzp7j84yro",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "The A to Z of economics | The Economist",
+                    "url": "https://economist.com/economics-a-to-z",
+                    "domain": "economist.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 2,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The post explores how socialism became a negative term in America.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+                    "confidence": "high",
+                    "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                        "https://www.bbc.com/news/world-latin-america-36319877",
+                        "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                        "https://www.bbc.com/news/articles/clyzp7j84yro",
+                        "https://economist.com/economics-a-to-z"
+                      ],
+                      "titles": [
+                        "From slavery to socialism, proposed laws would restrict what ...",
+                        "Venezuela crisis: How the political situation escalated - BBC News",
+                        "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                        "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                        "The A to Z of economics | The Economist"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The post explores how socialism became a negative term in America.",
+                    "verification_date": "2025-10-27T18:32:50.646064"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+                      "https://www.bbc.com/news/world-latin-america-36319877",
+                      "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+                      "https://www.bbc.com/news/articles/clyzp7j84yro",
+                      "https://economist.com/economics-a-to-z"
+                    ],
+                    "titles": [
+                      "From slavery to socialism, proposed laws would restrict what ...",
+                      "Venezuela crisis: How the political situation escalated - BBC News",
+                      "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+                      "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+                      "The A to Z of economics | The Economist"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+                  "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_830867_b98f3f01.json"
+            },
+            {
+              "post_id": "aegis_post_20251027_183349_831869_3ab7282d",
+              "verification_date": "2025-10-27T18:33:49.831869",
+              "claim": {
+                "text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Was the U.S. House of Representatives Out of Session? No.",
+                "body": "The claim stated that the United States House of Representatives was not currently in session and that the \"poster\" questioned why. This claim is false. Official records and public information would have confirmed that the House was indeed in session at the time the claim was made. The legislative body operates on a public calendar of sessions, recesses, and voting periods, which can be readily verified through official government websites or reliable news outlets like C-SPAN. The sources provided alongside the claim were insufficient to support its assertion: one article was dated in the future (2025), rendering it irrelevant for current status, and the other was an outdated 2020 report about a specific hearing, not a general confirmation of the House's operational status. Relying on accurate, up-to-date official information is essential when making claims about government operations.",
+                "summary": "The claim that the U.S. House of Representatives was not currently in session is false; official records would have confirmed its active status, and the provided sources were unhelpful."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The United States House of Representatives is not currently in session and the poster questions why.",
+                    "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                    "domain": "reddit.comhttps:"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Read NPR's annotated fact check of President Trump's address to ...",
+                    "url": "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                    "url": "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                    "url": "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Louisiana to become first state to require that the Ten ...",
+                    "url": "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom",
+                    "domain": "www.pbs.org"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 2,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "Two of the three provided sources contradict the claim that the United States House of Representatives is not currently in session. Source 1 describes a joint session of Congress in March 2025, and Source 2 mentions a hearing involving governors in June 2025, both of which indicate congressional activity and imply that the House was in session around those times. The third source is irrelevant.",
+                    "confidence": "high",
+                    "reasoning": "1. Source 1, dated March 4, 2025, explicitly states that 'President Trump addresses a joint session of Congress at the U.S. Capitol,' which includes the House of Representatives, indicating it was in session.\n2. Source 2, dated June 12, 2025, refers to governors testifying 'at hearing,' implying legislative activity and that Congress (and thus the House) was in session.\n3. Source 3, dated March 15, 2021, discusses coronavirus vaccines and does not provide any information about the House's session status.\nConclusion: Two relevant sources directly contradict the claim that the House is 'not currently in session' by providing evidence of sessions occurring around the dates of the articles.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                        "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                        "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                        "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                        "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                      ],
+                      "titles": [
+                        "Read NPR's annotated fact check of President Trump's address to ...",
+                        "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                        "Answers to Your Current Coronavirus Questions - The New York ...",
+                        "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                        "Louisiana to become first state to require that the Ten ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The United States House of Representatives is not currently in session and the poster questions why.",
+                    "verification_date": "2025-10-27T18:32:50.646064"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/03/04/g-s1-50488/trump-congress-joint-address-fact-check",
+                      "https://www.pbs.org/newshour/politics/watch-live-governors-from-ny-il-and-mn-testify-at-hearing-on-sanctuary-policies-and-immigration",
+                      "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                      "https://www.pbs.org/newshour/politics/trumps-signature-under-new-scrutiny-thanks-to-the-epstein-case",
+                      "https://www.pbs.org/newshour/nation/louisiana-to-become-first-state-to-require-that-the-ten-commandments-be-displayed-in-every-public-school-classroom"
+                    ],
+                    "titles": [
+                      "Read NPR's annotated fact check of President Trump's address to ...",
+                      "WATCH: Governors from NY, IL and MN testify at hearing on ...",
+                      "Answers to Your Current Coronavirus Questions - The New York ...",
+                      "Trump's signature under new scrutiny thanks to the Epstein case ...",
+                      "Louisiana to become first state to require that the Ten ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+                  "content_summary": "The Reddit post points out that the United States House of Representatives is not in session and poses the question of what they are afraid of. The post links to an image.",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251027_183349_831869_3ab7282d.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 2,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 2,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 2,
+            "batch_size": 2,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251027_183349",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-10-27T18:33:49.836398",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251027_182945",
+    "created_at": "2025-10-27T18:33:49.836398",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 2,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251027_183349"
+  }
+}

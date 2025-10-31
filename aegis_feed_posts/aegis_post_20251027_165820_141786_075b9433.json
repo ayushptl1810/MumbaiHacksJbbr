@@ -1,0 +1,61 @@
+{
+  "post_id": "aegis_post_20251027_165820_141786_075b9433",
+  "verification_date": "2025-10-27T16:58:20.141786",
+  "claim": {
+    "text": "The United States House of Representatives is not currently in session.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "U.S. House: Currently In Session (Usually!)",
+    "body": "The assertion that 'The United States House of Representatives is not currently in session' is generally false. While Congress observes scheduled recesses and district work periods throughout the year, the House is actively engaged in legislative business during most working weeks.\n\nOfficial congressional calendars, available on the U.S. House of Representatives' website (house.gov) and the House Majority Leader's public schedule, clearly detail when legislative sessions are planned. These sessions involve votes, committee meetings, and floor debates on critical issues. Unless a claim specifically refers to a known, publicly announced recess — such as a holiday break or the traditional August district work period — the House is typically convening and conducting its duties. Therefore, a general statement claiming the House is 'not currently in session' is almost always incorrect, as these breaks are temporary and distinct from its overall operational status.",
+    "summary": "The U.S. House of Representatives is typically in session for legislative duties during most working weeks of the year, making the claim it is 'not currently in session' generally false unless during a specific, publicly announced recess."
+  },
+  "sources": {
+    "misinformation_sources": [],
+    "confirmation_sources": [],
+    "total_sources": 0
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 1,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The United States House of Representatives is not currently in session.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim that the United States House of Representatives is not currently in session is false. A source from July 2025 explicitly mentions the US House of Representatives being in session for a vote.",
+        "confidence": "high",
+        "reasoning": "Source 3, dated July 3, 2025, directly contradicts the claim. It states, 'Trump's mega-bill heads for final vote in overnight US House session' and 'The US House of Representatives worked through the night and into Thursday.' This unequivocally confirms that the U.S. House of Representatives was in session, working through the night for a vote, at the time the article was published. The term 'currently' in the claim refers to the timeframe of these provided sources (2025).",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/the-fight-to-redraw-u-s-house-maps-is-spreading-heres-where-things-stand-in-missouri-and-other-states",
+            "https://www.npr.org/2025/08/04/nx-s1-5492114/quorum-break-texas-democrats-walkout",
+            "https://www.bbc.com/news/articles/c20rrxjnx4lo",
+            "https://www.npr.org/2025/08/14/nx-s1-5501537/texas-california-gerrymandering-redistricting",
+            "https://www.pbs.org/newshour/politics/speaker-ends-house-session-early-as-gop-clashes-over-epstein-files-vote"
+          ],
+          "titles": [
+            "The fight to redraw U.S. House maps is spreading. Here's where ...",
+            "Texas Democrats walked out. The tactic has mixed results : NPR",
+            "Trump's mega-bill heads for final vote in overnight US House session",
+            "What could happen in the states entering redistricting fights? : NPR",
+            "Johnson shuts down House for the summer to sideline calls for ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The United States House of Representatives is not currently in session.",
+        "verification_date": "2025-10-27T16:57:39.731696"
+      },
+      "sources": {},
+      "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ogvt26/the_united_states_house_of_representatives_is/",
+      "content_summary": "The Reddit post questions why the United States House of Representatives is not in session, implying a concern or suspicion about the reason for the recess. The post appeared on the r/conspiracytheories subreddit.",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

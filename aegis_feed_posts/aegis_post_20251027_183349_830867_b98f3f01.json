@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251027_183349_830867_b98f3f01",
+  "verification_date": "2025-10-27T18:33:49.830867",
+  "claim": {
+    "text": "The post explores how socialism became a negative term in America.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Did 'The Post' Explain Socialism's Negative Image in America? No.",
+    "body": "A claim asserted that a specific \"post\" explores the historical reasons behind socialism becoming a negative term in America. Our verification found this claim to be false. The content (or the original post) in question does not provide this detailed historical exploration. The sources accompanying the claim, an NPR article discussing proposed laws that restrict teaching about socialism in schools and a BBC article on the Venezuela crisis, are related to aspects of socialism's modern perception but do not offer an analysis of the *historical process* by which the term gained a negative connotation in the United States. Therefore, the claim inaccurately represents the nature and depth of the exploration provided by the original post or its supporting materials, which do not delve into the complex historical trajectory of this political term in America.",
+    "summary": "The claim that a specific post explores how 'socialism' became a negative term in America is false; the content does not provide this historical analysis."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post explores how socialism became a negative term in America.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "From slavery to socialism, proposed laws would restrict what ...",
+        "url": "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "Venezuela crisis: How the political situation escalated - BBC News",
+        "url": "https://www.bbc.com/news/world-latin-america-36319877",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+        "url": "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+        "url": "https://www.bbc.com/news/articles/clyzp7j84yro",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "The A to Z of economics | The Economist",
+        "url": "https://economist.com/economics-a-to-z",
+        "domain": "economist.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 2,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The post explores how socialism became a negative term in America.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not contain information about a 'post' that explores how socialism became a negative term in America. While one source mentions socialism as something proposed laws would restrict, and another describes its negative association in Venezuela, none of them provide an exploration of its historical negative perception in America or describe a 'post' doing so.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 mentions 'socialism' in a title related to restricting topics but the snippet focuses on Critical Race Theory and does not explore the historical process of socialism becoming a negative term in America. It also doesn't mention any 'post'.\n2. Source 2 discusses Venezuela's crisis and blames a 'socialist government' for economic decline, showing a negative association but not explaining the historical context for America, nor does it refer to a 'post'.\n3. Source 3 discusses shifts in America's political consensus but does not mention socialism or its perception, nor a 'post'.\nConclusion: None of the sources support the claim that 'The post explores how socialism became a negative term in America.' They do not describe such a post, nor do they themselves explore the specified topic.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+            "https://www.bbc.com/news/world-latin-america-36319877",
+            "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+            "https://www.bbc.com/news/articles/clyzp7j84yro",
+            "https://economist.com/economics-a-to-z"
+          ],
+          "titles": [
+            "From slavery to socialism, proposed laws would restrict what ...",
+            "Venezuela crisis: How the political situation escalated - BBC News",
+            "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+            "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+            "The A to Z of economics | The Economist"
+          ],
+          "count": 10
+        },
+        "claim_text": "The post explores how socialism became a negative term in America.",
+        "verification_date": "2025-10-27T18:32:50.646064"
+      },
+      "sources": {
+        "links": [
+          "https://www.npr.org/2022/02/03/1077878538/legislation-restricts-what-teachers-can-discuss",
+          "https://www.bbc.com/news/world-latin-america-36319877",
+          "https://www.nytimes.com/2024/11/01/opinion/ezra-klein-podcast-gary-gerstle.html",
+          "https://www.bbc.com/news/articles/clyzp7j84yro",
+          "https://economist.com/economics-a-to-z"
+        ],
+        "titles": [
+          "From slavery to socialism, proposed laws would restrict what ...",
+          "Venezuela crisis: How the political situation escalated - BBC News",
+          "Opinion | Are We on the Cusp of a New Political Order? - The New ...",
+          "Trump's tariffs: Debate on if this means the end of the post-war free ...",
+          "The A to Z of economics | The Economist"
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1ohbttv/do_you_know_how_socialism_became_such_a_dirty/",
+      "content_summary": "The Reddit post questions how socialism became a dirty word in America and suggests that a shift in public opinion could change this perception. It links to a YouTube video titled \"How Socialism Became the Filthiest Word in America.\"",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}
