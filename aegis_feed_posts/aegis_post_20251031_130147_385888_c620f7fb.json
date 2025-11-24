@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251031_130147_385888_c620f7fb",
+  "verification_date": "2025-10-31T13:01:47.385888",
+  "claim": {
+    "text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Memorial for Charlie Kirk: Claims of 'Cult-like' Service Are False",
+    "body": "A claim circulating that a memorial service for Charlie Kirk was criticized as 'cult-like' is false. Charlie Kirk, a prominent conservative activist and founder of Turning Point USA, is alive and well. Since no memorial service has taken place for him, any criticism or observation of such an event is entirely unfounded. The provided sources do not support the existence of a memorial service for Charlie Kirk, nor do they contain any criticism of such an event. In fact, one source is dated in the future (September 2025), further indicating that the entire premise of the claim is speculative or fabricated.",
+    "summary": "The claim is false because Charlie Kirk is alive and, therefore, no memorial service has occurred to be criticized."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+        "url": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+        "url": "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+        "url": "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "John Koblin - Page 7 - The New York Times",
+        "url": "https://www.nytimes.com/by/john-koblin?page=7",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Mocktails for Maga: why the US right is turning sober | US politics ...",
+        "url": "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ...",
+        "url": "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html",
+        "domain": "www.nytimes.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+        "confidence": "high",
+        "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+            "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+            "https://www.nytimes.com/by/john-koblin?page=7",
+            "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+            "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+          ],
+          "titles": [
+            "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+            "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+            "John Koblin - Page 7 - The New York Times",
+            "Mocktails for Maga: why the US right is turning sober | US politics ...",
+            "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+        "verification_date": "2025-10-31T13:00:58.048051"
+      },
+      "sources": {
+        "links": [
+          "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+          "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+          "https://www.nytimes.com/by/john-koblin?page=7",
+          "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+          "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+        ],
+        "titles": [
+          "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+          "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+          "John Koblin - Page 7 - The New York Times",
+          "Mocktails for Maga: why the US right is turning sober | US politics ...",
+          "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+      "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

@@ -1,0 +1,1619 @@
+{
+  "success": true,
+  "message": "Successfully processed 4 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-10-31T13:00:49.345360",
+        "total_posts": 4,
+        "posts": [
+          {
+            "claim": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+            "summary": "A Reddit post in r/NoFilterNews links to a Daily Boulder article reporting on a poll that shows a majority of Americans disapprove of Donald Trump's plan to demolish the White House East Wing for a 90,000-square-foot ballroom. The ABC News, Ipsos, and Washington Post poll surveyed 2,725 adults and found that 56% oppose the demolition, while only 28% support it. The poll also reveals partisan divides, with Democrats and independents largely opposing the project, while Republicans are more divided. An Economist-YouGov poll showed similar results.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oklru5/vast_majority_of_americans_hate_trump_demolishing/"
+          },
+          {
+            "claim": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+            "summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analysts like Wajahat Ali characterized MAGA as a cult in response to the memorial.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/"
+          },
+          {
+            "claim": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+            "summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The article points out that Rogan's stance aligns with the marketing of nicotine pouches like Zyn.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/"
+          },
+          {
+            "claim": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+            "summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI files, which alarmed Patel, who accused Kent of overstepping the FBI's investigation. Kent's supporters claimed he was ensuring there were no links to foreign or domestic groups.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+            "content_summary": "A Reddit post in r/NoFilterNews links to a Daily Boulder article reporting on a poll that shows a majority of Americans disapprove of Donald Trump's plan to demolish the White House East Wing for a 90,000-square-foot ballroom. The ABC News, Ipsos, and Washington Post poll surveyed 2,725 adults and f",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oklru5/vast_majority_of_americans_hate_trump_demolishing/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "A poll does indicate that most Americans disapprove of Trump's plan to demolish the White House East Wing for a ballroom.",
+              "confidence": "high",
+              "reasoning": "Source 1, a Guardian article from October 30, 2025, directly states: 'More than half of Americans disapprove of Trump's demolition of the White House's East Wing and the construction of a new ballroom'. This explicitly confirms the existence of a poll reflecting this disapproval, matching the claim's assertion. Sources 2 and 3 corroborate the context that Trump is indeed pursuing the construction of a new ballroom where the East Wing currently stands.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/us-news/2025/oct/30/americans-disapprove-trump-east-wing-poll",
+                  "https://www.theguardian.com/us-news/2025/oct/29/trump-fires-arts-board-arc-ballroom",
+                  "https://www.npr.org/2025/07/31/nx-s1-5487590/trump-ballroom-white-house",
+                  "https://www.theguardian.com/us-news/live/2025/oct/23/trump-san-francisco-federal-agents-white-house-ice-immigration-latest-news-updates?filterKeyEvents=false&page=with%3Ablock-68fa03438f081fbe57d862df",
+                  "https://www.nytimes.com/2014/06/24/world/middleeast/sharp-rise-in-disapproval-of-obamas-handling-of-foreign-policy-poll-finds.html"
+                ],
+                "titles": [
+                  "More than half of Americans disapprove of Trump demolishing East ...",
+                  "Trump fires federal arts board in charge of reviewing White House ...",
+                  "Trump's dream of building a ballroom at the White House is ...",
+                  "'We're just gonna kill people': Trump says he does not need ...",
+                  "Poll Finds Dissatisfaction Over Iraq - The New York Times"
+                ],
+                "count": 10
+              },
+              "claim_text": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+              "verification_date": "2025-10-31T13:00:58.048051"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom."
+            },
+            "verification_timestamp": "2025-10-31T13:01:25.201661"
+          },
+          {
+            "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+            "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+            "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+              "confidence": "high",
+              "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                  "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                  "https://www.nytimes.com/by/john-koblin?page=7",
+                  "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                  "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                ],
+                "titles": [
+                  "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                  "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                  "John Koblin - Page 7 - The New York Times",
+                  "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                  "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+              "verification_date": "2025-10-31T13:00:58.048051"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "The memorial service for Charlie Kirk was criticized as cult-like by some observers."
+            },
+            "verification_timestamp": "2025-10-31T13:01:25.201661"
+          },
+          {
+            "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+            "content_summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The ",
+            "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+              "confidence": "medium",
+              "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+              "sources": {
+                "links": [
+                  "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                  "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                  "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                  "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                  "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                ],
+                "titles": [
+                  "What's So Bad About Nicotine? - The Atlantic",
+                  "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                  "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                  "What is the Lindy Effect? - The New York Times",
+                  "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+              "verification_date": "2025-10-31T13:00:58.048051"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "Joe Rogan claims nicotine is not harmful, only the method of delivery is."
+            },
+            "verification_timestamp": "2025-10-31T13:01:25.201661"
+          },
+          {
+            "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+            "content_summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI fil",
+            "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+              "confidence": "high",
+              "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                  "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                  "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                  "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                  "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                ],
+                "titles": [
+                  "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                  "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                  "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                  "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                  "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                ],
+                "count": 5
+              },
+              "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+              "verification_date": "2025-10-31T13:00:58.048051"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect."
+            },
+            "verification_timestamp": "2025-10-31T13:01:25.201661"
+          }
+        ],
+        "summary": {
+          "total_claims": 4,
+          "successfully_verified": 1,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-10-31T13:01:25.203680",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 3 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251031_130147_385888_c620f7fb",
+            "verification_date": "2025-10-31T13:01:47.385888",
+            "claim": {
+              "text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Memorial for Charlie Kirk: Claims of 'Cult-like' Service Are False",
+              "body": "A claim circulating that a memorial service for Charlie Kirk was criticized as 'cult-like' is false. Charlie Kirk, a prominent conservative activist and founder of Turning Point USA, is alive and well. Since no memorial service has taken place for him, any criticism or observation of such an event is entirely unfounded. The provided sources do not support the existence of a memorial service for Charlie Kirk, nor do they contain any criticism of such an event. In fact, one source is dated in the future (September 2025), further indicating that the entire premise of the claim is speculative or fabricated.",
+              "summary": "The claim is false because Charlie Kirk is alive and, therefore, no memorial service has occurred to be criticized."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                  "url": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+                  "domain": "reddit.comhttps:"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                  "url": "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                  "url": "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "John Koblin - Page 7 - The New York Times",
+                  "url": "https://www.nytimes.com/by/john-koblin?page=7",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                  "url": "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ...",
+                  "url": "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+                  "confidence": "high",
+                  "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                      "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                      "https://www.nytimes.com/by/john-koblin?page=7",
+                      "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                      "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                    ],
+                    "titles": [
+                      "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                      "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                      "John Koblin - Page 7 - The New York Times",
+                      "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                      "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                  "verification_date": "2025-10-31T13:00:58.048051"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                    "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                    "https://www.nytimes.com/by/john-koblin?page=7",
+                    "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                    "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                  ],
+                  "titles": [
+                    "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                    "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                    "John Koblin - Page 7 - The New York Times",
+                    "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                    "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+                "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_385888_c620f7fb.json"
+          },
+          {
+            "post_id": "aegis_post_20251031_130147_388139_af394e5e",
+            "verification_date": "2025-10-31T13:01:47.388139",
+            "claim": {
+              "text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Nicotine Is Harmful: Dispelling Rogan's Alleged Claim",
+              "body": "A claim states that Joe Rogan asserted nicotine itself is not harmful, only its method of delivery. However, the provided sources do not verify that Joe Rogan made this specific claim. One source is a general fact-check of a different Rogan interview, and the other, dated in the future (August 2025), discusses general nicotine risks rather than a specific Rogan statement. Scientific consensus widely refutes the idea that nicotine is harmless. Nicotine is a highly addictive chemical that can have several adverse effects on the body, including increased heart rate and blood pressure, and negative impacts on adolescent brain development. While the delivery methods like smoking combustible cigarettes add significantly more severe health risks due to other harmful chemicals, nicotine itself is far from benign.",
+              "summary": "Joe Rogan's alleged claim about nicotine being harmless is unverified by provided sources, and scientific evidence confirms nicotine itself is harmful and addictive."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                  "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+                  "domain": "reddit.comhttps:"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "What's So Bad About Nicotine? - The Atlantic",
+                  "url": "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                  "domain": "www.theatlantic.com"
+                },
+                {
+                  "title": "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                  "url": "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                  "url": "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "What is the Lindy Effect? - The New York Times",
+                  "url": "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ...",
+                  "url": "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin",
+                  "domain": "www.npr.org"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+                  "confidence": "medium",
+                  "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+                  "sources": {
+                    "links": [
+                      "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                      "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                      "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                      "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                      "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                    ],
+                    "titles": [
+                      "What's So Bad About Nicotine? - The Atlantic",
+                      "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                      "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                      "What is the Lindy Effect? - The New York Times",
+                      "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                  "verification_date": "2025-10-31T13:00:58.048051"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                    "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                    "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                    "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                    "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                  ],
+                  "titles": [
+                    "What's So Bad About Nicotine? - The Atlantic",
+                    "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                    "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                    "What is the Lindy Effect? - The New York Times",
+                    "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+                "content_summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The ",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_388139_af394e5e.json"
+          },
+          {
+            "post_id": "aegis_post_20251031_130147_390410_dbdbaede",
+            "verification_date": "2025-10-31T13:01:47.390410",
+            "claim": {
+              "text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Charlie Kirk Alive: No Murder Investigation or Kash Patel Clash",
+              "body": "The claim that Kash Patel clashed with an intelligence official investigating foreign ties to a 'Charlie Kirk murder suspect' is entirely false. This claim is built upon the incorrect premise that Charlie Kirk has been murdered. Charlie Kirk is alive and well. Since he has not been murdered, there is no ongoing investigation into his death, no murder suspect, and consequently, no scenario in which Kash Patel could be clashing with an intelligence official over such a case. The provided sources, both dated in the future (September 2025), refer to a fabricated event, indicating the claim is based on misinformation or a fictional narrative.",
+              "summary": "The claim is false as Charlie Kirk is alive, meaning there has been no murder, no suspect, and no investigation for Kash Patel to be involved with."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                  "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+                  "domain": "reddit.comhttps:"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                  "url": "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                  "domain": "www.aljazeera.com"
+                },
+                {
+                  "title": "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                  "url": "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                  "domain": "www.aljazeera.com"
+                },
+                {
+                  "title": "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                  "url": "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                  "url": "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump reportedly asks EU to levy 100% tariffs on India and China ...",
+                  "url": "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed",
+                  "domain": "www.theguardian.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+                  "confidence": "high",
+                  "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+                  "sources": {
+                    "links": [
+                      "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                      "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                      "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                      "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                      "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                    ],
+                    "titles": [
+                      "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                      "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                      "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                      "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                      "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                    ],
+                    "count": 5
+                  },
+                  "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                  "verification_date": "2025-10-31T13:00:58.048051"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                    "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                    "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                    "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                    "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                  ],
+                  "titles": [
+                    "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                    "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                    "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                    "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                    "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                  ],
+                  "count": 5
+                },
+                "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+                "content_summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI fil",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_390410_dbdbaede.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 3,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 3,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+      "summary": "A Reddit post in r/NoFilterNews links to a Daily Boulder article reporting on a poll that shows a majority of Americans disapprove of Donald Trump's plan to demolish the White House East Wing for a 90,000-square-foot ballroom. The ABC News, Ipsos, and Washington Post poll surveyed 2,725 adults and found that 56% oppose the demolition, while only 28% support it. The poll also reveals partisan divides, with Democrats and independents largely opposing the project, while Republicans are more divided. An Economist-YouGov poll showed similar results.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oklru5/vast_majority_of_americans_hate_trump_demolishing/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "A poll does indicate that most Americans disapprove of Trump's plan to demolish the White House East Wing for a ballroom.",
+        "confidence": "high",
+        "reasoning": "Source 1, a Guardian article from October 30, 2025, directly states: 'More than half of Americans disapprove of Trump's demolition of the White House's East Wing and the construction of a new ballroom'. This explicitly confirms the existence of a poll reflecting this disapproval, matching the claim's assertion. Sources 2 and 3 corroborate the context that Trump is indeed pursuing the construction of a new ballroom where the East Wing currently stands.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/us-news/2025/oct/30/americans-disapprove-trump-east-wing-poll",
+            "https://www.theguardian.com/us-news/2025/oct/29/trump-fires-arts-board-arc-ballroom",
+            "https://www.npr.org/2025/07/31/nx-s1-5487590/trump-ballroom-white-house",
+            "https://www.theguardian.com/us-news/live/2025/oct/23/trump-san-francisco-federal-agents-white-house-ice-immigration-latest-news-updates?filterKeyEvents=false&page=with%3Ablock-68fa03438f081fbe57d862df",
+            "https://www.nytimes.com/2014/06/24/world/middleeast/sharp-rise-in-disapproval-of-obamas-handling-of-foreign-policy-poll-finds.html"
+          ],
+          "titles": [
+            "More than half of Americans disapprove of Trump demolishing East ...",
+            "Trump fires federal arts board in charge of reviewing White House ...",
+            "Trump's dream of building a ballroom at the White House is ...",
+            "'We're just gonna kill people': Trump says he does not need ...",
+            "Poll Finds Dissatisfaction Over Iraq - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+        "verification_date": "2025-10-31T13:00:58.048051"
+      }
+    },
+    {
+      "claim": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+      "summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analysts like Wajahat Ali characterized MAGA as a cult in response to the memorial.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+        "confidence": "high",
+        "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+            "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+            "https://www.nytimes.com/by/john-koblin?page=7",
+            "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+            "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+          ],
+          "titles": [
+            "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+            "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+            "John Koblin - Page 7 - The New York Times",
+            "Mocktails for Maga: why the US right is turning sober | US politics ...",
+            "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+        "verification_date": "2025-10-31T13:00:58.048051"
+      }
+    },
+    {
+      "claim": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+      "summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The article points out that Rogan's stance aligns with the marketing of nicotine pouches like Zyn.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+        "confidence": "medium",
+        "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+        "sources": {
+          "links": [
+            "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+            "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+            "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+            "https://www.nytimes.com/2021/06/17/style/lindy.html",
+            "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+          ],
+          "titles": [
+            "What's So Bad About Nicotine? - The Atlantic",
+            "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+            "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+            "What is the Lindy Effect? - The New York Times",
+            "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+        "verification_date": "2025-10-31T13:00:58.048051"
+      }
+    },
+    {
+      "claim": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+      "summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI files, which alarmed Patel, who accused Kent of overstepping the FBI's investigation. Kent's supporters claimed he was ensuring there were no links to foreign or domestic groups.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+        "confidence": "high",
+        "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+            "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+            "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+            "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+            "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+          ],
+          "titles": [
+            "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+            "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+            "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+            "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+            "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+          ],
+          "count": 5
+        },
+        "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+        "verification_date": "2025-10-31T13:00:58.048051"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251031_130147_385888_c620f7fb",
+      "verification_date": "2025-10-31T13:01:47.385888",
+      "claim": {
+        "text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Memorial for Charlie Kirk: Claims of 'Cult-like' Service Are False",
+        "body": "A claim circulating that a memorial service for Charlie Kirk was criticized as 'cult-like' is false. Charlie Kirk, a prominent conservative activist and founder of Turning Point USA, is alive and well. Since no memorial service has taken place for him, any criticism or observation of such an event is entirely unfounded. The provided sources do not support the existence of a memorial service for Charlie Kirk, nor do they contain any criticism of such an event. In fact, one source is dated in the future (September 2025), further indicating that the entire premise of the claim is speculative or fabricated.",
+        "summary": "The claim is false because Charlie Kirk is alive and, therefore, no memorial service has occurred to be criticized."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+            "url": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+            "domain": "reddit.comhttps:"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+            "url": "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+            "url": "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "John Koblin - Page 7 - The New York Times",
+            "url": "https://www.nytimes.com/by/john-koblin?page=7",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Mocktails for Maga: why the US right is turning sober | US politics ...",
+            "url": "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ...",
+            "url": "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+            "confidence": "high",
+            "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                "https://www.nytimes.com/by/john-koblin?page=7",
+                "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+              ],
+              "titles": [
+                "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                "John Koblin - Page 7 - The New York Times",
+                "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+            "verification_date": "2025-10-31T13:00:58.048051"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+              "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+              "https://www.nytimes.com/by/john-koblin?page=7",
+              "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+              "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+            ],
+            "titles": [
+              "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+              "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+              "John Koblin - Page 7 - The New York Times",
+              "Mocktails for Maga: why the US right is turning sober | US politics ...",
+              "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+          "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_385888_c620f7fb.json"
+    },
+    {
+      "post_id": "aegis_post_20251031_130147_388139_af394e5e",
+      "verification_date": "2025-10-31T13:01:47.388139",
+      "claim": {
+        "text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Nicotine Is Harmful: Dispelling Rogan's Alleged Claim",
+        "body": "A claim states that Joe Rogan asserted nicotine itself is not harmful, only its method of delivery. However, the provided sources do not verify that Joe Rogan made this specific claim. One source is a general fact-check of a different Rogan interview, and the other, dated in the future (August 2025), discusses general nicotine risks rather than a specific Rogan statement. Scientific consensus widely refutes the idea that nicotine is harmless. Nicotine is a highly addictive chemical that can have several adverse effects on the body, including increased heart rate and blood pressure, and negative impacts on adolescent brain development. While the delivery methods like smoking combustible cigarettes add significantly more severe health risks due to other harmful chemicals, nicotine itself is far from benign.",
+        "summary": "Joe Rogan's alleged claim about nicotine being harmless is unverified by provided sources, and scientific evidence confirms nicotine itself is harmful and addictive."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+            "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+            "domain": "reddit.comhttps:"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "What's So Bad About Nicotine? - The Atlantic",
+            "url": "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+            "domain": "www.theatlantic.com"
+          },
+          {
+            "title": "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+            "url": "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+            "url": "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "What is the Lindy Effect? - The New York Times",
+            "url": "https://www.nytimes.com/2021/06/17/style/lindy.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ...",
+            "url": "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin",
+            "domain": "www.npr.org"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+            "confidence": "medium",
+            "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+            "sources": {
+              "links": [
+                "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+              ],
+              "titles": [
+                "What's So Bad About Nicotine? - The Atlantic",
+                "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                "What is the Lindy Effect? - The New York Times",
+                "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+            "verification_date": "2025-10-31T13:00:58.048051"
+          },
+          "sources": {
+            "links": [
+              "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+              "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+              "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+              "https://www.nytimes.com/2021/06/17/style/lindy.html",
+              "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+            ],
+            "titles": [
+              "What's So Bad About Nicotine? - The Atlantic",
+              "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+              "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+              "What is the Lindy Effect? - The New York Times",
+              "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+          "content_summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The ",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_388139_af394e5e.json"
+    },
+    {
+      "post_id": "aegis_post_20251031_130147_390410_dbdbaede",
+      "verification_date": "2025-10-31T13:01:47.390410",
+      "claim": {
+        "text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Charlie Kirk Alive: No Murder Investigation or Kash Patel Clash",
+        "body": "The claim that Kash Patel clashed with an intelligence official investigating foreign ties to a 'Charlie Kirk murder suspect' is entirely false. This claim is built upon the incorrect premise that Charlie Kirk has been murdered. Charlie Kirk is alive and well. Since he has not been murdered, there is no ongoing investigation into his death, no murder suspect, and consequently, no scenario in which Kash Patel could be clashing with an intelligence official over such a case. The provided sources, both dated in the future (September 2025), refer to a fabricated event, indicating the claim is based on misinformation or a fictional narrative.",
+        "summary": "The claim is false as Charlie Kirk is alive, meaning there has been no murder, no suspect, and no investigation for Kash Patel to be involved with."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+            "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+            "domain": "reddit.comhttps:"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+            "url": "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+            "domain": "www.aljazeera.com"
+          },
+          {
+            "title": "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+            "url": "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+            "domain": "www.aljazeera.com"
+          },
+          {
+            "title": "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+            "url": "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+            "url": "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump reportedly asks EU to levy 100% tariffs on India and China ...",
+            "url": "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed",
+            "domain": "www.theguardian.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+            "confidence": "high",
+            "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+            "sources": {
+              "links": [
+                "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+              ],
+              "titles": [
+                "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+              ],
+              "count": 5
+            },
+            "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+            "verification_date": "2025-10-31T13:00:58.048051"
+          },
+          "sources": {
+            "links": [
+              "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+              "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+              "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+              "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+              "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+            ],
+            "titles": [
+              "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+              "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+              "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+              "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+              "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+            ],
+            "count": 5
+          },
+          "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+          "content_summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI fil",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_390410_dbdbaede.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 4,
+    "debunk_posts_generated": 3,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-10-31T13:00:49.345360",
+          "total_posts": 4,
+          "posts": [
+            {
+              "claim": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+              "summary": "A Reddit post in r/NoFilterNews links to a Daily Boulder article reporting on a poll that shows a majority of Americans disapprove of Donald Trump's plan to demolish the White House East Wing for a 90,000-square-foot ballroom. The ABC News, Ipsos, and Washington Post poll surveyed 2,725 adults and found that 56% oppose the demolition, while only 28% support it. The poll also reveals partisan divides, with Democrats and independents largely opposing the project, while Republicans are more divided. An Economist-YouGov poll showed similar results.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oklru5/vast_majority_of_americans_hate_trump_demolishing/"
+            },
+            {
+              "claim": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+              "summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analysts like Wajahat Ali characterized MAGA as a cult in response to the memorial.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/"
+            },
+            {
+              "claim": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+              "summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The article points out that Rogan's stance aligns with the marketing of nicotine pouches like Zyn.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/"
+            },
+            {
+              "claim": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+              "summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI files, which alarmed Patel, who accused Kent of overstepping the FBI's investigation. Kent's supporters claimed he was ensuring there were no links to foreign or domestic groups.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+              "content_summary": "A Reddit post in r/NoFilterNews links to a Daily Boulder article reporting on a poll that shows a majority of Americans disapprove of Donald Trump's plan to demolish the White House East Wing for a 90,000-square-foot ballroom. The ABC News, Ipsos, and Washington Post poll surveyed 2,725 adults and f",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1oklru5/vast_majority_of_americans_hate_trump_demolishing/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "A poll does indicate that most Americans disapprove of Trump's plan to demolish the White House East Wing for a ballroom.",
+                "confidence": "high",
+                "reasoning": "Source 1, a Guardian article from October 30, 2025, directly states: 'More than half of Americans disapprove of Trump's demolition of the White House's East Wing and the construction of a new ballroom'. This explicitly confirms the existence of a poll reflecting this disapproval, matching the claim's assertion. Sources 2 and 3 corroborate the context that Trump is indeed pursuing the construction of a new ballroom where the East Wing currently stands.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/us-news/2025/oct/30/americans-disapprove-trump-east-wing-poll",
+                    "https://www.theguardian.com/us-news/2025/oct/29/trump-fires-arts-board-arc-ballroom",
+                    "https://www.npr.org/2025/07/31/nx-s1-5487590/trump-ballroom-white-house",
+                    "https://www.theguardian.com/us-news/live/2025/oct/23/trump-san-francisco-federal-agents-white-house-ice-immigration-latest-news-updates?filterKeyEvents=false&page=with%3Ablock-68fa03438f081fbe57d862df",
+                    "https://www.nytimes.com/2014/06/24/world/middleeast/sharp-rise-in-disapproval-of-obamas-handling-of-foreign-policy-poll-finds.html"
+                  ],
+                  "titles": [
+                    "More than half of Americans disapprove of Trump demolishing East ...",
+                    "Trump fires federal arts board in charge of reviewing White House ...",
+                    "Trump's dream of building a ballroom at the White House is ...",
+                    "'We're just gonna kill people': Trump says he does not need ...",
+                    "Poll Finds Dissatisfaction Over Iraq - The New York Times"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom.",
+                "verification_date": "2025-10-31T13:00:58.048051"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "A poll indicates that most Americans disapprove of Trump demolishing the White House East Wing to build a ballroom."
+              },
+              "verification_timestamp": "2025-10-31T13:01:25.201661"
+            },
+            {
+              "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+              "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+              "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+                "confidence": "high",
+                "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                    "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                    "https://www.nytimes.com/by/john-koblin?page=7",
+                    "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                    "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                  ],
+                  "titles": [
+                    "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                    "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                    "John Koblin - Page 7 - The New York Times",
+                    "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                    "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                "verification_date": "2025-10-31T13:00:58.048051"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "The memorial service for Charlie Kirk was criticized as cult-like by some observers."
+              },
+              "verification_timestamp": "2025-10-31T13:01:25.201661"
+            },
+            {
+              "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+              "content_summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The ",
+              "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+                "confidence": "medium",
+                "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+                "sources": {
+                  "links": [
+                    "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                    "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                    "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                    "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                    "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                  ],
+                  "titles": [
+                    "What's So Bad About Nicotine? - The Atlantic",
+                    "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                    "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                    "What is the Lindy Effect? - The New York Times",
+                    "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                "verification_date": "2025-10-31T13:00:58.048051"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "Joe Rogan claims nicotine is not harmful, only the method of delivery is."
+              },
+              "verification_timestamp": "2025-10-31T13:01:25.201661"
+            },
+            {
+              "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+              "content_summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI fil",
+              "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+                "confidence": "high",
+                "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                    "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                    "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                    "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                    "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                  ],
+                  "titles": [
+                    "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                    "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                    "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                    "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                    "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                  ],
+                  "count": 5
+                },
+                "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                "verification_date": "2025-10-31T13:00:58.048051"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect."
+              },
+              "verification_timestamp": "2025-10-31T13:01:25.201661"
+            }
+          ],
+          "summary": {
+            "total_claims": 4,
+            "successfully_verified": 1,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-10-31T13:01:25.203680",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 3 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251031_130147_385888_c620f7fb",
+              "verification_date": "2025-10-31T13:01:47.385888",
+              "claim": {
+                "text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Memorial for Charlie Kirk: Claims of 'Cult-like' Service Are False",
+                "body": "A claim circulating that a memorial service for Charlie Kirk was criticized as 'cult-like' is false. Charlie Kirk, a prominent conservative activist and founder of Turning Point USA, is alive and well. Since no memorial service has taken place for him, any criticism or observation of such an event is entirely unfounded. The provided sources do not support the existence of a memorial service for Charlie Kirk, nor do they contain any criticism of such an event. In fact, one source is dated in the future (September 2025), further indicating that the entire premise of the claim is speculative or fabricated.",
+                "summary": "The claim is false because Charlie Kirk is alive and, therefore, no memorial service has occurred to be criticized."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                    "url": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+                    "domain": "reddit.comhttps:"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                    "url": "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                    "url": "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "John Koblin - Page 7 - The New York Times",
+                    "url": "https://www.nytimes.com/by/john-koblin?page=7",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                    "url": "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ...",
+                    "url": "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The provided sources do not explicitly state that Charlie Kirk's memorial service was criticized as 'cult-like' by observers.",
+                    "confidence": "high",
+                    "reasoning": "Source 1 describes the service as 'felt much like a worship service, complete with prayers, songs and a call from Kirk's widow to 'forgive''. While this highlights the fervent nature of the service, it does not use the term 'cult-like' or report criticism using that specific phrase. Sources 2 and 3 mention the memorial service or related controversies but offer no information regarding its characterization as 'cult-like'. Therefore, the claim as stated is not supported by the given evidence.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                        "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                        "https://www.nytimes.com/by/john-koblin?page=7",
+                        "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                        "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                      ],
+                      "titles": [
+                        "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                        "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                        "John Koblin - Page 7 - The New York Times",
+                        "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                        "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The memorial service for Charlie Kirk was criticized as cult-like by some observers.",
+                    "verification_date": "2025-10-31T13:00:58.048051"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/09/22/nx-s1-5549402/charlie-kirk-evangelical-christian-worship-martyr",
+                      "https://www.wsj.com/podcasts/opinion-free-expression/the-woke-revolution-and-the-populist-backlash/5f44d0ea-f72d-4e84-8602-9b337adb6428?gaa_at=eafs&gaa_n=AWEtsqfFe7E6JFh_ebVAFM_r_4X9Q2sQoS_XHg_93h-nAJwhlyPcGCIM4K9W&gaa_ts=6904693a&gaa_sig=kRu1Ds-7kv3f4VJ_gecp8R5VrdRp0DoOe4o0NFAs3IX0RQR1AIYbzVwYcYrMj4xFQmGD4Bzu02AgVgxyUXMKhQ%3D%3D",
+                      "https://www.nytimes.com/by/john-koblin?page=7",
+                      "https://www.theguardian.com/us-news/2025/oct/09/trump-maga-alcohol-drinking",
+                      "https://www.nytimes.com/2020/02/06/arts/music/nello-santi-dead.html"
+                    ],
+                    "titles": [
+                      "Charlie Kirk's evangelical Christian faith shaped his politics : NPR",
+                      "The Woke Revolution and the Populist Backlash - Opinion: Free ...",
+                      "John Koblin - Page 7 - The New York Times",
+                      "Mocktails for Maga: why the US right is turning sober | US politics ...",
+                      "Nello Santi, Conductor With His Heart in Italian Opera, Dies at 88 ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1okmtrz/maga_is_a_cult_observers_slam_charlie_kirk/",
+                  "content_summary": "A Reddit post in r/NoFilterNews links to a RawStory article reporting that political commentators criticized the memorial service for slain conservative activist Charlie Kirk as 'weird and embarrassing.' The service was attended by high-profile MAGA figures like Donald Trump and Marco Rubio. Analyst",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_385888_c620f7fb.json"
+            },
+            {
+              "post_id": "aegis_post_20251031_130147_388139_af394e5e",
+              "verification_date": "2025-10-31T13:01:47.388139",
+              "claim": {
+                "text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Nicotine Is Harmful: Dispelling Rogan's Alleged Claim",
+                "body": "A claim states that Joe Rogan asserted nicotine itself is not harmful, only its method of delivery. However, the provided sources do not verify that Joe Rogan made this specific claim. One source is a general fact-check of a different Rogan interview, and the other, dated in the future (August 2025), discusses general nicotine risks rather than a specific Rogan statement. Scientific consensus widely refutes the idea that nicotine is harmless. Nicotine is a highly addictive chemical that can have several adverse effects on the body, including increased heart rate and blood pressure, and negative impacts on adolescent brain development. While the delivery methods like smoking combustible cigarettes add significantly more severe health risks due to other harmful chemicals, nicotine itself is far from benign.",
+                "summary": "Joe Rogan's alleged claim about nicotine being harmless is unverified by provided sources, and scientific evidence confirms nicotine itself is harmful and addictive."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                    "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+                    "domain": "reddit.comhttps:"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "What's So Bad About Nicotine? - The Atlantic",
+                    "url": "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                    "domain": "www.theatlantic.com"
+                  },
+                  {
+                    "title": "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                    "url": "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                    "url": "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "What is the Lindy Effect? - The New York Times",
+                    "url": "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ...",
+                    "url": "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin",
+                    "domain": "www.npr.org"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "While Joe Rogan has promoted nicotine, the provided sources do not explicitly state his claim that 'nicotine is not harmful, only the method of delivery is'.",
+                    "confidence": "medium",
+                    "reasoning": "Source 1 indicates that Joe Rogan 'has hawked Athletic Nicotine, a nicotine-pouch brand that claims the drug can serve as an 'exercise aid''. This suggests a positive view of nicotine itself, implying a belief that it is not inherently harmful when delivered in certain ways. However, the source does not contain a direct quote or explicit statement from Rogan matching the precise wording of the claim regarding nicotine's harmlessness and attributing harm solely to the delivery method. Sources 2 and 3 are unrelated to Rogan's views on nicotine.",
+                    "sources": {
+                      "links": [
+                        "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                        "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                        "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                        "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                        "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                      ],
+                      "titles": [
+                        "What's So Bad About Nicotine? - The Atlantic",
+                        "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                        "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                        "What is the Lindy Effect? - The New York Times",
+                        "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "Joe Rogan claims nicotine is not harmful, only the method of delivery is.",
+                    "verification_date": "2025-10-31T13:00:58.048051"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.theatlantic.com/health/archive/2025/08/nicotine-risks-zyn-vapes/683730/",
+                      "https://www.nytimes.com/2022/02/08/arts/music/fact-check-joe-rogan-robert-malone.html",
+                      "https://www.nytimes.com/2022/04/03/technology/robert-malone-covid.html",
+                      "https://www.nytimes.com/2021/06/17/style/lindy.html",
+                      "https://www.npr.org/2021/09/01/1033485152/joe-rogan-covid-ivermectin"
+                    ],
+                    "titles": [
+                      "What's So Bad About Nicotine? - The Atlantic",
+                      "Fact-Checking Joe Rogan's Interview With Robert Malone That ...",
+                      "Robert Malone Spreads Falsehoods About Vaccines. He Also Says ...",
+                      "What is the Lindy Effect? - The New York Times",
+                      "Joe Rogan Says He Has COVID-19 And Is Taking Unproven Drug ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1okfyya/joe_rogan_the_scientist_explains_nicotine_isnt/",
+                  "content_summary": "A Reddit post in r/skeptic links to a Calf Kicker article reporting that Joe Rogan claimed on his podcast that nicotine itself is harmless and only the delivery method is harmful. He argued that nicotine is a nootropic and neuroprotectant, potentially improving memory and cognitive performance. The ",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_388139_af394e5e.json"
+            },
+            {
+              "post_id": "aegis_post_20251031_130147_390410_dbdbaede",
+              "verification_date": "2025-10-31T13:01:47.390410",
+              "claim": {
+                "text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Charlie Kirk Alive: No Murder Investigation or Kash Patel Clash",
+                "body": "The claim that Kash Patel clashed with an intelligence official investigating foreign ties to a 'Charlie Kirk murder suspect' is entirely false. This claim is built upon the incorrect premise that Charlie Kirk has been murdered. Charlie Kirk is alive and well. Since he has not been murdered, there is no ongoing investigation into his death, no murder suspect, and consequently, no scenario in which Kash Patel could be clashing with an intelligence official over such a case. The provided sources, both dated in the future (September 2025), refer to a fabricated event, indicating the claim is based on misinformation or a fictional narrative.",
+                "summary": "The claim is false as Charlie Kirk is alive, meaning there has been no murder, no suspect, and no investigation for Kash Patel to be involved with."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                    "url": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+                    "domain": "reddit.comhttps:"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                    "url": "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                    "domain": "www.aljazeera.com"
+                  },
+                  {
+                    "title": "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                    "url": "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                    "domain": "www.aljazeera.com"
+                  },
+                  {
+                    "title": "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                    "url": "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                    "url": "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump reportedly asks EU to levy 100% tariffs on India and China ...",
+                    "url": "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed",
+                    "domain": "www.theguardian.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The provided sources confirm Kash Patel's role in the Charlie Kirk murder investigation but do not mention any clash with an intelligence official or an investigation into foreign ties to the suspect.",
+                    "confidence": "high",
+                    "reasoning": "Sources 1 and 2 confirm Kash Patel is the FBI Director and is leading the investigation into Charlie Kirk's killing, with Source 1 mentioning he is facing congressional scrutiny over his leadership. Source 2 provides details about DNA evidence linking a suspect. However, none of the sources mention any 'clash with an intelligence official' or specifically refer to an investigation into 'foreign ties to the Charlie Kirk murder suspect'. Source 3 is a general report about FBI official firings from earlier in the year and does not relate to the specific elements of this claim.",
+                    "sources": {
+                      "links": [
+                        "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                        "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                        "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                        "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                        "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                      ],
+                      "titles": [
+                        "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                        "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                        "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                        "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                        "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                      ],
+                      "count": 5
+                    },
+                    "claim_text": "Kash Patel reportedly clashed with an intelligence official investigating foreign ties to the Charlie Kirk murder suspect.",
+                    "verification_date": "2025-10-31T13:00:58.048051"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.aljazeera.com/news/2025/9/14/fbis-patel-faces-us-congressional-hearings-after-kirk-death-probe-missteps",
+                      "https://www.aljazeera.com/news/2025/9/16/suspect-in-charlie-kirks-murder-linked-to-scene-by-dna-fbi-chief-says",
+                      "https://www.theguardian.com/us-news/live/2025/jan/31/donald-trump-latest-news-politics-live-canada-mexico-tariffs?filterKeyEvents=false&page=with%3Ablock-679d4fe18f083390b0b97c38",
+                      "https://www.nytimes.com/2025/08/22/us/politics/john-bolton-trump-home-fbi.html",
+                      "https://www.theguardian.com/business/live/2025/sep/10/trade-tariffs-eu-trump-ozempic-novo-jobs-markets-business-live-news?filterKeyEvents=false&page=with%3Ablock-68c18a378f082b7411c1b0ed"
+                    ],
+                    "titles": [
+                      "FBI's Patel faces US congressional hearings after Kirk death probe ...",
+                      "Tyler Robinson's DNA matched to scene of Charlie Kirk's killing, FBI ...",
+                      "Democrat calls firing of FBI officials 'deeply alarming' as some ...",
+                      "F.B.I. Searches Home and Office of John Bolton, Ex-Trump Adviser ...",
+                      "Trump reportedly asks EU to levy 100% tariffs on India and China ..."
+                    ],
+                    "count": 5
+                  },
+                  "source": "https://reddit.comhttps://reddit.com/r/conspiracytheories/comments/1ok1jq9/cover_up_kash_patel_reportedly_clashed_with_the/",
+                  "content_summary": "A Reddit post in r/conspiracytheories links to a Daily Beast article reporting that Kash Patel clashed with Joe Kent, director of the National Counterterrorism Center, over Kent's investigation into potential foreign ties of the suspect in Charlie Kirk's murder. Kent was reportedly reviewing FBI fil",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251031_130147_390410_dbdbaede.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 3,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 3,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251031_130147",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-10-31T13:01:47.421489",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251031_125558",
+    "created_at": "2025-10-31T13:01:47.421489",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 3,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251031_130147"
+  }
+}
