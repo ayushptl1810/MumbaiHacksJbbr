@@ -11,7 +11,7 @@ class Config:
     SERP_API_KEY: Optional[str] = os.getenv("SERP_API_KEY")
     SERPAPI_BASE_URL: str = "https://serpapi.com/search"
     GEMINI_API_KEY: Optional[str] = os.getenv("GEMINI_API_KEY")
-    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash")
+    GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     GEMINI_TEMPERATURE: float = float(os.getenv("GEMINI_TEMPERATURE", "0.1"))
     GEMINI_TOP_P: float = float(os.getenv("GEMINI_TOP_P", "0.8"))
     GEMINI_MAX_TOKENS: int = int(os.getenv("GEMINI_MAX_TOKENS", "1000000"))
@@ -40,7 +40,7 @@ class Config:
     USE_STREAM_DOWNLOADER: bool = os.getenv("USE_STREAM_DOWNLOADER", "true").lower() == "true"
     # Binary path for yt-dlp (auto-resolved in code if not absolute)
     YTDLP_BIN: str = os.getenv("YTDLP_BIN", "yt-dlp")
-    STREAM_DOWNLOAD_TIMEOUT: int = int(os.getenv("STREAM_DOWNLOAD_TIMEOUT", "120"))
+    STREAM_DOWNLOAD_TIMEOUT: int = int(os.getenv("STREAM_DOWNLOAD_TIMEOUT", "30"))
     # Optional comma-separated list of domains to always treat as streaming
     STREAMING_DOMAINS: str = os.getenv("STREAMING_DOMAINS", "youtube.com,youtu.be,instagram.com,twitter.com,x.com,tiktok.com,facebook.com,fb.watch")
     

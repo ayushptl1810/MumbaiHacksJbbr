@@ -18,3 +18,6 @@ pymongo
 upstash-redis
 google-search-results
 cloudinary
+torch 
+transformers 
+pytorchvideo

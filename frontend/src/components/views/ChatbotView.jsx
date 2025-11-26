@@ -21,7 +21,7 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
       id: 1,
       type: "ai",
       content:
-        "Hello! I'm your AI fact-checking assistant. I can verify text claims, analyze images, and check videos for accuracy. What would you like me to verify?",
+        "Hello! I'm your AI fact-checking assistant. I can verify text claims, analyze images, check videos, and listen to audio for accuracy. What would you like me to verify?",
       timestamp: new Date(),
       sources: [],
     },
@@ -263,168 +263,75 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
     >
       {/* Messages */}
       <div className="flex-1 overflow-y-auto scrollbar-hide px-4 sm:px-6 py-4 sm:py-6 space-y-4">
-        {messages.map((message) => (
-          <motion.div
-            key={message.id}
-            className={`flex ${
-              message.type === "user" ? "justify-end" : "justify-start"
-            }`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-          >
-            <div
-              className={`flex items-end space-x-3 ${
-                message.type === "user"
-                  ? "flex-row-reverse space-x-reverse"
-                  : ""
-              }`}
-            >
-              {/* Avatar */}
-              <motion.div
-                className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                  message.type === "user" ? "bg-blue-500" : ""
-                }`}
-                animate={{
-                  backgroundColor:
-                    message.type === "user"
-                      ? "#3b82f6"
-                      : isDarkMode
-                      ? "#374151"
-                      : "#e5e7eb",
-                }}
-                transition={{
-                  duration: 0.6,
-                  ease: "easeInOut",
-                }}
-              >
-                {message.type === "user" ? (
-                  <div className="text-white font-bold text-sm">U</div>
-                ) : (
-                  <CheckCircle
-                    className={`w-4 h-4 ${
-                      isDarkMode ? "text-blue-400" : "text-blue-500"
-                    }`}
-                  />
-                )}
-              </motion.div>
-
-              {/* Message Bubble */}
+        <div className="flex flex-col gap-4">
+          {messages.map((message, idx) => {
+            const isUser = message.type === "user";
+            const alignment = isUser ? "items-end" : "items-start";
+            const bubbleAlignment = isUser ? "justify-end" : "justify-start";
+            return (
               <div
-                className={`relative max-w-xs lg:max-w-md ${
-                  message.type === "user" ? "text-right" : "text-left"
-                }`}
+                key={message.id}
+                className={`mb-2 flex flex-col ${alignment}`}
               >
-                <motion.div
-                  className={`px-4 py-3 rounded-lg ${
-                    message.type === "user" ? "text-white" : ""
-                  }`}
-                  animate={{
-                    backgroundColor:
-                      message.type === "user"
-                        ? isDarkMode
-                          ? "#2563eb"
-                          : "#3b82f6"
-                        : isDarkMode
-                        ? "#1f2937"
-                        : "#ffffff",
-                    borderColor:
-                      message.type === "user"
-                        ? "transparent"
-                        : isDarkMode
-                        ? "#374151"
-                        : "#e5e7eb",
-                    color:
-                      message.type === "user"
-                        ? "#ffffff"
-                        : isDarkMode
-                        ? "#ffffff"
-                        : "#111827",
-                  }}
-                  style={{
-                    border: message.type === "user" ? "none" : "1px solid",
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    ease: "easeInOut",
-                  }}
-                >
-                  {message.files && message.files.length > 0 && (
-                    <div className="mt-3 flex flex-col gap-2">
-                      {message.files.map((file, idx) => {
-                        const isImage =
-                          file.type && file.type.startsWith("image/");
-                        if (isImage) {
-                          const objectUrl = URL.createObjectURL(file);
-                          return (
-                            <div
-                              key={idx}
-                              className="relative overflow-hidden rounded-md border border-gray-200 dark:border-gray-700"
-                            >
-                              <img
-                                src={objectUrl}
-                                alt={file.name || `upload-${idx}`}
-                                className="w-full max-w-xs h-auto object-contain"
-                                onLoad={(e) => {
-                                  URL.revokeObjectURL(objectUrl);
-                                }}
-                              />
-                            </div>
-                          );
-                        }
-                        const FileIcon = getFileIcon(file);
+                {/* File preview (aligned and width limited like message) */}
+                {message.files && message.files.length > 0 && (
+                  <div className="mb-2 flex flex-wrap gap-2 max-w-[65%]">
+                    {message.files.map((file, i) => {
+                      const FileIcon = getFileIcon(file);
+                      const isImage =
+                        file.type && file.type.startsWith("image/");
+                      if (isImage) {
+                        const objectUrl = URL.createObjectURL(file);
                         return (
                           <div
-                            key={idx}
-                            className={`flex items-center space-x-2 px-3 py-2 rounded-md border text-xs ${
-                              isDarkMode
-                                ? "bg-gray-800 border-gray-700 text-gray-200"
-                                : "bg-gray-50 border-gray-200 text-gray-700"
-                            }`}
+                            key={i}
+                            className="relative overflow-hidden rounded-md border border-gray-200 dark:border-gray-700"
                           >
-                            <FileIcon className="w-4 h-4 text-blue-500" />
-                            <span className="truncate" title={file.name}>
-                              {file.name}
-                            </span>
+                            <img
+                              src={objectUrl}
+                              alt={file.name || `upload-${i}`}
+                              className="w-full max-w-xs h-auto object-contain"
+                              onLoad={() => URL.revokeObjectURL(objectUrl)}
+                            />
                           </div>
                         );
-                      })}
-                    </div>
-                  )}
-
-                  <p className="text-sm mt-3">{message.content}</p>
-
-                  {message.sources && message.sources.length > 0 && (
-                    <div
-                      className={`mt-3 pt-3 border-t ${
-                        isDarkMode ? "border-gray-600" : "border-gray-300"
-                      }`}
-                    >
-                      <p className="text-xs font-medium mb-2">Sources:</p>
-                      <ul className="text-xs space-y-1">
-                        {message.sources.map((source, index) => (
-                          <li key={index} className="flex items-center">
-                            <CheckCircle className="w-3 h-3 mr-2 text-green-500 flex-shrink-0" />
-                            <span className="break-words">{source}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </motion.div>
-
-                {/* Arrow */}
-                <div
-                  className={`absolute bottom-3 w-0 h-0 ${
-                    message.type === "user"
-                      ? "right-[-8px] border-l-8 border-l-blue-600 dark:border-l-blue-600"
-                      : "left-[-8px] border-r-8 border-r-gray-800 dark:border-r-gray-800"
-                  } border-t-8 border-t-transparent border-b-8 border-b-transparent`}
-                ></div>
+                      }
+                      return (
+                        <div
+                          key={i}
+                          className={`flex items-center space-x-2 px-3 py-2 rounded-md border text-xs ${
+                            isDarkMode
+                              ? "bg-gray-800 border-gray-700 text-gray-200"
+                              : "bg-gray-50 border-gray-200 text-gray-700"
+                          }`}
+                        >
+                          <FileIcon className="w-4 h-4 text-blue-500" />
+                          <span className="truncate" title={file.name}>
+                            {file.name}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+                {/* Message bubble below file preview */}
+                <div className={`flex ${bubbleAlignment} max-w-[65%]`}>
+                  <div
+                    className={`rounded-lg px-4 py-3 shadow-sm break-words w-full ${
+                      message.type === "ai"
+                        ? isDarkMode
+                          ? "bg-gray-800 text-gray-100"
+                          : "bg-gray-100 text-gray-900"
+                        : "bg-blue-500 text-white"
+                    }`}
+                  >
+                    {message.content}
+                  </div>
+                </div>
               </div>
-            </div>
-          </motion.div>
-        ))}
+            );
+          })}
+        </div>
 
         {isLoading && (
           <motion.div
@@ -538,7 +445,7 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 max-w-[65%]">
             {uploadedFiles.map((file, index) => {
               const FileIcon = getFileIcon(file);
               return (
@@ -614,7 +521,7 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
                 ease: "easeInOut",
               }}
             >
-              <Upload className="w-5 h-5" />
+              <Upload className="w-6 h-6" />
             </motion.label>
             <motion.button
               onClick={isRecording ? stopRecording : startRecording}
@@ -633,19 +540,19 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
               }}
             >
               <Mic
-                className={`w-5 h-5 ${isRecording ? "animate-pulse" : ""}`}
+                className={`w-6 h-6 ${isRecording ? "animate-pulse" : ""}`}
               />
             </motion.button>
           </div>
-          <motion.input
-            type="text"
+          <motion.textarea
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Ask me to verify something..."
-            className={`flex-1 px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+            className={`flex-1 px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none ${
               isDarkMode ? "placeholder-gray-400" : "placeholder-gray-500"
             }`}
+            style={{ height: "45px", minHeight: "45px" }}
             animate={{
               backgroundColor: isDarkMode ? "#1f2937" : "#ffffff",
               borderColor: isDarkMode ? "#374151" : "#d1d5db",
@@ -662,7 +569,8 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
             disabled={
               (!inputValue.trim() && uploadedFiles.length === 0) || isLoading
             }
-            className="px-4 py-2 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+            className="px-4 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-2"
+            style={{ height: "45px" }}
             animate={{
               backgroundColor: "#3b82f6",
             }}

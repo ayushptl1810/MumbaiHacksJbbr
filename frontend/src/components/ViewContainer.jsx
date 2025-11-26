@@ -3,6 +3,7 @@ import ChatbotView from "./views/ChatbotView";
 import ModulesView from "./views/ModulesView";
 import ContentView from "./views/ContentView";
 import ProgressView from "./views/ProgressView";
+import LoadingSpinner from "./ui/LoadingSpinner";
 
 const ViewContainer = ({
   currentView,
@@ -18,6 +19,7 @@ const ViewContainer = ({
   getModuleIcon,
   setIsDarkMode,
   onLearnClick,
+  loading,
 }) => {
   const renderView = () => {
     switch (currentView) {
@@ -31,25 +33,39 @@ const ViewContainer = ({
         );
       case "modules":
         return (
-          <ModulesView
-            modules={modules}
-            userProgress={userProgress}
-            isDarkMode={isDarkMode}
-            onModuleClick={onModuleClick}
-            getModuleIcon={getModuleIcon}
-          />
+          <div className="p-4 sm:p-6">
+            <ModulesView
+              modules={modules}
+              userProgress={userProgress}
+              isDarkMode={isDarkMode}
+              onModuleClick={onModuleClick}
+              getModuleIcon={getModuleIcon}
+            />
+            {loading && (
+              <div className="flex justify-center mt-6">
+                <LoadingSpinner />
+              </div>
+            )}
+          </div>
         );
       case "content":
         return (
-          <ContentView
-            moduleContent={moduleContent}
-            selectedModule={selectedModule}
-            userProgress={userProgress}
-            expandedSections={expandedSections}
-            isDarkMode={isDarkMode}
-            onToggleSection={onToggleSection}
-            onCompleteModule={onCompleteModule}
-          />
+          <div className="p-4 sm:p-6">
+            <ContentView
+              moduleContent={moduleContent}
+              selectedModule={selectedModule}
+              userProgress={userProgress}
+              expandedSections={expandedSections}
+              isDarkMode={isDarkMode}
+              onToggleSection={onToggleSection}
+              onCompleteModule={onCompleteModule}
+            />
+            {loading && (
+              <div className="flex justify-center mt-6">
+                <LoadingSpinner />
+              </div>
+            )}
+          </div>
         );
       case "progress":
         return (
@@ -61,13 +77,20 @@ const ViewContainer = ({
         );
       default:
         return (
-          <ModulesView
-            modules={modules}
-            userProgress={userProgress}
-            isDarkMode={isDarkMode}
-            onModuleClick={onModuleClick}
-            getModuleIcon={getModuleIcon}
-          />
+          <div className="p-4 sm:p-6">
+            <ModulesView
+              modules={modules}
+              userProgress={userProgress}
+              isDarkMode={isDarkMode}
+              onModuleClick={onModuleClick}
+              getModuleIcon={getModuleIcon}
+            />
+            {loading && (
+              <div className="flex justify-center mt-6">
+                <LoadingSpinner />
+              </div>
+            )}
+          </div>
         );
     }
   };

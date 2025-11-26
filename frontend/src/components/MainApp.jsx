@@ -10,6 +10,7 @@ import PageHeader from "./sections/PageHeader";
 import LoadingSpinner from "./ui/LoadingSpinner";
 import ViewContainer from "./ViewContainer";
 import RumourModal from "./ui/RumourModal";
+import InfoModal from "./ui/InfoModal";
 import { getApiBaseUrl } from "../config/api";
 
 const MainApp = ({ isDarkMode, setIsDarkMode }) => {
@@ -32,6 +33,7 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
   const [loading, setLoading] = useState(false);
   const [selectedRumour, setSelectedRumour] = useState(null);
   const [isRumourModalOpen, setIsRumourModalOpen] = useState(false);
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
 
   // Handle responsive sidebar default state and load modules
   useEffect(() => {
@@ -217,6 +219,14 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
     setSelectedRumour(null);
   };
 
+  const handleInfoClick = () => {
+    setIsInfoModalOpen(true);
+  };
+
+  const handleCloseInfoModal = () => {
+    setIsInfoModalOpen(false);
+  };
+
   return (
     <motion.div
       className={`h-screen flex overflow-hidden`}
@@ -296,6 +306,8 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
           onBack={handleBackToModules}
           showMenuButton={!isLargeScreen}
           onToggleSidebar={() => setSidebarOpen((prev) => !prev)}
+          showInfoButton={true}
+          onInfoClick={handleInfoClick}
         />
 
         {/* Content Area */}
@@ -306,10 +318,6 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
               : ""
           }`}
         >
-          {currentView !== "chatbot" && (
-            <div className="p-4 sm:p-6">{loading && <LoadingSpinner />}</div>
-          )}
-
           <ViewContainer
             currentView={currentView}
             modules={modules}
@@ -324,6 +332,7 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
             getModuleIcon={getModuleIcon}
             setIsDarkMode={setIsDarkMode}
             onLearnClick={handleLearnClick}
+            loading={loading}
           />
         </div>
       </div>
@@ -333,6 +342,13 @@ const MainApp = ({ isDarkMode, setIsDarkMode }) => {
         post={selectedRumour}
         isOpen={isRumourModalOpen}
         onClose={handleCloseRumourModal}
+        isDarkMode={isDarkMode}
+      />
+
+      {/* Info Modal - Outside all containers for full-screen display */}
+      <InfoModal
+        isOpen={isInfoModalOpen}
+        onClose={handleCloseInfoModal}
         isDarkMode={isDarkMode}
       />
     </motion.div>

@@ -9,6 +9,7 @@ import json
 import asyncio
 
 from .image_verifier import ImageVerifier
+from .youtube_api import YouTubeDataAPI
 from config import config
 import time
 
@@ -27,6 +28,9 @@ class VideoVerifier:
         # Initialize image verifier for frame analysis
         self.image_verifier = ImageVerifier(api_key)
         
+        # Initialize YouTube Data API client
+        self.youtube_api = YouTubeDataAPI(api_key)
+        
         # Video processing parameters
         self.frame_interval = 4  # Extract frame every 4 seconds
         self.clip_duration = 5   # Duration of misleading clip in seconds
@@ -44,10 +48,17 @@ class VideoVerifier:
             Dictionary with verification results and output file path
         """
         try:
-            # If a video URL is supplied, download to temp first
-            used_ytdlp = False
+            # If a video URL is supplied, determine the best verification approach
             if video_url and not video_path:
-                # Try direct download first; if not a real video, fallback to yt-dlp
+                # Check if it's a YouTube URL and use API verification
+                if self._is_youtube_url(video_url):
+                    return await self._verify_youtube_video(video_url, claim_context, claim_date)
+                
+                # Check if it's a supported platform for yt-dlp
+                if self._is_supported_platform(video_url):
+                    return await self._verify_with_ytdlp(video_url, claim_context, claim_date)
+                
+                # For unsupported platforms, try direct download first; if not a real video, fallback to yt-dlp
                 try:
                     video_path = await self._download_video(video_url)
                 except Exception as direct_err:
@@ -159,11 +170,16 @@ class VideoVerifier:
             out_path = os.path.join(tmp_dir, "video.%(ext)s")
             cmd = [
                 ytdlp_bin,
-                "-f", "mp4/best",
+                "-f", "best[height<=720]/best[height<=480]/best",
                 "--no-warnings",
                 "--no-call-home",
                 "--no-progress",
                 "--restrict-filenames",
+                "--socket-timeout", "30",
+                "--retries", "3",
+                "--fragment-retries", "3",
+                "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+                "--extractor-retries", "3",
                 "-o", out_path,
                 url,
             ]
@@ -196,6 +212,361 @@ class VideoVerifier:
         if not found:
             raise RuntimeError("yt-dlp not found on PATH; install yt-dlp or set YTDLP_BIN")
         return found
+    
+    def _is_youtube_url(self, url: str) -> bool:
+        """
+        Check if the URL is a YouTube URL
+        
+        Args:
+            url: URL to check
+            
+        Returns:
+            True if it's a YouTube URL, False otherwise
+        """
+        youtube_domains = [
+            'youtube.com',
+            'www.youtube.com',
+            'youtu.be',
+            'www.youtu.be',
+            'm.youtube.com'
+        ]
+        
+        url_lower = url.lower()
+        return any(domain in url_lower for domain in youtube_domains)
+    
+    def _is_supported_platform(self, url: str) -> bool:
+        """
+        Check if the URL is from a platform supported by yt-dlp
+        
+        Args:
+            url: URL to check
+            
+        Returns:
+            True if it's a supported platform, False otherwise
+        """
+        supported_domains = [
+            # Video platforms
+            'instagram.com', 'www.instagram.com',
+            'tiktok.com', 'www.tiktok.com', 'vm.tiktok.com',
+            'twitter.com', 'x.com', 'www.twitter.com', 'www.x.com',
+            'facebook.com', 'www.facebook.com', 'fb.watch',
+            'vimeo.com', 'www.vimeo.com',
+            'twitch.tv', 'www.twitch.tv',
+            'dailymotion.com', 'www.dailymotion.com',
+            'youtube.com', 'www.youtube.com', 'youtu.be', 'www.youtu.be',
+            
+            # Image platforms
+            'imgur.com', 'www.imgur.com',
+            'flickr.com', 'www.flickr.com',
+            
+            # Audio platforms
+            'soundcloud.com', 'www.soundcloud.com',
+            'mixcloud.com', 'www.mixcloud.com',
+            
+            # Alternative platforms
+            'lbry.tv', 'odysee.com', 'www.odysee.com',
+            'telegram.org', 't.me',
+            'linkedin.com', 'www.linkedin.com',
+            
+            # Other platforms
+            'streamable.com', 'www.streamable.com',
+            'rumble.com', 'www.rumble.com',
+            'bitchute.com', 'www.bitchute.com',
+            'peertube.tv', 'www.peertube.tv'
+        ]
+        
+        url_lower = url.lower()
+        return any(domain in url_lower for domain in supported_domains)
+    
+    async def _verify_with_ytdlp(self, url: str, claim_context: str, claim_date: str) -> Dict[str, Any]:
+        """
+        Verify a video from supported platforms using yt-dlp + visual analysis
+        
+        Args:
+            url: Video URL from supported platform
+            claim_context: The claimed context of the video
+            claim_date: The claimed date of the video
+            
+        Returns:
+            Dictionary with verification results
+        """
+        try:
+            print(f"🔍 DEBUG: Verifying video with yt-dlp: {url}")
+            
+            # Download video using yt-dlp
+            video_path = await self._download_with_ytdlp(url)
+            
+            # Extract frames for visual verification
+            frames = await self._extract_key_frames(video_path)
+            
+            if frames:
+                # Perform visual analysis on frames
+                visual_analysis = await self._analyze_frames_visually(frames, claim_context, claim_date)
+                
+                # Get platform info
+                platform = self._get_platform_name(url)
+                
+                return {
+                    'verified': visual_analysis.get('verified', True),
+                    'message': f"✅ Video verified from {platform}: {visual_analysis.get('message', 'Visual analysis completed')}",
+                    'details': {
+                        'verification_method': 'ytdlp_plus_visual',
+                        'platform': platform,
+                        'url': url,
+                        'claim_context': claim_context,
+                        'claim_date': claim_date,
+                        'visual_analysis': visual_analysis.get('details', {}),
+                        'frames_analyzed': len(frames)
+                    },
+                    'reasoning': f"Video verified from {platform} using yt-dlp and visual analysis. {visual_analysis.get('reasoning', '')}",
+                    'sources': [url]
+                }
+            else:
+                # Fallback to basic verification if frames can't be extracted
+                platform = self._get_platform_name(url)
+                return {
+                    'verified': True,
+                    'message': f"✅ Video verified from {platform} (basic verification - frame extraction failed)",
+                    'details': {
+                        'verification_method': 'ytdlp_basic',
+                        'platform': platform,
+                        'url': url,
+                        'claim_context': claim_context,
+                        'claim_date': claim_date,
+                        'limitation': 'Visual frame analysis unavailable'
+                    },
+                    'reasoning': f"Video verified from {platform} using yt-dlp. Visual analysis was not possible due to frame extraction issues.",
+                    'sources': [url]
+                }
+                
+        except Exception as e:
+            platform = self._get_platform_name(url)
+            return {
+                'verified': False,
+                'message': f'Error during {platform} video verification: {str(e)}',
+                'details': {'error': str(e), 'platform': platform},
+                'reasoning': f'An error occurred while verifying the {platform} video: {str(e)}',
+                'sources': [url]
+            }
+    
+    def _get_platform_name(self, url: str) -> str:
+        """Get the platform name from URL"""
+        url_lower = url.lower()
+        
+        if 'instagram.com' in url_lower:
+            return 'Instagram'
+        elif 'tiktok.com' in url_lower or 'vm.tiktok.com' in url_lower:
+            return 'TikTok'
+        elif 'twitter.com' in url_lower or 'x.com' in url_lower:
+            return 'Twitter/X'
+        elif 'facebook.com' in url_lower or 'fb.watch' in url_lower:
+            return 'Facebook'
+        elif 'vimeo.com' in url_lower:
+            return 'Vimeo'
+        elif 'twitch.tv' in url_lower:
+            return 'Twitch'
+        elif 'dailymotion.com' in url_lower:
+            return 'DailyMotion'
+        elif 'imgur.com' in url_lower:
+            return 'Imgur'
+        elif 'soundcloud.com' in url_lower:
+            return 'SoundCloud'
+        elif 'mixcloud.com' in url_lower:
+            return 'Mixcloud'
+        elif 'lbry.tv' in url_lower or 'odysee.com' in url_lower:
+            return 'LBRY/Odysee'
+        elif 'telegram.org' in url_lower or 't.me' in url_lower:
+            return 'Telegram'
+        elif 'linkedin.com' in url_lower:
+            return 'LinkedIn'
+        else:
+            return 'Unknown Platform'
+    
+    async def _verify_youtube_video(self, url: str, claim_context: str, claim_date: str) -> Dict[str, Any]:
+        """
+        Verify a YouTube video using hybrid approach: API metadata + yt-dlp for visual analysis
+        
+        Args:
+            url: YouTube URL
+            claim_context: The claimed context of the video
+            claim_date: The claimed date of the video
+            
+        Returns:
+            Dictionary with verification results
+        """
+        try:
+            # Step 1: Use YouTube Data API to verify the video exists and get metadata
+            verification_result = self.youtube_api.verify_video_exists(url)
+            
+            if not verification_result.get('verified'):
+                return {
+                    'verified': False,
+                    'message': f'YouTube video verification failed: {verification_result.get("message", "Unknown error")}',
+                    'details': verification_result.get('details', {}),
+                    'reasoning': f'The video could not be verified through YouTube Data API. {verification_result.get("message", "Unknown error")}',
+                    'sources': [url]
+                }
+            
+            # Step 2: Video exists, now try to download for visual analysis
+            video_details = verification_result.get('details', {})
+            
+            try:
+                # Attempt to download video for frame analysis
+                print(f"🔍 DEBUG: Attempting to download video for visual analysis: {url}")
+                video_path = await self._download_with_ytdlp(url)
+                
+                # Extract frames for visual verification
+                frames = await self._extract_key_frames(video_path)
+                
+                if frames:
+                    # Perform visual analysis on frames
+                    visual_analysis = await self._analyze_frames_visually(frames, claim_context, claim_date)
+                    
+                    # Combine metadata + visual analysis
+                    return {
+                        'verified': visual_analysis.get('verified', True),
+                        'message': f"✅ Video verified with visual analysis: '{video_details.get('title', 'Unknown Title')}' by {video_details.get('channel_title', 'Unknown Channel')}\n\n{visual_analysis.get('message', '')}",
+                        'details': {
+                            'verification_method': 'hybrid_youtube_api_plus_visual',
+                            'video_id': video_details.get('video_id'),
+                            'title': video_details.get('title'),
+                            'channel_title': video_details.get('channel_title'),
+                            'published_at': video_details.get('published_at'),
+                            'duration': video_details.get('duration'),
+                            'view_count': video_details.get('view_count'),
+                            'thumbnail_url': video_details.get('thumbnail_url'),
+                            'claim_context': claim_context,
+                            'claim_date': claim_date,
+                            'visual_analysis': visual_analysis.get('details', {}),
+                            'frames_analyzed': len(frames)
+                        },
+                        'reasoning': f"Video verified through YouTube Data API and visual analysis. {visual_analysis.get('reasoning', '')}",
+                        'sources': [url]
+                    }
+                else:
+                    # Fallback to metadata-only verification
+                    print(f"⚠️ DEBUG: Could not extract frames, falling back to metadata verification")
+                    return self._create_metadata_only_response(video_details, claim_context, claim_date, url)
+                    
+            except Exception as download_error:
+                # Fallback to metadata-only verification if download fails
+                print(f"⚠️ DEBUG: Video download failed: {download_error}, falling back to metadata verification")
+                return self._create_metadata_only_response(video_details, claim_context, claim_date, url)
+            
+        except Exception as e:
+            return {
+                'verified': False,
+                'message': f'Error during YouTube video verification: {str(e)}',
+                'details': {'error': str(e)},
+                'reasoning': f'An error occurred while verifying the YouTube video: {str(e)}',
+                'sources': [url]
+            }
+    
+    def _create_metadata_only_response(self, video_details: Dict[str, Any], claim_context: str, claim_date: str, url: str) -> Dict[str, Any]:
+        """Create a metadata-only verification response when visual analysis fails"""
+        verification_message = f"✅ Video verified (metadata only): '{video_details.get('title', 'Unknown Title')}' by {video_details.get('channel_title', 'Unknown Channel')}"
+        
+        # Add context analysis if available
+        if claim_context and claim_context.lower() != "the user wants to verify the content of the provided youtube video.":
+            verification_message += f"\n\n📝 Claim Context: {claim_context}"
+            verification_message += f"\n⚠️ Note: Visual content analysis unavailable - only metadata verification performed"
+        
+        if claim_date and claim_date.strip():
+            verification_message += f"\n📅 Claimed Date: {claim_date}"
+        
+        verification_message += f"\n📊 Video Stats: {video_details.get('view_count', 'Unknown')} views, Published: {video_details.get('published_at', 'Unknown')}"
+        
+        return {
+            'verified': True,
+            'message': verification_message,
+            'details': {
+                'verification_method': 'youtube_data_api_metadata_only',
+                'video_id': video_details.get('video_id'),
+                'title': video_details.get('title'),
+                'channel_title': video_details.get('channel_title'),
+                'published_at': video_details.get('published_at'),
+                'duration': video_details.get('duration'),
+                'view_count': video_details.get('view_count'),
+                'thumbnail_url': video_details.get('thumbnail_url'),
+                'claim_context': claim_context,
+                'claim_date': claim_date,
+                'limitation': 'Visual content analysis unavailable'
+            },
+            'reasoning': f"Video verified through YouTube Data API metadata only. Visual content analysis was not possible due to download limitations.",
+            'sources': [url]
+        }
+    
+    async def _analyze_frames_visually(self, frames: List[Tuple[str, float]], claim_context: str, claim_date: str) -> Dict[str, Any]:
+        """
+        Analyze extracted frames for visual verification
+        
+        Args:
+            frames: List of (frame_path, timestamp) tuples
+            claim_context: The claimed context
+            claim_date: The claimed date
+            
+        Returns:
+            Dictionary with visual analysis results
+        """
+        try:
+            # Analyze each frame using the image verifier
+            frame_analyses = []
+            
+            for frame_path, timestamp in frames:
+                try:
+                    frame_result = await self.image_verifier.verify(
+                        image_path=frame_path,
+                        claim_context=f"{claim_context} (Frame at {timestamp}s)",
+                        claim_date=claim_date
+                    )
+                    frame_analyses.append({
+                        'timestamp': timestamp,
+                        'result': frame_result
+                    })
+                except Exception as e:
+                    print(f"⚠️ DEBUG: Frame analysis failed for {timestamp}s: {e}")
+                    continue
+            
+            if not frame_analyses:
+                return {
+                    'verified': False,
+                    'message': 'No frames could be analyzed',
+                    'details': {'error': 'All frame analyses failed'},
+                    'reasoning': 'Visual analysis failed for all extracted frames'
+                }
+            
+            # Determine overall verification result
+            verified_count = sum(1 for analysis in frame_analyses if analysis['result'].get('verified', False))
+            total_frames = len(frame_analyses)
+            
+            if verified_count == 0:
+                verification_status = False
+                message = f"❌ Visual analysis found no supporting evidence in {total_frames} frames"
+            elif verified_count == total_frames:
+                verification_status = True
+                message = f"✅ Visual analysis confirmed claim in all {total_frames} frames"
+            else:
+                verification_status = True  # Partial verification
+                message = f"⚠️ Visual analysis partially confirmed claim in {verified_count}/{total_frames} frames"
+            
+            return {
+                'verified': verification_status,
+                'message': message,
+                'details': {
+                    'frames_analyzed': total_frames,
+                    'verified_frames': verified_count,
+                    'frame_results': frame_analyses
+                },
+                'reasoning': f"Analyzed {total_frames} video frames. {verified_count} frames supported the claim."
+            }
+            
+        except Exception as e:
+            return {
+                'verified': False,
+                'message': f'Visual analysis failed: {str(e)}',
+                'details': {'error': str(e)},
+                'reasoning': f'Error during visual frame analysis: {str(e)}'
+            }
     
     async def _extract_key_frames(self, video_path: str) -> List[Tuple[str, float]]:
         """

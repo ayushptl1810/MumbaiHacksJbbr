@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Sun, Moon } from "lucide-react";
+import { ArrowLeft, Sun, Moon, Info } from "lucide-react";
 import MotionText from "../ui/MotionText";
 
 const PageHeader = ({
@@ -11,6 +11,8 @@ const PageHeader = ({
   onBack,
   showMenuButton = false,
   onToggleSidebar,
+  showInfoButton = false,
+  onInfoClick,
 }) => {
   return (
     <motion.div
@@ -92,6 +94,37 @@ const PageHeader = ({
           </div>
         </div>
         <div className="flex items-center space-x-4">
+          {showInfoButton && (
+            <motion.button
+              onClick={onInfoClick}
+              className={`p-2 rounded-lg ${
+                isDarkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
+              }`}
+              animate={{
+                backgroundColor: isDarkMode ? "#1f2937" : "#ffffff",
+              }}
+              whileHover={{
+                backgroundColor: isDarkMode ? "#374151" : "#f3f4f6",
+              }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+              aria-label="Show information"
+            >
+              <motion.div
+                animate={{
+                  color: isDarkMode ? "#9ca3af" : "#6b7280",
+                }}
+                transition={{
+                  duration: 0.6,
+                  ease: "easeInOut",
+                }}
+              >
+                <Info className="w-5 h-5" />
+              </motion.div>
+            </motion.button>
+          )}
           <motion.button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className={`p-2 rounded-lg ${

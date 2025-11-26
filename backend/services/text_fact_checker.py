@@ -27,7 +27,10 @@ class TextFactChecker:
     
     async def verify(self, text_input: str, claim_context: str = "Unknown context", claim_date: str = "Unknown date") -> Dict[str, Any]:
         """
-        Verify a textual claim using Google Custom Search API with fact-checking sites
+        Verify a textual claim using a three-phase approach:
+        1. Immediate Gemini read-through for a quick, reference-free baseline
+        2. Curated SERP (fact-check) harvesting with structured analysis
+        3. A final Gemini synthesis that reasons over BOTH the baseline and SERP data
         
         Args:
             text_input: The text claim to verify
@@ -43,40 +46,76 @@ class TextFactChecker:
             print(f"🔍 DEBUG: claim_context = {claim_context}")
             print(f"🔍 DEBUG: claim_date = {claim_date}")
             print(f"Starting verification for: {text_input}")
-            # Search for fact-checked claims related to the input text
+            
+            # STEP 0: quick general-knowledge pass (baseline)
+            preliminary_analysis = await self._verify_with_general_knowledge(
+                text_input, claim_context, claim_date
+            )
+            print(f"🔍 DEBUG: preliminary_analysis = {preliminary_analysis}")
+            
+            # STEP 1: Search for fact-checked claims in curated sources
             search_results = await self._search_claims(text_input)
             print(f"🔍 DEBUG: search_results = {search_results}")
             
-            if not search_results:
-                return {
-                    "verified": False,
-                    "verdict": "no_content",
-                    "message": "No fact-checked information found for this claim",
-                    "details": {
-                        "claim_text": text_input,
-                        "claim_context": claim_context,
-                        "claim_date": claim_date,
-                        "fact_checks": []
-                    }
-                }
+            curated_analysis = None
+            if search_results:
+                # Analyze the search results with Gemini
+                curated_analysis = self._analyze_results(search_results, text_input)
             
-            # Analyze the search results
-            analysis = self._analyze_results(search_results, text_input)
+            final_response = self._synthesize_final_response(
+                text_input=text_input,
+                claim_context=claim_context,
+                claim_date=claim_date,
+                preliminary_analysis=preliminary_analysis,
+                curated_analysis=curated_analysis,
+                search_results=search_results or []
+            )
+            
+            if final_response:
+                return final_response
+            
+            # Fallback ladder: curated -> preliminary -> default error
+            if curated_analysis:
+                return self._build_simple_response(
+                    curated_analysis,
+                    text_input,
+                    claim_context,
+                    claim_date,
+                    search_results or [],
+                    method_label="curated_sources_only",
+                    extra_details={
+                        "preliminary_analysis": preliminary_analysis,
+                        "curated_analysis": curated_analysis,
+                    },
+                )
+            
+            if preliminary_analysis:
+                return self._build_simple_response(
+                    preliminary_analysis,
+                    text_input,
+                    claim_context,
+                    claim_date,
+                    search_results or [],
+                    method_label="general_knowledge_only",
+                    extra_details={"preliminary_analysis": preliminary_analysis},
+                )
             
             return {
-                "verified": analysis["verified"],
-                "verdict": analysis["verdict"],
-                "message": analysis["message"],
+                "verified": False,
+                "verdict": "error",
+                "message": "Unable to generate a verification response.",
                 "details": {
                     "claim_text": text_input,
                     "claim_context": claim_context,
                     "claim_date": claim_date,
-                    "fact_checks": search_results,
-                    "analysis": analysis
-                }
+                    "fact_checks": search_results or [],
+                    "analysis": {},
+                    "verification_method": "unavailable",
+                },
             }
             
         except Exception as e:
+            print(f"❌ Error in verify: {e}")
             return {
                 "verified": False,
                 "verdict": "error",
@@ -438,6 +477,11 @@ STEP-BY-STEP ANALYSIS:
 
 Think through this systematically and provide your analysis.
 
+IMPORTANT INSTRUCTIONS FOR YOUR RESPONSE:
+- When referring to sources in your message, DO NOT use specific numbers like "Source 1", "Source 3", or "Sources 2, 4, and 5"
+- Instead, use generic references like "the sources", "multiple sources", "one source", "several sources"
+- Example: Instead of "Sources 3, 4, and 5 confirm..." say "Multiple sources confirm..." or "The sources confirm..."
+
 Respond in this exact JSON format:
 {{
     "verdict": "true|false|mixed|uncertain",
@@ -481,6 +525,22 @@ Respond in this exact JSON format:
             print(f"Gemini analysis error: {e}")
             return self._fallback_analysis(results)
     
+    def _format_source_summary(self, results: List[Dict[str, Any]]) -> str:
+        """Create a short, human readable summary of the surfaced sources."""
+        if not results:
+            return "No vetted sources surfaced yet."
+
+        highlights = []
+        for result in results[:3]:
+            title = result.get("title") or "Unknown source"
+            outlet = result.get("displayLink")
+            summary = title
+            if outlet:
+                summary += f" ({outlet})"
+            highlights.append(summary)
+
+        return "Sources surfaced: " + "; ".join(highlights)
+
     def _fallback_analysis(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
         """
         Fallback analysis when Gemini fails
@@ -491,14 +551,112 @@ Respond in this exact JSON format:
         Returns:
             Basic analysis results
         """
+        summary = self._format_source_summary(results)
+
         return {
             "verified": False,
             "verdict": "uncertain",
-            "message": "Unable to determine claim accuracy from available sources. Found fact-checking articles but analysis failed.",
+            "message": f"Could not verify this claim yet. {summary}",
             "confidence": "low",
             "relevant_results_count": len(results),
             "analysis_method": "fallback"
         }
+    
+    async def _verify_with_general_knowledge(self, text_input: str, claim_context: str, claim_date: str) -> Dict[str, Any]:
+        """
+        Verify a claim using Gemini's general knowledge base directly (no curated sources)
+        This is used as a fallback when curated sources don't have enough information
+        
+        Args:
+            text_input: The text claim to verify
+            claim_context: Context about the claim
+            claim_date: Date when the claim was made
+            
+        Returns:
+            Analysis results with verdict and message
+        """
+        from datetime import datetime
+        current_date = datetime.now().strftime("%B %d, %Y")
+        
+        prompt = f"""
+You are a fact-checking expert AI with access to current information as of {current_date}.
+
+CLAIM TO VERIFY: "{text_input}"
+CONTEXT: {claim_context if claim_context != "Unknown context" else "No additional context provided"}
+CLAIM DATE: {claim_date if claim_date != "Unknown date" else "Unknown"}
+
+Your task is to verify this claim using your knowledge base. Since this is a direct factual question that may not be covered by news articles:
+
+1. **Use your most recent training data** to answer the question directly
+2. If this is about current events, political positions, or time-sensitive facts, be especially careful to provide the MOST CURRENT information
+3. If you're uncertain about recent changes, acknowledge that
+4. Always answer based on the most recent information you have
+
+Provide a clear, direct answer. Think step-by-step:
+- What does the claim assert?
+- Based on your knowledge (as of your training cutoff and any recent data you have), is this true or false?
+- If it's a time-sensitive claim, what is the current status?
+
+Respond in this exact JSON format:
+{{
+    "verdict": "true|false|mixed|uncertain",
+    "verified": true|false,
+    "message": "Your clear, direct answer explaining whether the claim is true or false and why",
+    "confidence": "high|medium|low",
+    "reasoning": "Your step-by-step reasoning process",
+    "knowledge_cutoff_note": "Optional note if the answer might be outdated or if recent changes are possible"
+}}
+
+IMPORTANT: For current events or political positions, provide the MOST RECENT information you have access to.
+"""
+        
+        try:
+            response = self.model.generate_content(prompt)
+            response_text = response.text.strip()
+            
+            # Try to parse JSON response
+            if response_text.startswith('```json'):
+                response_text = response_text.replace('```json', '').replace('```', '').strip()
+            elif response_text.startswith('```'):
+                response_text = response_text.replace('```', '').strip()
+            
+            analysis = json.loads(response_text)
+            
+            # Ensure required fields
+            analysis.setdefault("verdict", "uncertain")
+            analysis.setdefault("verified", False)
+            analysis.setdefault("message", "Analysis completed using general knowledge")
+            analysis.setdefault("confidence", "medium")
+            analysis.setdefault("reasoning", "Direct verification using AI knowledge base")
+            
+            # Add metadata
+            analysis["analysis_method"] = "general_knowledge"
+            analysis["verification_date"] = current_date
+            
+            print(f"✅ General knowledge verification result: {analysis['verdict']}")
+            return analysis
+            
+        except json.JSONDecodeError as e:
+            print(f"Failed to parse Gemini general knowledge response as JSON: {e}")
+            print(f"Raw response: {response_text[:500]}")
+            # Try to extract plain text answer
+            return {
+                "verified": False,
+                "verdict": "uncertain",
+                "message": response_text if response_text else "Unable to verify using general knowledge",
+                "confidence": "low",
+                "analysis_method": "general_knowledge",
+                "error": "JSON parsing failed, used plain text response"
+            }
+        except Exception as e:
+            print(f"General knowledge verification error: {e}")
+            return {
+                "verified": False,
+                "verdict": "error",
+                "message": f"Error during general knowledge verification: {str(e)}",
+                "confidence": "low",
+                "analysis_method": "general_knowledge"
+            }
     
     def _extract_verdict_from_content(self, content: str) -> str:
         """
@@ -619,3 +777,121 @@ Respond in this exact JSON format:
                 message += f" Sources include: {', '.join(top_sources[:3])}."
         
         return message
+
+    def _synthesize_final_response(
+        self,
+        text_input: str,
+        claim_context: str,
+        claim_date: str,
+        preliminary_analysis: Optional[Dict[str, Any]],
+        curated_analysis: Optional[Dict[str, Any]],
+        search_results: List[Dict[str, Any]],
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Ask Gemini to reconcile preliminary + curated evidence into a single user-facing verdict.
+        """
+        try:
+            source_briefs = []
+            for item in search_results[:5]:
+                source_briefs.append(
+                    {
+                        "title": item.get("title"),
+                        "snippet": item.get("snippet"),
+                        "outlet": item.get("displayLink"),
+                        "link": item.get("link"),
+                    }
+                )
+
+            prompt = f"""
+You are an AI fact-checking editor. Combine the baseline assessment and curated sources to produce the final answer.
+
+CLAIM: "{text_input}"
+CONTEXT: {claim_context}
+CLAIM DATE: {claim_date}
+
+BASELINE ANALYSIS (Gemini quick look):
+{json.dumps(preliminary_analysis or {}, indent=2, ensure_ascii=False)}
+
+CURATED FACT-CHECK ANALYSIS:
+{json.dumps(curated_analysis or {}, indent=2, ensure_ascii=False)}
+
+FACT-CHECK SOURCES:
+{json.dumps(source_briefs, indent=2, ensure_ascii=False)}
+
+INSTRUCTIONS:
+- Make a reasoned decision (true/false/mixed/uncertain) based on the above.
+- If evidence is thin, keep the tone cautious and say it is unverified/uncertain but mention what was found.
+- Refer to sources generically (e.g., "one BBC article", "multiple outlets") — never number them.
+- Provide clear, actionable messaging for the end user.
+
+Respond ONLY in this JSON format:
+{{
+  "verdict": "true|false|mixed|uncertain",
+  "verified": true|false,
+  "message": "Concise user-facing summary referencing evidence in plain language",
+  "confidence": "high|medium|low",
+  "reasoning": "Brief reasoning trail you followed",
+  "tone": "confident|balanced|cautious"
+}}
+"""
+            response = self.model.generate_content(prompt)
+            response_text = response.text.strip()
+
+            if response_text.startswith("```json"):
+                response_text = response_text.replace("```json", "").replace("```", "").strip()
+            elif response_text.startswith("```"):
+                response_text = response_text.replace("```", "").strip()
+
+            final_analysis = json.loads(response_text)
+            final_analysis.setdefault("verdict", "uncertain")
+            final_analysis.setdefault("verified", False)
+            final_analysis.setdefault("message", "Unable to synthesize final verdict.")
+            final_analysis.setdefault("confidence", "low")
+            final_analysis.setdefault("reasoning", "")
+            final_analysis.setdefault("tone", "cautious")
+            final_analysis["analysis_method"] = "hybrid_synthesis"
+
+            return self._build_simple_response(
+                final_analysis,
+                text_input,
+                claim_context,
+                claim_date,
+                search_results,
+                method_label="hybrid_synthesis",
+                extra_details={
+                    "preliminary_analysis": preliminary_analysis,
+                    "curated_analysis": curated_analysis,
+                    "source_highlights": source_briefs,
+                },
+            )
+        except Exception as e:
+            print(f"Hybrid synthesis error: {e}")
+            return None
+
+    def _build_simple_response(
+        self,
+        analysis: Dict[str, Any],
+        text_input: str,
+        claim_context: str,
+        claim_date: str,
+        search_results: List[Dict[str, Any]],
+        method_label: str,
+        extra_details: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, Any]:
+        details = {
+            "claim_text": text_input,
+            "claim_context": claim_context,
+            "claim_date": claim_date,
+            "fact_checks": search_results,
+            "analysis": analysis,
+            "verification_method": method_label,
+        }
+        if extra_details:
+            details.update(extra_details)
+
+        return {
+            "verified": analysis.get("verified", False),
+            "verdict": analysis.get("verdict", "uncertain"),
+            "message": analysis.get("message", "No message produced."),
+            "details": details,
+        }
