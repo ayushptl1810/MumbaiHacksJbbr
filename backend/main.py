@@ -36,9 +36,16 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Add CORS middleware
+# Note: When allow_credentials=True, you cannot use allow_origins=["*"]
+# Must specify exact origins
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -224,6 +231,109 @@ async def verify_text(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+async def _extract_media_from_url(url: str) -> Optional[Dict[str, Any]]:
+    """
+    Use yt-dlp to extract media from a URL and determine if it's an image or video.
+    
+    Returns:
+        Dict with "type" ("image" or "video") and "path" (local file path), or None if fails
+    """
+    try:
+        from shutil import which
+        import subprocess
+        import tempfile
+        
+        # Resolve yt-dlp binary
+        ytdlp_bin = config.YTDLP_BIN or "yt-dlp"
+        found = which(ytdlp_bin) or which("yt-dlp")
+        if not found:
+            print("[extract_media] yt-dlp not found")
+            return None
+        
+        # Create temp directory
+        temp_dir = tempfile.mkdtemp(prefix="media_extract_")
+        
+        # First, get info about the media
+        info_cmd = [found, url, "--dump-json", "--no-playlist"]
+        result = subprocess.run(
+            info_cmd,
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        
+        if result.returncode != 0:
+            print(f"[extract_media] yt-dlp info failed: {result.stderr}")
+            return None
+        
+        info = json.loads(result.stdout)
+        
+        # Determine media type
+        ext = info.get("ext", "").lower()
+        is_video = ext in ["mp4", "webm", "mkv", "avi", "mov", "flv", "m4v"]
+        is_image = ext in ["jpg", "jpeg", "png", "gif", "webp", "bmp"]
+        
+        if not is_video and not is_image:
+            # Check formats to determine type
+            formats = info.get("formats", [])
+            has_video_codec = any(f.get("vcodec") != "none" for f in formats)
+            has_audio_codec = any(f.get("acodec") != "none" for f in formats)
+            
+            if has_video_codec:
+                is_video = True
+            elif not has_audio_codec and not has_video_codec:
+                # Likely an image
+                is_image = True
+        
+        media_type = "video" if is_video else "image"
+        
+        # Download the media
+        output_template = os.path.join(temp_dir, f"media.%(ext)s")
+        download_cmd = [
+            found,
+            url,
+            "-o", output_template,
+            "--no-playlist",
+        ]
+        
+        # For images, prefer best quality; for videos, get best format
+        if is_image:
+            download_cmd.extend(["--format", "best"])
+        else:
+            download_cmd.extend(["--format", "best[ext=mp4]/best"])
+        
+        result = subprocess.run(
+            download_cmd,
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+        
+        if result.returncode != 0:
+            print(f"[extract_media] yt-dlp download failed: {result.stderr}")
+            return None
+        
+        # Find the downloaded file
+        downloaded_files = [f for f in os.listdir(temp_dir) if os.path.isfile(os.path.join(temp_dir, f))]
+        if not downloaded_files:
+            print("[extract_media] No file downloaded")
+            return None
+        
+        media_path = os.path.join(temp_dir, downloaded_files[0])
+        
+        return {
+            "type": media_type,
+            "path": media_path,
+            "temp_dir": temp_dir  # Keep for cleanup
+        }
+        
+    except Exception as e:
+        print(f"[extract_media] Error: {e}")
+        import traceback
+        print(traceback.format_exc())
+        return None
+
+
 @app.post("/chatbot/verify")
 async def chatbot_verify(
     text_input: Optional[str] = Form(None),
@@ -373,6 +483,61 @@ Do NOT mention file names or file paths in your response.
         print(f"🔍 DEBUG: Processing {len(urls_list)} URLs")
         for i, url in enumerate(urls_list):
             print(f"🔍 DEBUG: Processing URL {i}: {url}")
+            
+            # STEP 1: For social media URLs, use yt-dlp to fetch the actual media first
+            # This determines the REAL media type, not just what the LLM guessed
+            url_lower = url.lower()
+            is_social_media = any(domain in url_lower for domain in [
+                'twitter.com', 'x.com', 'instagram.com', 'tiktok.com', 
+                'facebook.com', 'youtube.com', 'youtu.be'
+            ])
+            
+            extracted_media = None
+            if is_social_media:
+                print(f"🔍 DEBUG: Detected social media URL, extracting media with yt-dlp: {url}")
+                try:
+                    # Use yt-dlp to extract media and determine actual type
+                    extracted_media = await _extract_media_from_url(url)
+                    if extracted_media:
+                        actual_type = extracted_media.get("type")  # "image" or "video"
+                        media_path = extracted_media.get("path")
+                        temp_dir = extracted_media.get("temp_dir")
+                        
+                        print(f"🔍 DEBUG: yt-dlp extracted {actual_type} from URL: {media_path}")
+                        
+                        # Route based on ACTUAL media type, not LLM's guess
+                        if actual_type == "image":
+                            result = await image_verifier.verify(
+                                image_path=media_path,
+                                claim_context=claim_context,
+                                claim_date=claim_date
+                            )
+                        else:  # video
+                            result = await video_verifier.verify(
+                                video_path=media_path,
+                                claim_context=claim_context,
+                                claim_date=claim_date
+                            )
+                        
+                        result["source"] = "url"
+                        results.append(result)
+                        
+                        # Add to cleanup list
+                        if media_path:
+                            temp_files_to_cleanup.append(media_path)
+                        if temp_dir:
+                            temp_files_to_cleanup.append(temp_dir)
+                        
+                        continue  # Skip the old routing logic below
+                    else:
+                        print(f"⚠️ DEBUG: yt-dlp extraction returned None, falling back to direct URL")
+                except Exception as e:
+                    print(f"⚠️ DEBUG: Failed to extract media from URL with yt-dlp: {e}, falling back to direct URL")
+                    import traceback
+                    print(traceback.format_exc())
+                    # Fall through to old logic
+            
+            # STEP 2: Fallback to old routing (for direct image/video URLs or if yt-dlp fails)
             if verification_type == "image":
                 print(f"🔍 DEBUG: Calling image_verifier.verify for URL")
                 result = await image_verifier.verify(
@@ -708,9 +873,11 @@ async def get_cache_status():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-# Auth endpoints (minimal implementation)
 from pydantic import BaseModel
-from typing import Optional
+
+
+# ---------- Auth endpoints (minimal implementation) ----------
+
 
 class LoginRequest(BaseModel):
     email: str
@@ -770,6 +937,155 @@ async def get_current_user():
         "email": "demo@example.com",
         "id": "1"
     }
+
+
+# ---------- Chat history endpoints ----------
+
+
+class ChatSessionUpsert(BaseModel):
+    session_id: Optional[str] = None
+    title: Optional[str] = None
+    user_id: Optional[str] = None
+    anonymous_id: Optional[str] = None
+    last_verdict: Optional[str] = None
+    last_summary: Optional[str] = None
+
+
+class ChatTurn(BaseModel):
+    role: str
+    content: str
+    created_at: Optional[Any] = None  # Can be datetime, string, or None
+    verdict: Optional[str] = None
+    confidence: Optional[float] = None
+    sources: Optional[Dict[str, Any]] = None
+    attachments: Optional[List[Dict[str, Any]]] = None
+    metadata: Optional[Dict[str, Any]] = None
+
+
+class ChatMessagesAppend(BaseModel):
+    session_id: str
+    user_id: Optional[str] = None
+    anonymous_id: Optional[str] = None
+    messages: List[ChatTurn]
+
+
+@app.get("/chat/sessions")
+async def list_chat_sessions(
+    user_id: Optional[str] = None,
+    anonymous_id: Optional[str] = None,
+):
+    """Return chat sessions for logged-in users only.
+    
+    Anonymous users will receive an empty list since their sessions are not persisted.
+    """
+    try:
+        if not mongodb_service:
+            raise HTTPException(status_code=503, detail="MongoDB service not available")
+
+        # Only return sessions for logged-in users
+        if not user_id:
+            logger.info(f"⏭️ No user_id provided, returning empty sessions list")
+            return {"sessions": []}
+
+        logger.info(f"🔍 Loading chat sessions: user_id={user_id}")
+        sessions = mongodb_service.get_chat_sessions(
+            user_id=user_id,
+            anonymous_id=None,  # Don't query by anonymous_id anymore
+        )
+        logger.info(f"✅ Found {len(sessions)} chat sessions")
+        return {"sessions": sessions}
+    except Exception as e:
+        logger.error(f"❌ Error loading chat sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to load chat sessions: {str(e)}")
+
+
+@app.post("/chat/sessions")
+async def upsert_chat_session(payload: ChatSessionUpsert):
+    """Create or update a chat session.
+
+    Only saves sessions for logged-in users (user_id required).
+    Anonymous sessions are not persisted to MongoDB but a session_id is still returned for UI purposes.
+    """
+    try:
+        if not mongodb_service:
+            raise HTTPException(status_code=503, detail="MongoDB service not available")
+
+        data = payload.dict(exclude_unset=True)
+        user_id = data.get("user_id")
+        anonymous_id = data.get("anonymous_id")
+        
+        # Only persist sessions for logged-in users
+        if not user_id:
+            # Still return a session_id for UI purposes, but don't persist
+            import uuid
+            session_id = data.get("session_id") or str(uuid.uuid4())
+            logger.info(f"⏭️ Skipping session persistence for anonymous user (session_id={session_id})")
+            return {
+                "session_id": session_id,
+                "title": data.get("title", "New Chat"),
+                "user_id": None,
+                "anonymous_id": anonymous_id,
+                "created_at": None,
+                "updated_at": None,
+                "persisted": False,
+            }
+
+        logger.info(f"🔍 Upserting chat session: {data}")
+
+        # Optionally migrate anonymous history on first login
+        if user_id and anonymous_id:
+            try:
+                migrated = mongodb_service.migrate_anonymous_sessions(
+                    anonymous_id=anonymous_id, user_id=user_id
+                )
+                logger.info(f"✅ Migrated {migrated} anonymous sessions to user {user_id}")
+            except Exception as exc:
+                logger.error(f"Failed to migrate anonymous sessions: {exc}")
+
+        session_doc = mongodb_service.upsert_chat_session(data)
+        logger.info(f"✅ Created/updated session: {session_doc.get('session_id')}")
+        return session_doc
+    except Exception as e:
+        logger.error(f"❌ Error upserting chat session: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to create/update chat session: {str(e)}")
+
+
+@app.get("/chat/messages/{session_id}")
+async def get_chat_messages(session_id: str):
+    """Return all messages for a given chat session."""
+    if not mongodb_service:
+        raise HTTPException(status_code=503, detail="MongoDB service not available")
+
+    messages = mongodb_service.get_chat_messages(session_id=session_id)
+    return {"session_id": session_id, "messages": messages}
+
+
+@app.post("/chat/messages")
+async def append_chat_messages(payload: ChatMessagesAppend):
+    """Append one or more messages to a chat session.
+    
+    Only saves messages for logged-in users (user_id required).
+    Anonymous messages are not persisted to MongoDB.
+    """
+    if not mongodb_service:
+        raise HTTPException(status_code=503, detail="MongoDB service not available")
+
+    data = payload.dict()
+    user_id = data.get("user_id")
+    
+    # Only persist messages for logged-in users
+    if not user_id:
+        logger.info(f"⏭️ Skipping message persistence for anonymous user (session_id={data['session_id']})")
+        return {"inserted": 0, "message": "Messages not persisted for anonymous users"}
+
+    inserted = mongodb_service.append_chat_messages(
+        session_id=data["session_id"],
+        messages=[m for m in data["messages"]],
+        user_id=user_id,
+        anonymous_id=data.get("anonymous_id"),
+    )
+    logger.info(f"✅ Persisted {inserted} messages for user {user_id}")
+    return {"inserted": inserted}
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=config.SERVICE_PORT)

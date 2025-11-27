@@ -15,7 +15,14 @@ import {
   X,
 } from "lucide-react";
 
-const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
+const ChatbotView = ({
+  isDarkMode,
+  setIsDarkMode,
+  onLearnClick,
+  sessionId,
+  initialMessages = [],
+  onTurnPersist,
+}) => {
   const [messages, setMessages] = useState([
     {
       id: 1,
@@ -39,6 +46,25 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
   const recordingTimerRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
   const dropZoneRef = useRef(null);
+
+  useEffect(() => {
+    // Reset messages when session changes
+    if (Array.isArray(initialMessages) && initialMessages.length) {
+      setMessages(initialMessages);
+    } else {
+      setMessages([
+        {
+          id: 1,
+          type: "ai",
+          content:
+            "Hello! I'm your AI fact-checking assistant. I can verify text claims, analyze images, check videos, and listen to audio for accuracy. What would you like me to verify?",
+          timestamp: new Date(),
+          sources: [],
+        },
+      ]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId]);
 
   useEffect(() => {
     return () => {
@@ -153,6 +179,14 @@ const ChatbotView = ({ isDarkMode, setIsDarkMode, onLearnClick }) => {
       };
 
       setMessages((prev) => [...prev, aiMessage]);
+
+      if (onTurnPersist && sessionId) {
+        try {
+          await onTurnPersist(sessionId, userMessage, aiMessage);
+        } catch (e) {
+          console.error("Failed to persist chat turn", e);
+        }
+      }
     } catch (error) {
       console.error("Main error:", error);
       const errorMessage = {

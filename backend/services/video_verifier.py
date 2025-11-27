@@ -86,8 +86,43 @@ class VideoVerifier:
                     "details": {"error": "Frame extraction failed"}
                 }
             
-            # Analyze frames and aggregate a verdict
-            analysis = await self._analyze_frames(frames, claim_context, claim_date)
+            # STEP 0: Analyze frames with Gemini Vision first (direct frame analysis)
+            preliminary_vision_analysis = await self._analyze_frames_with_vision(
+                frames, claim_context, claim_date
+            )
+            print(f"✅ Gemini Vision analysis result: {preliminary_vision_analysis.get('overall_verdict', 'unknown')}")
+            
+            # STEP 1: Analyze frames with reverse image search (existing approach)
+            # Wrap in try/except so vision analysis can still proceed if search fails
+            reverse_search_analysis = None
+            try:
+                reverse_search_analysis = await self._analyze_frames(frames, claim_context, claim_date)
+            except Exception as search_error:
+                print(f"⚠️ Reverse image search analysis failed (will use vision analysis only): {search_error}")
+                # Continue with vision analysis only
+            
+            # STEP 2: Synthesize vision analysis + reverse image search results
+            if reverse_search_analysis:
+                final_analysis = self._synthesize_video_analyses(
+                    preliminary_vision_analysis=preliminary_vision_analysis,
+                    reverse_search_analysis=reverse_search_analysis,
+                    frames=frames,
+                    claim_context=claim_context,
+                    claim_date=claim_date,
+                )
+                
+                if final_analysis:
+                    analysis = final_analysis
+                else:
+                    # Fallback: use vision analysis if synthesis fails
+                    if preliminary_vision_analysis.get("overall_verdict") in ["false", "true"]:
+                        analysis = preliminary_vision_analysis
+                    else:
+                        analysis = reverse_search_analysis
+            else:
+                # No reverse search results, use vision analysis only
+                print("⚠️ Using vision analysis only (reverse image search unavailable)")
+                analysis = preliminary_vision_analysis
             
             if analysis.get("overall_verdict") != "false":
                 return {
@@ -626,6 +661,167 @@ class VideoVerifier:
             print(f"Error extracting frames: {e}")
             return []
     
+    async def _analyze_frames_with_vision(
+        self,
+        frames: List[Tuple[str, float]],
+        claim_context: str,
+        claim_date: str
+    ) -> Dict[str, Any]:
+        """
+        Analyze video frames directly with Gemini Vision (first pass).
+        Detects AI-generated/deepfake/manipulation in frames.
+        
+        Args:
+            frames: List of (frame_path, timestamp) tuples
+            claim_context: The claimed context
+            claim_date: The claimed date
+            
+        Returns:
+            Dictionary with preliminary vision analysis
+        """
+        try:
+            if not self.image_verifier.gemini_model:
+                return {
+                    "overall_verdict": "uncertain",
+                    "overall_summary": "Gemini Vision not available",
+                    "frame_analyses": [],
+                    "analysis_method": "vision_unavailable",
+                }
+            
+            frame_analyses = []
+            for frame_path, timestamp in frames:
+                try:
+                    # Use image verifier's vision analysis method
+                    vision_result = await self.image_verifier._analyze_image_with_vision(
+                        image_path=frame_path,
+                        image_url=None,
+                        claim_context=f"{claim_context} (Frame at {timestamp}s)",
+                        claim_date=claim_date
+                    )
+                    frame_analyses.append({
+                        "timestamp": timestamp,
+                        "frame_path": frame_path,
+                        "vision_analysis": vision_result,
+                    })
+                except Exception as e:
+                    print(f"⚠️ Vision analysis failed for frame at {timestamp}s: {e}")
+                    continue
+            
+            if not frame_analyses:
+                return {
+                    "overall_verdict": "uncertain",
+                    "overall_summary": "No frames could be analyzed with vision",
+                    "frame_analyses": [],
+                    "analysis_method": "vision_no_frames",
+                }
+            
+            # Aggregate vision results across frames
+            false_count = sum(1 for fa in frame_analyses if fa["vision_analysis"].get("verdict") == "false")
+            true_count = sum(1 for fa in frame_analyses if fa["vision_analysis"].get("verdict") == "true")
+            uncertain_count = len(frame_analyses) - false_count - true_count
+            
+            # Determine overall verdict
+            if false_count > true_count and false_count > uncertain_count:
+                overall_verdict = "false"
+                overall_summary = f"Vision analysis detected manipulation/AI-generated content in {false_count}/{len(frame_analyses)} frames"
+            elif true_count > false_count and true_count > uncertain_count:
+                overall_verdict = "true"
+                overall_summary = f"Vision analysis found authentic content in {true_count}/{len(frame_analyses)} frames"
+            else:
+                overall_verdict = "uncertain"
+                overall_summary = f"Vision analysis inconclusive: {true_count} true, {false_count} false, {uncertain_count} uncertain across {len(frame_analyses)} frames"
+            
+            return {
+                "overall_verdict": overall_verdict,
+                "overall_summary": overall_summary,
+                "frame_analyses": frame_analyses,
+                "false_count": false_count,
+                "true_count": true_count,
+                "uncertain_count": uncertain_count,
+                "analysis_method": "gemini_vision",
+            }
+            
+        except Exception as e:
+            print(f"[vision] Error in frame vision analysis: {e}")
+            return {
+                "overall_verdict": "uncertain",
+                "overall_summary": f"Error during vision analysis: {str(e)}",
+                "frame_analyses": [],
+                "analysis_method": "vision_error",
+            }
+
+    def _synthesize_video_analyses(
+        self,
+        preliminary_vision_analysis: Dict[str, Any],
+        reverse_search_analysis: Dict[str, Any],
+        frames: List[Tuple[str, float]],
+        claim_context: str,
+        claim_date: str,
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Synthesize Gemini Vision analysis with reverse image search results.
+        """
+        try:
+            if not self.image_verifier.gemini_model:
+                return None
+            
+            prompt = f"""You are an expert video verification analyst. Combine direct frame analysis (Gemini Vision) with reverse image search evidence to produce a final verdict.
+
+CLAIM: {claim_context}
+CLAIM DATE: {claim_date}
+
+DIRECT FRAME ANALYSIS (Gemini Vision):
+{json.dumps(preliminary_vision_analysis or {}, indent=2, ensure_ascii=False)}
+
+REVERSE IMAGE SEARCH ANALYSIS:
+{json.dumps(reverse_search_analysis or {}, indent=2, ensure_ascii=False)}
+
+TOTAL FRAMES ANALYZED: {len(frames)}
+
+INSTRUCTIONS:
+- Combine both analyses to make a final decision (true/false/uncertain)
+- If vision analysis detects AI-generated/manipulated content in multiple frames, prioritize that
+- If reverse image search finds contradictory evidence, factor that in
+- Consider consistency across frames
+- If evidence is thin, keep the tone cautious
+- Provide clear, actionable messaging for the end user
+
+Respond ONLY in this JSON format:
+{{
+  "overall_verdict": "true|false|uncertain",
+  "overall_summary": "Concise user-facing summary combining both analyses",
+  "confidence": "high|medium|low",
+  "reasoning": "Brief reasoning trail you followed",
+  "vision_findings": "Key findings from direct frame analysis",
+  "search_findings": "Key findings from reverse image search"
+}}"""
+            
+            response = self.image_verifier.gemini_model.generate_content(prompt)
+            response_text = response.text.strip()
+            
+            if response_text.startswith("```json"):
+                response_text = response_text.replace("```json", "").replace("```", "").strip()
+            elif response_text.startswith("```"):
+                response_text = response_text.replace("```", "").strip()
+            
+            final_analysis = json.loads(response_text)
+            final_analysis.setdefault("overall_verdict", "uncertain")
+            final_analysis.setdefault("overall_summary", "Unable to synthesize final verdict.")
+            final_analysis.setdefault("confidence", "low")
+            final_analysis["analysis_method"] = "hybrid_vision_and_search"
+            
+            # Preserve frame summaries and sources from reverse search
+            final_analysis["frame_summaries"] = reverse_search_analysis.get("frame_summaries", [])
+            final_analysis["consolidated_sources"] = reverse_search_analysis.get("consolidated_sources", [])
+            final_analysis["preliminary_vision_analysis"] = preliminary_vision_analysis
+            final_analysis["reverse_search_analysis"] = reverse_search_analysis
+            
+            return final_analysis
+            
+        except Exception as e:
+            print(f"Video hybrid synthesis error: {e}")
+            return None
+
     async def _analyze_frames(self, frames: List[Tuple[str, float]], 
                              claim_context: str, claim_date: str) -> Dict[str, Any]:
         """

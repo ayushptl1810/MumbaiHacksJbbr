@@ -4,23 +4,115 @@ import { PenSquare, Search } from "lucide-react";
 import logoImg from "../../assets/logo.png";
 import ChatbotView from "./ChatbotView";
 import "./Verify.css";
+import { chatService, authService } from "../../services/api";
 
 const Verify = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [chatHistory, setChatHistory] = useState([
-    { id: 1, title: "New Chat", timestamp: new Date() },
-  ]);
-  const [activeChatId, setActiveChatId] = useState(1);
+  const [chatHistory, setChatHistory] = useState([]);
+  const [activeChatId, setActiveChatId] = useState(null);
+  const [messagesBySession, setMessagesBySession] = useState({});
+  const [anonymousId, setAnonymousId] = useState(null);
+  const [userId, setUserId] = useState(null);
   const hoverTimeoutRef = useRef(null);
 
-  const handleNewChat = () => {
-    const newChat = {
-      id: Date.now(),
-      title: "New Chat",
-      timestamp: new Date(),
+  useEffect(() => {
+    // Establish anonymous id for this browser
+    if (typeof window !== "undefined") {
+      const existing =
+        window.localStorage.getItem("aegis_anonymous_id") || null;
+      if (existing) {
+        setAnonymousId(existing);
+      } else {
+        const generated = crypto.randomUUID
+          ? crypto.randomUUID()
+          : Math.random().toString(36).slice(2);
+        window.localStorage.setItem("aegis_anonymous_id", generated);
+        setAnonymousId(generated);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    // Try to discover logged-in user (best effort, backend is mock)
+    const loadUser = async () => {
+      try {
+        const res = await authService.me();
+        if (res?.data?.id) {
+          setUserId(res.data.id);
+        }
+      } catch {
+        // ignore, anonymous session is fine
+      }
     };
-    setChatHistory([newChat, ...chatHistory]);
-    setActiveChatId(newChat.id);
+    loadUser();
+  }, []);
+
+  useEffect(() => {
+    const loadSessions = async () => {
+      // Only load sessions for logged-in users (anonymous sessions aren't persisted)
+      if (!userId) {
+        console.log(
+          "⏭️ No userId, skipping session load (anonymous sessions not persisted)"
+        );
+        setChatHistory([]);
+        return;
+      }
+      try {
+        console.log("🔍 Loading chat sessions for user:", userId);
+        const res = await chatService.listSessions({
+          anonymousId: null, // Don't send anonymousId for logged-in users
+          userId,
+        });
+        console.log("✅ Chat sessions response:", res?.data);
+        const sessions = res?.data?.sessions || [];
+        const mapped = sessions.map((s) => ({
+          id: s.session_id,
+          title: s.title || "New Chat",
+          timestamp: s.updated_at ? new Date(s.updated_at) : new Date(),
+        }));
+        setChatHistory(mapped);
+        if (!activeChatId && mapped.length > 0) {
+          setActiveChatId(mapped[0].id);
+        }
+      } catch (e) {
+        console.error("❌ Failed to load chat sessions", e);
+        console.error("Error details:", {
+          message: e.message,
+          response: e.response?.data,
+          status: e.response?.status,
+          config: e.config,
+        });
+      }
+    };
+    loadSessions();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [userId]); // Only depend on userId, not anonymousId
+
+  const handleNewChat = async () => {
+    try {
+      const res = await chatService.upsertSession({
+        title: "New Chat",
+        anonymous_id: anonymousId,
+        user_id: userId,
+      });
+      const session = res.data;
+      const id = session.session_id;
+      const newEntry = {
+        id,
+        title: session.title || "New Chat",
+        timestamp: session.updated_at
+          ? new Date(session.updated_at)
+          : new Date(),
+      };
+      setChatHistory((prev) => [newEntry, ...prev]);
+      setActiveChatId(id);
+      setMessagesBySession((prev) => ({
+        ...prev,
+        [id]: [],
+      }));
+    } catch (e) {
+      console.error("Failed to create chat session", e);
+    }
   };
 
   const filteredHistory = useMemo(() => chatHistory, [chatHistory]);
@@ -32,6 +124,79 @@ const Verify = () => {
       }
     };
   }, []);
+
+  const handleSelectChat = async (sessionId) => {
+    setActiveChatId(sessionId);
+    if (messagesBySession[sessionId]) return;
+    try {
+      const res = await chatService.getMessages(sessionId);
+      const raw = res?.data?.messages || [];
+      const mapped = raw.map((m) => ({
+        id: m._id,
+        type: m.role === "assistant" ? "ai" : "user",
+        content: m.content,
+        timestamp: m.created_at ? new Date(m.created_at) : new Date(),
+        sources: m.sources || [],
+      }));
+      setMessagesBySession((prev) => ({
+        ...prev,
+        [sessionId]: mapped,
+      }));
+    } catch (e) {
+      console.error("Failed to load chat messages", e);
+    }
+  };
+
+  const handlePersistTurn = async (sessionId, userMessage, aiMessage) => {
+    // Always update local state for UI
+    setMessagesBySession((prev) => {
+      const existing = prev[sessionId] || [];
+      return {
+        ...prev,
+        [sessionId]: [...existing, userMessage, aiMessage],
+      };
+    });
+
+    // Only persist to MongoDB for logged-in users
+    if (!userId) {
+      console.log("⏭️ Skipping persistence for anonymous user");
+      return;
+    }
+
+    try {
+      await chatService.appendMessages({
+        session_id: sessionId,
+        user_id: userId,
+        anonymous_id: anonymousId,
+        messages: [
+          {
+            role: "user",
+            content: userMessage.content,
+            created_at: userMessage.timestamp,
+          },
+          {
+            role: "assistant",
+            content: aiMessage.content,
+            verdict: aiMessage.is_misinformation ? "false" : undefined,
+            sources: aiMessage.sources || [],
+            created_at: aiMessage.timestamp,
+          },
+        ],
+      });
+
+      // Also bump session metadata
+      await chatService.upsertSession({
+        session_id: sessionId,
+        title: userMessage.content?.slice(0, 80) || "New Chat",
+        anonymous_id: anonymousId,
+        user_id: userId,
+        last_summary: aiMessage.content,
+        last_verdict: aiMessage.is_misinformation ? "false" : undefined,
+      });
+    } catch (e) {
+      console.error("Failed to persist chat turn", e);
+    }
+  };
 
   return (
     <div className="h-[calc(100vh-4rem)] bg-black">
@@ -135,7 +300,7 @@ const Verify = () => {
                 return (
                   <button
                     key={chat.id}
-                    onClick={() => setActiveChatId(chat.id)}
+                    onClick={() => handleSelectChat(chat.id)}
                     className={`flex w-full items-center rounded-2xl border border-transparent px-3 py-3 text-left text-sm transition ${
                       isActive
                         ? "border-blue-500/40 bg-blue-600/20 text-white shadow-inner"
@@ -161,7 +326,16 @@ const Verify = () => {
         </motion.aside>
 
         <div className="flex-1 overflow-hidden bg-black/30 backdrop-blur-sm">
-          <ChatbotView isDarkMode={true} setIsDarkMode={() => {}} />
+          <ChatbotView
+            key={activeChatId || "default"}
+            isDarkMode={true}
+            setIsDarkMode={() => {}}
+            sessionId={activeChatId}
+            initialMessages={
+              (activeChatId && messagesBySession[activeChatId]) || []
+            }
+            onTurnPersist={handlePersistTurn}
+          />
         </div>
       </div>
     </div>

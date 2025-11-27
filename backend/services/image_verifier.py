@@ -5,6 +5,7 @@ import requests
 from PIL import Image, ImageDraw, ImageFont
 import io
 import base64
+import json
 import google.generativeai as genai
 # Import SerpApi client - use the correct import path from documentation
 GoogleSearch = None  # type: ignore
@@ -50,45 +51,82 @@ class ImageVerifier:
         
     async def verify(self, image_path: Optional[str] = None, claim_context: str = "", claim_date: str = "", image_url: Optional[str] = None) -> Dict[str, Any]:
         """
-        Verify an image and generate a visual counter-measure if false context is detected
+        Verify an image using a two-stage approach:
+        1. Gemini Vision analyzes the image directly for AI-generated/deepfake/manipulation
+        2. Reverse image search + evidence analysis
         
         Args:
             image_path: Path to the image file
             claim_context: The claimed context of the image
             claim_date: The claimed date of the image
+            image_url: URL of the image
             
         Returns:
             Dictionary with verification results and output file path
         """
         try:
-            # Perform reverse image search
             print("[verify] start", {"claim_context": claim_context, "claim_date": claim_date, "has_image_path": bool(image_path), "has_image_url": bool(image_url)})
-            search_results = await self._reverse_image_search(image_path=image_path, image_url=image_url)
             
-            if not search_results or (not search_results.get("inline_images") and not search_results.get("image_results")):
-                return {
-                    "verified": False,
-                    "message": "No search results found",
-                    "details": {"search_results": search_results}
-                }
+            # STEP 0: Gemini Vision analysis of the actual image
+            preliminary_analysis = await self._analyze_image_with_vision(
+                image_path=image_path,
+                image_url=image_url,
+                claim_context=claim_context,
+                claim_date=claim_date
+            )
+            print(f"✅ Gemini Vision analysis result: {preliminary_analysis.get('verdict', 'unknown')}")
             
-            # Build evidence from SerpApi (no local heuristics for verdict)
-            evidence = self._collect_evidence(search_results)
-            print("[verify] serpapi_counts", {
-                "image_results": len(search_results.get("image_results", [])) if isinstance(search_results, dict) else None,
-                "inline_images": len(search_results.get("inline_images", [])) if isinstance(search_results, dict) else None,
-                "status": (search_results.get("search_metadata", {}) or {}).get("status") if isinstance(search_results, dict) else None,
-            })
-            print("[verify] evidence_collected", {"count": len(evidence), "sample_titles": [e.get("title") for e in evidence[:3]]})
+            # STEP 1: Perform reverse image search (wrap in try/except so vision analysis can still proceed)
+            search_results = None
+            try:
+                search_results = await self._reverse_image_search(image_path=image_path, image_url=image_url)
+            except Exception as search_error:
+                print(f"⚠️ Reverse image search failed (will use vision analysis only): {search_error}")
+                # Continue with vision analysis only - this is fine, we have a fallback
+            
+            # STEP 2: Build evidence from SerpApi (reverse image search)
+            evidence = []
+            curated_analysis = None
+            if search_results and (search_results.get("inline_images") or search_results.get("image_results")):
+                evidence = self._collect_evidence(search_results)
+                print("[verify] serpapi_counts", {
+                    "image_results": len(search_results.get("image_results", [])) if isinstance(search_results, dict) else None,
+                    "inline_images": len(search_results.get("inline_images", [])) if isinstance(search_results, dict) else None,
+                    "status": (search_results.get("search_metadata", {}) or {}).get("status") if isinstance(search_results, dict) else None,
+                })
+                print("[verify] evidence_collected", {"count": len(evidence), "sample_titles": [e.get("title") for e in evidence[:3]]})
 
-            # Ask Gemini to produce structured verdict + structured claim parse with citations
-            filtered_evidence = self._rank_and_filter_evidence(evidence, claim_context, top_k=12)
-            print("[verify] preparing_llm_request", {"evidence_count": len(filtered_evidence)})
-            llm = self._summarize_with_gemini_structured(
+                # Ask Gemini to produce structured verdict + structured claim parse with citations
+                filtered_evidence = self._rank_and_filter_evidence(evidence, claim_context, top_k=12)
+                print("[verify] preparing_llm_request", {"evidence_count": len(filtered_evidence)})
+                curated_analysis = self._summarize_with_gemini_structured(
+                    claim_context=claim_context,
+                    claim_date=claim_date,
+                    evidence=filtered_evidence,
+                )
+            else:
+                print("[verify] No reverse image search results, using vision analysis only")
+                filtered_evidence = []
+            
+            # STEP 3: Synthesize vision analysis + reverse image search results
+            final_response = self._synthesize_vision_and_evidence(
+                preliminary_analysis=preliminary_analysis,
+                curated_analysis=curated_analysis,
+                evidence=filtered_evidence,
                 claim_context=claim_context,
                 claim_date=claim_date,
-                evidence=filtered_evidence,
             )
+            
+            if final_response:
+                return final_response
+            
+            # Fallback: use vision analysis if available, else curated analysis
+            if preliminary_analysis and preliminary_analysis.get("verdict") in ["false", "true"]:
+                llm = preliminary_analysis
+            elif curated_analysis:
+                llm = curated_analysis
+            else:
+                llm = None
             validator = {"passed": False, "reasons": [], "checks": {}}
             debug_details = {}
             if llm:
@@ -263,6 +301,222 @@ class ImageVerifier:
                 "verdict": "error",
                 "summary": f"Error during verification: {str(e)}",
             }
+
+    async def _analyze_image_with_vision(
+        self,
+        image_path: Optional[str] = None,
+        image_url: Optional[str] = None,
+        claim_context: str = "",
+        claim_date: str = ""
+    ) -> Dict[str, Any]:
+        """
+        Use Gemini Vision to analyze the actual image content for:
+        - AI-generated/deepfake indicators
+        - Manipulation artifacts
+        - Visual inconsistencies
+        - Context analysis
+        
+        Args:
+            image_path: Path to the image file
+            image_url: URL of the image
+            claim_context: The claimed context
+            claim_date: The claimed date
+            
+        Returns:
+            Dictionary with preliminary analysis
+        """
+        try:
+            if not self.gemini_model:
+                return {
+                    "verdict": "uncertain",
+                    "verified": False,
+                    "message": "Gemini Vision not available",
+                    "confidence": "low",
+                    "analysis_method": "vision_unavailable",
+                }
+            
+            # Load the image
+            import PIL.Image as PILImage
+            if image_path:
+                img = PILImage.open(image_path)
+            elif image_url:
+                img = await self._download_image(image_url)
+            else:
+                return {
+                    "verdict": "uncertain",
+                    "verified": False,
+                    "message": "No image provided for vision analysis",
+                    "confidence": "low",
+                    "analysis_method": "vision_no_image",
+                }
+            
+            prompt = f"""You are an expert image forensics analyst. Analyze this image carefully for authenticity and manipulation.
+
+CLAIMED CONTEXT: {claim_context}
+CLAIMED DATE: {claim_date}
+
+Analyze the image for:
+1. **AI-Generated/Deepfake Indicators**: Look for signs of AI generation (inconsistent lighting, unnatural textures, artifacts around faces/objects, watermarks, telltale patterns)
+2. **Manipulation Artifacts**: Check for signs of editing (cloning, copy-paste, inconsistent shadows, lighting mismatches, pixelation patterns)
+3. **Visual Inconsistencies**: Look for impossible physics, inconsistent perspectives, mismatched elements
+4. **Context Analysis**: Does the visual content match the claimed context and date? (e.g., clothing styles, technology visible, environment)
+
+Respond in JSON format:
+{{
+    "verdict": "true|false|uncertain",
+    "verified": true|false,
+    "message": "Clear explanation of your findings",
+    "confidence": "high|medium|low",
+    "ai_generated_indicators": ["list of specific indicators found"],
+    "manipulation_artifacts": ["list of artifacts found"],
+    "visual_inconsistencies": ["list of inconsistencies"],
+    "context_match": "Does the image content match the claimed context?",
+    "reasoning": "Detailed reasoning for your verdict"
+}}
+
+Be specific and cite what you see in the image. If uncertain, explain why."""
+            
+            # Use Gemini Vision to analyze the image
+            response = self.gemini_model.generate_content([prompt, img])
+            
+            if not response.text:
+                return {
+                    "verdict": "uncertain",
+                    "verified": False,
+                    "message": "Gemini Vision returned no response",
+                    "confidence": "low",
+                    "analysis_method": "vision_no_response",
+                }
+            
+            # Parse JSON response
+            import json
+            response_text = response.text.strip()
+            if response_text.startswith("```json"):
+                response_text = response_text.replace("```json", "").replace("```", "").strip()
+            elif response_text.startswith("```"):
+                response_text = response_text.replace("```", "").strip()
+            
+            try:
+                analysis = json.loads(response_text)
+                analysis["analysis_method"] = "gemini_vision"
+                return analysis
+            except json.JSONDecodeError:
+                # Fallback: extract verdict from text
+                verdict = "uncertain"
+                if "false" in response_text.lower() or "fake" in response_text.lower() or "manipulated" in response_text.lower():
+                    verdict = "false"
+                elif "true" in response_text.lower() and "not" not in response_text.lower()[:50]:
+                    verdict = "true"
+                
+                return {
+                    "verdict": verdict,
+                    "verified": verdict == "true",
+                    "message": response_text[:500],
+                    "confidence": "medium",
+                    "analysis_method": "gemini_vision_fallback",
+                    "raw_response": response_text,
+                }
+                
+        except Exception as e:
+            print(f"[vision] Error in Gemini Vision analysis: {e}")
+            return {
+                "verdict": "uncertain",
+                "verified": False,
+                "message": f"Error during vision analysis: {str(e)}",
+                "confidence": "low",
+                "analysis_method": "vision_error",
+            }
+
+    def _synthesize_vision_and_evidence(
+        self,
+        preliminary_analysis: Dict[str, Any],
+        curated_analysis: Optional[Dict[str, Any]],
+        evidence: List[Dict[str, Any]],
+        claim_context: str,
+        claim_date: str,
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Synthesize Gemini Vision analysis with reverse image search evidence.
+        Similar to text verification's hybrid synthesis.
+        """
+        try:
+            if not self.gemini_model:
+                return None
+            
+            source_briefs = []
+            for item in evidence[:5]:
+                source_briefs.append({
+                    "title": item.get("title"),
+                    "snippet": item.get("snippet"),
+                    "link": item.get("link"),
+                })
+            
+            prompt = f"""You are an expert image verification analyst. Combine direct image analysis (Gemini Vision) with reverse image search evidence to produce a final verdict.
+
+CLAIM: {claim_context}
+CLAIM DATE: {claim_date}
+
+DIRECT IMAGE ANALYSIS (Gemini Vision):
+{json.dumps(preliminary_analysis or {}, indent=2, ensure_ascii=False)}
+
+REVERSE IMAGE SEARCH ANALYSIS:
+{json.dumps(curated_analysis or {}, indent=2, ensure_ascii=False)}
+
+REVERSE IMAGE SEARCH SOURCES:
+{json.dumps(source_briefs, indent=2, ensure_ascii=False)}
+
+INSTRUCTIONS:
+- Combine both analyses to make a final decision (true/false/uncertain)
+- If vision analysis detects AI-generated/manipulated content, prioritize that
+- If reverse image search finds contradictory evidence, factor that in
+- If evidence is thin, keep the tone cautious
+- Provide clear, actionable messaging for the end user
+
+Respond ONLY in this JSON format:
+{{
+  "verdict": "true|false|uncertain",
+  "verified": true|false,
+  "message": "Concise user-facing summary combining both analyses",
+  "confidence": "high|medium|low",
+  "reasoning": "Brief reasoning trail you followed",
+  "vision_findings": "Key findings from direct image analysis",
+  "search_findings": "Key findings from reverse image search"
+}}"""
+            
+            response = self.gemini_model.generate_content(prompt)
+            response_text = response.text.strip()
+            
+            if response_text.startswith("```json"):
+                response_text = response_text.replace("```json", "").replace("```", "").strip()
+            elif response_text.startswith("```"):
+                response_text = response_text.replace("```", "").strip()
+            
+            final_analysis = json.loads(response_text)
+            final_analysis.setdefault("verdict", "uncertain")
+            final_analysis.setdefault("verified", False)
+            final_analysis.setdefault("message", "Unable to synthesize final verdict.")
+            final_analysis.setdefault("confidence", "low")
+            final_analysis["analysis_method"] = "hybrid_vision_and_search"
+            
+            # Build response similar to existing format
+            sources = self._top_sources(evidence, 3) if evidence else []
+            
+            return {
+                "verdict": final_analysis["verdict"],
+                "summary": final_analysis["message"],
+                "message": final_analysis["message"],
+                "sources": sources,
+                "claim_context": claim_context,
+                "claim_date": claim_date,
+                "confidence": final_analysis.get("confidence", "medium"),
+                "analysis_method": "hybrid_vision_and_search",
+                "preliminary_analysis": preliminary_analysis,
+                "curated_analysis": curated_analysis,
+            }
+            
+        except Exception as e:
+            print(f"Hybrid synthesis error: {e}")
+            return None
 
     async def gather_evidence(self, image_path: Optional[str] = None, image_url: Optional[str] = None, claim_context: str = "") -> List[Dict[str, Any]]:
         """

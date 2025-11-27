@@ -17,8 +17,16 @@ class TextFactChecker:
         self.base_url = "https://www.googleapis.com/customsearch/v1"
         
         # Configure Gemini for analysis
-        genai.configure(api_key=config.GEMINI_API_KEY)
-        self.model = genai.GenerativeModel(config.GEMINI_MODEL)
+        if not config.GEMINI_API_KEY:
+            print("⚠️ WARNING: GEMINI_API_KEY not set. Gemini features will not work.")
+        else:
+            try:
+                genai.configure(api_key=config.GEMINI_API_KEY)
+                self.model = genai.GenerativeModel(config.GEMINI_MODEL)
+                print(f"✅ Gemini configured with model: {config.GEMINI_MODEL}")
+            except Exception as e:
+                print(f"❌ Failed to configure Gemini: {e}")
+                raise
         
         if not self.api_key:
             raise ValueError("Google Custom Search API key is required")
