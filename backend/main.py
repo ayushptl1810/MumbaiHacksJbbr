@@ -38,6 +38,8 @@ logger = logging.getLogger(__name__)
 # Add CORS middleware
 # Note: When allow_credentials=True, you cannot use allow_origins=["*"]
 # Must specify exact origins
+# Chrome extensions make requests from background scripts which bypass CORS,
+# but we include common origins for web frontend access
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -726,6 +728,58 @@ async def get_recent_debunk_posts(limit: int = 5):
     except Exception as e:
         print(f"❌ DEBUG: Exception in endpoint: {e}")
         print(f"🔍 DEBUG: Exception type: {type(e).__name__}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/mongodb/search-similar")
+async def search_similar_rumours(
+    query: str,
+    similarity_threshold: float = 0.6,
+    limit: int = 5
+):
+    """
+    Search for rumours similar to the query text
+    
+    Args:
+        query: Search query text
+        similarity_threshold: Minimum similarity score (0.0 to 1.0, default: 0.6)
+        limit: Maximum number of results to return (default: 5)
+        
+    Returns:
+        List of similar rumours with similarity scores
+    """
+    try:
+        if not mongodb_service:
+            raise HTTPException(
+                status_code=503,
+                detail="MongoDB service is not available. Check MONGO_CONNECTION_STRING environment variable."
+            )
+        
+        if not query or not query.strip():
+            return {
+                "success": True,
+                "count": 0,
+                "results": []
+            }
+        
+        # Validate threshold
+        similarity_threshold = max(0.0, min(1.0, similarity_threshold))
+        
+        results = mongodb_service.search_similar_rumours(
+            query=query,
+            similarity_threshold=similarity_threshold,
+            limit=limit
+        )
+        
+        return {
+            "success": True,
+            "count": len(results),
+            "query": query,
+            "similarity_threshold": similarity_threshold,
+            "results": results
+        }
+        
+    except Exception as e:
+        logger.error(f"❌ Error searching similar rumours: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/health")

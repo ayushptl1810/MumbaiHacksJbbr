@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self'; object-src 'self';"
+    />
+    <title>Aegis Rumour Alert</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 320px;
+        min-height: 380px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        padding: 24px 20px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+      }
+
+      .header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(99, 102, 241, 0.5),
+          transparent
+        );
+      }
+
+      .logo-container {
+        margin-bottom: 16px;
+      }
+
+      .logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        display: block;
+        filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+        border-radius: 16px;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 6px;
+        letter-spacing: -0.5px;
+      }
+
+      .subtitle {
+        font-size: 13px;
+        color: #94a3b8;
+        font-weight: 400;
+      }
+
+      .content {
+        padding: 24px 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        background: rgba(99, 102, 241, 0.15);
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        border-radius: 8px;
+        font-size: 12px;
+        color: #a5b4fc;
+        margin-block: 4px;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        background: #10b981;
+        border-radius: 50%;
+        box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      .info-card {
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 16px;
+        backdrop-filter: blur(10px);
+      }
+
+      .info-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #e2e8f0;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .info-title::before {
+        content: "⚡";
+        font-size: 16px;
+      }
+
+      .feature-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 12px;
+        color: #cbd5e1;
+        line-height: 1.5;
+      }
+
+      .feature-item::before {
+        content: "✓";
+        color: #10b981;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .footer {
+        padding: 16px 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        font-size: 11px;
+        color: #64748b;
+        background: rgba(15, 23, 42, 0.5);
+      }
+
+      .footer-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+
+      .shield-icon {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo-container">
+        <img src="icons/logo.png" alt="Aegis Rumour Alert" class="logo" />
+      </div>
+      <h1 class="title">Aegis Rumour Alert</h1>
+      <p class="subtitle">Real-time rumour detection</p>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span>Active & Monitoring</span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="info-card">
+        <div class="info-title">How it works</div>
+        <ul class="feature-list">
+          <li class="feature-item">Monitors search bar input as you type</li>
+          <li class="feature-item">Compares queries with rumours database</li>
+          <li class="feature-item">Shows alerts when similar rumours found</li>
+          <li class="feature-item">Displays verification status & details</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-text">
+        <span>Protecting you from misinformation</span>
+      </div>
+    </div>
+  </body>
+</html>

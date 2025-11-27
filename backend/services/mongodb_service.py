@@ -112,6 +112,128 @@ class MongoDBService:
             logger.error(f"🔍 DEBUG: Exception details: {str(e)}")
             return []
 
+    def search_similar_rumours(self, query: str, similarity_threshold: float = 0.6, limit: int = 5) -> List[Dict[str, Any]]:
+        """Search for rumours similar to the query text using TF-IDF similarity
+        
+        Args:
+            query: Search query text
+            similarity_threshold: Minimum similarity score (0.0 to 1.0)
+            limit: Maximum number of results to return
+            
+        Returns:
+            List of similar rumours with similarity scores
+        """
+        try:
+            from sklearn.feature_extraction.text import TfidfVectorizer
+            from sklearn.metrics.pairwise import cosine_similarity
+            import re
+            
+            if not query or not query.strip():
+                logger.warning("⚠️ Empty query provided")
+                return []
+            
+            logger.info(f"🔍 Searching for rumours similar to: {query[:50]}...")
+            
+            # Get all rumours from database
+            all_posts = list(self.collection.find())
+            
+            if not all_posts:
+                logger.warning("⚠️ No rumours found in database")
+                return []
+            
+            # Extract claim text from each post
+            claims = []
+            posts_data = []
+            
+            for post in all_posts:
+                # Extract claim text - try multiple fields
+                claim_text = (
+                    post.get('claim') or 
+                    post.get('summary') or 
+                    ""
+                )
+                
+                # Handle nested claim structure
+                if isinstance(claim_text, dict):
+                    claim_text = claim_text.get('text') or claim_text.get('claim_text') or ""
+                
+                if claim_text and claim_text.strip():
+                    claims.append(claim_text)
+                    posts_data.append(post)
+            
+            if not claims:
+                logger.warning("⚠️ No claims found in posts")
+                return []
+            
+            # Preprocess query
+            def preprocess_text(text: str) -> str:
+                text = text.lower()
+                text = re.sub(r'[^\w\s]', ' ', text)
+                text = ' '.join(text.split())
+                return text
+            
+            query_processed = preprocess_text(query)
+            
+            # Calculate TF-IDF similarity
+            try:
+                vectorizer = TfidfVectorizer(
+                    stop_words='english',
+                    ngram_range=(1, 2),
+                    max_features=500,
+                    lowercase=True
+                )
+                
+                # Combine query and claims for vectorization
+                all_texts = [query_processed] + [preprocess_text(c) for c in claims]
+                tfidf_matrix = vectorizer.fit_transform(all_texts)
+                
+                # Calculate similarity between query and each claim
+                query_vector = tfidf_matrix[0:1]
+                claims_matrix = tfidf_matrix[1:]
+                
+                similarities = cosine_similarity(query_vector, claims_matrix)[0]
+                
+            except Exception as e:
+                logger.error(f"❌ TF-IDF calculation failed: {e}")
+                # Fallback to simple word overlap
+                similarities = []
+                query_words = set(query_processed.split())
+                for claim in claims:
+                    claim_words = set(preprocess_text(claim).split())
+                    if not query_words or not claim_words:
+                        similarities.append(0.0)
+                    else:
+                        intersection = query_words.intersection(claim_words)
+                        union = query_words.union(claim_words)
+                        similarities.append(len(intersection) / len(union) if union else 0.0)
+            
+            # Filter by threshold and sort by similarity
+            results = []
+            for i, (post, similarity) in enumerate(zip(posts_data, similarities)):
+                if similarity >= similarity_threshold:
+                    # Convert ObjectId to string
+                    if '_id' in post:
+                        post['_id'] = str(post['_id'])
+                    
+                    result = {
+                        **post,
+                        'similarity_score': float(similarity)
+                    }
+                    results.append(result)
+            
+            # Sort by similarity score (descending) and limit
+            results.sort(key=lambda x: x.get('similarity_score', 0), reverse=True)
+            results = results[:limit]
+            
+            logger.info(f"✅ Found {len(results)} similar rumours (threshold: {similarity_threshold})")
+            return results
+            
+        except Exception as e:
+            logger.error(f"❌ Failed to search similar rumours: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
+            return []
+
     # ---------- Chat sessions & messages ----------
 
     def get_chat_sessions(

@@ -14,6 +14,7 @@ import {
   Moon,
   X,
 } from "lucide-react";
+import logoImg from "../../assets/logo.png";
 
 const ChatbotView = ({
   isDarkMode,
@@ -23,16 +24,7 @@ const ChatbotView = ({
   initialMessages = [],
   onTurnPersist,
 }) => {
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      type: "ai",
-      content:
-        "Hello! I'm your AI fact-checking assistant. I can verify text claims, analyze images, check videos, and listen to audio for accuracy. What would you like me to verify?",
-      timestamp: new Date(),
-      sources: [],
-    },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [uploadedFiles, setUploadedFiles] = useState([]);
@@ -52,16 +44,8 @@ const ChatbotView = ({
     if (Array.isArray(initialMessages) && initialMessages.length) {
       setMessages(initialMessages);
     } else {
-      setMessages([
-        {
-          id: 1,
-          type: "ai",
-          content:
-            "Hello! I'm your AI fact-checking assistant. I can verify text claims, analyze images, check videos, and listen to audio for accuracy. What would you like me to verify?",
-          timestamp: new Date(),
-          sources: [],
-        },
-      ]);
+      // Empty messages for new chat - welcome screen will show
+      setMessages([]);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId]);
@@ -346,8 +330,125 @@ const ChatbotView = ({
       )}
       {/* Messages */}
       <div className="flex-1 overflow-y-auto scrollbar-hide px-4 sm:px-6 py-4 sm:py-6 space-y-4">
-        <div className="flex flex-col gap-4">
-          {messages.map((message, idx) => {
+        {/* Welcome Screen - Show when no messages */}
+        {messages.length === 0 && !isLoading && (
+          <motion.div
+            className="flex flex-col items-center justify-center h-full pt-24"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.div
+              className="mb-8"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 blur-2xl rounded-full" />
+                <div className="relative w-20 h-20 rounded-full flex items-center justify-center">
+                  <img
+                    src={logoImg}
+                    alt="Project Aegis"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.h2
+              className="text-3xl font-bold mb-3 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Project Aegis
+              </span>
+            </motion.h2>
+
+            <motion.p
+              className="text-gray-400 text-center mb-8 max-w-md"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              Your AI-powered fact-checking assistant. Verify text claims, analyze images, check videos, and detect deepfakes with confidence.
+            </motion.p>
+
+            {/* Example Prompts */}
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              {[
+                {
+                  title: "Verify Text Claims",
+                  prompt: "Is it true that the CEO of Astronomer cheated on his wife?",
+                  color: "from-blue-500/10 to-blue-600/10",
+                  borderColor: "border-blue-500/20",
+                },
+                {
+                  title: "Analyze Images",
+                  prompt: "Check if this image is real or AI-generated",
+                  color: "from-purple-500/10 to-purple-600/10",
+                  borderColor: "border-purple-500/20",
+                },
+                {
+                  title: "Verify Videos",
+                  prompt: "Is this video authentic or manipulated?",
+                  color: "from-cyan-500/10 to-cyan-600/10",
+                  borderColor: "border-cyan-500/20",
+                },
+                {
+                  title: "Audio Deepfake Analysis",
+                  prompt: "Check if this audio recording is AI-generated or authentic",
+                  color: "from-emerald-500/10 to-emerald-600/10",
+                  borderColor: "border-emerald-500/20",
+                },
+              ].map((example, idx) => {
+                return (
+                  <motion.button
+                    key={idx}
+                    onClick={() => setInputValue(example.prompt)}
+                    className={`group relative overflow-hidden rounded-xl border ${example.borderColor} bg-gradient-to-br ${example.color} p-4 text-left transition-all hover:border-opacity-40 hover:scale-[1.02] flex flex-col h-full`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6 + idx * 0.1 }}
+                  >
+                    <div className="flex-1 flex flex-col">
+                      <h3 className="text-sm font-semibold text-white mb-2 h-5 flex items-center">
+                        {example.title}
+                      </h3>
+                      <p className="text-xs text-gray-400 line-clamp-2 flex-1">
+                        {example.prompt}
+                      </p>
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                  </motion.button>
+                );
+              })}
+            </motion.div>
+
+            <motion.p
+              className="text-xs text-gray-500 mt-8 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              Click a suggestion above or type your own question
+            </motion.p>
+          </motion.div>
+        )}
+
+        {/* Messages List */}
+        {messages.length > 0 && (
+          <div className="flex flex-col gap-4">
+            {messages.map((message, idx) => {
             const isUser = message.type === "user";
             const alignment = isUser ? "items-end" : "items-start";
             const bubbleAlignment = isUser ? "justify-end" : "justify-start";
@@ -414,7 +515,8 @@ const ChatbotView = ({
               </div>
             );
           })}
-        </div>
+          </div>
+        )}
 
         {isLoading && (
           <motion.div
