@@ -1,25 +1,42 @@
 import { useState, useEffect } from "react";
-import MainApp from "./components/MainApp";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./layouts/Navbar";
+import Footer from "./layouts/Footer";
+import Home from "./pages/Home/Home";
+import Verify from "./pages/Verify/Verify";
+import Modules from "./pages/Modules/Modules";
+import Login from "./pages/Auth/Login";
+import Signup from "./pages/Auth/Signup";
+import Subscription from "./pages/Subscription/Subscription";
+import "./App.css";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Initialize from localStorage or default to false
-    const saved = localStorage.getItem("isDarkMode");
-    return saved ? JSON.parse(saved) : false;
-  });
+  const [isDarkMode] = useState(true); // Always dark theme
+  const location = useLocation();
+  const footerHiddenRoutes = new Set(["/verify"]);
 
-  // Save to localStorage whenever dark mode changes
   useEffect(() => {
-    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
-    // Also set the dark class on the document element for Tailwind CSS
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
+    document.documentElement.classList.add("dark");
+    document.documentElement.style.colorScheme = "dark";
+  }, []);
 
-  return <MainApp isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />;
+  return (
+    <div className="min-h-screen bg-black text-gray-100 flex flex-col">
+      <Navbar />
+      <main className="flex-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/verify" element={<Verify />} />
+          <Route path="/modules" element={<Modules />} />
+          <Route path="/modules/:id" element={<Modules />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/subscription" element={<Subscription />} />
+        </Routes>
+      </main>
+      {!footerHiddenRoutes.has(location.pathname) && <Footer />}
+    </div>
+  );
 }
 
 export default App;
