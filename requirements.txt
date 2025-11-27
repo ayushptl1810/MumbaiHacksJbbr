@@ -4,8 +4,8 @@
 # If a package can't be found on PyPI, install it from the project's private index or source distribution.
 
 # CrewAI for agent orchestration
-crewai
-crewai-tools
+#crewai
+#crewai-tools
 
 # Google Gemini LLM backend
 google-generativeai
@@ -16,9 +16,14 @@ beautifulsoup4
 newspaper3k
 readability-lxml
 trafilatura
+playwright
+jmespath
+nested_lookup
+parsel
+scrapfly-sdk[all]
 
 # Reddit API
-praw
+asyncpraw
 
 # Optional helpers
 dotenv
@@ -35,3 +40,6 @@ newsapi-python
 
 # ML and data processing
 scikit-learn
+
+# LLM tool
+litellm

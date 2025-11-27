@@ -1,0 +1,261 @@
+{
+  "success": true,
+  "message": "Successfully processed 1 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-26T20:42:22.552712",
+        "total_posts": 1,
+        "posts_by_platform": {
+          "reddit": 0,
+          "threads": 1
+        },
+        "platforms": [
+          "reddit",
+          "threads"
+        ],
+        "posts": [
+          {
+            "claim": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+            "summary": "A \"BREAKING\" news post announces that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court, aiming to invalidate state laws that ban the public carrying of firearms. This action would significantly impact several \"Democrat states\" such as California, New York, Hawaii, Maryland, and New Jersey. AG Pam Bondi is quoted stating that a win in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 1 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+            "content_summary": "A \"BREAKING\" news post announces that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court, aiming to invalidate state laws that ban the public carrying of firearms. This action would significantly impact several \"Democrat states\" such as California, New York, Hawaii, Ma",
+            "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The claim is accurate. The Trump administration, through its Department of Justice, did urge the Supreme Court to strike down regulations related to carrying firearms.",
+              "confidence": "medium",
+              "reasoning": "Source 2 explicitly states: 'President Donald Trump's Republican administration had urged the [Supreme Court] to strike down a strict regulation on where people can carry firearms in Hawaii.' This directly confirms that the Trump administration (which would include the DOJ) took a position with the Supreme Court advocating for the striking down of regulations on firearm carrying. While the date of Source 2 (Oct 3, 2025) is in the future, the phrase 'had urged' indicates a past action of the Trump administration, making the information relevant to verifying the claim about its past actions. Sources 1 and 3 discuss different Supreme Court gun-related rulings but do not contradict the specific action mentioned in Source 2 regarding the Trump administration's advocacy.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2022/06/23/us/supreme-court-ny-open-carry-gun-law.html",
+                  "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                  "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                  "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                  "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban"
+                ],
+                "titles": [
+                  "Supreme Court Strikes Down New York Law Limiting Guns in Public ...",
+                  "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                  "Supreme Court upholds gun control law used to protect domestic ...",
+                  "Supreme Court will consider whether people who regularly smoke ...",
+                  "Supreme Court strikes down bump stock ban | PBS News"
+                ],
+                "count": 10
+              },
+              "claim_text": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+              "verification_date": "2025-11-26T20:42:26.083793"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms."
+            },
+            "verification_timestamp": "2025-11-26T20:42:37.193182"
+          }
+        ],
+        "summary": {
+          "total_claims": 1,
+          "successfully_verified": 1,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-26T20:42:37.193182",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 1,
+          "batch_size": 1,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "No misinformation claims found in verification results",
+        "debunk_posts": []
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+      "summary": "A \"BREAKING\" news post announces that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court, aiming to invalidate state laws that ban the public carrying of firearms. This action would significantly impact several \"Democrat states\" such as California, New York, Hawaii, Maryland, and New Jersey. AG Pam Bondi is quoted stating that a win in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The claim is accurate. The Trump administration, through its Department of Justice, did urge the Supreme Court to strike down regulations related to carrying firearms.",
+        "confidence": "medium",
+        "reasoning": "Source 2 explicitly states: 'President Donald Trump's Republican administration had urged the [Supreme Court] to strike down a strict regulation on where people can carry firearms in Hawaii.' This directly confirms that the Trump administration (which would include the DOJ) took a position with the Supreme Court advocating for the striking down of regulations on firearm carrying. While the date of Source 2 (Oct 3, 2025) is in the future, the phrase 'had urged' indicates a past action of the Trump administration, making the information relevant to verifying the claim about its past actions. Sources 1 and 3 discuss different Supreme Court gun-related rulings but do not contradict the specific action mentioned in Source 2 regarding the Trump administration's advocacy.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2022/06/23/us/supreme-court-ny-open-carry-gun-law.html",
+            "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+            "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+            "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+            "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban"
+          ],
+          "titles": [
+            "Supreme Court Strikes Down New York Law Limiting Guns in Public ...",
+            "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+            "Supreme Court upholds gun control law used to protect domestic ...",
+            "Supreme Court will consider whether people who regularly smoke ...",
+            "Supreme Court strikes down bump stock ban | PBS News"
+          ],
+          "count": 10
+        },
+        "claim_text": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+        "verification_date": "2025-11-26T20:42:26.083793"
+      }
+    }
+  ],
+  "debunk_posts": [],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 1,
+      "batch_size": 1,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {}
+  },
+  "summary": {
+    "content_items_processed": 1,
+    "debunk_posts_generated": 0,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-26T20:42:22.552712",
+          "total_posts": 1,
+          "posts_by_platform": {
+            "reddit": 0,
+            "threads": 1
+          },
+          "platforms": [
+            "reddit",
+            "threads"
+          ],
+          "posts": [
+            {
+              "claim": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+              "summary": "A \"BREAKING\" news post announces that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court, aiming to invalidate state laws that ban the public carrying of firearms. This action would significantly impact several \"Democrat states\" such as California, New York, Hawaii, Maryland, and New Jersey. AG Pam Bondi is quoted stating that a win in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 1 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+              "content_summary": "A \"BREAKING\" news post announces that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court, aiming to invalidate state laws that ban the public carrying of firearms. This action would significantly impact several \"Democrat states\" such as California, New York, Hawaii, Ma",
+              "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The claim is accurate. The Trump administration, through its Department of Justice, did urge the Supreme Court to strike down regulations related to carrying firearms.",
+                "confidence": "medium",
+                "reasoning": "Source 2 explicitly states: 'President Donald Trump's Republican administration had urged the [Supreme Court] to strike down a strict regulation on where people can carry firearms in Hawaii.' This directly confirms that the Trump administration (which would include the DOJ) took a position with the Supreme Court advocating for the striking down of regulations on firearm carrying. While the date of Source 2 (Oct 3, 2025) is in the future, the phrase 'had urged' indicates a past action of the Trump administration, making the information relevant to verifying the claim about its past actions. Sources 1 and 3 discuss different Supreme Court gun-related rulings but do not contradict the specific action mentioned in Source 2 regarding the Trump administration's advocacy.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2022/06/23/us/supreme-court-ny-open-carry-gun-law.html",
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                    "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                    "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban"
+                  ],
+                  "titles": [
+                    "Supreme Court Strikes Down New York Law Limiting Guns in Public ...",
+                    "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                    "Supreme Court upholds gun control law used to protect domestic ...",
+                    "Supreme Court will consider whether people who regularly smoke ...",
+                    "Supreme Court strikes down bump stock ban | PBS News"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms.",
+                "verification_date": "2025-11-26T20:42:26.083793"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The Trump Department of Justice has filed with the Supreme Court to strike down state laws that prohibit the public carrying of firearms."
+              },
+              "verification_timestamp": "2025-11-26T20:42:37.193182"
+            }
+          ],
+          "summary": {
+            "total_claims": 1,
+            "successfully_verified": 1,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-26T20:42:37.193182",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 1,
+            "batch_size": 1,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "No misinformation claims found in verification results",
+          "debunk_posts": []
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251126_204237",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-26T20:42:37.194186",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251126_203947",
+    "created_at": "2025-11-26T20:42:37.194186",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "message": "No debunk posts to store"
+  }
+}

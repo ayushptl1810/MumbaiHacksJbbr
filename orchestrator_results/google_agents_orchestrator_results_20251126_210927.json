@@ -1,0 +1,1073 @@
+{
+  "success": true,
+  "message": "Successfully processed 2 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-26T21:08:49.329098",
+        "total_posts": 2,
+        "posts_by_platform": {
+          "reddit": 0,
+          "threads": 2
+        },
+        "platforms": [
+          "reddit",
+          "threads"
+        ],
+        "posts": [
+          {
+            "claim": "The post asks users to state their support for an unspecified duo.",
+            "summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB"
+          },
+          {
+            "claim": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+            "summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat states,' specifically mentioning California, New York, Hawaii, Maryland, and New Jersey. The post quotes AG Pam Bondi, who asserts that a successful outcome in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 2 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The post asks users to state their support for an unspecified duo.",
+            "content_summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+            "source": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+              "confidence": "high",
+              "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                  "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                  "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                  "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                  "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                ],
+                "titles": [
+                  "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                  "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                  "billy woods is open to interpretation. Just listen closely : NPR",
+                  "Who are Bob Vylan? The British punks who had their US visas ...",
+                  "How two blond suburban moms gave Democrats an answer to the ..."
+                ],
+                "count": 9
+              },
+              "claim_text": "The post asks users to state their support for an unspecified duo.",
+              "verification_date": "2025-11-26T21:09:03.692704"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The post asks users to state their support for an unspecified duo."
+            },
+            "verification_timestamp": "2025-11-26T21:09:17.410149"
+          },
+          {
+            "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+            "content_summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat stat",
+            "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+              "confidence": "high",
+              "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                  "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                  "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                  "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                  "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                ],
+                "titles": [
+                  "Supreme Court will consider whether people who regularly smoke ...",
+                  "Supreme Court strikes down bump stock ban | PBS News",
+                  "Supreme Court upholds gun control law used to protect domestic ...",
+                  "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                  "The Supreme Court has rejected some Trump administration moves ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+              "verification_date": "2025-11-26T21:09:03.692704"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms."
+            },
+            "verification_timestamp": "2025-11-26T21:09:17.410149"
+          }
+        ],
+        "summary": {
+          "total_claims": 2,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-26T21:09:17.410149",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 2,
+          "batch_size": 2,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 2 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251126_210927_972804_d03293da",
+            "verification_date": "2025-11-26T21:09:27.972804",
+            "claim": {
+              "text": "The post asks users to state their support for an unspecified duo.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Uncertainty Surrounds Claim of Post Seeking Support for Unspecified Duo",
+              "body": "The claim that 'The post asks users to state their support for an unspecified duo' remains unconfirmed. Based on the provided information, there is no evidence to verify the existence or content of such a post. The sources given, 'We answer to nobody': duo Bob Vylan on humility, hell-raising – and...' and ''That's it? It's over? I was 30. What a brutal business': pop stars on...', discuss specific musical duos (like Bob Vylan) and general experiences of pop stars. However, neither source indicates a broad, unspecified call for support from a particular 'post' as described in the claim. Without further evidence, it's not possible to confirm that such a post exists or that it seeks support for an *unspecified* duo.",
+              "summary": "The claim about a post asking for user support for an unspecified duo is uncertain, as no evidence from the provided sources confirms its existence or nature."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The post asks users to state their support for an unspecified duo.",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                  "url": "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                  "url": "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "billy woods is open to interpretation. Just listen closely : NPR",
+                  "url": "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "Who are Bob Vylan? The British punks who had their US visas ...",
+                  "url": "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "How two blond suburban moms gave Democrats an answer to the ...",
+                  "url": "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals",
+                  "domain": "www.theguardian.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 2,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The post asks users to state their support for an unspecified duo.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+                  "confidence": "high",
+                  "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+                  "sources": {
+                    "links": [
+                      "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                      "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                      "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                      "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                      "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                    ],
+                    "titles": [
+                      "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                      "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                      "billy woods is open to interpretation. Just listen closely : NPR",
+                      "Who are Bob Vylan? The British punks who had their US visas ...",
+                      "How two blond suburban moms gave Democrats an answer to the ..."
+                    ],
+                    "count": 9
+                  },
+                  "claim_text": "The post asks users to state their support for an unspecified duo.",
+                  "verification_date": "2025-11-26T21:09:03.692704"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                    "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                    "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                    "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                    "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                  ],
+                  "titles": [
+                    "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                    "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                    "billy woods is open to interpretation. Just listen closely : NPR",
+                    "Who are Bob Vylan? The British punks who had their US visas ...",
+                    "How two blond suburban moms gave Democrats an answer to the ..."
+                  ],
+                  "count": 9
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+                "content_summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_972804_d03293da.json"
+          },
+          {
+            "post_id": "aegis_post_20251126_210927_974683_75ed62bb",
+            "verification_date": "2025-11-26T21:09:27.974683",
+            "claim": {
+              "text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: Trump DOJ Did Not File to Strike Down State Public Carry Bans",
+              "body": "The claim that 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms' is false. The provided sources, 'Supreme Court will consider whether people who regularly smoke...' and 'Supreme Court strikes down bump stock ban,' discuss different gun-related cases brought before the Supreme Court. One source details the Court considering gun ownership rights for cannabis users, while the other reports on the Court's decision to strike down a bump stock ban. Neither of these articles, nor any other verifiable information within the provided context, supports the assertion that the Trump DOJ specifically filed to strike down state laws banning the public carrying of firearms. This claim misrepresents the actions of the Trump administration's DOJ regarding firearm legislation.",
+              "summary": "The claim that the Trump DOJ filed with the Supreme Court to strike down state laws banning public firearm carrying is false, as the provided sources discuss unrelated gun cases."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Supreme Court will consider whether people who regularly smoke ...",
+                  "url": "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Supreme Court strikes down bump stock ban | PBS News",
+                  "url": "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Supreme Court upholds gun control law used to protect domestic ...",
+                  "url": "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                  "url": "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "The Supreme Court has rejected some Trump administration moves ...",
+                  "url": "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways",
+                  "domain": "www.pbs.org"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 70.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 2,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+                  "confidence": "high",
+                  "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                      "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                      "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                      "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                      "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                    ],
+                    "titles": [
+                      "Supreme Court will consider whether people who regularly smoke ...",
+                      "Supreme Court strikes down bump stock ban | PBS News",
+                      "Supreme Court upholds gun control law used to protect domestic ...",
+                      "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                      "The Supreme Court has rejected some Trump administration moves ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                  "verification_date": "2025-11-26T21:09:03.692704"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                    "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                    "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                    "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                  ],
+                  "titles": [
+                    "Supreme Court will consider whether people who regularly smoke ...",
+                    "Supreme Court strikes down bump stock ban | PBS News",
+                    "Supreme Court upholds gun control law used to protect domestic ...",
+                    "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                    "The Supreme Court has rejected some Trump administration moves ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+                "content_summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat stat",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_974683_75ed62bb.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 2,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 2,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 2,
+          "batch_size": 2,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The post asks users to state their support for an unspecified duo.",
+      "summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+        "confidence": "high",
+        "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+            "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+            "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+            "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+            "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+          ],
+          "titles": [
+            "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+            "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+            "billy woods is open to interpretation. Just listen closely : NPR",
+            "Who are Bob Vylan? The British punks who had their US visas ...",
+            "How two blond suburban moms gave Democrats an answer to the ..."
+          ],
+          "count": 9
+        },
+        "claim_text": "The post asks users to state their support for an unspecified duo.",
+        "verification_date": "2025-11-26T21:09:03.692704"
+      }
+    },
+    {
+      "claim": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+      "summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat states,' specifically mentioning California, New York, Hawaii, Maryland, and New Jersey. The post quotes AG Pam Bondi, who asserts that a successful outcome in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+        "confidence": "high",
+        "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+            "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+            "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+            "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+            "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+          ],
+          "titles": [
+            "Supreme Court will consider whether people who regularly smoke ...",
+            "Supreme Court strikes down bump stock ban | PBS News",
+            "Supreme Court upholds gun control law used to protect domestic ...",
+            "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+            "The Supreme Court has rejected some Trump administration moves ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+        "verification_date": "2025-11-26T21:09:03.692704"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251126_210927_972804_d03293da",
+      "verification_date": "2025-11-26T21:09:27.972804",
+      "claim": {
+        "text": "The post asks users to state their support for an unspecified duo.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Uncertainty Surrounds Claim of Post Seeking Support for Unspecified Duo",
+        "body": "The claim that 'The post asks users to state their support for an unspecified duo' remains unconfirmed. Based on the provided information, there is no evidence to verify the existence or content of such a post. The sources given, 'We answer to nobody': duo Bob Vylan on humility, hell-raising – and...' and ''That's it? It's over? I was 30. What a brutal business': pop stars on...', discuss specific musical duos (like Bob Vylan) and general experiences of pop stars. However, neither source indicates a broad, unspecified call for support from a particular 'post' as described in the claim. Without further evidence, it's not possible to confirm that such a post exists or that it seeks support for an *unspecified* duo.",
+        "summary": "The claim about a post asking for user support for an unspecified duo is uncertain, as no evidence from the provided sources confirms its existence or nature."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The post asks users to state their support for an unspecified duo.",
+            "url": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+            "url": "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+            "url": "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "billy woods is open to interpretation. Just listen closely : NPR",
+            "url": "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "Who are Bob Vylan? The British punks who had their US visas ...",
+            "url": "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "How two blond suburban moms gave Democrats an answer to the ...",
+            "url": "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals",
+            "domain": "www.theguardian.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 2,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The post asks users to state their support for an unspecified duo.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+            "confidence": "high",
+            "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+            "sources": {
+              "links": [
+                "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+              ],
+              "titles": [
+                "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                "billy woods is open to interpretation. Just listen closely : NPR",
+                "Who are Bob Vylan? The British punks who had their US visas ...",
+                "How two blond suburban moms gave Democrats an answer to the ..."
+              ],
+              "count": 9
+            },
+            "claim_text": "The post asks users to state their support for an unspecified duo.",
+            "verification_date": "2025-11-26T21:09:03.692704"
+          },
+          "sources": {
+            "links": [
+              "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+              "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+              "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+              "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+              "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+            ],
+            "titles": [
+              "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+              "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+              "billy woods is open to interpretation. Just listen closely : NPR",
+              "Who are Bob Vylan? The British punks who had their US visas ...",
+              "How two blond suburban moms gave Democrats an answer to the ..."
+            ],
+            "count": 9
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+          "content_summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_972804_d03293da.json"
+    },
+    {
+      "post_id": "aegis_post_20251126_210927_974683_75ed62bb",
+      "verification_date": "2025-11-26T21:09:27.974683",
+      "claim": {
+        "text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: Trump DOJ Did Not File to Strike Down State Public Carry Bans",
+        "body": "The claim that 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms' is false. The provided sources, 'Supreme Court will consider whether people who regularly smoke...' and 'Supreme Court strikes down bump stock ban,' discuss different gun-related cases brought before the Supreme Court. One source details the Court considering gun ownership rights for cannabis users, while the other reports on the Court's decision to strike down a bump stock ban. Neither of these articles, nor any other verifiable information within the provided context, supports the assertion that the Trump DOJ specifically filed to strike down state laws banning the public carrying of firearms. This claim misrepresents the actions of the Trump administration's DOJ regarding firearm legislation.",
+        "summary": "The claim that the Trump DOJ filed with the Supreme Court to strike down state laws banning public firearm carrying is false, as the provided sources discuss unrelated gun cases."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+            "url": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Supreme Court will consider whether people who regularly smoke ...",
+            "url": "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Supreme Court strikes down bump stock ban | PBS News",
+            "url": "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Supreme Court upholds gun control law used to protect domestic ...",
+            "url": "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+            "url": "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "The Supreme Court has rejected some Trump administration moves ...",
+            "url": "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways",
+            "domain": "www.pbs.org"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 70.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 2,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+            "confidence": "high",
+            "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+            "sources": {
+              "links": [
+                "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+              ],
+              "titles": [
+                "Supreme Court will consider whether people who regularly smoke ...",
+                "Supreme Court strikes down bump stock ban | PBS News",
+                "Supreme Court upholds gun control law used to protect domestic ...",
+                "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                "The Supreme Court has rejected some Trump administration moves ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+            "verification_date": "2025-11-26T21:09:03.692704"
+          },
+          "sources": {
+            "links": [
+              "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+              "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+              "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+              "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+              "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+            ],
+            "titles": [
+              "Supreme Court will consider whether people who regularly smoke ...",
+              "Supreme Court strikes down bump stock ban | PBS News",
+              "Supreme Court upholds gun control law used to protect domestic ...",
+              "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+              "The Supreme Court has rejected some Trump administration moves ..."
+            ],
+            "count": 10
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+          "content_summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat stat",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_974683_75ed62bb.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 2,
+      "batch_size": 2,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 2,
+      "batch_size": 2,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 2,
+    "debunk_posts_generated": 2,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-26T21:08:49.329098",
+          "total_posts": 2,
+          "posts_by_platform": {
+            "reddit": 0,
+            "threads": 2
+          },
+          "platforms": [
+            "reddit",
+            "threads"
+          ],
+          "posts": [
+            {
+              "claim": "The post asks users to state their support for an unspecified duo.",
+              "summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB"
+            },
+            {
+              "claim": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+              "summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat states,' specifically mentioning California, New York, Hawaii, Maryland, and New Jersey. The post quotes AG Pam Bondi, who asserts that a successful outcome in this case would \"restore Second Amendment rights for MILLIONS of Americans.\"",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 2 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The post asks users to state their support for an unspecified duo.",
+              "content_summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+              "source": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+                "confidence": "high",
+                "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                    "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                    "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                    "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                    "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                  ],
+                  "titles": [
+                    "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                    "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                    "billy woods is open to interpretation. Just listen closely : NPR",
+                    "Who are Bob Vylan? The British punks who had their US visas ...",
+                    "How two blond suburban moms gave Democrats an answer to the ..."
+                  ],
+                  "count": 9
+                },
+                "claim_text": "The post asks users to state their support for an unspecified duo.",
+                "verification_date": "2025-11-26T21:09:03.692704"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The post asks users to state their support for an unspecified duo."
+              },
+              "verification_timestamp": "2025-11-26T21:09:17.410149"
+            },
+            {
+              "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+              "content_summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat stat",
+              "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+                "confidence": "high",
+                "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                    "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                    "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                    "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                    "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                  ],
+                  "titles": [
+                    "Supreme Court will consider whether people who regularly smoke ...",
+                    "Supreme Court strikes down bump stock ban | PBS News",
+                    "Supreme Court upholds gun control law used to protect domestic ...",
+                    "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                    "The Supreme Court has rejected some Trump administration moves ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                "verification_date": "2025-11-26T21:09:03.692704"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms."
+              },
+              "verification_timestamp": "2025-11-26T21:09:17.410149"
+            }
+          ],
+          "summary": {
+            "total_claims": 2,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-26T21:09:17.410149",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 2,
+            "batch_size": 2,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 2 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251126_210927_972804_d03293da",
+              "verification_date": "2025-11-26T21:09:27.972804",
+              "claim": {
+                "text": "The post asks users to state their support for an unspecified duo.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Uncertainty Surrounds Claim of Post Seeking Support for Unspecified Duo",
+                "body": "The claim that 'The post asks users to state their support for an unspecified duo' remains unconfirmed. Based on the provided information, there is no evidence to verify the existence or content of such a post. The sources given, 'We answer to nobody': duo Bob Vylan on humility, hell-raising – and...' and ''That's it? It's over? I was 30. What a brutal business': pop stars on...', discuss specific musical duos (like Bob Vylan) and general experiences of pop stars. However, neither source indicates a broad, unspecified call for support from a particular 'post' as described in the claim. Without further evidence, it's not possible to confirm that such a post exists or that it seeks support for an *unspecified* duo.",
+                "summary": "The claim about a post asking for user support for an unspecified duo is uncertain, as no evidence from the provided sources confirms its existence or nature."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The post asks users to state their support for an unspecified duo.",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                    "url": "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                    "url": "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "billy woods is open to interpretation. Just listen closely : NPR",
+                    "url": "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "Who are Bob Vylan? The British punks who had their US visas ...",
+                    "url": "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "How two blond suburban moms gave Democrats an answer to the ...",
+                    "url": "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals",
+                    "domain": "www.theguardian.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 2,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The post asks users to state their support for an unspecified duo.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The provided fact-checking sources are general news articles about various musicians and do not contain information about 'the post' mentioned in the claim. Therefore, it's impossible to verify whether such a post exists or what it asks users to support based on the given evidence.",
+                    "confidence": "high",
+                    "reasoning": "1. The claim states: 'The post asks users to state their support for an unspecified duo.'\n2. Source 1 (The Guardian) mentions 'duo Bob Vylan' in an article about their music. This names a specific duo, contradicting 'unspecified', but more importantly, this is a news article, not 'the post' itself.\n3. Source 2 (The Guardian) discusses pop stars and their careers, mentioning individuals like Bob Geldof and Robbie Williams, not a duo being supported by a post.\n4. Source 3 (NPR) discusses 'billy woods' and his solo album, again not 'the post' or a duo.\n5. None of the provided sources are 'the post' in question, nor do they describe the content or nature of such a post. Without access to 'the post' or any information describing it, the claim cannot be verified or refuted using the provided sources.",
+                    "sources": {
+                      "links": [
+                        "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                        "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                        "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                        "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                        "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                      ],
+                      "titles": [
+                        "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                        "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                        "billy woods is open to interpretation. Just listen closely : NPR",
+                        "Who are Bob Vylan? The British punks who had their US visas ...",
+                        "How two blond suburban moms gave Democrats an answer to the ..."
+                      ],
+                      "count": 9
+                    },
+                    "claim_text": "The post asks users to state their support for an unspecified duo.",
+                    "verification_date": "2025-11-26T21:09:03.692704"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.theguardian.com/music/2024/apr/05/we-answer-to-nobody-duo-bob-vylan-on-humility-hell-raising-and-punk-hypocrisy",
+                      "https://www.theguardian.com/music/2022/apr/16/pop-stars-spotlight-bob-geldof-robbie-williams-lisa-maffia",
+                      "https://www.npr.org/2025/11/25/g-s1-99281/billy-woods-golliwog-mercy-interview",
+                      "https://www.theguardian.com/music/2025/jul/02/bob-vylan-glastonbury-band",
+                      "https://www.theguardian.com/us-news/ng-interactive/2025/oct/05/ive-had-it-podcast-democrats-liberals"
+                    ],
+                    "titles": [
+                      "'We answer to nobody': duo Bob Vylan on humility, hell-raising – and ...",
+                      "'That's it? It's over? I was 30. What a brutal business': pop stars on ...",
+                      "billy woods is open to interpretation. Just listen closely : NPR",
+                      "Who are Bob Vylan? The British punks who had their US visas ...",
+                      "How two blond suburban moms gave Democrats an answer to the ..."
+                    ],
+                    "count": 9
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRhejd-DOZB",
+                  "content_summary": "This Threads post, titled \"Be honest, do you support this duo?\", directly asks its audience for their opinion on whether they support a particular unnamed duo. The content provides no further details about who the duo is.",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_972804_d03293da.json"
+            },
+            {
+              "post_id": "aegis_post_20251126_210927_974683_75ed62bb",
+              "verification_date": "2025-11-26T21:09:27.974683",
+              "claim": {
+                "text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: Trump DOJ Did Not File to Strike Down State Public Carry Bans",
+                "body": "The claim that 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms' is false. The provided sources, 'Supreme Court will consider whether people who regularly smoke...' and 'Supreme Court strikes down bump stock ban,' discuss different gun-related cases brought before the Supreme Court. One source details the Court considering gun ownership rights for cannabis users, while the other reports on the Court's decision to strike down a bump stock ban. Neither of these articles, nor any other verifiable information within the provided context, supports the assertion that the Trump DOJ specifically filed to strike down state laws banning the public carrying of firearms. This claim misrepresents the actions of the Trump administration's DOJ regarding firearm legislation.",
+                "summary": "The claim that the Trump DOJ filed with the Supreme Court to strike down state laws banning public firearm carrying is false, as the provided sources discuss unrelated gun cases."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Supreme Court will consider whether people who regularly smoke ...",
+                    "url": "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Supreme Court strikes down bump stock ban | PBS News",
+                    "url": "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Supreme Court upholds gun control law used to protect domestic ...",
+                    "url": "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                    "url": "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "The Supreme Court has rejected some Trump administration moves ...",
+                    "url": "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways",
+                    "domain": "www.pbs.org"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 70.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 2,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false. The provided sources indicate actions contrary to the claim. The Trump administration banned bump stocks (which the Supreme Court later struck down), and the Justice Department, in one instance, argued for the validity of a gun ban. The Supreme Court has also upheld a gun control law. None of the sources suggest the Trump DOJ filed to strike down state laws banning the public carrying of firearms.",
+                    "confidence": "high",
+                    "reasoning": "1. The claim states: 'The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.'\n2. Source 1 (PBS) states: 'The Justice Department argues the law is valid when used...' in the context of a ban on gun ownership for people who regularly smoke marijuana. This shows the DOJ arguing for the *validity* of a ban, not seeking to strike one down. While the specific administration isn't named in this snippet, the context is generally about gun rights.\n3. Source 2 (PBS) explicitly states: 'The high court found 6-3 the Trump administration did not follow federal law when it reversed course and banned bump stocks after a gunman...' This indicates the *Trump administration itself implemented a ban* (on bump stocks), which the Supreme Court later *struck down*. This is the opposite of the Trump DOJ filing to strike down a ban on public carrying.\n4. Source 3 (PBS) states: 'The justices ruled 8-1 Friday in favor of a 1994 ban on firearms for people under restraining orders...' This shows the Supreme Court *upholding* a gun control law, not striking it down. The DOJ's specific involvement in this case is not detailed, but the outcome contradicts the premise of striking down bans.\n5. No source indicates the Trump Department of Justice filed with the Supreme Court to strike down state laws banning the public carrying of firearms. Instead, the evidence points to the Trump administration implementing a ban and the DOJ arguing for the validity of bans in other contexts.",
+                    "sources": {
+                      "links": [
+                        "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                        "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                        "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                        "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                        "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                      ],
+                      "titles": [
+                        "Supreme Court will consider whether people who regularly smoke ...",
+                        "Supreme Court strikes down bump stock ban | PBS News",
+                        "Supreme Court upholds gun control law used to protect domestic ...",
+                        "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                        "The Supreme Court has rejected some Trump administration moves ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The Trump Department of Justice (DOJ) has filed with the Supreme Court to strike down state laws banning the public carrying of firearms.",
+                    "verification_date": "2025-11-26T21:09:03.692704"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/politics/supreme-court-will-consider-whether-people-who-regularly-smoke-pot-can-legally-own-guns",
+                      "https://www.pbs.org/newshour/politics/supreme-court-strikes-down-bump-stock-ban",
+                      "https://www.pbs.org/newshour/politics/supreme-court-upholds-gun-control-law-used-to-protect-domestic-violence-victims",
+                      "https://www.pbs.org/newshour/politics/supreme-court-will-weigh-hawaiis-strict-ban-on-guns-on-private-property",
+                      "https://www.pbs.org/newshour/politics/the-supreme-court-has-rejected-some-trump-administration-moves-in-small-but-meaningful-ways"
+                    ],
+                    "titles": [
+                      "Supreme Court will consider whether people who regularly smoke ...",
+                      "Supreme Court strikes down bump stock ban | PBS News",
+                      "Supreme Court upholds gun control law used to protect domestic ...",
+                      "Supreme Court will weigh Hawaii's strict ban on guns on private ...",
+                      "The Supreme Court has rejected some Trump administration moves ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRfXKYCk6zw",
+                  "content_summary": "A breaking news post from `@trumplovernews` on Threads reports that the Trump Department of Justice (DOJ) has filed a petition with the Supreme Court. The filing aims to overturn existing state laws that prohibit the public carrying of firearms. This action is stated to impact several 'Democrat stat",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251126_210927_974683_75ed62bb.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 2,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 2,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 2,
+            "batch_size": 2,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251126_210927",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-26T21:09:27.977777",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251126_210559",
+    "created_at": "2025-11-26T21:09:27.977777",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 2,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251126_210927"
+  }
+}

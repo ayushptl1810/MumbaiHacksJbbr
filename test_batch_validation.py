@@ -73,7 +73,7 @@ def test_explanation_agent_batch_basic():
     try:
         # Initialize tools
         genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         content_generator = ContentGeneratorTool(model)
         source_analyzer = SourceAnalyzerTool()
