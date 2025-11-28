@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_024011_256759_9ef04c10",
+  "verification_date": "2025-11-28T02:40:11.256759",
+  "claim": {
+    "text": "The user claims their relative, a BJP/RSS supporter, stole their horoscope yogas, and criticizes those who support such behavior.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverifiable Personal Claim: 'Stolen Horoscope Yogas' Lacks Factual Basis",
+    "body": "The user's personal claim about a relative, identified as a BJP/RSS supporter, 'stealing their horoscope yogas' is inherently unverifiable. This assertion falls squarely within the realm of personal belief, subjective experience, and astrological or spiritual interpretation, rather than a fact that can be confirmed or disproven by external evidence. Concepts like 'horoscope yogas' being stolen are not tangible events measurable by conventional means, and therefore cannot be fact-checked against objective sources. The provided sources, which are unrelated news sitemaps and political articles, offer no relevant information to corroborate or refute such a claim.",
+    "summary": "A personal claim about 'stolen horoscope yogas' based on subjective belief cannot be factually verified or debunked by external evidence."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The user claims their relative, a BJP/RSS supporter, stole their horoscope yogas, and criticizes those who support such behavior.",
+        "url": "https://twitter.com/parvathiharitsa/status/1994115213529108831",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "https://indianexpress.com/news-sitemap.xml",
+        "url": "https://indianexpress.com/news-sitemap.xml",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "'Bharat Jodo Yatra is to connect with people, undo damage caused ...",
+        "url": "https://indianexpress.com/article/india/congress-bharat-jodo-yatra-live-updates-rahul-gandhi-kanyakumari-8135479/",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "Decoding the New Education Policy",
+        "url": "https://frontline.thehindu.com/magazine/article32496402.ece/binary/FL-28-08-2020-EBook.pdf?utm_source=article&utm_medium=pdf_website&utm_campaign=latest_issue",
+        "domain": "frontline.thehindu.com"
+      },
+      {
+        "title": "picture | The Indian Express",
+        "url": "https://indianexpress.com/picture-/",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "IE100: Narendra Modi, Amit Shah and the India's Other Most ...",
+        "url": "https://indianexpress.com/article/express-exclusive/ie100-indias-most-powerful-2021-7248171/",
+        "domain": "indianexpress.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 6,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The user claims their relative, a BJP/RSS supporter, stole their horoscope yogas, and criticizes those who support such behavior.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources are unrelated news articles and contain no information about a user's relative, horoscope yogas, or criticisms of such behavior.",
+        "confidence": "high",
+        "reasoning": "The claim describes a highly specific personal grievance involving a user, their relative, political affiliation (BJP/RSS), alleged theft of 'horoscope yogas,' and criticism of supporters. The provided fact-checking sources are general news articles discussing political parties (BJP, Congress) and education policy. None of these snippets contain any information or context that could verify or refute the detailed personal allegations made in the claim.",
+        "sources": {
+          "links": [
+            "https://indianexpress.com/news-sitemap.xml",
+            "https://indianexpress.com/article/india/congress-bharat-jodo-yatra-live-updates-rahul-gandhi-kanyakumari-8135479/",
+            "https://frontline.thehindu.com/magazine/article32496402.ece/binary/FL-28-08-2020-EBook.pdf?utm_source=article&utm_medium=pdf_website&utm_campaign=latest_issue",
+            "https://indianexpress.com/picture-/",
+            "https://indianexpress.com/article/express-exclusive/ie100-indias-most-powerful-2021-7248171/"
+          ],
+          "titles": [
+            "https://indianexpress.com/news-sitemap.xml",
+            "'Bharat Jodo Yatra is to connect with people, undo damage caused ...",
+            "Decoding the New Education Policy",
+            "picture | The Indian Express",
+            "IE100: Narendra Modi, Amit Shah and the India's Other Most ..."
+          ],
+          "count": 5
+        },
+        "claim_text": "The user claims their relative, a BJP/RSS supporter, stole their horoscope yogas, and criticizes those who support such behavior.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://indianexpress.com/news-sitemap.xml",
+          "https://indianexpress.com/article/india/congress-bharat-jodo-yatra-live-updates-rahul-gandhi-kanyakumari-8135479/",
+          "https://frontline.thehindu.com/magazine/article32496402.ece/binary/FL-28-08-2020-EBook.pdf?utm_source=article&utm_medium=pdf_website&utm_campaign=latest_issue",
+          "https://indianexpress.com/picture-/",
+          "https://indianexpress.com/article/express-exclusive/ie100-indias-most-powerful-2021-7248171/"
+        ],
+        "titles": [
+          "https://indianexpress.com/news-sitemap.xml",
+          "'Bharat Jodo Yatra is to connect with people, undo damage caused ...",
+          "Decoding the New Education Policy",
+          "picture | The Indian Express",
+          "IE100: Narendra Modi, Amit Shah and the India's Other Most ..."
+        ],
+        "count": 5
+      },
+      "source": "https://twitter.com/parvathiharitsa/status/1994115213529108831",
+      "content_summary": "The user asserts that their relative, identified as a BJP/RSS supporter, did not bear any expenses for their upbringing and illicitly connected with and stole their horoscope yogas. The user expresses strong disapproval, telling those who support such actions to not associate with Yajurvedi Srilalit",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

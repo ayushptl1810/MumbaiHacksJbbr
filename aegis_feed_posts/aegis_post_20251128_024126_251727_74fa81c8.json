@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_251727_74fa81c8",
+  "verification_date": "2025-11-28T02:41:26.251727",
+  "claim": {
+    "text": "The post presents the strongest playing XI for UP Warriorz in WPL 2026 and solicits user opinions on potential squad changes.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "WPL 2026 Squads: Too Early to Predict, Auction Hasn't Happened",
+    "body": "Claims discussing the 'strongest playing XI for UP Warriorz in WPL 2026' or soliciting opinions on potential squad changes are entirely premature and speculative. The Women's Premier League (WPL) 2026 season and its associated player auction have not taken place. WPL seasons operate annually, and player rosters for future seasons are determined through auctions and retention policies that occur much closer to the actual season. Therefore, any detailed discussions about 2026 squads are currently without basis.",
+    "summary": "Discussions about WPL 2026 squads are premature as the season and its player auction have not yet occurred."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post presents the strongest playing XI for UP Warriorz in WPL 2026 and solicits user opinions on potential squad changes.",
+        "url": "https://twitter.com/Sportskeeda/status/1994125399069266106",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 8,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "The post presents the strongest playing XI for UP Warriorz in WPL 2026 and solicits user opinions on potential squad changes.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The post presents the strongest playing XI for UP Warriorz in WPL 2026 and solicits user opinions on potential squad changes.",
+          "claim_context": "The post displays the strongest possible playing eleven for the UP Warriorz team for the Women's Premier League (WPL) 2026 season and invites viewers to suggest any modifications or changes they would make to the lineup.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/Sportskeeda/status/1994125399069266106",
+      "content_summary": "The post displays the strongest possible playing eleven for the UP Warriorz team for the Women's Premier League (WPL) 2026 season and invites viewers to suggest any modifications or changes they would make to the lineup.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

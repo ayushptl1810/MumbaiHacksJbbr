@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_024027_830772_ef492875",
+  "verification_date": "2025-11-28T02:40:27.830772",
+  "claim": {
+    "text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unsubstantiated: The 'Fourth Grade' Hashtag Campaign Claim",
+    "body": "The assertion that there's an organized effort to create 70,000 social media posts about 'Fourth Grade' using a specific hashtag is not supported by any evidence. Despite checks, no information has surfaced to substantiate such a campaign. The sources cited for this claim are entirely unrelated, referring to news about the Trump administration and the Uvalde shooting, which have no bearing on social media initiatives. The 'uncertain' verdict indicates that while the claim hasn't been definitively disproven, it also lacks any basis in fact. Public information does not corroborate the existence of this widespread call to action.",
+    "summary": "The claim about a call for 70,000 'Fourth Grade' posts via a specific hashtag lacks any supporting evidence or relevant sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+        "url": "https://twitter.com/AapkaApna101/status/1994134573345853683",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Trump Administration Aims to Block New Funding for Coronavirus ...",
+        "url": "https://www.nytimes.com/2020/07/18/world/coronavirus-news.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Uvalde Elementary School Shooting: As Uvalde Meets to Mourn, a ...",
+        "url": "https://www.nytimes.com/live/2022/05/28/us/texas-school-shooting",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Iran Advances Ability to Make Nuclear Weapons, U.S. Says",
+        "url": "https://www.wsj.com/public/resources/documents/9bjh8N2vKdEdxKl5Vue8-WSJNewsPaper-8-10-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdS1uNWlcjFbakOjJobNf32jT0kqMzj1b07BCh9IF_6SLKoh5pM3Vo0&gaa_ts=6928c116&gaa_sig=5dR2NEN_0WX-rFtWxlhCDkYNLY1tBDx2uDcydXX22KILqRYD4k53NAGW8036-XHiIdnAWwZ-nxIob2c4Mkn0QA%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Consumers Feel Downbeat, But They Keep On Spending",
+        "url": "https://www.wsj.com/public/resources/documents/4XXGROjid5ggZocAUfaa-WSJNewsPaper-4-26-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdc4JX-LgrcM7Jw6MoTT-_b704RpX46p1TkuMJ5acR5wXaTyvGpbVrN&gaa_ts=6928c116&gaa_sig=J1tbvEdIGETvgJKAWN71sqWgo4C8oB-TckuFXDxDoRULkSJdgT4vY8TY5HL7dRQ9SUyAJav1aNaEl8pwolDZ4A%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Trump, Biden Trade Insults In Debate Full of Crosstalk",
+        "url": "https://www.wsj.com/public/resources/documents/bDZVZTvzOKzC7nUTHUWd-WSJNewsPaper-9-30-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfGEEzSuRmI0UEsrm2UiHoFrJXaqDN8pSnh5az5Wl2LqLoIr8j6I1jC&gaa_ts=6928c116&gaa_sig=EoIVQyAtKggyemBkFiLfhIkq5lugua3Edvn8XO3gXBLQ4ROwO7UEJnfcLvmKfCjY41140Y8J50-i5nL6Kj-Trw%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 10,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources are unrelated news articles that merely mention 'fourth grade' in different contexts and offer no information to verify or refute the claim about a call to achieve 70,000 posts with a specific hashtag.",
+        "confidence": "high",
+        "reasoning": "The claim describes a specific type of social media activity: a call to achieve 70,000 posts related to 'Fourth Grade' using a specific hashtag. The provided sources are news articles that merely mention 'fourth-grade' in various unrelated contexts (a retired teacher, classmates, a child's activity). None of these snippets describe or refer to any social media post, a call to action, or a specific hashtag campaign. Therefore, the sources do not provide any evidence to verify or refute the claim.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2020/07/18/world/coronavirus-news.html",
+            "https://www.nytimes.com/live/2022/05/28/us/texas-school-shooting",
+            "https://www.wsj.com/public/resources/documents/9bjh8N2vKdEdxKl5Vue8-WSJNewsPaper-8-10-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdS1uNWlcjFbakOjJobNf32jT0kqMzj1b07BCh9IF_6SLKoh5pM3Vo0&gaa_ts=6928c116&gaa_sig=5dR2NEN_0WX-rFtWxlhCDkYNLY1tBDx2uDcydXX22KILqRYD4k53NAGW8036-XHiIdnAWwZ-nxIob2c4Mkn0QA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/4XXGROjid5ggZocAUfaa-WSJNewsPaper-4-26-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdc4JX-LgrcM7Jw6MoTT-_b704RpX46p1TkuMJ5acR5wXaTyvGpbVrN&gaa_ts=6928c116&gaa_sig=J1tbvEdIGETvgJKAWN71sqWgo4C8oB-TckuFXDxDoRULkSJdgT4vY8TY5HL7dRQ9SUyAJav1aNaEl8pwolDZ4A%3D%3D",
+            "https://www.wsj.com/public/resources/documents/bDZVZTvzOKzC7nUTHUWd-WSJNewsPaper-9-30-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfGEEzSuRmI0UEsrm2UiHoFrJXaqDN8pSnh5az5Wl2LqLoIr8j6I1jC&gaa_ts=6928c116&gaa_sig=EoIVQyAtKggyemBkFiLfhIkq5lugua3Edvn8XO3gXBLQ4ROwO7UEJnfcLvmKfCjY41140Y8J50-i5nL6Kj-Trw%3D%3D"
+          ],
+          "titles": [
+            "Trump Administration Aims to Block New Funding for Coronavirus ...",
+            "Uvalde Elementary School Shooting: As Uvalde Meets to Mourn, a ...",
+            "Iran Advances Ability to Make Nuclear Weapons, U.S. Says",
+            "Consumers Feel Downbeat, But They Keep On Spending",
+            "Trump, Biden Trade Insults In Debate Full of Crosstalk"
+          ],
+          "count": 6
+        },
+        "claim_text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.nytimes.com/2020/07/18/world/coronavirus-news.html",
+          "https://www.nytimes.com/live/2022/05/28/us/texas-school-shooting",
+          "https://www.wsj.com/public/resources/documents/9bjh8N2vKdEdxKl5Vue8-WSJNewsPaper-8-10-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdS1uNWlcjFbakOjJobNf32jT0kqMzj1b07BCh9IF_6SLKoh5pM3Vo0&gaa_ts=6928c116&gaa_sig=5dR2NEN_0WX-rFtWxlhCDkYNLY1tBDx2uDcydXX22KILqRYD4k53NAGW8036-XHiIdnAWwZ-nxIob2c4Mkn0QA%3D%3D",
+          "https://www.wsj.com/public/resources/documents/4XXGROjid5ggZocAUfaa-WSJNewsPaper-4-26-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdc4JX-LgrcM7Jw6MoTT-_b704RpX46p1TkuMJ5acR5wXaTyvGpbVrN&gaa_ts=6928c116&gaa_sig=J1tbvEdIGETvgJKAWN71sqWgo4C8oB-TckuFXDxDoRULkSJdgT4vY8TY5HL7dRQ9SUyAJav1aNaEl8pwolDZ4A%3D%3D",
+          "https://www.wsj.com/public/resources/documents/bDZVZTvzOKzC7nUTHUWd-WSJNewsPaper-9-30-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfGEEzSuRmI0UEsrm2UiHoFrJXaqDN8pSnh5az5Wl2LqLoIr8j6I1jC&gaa_ts=6928c116&gaa_sig=EoIVQyAtKggyemBkFiLfhIkq5lugua3Edvn8XO3gXBLQ4ROwO7UEJnfcLvmKfCjY41140Y8J50-i5nL6Kj-Trw%3D%3D"
+        ],
+        "titles": [
+          "Trump Administration Aims to Block New Funding for Coronavirus ...",
+          "Uvalde Elementary School Shooting: As Uvalde Meets to Mourn, a ...",
+          "Iran Advances Ability to Make Nuclear Weapons, U.S. Says",
+          "Consumers Feel Downbeat, But They Keep On Spending",
+          "Trump, Biden Trade Insults In Debate Full of Crosstalk"
+        ],
+        "count": 6
+      },
+      "source": "https://twitter.com/AapkaApna101/status/1994134573345853683",
+      "content_summary": "The post consists solely of the Hindi hashtag \"#चतुर्थ_श्रेणी_पद_70K_करो\" which translates to \"#Fourth_Grade_Post_70K_Do,\" indicating a trending campaign or demand related to 70,000 'Fourth Grade' positions or content.",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

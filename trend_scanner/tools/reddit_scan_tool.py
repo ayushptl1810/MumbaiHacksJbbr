@@ -311,7 +311,8 @@ POST_ID: [post_id] | RISK: [HIGH/MEDIUM/LOW] | REASON: [brief reason]
                     'velocity': velocity,
                     'engagement_rate': engagement_rate,
                     'is_recent': is_recent,
-                    'meets_basic_score': meets_basic_score
+                    'meets_basic_score': meets_basic_score,
+                    'score': submission.score
                 }
                 
                 # Only add to batch assessment if it meets basic criteria

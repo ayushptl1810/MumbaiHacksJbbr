@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024051_912022_12382e8f",
+  "verification_date": "2025-11-28T02:40:51.912022",
+  "claim": {
+    "text": "The trailer for Elvish Yadav's debut series \"Aukaat Ke Bahar\" has been released, with the series set to premiere on December 3rd.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "FACT-CHECK: The trailer for Elvish Yadav's debut series \"Aukaat Ke Bahar\" has been released, with th",
+    "body": "Our fact-checking analysis shows: No message provided\n\nDetailed reasoning: No reasoning provided",
+    "summary": "No message provided"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for Elvish Yadav's debut series \"Aukaat Ke Bahar\" has been released, with the series set to premiere on December 3rd.",
+        "url": "https://twitter.com/lafda_news/status/1994131793713484162",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 10,
+    "batch_size": 10,
+    "total_batch_number": 3,
+    "original_verification": {
+      "claim_text": "The trailer for Elvish Yadav's debut series \"Aukaat Ke Bahar\" has been released, with the series set to premiere on December 3rd.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for Elvish Yadav's debut series \"Aukaat Ke Bahar\" has been released, with the series set to premiere on December 3rd.",
+          "claim_context": "The post announces the release of the trailer for Elvish Yadav's debut series, \"Aukaat Ke Bahar,\" which tells the story of a small-town boxer entering a new world. The series is set to premiere on December 3rd, with fans expressing high anticipation, celebrating Yadav's popularity despite being 'hated by few, loved by millions'.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/lafda_news/status/1994131793713484162",
+      "content_summary": "The post announces the release of the trailer for Elvish Yadav's debut series, \"Aukaat Ke Bahar,\" which tells the story of a small-town boxer entering a new world. The series is set to premiere on December 3rd, with fans expressing high anticipation, celebrating Yadav's popularity despite being 'hat",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

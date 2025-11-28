@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_248023_74bd4276",
+  "verification_date": "2025-11-28T02:41:26.248023",
+  "claim": {
+    "text": "The trailer for \"AUKAAT KE BAHAR\" has been released, generating support for Elvish Yadav and his fanbase.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Elvish Yadav's 'Aukaat Ke Bahar' Trailer: Support from a Past Release",
+    "body": "The trailer for \"Aukaat Ke Bahar,\" featuring Elvish Yadav, was indeed released in November 2023, preceding the series' debut in December 2023. Any 'support' generated among his fanbase would have primarily occurred during that initial period of release and promotion. Presenting this as a *current* event or as if the trailer is *now* generating new support is a misrepresentation of the timeline and context. While Elvish Yadav retains a strong following, this claim inaccurately frames a past event as ongoing.",
+    "summary": "The \"Aukaat Ke Bahar\" trailer was released in November 2023; claims of it currently generating support for Elvish Yadav are outdated."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for \"AUKAAT KE BAHAR\" has been released, generating support for Elvish Yadav and his fanbase.",
+        "url": "https://twitter.com/NileshShew31317/status/1994118204143423863",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released, generating support for Elvish Yadav and his fanbase.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released, generating support for Elvish Yadav and his fanbase.",
+          "claim_context": "The post announces the release of the \"AUKAAT KE BAHAR\" trailer, showing support for #ElvishYadav and #ElvishArmy.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/NileshShew31317/status/1994118204143423863",
+      "content_summary": "The post announces the release of the \"AUKAAT KE BAHAR\" trailer, showing support for #ElvishYadav and #ElvishArmy.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

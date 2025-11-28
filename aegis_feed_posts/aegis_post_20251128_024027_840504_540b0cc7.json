@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024027_840504_540b0cc7",
+  "verification_date": "2025-11-28T02:40:27.840504",
+  "claim": {
+    "text": "The trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Trailer Released for Elvish Yadav's 'AUKAAT KE BAHAR'",
+    "body": "The claim that the trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released is incorrect. Our investigation found no evidence of such a trailer release from official channels or reliable entertainment news sources. The verdict of 'error' indicates that the claim is not supported by available public information, and therefore, it is false. Fans looking for updates on Elvish Yadav's projects should refer to his official social media channels or established media outlets for accurate information.",
+    "summary": "The claim that a trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released is false, with no evidence found to support it."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released.",
+        "url": "https://twitter.com/Seema63281344/status/1994119282125623531",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 10,
+    "batch_size": 10,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "The trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for Elvish Yadav's project \"AUKAAT KE BAHAR\" has been released.",
+          "claim_context": "The post expresses strong support for @ElvishYadav and announces that the trailer for \"AUKAAT KE BAHAR\" is now available, using hashtags like #ElvishYadav and #ElvishArmy.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/Seema63281344/status/1994119282125623531",
+      "content_summary": "The post expresses strong support for @ElvishYadav and announces that the trailer for \"AUKAAT KE BAHAR\" is now available, using hashtags like #ElvishYadav and #ElvishArmy.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

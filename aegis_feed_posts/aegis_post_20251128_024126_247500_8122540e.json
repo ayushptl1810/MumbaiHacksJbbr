@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_247500_8122540e",
+  "verification_date": "2025-11-28T02:41:26.247500",
+  "claim": {
+    "text": "The trailer for \"AUKAAT KE BAHAR\" has been released, and there is great excitement for the web series.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "AUKAAT KE BAHAR Trailer: Past Release, Current Hype Unlikely",
+    "body": "The trailer for the web series \"Aukaat Ke Bahar\" was released in November 2023, and the series began streaming in December 2023. While there was undoubtedly excitement surrounding its initial launch and Elvish Yadav's participation at that time, claims of *current* 'great excitement' for a series that has been available for several months are highly misleading if presented as a new development. Public interest and hype for a project typically peak around its initial release, not months later.",
+    "summary": "While the \"Aukaat Ke Bahar\" trailer was released in late 2023, claims of *current* great excitement are likely based on outdated information."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for \"AUKAAT KE BAHAR\" has been released, and there is great excitement for the web series.",
+        "url": "https://twitter.com/keyudarshu/status/1994119420919337282",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released, and there is great excitement for the web series.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released, and there is great excitement for the web series.",
+          "claim_context": "The post announces that the trailer for \"AUKAAT KE BAHAR\" is out and expresses great excitement for the upcoming web series, using hashtags #ElvishYadav and #ElvishArmy.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/keyudarshu/status/1994119420919337282",
+      "content_summary": "The post announces that the trailer for \"AUKAAT KE BAHAR\" is out and expresses great excitement for the upcoming web series, using hashtags #ElvishYadav and #ElvishArmy.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

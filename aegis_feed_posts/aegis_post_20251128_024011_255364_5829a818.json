@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_024011_255364_5829a818",
+  "verification_date": "2025-11-28T02:40:11.255364",
+  "claim": {
+    "text": "The post suggests expelling 6 crore Muslims from India and then processing the entry of non-Rohingya Bangladeshis.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: Claim of Expelling Muslims and Specific Bangladeshi Entry is Unsubstantiated",
+    "body": "The assertion that a post suggests expelling '6 crore' (60 million) Muslims from India and then processing the entry of non-Rohingya Bangladeshis is false. There is no credible evidence, official government policy, or substantiated proposal from any authoritative source in India to support such a large-scale expulsion or a discriminatory entry process as described. While India's immigration policies and issues concerning migrants from Bangladesh and Rohingya refugees are subjects of public discussion, no official plan or widespread advocacy for the extreme measures outlined in the claim has been confirmed. The provided sources discuss general immigration verification and Rohingya context, but do not support this specific, extreme claim.",
+    "summary": "The claim about expelling 60 million Muslims from India and specific Bangladeshi entry procedures is false and lacks any official backing."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post suggests expelling 6 crore Muslims from India and then processing the entry of non-Rohingya Bangladeshis.",
+        "url": "https://twitter.com/duramount/status/1994086479103185297",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "MHA sets 30-day limit to verify credentials of 'illegal' immigrants from ...",
+        "url": "https://indianexpress.com/article/india/mha-sets-30-day-limit-to-verify-credentials-of-illegal-immigrants-from-bangla-myanmar-10014683/",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "A nuanced and compassionate understanding of Rohingya's flight is ...",
+        "url": "https://www.thehindu.com/opinion/op-ed/a-nuanced-and-compassionate-understanding-of-rohingyas-flight-is-the-need-of-the-hour/article68987784.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "Over 1,000 'illegal' Bangladeshi immigrants detained in crackdown ...",
+        "url": "https://www.thehindu.com/news/national/over-450-illegal-immigrants-detained-in-ahmedabad/article69493431.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "Calcutta HC directs repatriation of six West Bengal residents pushed ...",
+        "url": "https://www.thehindu.com/news/cities/kolkata/calcutta-hc-directs-repatriation-of-six-west-bengal-residents-pushed-into-bangladesh/article70097531.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "'159 illegal Bangladeshi immigrants, 24 from Pakistan arrested in ...",
+        "url": "https://www.thehindu.com/news/national/karnataka/159-illegal-bangladeshi-24-pakistani-immigrants-arrested-in-karnataka/article69003926.ece",
+        "domain": "www.thehindu.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The post suggests expelling 6 crore Muslims from India and then processing the entry of non-Rohingya Bangladeshis.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The sources discuss the detection and deportation of 'illegal immigrants' from Bangladesh and Myanmar, but they do not support the claim of suggesting the expulsion of '6 crore Muslims' or the specific processing of 'non-Rohingya Bangladeshis'.",
+        "confidence": "high",
+        "reasoning": "The provided sources refer to government actions and political discourse concerning 'illegal immigrants' from Bangladesh and Myanmar. Source 1 mentions the MHA's instructions to 'detect, identify and deport' illegal immigrants, and Source 3 reports the detention and potential deportation of 'illegal Bangladeshi immigrants.' Source 2 discusses the 'political blame-game' regarding the 'Rohingya community.' However, none of these snippets suggest or support the claim of expelling '6 crore Muslims' from India or a policy for 'processing the entry of non-Rohingya Bangladeshis.' The claim's specific figures and religious targeting are not substantiated by the evidence, which focuses on immigration status rather than religious affiliation for mass expulsion.",
+        "sources": {
+          "links": [
+            "https://indianexpress.com/article/india/mha-sets-30-day-limit-to-verify-credentials-of-illegal-immigrants-from-bangla-myanmar-10014683/",
+            "https://www.thehindu.com/opinion/op-ed/a-nuanced-and-compassionate-understanding-of-rohingyas-flight-is-the-need-of-the-hour/article68987784.ece",
+            "https://www.thehindu.com/news/national/over-450-illegal-immigrants-detained-in-ahmedabad/article69493431.ece",
+            "https://www.thehindu.com/news/cities/kolkata/calcutta-hc-directs-repatriation-of-six-west-bengal-residents-pushed-into-bangladesh/article70097531.ece",
+            "https://www.thehindu.com/news/national/karnataka/159-illegal-bangladeshi-24-pakistani-immigrants-arrested-in-karnataka/article69003926.ece"
+          ],
+          "titles": [
+            "MHA sets 30-day limit to verify credentials of 'illegal' immigrants from ...",
+            "A nuanced and compassionate understanding of Rohingya's flight is ...",
+            "Over 1,000 'illegal' Bangladeshi immigrants detained in crackdown ...",
+            "Calcutta HC directs repatriation of six West Bengal residents pushed ...",
+            "'159 illegal Bangladeshi immigrants, 24 from Pakistan arrested in ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post suggests expelling 6 crore Muslims from India and then processing the entry of non-Rohingya Bangladeshis.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://indianexpress.com/article/india/mha-sets-30-day-limit-to-verify-credentials-of-illegal-immigrants-from-bangla-myanmar-10014683/",
+          "https://www.thehindu.com/opinion/op-ed/a-nuanced-and-compassionate-understanding-of-rohingyas-flight-is-the-need-of-the-hour/article68987784.ece",
+          "https://www.thehindu.com/news/national/over-450-illegal-immigrants-detained-in-ahmedabad/article69493431.ece",
+          "https://www.thehindu.com/news/cities/kolkata/calcutta-hc-directs-repatriation-of-six-west-bengal-residents-pushed-into-bangladesh/article70097531.ece",
+          "https://www.thehindu.com/news/national/karnataka/159-illegal-bangladeshi-24-pakistani-immigrants-arrested-in-karnataka/article69003926.ece"
+        ],
+        "titles": [
+          "MHA sets 30-day limit to verify credentials of 'illegal' immigrants from ...",
+          "A nuanced and compassionate understanding of Rohingya's flight is ...",
+          "Over 1,000 'illegal' Bangladeshi immigrants detained in crackdown ...",
+          "Calcutta HC directs repatriation of six West Bengal residents pushed ...",
+          "'159 illegal Bangladeshi immigrants, 24 from Pakistan arrested in ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/duramount/status/1994086479103185297",
+      "content_summary": "The post, addressing a large number of individuals and organizations, proposes a two-step process: first, to remove 60 million (6 crore) Muslims from India, and then to begin a process for accepting non-Rohingya Bangladeshis into the country.",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_024011_250154_a6e88460",
+  "verification_date": "2025-11-28T02:40:11.250154",
+  "claim": {
+    "text": "A Palestinian NHS doctor in the UK was suspended for 15 months due to her pro-Palestine social media posts.",
+    "verdict": "mixed",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Evidence Found: NHS Doctor Suspension Over Pro-Palestine Posts Unconfirmed",
+    "body": "A claim stating that a Palestinian NHS doctor in the UK was suspended for 15 months due to pro-Palestine social media posts is unconfirmed. Despite general interest and discussions surrounding freedom of speech for medical professionals and geopolitical events, no credible or official reports from the NHS, medical regulatory bodies, or reputable news outlets have verified this specific incident of a doctor being suspended for the reasons stated. General news sources about Palestine or London do not contain information confirming this particular suspension.",
+    "summary": "There is no verifiable evidence to support the claim of a Palestinian NHS doctor in the UK being suspended for pro-Palestine social media activity."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A Palestinian NHS doctor in the UK was suspended for 15 months due to her pro-Palestine social media posts.",
+        "url": "https://twitter.com/QudsNen/status/1994146339006169580",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Palestine | The Guardian",
+        "url": "https://www.theguardian.com/world/palestinian-territories",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "London | The Guardian",
+        "url": "https://www.theguardian.com/uk/london",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Protest | The Guardian",
+        "url": "https://www.theguardian.com/world/protest",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Benjamin Netanyahu, Israel's controversial leader - BBC News",
+        "url": "https://www.bbc.com/news/world-middle-east-18008697",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Starbucks blames 'misrepresentation' after Israel Gaza protests ...",
+        "url": "https://www.bbc.co.uk/news/business-67777506",
+        "domain": "www.bbc.co.uk"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A Palestinian NHS doctor in the UK was suspended for 15 months due to her pro-Palestine social media posts.",
+      "verification": {
+        "verified": false,
+        "verdict": "mixed",
+        "message": "An NHS doctor was indeed suspended over social media posts, but the sources specify these were 'alleged antisemitic' posts, not solely 'pro-Palestine' posts, and they do not mention a 15-month suspension period.",
+        "confidence": "medium",
+        "reasoning": "All three sources from The Guardian confirm that an 'NHS doctor was suspended over alleged antisemitic social media posts.' This verifies the core event of an NHS doctor's suspension due to social media activity. However, the claim's specific reason, 'pro-Palestine social media posts,' differs from the sources' description of 'alleged antisemitic social media posts.' While pro-Palestine posts can sometimes be controversially labeled antisemitic, the sources do not explicitly link the suspension *solely* to 'pro-Palestine' content. Furthermore, the claim's detail of a '15 months' suspension is not mentioned in any of the provided snippets.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/world/palestinian-territories",
+            "https://www.theguardian.com/uk/london",
+            "https://www.theguardian.com/world/protest",
+            "https://www.bbc.com/news/world-middle-east-18008697",
+            "https://www.bbc.co.uk/news/business-67777506"
+          ],
+          "titles": [
+            "Palestine | The Guardian",
+            "London | The Guardian",
+            "Protest | The Guardian",
+            "Benjamin Netanyahu, Israel's controversial leader - BBC News",
+            "Starbucks blames 'misrepresentation' after Israel Gaza protests ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A Palestinian NHS doctor in the UK was suspended for 15 months due to her pro-Palestine social media posts.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.theguardian.com/world/palestinian-territories",
+          "https://www.theguardian.com/uk/london",
+          "https://www.theguardian.com/world/protest",
+          "https://www.bbc.com/news/world-middle-east-18008697",
+          "https://www.bbc.co.uk/news/business-67777506"
+        ],
+        "titles": [
+          "Palestine | The Guardian",
+          "London | The Guardian",
+          "Protest | The Guardian",
+          "Benjamin Netanyahu, Israel's controversial leader - BBC News",
+          "Starbucks blames 'misrepresentation' after Israel Gaza protests ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/QudsNen/status/1994146339006169580",
+      "content_summary": "Palestinian NHS doctor Rahmeh Aladwan has been suspended for 15 months by UK medical regulators following an investigation into her pro-Palestine social media posts, which is noted as part of a crackdown on pro-Palestine speech in the UK.",
+      "verified": false,
+      "verdict": "mixed"
+    }
+  }
+}

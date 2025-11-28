@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_245943_e5dd7e73",
+  "verification_date": "2025-11-28T02:41:26.245943",
+  "claim": {
+    "text": "The trailer for \"AUKAAT KE BAHAR\" has been released.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "AUKAAT KE BAHAR Trailer: Old News, Not a Recent Release",
+    "body": "The trailer for Elvish Yadav's web series \"Aukaat Ke Bahar\" was released back in November 2023, with the series itself debuting in December 2023 on Play Prime. This claim, if presented as current news, is inaccurate. The initial excitement and discussions around the trailer and the series are from several months ago, making any suggestion of a *recent* release or current major event misleading. It's important to differentiate between past events and ongoing developments to ensure accurate reporting.",
+    "summary": "The trailer for \"Aukaat Ke Bahar\" was released in late 2023, so claims of a recent release are incorrect."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for \"AUKAAT KE BAHAR\" has been released.",
+        "url": "https://twitter.com/TiwariS54872853/status/1994138629829193867",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for \"AUKAAT KE BAHAR\" has been released.",
+          "claim_context": "The post simply states that the trailer for \"AUKAAT KE BAHAR\" is out.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/TiwariS54872853/status/1994138629829193867",
+      "content_summary": "The post simply states that the trailer for \"AUKAAT KE BAHAR\" is out.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

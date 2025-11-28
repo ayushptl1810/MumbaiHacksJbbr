@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024027_834600_6bf04d16",
+  "verification_date": "2025-11-28T02:40:27.834600",
+  "claim": {
+    "text": "Rajasthan should increase the number of permanent 4th Grade appointments to fill vacant positions across all government departments.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Rajasthan Job Policy: A Recommendation, Not a Verifiable Fact",
+    "body": "The statement suggesting that \"Rajasthan should increase the number of permanent 4th Grade appointments to fill vacant positions across all government departments\" is not a factual claim that can be verified as true or false. Instead, it represents a policy recommendation or an opinion regarding government employment strategy in Rajasthan. As such, it falls outside the scope of typical fact-checking, which assesses the truthfulness of statements of fact. The verdict of 'error' indicates that the claim cannot be fact-checked in a conventional sense because it expresses a viewpoint or proposal rather than a verifiable event or condition. Debating the merits of this recommendation requires policy discussion, not factual confirmation.",
+    "summary": "The statement about Rajasthan increasing 4th Grade appointments is a policy recommendation, not a factual claim that can be verified as true or false."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Rajasthan should increase the number of permanent 4th Grade appointments to fill vacant positions across all government departments.",
+        "url": "https://twitter.com/Sohanhingra0/status/1994137334594589096",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 10,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "Rajasthan should increase the number of permanent 4th Grade appointments to fill vacant positions across all government departments.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Rajasthan should increase the number of permanent 4th Grade appointments to fill vacant positions across all government departments.",
+          "claim_context": "The post advocates for increasing the number of permanent 4th Grade appointments in Rajasthan to address the numerous vacant positions across all government departments. It reiterates the demand using the hashtag \"#चतुर्थ_श्रेणी_पद_70K_करो\" (Fourth Grade Post 70K Do).",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/Sohanhingra0/status/1994137334594589096",
+      "content_summary": "The post advocates for increasing the number of permanent 4th Grade appointments in Rajasthan to address the numerous vacant positions across all government departments. It reiterates the demand using the hashtag \"#चतुर्थ_श्रेणी_पद_70K_करो\" (Fourth Grade Post 70K Do).",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

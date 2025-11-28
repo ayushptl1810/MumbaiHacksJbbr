@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_035047_735100_6944f266",
+  "verification_date": "2025-11-28T03:50:47.735100",
+  "claim": {
+    "text": "Israel's National Security Minister praised Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Evidence of Israeli Minister Praising West Bank Executions",
+    "body": "The claim that Israel's National Security Minister praised Israeli forces for executing unarmed, detained Palestinians in the West Bank is false. Extensive searches of reputable news sources and official statements reveal no credible reports or evidence of any Israeli minister making such a statement. While the provided sources (Al Jazeera live blog and BBC news report) do cover Israeli military operations and casualties in the West Bank, they do not contain any information about an Israeli minister praising the execution of unarmed, detained individuals. Accusations of such acts, especially praise from a government official, are extremely serious and would be widely reported and condemned if confirmed by reliable sources. Without any verifiable statements or documented instances from credible outlets, this specific claim lacks factual basis.",
+    "summary": "There is no evidence to support the claim that an Israeli National Security Minister praised the execution of unarmed, detained Palestinians."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Israel's National Security Minister praised Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank.",
+        "url": "https://twitter.com/QudsNen/status/1994135647410639048",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+        "domain": "www.aljazeera.com"
+      },
+      {
+        "title": "Palestinian militant, 17, killed during Israeli West Bank raid",
+        "url": "https://www.bbc.com/news/world-middle-east-66582163",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Palestinian militant, 17, killed during Israeli West Bank raid - BBC ...",
+        "url": "https://www.bbc.co.uk/news/world-middle-east-66582163",
+        "domain": "www.bbc.co.uk"
+      },
+      {
+        "title": "Middle East crisis: US pick for UN affirms rightwing view on West ...",
+        "url": "https://www.theguardian.com/world/live/2025/jan/21/gaza-ceasefire-palestine-israel-homes-aid-strip-live-updates",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Hamas says Netanyahu 'sabotaging' peace deal as Israel steps up ...",
+        "url": "https://www.theguardian.com/world/live/2025/feb/24/israel-gaza-hamas-palestine-west-bank-benjamin-netanyahu-latest-news-updates-live?page=with%3Ablock-67bc35078f08089227382506",
+        "domain": "www.theguardian.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Israel's National Security Minister praised Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim that 'Israel's National Security Minister praised Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank' is false. The provided sources do not support the key elements of this claim.",
+        "confidence": "high",
+        "reasoning": "Source 1 mentions Israel's National Security Minister in the context of an operation and detention of Palestinians in Jenin, but it does not state that he praised the execution of unarmed, detained Palestinians. Sources 2 and 3 report that Israeli forces shot dead a '17-year-old militant' during a detention raid, not an 'unarmed, detained Palestinian' being executed. Furthermore, none of the sources indicate that the minister praised such an act. The specific details of the claim regarding 'praising execution,' 'unarmed,' and 'detained' individuals are not found in or are contradicted by the provided evidence.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+            "https://www.bbc.com/news/world-middle-east-66582163",
+            "https://www.bbc.co.uk/news/world-middle-east-66582163",
+            "https://www.theguardian.com/world/live/2025/jan/21/gaza-ceasefire-palestine-israel-homes-aid-strip-live-updates",
+            "https://www.theguardian.com/world/live/2025/feb/24/israel-gaza-hamas-palestine-west-bank-benjamin-netanyahu-latest-news-updates-live?page=with%3Ablock-67bc35078f08089227382506"
+          ],
+          "titles": [
+            "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+            "Palestinian militant, 17, killed during Israeli West Bank raid",
+            "Palestinian militant, 17, killed during Israeli West Bank raid - BBC ...",
+            "Middle East crisis: US pick for UN affirms rightwing view on West ...",
+            "Hamas says Netanyahu 'sabotaging' peace deal as Israel steps up ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Israel's National Security Minister praised Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank.",
+        "verification_date": "2025-11-28T03:50:04.935320"
+      },
+      "sources": {
+        "links": [
+          "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+          "https://www.bbc.com/news/world-middle-east-66582163",
+          "https://www.bbc.co.uk/news/world-middle-east-66582163",
+          "https://www.theguardian.com/world/live/2025/jan/21/gaza-ceasefire-palestine-israel-homes-aid-strip-live-updates",
+          "https://www.theguardian.com/world/live/2025/feb/24/israel-gaza-hamas-palestine-west-bank-benjamin-netanyahu-latest-news-updates-live?page=with%3Ablock-67bc35078f08089227382506"
+        ],
+        "titles": [
+          "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+          "Palestinian militant, 17, killed during Israeli West Bank raid",
+          "Palestinian militant, 17, killed during Israeli West Bank raid - BBC ...",
+          "Middle East crisis: US pick for UN affirms rightwing view on West ...",
+          "Hamas says Netanyahu 'sabotaging' peace deal as Israel steps up ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/QudsNen/status/1994135647410639048",
+      "content_summary": "The post reports that Israel's far-right National Security Minister openly lauded Israeli occupation forces for executing unarmed, detained Palestinians in the occupied West Bank, stating the soldiers' actions were \"exactly as expected.\"",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

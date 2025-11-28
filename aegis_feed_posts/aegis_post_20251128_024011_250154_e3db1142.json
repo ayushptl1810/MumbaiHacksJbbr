@@ -1,0 +1,73 @@
+{
+  "post_id": "aegis_post_20251128_024011_250154_e3db1142",
+  "verification_date": "2025-11-28T02:40:11.250154",
+  "claim": {
+    "text": "Israeli occupation forces assaulted and blindfolded a Palestinian at gunpoint in Beit Ummar.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverified Claim: Palestinian Assault in Beit Ummar Lacks Specific Evidence",
+    "body": "The claim circulating about Israeli occupation forces assaulting and blindfolding a Palestinian at gunpoint in Beit Ummar remains unverified. While reports of military operations in the West Bank and concerns about human rights exist, including general accounts of Israeli army night raids, no specific, independently corroborated evidence has emerged to confirm the details of this particular incident as described. Without specific details, dates, or verifiable accounts beyond general contextual information, this claim cannot be substantiated by available public information.",
+    "summary": "Specific allegations of a Palestinian being assaulted and blindfolded in Beit Ummar lack verifiable evidence to confirm the incident."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Israeli occupation forces assaulted and blindfolded a Palestinian at gunpoint in Beit Ummar.",
+        "url": "https://twitter.com/QudsNen/status/1994148939373916339",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Israeli army night raids spread fear in West Bank | Human Rights | Al ...",
+        "url": "https://www.aljazeera.com/gallery/2015/8/15/israeli-army-night-raids-spread-fear-in-west-bank",
+        "domain": "www.aljazeera.com"
+      }
+    ],
+    "total_sources": 2
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Israeli occupation forces assaulted and blindfolded a Palestinian at gunpoint in Beit Ummar.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided source offers a general context of Israeli army night raids in Beit Ummar and Palestinian resistance, but it does not contain specific details about an individual being assaulted, blindfolded, or held at gunpoint as claimed.",
+        "confidence": "low",
+        "reasoning": "The snippet mentions 'Israeli army night raids' in 'Beit Ummar' and 'Palestinian communities who resist the Israeli occupation,' which establishes a relevant geographic and conflict context. However, it lacks any specific mention or description of an incident where Israeli occupation forces 'assaulted and blindfolded a Palestinian at gunpoint.' The information is too general to verify the precise details of the claim.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/gallery/2015/8/15/israeli-army-night-raids-spread-fear-in-west-bank"
+          ],
+          "titles": [
+            "Israeli army night raids spread fear in West Bank | Human Rights | Al ..."
+          ],
+          "count": 1
+        },
+        "claim_text": "Israeli occupation forces assaulted and blindfolded a Palestinian at gunpoint in Beit Ummar.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.aljazeera.com/gallery/2015/8/15/israeli-army-night-raids-spread-fear-in-west-bank"
+        ],
+        "titles": [
+          "Israeli army night raids spread fear in West Bank | Human Rights | Al ..."
+        ],
+        "count": 1
+      },
+      "source": "https://twitter.com/QudsNen/status/1994148939373916339",
+      "content_summary": "The post reports that Israeli occupation forces assaulted and blindfolded a Palestinian at gunpoint during a raid in Beit Ummar, located north of occupied Hebron.",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

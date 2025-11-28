@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024027_834600_77128b92",
+  "verification_date": "2025-11-28T02:40:27.834600",
+  "claim": {
+    "text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Claim of 70,000 'Fourth Grade' Hashtag Posts is Unverifiable",
+    "body": "A claim stating a call exists to achieve 70,000 posts related to 'Fourth Grade' using a specific hashtag has been deemed an 'error' in verification. This means that the claim itself is problematic for fact-checking; there's no available evidence or context to assess its truthfulness. Our investigation found no mention of such a campaign, nor were any relevant sources provided to support the assertion. Without any specific details about the alleged 'post' or 'hashtag,' it's impossible to confirm its existence or the stated goal. Claims marked as 'error' typically indicate they are unsubstantiated or untraceable.",
+    "summary": "The claim regarding a call for 70,000 'Fourth Grade' hashtag posts is unverifiable due to a complete lack of evidence or traceable sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+        "url": "https://twitter.com/AapkaApna101/status/1994134529578254580",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 10,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The post is a call to achieve 70,000 posts related to \"Fourth Grade\" using a specific hashtag.",
+          "claim_context": "The post consists solely of the Hindi hashtag \"#चतुर्थ_श्रेणी_पद_70K_करो\" which translates to \"#Fourth_Grade_Post_70K_Do,\" indicating a trending campaign or demand related to 70,000 'Fourth Grade' positions or content.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/AapkaApna101/status/1994134529578254580",
+      "content_summary": "The post consists solely of the Hindi hashtag \"#चतुर्थ_श्रेणी_पद_70K_करो\" which translates to \"#Fourth_Grade_Post_70K_Do,\" indicating a trending campaign or demand related to 70,000 'Fourth Grade' positions or content.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

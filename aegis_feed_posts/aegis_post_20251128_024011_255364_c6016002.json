@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_024011_255364_c6016002",
+  "verification_date": "2025-11-28T02:40:11.255364",
+  "claim": {
+    "text": "The post highlights the Guru's supreme importance, even above God, as the Guru facilitates the connection to the divine.",
+    "verdict": "mixed",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Nuance Required: Guru's Importance vs. Literal Placement Above God",
+    "body": "The claim highlighting a Guru's supreme importance, even 'above God,' due to their role in connecting to the divine presents a nuanced interpretation of spiritual traditions. In many Hindu and other dharmic traditions, the Guru is indeed held in extremely high reverence, often seen as a manifestation of the divine or the essential guide to spiritual realization. Expressions like 'Guru Brahma, Guru Vishnu, Guru Devo Maheshwara, Guru Sakshat Parambrahma' signify this profound respect. However, the literal interpretation of placing a Guru 'above God' can be an oversimplification. While the Guru is indispensable for showing the path to the divine, they are generally considered the *means* to God, not literally superior to the ultimate divine principle itself. The claim is therefore 'mixed,' as it captures the spirit of immense reverence but might misinterpret the precise hierarchical position in a literal sense.",
+    "summary": "While Gurus are deeply revered as guides to the divine, the literal claim of placing them 'above God' is an oversimplification of complex spiritual traditions."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post highlights the Guru's supreme importance, even above God, as the Guru facilitates the connection to the divine.",
+        "url": "https://twitter.com/CG11AT0023/status/1994123262134243663",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Importance of a guru - The Hindu",
+        "url": "https://www.thehindu.com/society/faith/importance-of-a-guru/article69890212.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "Importance of guru bhakti - The Hindu",
+        "url": "https://www.thehindu.com/society/faith/importance-of-guru-bhakti/article67048711.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "Guru Purnima 2020: Date, history, importance and significance of ...",
+        "url": "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2020-date-history-importance-and-significance-of-guru-purnima-6487262/",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "Guru Purnima 2025 Date And Time : Know History, Importance And ...",
+        "url": "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2025-date-timings-history-significance-10113442/",
+        "domain": "indianexpress.com"
+      },
+      {
+        "title": "Happy Guru Purnima 2019 Date: History, Importance & Significance ...",
+        "url": "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2019-history-importance-significance-guru-purnima-5828002/",
+        "domain": "indianexpress.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 5,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The post highlights the Guru's supreme importance, even above God, as the Guru facilitates the connection to the divine.",
+      "verification": {
+        "verified": false,
+        "verdict": "mixed",
+        "message": "The sources confirm the Guru's significant importance in providing spiritual guidance and facilitating connection to the divine, but they do not explicitly state that the Guru's importance is 'even above God'.",
+        "confidence": "medium",
+        "reasoning": "The sources consistently emphasize the profound importance of a guru in imparting knowledge, providing spiritual guidance, enlightening disciples, and steering them towards the right path, which aligns with the idea of facilitating a connection to the divine. This supports a significant part of the claim. However, none of the snippets explicitly state that the Guru's importance is 'even above God.' They highlight the Guru's crucial role as a guide and mentor in one's spiritual journey without making a direct comparative statement of superiority over God.",
+        "sources": {
+          "links": [
+            "https://www.thehindu.com/society/faith/importance-of-a-guru/article69890212.ece",
+            "https://www.thehindu.com/society/faith/importance-of-guru-bhakti/article67048711.ece",
+            "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2020-date-history-importance-and-significance-of-guru-purnima-6487262/",
+            "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2025-date-timings-history-significance-10113442/",
+            "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2019-history-importance-significance-guru-purnima-5828002/"
+          ],
+          "titles": [
+            "Importance of a guru - The Hindu",
+            "Importance of guru bhakti - The Hindu",
+            "Guru Purnima 2020: Date, history, importance and significance of ...",
+            "Guru Purnima 2025 Date And Time : Know History, Importance And ...",
+            "Happy Guru Purnima 2019 Date: History, Importance & Significance ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post highlights the Guru's supreme importance, even above God, as the Guru facilitates the connection to the divine.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.thehindu.com/society/faith/importance-of-a-guru/article69890212.ece",
+          "https://www.thehindu.com/society/faith/importance-of-guru-bhakti/article67048711.ece",
+          "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2020-date-history-importance-and-significance-of-guru-purnima-6487262/",
+          "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2025-date-timings-history-significance-10113442/",
+          "https://indianexpress.com/article/lifestyle/life-style/guru-purnima-2019-history-importance-significance-guru-purnima-5828002/"
+        ],
+        "titles": [
+          "Importance of a guru - The Hindu",
+          "Importance of guru bhakti - The Hindu",
+          "Guru Purnima 2020: Date, history, importance and significance of ...",
+          "Guru Purnima 2025 Date And Time : Know History, Importance And ...",
+          "Happy Guru Purnima 2019 Date: History, Importance & Significance ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/CG11AT0023/status/1994123262134243663",
+      "content_summary": "The post quotes the saying \"Guru Govind Dou Khade...\" to emphasize the Guru's elevated status, explaining that the Guru is considered superior to God because the Guru is the one who guides and connects an individual to God.",
+      "verified": false,
+      "verdict": "mixed"
+    }
+  }
+}

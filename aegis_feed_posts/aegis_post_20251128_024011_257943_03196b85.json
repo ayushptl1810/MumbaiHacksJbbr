@@ -1,0 +1,73 @@
+{
+  "post_id": "aegis_post_20251128_024011_257943_03196b85",
+  "verification_date": "2025-11-28T02:40:11.257943",
+  "claim": {
+    "text": "The user expresses violent anger towards an individual for allegedly stealing their energy in the name of an 'incest deity'.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverifiable Personal Expression: Anger Over 'Energy Theft' and 'Incest Deity'",
+    "body": "The user's expression of violent anger towards an individual for allegedly 'stealing their energy in the name of an 'incest deity'' is a deeply personal, emotional, and highly subjective claim rooted in spiritual beliefs and interpretations. The concepts of 'energy theft' and 'incest deity' fall outside the realm of objective, verifiable facts. As such, this claim about a personal experience and belief system cannot be confirmed or disproven by external, factual evidence. The provided source, a general article on the scale of evil, is unrelated and does not provide any context or evidence for this specific personal accusation.",
+    "summary": "A user's expression of violent anger over alleged 'energy theft' by an 'incest deity' is a personal, subjective claim that cannot be fact-checked."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The user expresses violent anger towards an individual for allegedly stealing their energy in the name of an 'incest deity'.",
+        "url": "https://twitter.com/parvathiharitsa/status/1994104545023324447",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "On The Scale Of Evil, Where Do Murderers Rate? : NPR",
+        "url": "https://www.npr.org/2010/08/21/129175964/on-the-scale-of-evil-where-do-murderers-rate",
+        "domain": "www.npr.org"
+      }
+    ],
+    "total_sources": 2
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 9,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The user expresses violent anger towards an individual for allegedly stealing their energy in the name of an 'incest deity'.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided source discusses the rating of murderers and sexual perversion in crimes, but it offers no information about a user, stolen energy, an 'incest deity,' or expressions of violent anger related to these specific allegations.",
+        "confidence": "high",
+        "reasoning": "The claim describes a user's specific emotional state (violent anger) and a very particular accusation involving 'stealing their energy in the name of an 'incest deity'.' The provided source discusses the characteristics and motives of murderers, including elements of sexual perversion. While the source deals with themes of violence, it provides no context or information specific to the user's claim about energy theft or an 'incest deity.' Thus, there is no evidence to verify or refute the claim.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2010/08/21/129175964/on-the-scale-of-evil-where-do-murderers-rate"
+          ],
+          "titles": [
+            "On The Scale Of Evil, Where Do Murderers Rate? : NPR"
+          ],
+          "count": 1
+        },
+        "claim_text": "The user expresses violent anger towards an individual for allegedly stealing their energy in the name of an 'incest deity'.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.npr.org/2010/08/21/129175964/on-the-scale-of-evil-where-do-murderers-rate"
+        ],
+        "titles": [
+          "On The Scale Of Evil, Where Do Murderers Rate? : NPR"
+        ],
+        "count": 1
+      },
+      "source": "https://twitter.com/parvathiharitsa/status/1994104545023324447",
+      "content_summary": "The user expresses extreme anger, stating they hit '@musicforsoul' for connecting with and stealing their energy, attributing this action to '@jagannathadhaam', whom they describe as an incestuous deity. The user also directs insults at Rajnarayandash and his deceased parents for allegedly abusing t",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

@@ -23,7 +23,7 @@ parsel
 scrapfly-sdk[all]
 
 # Reddit API
-asyncpraw
+praw
 
 # Optional helpers
 dotenv
@@ -43,3 +43,9 @@ scikit-learn
 
 # LLM tool
 litellm
+
+#Telegram
+telethon
+
+# Twitter API
+twikit

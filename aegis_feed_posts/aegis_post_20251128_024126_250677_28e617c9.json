@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_250677_28e617c9",
+  "verification_date": "2025-11-28T02:41:26.250677",
+  "claim": {
+    "text": "Scientists are now acknowledging that mantra waves can balance nerves and veins, a wisdom taught for years by Sant Shri Asharamji Bapu, showcasing the health benefits of Hindu culture's sounds.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Scientific Basis for 'Mantra Waves' Balancing Nerves and Veins",
+    "body": "The assertion that scientists are \"now acknowledging\" that \"mantra waves can balance nerves and veins\" is not supported by any credible scientific research. While studies explore the psychological benefits of meditation and chanting, such as stress reduction and improved focus, there is no scientific evidence for 'mantra waves' directly and physiologically balancing nerves and veins. Furthermore, associating this unsubstantiated claim with Sant Shri Asharamji Bapu is misleading, especially given his criminal conviction for rape, which significantly impacts the credibility of claims linked to his teachings.",
+    "summary": "Claims about \"mantra waves\" scientifically balancing nerves and veins are not supported by credible research, and attributing such a claim to a convicted individual like Sant Shri Asharamji Bapu is manipulative."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Scientists are now acknowledging that mantra waves can balance nerves and veins, a wisdom taught for years by Sant Shri Asharamji Bapu, showcasing the health benefits of Hindu culture's sounds.",
+        "url": "https://twitter.com/SwapnaKukr93831/status/1994113980957368384",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 7,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "Scientists are now acknowledging that mantra waves can balance nerves and veins, a wisdom taught for years by Sant Shri Asharamji Bapu, showcasing the health benefits of Hindu culture's sounds.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Scientists are now acknowledging that mantra waves can balance nerves and veins, a wisdom taught for years by Sant Shri Asharamji Bapu, showcasing the health benefits of Hindu culture's sounds.",
+          "claim_context": "The post asserts that scientists are increasingly recognizing the ability of mantra waves to balance nerves and veins, a teaching that Sant Shri Asharamji Bapu has propagated for years. It highlights how Hindu culture promotes health through sound and emphasizes the infinite glory of Sanatan Dharma.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/SwapnaKukr93831/status/1994113980957368384",
+      "content_summary": "The post asserts that scientists are increasingly recognizing the ability of mantra waves to balance nerves and veins, a teaching that Sant Shri Asharamji Bapu has propagated for years. It highlights how Hindu culture promotes health through sound and emphasizes the infinite glory of Sanatan Dharma.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

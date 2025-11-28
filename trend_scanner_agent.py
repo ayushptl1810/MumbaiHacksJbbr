@@ -24,21 +24,58 @@ from typing import List
 
 # Predefined list of subreddits to scan
 TARGET_SUBREDDITS = [
-    'NoFilterNews',
-    'badscience',
-    'skeptic',
-    'conspiracytheories'
+    #'NoFilterNews',
+    #'badscience',
+    #'skeptic',
+    #'conspiracytheories'
 ]
 
 # Predefined list of Threads profiles to scan (without @ symbol)
 TARGET_THREADS_PROFILES = [
     # Add Threads usernames here, e.g.:
-    'globaltimes_news',
-    'trumplovernews',
+    #'globaltimes_news',
+    #'trumplovernews',
 ]
 
-# Enable/disable Threads scanning
+# Predefined list of Telegram channels to scan (with or without @ symbol)
+TARGET_TELEGRAM_CHANNELS = [
+    # Add Telegram channel usernames here, e.g.:
+    # '@channelname',
+    # 'anotherchannel',
+]
+
+# Twitter/X scanning configuration
+TARGET_TWITTER_ACCOUNTS = [
+    # Add Twitter usernames here (without @), e.g.:
+    #'elonmusk',
+    'QudsNen',
+    'NupurSharmaBJP',
+    'IndianGems_',
+    #'WeDravidians' 
+    #'va_shiva',
+    #'Gurudev',
+    #'PypAyurved'
+    #'dhruv_rathee',
+    #'MAGANationX'
+    
+    
+]
+
+# Twitter auto-discover trending keywords
+TWITTER_AUTO_DISCOVER_KEYWORDS = True # If True, automatically fetch trending topics from Twitter
+TARGET_TWITTER_KEYWORDS = [
+    # Manually add keywords/hashtags to search (only used if AUTO_DISCOVER is False), e.g.:
+    'PranitMore',
+    # '#election2024',
+]
+
+# Twitter scan type: 'user', 'trending', or 'both'
+TWITTER_SCAN_TYPE = 'both'  # Toggle: 'user' for accounts only, 'trending' for keywords only, 'both' for combined
+
+# Enable/disable platform scanning
 THREADS_ENABLED = bool(TARGET_THREADS_PROFILES)  # Automatically enabled if profiles are configured
+TELEGRAM_ENABLED = bool(TARGET_TELEGRAM_CHANNELS)  # Automatically enabled if channels are configured
+TWITTER_ENABLED = bool(TARGET_TWITTER_ACCOUNTS or TARGET_TWITTER_KEYWORDS or TWITTER_AUTO_DISCOVER_KEYWORDS)  # Automatically enabled if targets configured
 
 def main_one_scan() -> dict:
     """Run a single scan using Google Agents orchestration (no CrewAI needed)"""
@@ -49,6 +86,20 @@ def main_one_scan() -> dict:
         'client_secret': os.getenv('REDDIT_CLIENT_SECRET', 'your_reddit_client_secret'),
         'user_agent': 'ProjectAegis-EnhancedTrendScanner/2.0-GoogleAgents'
     }
+    
+    TELEGRAM_CONFIG = {
+        'api_id': os.getenv('TELEGRAM_API_ID'),
+        'api_hash': os.getenv('TELEGRAM_API_HASH'),
+        'phone': os.getenv('TELEGRAM_PHONE'),
+        'session_name': os.getenv('TELEGRAM_SESSION_NAME', 'trend_scanner_session')
+    } if TELEGRAM_ENABLED else None
+    
+    TWITTER_CONFIG = {
+        'username': os.getenv('TWITTER_USERNAME'),
+        'email': os.getenv('TWITTER_EMAIL'),
+        'password': os.getenv('TWITTER_PASSWORD'),
+        'cookies_file': os.getenv('TWITTER_COOKIES_FILE', 'twitter_cookies.json')
+    } if TWITTER_ENABLED else None
 
     try:
         print("🚀 Initializing Trend Scanner with Google Agents orchestration...")
@@ -56,7 +107,11 @@ def main_one_scan() -> dict:
         # Use the new TrendScannerOrchestrator with multi-platform support
         orchestrator = TrendScannerOrchestrator(
             REDDIT_CONFIG,
-            threads_enabled=THREADS_ENABLED
+            threads_enabled=THREADS_ENABLED,
+            telegram_enabled=TELEGRAM_ENABLED,
+            telegram_config=TELEGRAM_CONFIG,
+            twitter_enabled=TWITTER_ENABLED,
+            twitter_config=TWITTER_CONFIG
         )
         
         # Configure Reddit targets
@@ -68,9 +123,38 @@ def main_one_scan() -> dict:
             print(f"🎯 Target Threads profiles: {', '.join([f'@{p}' for p in TARGET_THREADS_PROFILES])}")
             orchestrator.set_target_threads_profiles(TARGET_THREADS_PROFILES)
         
+        # Configure Telegram targets if enabled
+        if TELEGRAM_ENABLED and TARGET_TELEGRAM_CHANNELS:
+            print(f"🎯 Target Telegram channels: {', '.join(TARGET_TELEGRAM_CHANNELS)}")
+            orchestrator.set_target_telegram_channels(TARGET_TELEGRAM_CHANNELS)
+        
+        # Configure Twitter targets if enabled
+        if TWITTER_ENABLED:
+            targets = []
+            if TARGET_TWITTER_ACCOUNTS:
+                targets.extend([f"@{acc}" for acc in TARGET_TWITTER_ACCOUNTS])
+            
+            if TWITTER_AUTO_DISCOVER_KEYWORDS:
+                print(f"🎯 Target Twitter (scan type: {TWITTER_SCAN_TYPE}): {', '.join(targets) if targets else 'None'} + AUTO-DISCOVER trending topics")
+            else:
+                if TARGET_TWITTER_KEYWORDS:
+                    targets.extend([f"'{kw}'" for kw in TARGET_TWITTER_KEYWORDS])
+                print(f"🎯 Target Twitter (scan type: {TWITTER_SCAN_TYPE}): {', '.join(targets)}")
+            
+            orchestrator.set_target_twitter(
+                accounts=TARGET_TWITTER_ACCOUNTS,
+                keywords=TARGET_TWITTER_KEYWORDS,
+                scan_type=TWITTER_SCAN_TYPE,
+                auto_discover=TWITTER_AUTO_DISCOVER_KEYWORDS
+            )
+        
         platforms = ['Reddit']
         if THREADS_ENABLED:
             platforms.append('Threads')
+        if TELEGRAM_ENABLED:
+            platforms.append('Telegram')
+        if TWITTER_ENABLED:
+            platforms.append(f'Twitter/{TWITTER_SCAN_TYPE}')
         print(f"🔍 Running comprehensive trend analysis across {' + '.join(platforms)} with Google Agents...")
         results = orchestrator.scan_trending_content()
         
@@ -78,6 +162,8 @@ def main_one_scan() -> dict:
         all_posts = results.get('trending_posts', [])
         reddit_posts = results.get('reddit_posts', [])
         threads_posts = results.get('threads_posts', [])
+        telegram_posts = results.get('telegram_posts', [])
+        twitter_posts = results.get('twitter_posts', [])
         
         if not all_posts:
             final_output = {
@@ -180,6 +266,9 @@ Requirements:
                             # Fallback to Threads profile
                             username = post.get('author', post.get('subreddit', '').replace('threads/@', ''))
                             post_link = f"https://www.threads.net/@{username}"
+                    elif platform == 'twitter':
+                        # Twitter post link (already has full URL)
+                        post_link = post.get('url', post.get('permalink', 'https://twitter.com'))
                     else:
                         # Reddit post link
                         if post.get('permalink'):
@@ -228,6 +317,9 @@ Requirements:
                         else:
                             username = post.get('author', post.get('subreddit', '').replace('threads/@', ''))
                             post_link = f"https://www.threads.net/@{username}"
+                    elif platform == 'twitter':
+                        # Twitter post link (already has full URL)
+                        post_link = post.get('url', post.get('permalink', 'https://twitter.com'))
                     else:
                         if post.get('permalink'):
                             post_link = f"https://reddit.com{post['permalink']}"

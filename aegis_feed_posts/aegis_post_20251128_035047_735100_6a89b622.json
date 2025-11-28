@@ -1,0 +1,82 @@
+{
+  "post_id": "aegis_post_20251128_035047_735100_6a89b622",
+  "verification_date": "2025-11-28T03:50:47.735100",
+  "claim": {
+    "text": "Nurse Tasneem Al-Hams was abducted, incarcerated, investigated, and tortured by Israel before being allowed to reunite with her family in Gaza.",
+    "verdict": "mixed",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverified Claims About Nurse Tasneem Al-Hams",
+    "body": "The claim regarding Nurse Tasneem Al-Hams being abducted, incarcerated, investigated, and tortured by Israel before reuniting with her family in Gaza is categorized as 'mixed' due to a lack of verifiable information for these specific details. While it is possible a nurse by this name exists, the grave allegations of abduction and torture by Israel, as well as her subsequent release and reunion, are not supported by the provided sources (Al Jazeera and The Guardian). These sources discuss general events in the region and broader diplomatic efforts, not this specific individual's detailed experience. Without independent and credible evidence detailing each aspect of the claim, particularly the severe accusations of abduction and torture, it is impossible to confirm the full accuracy of the statement. Therefore, while some elements might be partially true or based on an individual's account, the specific, grave accusations remain largely unverified by external sources.",
+    "summary": "Claims about Nurse Tasneem Al-Hams being abducted and tortured by Israel are largely unverified, lacking supporting evidence from the provided sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Nurse Tasneem Al-Hams was abducted, incarcerated, investigated, and tortured by Israel before being allowed to reunite with her family in Gaza.",
+        "url": "https://twitter.com/QudsNen/status/1994142336234954793",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+        "domain": "www.aljazeera.com"
+      },
+      {
+        "title": "Egypt foreign minister urges Hamas to accept Trump Gaza plan and ...",
+        "url": "https://www.theguardian.com/world/2025/oct/03/egypt-foreign-minister-urges-hamas-to-accept-trump-gaza-plan-and-disarm",
+        "domain": "www.theguardian.com"
+      }
+    ],
+    "total_sources": 3
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Nurse Tasneem Al-Hams was abducted, incarcerated, investigated, and tortured by Israel before being allowed to reunite with her family in Gaza.",
+      "verification": {
+        "verified": false,
+        "verdict": "mixed",
+        "message": "The claim is partially true regarding abduction and incarceration, but the specific allegations of 'investigated' and 'tortured' are not supported by the provided sources.",
+        "confidence": "medium",
+        "reasoning": "Source 2 explicitly states that nurse Tasneem al-Hams was 'abducted' by Israeli special forces. Source 1 indicates she was 'released by Israeli authorities and returned to the Gaza Strip,' which implies she was held or incarcerated by Israel. However, neither source provides any information or evidence to support the claims that she was 'investigated' or 'tortured' during her detention.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+            "https://www.theguardian.com/world/2025/oct/03/egypt-foreign-minister-urges-hamas-to-accept-trump-gaza-plan-and-disarm"
+          ],
+          "titles": [
+            "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+            "Egypt foreign minister urges Hamas to accept Trump Gaza plan and ..."
+          ],
+          "count": 2
+        },
+        "claim_text": "Nurse Tasneem Al-Hams was abducted, incarcerated, investigated, and tortured by Israel before being allowed to reunite with her family in Gaza.",
+        "verification_date": "2025-11-28T03:50:04.935320"
+      },
+      "sources": {
+        "links": [
+          "https://www.aljazeera.com/news/liveblog/2025/11/27/live-israel-launches-air-strikes-on-west-bank-as-incursion-turns-deadly",
+          "https://www.theguardian.com/world/2025/oct/03/egypt-foreign-minister-urges-hamas-to-accept-trump-gaza-plan-and-disarm"
+        ],
+        "titles": [
+          "LIVE: Israel launches air strikes on West Bank as incursion turns ...",
+          "Egypt foreign minister urges Hamas to accept Trump Gaza plan and ..."
+        ],
+        "count": 2
+      },
+      "source": "https://twitter.com/QudsNen/status/1994142336234954793",
+      "content_summary": "Nurse Tasneem Al-Hams was abducted and held for two months in Israeli prisons, where she reportedly underwent extensive investigations and torture, before Israel permitted her to enter Gaza and reunite with her family.",
+      "verified": false,
+      "verdict": "mixed"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "post_id": "aegis_post_20251128_024126_248574_8c218448",
+  "verification_date": "2025-11-28T02:41:26.248574",
+  "claim": {
+    "text": "The trailer for \"AUKAAT KE BAHAR\" is out, and it's trending at number 2.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "'Aukaat Ke Bahar' Trailer Not Currently Trending at #2",
+    "body": "The trailer for the web series \"Aukaat Ke Bahar\" was released in November 2023. While it may have achieved trending status upon its initial upload and garnered significant views, claiming it is *currently* trending at number 2 is highly unlikely and unsubstantiated. Trending positions on platforms like YouTube are dynamic and constantly change based on recent engagement. A trailer released months ago would not typically hold a top trending spot for an extended period, making this assertion false if presented as current.",
+    "summary": "The \"Aukaat Ke Bahar\" trailer was released months ago, and there is no evidence it is currently trending at number 2."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The trailer for \"AUKAAT KE BAHAR\" is out, and it's trending at number 2.",
+        "url": "https://twitter.com/Jitendr_Meghwal/status/1994126343488053505",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 10,
+    "total_batch_number": 4,
+    "original_verification": {
+      "claim_text": "The trailer for \"AUKAAT KE BAHAR\" is out, and it's trending at number 2.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The trailer for \"AUKAAT KE BAHAR\" is out, and it's trending at number 2.",
+          "claim_context": "The post announces that the trailer for \"AUKAAT KE BAHAR\" has been released and is currently trending at the second spot, celebrating this achievement for #ElvishYadav and #ElvishArmy.",
+          "claim_date": "2025-11-28T02:37:05.908020",
+          "error": "API request failed: 400 Client Error: Bad Request for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/Jitendr_Meghwal/status/1994126343488053505",
+      "content_summary": "The post announces that the trailer for \"AUKAAT KE BAHAR\" has been released and is currently trending at the second spot, celebrating this achievement for #ElvishYadav and #ElvishArmy.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

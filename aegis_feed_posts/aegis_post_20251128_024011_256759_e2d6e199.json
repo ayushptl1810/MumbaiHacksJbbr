@@ -1,0 +1,91 @@
+{
+  "post_id": "aegis_post_20251128_024011_256759_e2d6e199",
+  "verification_date": "2025-11-28T02:40:11.256759",
+  "claim": {
+    "text": "The user claims harassment from a Shankarmutt president and accuses a temple of stealing their energy, while rejecting various deities.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverifiable Personal Claims: Harassment and 'Energy Theft' Lack Factual Support",
+    "body": "The claims made by a user regarding harassment from a Shankarmutt president, an accusation of a temple 'stealing their energy,' and the rejection of various deities are deeply personal and rooted in subjective spiritual experiences and beliefs. These assertions cannot be objectively verified or disproven through factual evidence or external investigation. Concepts such as 'energy theft' are not empirically measurable, and allegations of harassment in this context would require specific, actionable evidence to be addressed. The provided sources, discussing unrelated news about religious figures and associations, do not offer any information relevant to substantiating or refuting these specific personal claims.",
+    "summary": "Personal claims of harassment from a religious figure and 'energy theft' from a temple are subjective and lack factual basis for verification."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The user claims harassment from a Shankarmutt president and accuses a temple of stealing their energy, while rejecting various deities.",
+        "url": "https://twitter.com/parvathiharitsa/status/1994113718255587691",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Gauri Lankesh's remarks unwarranted: association - The Hindu",
+        "url": "https://www.thehindu.com/news/national/karnataka/gauri-lankeshs-remarks-unwarranted-association/article6904273.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "SC stops coronation of Swami Avimukteshwaranand Saraswati as ...",
+        "url": "https://www.thehindu.com/news/national/sc-stops-coronation-of-swami-avimukteshwaranand-saraswati-as-shankaracharya-of-jyotish-peeth/article66014458.ece",
+        "domain": "www.thehindu.com"
+      },
+      {
+        "title": "BBMP issues notices to unauthorised buildings in Mahadevapura ...",
+        "url": "https://www.thehindu.com/news/cities/bangalore/bbmp-issues-notices-to-unauthorised-buildings-in-mahadevapura/article67105604.ece",
+        "domain": "www.thehindu.com"
+      }
+    ],
+    "total_sources": 4
+  },
+  "confidence_percentage": 70.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 7,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The user claims harassment from a Shankarmutt president and accuses a temple of stealing their energy, while rejecting various deities.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources are unrelated news articles discussing religious associations, court cases, and municipal issues, offering no information to verify or refute the specific personal claims of harassment or energy theft.",
+        "confidence": "high",
+        "reasoning": "The claim details specific allegations of harassment from a 'Shankarmutt president,' accusation of a temple stealing energy, and rejection of deities by a user. The provided sources discuss a Brahmins' Association protest, a Supreme Court case regarding a Shankaracharya's appointment, and municipal notices for unauthorized buildings. While Source 2 mentions a 'Swami' and the context of a 'Shankaracharya,' none of the snippets contain any information that relates to or corroborates the specific personal claims of harassment, energy theft, or deity rejection. Therefore, the claim cannot be verified or refuted based on this evidence.",
+        "sources": {
+          "links": [
+            "https://www.thehindu.com/news/national/karnataka/gauri-lankeshs-remarks-unwarranted-association/article6904273.ece",
+            "https://www.thehindu.com/news/national/sc-stops-coronation-of-swami-avimukteshwaranand-saraswati-as-shankaracharya-of-jyotish-peeth/article66014458.ece",
+            "https://www.thehindu.com/news/cities/bangalore/bbmp-issues-notices-to-unauthorised-buildings-in-mahadevapura/article67105604.ece"
+          ],
+          "titles": [
+            "Gauri Lankesh's remarks unwarranted: association - The Hindu",
+            "SC stops coronation of Swami Avimukteshwaranand Saraswati as ...",
+            "BBMP issues notices to unauthorised buildings in Mahadevapura ..."
+          ],
+          "count": 3
+        },
+        "claim_text": "The user claims harassment from a Shankarmutt president and accuses a temple of stealing their energy, while rejecting various deities.",
+        "verification_date": "2025-11-28T02:37:05.908020"
+      },
+      "sources": {
+        "links": [
+          "https://www.thehindu.com/news/national/karnataka/gauri-lankeshs-remarks-unwarranted-association/article6904273.ece",
+          "https://www.thehindu.com/news/national/sc-stops-coronation-of-swami-avimukteshwaranand-saraswati-as-shankaracharya-of-jyotish-peeth/article66014458.ece",
+          "https://www.thehindu.com/news/cities/bangalore/bbmp-issues-notices-to-unauthorised-buildings-in-mahadevapura/article67105604.ece"
+        ],
+        "titles": [
+          "Gauri Lankesh's remarks unwarranted: association - The Hindu",
+          "SC stops coronation of Swami Avimukteshwaranand Saraswati as ...",
+          "BBMP issues notices to unauthorised buildings in Mahadevapura ..."
+        ],
+        "count": 3
+      },
+      "source": "https://twitter.com/parvathiharitsa/status/1994113718255587691",
+      "content_summary": "The user alleges that they are being harassed by the Holenarsipur Shankarmutt president, BhagvanHV, because they exposed the SKDMTemple for stealing their energy. The user explicitly states they do not support any Durga, Chamundi, Kali, Mahalaxmi, Tirupatibalaji, Purijagannatha, or Vishnutattwa deit",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}
