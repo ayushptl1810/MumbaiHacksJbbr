@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_231811_571737_c5ca7307",
+  "verification_date": "2025-11-28T23:18:11.571737",
+  "claim": {
+    "text": "The poster argues that authoritarianism is here and criticizes the r/skeptic community for avoiding political discussions, which they believe are crucial for resistance.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "\"Authoritarianism\" & r/skeptic Criticism: Specifics Lacking",
+    "body": "This claim describes an online poster's argument about authoritarianism and criticism of the r/skeptic community for avoiding political discussions. While the sentiment of political engagement is a topic of public debate, the provided sources do not offer any substantiation for this specific claim. One article is a Guardian opinion piece from 2025 discussing media coverage of resistance to Trump, and the other reports on tributes to Pope Francis. Neither of these sources mentions \"the poster,\" the r/skeptic community, or specific criticisms about its discussion habits. Therefore, the claim describes an unverified online interaction or opinion, not a substantiated factual event.",
+    "summary": "The claim detailing a specific online argument and criticism of r/skeptic is not supported by the provided general news sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The poster argues that authoritarianism is here and criticizes the r/skeptic community for avoiding political discussions, which they believe are crucial for resistance.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Why are the media ignoring growing resistance to Trump ...",
+        "url": "https://www.theguardian.com/commentisfree/2025/jun/13/why-is-the-media-ignoring-growing-resistance-to-trump",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "World Pays Tribute to Pope Francis - The New York Times",
+        "url": "https://www.nytimes.com/live/2025/04/21/world/pope-francis-updates-vatican",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Mohammed bin Zayed's Dark Vision of the Middle East's Future ...",
+        "url": "https://www.nytimes.com/2020/01/09/magazine/united-arab-emirates-mohammed-bin-zayed.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "How dangerous is Jordan B Peterson, the rightwing professor who ...",
+        "url": "https://www.theguardian.com/science/2018/feb/07/how-dangerous-is-jordan-b-peterson-the-rightwing-professor-who-hit-a-hornets-nest",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Rubio Blames 'Insubordination' for Changes at Aid Agency - The ...",
+        "url": "https://www.nytimes.com/live/2025/02/03/us/trump-usaid-news",
+        "domain": "www.nytimes.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The poster argues that authoritarianism is here and criticizes the r/skeptic community for avoiding political discussions, which they believe are crucial for resistance.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While one source mentions 'growing resistance to Trump & Musk' and large protests (Source 1), it does not connect this to a 'poster's' argument about authoritarianism, the r/skeptic community, or their avoidance of political discussions. The specific details of the claim, particularly the mention of the r/skeptic community and a 'poster's' criticism, are not supported by any of the provided sources.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 mentions 'growing resistance to Trump & Musk' and 'millions of people protest against Trump & Musk,' which aligns with the theme of 'resistance.' However, it does not mention a 'poster,' 'authoritarianism is here,' 'r/skeptic community,' or criticism of that community for avoiding political discussions. 2. Source 2 discusses Pope Francis and President Trump. 3. Source 3 discusses Mohammed bin Zayed al-Nahyan. The latter two sources are irrelevant to the claim.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/commentisfree/2025/jun/13/why-is-the-media-ignoring-growing-resistance-to-trump",
+            "https://www.nytimes.com/live/2025/04/21/world/pope-francis-updates-vatican",
+            "https://www.nytimes.com/2020/01/09/magazine/united-arab-emirates-mohammed-bin-zayed.html",
+            "https://www.theguardian.com/science/2018/feb/07/how-dangerous-is-jordan-b-peterson-the-rightwing-professor-who-hit-a-hornets-nest",
+            "https://www.nytimes.com/live/2025/02/03/us/trump-usaid-news"
+          ],
+          "titles": [
+            "Why are the media ignoring growing resistance to Trump ...",
+            "World Pays Tribute to Pope Francis - The New York Times",
+            "Mohammed bin Zayed's Dark Vision of the Middle East's Future ...",
+            "How dangerous is Jordan B Peterson, the rightwing professor who ...",
+            "Rubio Blames 'Insubordination' for Changes at Aid Agency - The ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The poster argues that authoritarianism is here and criticizes the r/skeptic community for avoiding political discussions, which they believe are crucial for resistance.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://www.theguardian.com/commentisfree/2025/jun/13/why-is-the-media-ignoring-growing-resistance-to-trump",
+          "https://www.nytimes.com/live/2025/04/21/world/pope-francis-updates-vatican",
+          "https://www.nytimes.com/2020/01/09/magazine/united-arab-emirates-mohammed-bin-zayed.html",
+          "https://www.theguardian.com/science/2018/feb/07/how-dangerous-is-jordan-b-peterson-the-rightwing-professor-who-hit-a-hornets-nest",
+          "https://www.nytimes.com/live/2025/02/03/us/trump-usaid-news"
+        ],
+        "titles": [
+          "Why are the media ignoring growing resistance to Trump ...",
+          "World Pays Tribute to Pope Francis - The New York Times",
+          "Mohammed bin Zayed's Dark Vision of the Middle East's Future ...",
+          "How dangerous is Jordan B Peterson, the rightwing professor who ...",
+          "Rubio Blames 'Insubordination' for Changes at Aid Agency - The ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+      "content_summary": "The Reddit post asserts that authoritarianism is present, citing quotes from an accompanying video that describe current events as \"the opening phase of a failed state\" and \"the playbook of authoritarianism.\" The author criticizes the r/skeptic community for repeatedly avoiding political discussions",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

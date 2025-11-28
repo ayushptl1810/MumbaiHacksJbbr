@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_231811_540165_2fd38f91",
+  "verification_date": "2025-11-28T23:18:11.540165",
+  "claim": {
+    "text": "The Trump administration was caught lying about the D.C. shooter's vetting status, as records show he underwent required security checks.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Proof: Trump Admin Lied About D.C. Shooter Vetting",
+    "body": "The claim alleges that the Trump administration was caught lying about a D.C. shooter's vetting status, with records supposedly showing required security checks were completed. However, the provided sources do not support this specific allegation. One article discusses federal worker payouts and executive orders, while the other covers criticism regarding an FBI nominee's qualifications. Neither of these sources mentions a \"D.C. shooter,\" vetting status, or any alleged lies by the Trump administration on such a matter. Without relevant evidence, this specific claim remains unsubstantiated.",
+    "summary": "There is no evidence in the provided sources to support the claim about the Trump administration lying about a D.C. shooter's vetting."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The Trump administration was caught lying about the D.C. shooter's vetting status, as records show he underwent required security checks.",
+        "url": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1p8ztv5/trump_administration_under_fire_after_being/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Trump Administration Offers 2 Million Federal Workers Payouts to ...",
+        "url": "https://www.nytimes.com/live/2025/01/28/us/trump-news-executive-orders",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Kash Patel: Trump's FBI nominee's qualifications face criticism",
+        "url": "https://www.bbc.com/news/articles/c89xwjqwe5vo",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "How the US fails to take away guns from domestic abusers: 'These ...",
+        "url": "https://www.theguardian.com/us-news/2021/oct/26/domestic-abuse-gun-violence-reveal",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Cruz Calls F.C.C. Threats to Media 'Dangerous as Hell' - The New ...",
+        "url": "https://www.nytimes.com/live/2025/09/19/us/trump-news",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Disinformation and conspiracy theories cloud Helene recovery ...",
+        "url": "https://www.pbs.org/newshour/nation/disinformation-and-conspiracy-theories-cloud-helene-recovery-efforts-in-hard-hit-areas",
+        "domain": "www.pbs.org"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The Trump administration was caught lying about the D.C. shooter's vetting status, as records show he underwent required security checks.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking sources are entirely irrelevant to the claim. They discuss unrelated topics such as Trump administration policies in 2025, Kash Patel's FBI nomination, and domestic abuse gun violence. Therefore, there is no evidence to verify or refute the claim.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 discusses the Trump administration offering payouts to federal workers and closing a diversity office in 2025. 2. Source 2 discusses Kash Patel's qualifications for FBI Director in 2024. 3. Source 3 discusses gun violence and domestic abusers in 2021. None of these sources mention a 'D.C. shooter,' their vetting status, or the Trump administration lying about it.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2025/01/28/us/trump-news-executive-orders",
+            "https://www.bbc.com/news/articles/c89xwjqwe5vo",
+            "https://www.theguardian.com/us-news/2021/oct/26/domestic-abuse-gun-violence-reveal",
+            "https://www.nytimes.com/live/2025/09/19/us/trump-news",
+            "https://www.pbs.org/newshour/nation/disinformation-and-conspiracy-theories-cloud-helene-recovery-efforts-in-hard-hit-areas"
+          ],
+          "titles": [
+            "Trump Administration Offers 2 Million Federal Workers Payouts to ...",
+            "Kash Patel: Trump's FBI nominee's qualifications face criticism",
+            "How the US fails to take away guns from domestic abusers: 'These ...",
+            "Cruz Calls F.C.C. Threats to Media 'Dangerous as Hell' - The New ...",
+            "Disinformation and conspiracy theories cloud Helene recovery ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The Trump administration was caught lying about the D.C. shooter's vetting status, as records show he underwent required security checks.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://www.nytimes.com/live/2025/01/28/us/trump-news-executive-orders",
+          "https://www.bbc.com/news/articles/c89xwjqwe5vo",
+          "https://www.theguardian.com/us-news/2021/oct/26/domestic-abuse-gun-violence-reveal",
+          "https://www.nytimes.com/live/2025/09/19/us/trump-news",
+          "https://www.pbs.org/newshour/nation/disinformation-and-conspiracy-theories-cloud-helene-recovery-efforts-in-hard-hit-areas"
+        ],
+        "titles": [
+          "Trump Administration Offers 2 Million Federal Workers Payouts to ...",
+          "Kash Patel: Trump's FBI nominee's qualifications face criticism",
+          "How the US fails to take away guns from domestic abusers: 'These ...",
+          "Cruz Calls F.C.C. Threats to Media 'Dangerous as Hell' - The New ...",
+          "Disinformation and conspiracy theories cloud Helene recovery ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/NoFilterNews/comments/1p8ztv5/trump_administration_under_fire_after_being/",
+      "content_summary": "The Trump administration is facing criticism after records revealed that the D.C. shooter, 29-year-old Afghan national Rahmanullah Lakanwal, was vetted upon entering the U.S. in 2021 under Operation Allies Welcome (OAW). This contradicts initial White House claims that the attacker was 'unvetted' an",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_231811_573872_e6501c50",
+  "verification_date": "2025-11-28T23:18:11.573872",
+  "claim": {
+    "text": "South Carolina is experiencing a measles outbreak, with public health efforts to vaccinate hindered by widespread vaccine misinformation.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Measles Outbreak in South Carolina, Evidence Points to Texas",
+    "body": "The claim states that South Carolina is experiencing a measles outbreak, with vaccination efforts hampered by misinformation. While measles cases are indeed rising in the U.S. generally, and misinformation is a significant challenge, the specific geographical detail of this claim is incorrect based on the provided evidence. One source broadly discusses rising measles cases in the U.S. and misinformation's role. Crucially, the second source explicitly identifies *Texas* as an epicenter of a measles outbreak, noting a visit by RFK Jr. after a child died there. There is no information in either source to support a measles outbreak specifically in South Carolina.",
+    "summary": "The claim of a measles outbreak in South Carolina is false; provided sources indicate an outbreak in Texas."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "South Carolina is experiencing a measles outbreak, with public health efforts to vaccinate hindered by widespread vaccine misinformation.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Measles cases are rising in the U.S. Here's why misinformation ...",
+        "url": "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "RFK Jr. visits epicenter of Texas measles outbreak after second ...",
+        "url": "https://www.pbs.org/newshour/politics/rfk-jr-visits-epicenter-of-texas-measles-outbreak-after-second-child-who-was-infected-dies",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "How A Measles Outbreak Was Halted In The 1990s : Shots - Health ...",
+        "url": "https://www.npr.org/sections/health-shots/2019/05/13/722944146/how-public-health-outreach-ended-a-1990s-measles-outbreak-and-whats-different-no",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+        "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "What my polio-stricken mother would tell parents today about the ...",
+        "url": "https://www.pbs.org/newshour/health/what-my-polio-stricken-mother-would-tell-parents-today-about-the-importance-of-immunization",
+        "domain": "www.pbs.org"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "South Carolina is experiencing a measles outbreak, with public health efforts to vaccinate hindered by widespread vaccine misinformation.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "While the sources confirm that measles cases are rising in the U.S. and that vaccine misinformation hinders public health efforts nationally and in specific states (like Texas), none of the provided sources confirm a measles outbreak specifically in South Carolina.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 states 'Measles cases are rising in the U.S.' and 'misinformation about the vaccine persists today,' hindering outreach efforts, but does not specify South Carolina. 2. Source 2 explicitly mentions an 'epicenter of Texas measles outbreak' and states 'Misinformation about how to prevent and treat measles is hindering a robust public health response.' This source contradicts the 'South Carolina' detail. 3. Source 3 discusses how a 1990s measles outbreak was halted and the role of 'anti-vaccination groups' and 'misinformation' but does not relate to a current South Carolina outbreak.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+            "https://www.pbs.org/newshour/politics/rfk-jr-visits-epicenter-of-texas-measles-outbreak-after-second-child-who-was-infected-dies",
+            "https://www.npr.org/sections/health-shots/2019/05/13/722944146/how-public-health-outreach-ended-a-1990s-measles-outbreak-and-whats-different-no",
+            "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+            "https://www.pbs.org/newshour/health/what-my-polio-stricken-mother-would-tell-parents-today-about-the-importance-of-immunization"
+          ],
+          "titles": [
+            "Measles cases are rising in the U.S. Here's why misinformation ...",
+            "RFK Jr. visits epicenter of Texas measles outbreak after second ...",
+            "How A Measles Outbreak Was Halted In The 1990s : Shots - Health ...",
+            "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+            "What my polio-stricken mother would tell parents today about the ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "South Carolina is experiencing a measles outbreak, with public health efforts to vaccinate hindered by widespread vaccine misinformation.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+          "https://www.pbs.org/newshour/politics/rfk-jr-visits-epicenter-of-texas-measles-outbreak-after-second-child-who-was-infected-dies",
+          "https://www.npr.org/sections/health-shots/2019/05/13/722944146/how-public-health-outreach-ended-a-1990s-measles-outbreak-and-whats-different-no",
+          "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+          "https://www.pbs.org/newshour/health/what-my-polio-stricken-mother-would-tell-parents-today-about-the-importance-of-immunization"
+        ],
+        "titles": [
+          "Measles cases are rising in the U.S. Here's why misinformation ...",
+          "RFK Jr. visits epicenter of Texas measles outbreak after second ...",
+          "How A Measles Outbreak Was Halted In The 1990s : Shots - Health ...",
+          "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+          "What my polio-stricken mother would tell parents today about the ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 confirmed cases. The South Carolina Department of Public Health established pop-up clinics offering free measles vaccines, but uptake has been disappointingly slow, with one clinic only attract",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

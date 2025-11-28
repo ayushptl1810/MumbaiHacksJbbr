@@ -1,0 +1,100 @@
+{
+  "post_id": "aegis_post_20251128_231811_540165_02e370ad",
+  "verification_date": "2025-11-28T23:18:11.540165",
+  "claim": {
+    "text": "The FBI spent nearly $1 million on overtime to redact Jeffrey Epstein files, including flagging mentions of Trump, ahead of their mandated public release.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "FBI's $1M Epstein Redaction Spending: Unsubstantiated Claim",
+    "body": "The claim asserts the FBI spent nearly $1 million on overtime for a \"special redaction project\" on Jeffrey Epstein's files, specifically flagging mentions of Trump, ahead of their public release. However, the provided sources offer no evidence to corroborate this specific financial expenditure or project. One source details raids on an intel executive's residences, while the other discusses a Hyundai raid and technical skills. Both are entirely unrelated to the FBI, Jeffrey Epstein files, or redaction costs. Therefore, the claim about the FBI's alleged $1 million spending on Epstein file redactions is currently unsubstantiated by the given information.",
+    "summary": "No evidence in the provided sources supports the claim that the FBI spent nearly $1 million on Epstein file redactions."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The FBI spent nearly $1 million on overtime to redact Jeffrey Epstein files, including flagging mentions of Trump, ahead of their mandated public release.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+        "url": "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqdPfUbVGRXAeY2j7tniFhPG36qfp-n2svgx_tml6hxOdLJY0nui65ep&gaa_ts=6929e3ac&gaa_sig=uLD8fI3R7RS5N6XNW5_qWfn3xMoZWU9hi0Vq-Ohg1MZVa1qUoETib6L7uqP51r-h6R84-B-5h5UVApwDHy-OGA%3D%3D",
+        "domain": "customercenter.wsj.com"
+      },
+      {
+        "title": "Hyundai Raid Bares Shortage Of Technical Skills in the U.S.",
+        "url": "https://www.wsj.com/public/resources/documents/Uq29kT17HDgznwxWenum-WSJNewsPaper-9-9-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqey1A9LJtgKo6G8AQLorHvkJhKss9FJzVcCqVFdH2pB6Cj4tHGQXX9k&gaa_ts=6929e3ac&gaa_sig=VYspNI2e4eyUc4_sEIUGrXKg1oHNDJ0l1gw2DnQnXPDyJsiQg3nzqGVXX2LXdO1VaH-AoP_ISnJXQS6Xlj2YfQ%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Asbestos, Toxic Soil, Inflation Drive Up Fed Renovation Costs",
+        "url": "https://www.wsj.com/public/resources/documents/VO33zooHaPYBsC8EbEAi-WSJNewsPaper-7-25-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdEv-jfgnjeP8BnhODOx1CxVpGH8XCidPxZGblx5nwmnnGk5JMTnY5t&gaa_ts=6929e3ac&gaa_sig=5bQbKUksXzHb_-K8WX4dCcw0JB_GnArFpmwnFjvps1qT5lJ3OYUjcMYl-_zmEhyOmOWKcktAmhbtq_2JjaBcpA%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Toll of Dead and Injured Hovers Near One Million in Ukraine War",
+        "url": "https://www.wsj.com/public/resources/documents/fFB7oFJZj2VGUfJj1p3d-WSJNewsPaper-9-17-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdm01KozH5E9hCe-yEsU-tBkuX6-Euc4eNiWZ2QsdlCqbShrHi3gH4L&gaa_ts=6929e3ac&gaa_sig=Pt2vFvxFpUrJGA4Ws7gvpZF08mBIWvUvxP9McB762BbHB7rjvqzPEiCa_ctd40bsj1NiIxchcCVOVrqDYu_pOg%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 5
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The FBI spent nearly $1 million on overtime to redact Jeffrey Epstein files, including flagging mentions of Trump, ahead of their mandated public release.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources confirm the release of Jeffrey Epstein files and mention issues with redaction (Source 1), but none of them provide any information about the FBI spending nearly $1 million on overtime for redaction or specifically flagging mentions of Trump. Sources 2 and 3 are completely irrelevant.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 states 'Epstein Victims' Names Released in Files' and 'Congress failed to redact identities of dozens of women,' confirming file release and redaction issues, but makes no mention of the FBI, $1 million, overtime, or specific redaction efforts related to Trump. 2. Source 2 discusses a Donald Trump impersonator. 3. Source 3 discusses federal renovation costs and a tour by President Trump and Jerome Powell. These last two sources are irrelevant to the claim.",
+        "sources": {
+          "links": [
+            "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqdPfUbVGRXAeY2j7tniFhPG36qfp-n2svgx_tml6hxOdLJY0nui65ep&gaa_ts=6929e3ac&gaa_sig=uLD8fI3R7RS5N6XNW5_qWfn3xMoZWU9hi0Vq-Ohg1MZVa1qUoETib6L7uqP51r-h6R84-B-5h5UVApwDHy-OGA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/Uq29kT17HDgznwxWenum-WSJNewsPaper-9-9-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqey1A9LJtgKo6G8AQLorHvkJhKss9FJzVcCqVFdH2pB6Cj4tHGQXX9k&gaa_ts=6929e3ac&gaa_sig=VYspNI2e4eyUc4_sEIUGrXKg1oHNDJ0l1gw2DnQnXPDyJsiQg3nzqGVXX2LXdO1VaH-AoP_ISnJXQS6Xlj2YfQ%3D%3D",
+            "https://www.wsj.com/public/resources/documents/VO33zooHaPYBsC8EbEAi-WSJNewsPaper-7-25-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdEv-jfgnjeP8BnhODOx1CxVpGH8XCidPxZGblx5nwmnnGk5JMTnY5t&gaa_ts=6929e3ac&gaa_sig=5bQbKUksXzHb_-K8WX4dCcw0JB_GnArFpmwnFjvps1qT5lJ3OYUjcMYl-_zmEhyOmOWKcktAmhbtq_2JjaBcpA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/fFB7oFJZj2VGUfJj1p3d-WSJNewsPaper-9-17-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdm01KozH5E9hCe-yEsU-tBkuX6-Euc4eNiWZ2QsdlCqbShrHi3gH4L&gaa_ts=6929e3ac&gaa_sig=Pt2vFvxFpUrJGA4Ws7gvpZF08mBIWvUvxP9McB762BbHB7rjvqzPEiCa_ctd40bsj1NiIxchcCVOVrqDYu_pOg%3D%3D"
+          ],
+          "titles": [
+            "Intel Executive's Residences Raided in Probe Over Secrets",
+            "Hyundai Raid Bares Shortage Of Technical Skills in the U.S.",
+            "Asbestos, Toxic Soil, Inflation Drive Up Fed Renovation Costs",
+            "Toll of Dead and Injured Hovers Near One Million in Ukraine War"
+          ],
+          "count": 4
+        },
+        "claim_text": "The FBI spent nearly $1 million on overtime to redact Jeffrey Epstein files, including flagging mentions of Trump, ahead of their mandated public release.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqdPfUbVGRXAeY2j7tniFhPG36qfp-n2svgx_tml6hxOdLJY0nui65ep&gaa_ts=6929e3ac&gaa_sig=uLD8fI3R7RS5N6XNW5_qWfn3xMoZWU9hi0Vq-Ohg1MZVa1qUoETib6L7uqP51r-h6R84-B-5h5UVApwDHy-OGA%3D%3D",
+          "https://www.wsj.com/public/resources/documents/Uq29kT17HDgznwxWenum-WSJNewsPaper-9-9-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqey1A9LJtgKo6G8AQLorHvkJhKss9FJzVcCqVFdH2pB6Cj4tHGQXX9k&gaa_ts=6929e3ac&gaa_sig=VYspNI2e4eyUc4_sEIUGrXKg1oHNDJ0l1gw2DnQnXPDyJsiQg3nzqGVXX2LXdO1VaH-AoP_ISnJXQS6Xlj2YfQ%3D%3D",
+          "https://www.wsj.com/public/resources/documents/VO33zooHaPYBsC8EbEAi-WSJNewsPaper-7-25-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdEv-jfgnjeP8BnhODOx1CxVpGH8XCidPxZGblx5nwmnnGk5JMTnY5t&gaa_ts=6929e3ac&gaa_sig=5bQbKUksXzHb_-K8WX4dCcw0JB_GnArFpmwnFjvps1qT5lJ3OYUjcMYl-_zmEhyOmOWKcktAmhbtq_2JjaBcpA%3D%3D",
+          "https://www.wsj.com/public/resources/documents/fFB7oFJZj2VGUfJj1p3d-WSJNewsPaper-9-17-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqdm01KozH5E9hCe-yEsU-tBkuX6-Euc4eNiWZ2QsdlCqbShrHi3gH4L&gaa_ts=6929e3ac&gaa_sig=Pt2vFvxFpUrJGA4Ws7gvpZF08mBIWvUvxP9McB762BbHB7rjvqzPEiCa_ctd40bsj1NiIxchcCVOVrqDYu_pOg%3D%3D"
+        ],
+        "titles": [
+          "Intel Executive's Residences Raided in Probe Over Secrets",
+          "Hyundai Raid Bares Shortage Of Technical Skills in the U.S.",
+          "Asbestos, Toxic Soil, Inflation Drive Up Fed Renovation Costs",
+          "Toll of Dead and Injured Hovers Near One Million in Ukraine War"
+        ],
+        "count": 4
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "content_summary": "The Department of Justice's mandate to release Jeffrey Epstein files prompted the FBI to launch a \"Special Redaction Project\" or \"Epstein Transparency Project.\" The bureau spent nearly $1 million in overtime, with nearly 1,000 agents logging 4,737 hours between January and July, to review evidence i",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

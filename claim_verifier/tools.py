@@ -535,7 +535,7 @@ Think through this systematically and provide your analysis.
 
 Respond in this exact JSON format:
 {{
-    "verdict": "true|false|mixed|uncertain",
+    "verdict": "true|false|uncertain",
     "verified": true|false,
     "message": "Your explanation here",
     "confidence": "high|medium|low",
@@ -592,7 +592,7 @@ Respond in this exact JSON format:
 You are a fact-checking expert. Analyze the following claims against their provided fact-checking sources.
 
 INSTRUCTIONS:
-1. For each claim, determine if it's true, false, mixed, or uncertain
+1. For each claim, determine if it's true, false, or uncertain
 2. Provide clear reasoning based on the evidence
 3. Assign confidence levels (high/medium/low)
 4. Be consistent in your analysis approach
@@ -625,7 +625,7 @@ Respond with a JSON array containing exactly {len(search_results_list)} analysis
 
 Each object should have this exact format:
 {{
-    "verdict": "true|false|mixed|uncertain",
+    "verdict": "true|false|uncertain",
     "verified": true|false,
     "message": "Your explanation here",
     "confidence": "high|medium|low",
@@ -755,9 +755,7 @@ Example response format:
             return "false"
         elif any(word in content_lower for word in ["true", "accurate", "correct", "verified", "confirmed", "is true", "is correct"]):
             return "true"
-        elif any(word in content_lower for word in ["partially", "mixed", "somewhat", "half"]):
-            return "mixed"
-        elif any(word in content_lower for word in ["unverified", "unproven", "uncertain", "disputed"]):
+        elif any(word in content_lower for word in ["partially", "mixed", "somewhat", "half", "unverified", "unproven", "uncertain", "disputed"]):
             return "uncertain"
         else:
             return "unknown"
@@ -781,7 +779,6 @@ Example response format:
         
         true_count = verdicts.count("true")
         false_count = verdicts.count("false")
-        mixed_count = verdicts.count("mixed")
         uncertain_count = verdicts.count("uncertain")
         unknown_count = verdicts.count("unknown")
         
@@ -794,9 +791,6 @@ Example response format:
         elif true_count > 0 and false_count == 0:
             overall_verdict = "true"
             verified = True
-        elif mixed_count > 0:
-            overall_verdict = "mixed"
-            verified = False
         elif uncertain_count > 0:
             overall_verdict = "uncertain"
             verified = False
@@ -809,7 +803,6 @@ Example response format:
             "verdict": overall_verdict,
             "true_count": true_count,
             "false_count": false_count,
-            "mixed_count": mixed_count,
             "uncertain_count": uncertain_count,
             "unknown_count": unknown_count,
             "total_verdicts": total
@@ -833,7 +826,6 @@ Example response format:
         base_messages = {
             "true": "This claim appears to be TRUE based on fact-checking sources.",
             "false": "This claim appears to be FALSE based on fact-checking sources.",
-            "mixed": "This claim has MIXED evidence - some parts are true, others are false.",
             "uncertain": "This claim is UNCERTAIN - insufficient evidence to determine accuracy.",
             "unknown": "This claim needs further investigation - verdict unclear from available sources.",
             "no_content": "No fact-checked information found for this claim."

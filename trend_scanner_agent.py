@@ -24,10 +24,10 @@ from typing import List
 
 # Predefined list of subreddits to scan
 TARGET_SUBREDDITS = [
-    #'NoFilterNews',
-    #'badscience',
-    #'skeptic',
-    #'conspiracytheories'
+    'NoFilterNews',
+    'badscience',
+    'skeptic',
+    'conspiracytheories'
 ]
 
 # Predefined list of Threads profiles to scan (without @ symbol)
@@ -50,8 +50,8 @@ TARGET_TWITTER_ACCOUNTS = [
     #'elonmusk',
     'QudsNen',
     'NupurSharmaBJP',
-    'IndianGems_',
-    #'WeDravidians' 
+    #'IndianGems_',
+    'WeDravidians' 
     #'va_shiva',
     #'Gurudev',
     #'PypAyurved'
@@ -62,7 +62,7 @@ TARGET_TWITTER_ACCOUNTS = [
 ]
 
 # Twitter auto-discover trending keywords
-TWITTER_AUTO_DISCOVER_KEYWORDS = True # If True, automatically fetch trending topics from Twitter
+TWITTER_AUTO_DISCOVER_KEYWORDS = False # If True, automatically fetch trending topics from Twitter
 TARGET_TWITTER_KEYWORDS = [
     # Manually add keywords/hashtags to search (only used if AUTO_DISCOVER is False), e.g.:
     'PranitMore',

@@ -1,0 +1,73 @@
+{
+  "post_id": "aegis_post_20251128_231811_574937_5e143340",
+  "verification_date": "2025-11-28T23:18:11.574937",
+  "claim": {
+    "text": "A researcher is working to halt the use of a 'fundamentally flawed' database that attempts to link IQ and nationality, leading to scientific article retractions.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Researcher's Fight Against IQ/Nationality Database: No Evidence Provided",
+    "body": "The claim alleges a researcher is actively working to halt the use of a \"fundamentally flawed\" database linking IQ and nationality, which has led to scientific article retractions. However, the single provided source does not offer any evidence to support this claim. The article is titled \"As Small Investors Crave Risk, Robinhood Amps Up Offerings,\" discussing financial markets and investment platforms. This content is entirely unrelated to researchers, IQ databases, nationality studies, or scientific retractions. Consequently, this specific and detailed claim lacks any corroboration from the given information.",
+    "summary": "The claim about a researcher working against a flawed IQ/nationality database is entirely unsubstantiated by the irrelevant source provided."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A researcher is working to halt the use of a 'fundamentally flawed' database that attempts to link IQ and nationality, leading to scientific article retractions.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8c38j/meet_the_researcher_aiming_to_halt_use_of/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "As Small Investors Crave Risk, Robinhood Amps Up Offerings",
+        "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdg4Uk77WkUMlHaJb5idkPkWcr8Wmm0QpqWkEMlP2789BO0qRi0qUAu&gaa_ts=6929e3b0&gaa_sig=03NzxvY-U1sRvrq46Ig7A32xHSn0Ukra4A-7N6yYLD_ayyHDyERorPWCWFqKnj0yi6ifaVcMcsp0alRLydgWlQ%3D%3D",
+        "domain": "customercenter.wsj.com"
+      }
+    ],
+    "total_sources": 2
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 5,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A researcher is working to halt the use of a 'fundamentally flawed' database that attempts to link IQ and nationality, leading to scientific article retractions.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking source is entirely irrelevant to the claim. It discusses small investors, Robinhood, Amazon, and Black Friday shopping. There is no information to verify or refute the claim about a researcher, a database linking IQ and nationality, or scientific article retractions.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 discusses financial news and retail, including Robinhood, Amazon, and Black Friday shoppers. It contains no information pertaining to scientific research, databases linking IQ and nationality, or scientific article retractions.",
+        "sources": {
+          "links": [
+            "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdg4Uk77WkUMlHaJb5idkPkWcr8Wmm0QpqWkEMlP2789BO0qRi0qUAu&gaa_ts=6929e3b0&gaa_sig=03NzxvY-U1sRvrq46Ig7A32xHSn0Ukra4A-7N6yYLD_ayyHDyERorPWCWFqKnj0yi6ifaVcMcsp0alRLydgWlQ%3D%3D"
+          ],
+          "titles": [
+            "As Small Investors Crave Risk, Robinhood Amps Up Offerings"
+          ],
+          "count": 1
+        },
+        "claim_text": "A researcher is working to halt the use of a 'fundamentally flawed' database that attempts to link IQ and nationality, leading to scientific article retractions.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdg4Uk77WkUMlHaJb5idkPkWcr8Wmm0QpqWkEMlP2789BO0qRi0qUAu&gaa_ts=6929e3b0&gaa_sig=03NzxvY-U1sRvrq46Ig7A32xHSn0Ukra4A-7N6yYLD_ayyHDyERorPWCWFqKnj0yi6ifaVcMcsp0alRLydgWlQ%3D%3D"
+        ],
+        "titles": [
+          "As Small Investors Crave Risk, Robinhood Amps Up Offerings"
+        ],
+        "count": 1
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8c38j/meet_the_researcher_aiming_to_halt_use_of/",
+      "content_summary": "Professor Rebecca Sear of Brunel University of London is leading an effort to stop the use of the 'National IQ database,' which purports to rank countries based on intelligence. Sear considers the database, first published in 2002 by psychologists Richard Lynn and Tatu Vanhanen, to be 'fundamentally",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

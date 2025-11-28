@@ -529,10 +529,13 @@ class ClaimVerifierOrchestrator:
     
     def _extract_prioritization_from_result(self, result: Dict[str, Any], claims: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Extract prioritization from priority assessment agent"""
-        # Add priority scoring to claims
+        # Add priority scoring to claims using actual verification data
         for i, claim in enumerate(claims):
-            claim['priority_score'] = 50.0  # Default medium priority
-            claim['priority_level'] = 'medium'
+            verification = claim.get('verification', {})
+            # Calculate actual priority score based on verification results
+            priority_score = self._calculate_priority_score(claim, verification)
+            claim['priority_score'] = priority_score
+            claim['priority_level'] = self._get_priority_level(priority_score)
             claim['prioritization_timestamp'] = datetime.now().isoformat()
         return claims
     
@@ -834,7 +837,7 @@ Format as a structured report suitable for stakeholders.
                 'verdict_distribution': {
                     'true': len([c for c in prioritized_claims_data if c.get('verification', {}).get('verdict') == 'true']),
                     'false': len(false_claims),
-                    'mixed': len([c for c in prioritized_claims_data if c.get('verification', {}).get('verdict') == 'mixed']),
+
                     'uncertain': len(uncertain_claims),
                     'error': len([c for c in prioritized_claims_data if c.get('verification', {}).get('verdict') == 'error'])
                 },
@@ -925,7 +928,7 @@ Provide a comprehensive analysis addressing the task requirements.
         
         # Verdict impact
         verdict = verification.get('verdict', 'unknown')
-        verdict_scores = {'false': 40, 'mixed': 30, 'uncertain': 20, 'true': 10, 'error': 5}
+        verdict_scores = {'false': 40, 'uncertain': 20, 'true': 10, 'error': 5}
         score += verdict_scores.get(verdict, 5)
         
         # Confidence impact

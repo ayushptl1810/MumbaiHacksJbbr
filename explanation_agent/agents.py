@@ -510,9 +510,9 @@ Example format:
         
         if isinstance(confidence, str):
             confidence_map = {
-                'high': 90.0,
-                'medium': 70.0,
-                'low': 40.0,
+                'high': 85.0,
+                'medium': 60.0,
+                'low': 35.0,
                 'very_high': 95.0,
                 'very_low': 20.0
             }

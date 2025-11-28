@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251128_231811_577998_d3edb09e",
+  "verification_date": "2025-11-28T23:18:11.577998",
+  "claim": {
+    "text": "Israeli soldiers reportedly shot and killed two unarmed youths, Al-Muntasir Billah Abdullah and Yousef Asasa, who were exiting a surrounded building with their hands raised.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Report of Israeli Soldiers Killing Unarmed Youths Lacks Specific Evidence",
+    "body": "The claim describes a specific incident where Israeli soldiers reportedly shot and killed two unarmed youths, Al-Muntasir Billah Abdullah and Yousef Asasa, as they exited a surrounded building with their hands raised. The provided sources, however, do not corroborate this particular event, names, or specific circumstances. One article discusses broader concerns about children being targeted in the Gaza war, without detailing this specific incident. The second source reports on a Palestinian gunman at an Israeli military checkpoint, which is a different event entirely. While tragic casualties regrettably occur in conflict zones, this specific allegation, including the individuals named and the precise scenario, is not supported by the information provided.",
+    "summary": "The specific claim of Israeli soldiers killing two named unarmed youths under particular circumstances is not supported by the provided sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Israeli soldiers reportedly shot and killed two unarmed youths, Al-Muntasir Billah Abdullah and Yousef Asasa, who were exiting a surrounded building with their hands raised.",
+        "url": "https://twitter.com/QudsNen/status/1994448145896411462",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "'Not a normal war': doctors say children have been targeted by ...",
+        "url": "https://www.theguardian.com/world/2024/apr/02/gaza-palestinian-children-killed-idf-israel-war",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Palestinian gunman kills 1, injures 3 at Israeli military checkpoint in ...",
+        "url": "https://www.pbs.org/newshour/world/palestinian-gunman-wounds-4-at-israeli-military-checkpoint-in-jerusalem",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Israeli military is reviewing the filmed shootings of two Palestinians ...",
+        "url": "https://www.lemonde.fr/en/international/article/2025/11/27/israeli-army-is-reviewing-the-filmed-shootings-of-two-palestinians-who-had-surrended_6747911_4.html",
+        "domain": "www.lemonde.fr"
+      },
+      {
+        "title": "After 2 Teenagers Are Killed in West Bank, Israeli Military Opens ...",
+        "url": "https://www.nytimes.com/2025/09/08/world/middleeast/jenin-west-bank-teens-killed.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Updates: 2 Palestinian children killed by Israeli forces in West Bank ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/11/13/live-israel-attacks-gazas-south-north-during-repeatedly-violated-truce",
+        "domain": "www.aljazeera.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 7,
+    "batch_size": 7,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Israeli soldiers reportedly shot and killed two unarmed youths, Al-Muntasir Billah Abdullah and Yousef Asasa, who were exiting a surrounded building with their hands raised.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While multiple sources confirm incidents where Israeli forces shot and killed two Palestinians (Sources 2 and 3), none of them provide the specific names 'Al-Muntasir Billah Abdullah and Yousef Asasa' or the crucial detail that they were 'exiting a surrounded building with their hands raised.' Without these specific details, the full claim cannot be verified.",
+        "confidence": "high",
+        "reasoning": "1. Source 1 discusses general accusations against the IDF regarding children being targeted, but rejects the charge and does not provide specific incident details. 2. Source 2 states, 'Earlier Saturday, the Israeli military shot and killed two Palestinian teens,' which aligns with the number and age group, but does not provide names or the specific circumstances (exiting a building with hands raised). 3. Source 3 states, 'the Israeli army and police said that they were reviewing an incident in which two Palestinian men were shot and killed,' confirming an incident of two Palestinians killed and a review, but again, no specific names or details about them exiting a building with hands raised. The key specific details in the claim are missing from the sources.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/world/2024/apr/02/gaza-palestinian-children-killed-idf-israel-war",
+            "https://www.pbs.org/newshour/world/palestinian-gunman-wounds-4-at-israeli-military-checkpoint-in-jerusalem",
+            "https://www.lemonde.fr/en/international/article/2025/11/27/israeli-army-is-reviewing-the-filmed-shootings-of-two-palestinians-who-had-surrended_6747911_4.html",
+            "https://www.nytimes.com/2025/09/08/world/middleeast/jenin-west-bank-teens-killed.html",
+            "https://www.aljazeera.com/news/liveblog/2025/11/13/live-israel-attacks-gazas-south-north-during-repeatedly-violated-truce"
+          ],
+          "titles": [
+            "'Not a normal war': doctors say children have been targeted by ...",
+            "Palestinian gunman kills 1, injures 3 at Israeli military checkpoint in ...",
+            "Israeli military is reviewing the filmed shootings of two Palestinians ...",
+            "After 2 Teenagers Are Killed in West Bank, Israeli Military Opens ...",
+            "Updates: 2 Palestinian children killed by Israeli forces in West Bank ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Israeli soldiers reportedly shot and killed two unarmed youths, Al-Muntasir Billah Abdullah and Yousef Asasa, who were exiting a surrounded building with their hands raised.",
+        "verification_date": "2025-11-28T23:17:17.240092"
+      },
+      "sources": {
+        "links": [
+          "https://www.theguardian.com/world/2024/apr/02/gaza-palestinian-children-killed-idf-israel-war",
+          "https://www.pbs.org/newshour/world/palestinian-gunman-wounds-4-at-israeli-military-checkpoint-in-jerusalem",
+          "https://www.lemonde.fr/en/international/article/2025/11/27/israeli-army-is-reviewing-the-filmed-shootings-of-two-palestinians-who-had-surrended_6747911_4.html",
+          "https://www.nytimes.com/2025/09/08/world/middleeast/jenin-west-bank-teens-killed.html",
+          "https://www.aljazeera.com/news/liveblog/2025/11/13/live-israel-attacks-gazas-south-north-during-repeatedly-violated-truce"
+        ],
+        "titles": [
+          "'Not a normal war': doctors say children have been targeted by ...",
+          "Palestinian gunman kills 1, injures 3 at Israeli military checkpoint in ...",
+          "Israeli military is reviewing the filmed shootings of two Palestinians ...",
+          "After 2 Teenagers Are Killed in West Bank, Israeli Military Opens ...",
+          "Updates: 2 Palestinian children killed by Israeli forces in West Bank ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/QudsNen/status/1994448145896411462",
+      "content_summary": "On November 27, 2025, Israeli soldiers allegedly shot and killed Al-Muntasir Billah Abdullah, 26, and Yousef Asasa, 37. According to the post, both individuals left a surrounded building unarmed, with their hands and shirts raised. The post includes a link to a video, claiming it shows soldiers dire",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

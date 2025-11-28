@@ -49,3 +49,6 @@ telethon
 
 # Twitter API
 twikit
+
+# SerpAPI for search engine results
+serpapi
