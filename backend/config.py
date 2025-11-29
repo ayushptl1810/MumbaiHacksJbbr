@@ -85,6 +85,11 @@ class Config:
     UPSTASH_REDIS_TOKEN: Optional[str] = os.getenv("UPSTASH_REDIS_TOKEN")
     REDIS_TTL: int = int(os.getenv("REDIS_TTL", "86400"))  # 24 hours in seconds
     
+    # Razorpay Configuration
+    RAZORPAY_ID: Optional[str] = os.getenv("RAZORPAY_ID")
+    RAZORPAY_KEY: Optional[str] = os.getenv("RAZORPAY_KEY")
+    RAZORPAY_WEBHOOK_SECRET: Optional[str] = os.getenv("RAZORPAY_WEBHOOK_SECRET")
+    
     @classmethod
     def validate(cls) -> bool:
         """Validate configuration values"""

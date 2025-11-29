@@ -1,6 +1,6 @@
-from fastapi import FastAPI, File, UploadFile, HTTPException, Form, WebSocket, WebSocketDisconnect
+from fastapi import FastAPI, File, UploadFile, HTTPException, Form, WebSocket, WebSocketDisconnect, Request
 from typing import Optional, List, Dict, Any
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import uvicorn
@@ -21,9 +21,13 @@ from services.text_fact_checker import TextFactChecker
 from services.educational_content_generator import EducationalContentGenerator
 from services.mongodb_service import MongoDBService
 from services.websocket_service import connection_manager, initialize_mongodb_change_stream, cleanup_mongodb_change_stream
+from services.razorpay_service import RazorpayService
+import razorpay.errors
 from utils.file_utils import save_upload_file, cleanup_temp_files
 from config import config
 from services.deepfake_checker import detect_audio_deepfake
+from services.youtube_caption import get_youtube_transcript_ytdlp
+import google.generativeai as genai
 
 app = FastAPI(
     title="Visual Verification Service",
@@ -60,6 +64,64 @@ app.mount("/static", StaticFiles(directory="public"), name="static")
 app.mount("/frames", StaticFiles(directory="public/frames"), name="frames")
 
 
+# ---------- Tier configuration ----------
+
+# Public-facing tiers used across the product
+NORMALIZED_TIERS = ("Free", "Plus", "Pro")
+
+# Map stored subscription_tier / plan_name values to normalized tiers.
+# This keeps backward compatibility with any existing users whose tier
+# might still be stored as \"Pro\" or \"Enterprise\".
+SUBSCRIPTION_TIER_MAPPING = {
+    "free": "Free",
+    "plus": "Plus",
+    "pro": "Plus",          # legacy Pro maps to Plus
+    "enterprise": "Pro",    # highest tier maps to Pro
+}
+
+# Central limits per tier so they can be tuned in one place.
+# These values are intentionally conservative to protect API costs.
+TIER_LIMITS = {
+    "Free": {
+        "daily_verifications": 5,
+        "monthly_verifications": 25,
+        "max_chat_sessions": 1,
+        "max_messages_per_session": 10,
+    },
+    "Plus": {
+        "daily_verifications": 10,
+        "monthly_verifications": 50,
+        "max_chat_sessions": 5,
+        "max_messages_per_session": 50,
+    },
+    "Pro": {
+        "daily_verifications": 25,
+        "monthly_verifications": 200,
+        "max_chat_sessions": 20,
+        "max_messages_per_session": 200,
+    },
+}
+
+
+def get_normalized_tier(raw_tier: str | None) -> str:
+    """
+    Normalize any stored subscription_tier / plan_name to one of
+    the public-facing tiers: Free, Plus, Pro.
+    """
+    if not raw_tier:
+        return "Free"
+    key = str(raw_tier).strip().lower()
+    return SUBSCRIPTION_TIER_MAPPING.get(key, "Free")
+
+
+def get_tier_limits(raw_tier: str | None) -> dict:
+    """
+    Return the limits dict for a given stored tier value.
+    """
+    normalized = get_normalized_tier(raw_tier)
+    return TIER_LIMITS.get(normalized, TIER_LIMITS["Free"])
+
+
 # Initialize verifiers and input processor
 image_verifier = ImageVerifier()
 video_verifier = VideoVerifier()
@@ -74,8 +136,136 @@ try:
 except Exception as e:
     print(f"Warning: MongoDB service initialization failed: {e}")
 
+# Initialize Razorpay service
+razorpay_service = None
+try:
+    razorpay_service = RazorpayService()
+except Exception as e:
+    print(f"Warning: Razorpay service initialization failed: {e}")
+
 # Initialize MongoDB change service (will be set in startup event)
 mongodb_change_service = None
+
+async def initialize_subscription_plans():
+    """Initialize subscription plans in Razorpay if they don't exist"""
+    if not razorpay_service or not razorpay_service.client:
+        logger.warning("⚠️ Razorpay service not available. Skipping plan initialization.")
+        return
+    
+    # First, test Razorpay connection by trying to fetch account details or make a simple API call
+    try:
+        # Try to verify credentials work by attempting a simple operation
+        # We'll skip listing plans if it fails and just try to create
+        logger.info("🔍 Testing Razorpay API connection...")
+    except Exception as e:
+        logger.error(f"❌ Razorpay API connection test failed: {e}")
+        logger.warning("⚠️ Skipping plan initialization due to API connection issues")
+        return
+    
+    try:
+        # Try to list existing plans, but don't fail if it errors
+        existing_plan_names = set()
+        try:
+            existing_plans = razorpay_service.list_plans(count=100)
+            if existing_plans and existing_plans.get("items"):
+                existing_plan_names = {
+                    p.get("item", {}).get("name") 
+                    for p in existing_plans.get("items", [])
+                    if p.get("item", {}).get("name")
+                }
+                logger.info(f"📋 Found {len(existing_plan_names)} existing plans")
+        except Exception as list_error:
+            error_msg = str(list_error).lower()
+            if "not found" in error_msg or "404" in error_msg:
+                logger.info("ℹ️ No existing plans found (this is normal for new accounts)")
+            else:
+                logger.warning(f"⚠️ Could not list existing plans: {list_error}")
+            # Continue anyway - we'll try to create plans and handle duplicates
+        
+        plans_to_create = [
+            {
+                "name": "Plan 1",
+                "amount": 100,  # 1 INR in paise
+                "currency": "INR",
+                "interval": 1,
+                "period": "monthly",
+                "description": "Plan 1 - Monthly Subscription (1 INR)"
+            },
+            {
+                "name": "Plan 2",
+                "amount": 200,  # 2 INR in paise
+                "currency": "INR",
+                "interval": 1,
+                "period": "monthly",
+                "description": "Plan 2 - Monthly Subscription (2 INR)"
+            },
+            {
+                "name": "Plan 3",
+                "amount": 300,  # 3 INR in paise
+                "currency": "INR",
+                "interval": 1,
+                "period": "monthly",
+                "description": "Plan 3 - Monthly Subscription (3 INR)"
+            }
+        ]
+        
+        created_count = 0
+        skipped_count = 0
+        error_count = 0
+        
+        for plan_data in plans_to_create:
+            plan_name = plan_data["name"]
+            
+            # Check if plan already exists
+            if plan_name in existing_plan_names:
+                logger.info(f"⏭️ Plan {plan_name} already exists, skipping")
+                skipped_count += 1
+                continue
+            
+            try:
+                logger.info(f"🔄 Creating plan: {plan_name}...")
+                plan = razorpay_service.create_plan(**plan_data)
+                logger.info(f"✅ Created subscription plan: {plan_name} (ID: {plan.get('id')})")
+                created_count += 1
+            except razorpay.errors.BadRequestError as e:
+                error_msg = str(e).lower()
+                # Check if error is due to plan already existing (duplicate)
+                if "already exists" in error_msg or "duplicate" in error_msg:
+                    logger.info(f"⏭️ Plan {plan_name} already exists (detected during creation), skipping")
+                    skipped_count += 1
+                else:
+                    logger.error(f"❌ BadRequestError creating plan {plan_name}: {e}")
+                    error_count += 1
+            except Exception as e:
+                error_msg = str(e).lower()
+                # Check if error is due to plan already existing (duplicate)
+                if "already exists" in error_msg or "duplicate" in error_msg:
+                    logger.info(f"⏭️ Plan {plan_name} already exists (detected during creation), skipping")
+                    skipped_count += 1
+                elif "not found" in error_msg or "404" in error_msg:
+                    logger.error(f"❌ API endpoint not found for plan {plan_name}. Check Razorpay credentials and API access.")
+                    logger.error(f"   Error details: {e}")
+                    error_count += 1
+                else:
+                    logger.error(f"❌ Failed to create plan {plan_name}: {e}")
+                    error_count += 1
+        
+        if created_count > 0:
+            logger.info(f"✅ Successfully created {created_count} subscription plans")
+        if skipped_count > 0:
+            logger.info(f"⏭️ Skipped {skipped_count} plans (already exist)")
+        if error_count > 0:
+            logger.warning(f"⚠️ {error_count} plans failed to create. Check Razorpay credentials and API permissions.")
+        if created_count == 0 and skipped_count == 0 and error_count > 0:
+            logger.error("❌ All plan creation attempts failed. Please verify:")
+            logger.error("   1. RAZORPAY_ID and RAZORPAY_KEY are correct")
+            logger.error("   2. API keys have subscription/plan creation permissions")
+            logger.error("   3. Razorpay account has subscriptions feature enabled")
+            
+    except Exception as e:
+        logger.error(f"❌ Failed to initialize subscription plans: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
 
 @app.on_event("startup")
 async def startup_event():
@@ -83,6 +273,8 @@ async def startup_event():
     global mongodb_change_service
     try:
         mongodb_change_service = await initialize_mongodb_change_stream()
+        # Initialize subscription plans
+        await initialize_subscription_plans()
         logger.info("✅ All services initialized successfully")
     except Exception as e:
         logger.error(f"❌ Failed to initialize services: {e}")
@@ -336,10 +528,311 @@ async def _extract_media_from_url(url: str) -> Optional[Dict[str, Any]]:
         return None
 
 
+def _is_youtube_url(url: str) -> bool:
+    """Check if URL is a YouTube URL"""
+    url_lower = url.lower()
+    youtube_domains = ['youtube.com', 'youtu.be', 'www.youtube.com', 'www.youtu.be', 'm.youtube.com']
+    return any(domain in url_lower for domain in youtube_domains)
+
+
+async def _generate_claims_summary(claim_results: List[Dict[str, Any]], gemini_model) -> str:
+    """Generate a comprehensive summary of all claim verification results using Gemini"""
+    try:
+        # Prepare claims data for Gemini
+        claims_data = []
+        for i, result in enumerate(claim_results, 1):
+            claims_data.append({
+                "number": i,
+                "claim": result.get("claim_text", ""),
+                "verdict": result.get("verdict", "uncertain"),
+                "explanation": result.get("message", "No explanation available")
+            })
+        
+        prompt = f"""You are a fact-checking summary writer. Based on the following verified claims from a YouTube video, create a comprehensive, user-friendly summary.
+
+CLAIM VERIFICATION RESULTS:
+{json.dumps(claims_data, indent=2)}
+
+Your task is to create a clear, concise summary that:
+1. Lists each claim with its verdict (TRUE/FALSE/MIXED/UNCERTAIN)
+2. Explains WHY each claim is true or false in simple terms
+3. Highlights the most important findings
+4. Provides an overall assessment of the video's factual accuracy
+
+Format your response as a well-structured summary that is easy to read. Use clear sections and bullet points where appropriate.
+
+IMPORTANT: 
+- Be concise but thorough
+- Explain the reasoning for each verdict
+- Focus on the most significant false or misleading claims
+- Keep the tone professional and informative
+- Do NOT use markdown formatting, just plain text with clear structure
+
+Return ONLY the summary text, no JSON or code blocks."""
+        
+        response = gemini_model.generate_content(prompt)
+        response_text = response.text.strip()
+        
+        # Clean up response if needed
+        if response_text.startswith('```'):
+            response_text = re.sub(r'^```[a-z]*\n?', '', response_text, flags=re.IGNORECASE)
+            response_text = re.sub(r'```$', '', response_text, flags=re.IGNORECASE).strip()
+        
+        print(f"✅ Generated comprehensive summary")
+        return response_text
+        
+    except Exception as e:
+        print(f"❌ Error generating summary with Gemini: {e}")
+        import traceback
+        print(traceback.format_exc())
+        # Fallback to simple concatenation
+        summary_parts = []
+        summary_parts.append(f"Analyzed {len(claim_results)} controversial claim(s) from the video transcript:\n")
+        
+        for i, result in enumerate(claim_results, 1):
+            claim_text = result.get("claim_text", "")
+            verdict = result.get("verdict", "uncertain")
+            message = result.get("message", "No explanation available")
+            
+            claim_display = claim_text[:150] + "..." if len(claim_text) > 150 else claim_text
+            
+            verdict_label = {
+                "true": "✅ TRUE",
+                "false": "❌ FALSE",
+                "mixed": "⚠️ MIXED",
+                "uncertain": "❓ UNCERTAIN",
+                "error": "⚠️ ERROR"
+            }.get(verdict, "❓ UNCERTAIN")
+            
+            summary_parts.append(f"\n{i}. {verdict_label}: {claim_display}")
+            summary_parts.append(f"   Explanation: {message}")
+        
+        return "\n".join(summary_parts)
+
+
+async def _extract_claims_from_captions(captions: str, gemini_model) -> List[str]:
+    """Extract top 5 controversial claims from video captions using Gemini"""
+    try:
+        prompt = f"""You are a fact-checking assistant. Analyze the following video transcript and extract the TOP 5 MOST CONTROVERSIAL and verifiable claims that were mentioned in the video.
+
+VIDEO TRANSCRIPT:
+{captions}
+
+Your task is to identify the 5 MOST controversial, factual claims that can be verified. Prioritize:
+- Claims about events, statistics, or facts that are controversial or disputed
+- Claims about people, organizations, or institutions that are potentially misleading
+- Claims that are specific enough to be fact-checked and are likely to be false or disputed
+- Claims that have significant impact or are widely discussed
+
+Ignore:
+- General opinions or subjective statements
+- Questions or hypothetical scenarios
+- Vague statements without specific claims
+- Small talk or filler content
+
+IMPORTANT: Return EXACTLY 5 claims (or fewer if the video doesn't contain 5 verifiable controversial claims). Rank them by controversy/importance.
+
+Return ONLY a JSON object in this exact format:
+{{
+    "claims": [
+        "Claim 1 text here (most controversial)",
+        "Claim 2 text here",
+        "Claim 3 text here",
+        "Claim 4 text here",
+        "Claim 5 text here"
+    ]
+}}
+
+Return ONLY the JSON object, no other text or explanation."""
+        
+        response = gemini_model.generate_content(prompt)
+        response_text = response.text.strip()
+        
+        # Clean up response if needed
+        if response_text.startswith('```json'):
+            response_text = response_text.replace('```json', '').replace('```', '').strip()
+        elif response_text.startswith('```'):
+            response_text = response_text.replace('```', '').strip()
+        
+        # Parse JSON response
+        parsed = json.loads(response_text)
+        claims = parsed.get("claims", [])
+        
+        # Filter out empty claims and limit to 5
+        claims = [c.strip() for c in claims if c and c.strip()][:5]
+        
+        print(f"✅ Extracted {len(claims)} claims from video captions")
+        return claims
+        
+    except Exception as e:
+        print(f"❌ Error extracting claims from captions: {e}")
+        import traceback
+        print(traceback.format_exc())
+        return []
+
+
+async def _verify_youtube_video(url: str, claim_context: str, claim_date: str) -> Dict[str, Any]:
+    """Verify a YouTube video by extracting captions, extracting claims, and verifying each claim"""
+    import tempfile
+    import asyncio
+    
+    try:
+        print(f"🎥 Starting YouTube video verification for: {url}")
+        
+        # Step 1: Extract captions
+        print(f"📝 Extracting captions from YouTube video...")
+        # Create a temporary file for the transcript output
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as temp_file:
+            temp_output_file = temp_file.name
+        
+        # Run the synchronous function in an executor to avoid blocking
+        loop = asyncio.get_event_loop()
+        captions = await loop.run_in_executor(
+            None, 
+            get_youtube_transcript_ytdlp, 
+            url, 
+            temp_output_file
+        )
+        
+        # Clean up the temporary output file if it was created
+        try:
+            if os.path.exists(temp_output_file):
+                os.unlink(temp_output_file)
+        except Exception as cleanup_error:
+            print(f"⚠️ Warning: Could not clean up temp file {temp_output_file}: {cleanup_error}")
+        
+        if not captions:
+            return {
+                "verified": False,
+                "verdict": "error",
+                "message": "Could not extract captions from the YouTube video. The video may not have captions available.",
+                "details": {
+                    "video_url": url,
+                    "error": "Caption extraction failed"
+                },
+                "source": "youtube_url"
+            }
+        
+        print(f"✅ Extracted {len(captions)} characters of captions")
+        
+        # Step 2: Extract claims using Gemini
+        print(f"🔍 Extracting controversial claims from captions...")
+        genai.configure(api_key=config.GEMINI_API_KEY)
+        gemini_model = genai.GenerativeModel(config.GEMINI_MODEL)
+        
+        claims = await _extract_claims_from_captions(captions, gemini_model)
+        
+        if not claims:
+            return {
+                "verified": False,
+                "verdict": "uncertain",
+                "message": "No verifiable claims were found in the video transcript. The video may contain only opinions, questions, or non-factual content.",
+                "details": {
+                    "video_url": url,
+                    "captions_length": len(captions),
+                    "claims_extracted": 0
+                },
+                "source": "youtube_url"
+            }
+        
+        print(f"✅ Extracted {len(claims)} claims, starting verification...")
+        
+        # Step 3: Verify each claim
+        claim_results = []
+        for i, claim in enumerate(claims, 1):
+            print(f"🔍 Verifying claim {i}/{len(claims)}: {claim[:100]}...")
+            try:
+                verification_result = await text_fact_checker.verify(
+                    text_input=claim,
+                    claim_context=f"Claim from YouTube video: {url}",
+                    claim_date=claim_date
+                )
+                verification_result["claim_text"] = claim
+                verification_result["claim_index"] = i
+                claim_results.append(verification_result)
+            except Exception as e:
+                print(f"❌ Error verifying claim {i}: {e}")
+                claim_results.append({
+                    "claim_text": claim,
+                    "claim_index": i,
+                    "verified": False,
+                    "verdict": "error",
+                    "message": f"Error during verification: {str(e)}"
+                })
+        
+        # Step 4: Combine results
+        print(f"📊 Combining {len(claim_results)} claim verification results...")
+        
+        # Aggregate verdicts
+        verdicts = [r.get("verdict", "uncertain") for r in claim_results]
+        true_count = verdicts.count("true")
+        false_count = verdicts.count("false")
+        uncertain_count = verdicts.count("uncertain")
+        mixed_count = verdicts.count("mixed")
+        error_count = verdicts.count("error")
+        
+        # Determine overall verdict
+        if false_count > 0:
+            overall_verdict = "false"
+            verified = False
+        elif true_count > 0 and false_count == 0:
+            overall_verdict = "true"
+            verified = True
+        elif mixed_count > 0:
+            overall_verdict = "mixed"
+            verified = False
+        elif uncertain_count > 0:
+            overall_verdict = "uncertain"
+            verified = False
+        else:
+            overall_verdict = "error"
+            verified = False
+        
+        # Step 5: Generate comprehensive summary using Gemini
+        print(f"📝 Generating comprehensive summary with Gemini...")
+        combined_message = await _generate_claims_summary(claim_results, gemini_model)
+        
+        return {
+            "verified": verified,
+            "verdict": overall_verdict,
+            "message": combined_message,
+            "details": {
+                "video_url": url,
+                "captions_length": len(captions),
+                "total_claims": len(claims),
+                "claims_verified": true_count,
+                "claims_false": false_count,
+                "claims_mixed": mixed_count,
+                "claims_uncertain": uncertain_count,
+                "claims_error": error_count,
+                "claim_results": claim_results
+            },
+            "source": "youtube_url"
+        }
+        
+    except Exception as e:
+        print(f"❌ Error verifying YouTube video: {e}")
+        import traceback
+        print(traceback.format_exc())
+        return {
+            "verified": False,
+            "verdict": "error",
+            "message": f"Error processing YouTube video: {str(e)}",
+            "details": {
+                "video_url": url,
+                "error": str(e)
+            },
+            "source": "youtube_url"
+        }
+
+
 @app.post("/chatbot/verify")
 async def chatbot_verify(
+    request: Request,
     text_input: Optional[str] = Form(None),
-    files: Optional[List[UploadFile]] = File(None)
+    files: Optional[List[UploadFile]] = File(None),
+    anonymous_id: Optional[str] = Form(None),
+    user_id: Optional[str] = Form(None),
 ):
     """
     Chatbot-friendly endpoint that intelligently processes input and routes to appropriate verification
@@ -349,6 +842,60 @@ async def chatbot_verify(
         print(f"🔍 DEBUG: text_input = {text_input}")
         print(f"🔍 DEBUG: files = {files}")
         print(f"🔍 DEBUG: files type = {type(files)}")
+        print(f"🔍 DEBUG: anonymous_id = {anonymous_id}")
+        print(f"🔍 DEBUG: user_id = {user_id}")
+
+        # Determine logical user key and tier for rate limiting
+        user_doc = None
+        raw_tier = "Free"
+        if user_id and mongodb_service:
+            try:
+                user_doc = mongodb_service.get_user_by_id(user_id)
+            except Exception as e:
+                logger.warning(
+                    f"⚠️ Failed to load user {user_id} for tier resolution: {e}"
+                )
+
+        if user_doc:
+            raw_tier = user_doc.get("subscription_tier") or "Free"
+        else:
+            raw_tier = "Free"
+
+        limits = get_tier_limits(raw_tier)
+        key_host = getattr(request.client, "host", "unknown")
+        key = user_id or anonymous_id or f"ip:{key_host}"
+
+        if mongodb_service:
+            usage_info = mongodb_service.increment_usage_and_check_limits(
+                key=key,
+                feature="verification",
+                daily_limit=limits.get("daily_verifications"),
+                monthly_limit=limits.get("monthly_verifications"),
+            )
+        else:
+            usage_info = {
+                "allowed": True,
+                "tier_limits": {
+                    "daily": limits.get("daily_verifications"),
+                    "monthly": limits.get("monthly_verifications"),
+                },
+            }
+
+        if not usage_info.get("allowed", True):
+            normalized_tier = get_normalized_tier(raw_tier)
+            return JSONResponse(
+                status_code=429,
+                content={
+                    "error": "verification_limit_reached",
+                    "tier": normalized_tier,
+                    "key": key,
+                    "limits": usage_info.get("tier_limits"),
+                    "usage": {
+                        "daily": usage_info.get("daily"),
+                        "monthly": usage_info.get("monthly"),
+                    },
+                },
+            )
         received_files_meta: List[Dict[str, Any]] = []
         if files:
             for i, file in enumerate(files):
@@ -485,6 +1032,20 @@ Do NOT mention file names or file paths in your response.
         print(f"🔍 DEBUG: Processing {len(urls_list)} URLs")
         for i, url in enumerate(urls_list):
             print(f"🔍 DEBUG: Processing URL {i}: {url}")
+            
+            # STEP 0: Check if this is a YouTube URL - handle specially
+            if _is_youtube_url(url):
+                print(f"🎥 DEBUG: Detected YouTube URL, using caption-based verification: {url}")
+                try:
+                    result = await _verify_youtube_video(url, claim_context, claim_date)
+                    results.append(result)
+                    print(f"🔍 DEBUG: YouTube verification result: {result}")
+                    continue  # Skip the rest of the URL processing
+                except Exception as e:
+                    print(f"❌ DEBUG: YouTube verification failed: {e}")
+                    import traceback
+                    print(traceback.format_exc())
+                    # Fall through to regular video processing as fallback
             
             # STEP 1: For social media URLs, use yt-dlp to fetch the actual media first
             # This determines the REAL media type, not just what the LLM guessed
@@ -852,28 +1413,61 @@ async def speech_to_text(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Educational Content API Endpoints
+# Educational Content API Endpoints - Now fetching from MongoDB weekly_posts
 @app.get("/educational/modules")
 async def get_educational_modules():
-    """Get list of available educational modules"""
+    """Get list of available educational modules from MongoDB weekly_posts"""
     try:
-        modules_data = await educational_generator.get_modules_list()
-        return modules_data
+        if not mongodb_service:
+            raise HTTPException(status_code=503, detail="MongoDB service not available")
+        
+        modules_list = mongodb_service.get_educational_modules_list()
+        response_data = {
+            "modules": modules_list,
+            "total": len(modules_list)
+        }
+        # Return with no-cache headers to prevent stale cache in production
+        return JSONResponse(
+            content=response_data,
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate, max-age=0",
+                "Pragma": "no-cache",
+                "Expires": "0"
+            }
+        )
+    except HTTPException:
+        raise
     except Exception as e:
+        logger.error(f"Failed to get educational modules: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/educational/modules/{module_id}")
 async def get_module_content(
     module_id: str,
-    difficulty_level: str = "beginner"
+    difficulty_level: str = "beginner"  # Kept for backward compatibility but not used
 ):
-    """Get educational content for a specific module"""
+    """Get educational content for a specific module from MongoDB weekly_posts"""
     try:
-        content = await educational_generator.generate_module_content(
-            module_id, difficulty_level
+        if not mongodb_service:
+            raise HTTPException(status_code=503, detail="MongoDB service not available")
+        
+        content = mongodb_service.get_educational_module_by_id(module_id)
+        if not content:
+            raise HTTPException(status_code=404, detail=f"Module '{module_id}' not found")
+        
+        # Return with no-cache headers to prevent stale cache in production
+        return JSONResponse(
+            content=content,
+            headers={
+                "Cache-Control": "no-cache, no-store, must-revalidate, max-age=0",
+                "Pragma": "no-cache",
+                "Expires": "0"
+            }
         )
-        return content
+    except HTTPException:
+        raise
     except Exception as e:
+        logger.error(f"Failed to get module content: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/educational/contextual-learning")
@@ -889,14 +1483,24 @@ async def get_contextual_learning(verification_result: Dict[str, Any]):
 
 @app.post("/educational/clear-cache")
 async def clear_educational_cache():
-    """Clear all educational content from Redis cache"""
+    """
+    Clear all educational content from Redis cache.
+    
+    Note: The /educational/modules endpoints now use no-cache headers
+    to prevent browser/CDN caching. This endpoint is mainly for clearing
+    any legacy Redis cache entries.
+    """
     try:
         if educational_generator.redis_client:
             # Get all educational cache keys
             keys = educational_generator.redis_client.keys("educational:*")
             if keys:
                 educational_generator.redis_client.delete(*keys)
-                return {"message": f"Cleared {len(keys)} cache entries", "keys": keys}
+                return {
+                    "message": f"Cleared {len(keys)} cache entries",
+                    "keys": keys,
+                    "note": "Educational endpoints use no-cache headers to prevent stale data"
+                }
             else:
                 return {"message": "No cache entries found"}
         else:
@@ -938,59 +1542,150 @@ class LoginRequest(BaseModel):
     password: str
 
 class SignupRequest(BaseModel):
+    name: str
     email: str
     password: str
+    phone_number: Optional[str] = None
+    age: Optional[int] = None
+    domain_preferences: Optional[List[str]] = []
 
 class UserResponse(BaseModel):
     email: str
     id: Optional[str] = None
 
-# Simple in-memory user store (replace with database in production)
-users_db = {}
-
 @app.post("/auth/signup")
 async def signup(request: SignupRequest):
     """Sign up a new user"""
-    if request.email in users_db:
-        raise HTTPException(status_code=400, detail="Email already registered")
+    if not mongodb_service:
+        raise HTTPException(status_code=503, detail="MongoDB service not available")
     
-    # In production, hash the password
-    users_db[request.email] = {
-        "email": request.email,
-        "password": request.password,  # Should be hashed
-        "id": str(len(users_db) + 1)
-    }
-    
-    return {
-        "message": "User created successfully",
-        "token": "mock_token_" + request.email,  # In production, use JWT
-        "user": {"email": request.email, "id": users_db[request.email]["id"]}
-    }
+    try:
+        # Hash password (in production, use bcrypt or similar)
+        import hashlib
+        password_hash = hashlib.sha256(request.password.encode()).hexdigest()
+        
+        user_data = {
+            "name": request.name,
+            "email": request.email,
+            "password": password_hash,
+            "phone_number": request.phone_number,
+            "age": request.age,
+            "domain_preferences": request.domain_preferences or [],
+            "created_at": None,  # Will be set by MongoDB service
+            "updated_at": None,
+        }
+        
+        user = mongodb_service.create_user(user_data)
+        
+        # Generate token (in production, use JWT)
+        token = f"mock_token_{request.email}"
+        
+        return {
+            "message": "User created successfully",
+            "token": token,
+            "user": {
+                "name": user.get("name"),
+                "email": user["email"],
+                "id": user["id"],
+                "phone_number": user.get("phone_number"),
+                "age": user.get("age"),
+                "domain_preferences": user.get("domain_preferences", [])
+            }
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        logger.error(f"Signup error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to create user")
 
 @app.post("/auth/login")
 async def login(request: LoginRequest):
     """Login user"""
-    if request.email not in users_db:
-        raise HTTPException(status_code=401, detail="Invalid email or password")
+    if not mongodb_service:
+        raise HTTPException(status_code=503, detail="MongoDB service not available")
     
-    user = users_db[request.email]
-    if user["password"] != request.password:
-        raise HTTPException(status_code=401, detail="Invalid email or password")
-    
-    return {
-        "message": "Login successful",
-        "token": "mock_token_" + request.email,  # In production, use JWT
-        "user": {"email": request.email, "id": user["id"]}
-    }
+    try:
+        user = mongodb_service.get_user_by_email(request.email)
+        if not user:
+            raise HTTPException(status_code=401, detail="Invalid email or password")
+        
+        # Verify password (in production, use bcrypt or similar)
+        import hashlib
+        password_hash = hashlib.sha256(request.password.encode()).hexdigest()
+        
+        if user["password"] != password_hash:
+            raise HTTPException(status_code=401, detail="Invalid email or password")
+        
+        # Generate token (in production, use JWT)
+        token = f"mock_token_{request.email}"
+        
+        return {
+            "message": "Login successful",
+            "token": token,
+            "user": {
+                "name": user.get("name"),
+                "email": user["email"],
+                "id": user["id"],
+                "phone_number": user.get("phone_number"),
+                "age": user.get("age"),
+                "domain_preferences": user.get("domain_preferences", [])
+            }
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Login error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to login")
 
 @app.get("/auth/me")
-async def get_current_user():
+async def get_current_user(request: Request):
     """Get current user (requires authentication in production)"""
+    if not mongodb_service:
+        raise HTTPException(status_code=503, detail="MongoDB service not available")
+    
     # In production, verify JWT token from Authorization header
-    return {
-        "email": "demo@example.com",
-        "id": "1"
-    }
+    auth_header = request.headers.get("Authorization")
+    if not auth_header or not auth_header.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Not authenticated")
+    
+    token = auth_header.replace("Bearer ", "")
+    
+    # Extract email from token (in production, decode JWT)
+    if not token.startswith("mock_token_"):
+        raise HTTPException(status_code=401, detail="Invalid token")
+    
+    email = token.replace("mock_token_", "")
+    
+    try:
+        user = mongodb_service.get_user_by_email(email)
+        if not user:
+            raise HTTPException(status_code=401, detail="User not found")
+        
+        # Get subscription tier from user document (preferred) or check subscription
+        subscription_tier = user.get("subscription_tier", "Free")
+        
+        # If not in user doc, check active subscription
+        if subscription_tier == "Free" and user.get("id"):
+            subscription = mongodb_service.get_user_subscription(user_id=user["id"], status="active")
+            if subscription:
+                subscription_tier = subscription.get("plan_name", "Free")
+                # Update user document with subscription tier
+                mongodb_service.update_user_subscription_tier(user["id"], subscription_tier)
+        
+        return {
+            "name": user.get("name"),
+            "email": user["email"],
+            "id": user["id"],
+            "phone_number": user.get("phone_number"),
+            "age": user.get("age"),
+            "domain_preferences": user.get("domain_preferences", []),
+            "subscription_tier": subscription_tier
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Get user error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get user")
 
 
 # ---------- Chat history endpoints ----------
@@ -1140,6 +1835,432 @@ async def append_chat_messages(payload: ChatMessagesAppend):
     )
     logger.info(f"✅ Persisted {inserted} messages for user {user_id}")
     return {"inserted": inserted}
+
+
+# ---------- Subscription endpoints ----------
+
+
+class CreatePlanRequest(BaseModel):
+    name: str
+    amount: int  # Amount in paise (smallest currency unit)
+    currency: str = "INR"
+    interval: int = 1
+    period: str = "monthly"  # daily, weekly, monthly, yearly
+    description: Optional[str] = None
+
+
+class CreateSubscriptionRequest(BaseModel):
+    plan_id: str
+    user_id: str
+    customer_notify: int = 1
+    total_count: Optional[int] = None
+    notes: Optional[Dict[str, str]] = None
+
+
+class CancelSubscriptionRequest(BaseModel):
+    subscription_id: str
+    cancel_at_cycle_end: bool = False
+
+
+@app.post("/subscriptions/plans")
+async def create_subscription_plan(request: CreatePlanRequest):
+    """Create a subscription plan in Razorpay (admin/one-time setup)"""
+    try:
+        if not razorpay_service or not razorpay_service.client:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay service not available. Check RAZORPAY_ID and RAZORPAY_KEY."
+            )
+        
+        plan = razorpay_service.create_plan(
+            name=request.name,
+            amount=request.amount,
+            currency=request.currency,
+            interval=request.interval,
+            period=request.period,
+            description=request.description
+        )
+        
+        return {
+            "success": True,
+            "plan": plan
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to create subscription plan: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/subscriptions/plans")
+async def list_subscription_plans(count: int = 10, skip: int = 0):
+    """List available subscription plans"""
+    try:
+        if not razorpay_service or not razorpay_service.client:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay service not available. Check RAZORPAY_ID and RAZORPAY_KEY."
+            )
+        
+        plans = razorpay_service.list_plans(count=count, skip=skip)
+        return {
+            "success": True,
+            "plans": plans
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to list subscription plans: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/subscriptions/config")
+async def get_subscription_config():
+    """Get Razorpay public configuration (Key ID) for frontend"""
+    try:
+        if not config.RAZORPAY_ID:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay not configured"
+            )
+        
+        return {
+            "success": True,
+            "razorpay_key_id": config.RAZORPAY_ID
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to get subscription config: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/subscriptions/create")
+async def create_subscription(request: CreateSubscriptionRequest):
+    """Create a subscription for a user"""
+    try:
+        if not razorpay_service or not razorpay_service.client:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay service not available. Check RAZORPAY_ID and RAZORPAY_KEY."
+            )
+        
+        if not mongodb_service:
+            raise HTTPException(
+                status_code=503,
+                detail="MongoDB service not available"
+            )
+        
+        # Create subscription in Razorpay
+        subscription = razorpay_service.create_subscription(
+            plan_id=request.plan_id,
+            customer_notify=request.customer_notify,
+            total_count=request.total_count,
+            notes=request.notes
+        )
+        
+        # Get plan details
+        plan = razorpay_service.get_plan(request.plan_id)
+        
+        # Extract plan name - try multiple possible locations
+        plan_name = "Pro"  # Default
+        if plan:
+            # Try different possible locations for plan name
+            plan_name_raw = (
+                plan.get("item", {}).get("name") or
+                plan.get("name") or
+                request.notes.get("plan_name") if request.notes else None or
+                "Pro"
+            )
+            # Normalize plan name
+            plan_name_raw_lower = plan_name_raw.lower()
+            if "pro" in plan_name_raw_lower:
+                plan_name = "Pro"
+            elif "enterprise" in plan_name_raw_lower:
+                plan_name = "Enterprise"
+            else:
+                plan_name = plan_name_raw
+        
+        # Store subscription in MongoDB
+        from datetime import datetime
+        subscription_data = {
+            "user_id": request.user_id,
+            "razorpay_subscription_id": subscription.get("id"),
+            "razorpay_plan_id": request.plan_id,
+            "plan_name": plan_name,
+            "status": subscription.get("status", "created"),
+            "amount": plan.get("item", {}).get("amount", 0) if plan else 0,
+            "currency": plan.get("item", {}).get("currency", "INR") if plan else "INR",
+            "current_start": subscription.get("current_start"),
+            "current_end": subscription.get("current_end"),
+            "next_billing_at": subscription.get("end_at"),
+            "created_at": datetime.utcnow(),
+            "razorpay_data": subscription  # Store full Razorpay response
+        }
+        
+        mongodb_service.upsert_subscription(subscription_data)
+        
+        # Update user's subscription tier immediately if status is active
+        # Otherwise, it will be updated via webhook when payment is completed
+        if subscription.get("status") == "active":
+            mongodb_service.update_user_subscription_tier(request.user_id, plan_name)
+            logger.info(f"✅ Updated user {request.user_id} subscription tier to {plan_name}")
+        else:
+            logger.info(f"⏳ Subscription created with status '{subscription.get('status')}'. User tier will be updated when subscription is activated via webhook.")
+        
+        return {
+            "success": True,
+            "subscription_id": subscription.get("id"),
+            "short_url": subscription.get("short_url"),
+            "subscription": subscription
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to create subscription: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/subscriptions/status")
+async def get_subscription_status(user_id: Optional[str] = None):
+    """Get user's subscription status"""
+    try:
+        if not mongodb_service:
+            raise HTTPException(
+                status_code=503,
+                detail="MongoDB service not available"
+            )
+        
+        if not user_id:
+            return {
+                "success": True,
+                "subscription": None,
+                "message": "No user_id provided"
+            }
+        
+        subscription = mongodb_service.get_user_subscription(user_id=user_id)
+        
+        if subscription:
+            # Optionally fetch latest data from Razorpay
+            if razorpay_service and razorpay_service.client:
+                try:
+                    razorpay_sub = razorpay_service.get_subscription(
+                        subscription.get("razorpay_subscription_id")
+                    )
+                    # Update status if changed
+                    if razorpay_sub.get("status") != subscription.get("status"):
+                        mongodb_service.update_subscription_status(
+                            subscription.get("razorpay_subscription_id"),
+                            razorpay_sub.get("status"),
+                            {
+                                "current_start": razorpay_sub.get("current_start"),
+                                "current_end": razorpay_sub.get("current_end"),
+                                "next_billing_at": razorpay_sub.get("end_at")
+                            }
+                        )
+                        subscription["status"] = razorpay_sub.get("status")
+                except Exception as e:
+                    logger.warning(f"Failed to sync with Razorpay: {e}")
+        
+        return {
+            "success": True,
+            "subscription": subscription
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to get subscription status: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/subscriptions/cancel")
+async def cancel_subscription(request: CancelSubscriptionRequest):
+    """Cancel user's subscription"""
+    try:
+        if not razorpay_service or not razorpay_service.client:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay service not available. Check RAZORPAY_ID and RAZORPAY_KEY."
+            )
+        
+        if not mongodb_service:
+            raise HTTPException(
+                status_code=503,
+                detail="MongoDB service not available"
+            )
+        
+        # Cancel subscription in Razorpay
+        subscription = razorpay_service.cancel_subscription(
+            subscription_id=request.subscription_id,
+            cancel_at_cycle_end=request.cancel_at_cycle_end
+        )
+        
+        # Update status in MongoDB
+        mongodb_service.update_subscription_status(
+            request.subscription_id,
+            subscription.get("status", "cancelled"),
+            {
+                "current_start": subscription.get("current_start"),
+                "current_end": subscription.get("current_end"),
+                "next_billing_at": subscription.get("end_at")
+            }
+        )
+        
+        return {
+            "success": True,
+            "subscription": subscription
+        }
+    except Exception as e:
+        logger.error(f"❌ Failed to cancel subscription: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/webhooks/razorpay")
+async def razorpay_webhook(request: Request):
+    """Handle Razorpay webhook events"""
+    try:
+        if not razorpay_service:
+            raise HTTPException(
+                status_code=503,
+                detail="Razorpay service not available"
+            )
+        
+        if not mongodb_service:
+            raise HTTPException(
+                status_code=503,
+                detail="MongoDB service not available"
+            )
+        
+        # Get raw body for signature verification
+        body = await request.body()
+        body_str = body.decode('utf-8')
+        
+        # Get signature from header
+        signature = request.headers.get("X-Razorpay-Signature", "")
+        
+        # Verify webhook signature
+        if not razorpay_service.verify_webhook_signature(body_str, signature):
+            logger.warning("⚠️ Invalid webhook signature")
+            raise HTTPException(status_code=400, detail="Invalid webhook signature")
+        
+        # Parse webhook payload from body string
+        webhook_data = json.loads(body_str)
+        event = webhook_data.get("event")
+        payload = webhook_data.get("payload", {})
+        
+        logger.info(f"📥 Received Razorpay webhook: {event}")
+        
+        # Handle different webhook events
+        if event == "subscription.activated":
+            subscription = payload.get("subscription", {}).get("entity", {})
+            subscription_id = subscription.get("id")
+            
+            if subscription_id:
+                # Get subscription from DB to get user_id and plan_name
+                sub_doc = mongodb_service.get_subscription_by_razorpay_id(subscription_id)
+                if sub_doc:
+                    user_id = sub_doc.get("user_id")
+                    plan_name = sub_doc.get("plan_name", "Pro")
+                    
+                    logger.info(f"📥 Processing subscription.activated for user {user_id}, plan {plan_name}")
+                    
+                    mongodb_service.update_subscription_status(
+                        subscription_id,
+                        "active",
+                        {
+                            "current_start": subscription.get("current_start"),
+                            "current_end": subscription.get("current_end"),
+                            "next_billing_at": subscription.get("end_at")
+                        }
+                    )
+                    
+                    # Update user's subscription tier
+                    if user_id:
+                        success = mongodb_service.update_user_subscription_tier(user_id, plan_name)
+                        if success:
+                            logger.info(f"✅ Successfully updated user {user_id} tier to {plan_name} via webhook")
+                        else:
+                            logger.error(f"❌ Failed to update user {user_id} tier to {plan_name}")
+                else:
+                    logger.warning(f"⚠️ Subscription {subscription_id} not found in database")
+        
+        elif event == "subscription.charged":
+            subscription = payload.get("subscription", {}).get("entity", {})
+            payment = payload.get("payment", {}).get("entity", {})
+            subscription_id = subscription.get("id")
+            
+            if subscription_id:
+                # Get subscription from DB to get user_id and plan_name
+                sub_doc = mongodb_service.get_subscription_by_razorpay_id(subscription_id)
+                if sub_doc:
+                    user_id = sub_doc.get("user_id")
+                    plan_name = sub_doc.get("plan_name", "Pro")
+                    
+                    logger.info(f"📥 Processing subscription.charged for user {user_id}, plan {plan_name}")
+                    
+                    # Update subscription with payment info
+                    update_data = {
+                        "current_start": subscription.get("current_start"),
+                        "current_end": subscription.get("current_end"),
+                        "next_billing_at": subscription.get("end_at"),
+                        "last_payment_id": payment.get("id"),
+                        "last_payment_amount": payment.get("amount"),
+                        "last_payment_date": payment.get("created_at")
+                    }
+                    mongodb_service.update_subscription_status(
+                        subscription_id,
+                        subscription.get("status", "active"),
+                        update_data
+                    )
+                    
+                    # Update user's subscription tier when payment is charged
+                    if user_id and subscription.get("status") == "active":
+                        success = mongodb_service.update_user_subscription_tier(user_id, plan_name)
+                        if success:
+                            logger.info(f"✅ Successfully updated user {user_id} tier to {plan_name} via subscription.charged webhook")
+                        else:
+                            logger.error(f"❌ Failed to update user {user_id} tier to {plan_name}")
+                else:
+                    logger.warning(f"⚠️ Subscription {subscription_id} not found in database for subscription.charged event")
+        
+        elif event == "subscription.cancelled":
+            subscription = payload.get("subscription", {}).get("entity", {})
+            subscription_id = subscription.get("id")
+            
+            if subscription_id:
+                # Get subscription from DB to get user_id
+                sub_doc = mongodb_service.get_subscription_by_razorpay_id(subscription_id)
+                if sub_doc:
+                    user_id = sub_doc.get("user_id")
+                    
+                    mongodb_service.update_subscription_status(
+                        subscription_id,
+                        "cancelled",
+                        {
+                            "current_start": subscription.get("current_start"),
+                            "current_end": subscription.get("current_end"),
+                            "next_billing_at": subscription.get("end_at")
+                        }
+                    )
+                    
+                    # Update user's subscription tier to Free
+                    if user_id:
+                        mongodb_service.update_user_subscription_tier(user_id, "Free")
+        
+        elif event == "payment.failed":
+            payment = payload.get("payment", {}).get("entity", {})
+            subscription_id = payment.get("subscription_id")
+            
+            if subscription_id:
+                # Update subscription to reflect failed payment
+                subscription = razorpay_service.get_subscription(subscription_id)
+                mongodb_service.update_subscription_status(
+                    subscription_id,
+                    subscription.get("status", "pending"),
+                    {
+                        "last_payment_failed": True,
+                        "last_payment_failure_reason": payment.get("error_description")
+                    }
+                )
+        
+        return {"success": True, "message": "Webhook processed"}
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"❌ Failed to process webhook: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=config.SERVICE_PORT)

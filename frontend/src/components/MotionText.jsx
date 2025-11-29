@@ -4,7 +4,6 @@ const MotionText = ({
   children,
   className = "",
   isDarkMode,
-  color,
   darkColor,
   lightColor,
   type = "div",

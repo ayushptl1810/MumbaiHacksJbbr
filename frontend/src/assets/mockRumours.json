@@ -1,142 +1,143 @@
 {
-  "timestamp": "2024-01-15T10:30:00Z",
-  "total_posts": 5,
-  "orchestration_type": "batch_verification",
-  "workflow_metadata": {
-    "agents_used": ["text_analyzer", "source_verifier", "image_verifier"],
-    "workflow_id": "wf_123456",
-    "tasks_completed": 5,
-    "total_tasks": 5
-  },
-  "posts": [
-    {
-      "claim": "New study shows that drinking coffee reduces risk of heart disease by 50% and can prevent diabetes in adults over 40",
-      "summary": "Claims about coffee's health benefits based on recent research from Harvard Medical School",
-      "platform": "Twitter",
-      "Post_link": "https://twitter.com/example/status/123456",
-      "verification": {
-        "verified": true,
-        "verdict": "Mostly True",
-        "message": "Study exists but benefits may be overstated in the original claim",
-        "confidence": "75%",
-        "reasoning": "Found original study from Harvard Medical School but the effect size is smaller than claimed. The 50% reduction figure appears to be exaggerated.",
-        "sources": {
-          "links": [
-            "https://example-journal.com/coffee-study",
-            "https://harvard.edu/medical-research"
-          ],
-          "titles": [
-            "Coffee consumption and cardiovascular health",
-            "Harvard study on coffee benefits"
-          ],
-          "count": 2
-        },
-        "claim_text": "New study shows that drinking coffee reduces risk of heart disease by 50% and can prevent diabetes in adults over 40",
-        "verification_date": "2024-01-15T10:25:00Z"
-      }
+    "timestamp": "2024-01-15T10:30:00Z",
+    "total_posts": 5,
+    "orchestration_type": "batch_verification",
+    "workflow_metadata": {
+      "agents_used": ["text_analyzer", "source_verifier", "image_verifier"],
+      "workflow_id": "wf_123456",
+      "tasks_completed": 5,
+      "total_tasks": 5
     },
-    {
-      "claim": "Government plans to implement mandatory digital ID cards for all citizens starting next month",
-      "summary": "Viral social media post claiming imminent implementation of digital ID requirements",
-      "platform": "Facebook",
-      "Post_link": "https://facebook.com/example/posts/789012",
-      "verification": {
-        "verified": false,
-        "verdict": "False",
-        "message": "No official government announcement or legislation supports this claim",
-        "confidence": "95%",
-        "reasoning": "Extensive search of government websites, official press releases, and legislative records shows no evidence of such a program. This appears to be misinformation.",
-        "sources": {
-          "links": [
-            "https://government.official/press-releases",
-            "https://legislature.gov/bills"
-          ],
-          "titles": [
-            "Official Government Press Releases",
-            "Current Legislative Bills"
-          ],
-          "count": 2
-        },
-        "claim_text": "Government plans to implement mandatory digital ID cards for all citizens starting next month",
-        "verification_date": "2024-01-15T09:45:00Z"
+    "posts": [
+      {
+        "claim": "New study shows that drinking coffee reduces risk of heart disease by 50% and can prevent diabetes in adults over 40",
+        "summary": "Claims about coffee's health benefits based on recent research from Harvard Medical School",
+        "platform": "Twitter",
+        "Post_link": "https://twitter.com/example/status/123456",
+        "verification": {
+          "verified": true,
+          "verdict": "Mostly True",
+          "message": "Study exists but benefits may be overstated in the original claim",
+          "confidence": "75%",
+          "reasoning": "Found original study from Harvard Medical School but the effect size is smaller than claimed. The 50% reduction figure appears to be exaggerated.",
+          "sources": {
+            "links": [
+              "https://example-journal.com/coffee-study",
+              "https://harvard.edu/medical-research"
+            ],
+            "titles": [
+              "Coffee consumption and cardiovascular health",
+              "Harvard study on coffee benefits"
+            ],
+            "count": 2
+          },
+          "claim_text": "New study shows that drinking coffee reduces risk of heart disease by 50% and can prevent diabetes in adults over 40",
+          "verification_date": "2024-01-15T10:25:00Z"
+        }
+      },
+      {
+        "claim": "Government plans to implement mandatory digital ID cards for all citizens starting next month",
+        "summary": "Viral social media post claiming imminent implementation of digital ID requirements",
+        "platform": "Facebook",
+        "Post_link": "https://facebook.com/example/posts/789012",
+        "verification": {
+          "verified": false,
+          "verdict": "False",
+          "message": "No official government announcement or legislation supports this claim",
+          "confidence": "95%",
+          "reasoning": "Extensive search of government websites, official press releases, and legislative records shows no evidence of such a program. This appears to be misinformation.",
+          "sources": {
+            "links": [
+              "https://government.official/press-releases",
+              "https://legislature.gov/bills"
+            ],
+            "titles": [
+              "Official Government Press Releases",
+              "Current Legislative Bills"
+            ],
+            "count": 2
+          },
+          "claim_text": "Government plans to implement mandatory digital ID cards for all citizens starting next month",
+          "verification_date": "2024-01-15T09:45:00Z"
+        }
+      },
+      {
+        "claim": "Local weather station reports unusual temperature readings suggesting climate manipulation",
+        "summary": "Post suggesting conspiracy about weather modification based on temperature data",
+        "platform": "Instagram",
+        "Post_link": "https://instagram.com/example/p/456789",
+        "verification": {
+          "verified": false,
+          "verdict": "Unverified",
+          "message": "Insufficient evidence to support weather manipulation claims",
+          "confidence": "60%",
+          "reasoning": "While temperature anomalies were recorded, they fall within normal variation ranges. No credible evidence supports weather manipulation theories.",
+          "sources": {
+            "links": [
+              "https://weather.gov/station-data",
+              "https://climate.noaa.gov/temperature-records"
+            ],
+            "titles": ["Local Weather Station Data", "NOAA Climate Records"],
+            "count": 2
+          },
+          "claim_text": "Local weather station reports unusual temperature readings suggesting climate manipulation",
+          "verification_date": "2024-01-15T08:30:00Z"
+        }
+      },
+      {
+        "claim": "Breaking: Major tech company announces they will stop using AI in their products due to safety concerns",
+        "summary": "Viral news about a tech company abandoning AI technology completely",
+        "platform": "LinkedIn",
+        "Post_link": "https://linkedin.com/posts/example-345678",
+        "verification": {
+          "verified": false,
+          "verdict": "Disputed",
+          "message": "Company announced AI safety improvements, not complete abandonment",
+          "confidence": "85%",
+          "reasoning": "The company did make an announcement about AI, but it was about implementing new safety measures and ethical guidelines, not stopping AI use entirely.",
+          "sources": {
+            "links": [
+              "https://techcompany.com/official-statement",
+              "https://reuters.com/tech-news"
+            ],
+            "titles": [
+              "Official Company Statement on AI Ethics",
+              "Reuters Tech News Coverage"
+            ],
+            "count": 2
+          },
+          "claim_text": "Breaking: Major tech company announces they will stop using AI in their products due to safety concerns",
+          "verification_date": "2024-01-15T07:15:00Z"
+        }
+      },
+      {
+        "claim": "Scientists discover new species of deep-sea creature with bioluminescent properties in Pacific Ocean",
+        "summary": "Scientific discovery announcement about new marine life with unique light-producing abilities",
+        "platform": "Reddit",
+        "Post_link": "https://reddit.com/r/science/comments/example789",
+        "verification": {
+          "verified": true,
+          "verdict": "True",
+          "message": "Discovery confirmed by multiple scientific institutions",
+          "confidence": "90%",
+          "reasoning": "Published research paper confirms the discovery. Multiple marine biology institutions have verified the findings and the species has been officially catalogued.",
+          "sources": {
+            "links": [
+              "https://nature.com/marine-discovery",
+              "https://marinebiologyjournal.com/new-species",
+              "https://oceanic-research.org/findings"
+            ],
+            "titles": [
+              "Nature: New Bioluminescent Species Discovery",
+              "Marine Biology Journal Publication",
+              "Oceanic Research Institute Findings"
+            ],
+            "count": 3
+          },
+          "claim_text": "Scientists discover new species of deep-sea creature with bioluminescent properties in Pacific Ocean",
+          "verification_date": "2024-01-15T06:00:00Z"
+        }
       }
-    },
-    {
-      "claim": "Local weather station reports unusual temperature readings suggesting climate manipulation",
-      "summary": "Post suggesting conspiracy about weather modification based on temperature data",
-      "platform": "Instagram",
-      "Post_link": "https://instagram.com/example/p/456789",
-      "verification": {
-        "verified": false,
-        "verdict": "Unverified",
-        "message": "Insufficient evidence to support weather manipulation claims",
-        "confidence": "60%",
-        "reasoning": "While temperature anomalies were recorded, they fall within normal variation ranges. No credible evidence supports weather manipulation theories.",
-        "sources": {
-          "links": [
-            "https://weather.gov/station-data",
-            "https://climate.noaa.gov/temperature-records"
-          ],
-          "titles": ["Local Weather Station Data", "NOAA Climate Records"],
-          "count": 2
-        },
-        "claim_text": "Local weather station reports unusual temperature readings suggesting climate manipulation",
-        "verification_date": "2024-01-15T08:30:00Z"
-      }
-    },
-    {
-      "claim": "Breaking: Major tech company announces they will stop using AI in their products due to safety concerns",
-      "summary": "Viral news about a tech company abandoning AI technology completely",
-      "platform": "LinkedIn",
-      "Post_link": "https://linkedin.com/posts/example-345678",
-      "verification": {
-        "verified": false,
-        "verdict": "Disputed",
-        "message": "Company announced AI safety improvements, not complete abandonment",
-        "confidence": "85%",
-        "reasoning": "The company did make an announcement about AI, but it was about implementing new safety measures and ethical guidelines, not stopping AI use entirely.",
-        "sources": {
-          "links": [
-            "https://techcompany.com/official-statement",
-            "https://reuters.com/tech-news"
-          ],
-          "titles": [
-            "Official Company Statement on AI Ethics",
-            "Reuters Tech News Coverage"
-          ],
-          "count": 2
-        },
-        "claim_text": "Breaking: Major tech company announces they will stop using AI in their products due to safety concerns",
-        "verification_date": "2024-01-15T07:15:00Z"
-      }
-    },
-    {
-      "claim": "Scientists discover new species of deep-sea creature with bioluminescent properties in Pacific Ocean",
-      "summary": "Scientific discovery announcement about new marine life with unique light-producing abilities",
-      "platform": "Reddit",
-      "Post_link": "https://reddit.com/r/science/comments/example789",
-      "verification": {
-        "verified": true,
-        "verdict": "True",
-        "message": "Discovery confirmed by multiple scientific institutions",
-        "confidence": "90%",
-        "reasoning": "Published research paper confirms the discovery. Multiple marine biology institutions have verified the findings and the species has been officially catalogued.",
-        "sources": {
-          "links": [
-            "https://nature.com/marine-discovery",
-            "https://marinebiologyjournal.com/new-species",
-            "https://oceanic-research.org/findings"
-          ],
-          "titles": [
-            "Nature: New Bioluminescent Species Discovery",
-            "Marine Biology Journal Publication",
-            "Oceanic Research Institute Findings"
-          ],
-          "count": 3
-        },
-        "claim_text": "Scientists discover new species of deep-sea creature with bioluminescent properties in Pacific Ocean",
-        "verification_date": "2024-01-15T06:00:00Z"
-      }
-    }
-  ]
-}
+    ]
+  }
+  

@@ -3,6 +3,9 @@
 // Default API base URL (can be configured in extension settings)
 const DEFAULT_API_BASE = 'http://localhost:8000';
 
+// Default frontend base URL (can be configured via environment or storage)
+const DEFAULT_FRONTEND_BASE = 'http://localhost:5173';
+
 // Debounce delay for API calls (ms)
 const DEBOUNCE_DELAY = 500;
 
@@ -30,6 +33,15 @@ async function getApiBaseUrl() {
 async function getSimilarityThreshold() {
   const result = await chrome.storage.sync.get(['similarityThreshold']);
   return result.similarityThreshold || DEFAULT_SIMILARITY_THRESHOLD;
+}
+
+/**
+ * Get frontend base URL from storage or use default
+ * Checks for environment variable via storage, falls back to localhost
+ */
+async function getFrontendBaseUrl() {
+  const result = await chrome.storage.sync.get(['frontendBaseUrl']);
+  return result.frontendBaseUrl || DEFAULT_FRONTEND_BASE;
 }
 
 /**
@@ -139,6 +151,47 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       }
     });
     return true;
+  }
+});
+
+/**
+ * Create context menu item
+ */
+function createContextMenu() {
+  chrome.contextMenus.create({
+    id: 'verifyWithAegis',
+    title: 'Verify with Aegis',
+    contexts: ['selection']
+  });
+}
+
+/**
+ * Initialize context menu on extension install or startup
+ */
+chrome.runtime.onInstalled.addListener(() => {
+  createContextMenu();
+});
+
+// Also create on startup (in case it was removed)
+chrome.runtime.onStartup.addListener(() => {
+  createContextMenu();
+});
+
+// Create immediately if already running
+createContextMenu();
+
+/**
+ * Handle context menu clicks
+ */
+chrome.contextMenus.onClicked.addListener(async (info, tab) => {
+  if (info.menuItemId === 'verifyWithAegis' && info.selectionText) {
+    const frontendBaseUrl = await getFrontendBaseUrl();
+    const selectedText = info.selectionText.trim();
+    
+    if (selectedText) {
+      const verifyUrl = `${frontendBaseUrl}/verify?text=${encodeURIComponent(selectedText)}`;
+      chrome.tabs.create({ url: verifyUrl });
+    }
   }
 });
 

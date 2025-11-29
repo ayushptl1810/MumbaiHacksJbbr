@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Lightbulb } from "lucide-react";
 import MotionText from "./MotionText";
 import MotionCard from "./MotionCard";

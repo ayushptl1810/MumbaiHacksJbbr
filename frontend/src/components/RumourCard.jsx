@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Clock } from "lucide-react";
 
@@ -68,14 +69,25 @@ const RumourCard = ({ post, onClick, now = new Date() }) => {
           {truncated}
         </p>
 
-        <div className="flex items-center justify-between text-xs text-gray-400">
+        <div className="flex items-center justify-between text-xs text-gray-400 gap-2">
           <span
-            className={`rounded-full border px-3 py-1 font-semibold ${palette.badge}`}
+            className={`rounded-full border px-3 py-1 font-semibold flex-shrink-0 ${palette.badge}`}
           >
             {post.verification?.verdict || "Unverified"}
           </span>
 
-          <span className="inline-flex items-center gap-1 text-gray-400">
+          {/* Confidence percentage in the middle */}
+          {post.verification?.confidence_percentage !== undefined ? (
+            <span className="text-xs font-medium text-gray-300 flex-shrink-0">
+              {post.verification.confidence_percentage}%
+            </span>
+          ) : post.verification?.confidence !== undefined ? (
+            <span className="text-xs font-medium text-gray-300 flex-shrink-0">
+              {Math.round(post.verification.confidence * 100)}%
+            </span>
+          ) : null}
+
+          <span className="inline-flex items-center gap-1 text-gray-400 flex-shrink-0">
             <Clock className="h-3.5 w-3.5" />
             {formatTimestamp(post.verification?.verification_date)}
           </span>

@@ -1,13 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const MotionCard = ({
   children,
   className = "",
   isDarkMode,
-  backgroundColor,
   darkBackgroundColor,
   lightBackgroundColor,
-  borderColor,
   darkBorderColor,
   lightBorderColor,
   ...props

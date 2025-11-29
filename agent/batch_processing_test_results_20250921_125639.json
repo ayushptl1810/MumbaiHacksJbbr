@@ -1,23 +1,23 @@
 {
-  "claim_verifier": {
-    "success": true,
-    "processing_time": 68.52969217300415,
-    "total_claims": 20,
-    "successfully_verified": 0,
-    "verification_errors": 0,
-    "batch_size_used": 15,
-    "total_batches": 2,
-    "claims_per_second": 0.2918442993952129
-  },
-  "explanation_agent": {
-    "success": true,
-    "processing_time": 0.007045269012451172,
-    "total_posts": 15,
-    "successful_posts": 0,
-    "error_posts": 15,
-    "batch_size_used": 10,
-    "total_batches": 2,
-    "posts_per_second": 2129.0883248730966
-  },
-  "performance_comparison": {}
-}
+    "claim_verifier": {
+      "success": true,
+      "processing_time": 68.52969217300415,
+      "total_claims": 20,
+      "successfully_verified": 0,
+      "verification_errors": 0,
+      "batch_size_used": 15,
+      "total_batches": 2,
+      "claims_per_second": 0.2918442993952129
+    },
+    "explanation_agent": {
+      "success": true,
+      "processing_time": 0.007045269012451172,
+      "total_posts": 15,
+      "successful_posts": 0,
+      "error_posts": 15,
+      "batch_size_used": 10,
+      "total_batches": 2,
+      "posts_per_second": 2129.0883248730966
+    },
+    "performance_comparison": {}
+  }

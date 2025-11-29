@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import MotionText from "./MotionText";
@@ -6,7 +7,6 @@ import SectionHeader from "./SectionHeader";
 
 const ContentSection = ({
   section,
-  index,
   isExpanded,
   onToggle,
   isDarkMode,

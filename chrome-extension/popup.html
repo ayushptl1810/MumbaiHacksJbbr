@@ -18,10 +18,10 @@
       body {
         width: 320px;
         min-height: 380px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, sans-serif;
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        color: #e2e8f0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #050a12;
+        color: #f9fafb;
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -29,10 +29,10 @@
       }
 
       .header {
-        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        background: linear-gradient(to bottom, #0b111c 0%, #060a13 50%, #050a12 100%);
         padding: 24px 20px;
         text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         position: relative;
       }
 
@@ -46,7 +46,7 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(99, 102, 241, 0.5),
+          rgba(59, 130, 246, 0.3),
           transparent
         );
       }
@@ -60,14 +60,14 @@
         height: 80px;
         margin: 0 auto;
         display: block;
-        filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+        filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.3));
         border-radius: 16px;
       }
 
       .title {
         font-size: 22px;
         font-weight: 700;
-        background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+        background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -77,7 +77,7 @@
 
       .subtitle {
         font-size: 13px;
-        color: #94a3b8;
+        color: #9ca3af;
         font-weight: 400;
       }
 
@@ -94,20 +94,20 @@
         align-items: center;
         gap: 8px;
         padding: 8px 12px;
-        background: rgba(99, 102, 241, 0.15);
-        border: 1px solid rgba(99, 102, 241, 0.3);
+        background: rgba(59, 130, 246, 0.2);
+        border: 1px solid rgba(59, 130, 246, 0.4);
         border-radius: 8px;
         font-size: 12px;
-        color: #a5b4fc;
+        color: #93c5fd;
         margin-block: 4px;
       }
 
       .status-dot {
         width: 8px;
         height: 8px;
-        background: #10b981;
+        background: #3b82f6;
         border-radius: 50%;
-        box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+        box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
         animation: pulse 2s infinite;
       }
 
@@ -122,17 +122,17 @@
       }
 
       .info-card {
-        background: rgba(30, 41, 59, 0.6);
+        background: rgba(15, 23, 42, 0.6);
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
         padding: 16px;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(12px);
       }
 
       .info-title {
         font-size: 13px;
         font-weight: 600;
-        color: #e2e8f0;
+        color: #f9fafb;
         margin-bottom: 12px;
         display: flex;
         align-items: center;
@@ -156,13 +156,13 @@
         align-items: flex-start;
         gap: 10px;
         font-size: 12px;
-        color: #cbd5e1;
+        color: #d1d5db;
         line-height: 1.5;
       }
 
       .feature-item::before {
         content: "✓";
-        color: #10b981;
+        color: #3b82f6;
         font-weight: bold;
         font-size: 14px;
         margin-top: 2px;
@@ -171,11 +171,11 @@
 
       .footer {
         padding: 16px 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
         text-align: center;
         font-size: 11px;
-        color: #64748b;
-        background: rgba(15, 23, 42, 0.5);
+        color: #6b7280;
+        background: rgba(5, 10, 18, 0.8);
       }
 
       .footer-text {

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { ChevronRight, ChevronDown } from "lucide-react";
 import MotionText from "./MotionText";
@@ -6,7 +7,7 @@ const SectionHeader = ({ title, isExpanded, onToggle, isDarkMode }) => {
   return (
     <motion.button
       onClick={onToggle}
-      className="w-full flex items-center justify-between py-4 rounded-lg text-left cursor-pointer block"
+      className="w-full flex items-center justify-between py-4 rounded-lg text-left cursor-pointer"
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >

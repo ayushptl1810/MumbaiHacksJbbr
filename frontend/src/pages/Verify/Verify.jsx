@@ -1,4 +1,5 @@
 import { useState, useMemo, useRef, useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { PenSquare, Search } from "lucide-react";
 import logoImg from "../../assets/logo.png";
@@ -200,7 +201,7 @@ const Verify = () => {
 
   return (
     <div className="h-[calc(100vh-4rem)] bg-black">
-      <div className="flex h-full w-full overflow-hidden">
+      <div className="relative flex h-full w-full overflow-hidden">
         <motion.aside
           onMouseEnter={() => {
             if (hoverTimeoutRef.current) {
@@ -219,7 +220,7 @@ const Verify = () => {
           initial={{ width: 84 }}
           animate={{ width: sidebarOpen ? 300 : 84 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="flex h-full flex-col border-r border-white/5 bg-gradient-to-b from-[#0b111c] via-[#060a13] to-black/80 p-3"
+          className="relative z-20 flex h-full flex-col border-r border-white/5 bg-gradient-to-b from-[#0b111c] via-[#060a13] to-black/80 p-3"
         >
           <div className="flex flex-col gap-3">
             <div className="group grid grid-cols-[36px_1fr] items-center rounded-2xl px-3 py-2 text-xs font-semibold text-gray-300 transition-all duration-200">
@@ -325,7 +326,21 @@ const Verify = () => {
           )}
         </motion.aside>
 
-        <div className="flex-1 overflow-hidden bg-black/30 backdrop-blur-sm">
+        {/* Mobile overlay when sidebar is open to keep layout stable */}
+        {sidebarOpen && (
+          <div
+            className="absolute inset-0 z-10 bg-black/70 backdrop-blur-sm md:hidden"
+            onClick={() => setSidebarOpen(false)}
+          />
+        )}
+
+        <div
+          className={`flex-1 overflow-hidden bg-black/30 backdrop-blur-sm transition-all duration-200 ${
+            sidebarOpen
+              ? "opacity-20 blur-sm pointer-events-none md:opacity-100 md:blur-0 md:pointer-events-auto"
+              : "opacity-100"
+          }`}
+        >
           <ChatbotView
             key={activeChatId || "default"}
             isDarkMode={true}
@@ -335,6 +350,8 @@ const Verify = () => {
               (activeChatId && messagesBySession[activeChatId]) || []
             }
             onTurnPersist={handlePersistTurn}
+            anonymousId={anonymousId}
+            userId={userId}
           />
         </div>
       </div>

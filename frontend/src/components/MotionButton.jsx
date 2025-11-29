@@ -1,13 +1,12 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const MotionButton = ({
   children,
   className = "",
   isDarkMode,
-  backgroundColor,
   darkBackgroundColor,
   lightBackgroundColor,
-  color,
   darkColor,
   lightColor,
   onClick,

@@ -86,3 +86,29 @@ export const chatService = {
   getMessages: (sessionId) =>
     apiClient.get(`/chat/messages/${encodeURIComponent(sessionId)}`),
 };
+
+export const subscriptionService = {
+  createSubscription: (planId, userId, notes = null) => {
+    const payload = { plan_id: planId, user_id: userId };
+    if (notes) payload.notes = notes;
+    return apiClient.post("/subscriptions/create", payload);
+  },
+  getSubscriptionStatus: (userId) => {
+    return apiClient.get("/subscriptions/status", { params: { user_id: userId } });
+  },
+  cancelSubscription: (subscriptionId, cancelAtCycleEnd = false) => {
+    return apiClient.post("/subscriptions/cancel", {
+      subscription_id: subscriptionId,
+      cancel_at_cycle_end: cancelAtCycleEnd,
+    });
+  },
+  getPlans: (count = 10, skip = 0) => {
+    return apiClient.get("/subscriptions/plans", { params: { count, skip } });
+  },
+  createPlan: (planData) => {
+    return apiClient.post("/subscriptions/plans", planData);
+  },
+  getConfig: () => {
+    return apiClient.get("/subscriptions/config");
+  },
+};

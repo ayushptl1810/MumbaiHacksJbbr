@@ -57,18 +57,20 @@ function showAlert(rumourData) {
     const alert = document.createElement("div");
     alert.className = "aegis-rumour-alert";
     alert.style.cssText = `
-      background: #fff;
-      border-left: 4px solid #${
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 4px solid ${
         rumour.verification?.verdict === "false"
-          ? "ef4444"
+          ? "#ef4444"
           : rumour.verification?.verdict === "true"
-          ? "10b981"
-          : "f59e0b"
+          ? "#3b82f6"
+          : "#f59e0b"
       };
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 16px;
       margin-bottom: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       animation: slideIn 0.3s ease-out;
     `;
 
@@ -87,7 +89,7 @@ function showAlert(rumourData) {
 
     alert.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px;">
-        <h3 style="margin: 0; font-size: 14px; font-weight: 600; color: #1f2937; flex: 1;">
+        <h3 style="margin: 0; font-size: 14px; font-weight: 600; color: #f9fafb; flex: 1;">
           Similar Rumour Found (${similarity}% match)
         </h3>
         <button class="aegis-close-btn" style="
@@ -95,42 +97,50 @@ function showAlert(rumourData) {
           border: none;
           font-size: 18px;
           cursor: pointer;
-          color: #6b7280;
+          color: #9ca3af;
           padding: 0;
           margin-left: 8px;
-        ">×</button>
+          transition: color 0.2s;
+        " onmouseover="this.style.color='#f9fafb'" onmouseout="this.style.color='#9ca3af'">×</button>
       </div>
-      <p style="margin: 0 0 8px 0; font-size: 13px; color: #4b5563; line-height: 1.4;">
-        <strong>Claim:</strong> ${claim.substring(0, 150)}${
+      <p style="margin: 0 0 8px 0; font-size: 13px; color: #d1d5db; line-height: 1.4;">
+        <strong style="color: #f9fafb;">Claim:</strong> ${claim.substring(0, 150)}${
       claim.length > 150 ? "..." : ""
     }
       </p>
       <div style="margin-bottom: 8px;">
         <span style="
           display: inline-block;
-          padding: 4px 8px;
-          border-radius: 4px;
+          padding: 6px 12px;
+          border-radius: 6px;
           font-size: 12px;
           font-weight: 500;
-          background: #${
+          background: ${
             verdict === "false"
-              ? "fee2e2"
+              ? "rgba(239, 68, 68, 0.2)"
               : verdict === "true"
-              ? "d1fae5"
-              : "fef3c7"
+              ? "rgba(59, 130, 246, 0.2)"
+              : "rgba(245, 158, 11, 0.2)"
           };
-          color: #${
+          border: 1px solid ${
             verdict === "false"
-              ? "991b1b"
+              ? "rgba(239, 68, 68, 0.4)"
               : verdict === "true"
-              ? "065f46"
-              : "92400e"
+              ? "rgba(59, 130, 246, 0.4)"
+              : "rgba(245, 158, 11, 0.4)"
+          };
+          color: ${
+            verdict === "false"
+              ? "#fca5a5"
+              : verdict === "true"
+              ? "#93c5fd"
+              : "#fbbf24"
           };
         ">
           ${verdict.charAt(0).toUpperCase() + verdict.slice(1)}
         </span>
       </div>
-      <p style="margin: 0; font-size: 12px; color: #6b7280; line-height: 1.4;">
+      <p style="margin: 0; font-size: 12px; color: #9ca3af; line-height: 1.4;">
         ${message.substring(0, 100)}${message.length > 100 ? "..." : ""}
       </p>
       ${
@@ -140,9 +150,10 @@ function showAlert(rumourData) {
           display: inline-block;
           margin-top: 8px;
           font-size: 12px;
-          color: #3b82f6;
+          color: #60a5fa;
           text-decoration: none;
-        ">View Source →</a>
+          transition: color 0.2s;
+        " onmouseover="this.style.color='#93c5fd'" onmouseout="this.style.color='#60a5fa'">View Source →</a>
       `
           : ""
       }
