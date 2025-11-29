@@ -1,0 +1,604 @@
+{
+  "success": true,
+  "message": "Successfully processed 4 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T08:52:47.896497",
+        "total_posts": 4,
+        "posts_by_platform": {
+          "reddit": 4,
+          "threads": 0
+        },
+        "platforms": [
+          "reddit",
+          "twitter"
+        ],
+        "posts": [
+          {
+            "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "summary": "President Donald Trump announced his intention to grant a “Full and Complete pardon” to former Honduran President Juan Orlando Hernandez. Hernandez, extradited to the U.S. in 2024 and convicted in New York, is serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine into the United States, using Honduras’s government, military, and police to protect shipments. This announcement triggered swift outrage across social media, with critics, including conservative accounts and Rep. Joaquin Castro (D-TX), condemning the move and highlighting the severity of Hernandez's crimes, which reportedly include responsibility for the deaths of countless American citizens.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+          },
+          {
+            "claim": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+            "summary": "The Reddit post is a straightforward request from the user, indicated by its title, asking to hear from at least one person who regrets supporting former President Donald Trump. As a link post with no additional content or scraped external information, its primary purpose is to solicit comments and personal testimonies on this specific topic within the subreddit \"NoFilterNews\".",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/"
+          },
+          {
+            "claim": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+            "summary": "The Department of Justice (DOJ) has enacted a bill mandating the release of Jeffrey Epstein files, but the FBI is spending nearly $1 million in overtime on an \"Epstein Transparency Project\" (also called the \"Special Redaction Project\") to redact portions. Approximately 1,000 agents, tasked by FBI Director Kash Patel, worked over 4,737 hours between January and July, incurring $851,344 in overtime between March 17-22, according to a Bloomberg report. The review includes Epstein's 2019 prison death investigation, search warrant photos, and surveillance footage, with particular attention given to flagging mentions of Donald Trump, raising concerns that some evidence may remain hidden despite the transparency mandate.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+            "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with more than 50 cases identified. In response, the South Carolina Department of Public Health launched pop-up clinics and mobile vaccine units in early November, offering free measles vaccines. However, turnout has been minimal; for example, only one person attended a clinic in Boiling Springs on a Monday afternoon. State epidemiologist Linda Bell noted the slow progress, indicating that public health officials had hoped for a much higher uptake. This situation highlights the \"chilling effect\" of vaccine misinformation, impeding efforts to contain the outbreak.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "content_summary": "President Donald Trump announced his intention to grant a “Full and Complete pardon” to former Honduran President Juan Orlando Hernandez. Hernandez, extradited to the U.S. in 2024 and convicted in New York, is serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine into the ",
+            "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is uncertain. While one source indicates that Donald Trump has expressed plans to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, none of the provided sources offer any evidence to support the assertion that this pledge 'has sparked widespread outrage.'",
+              "confidence": "medium",
+              "reasoning": "Source 1 states, 'Trump says he plans to pardon former Honduran president serving drug' and refers to 'Honduras former President Juan Orlando Hernandez,' which supports the first part of the claim regarding Trump's pledge. The phrase 'serving drug' implies conviction for drug trafficking. However, none of the sources (1, 2, or 3) provide any information or evidence regarding 'widespread outrage' in response to this pledge.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                  "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                  "https://www.pbs.org/newshour/nation/tesla-shareholders-to-vote-on-pay-package-that-could-make-musk-a-trillionaire",
+                  "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                  "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working"
+                ],
+                "titles": [
+                  "News outlets including The New York Times and Newsmax say they ...",
+                  "Most Americans blame insurance profits and coverage denials ...",
+                  "Tesla shareholders to vote on pay package that could make Musk a ...",
+                  "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                  "Column: Several governments are destroying their own bank notes ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "verification_date": "2025-11-29T08:53:01.826482"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage."
+            },
+            "verification_timestamp": "2025-11-29T08:53:21.081773"
+          },
+          {
+            "claim_text": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+            "content_summary": "The Reddit post is a straightforward request from the user, indicated by its title, asking to hear from at least one person who regrets supporting former President Donald Trump. As a link post with no additional content or scraped external information, its primary purpose is to solicit comments and ",
+            "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is uncertain. None of the provided fact-checking sources contain any information related to a Reddit post, individuals regretting supporting Donald Trump, or sharing such experiences.",
+              "confidence": "high",
+              "reasoning": "Sources 1, 2, and 3 discuss entirely unrelated topics: a podcast about hunting, sexual assault survivors, and personal regret about marriage and career, respectively. There is no mention of Reddit, Donald Trump, or political regret in any of the snippets, making it impossible to verify the claim with the given evidence.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                  "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                  "https://www.theguardian.com/lifeandstyle/2023/apr/09/i-am-70-and-so-full-of-regret-about-my-husband-and-career-ask-philippa-perry",
+                  "https://www.theguardian.com/technology/2024/nov/30/why-i-regret-using-23andme-i-gave-up-my-dna-just-to-find-out-im-british",
+                  "https://www.theguardian.com/lifeandstyle/2023/jul/17/why-first-loves-shape-our-lives-for-ever-relationships-memories"
+                ],
+                "titles": [
+                  "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                  "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                  "I'm 70 and so full of regret about my husband and career | Marriage ...",
+                  "Why I regret using 23andMe: I gave up my DNA just to find out I'm ...",
+                  "'I have mourned her for decades': why first loves can shape our lives ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+              "verification_date": "2025-11-29T08:53:01.826482"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences."
+            },
+            "verification_timestamp": "2025-11-29T08:53:21.081773"
+          },
+          {
+            "claim_text": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+            "content_summary": "The Department of Justice (DOJ) has enacted a bill mandating the release of Jeffrey Epstein files, but the FBI is spending nearly $1 million in overtime on an \"Epstein Transparency Project\" (also called the \"Special Redaction Project\") to redact portions. Approximately 1,000 agents, tasked by FBI Di",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is uncertain. While one source confirms that the FBI flagged mentions of Donald Trump during its review of the Epstein files, there is no evidence in the provided sources to support the claims of nearly $1 million spent in overtime or that some evidence may remain hidden from the public.",
+              "confidence": "medium",
+              "reasoning": "Source 1 explicitly states that the F.B.I.'s review involved flagging 'any references to President Trump and other prominent figures' in the Epstein files, supporting a key part of the claim. However, none of the provided sources (1, 2, or 3) contain any information about the FBI spending 'nearly $1 million in overtime' for this process. Additionally, while Source 2 mentions 'mounting discontent over his administration's handling of the Jeffrey Epstein files,' neither source directly states or provides evidence that 'some evidence may remain hidden from the public' due to redaction or otherwise.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                  "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqeshtma5w_UWtI7nn7YzUvCq_dqgfQdFWJO0dp7OzunMyvfOXFpW9zb&gaa_ts=692a6a9c&gaa_sig=8BjRaLG4rqTLrBrKUOSAGkK0efMK8iZhWH3NO9mIbyZWqDl-Q-uCOQFCgJIetpNtrKycjQPIZ7hbupOjtkA-uA%3D%3D",
+                  "https://www.nytimes.com/2020/09/30/magazine/trump-voter-fraud.html",
+                  "https://www.wsj.com/public/resources/documents/Vx3RRq4AgP0ILswF4wQr-WSJNewsPaper-7-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqczBvmuIOaSXYeoSvHsNgklQEWjWkPwI2czXYbjPQTAH8Fs54mhVxpp&gaa_ts=692a6a9c&gaa_sig=5HIqTBFM52EmWbPGpevUDQ0JYkjLWV1cGWdrzx9m26YDy7zkOo2mCmJI52T7McDep69OC_d19FlbgT_nNrqgsw%3D%3D"
+                ],
+                "titles": [
+                  "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                  "Intel Executive's Residences Raided in Probe Over Secrets",
+                  "The Attack on Voting in the 2020 Elections - The New York Times",
+                  "Wall Street Feels New Tariff Tension"
+                ],
+                "count": 8
+              },
+              "claim_text": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+              "verification_date": "2025-11-29T08:53:01.826482"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public."
+            },
+            "verification_timestamp": "2025-11-29T08:53:21.081773"
+          },
+          {
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+            "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with more than 50 cases identified. In response, the South Carolina Department of Public Health launched pop-up clinics and mobile vaccine units in early November, offering free measles vaccines. Howeve",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is uncertain. The provided fact-checking source is entirely irrelevant and offers no information regarding a measles outbreak in Spartanburg County, vaccine misinformation, or vaccination clinic turnout.",
+              "confidence": "high",
+              "reasoning": "Source 1 discusses Amazon selling medications online and the implications of early Covid-19 vaccine results. It contains no mention of a measles outbreak, Spartanburg County, the number of cases (50+), vaccine misinformation, or turnout at vaccination clinics. Therefore, there is no evidence to support or refute the claim.",
+              "sources": {
+                "links": [
+                  "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqe7CfYdRAV3rMvo-TnZb7_0wt0jp7r5MU1-UmwOtNfHnFMdj_juDaK1&gaa_ts=692a6a9c&gaa_sig=TKKJ4M-HVDQwlSVRxi1JqJAXg9kvJ5-oBTO_bVzWHrHJRdI_2mjudtf3QGOtadgcRY0WAoDGcP5mMss_c7Vjsw%3D%3D"
+                ],
+                "titles": [
+                  "Amazon Takes On Pharmacies By Selling Medications Online"
+                ],
+                "count": 1
+              },
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+              "verification_date": "2025-11-29T08:53:01.826482"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics."
+            },
+            "verification_timestamp": "2025-11-29T08:53:21.081773"
+          }
+        ],
+        "summary": {
+          "total_claims": 4,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T08:53:21.096250",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": false,
+        "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "debunk_posts": [],
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+      "summary": "President Donald Trump announced his intention to grant a “Full and Complete pardon” to former Honduran President Juan Orlando Hernandez. Hernandez, extradited to the U.S. in 2024 and convicted in New York, is serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine into the United States, using Honduras’s government, military, and police to protect shipments. This announcement triggered swift outrage across social media, with critics, including conservative accounts and Rep. Joaquin Castro (D-TX), condemning the move and highlighting the severity of Hernandez's crimes, which reportedly include responsibility for the deaths of countless American citizens.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is uncertain. While one source indicates that Donald Trump has expressed plans to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, none of the provided sources offer any evidence to support the assertion that this pledge 'has sparked widespread outrage.'",
+        "confidence": "medium",
+        "reasoning": "Source 1 states, 'Trump says he plans to pardon former Honduran president serving drug' and refers to 'Honduras former President Juan Orlando Hernandez,' which supports the first part of the claim regarding Trump's pledge. The phrase 'serving drug' implies conviction for drug trafficking. However, none of the sources (1, 2, or 3) provide any information or evidence regarding 'widespread outrage' in response to this pledge.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+            "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+            "https://www.pbs.org/newshour/nation/tesla-shareholders-to-vote-on-pay-package-that-could-make-musk-a-trillionaire",
+            "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+            "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working"
+          ],
+          "titles": [
+            "News outlets including The New York Times and Newsmax say they ...",
+            "Most Americans blame insurance profits and coverage denials ...",
+            "Tesla shareholders to vote on pay package that could make Musk a ...",
+            "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+            "Column: Several governments are destroying their own bank notes ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+        "verification_date": "2025-11-29T08:53:01.826482"
+      }
+    },
+    {
+      "claim": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+      "summary": "The Reddit post is a straightforward request from the user, indicated by its title, asking to hear from at least one person who regrets supporting former President Donald Trump. As a link post with no additional content or scraped external information, its primary purpose is to solicit comments and personal testimonies on this specific topic within the subreddit \"NoFilterNews\".",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is uncertain. None of the provided fact-checking sources contain any information related to a Reddit post, individuals regretting supporting Donald Trump, or sharing such experiences.",
+        "confidence": "high",
+        "reasoning": "Sources 1, 2, and 3 discuss entirely unrelated topics: a podcast about hunting, sexual assault survivors, and personal regret about marriage and career, respectively. There is no mention of Reddit, Donald Trump, or political regret in any of the snippets, making it impossible to verify the claim with the given evidence.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+            "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+            "https://www.theguardian.com/lifeandstyle/2023/apr/09/i-am-70-and-so-full-of-regret-about-my-husband-and-career-ask-philippa-perry",
+            "https://www.theguardian.com/technology/2024/nov/30/why-i-regret-using-23andme-i-gave-up-my-dna-just-to-find-out-im-british",
+            "https://www.theguardian.com/lifeandstyle/2023/jul/17/why-first-loves-shape-our-lives-for-ever-relationships-memories"
+          ],
+          "titles": [
+            "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+            "Unacknowledged rape: the sexual assault survivors who hide their ...",
+            "I'm 70 and so full of regret about my husband and career | Marriage ...",
+            "Why I regret using 23andMe: I gave up my DNA just to find out I'm ...",
+            "'I have mourned her for decades': why first loves can shape our lives ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+        "verification_date": "2025-11-29T08:53:01.826482"
+      }
+    },
+    {
+      "claim": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+      "summary": "The Department of Justice (DOJ) has enacted a bill mandating the release of Jeffrey Epstein files, but the FBI is spending nearly $1 million in overtime on an \"Epstein Transparency Project\" (also called the \"Special Redaction Project\") to redact portions. Approximately 1,000 agents, tasked by FBI Director Kash Patel, worked over 4,737 hours between January and July, incurring $851,344 in overtime between March 17-22, according to a Bloomberg report. The review includes Epstein's 2019 prison death investigation, search warrant photos, and surveillance footage, with particular attention given to flagging mentions of Donald Trump, raising concerns that some evidence may remain hidden despite the transparency mandate.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is uncertain. While one source confirms that the FBI flagged mentions of Donald Trump during its review of the Epstein files, there is no evidence in the provided sources to support the claims of nearly $1 million spent in overtime or that some evidence may remain hidden from the public.",
+        "confidence": "medium",
+        "reasoning": "Source 1 explicitly states that the F.B.I.'s review involved flagging 'any references to President Trump and other prominent figures' in the Epstein files, supporting a key part of the claim. However, none of the provided sources (1, 2, or 3) contain any information about the FBI spending 'nearly $1 million in overtime' for this process. Additionally, while Source 2 mentions 'mounting discontent over his administration's handling of the Jeffrey Epstein files,' neither source directly states or provides evidence that 'some evidence may remain hidden from the public' due to redaction or otherwise.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+            "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqeshtma5w_UWtI7nn7YzUvCq_dqgfQdFWJO0dp7OzunMyvfOXFpW9zb&gaa_ts=692a6a9c&gaa_sig=8BjRaLG4rqTLrBrKUOSAGkK0efMK8iZhWH3NO9mIbyZWqDl-Q-uCOQFCgJIetpNtrKycjQPIZ7hbupOjtkA-uA%3D%3D",
+            "https://www.nytimes.com/2020/09/30/magazine/trump-voter-fraud.html",
+            "https://www.wsj.com/public/resources/documents/Vx3RRq4AgP0ILswF4wQr-WSJNewsPaper-7-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqczBvmuIOaSXYeoSvHsNgklQEWjWkPwI2czXYbjPQTAH8Fs54mhVxpp&gaa_ts=692a6a9c&gaa_sig=5HIqTBFM52EmWbPGpevUDQ0JYkjLWV1cGWdrzx9m26YDy7zkOo2mCmJI52T7McDep69OC_d19FlbgT_nNrqgsw%3D%3D"
+          ],
+          "titles": [
+            "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "Fact-Checking Trump's Epstein Defenses - The New York Times",
+            "Intel Executive's Residences Raided in Probe Over Secrets",
+            "The Attack on Voting in the 2020 Elections - The New York Times",
+            "Wall Street Feels New Tariff Tension"
+          ],
+          "count": 8
+        },
+        "claim_text": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+        "verification_date": "2025-11-29T08:53:01.826482"
+      }
+    },
+    {
+      "claim": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+      "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with more than 50 cases identified. In response, the South Carolina Department of Public Health launched pop-up clinics and mobile vaccine units in early November, offering free measles vaccines. However, turnout has been minimal; for example, only one person attended a clinic in Boiling Springs on a Monday afternoon. State epidemiologist Linda Bell noted the slow progress, indicating that public health officials had hoped for a much higher uptake. This situation highlights the \"chilling effect\" of vaccine misinformation, impeding efforts to contain the outbreak.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is uncertain. The provided fact-checking source is entirely irrelevant and offers no information regarding a measles outbreak in Spartanburg County, vaccine misinformation, or vaccination clinic turnout.",
+        "confidence": "high",
+        "reasoning": "Source 1 discusses Amazon selling medications online and the implications of early Covid-19 vaccine results. It contains no mention of a measles outbreak, Spartanburg County, the number of cases (50+), vaccine misinformation, or turnout at vaccination clinics. Therefore, there is no evidence to support or refute the claim.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqe7CfYdRAV3rMvo-TnZb7_0wt0jp7r5MU1-UmwOtNfHnFMdj_juDaK1&gaa_ts=692a6a9c&gaa_sig=TKKJ4M-HVDQwlSVRxi1JqJAXg9kvJ5-oBTO_bVzWHrHJRdI_2mjudtf3QGOtadgcRY0WAoDGcP5mMss_c7Vjsw%3D%3D"
+          ],
+          "titles": [
+            "Amazon Takes On Pharmacies By Selling Medications Online"
+          ],
+          "count": 1
+        },
+        "claim_text": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+        "verification_date": "2025-11-29T08:53:01.826482"
+      }
+    }
+  ],
+  "debunk_posts": [],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 4,
+    "debunk_posts_generated": 0,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T08:52:47.896497",
+          "total_posts": 4,
+          "posts_by_platform": {
+            "reddit": 4,
+            "threads": 0
+          },
+          "platforms": [
+            "reddit",
+            "twitter"
+          ],
+          "posts": [
+            {
+              "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "summary": "President Donald Trump announced his intention to grant a “Full and Complete pardon” to former Honduran President Juan Orlando Hernandez. Hernandez, extradited to the U.S. in 2024 and convicted in New York, is serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine into the United States, using Honduras’s government, military, and police to protect shipments. This announcement triggered swift outrage across social media, with critics, including conservative accounts and Rep. Joaquin Castro (D-TX), condemning the move and highlighting the severity of Hernandez's crimes, which reportedly include responsibility for the deaths of countless American citizens.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+            },
+            {
+              "claim": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+              "summary": "The Reddit post is a straightforward request from the user, indicated by its title, asking to hear from at least one person who regrets supporting former President Donald Trump. As a link post with no additional content or scraped external information, its primary purpose is to solicit comments and personal testimonies on this specific topic within the subreddit \"NoFilterNews\".",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/"
+            },
+            {
+              "claim": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+              "summary": "The Department of Justice (DOJ) has enacted a bill mandating the release of Jeffrey Epstein files, but the FBI is spending nearly $1 million in overtime on an \"Epstein Transparency Project\" (also called the \"Special Redaction Project\") to redact portions. Approximately 1,000 agents, tasked by FBI Director Kash Patel, worked over 4,737 hours between January and July, incurring $851,344 in overtime between March 17-22, according to a Bloomberg report. The review includes Epstein's 2019 prison death investigation, search warrant photos, and surveillance footage, with particular attention given to flagging mentions of Donald Trump, raising concerns that some evidence may remain hidden despite the transparency mandate.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+              "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with more than 50 cases identified. In response, the South Carolina Department of Public Health launched pop-up clinics and mobile vaccine units in early November, offering free measles vaccines. However, turnout has been minimal; for example, only one person attended a clinic in Boiling Springs on a Monday afternoon. State epidemiologist Linda Bell noted the slow progress, indicating that public health officials had hoped for a much higher uptake. This situation highlights the \"chilling effect\" of vaccine misinformation, impeding efforts to contain the outbreak.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "content_summary": "President Donald Trump announced his intention to grant a “Full and Complete pardon” to former Honduran President Juan Orlando Hernandez. Hernandez, extradited to the U.S. in 2024 and convicted in New York, is serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine into the ",
+              "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is uncertain. While one source indicates that Donald Trump has expressed plans to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, none of the provided sources offer any evidence to support the assertion that this pledge 'has sparked widespread outrage.'",
+                "confidence": "medium",
+                "reasoning": "Source 1 states, 'Trump says he plans to pardon former Honduran president serving drug' and refers to 'Honduras former President Juan Orlando Hernandez,' which supports the first part of the claim regarding Trump's pledge. The phrase 'serving drug' implies conviction for drug trafficking. However, none of the sources (1, 2, or 3) provide any information or evidence regarding 'widespread outrage' in response to this pledge.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                    "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                    "https://www.pbs.org/newshour/nation/tesla-shareholders-to-vote-on-pay-package-that-could-make-musk-a-trillionaire",
+                    "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                    "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working"
+                  ],
+                  "titles": [
+                    "News outlets including The New York Times and Newsmax say they ...",
+                    "Most Americans blame insurance profits and coverage denials ...",
+                    "Tesla shareholders to vote on pay package that could make Musk a ...",
+                    "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                    "Column: Several governments are destroying their own bank notes ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                "verification_date": "2025-11-29T08:53:01.826482"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage."
+              },
+              "verification_timestamp": "2025-11-29T08:53:21.081773"
+            },
+            {
+              "claim_text": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+              "content_summary": "The Reddit post is a straightforward request from the user, indicated by its title, asking to hear from at least one person who regrets supporting former President Donald Trump. As a link post with no additional content or scraped external information, its primary purpose is to solicit comments and ",
+              "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is uncertain. None of the provided fact-checking sources contain any information related to a Reddit post, individuals regretting supporting Donald Trump, or sharing such experiences.",
+                "confidence": "high",
+                "reasoning": "Sources 1, 2, and 3 discuss entirely unrelated topics: a podcast about hunting, sexual assault survivors, and personal regret about marriage and career, respectively. There is no mention of Reddit, Donald Trump, or political regret in any of the snippets, making it impossible to verify the claim with the given evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                    "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                    "https://www.theguardian.com/lifeandstyle/2023/apr/09/i-am-70-and-so-full-of-regret-about-my-husband-and-career-ask-philippa-perry",
+                    "https://www.theguardian.com/technology/2024/nov/30/why-i-regret-using-23andme-i-gave-up-my-dna-just-to-find-out-im-british",
+                    "https://www.theguardian.com/lifeandstyle/2023/jul/17/why-first-loves-shape-our-lives-for-ever-relationships-memories"
+                  ],
+                  "titles": [
+                    "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                    "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                    "I'm 70 and so full of regret about my husband and career | Marriage ...",
+                    "Why I regret using 23andMe: I gave up my DNA just to find out I'm ...",
+                    "'I have mourned her for decades': why first loves can shape our lives ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences.",
+                "verification_date": "2025-11-29T08:53:01.826482"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "This Reddit post is a direct request from the user for individuals who regret supporting Donald Trump to share their experiences."
+              },
+              "verification_timestamp": "2025-11-29T08:53:21.081773"
+            },
+            {
+              "claim_text": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+              "content_summary": "The Department of Justice (DOJ) has enacted a bill mandating the release of Jeffrey Epstein files, but the FBI is spending nearly $1 million in overtime on an \"Epstein Transparency Project\" (also called the \"Special Redaction Project\") to redact portions. Approximately 1,000 agents, tasked by FBI Di",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is uncertain. While one source confirms that the FBI flagged mentions of Donald Trump during its review of the Epstein files, there is no evidence in the provided sources to support the claims of nearly $1 million spent in overtime or that some evidence may remain hidden from the public.",
+                "confidence": "medium",
+                "reasoning": "Source 1 explicitly states that the F.B.I.'s review involved flagging 'any references to President Trump and other prominent figures' in the Epstein files, supporting a key part of the claim. However, none of the provided sources (1, 2, or 3) contain any information about the FBI spending 'nearly $1 million in overtime' for this process. Additionally, while Source 2 mentions 'mounting discontent over his administration's handling of the Jeffrey Epstein files,' neither source directly states or provides evidence that 'some evidence may remain hidden from the public' due to redaction or otherwise.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                    "https://customercenter.wsj.com/todaysPaper?gaa_at=eafs&gaa_n=AWEtsqeshtma5w_UWtI7nn7YzUvCq_dqgfQdFWJO0dp7OzunMyvfOXFpW9zb&gaa_ts=692a6a9c&gaa_sig=8BjRaLG4rqTLrBrKUOSAGkK0efMK8iZhWH3NO9mIbyZWqDl-Q-uCOQFCgJIetpNtrKycjQPIZ7hbupOjtkA-uA%3D%3D",
+                    "https://www.nytimes.com/2020/09/30/magazine/trump-voter-fraud.html",
+                    "https://www.wsj.com/public/resources/documents/Vx3RRq4AgP0ILswF4wQr-WSJNewsPaper-7-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqczBvmuIOaSXYeoSvHsNgklQEWjWkPwI2czXYbjPQTAH8Fs54mhVxpp&gaa_ts=692a6a9c&gaa_sig=5HIqTBFM52EmWbPGpevUDQ0JYkjLWV1cGWdrzx9m26YDy7zkOo2mCmJI52T7McDep69OC_d19FlbgT_nNrqgsw%3D%3D"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                    "Intel Executive's Residences Raided in Probe Over Secrets",
+                    "The Attack on Voting in the 2020 Elections - The New York Times",
+                    "Wall Street Feels New Tariff Tension"
+                  ],
+                  "count": 8
+                },
+                "claim_text": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public.",
+                "verification_date": "2025-11-29T08:53:01.826482"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "The FBI has spent nearly $1 million in overtime redacting Jeffrey Epstein files, specifically flagging mentions of Donald Trump during the review, while some evidence may remain hidden from the public."
+              },
+              "verification_timestamp": "2025-11-29T08:53:21.081773"
+            },
+            {
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+              "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with more than 50 cases identified. In response, the South Carolina Department of Public Health launched pop-up clinics and mobile vaccine units in early November, offering free measles vaccines. Howeve",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is uncertain. The provided fact-checking source is entirely irrelevant and offers no information regarding a measles outbreak in Spartanburg County, vaccine misinformation, or vaccination clinic turnout.",
+                "confidence": "high",
+                "reasoning": "Source 1 discusses Amazon selling medications online and the implications of early Covid-19 vaccine results. It contains no mention of a measles outbreak, Spartanburg County, the number of cases (50+), vaccine misinformation, or turnout at vaccination clinics. Therefore, there is no evidence to support or refute the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqe7CfYdRAV3rMvo-TnZb7_0wt0jp7r5MU1-UmwOtNfHnFMdj_juDaK1&gaa_ts=692a6a9c&gaa_sig=TKKJ4M-HVDQwlSVRxi1JqJAXg9kvJ5-oBTO_bVzWHrHJRdI_2mjudtf3QGOtadgcRY0WAoDGcP5mMss_c7Vjsw%3D%3D"
+                  ],
+                  "titles": [
+                    "Amazon Takes On Pharmacies By Selling Medications Online"
+                  ],
+                  "count": 1
+                },
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics.",
+                "verification_date": "2025-11-29T08:53:01.826482"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, with over 50 identified cases, is demonstrating the negative impact of vaccine misinformation, leading to low turnout at free vaccination clinics."
+              },
+              "verification_timestamp": "2025-11-29T08:53:21.081773"
+            }
+          ],
+          "summary": {
+            "total_claims": 4,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T08:53:21.096250",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": false,
+          "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "debunk_posts": [],
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_085335",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T08:53:35.572028",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_084925",
+    "created_at": "2025-11-29T08:53:35.572028",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "message": "No debunk posts to store"
+  }
+}

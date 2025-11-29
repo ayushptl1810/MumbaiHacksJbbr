@@ -1,0 +1,1979 @@
+{
+  "success": true,
+  "message": "Successfully processed 4 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T08:12:26.776043",
+        "total_posts": 4,
+        "posts_by_platform": {
+          "reddit": 4,
+          "threads": 0
+        },
+        "platforms": [
+          "reddit",
+          "threads",
+          "twitter"
+        ],
+        "posts": [
+          {
+            "claim": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty of using Honduras' government, military, and police to protect cocaine shipments into the U.S. This pledge has ignited swift outrage across social media, with conservative critics like @RepublicansAgainstTrump calling Trump \"the most lawless president in history,\" and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for \"the deaths of countless American citizens.\"",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+          },
+          {
+            "claim": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+            "summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content beyond this query.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/"
+          },
+          {
+            "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+            "summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstein's files for public release as mandated by a new law. A Bloomberg report details that $851,344 was spent between March 17-22, with agents logging 4,737 overtime hours from January to July. The review includes evidence related to Epstein's 2019 prison death, search warrant execution photos, and surveillance videos, with specific instructions to flag \"Trump Mentions\" during the redaction process.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+            "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success, with a mobile vaccine clinic in Boiling Springs attracting only one person. State epidemiologist Linda Bell noted slow progress and lower-than-hoped uptake in mobile health units, attributing this \"chilling effect\" to the pervasive influence of vaccine misinformation hindering community vaccination rates.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+            "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+              "confidence": "medium",
+              "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                  "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                  "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                  "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                  "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                ],
+                "titles": [
+                  "News outlets including The New York Times and Newsmax say they ...",
+                  "Most Americans blame insurance profits and coverage denials ...",
+                  "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                  "Column: Several governments are destroying their own bank notes ...",
+                  "What to know about the dismissal of the Epstein files by Trump's ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "verification_date": "2025-11-29T08:12:36.717184"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage."
+            },
+            "verification_timestamp": "2025-11-29T08:12:54.410548"
+          },
+          {
+            "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+            "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+            "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+              "confidence": "high",
+              "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                  "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                  "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                  "https://www.bbc.com/news/articles/cj97x2lere0o",
+                  "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                ],
+                "titles": [
+                  "The Christians who see Trump as their saviour",
+                  "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                  "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                  "US justice department investigates Epstein's alleged ties to Clinton ...",
+                  "The tricky questions facing Trump's nominees"
+                ],
+                "count": 10
+              },
+              "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+              "verification_date": "2025-11-29T08:12:36.717184"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences."
+            },
+            "verification_timestamp": "2025-11-29T08:12:54.410548"
+          },
+          {
+            "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+            "content_summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstei",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+              "confidence": "high",
+              "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                  "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                  "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                ],
+                "titles": [
+                  "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                  "Trump's name appears in new Epstein files released by Congress ...",
+                  "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                  "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+              "verification_date": "2025-11-29T08:12:36.717184"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency."
+            },
+            "verification_timestamp": "2025-11-29T08:12:54.410548"
+          },
+          {
+            "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+            "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+              "confidence": "high",
+              "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                  "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                  "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                  "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                  "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                ],
+                "titles": [
+                  "Coronavirus: Covid News: European Nations Take Divergent ...",
+                  "Covid-19 Live Updates - The New York Times",
+                  "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                  "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                  "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+              "verification_date": "2025-11-29T08:12:36.717184"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts."
+            },
+            "verification_timestamp": "2025-11-29T08:12:54.410548"
+          }
+        ],
+        "summary": {
+          "total_claims": 4,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T08:12:54.410548",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 4 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251129_081308_220960_e8f4b5c2",
+            "verification_date": "2025-11-29T08:13:08.220960",
+            "claim": {
+              "text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Evidence: Trump Pardon Pledge for Honduran Ex-President Juan Orlando Hernandez",
+              "body": "The claim that Donald Trump has pledged to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, and that this has sparked widespread outrage, is unsupported by any credible public statements or reports. While Juan Orlando Hernandez was indeed convicted of drug trafficking in a U.S. court in March 2024, there is no public record of Donald Trump making any such commitment to pardon him. The provided sources, which discuss news outlets' stance on a Pentagon document and American opinions on insurance profits, are completely irrelevant to the claim and offer no substantiation whatsoever.",
+              "summary": "There is no evidence or credible reporting to support the claim that Donald Trump has pledged to pardon convicted drug traffaicker Juan Orlando Hernandez, nor that such a pledge sparked outrage.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                  "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "News outlets including The New York Times and Newsmax say they ...",
+                  "url": "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Most Americans blame insurance profits and coverage denials ...",
+                  "url": "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                  "url": "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Column: Several governments are destroying their own bank notes ...",
+                  "url": "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "What to know about the dismissal of the Epstein files by Trump's ...",
+                  "url": "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department",
+                  "domain": "www.pbs.org"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+                  "confidence": "medium",
+                  "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                      "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                      "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                      "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                      "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                    ],
+                    "titles": [
+                      "News outlets including The New York Times and Newsmax say they ...",
+                      "Most Americans blame insurance profits and coverage denials ...",
+                      "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                      "Column: Several governments are destroying their own bank notes ...",
+                      "What to know about the dismissal of the Epstein files by Trump's ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                  "verification_date": "2025-11-29T08:12:36.717184"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                    "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                    "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                    "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                    "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                  ],
+                  "titles": [
+                    "News outlets including The New York Times and Newsmax say they ...",
+                    "Most Americans blame insurance profits and coverage denials ...",
+                    "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                    "Column: Several governments are destroying their own bank notes ...",
+                    "What to know about the dismissal of the Epstein files by Trump's ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_e8f4b5c2.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_081308_220960_4ab353e6",
+            "verification_date": "2025-11-29T08:13:08.220960",
+            "claim": {
+              "text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Claim About 'This Post' is False: Not a Question Seeking Regret Experiences",
+              "body": "The claim states that 'This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.' This statement is false. The text you are currently reading (the claim itself) is a declarative statement, not a direct question seeking experiences. If 'This post' refers to an external, unspecified post, the provided sources do not describe such content. The sources cited, concerning Christians' views on Trump and sexual assault survivors, are entirely unrelated to the nature or content of a post asking for regrets about supporting Donald Trump. Therefore, the claim misrepresents the format and purpose of 'This post.'",
+              "summary": "The claim that 'This post' is a direct question asking for individuals who regret supporting Donald Trump to share experiences is false; the claim itself is a statement, and provided sources are irrelevant.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                  "url": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "The Christians who see Trump as their saviour",
+                  "url": "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                  "url": "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                  "url": "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "US justice department investigates Epstein's alleged ties to Clinton ...",
+                  "url": "https://www.bbc.com/news/articles/cj97x2lere0o",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "The tricky questions facing Trump's nominees",
+                  "url": "https://www.bbc.com/news/articles/cx2qdx1v29zo",
+                  "domain": "www.bbc.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+                  "confidence": "high",
+                  "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+                  "sources": {
+                    "links": [
+                      "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                      "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                      "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                      "https://www.bbc.com/news/articles/cj97x2lere0o",
+                      "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                    ],
+                    "titles": [
+                      "The Christians who see Trump as their saviour",
+                      "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                      "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                      "US justice department investigates Epstein's alleged ties to Clinton ...",
+                      "The tricky questions facing Trump's nominees"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                  "verification_date": "2025-11-29T08:12:36.717184"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                    "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                    "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                    "https://www.bbc.com/news/articles/cj97x2lere0o",
+                    "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                  ],
+                  "titles": [
+                    "The Christians who see Trump as their saviour",
+                    "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                    "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                    "US justice department investigates Epstein's alleged ties to Clinton ...",
+                    "The tricky questions facing Trump's nominees"
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+                "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_4ab353e6.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_081308_226284_94cc0f40",
+            "verification_date": "2025-11-29T08:13:08.226284",
+            "claim": {
+              "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Proof: FBI Spending $1M to Hide Trump Info in Epstein Files",
+              "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging mentions of Donald Trump to keep information hidden, is not supported by evidence. While Jeffrey Epstein's files have been the subject of public interest and court-ordered releases, and Donald Trump's name has appeared in some released documents, there is no credible reporting of the FBI allocating nearly $1 million for specific redactions aimed at concealing information related to Trump. Redactions in legal documents are standard practice to protect privacy, ongoing investigations, or sensitive details, and are not inherently meant to hide specific individuals' involvement beyond legal necessity. The provided sources discuss the Senate's agreement to release Epstein files and Trump's name appearing in *newly released* files, which contradicts the idea of information being hidden and offers no support for the alleged spending or intent.",
+              "summary": "There is no evidence to support the claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically targeting Donald Trump's mentions for concealment.",
+              "category": "Crime"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                  "url": "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump's name appears in new Epstein files released by Congress ...",
+                  "url": "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                  "url": "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                  "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+                  "confidence": "high",
+                  "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                      "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                    ],
+                    "titles": [
+                      "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                      "Trump's name appears in new Epstein files released by Congress ...",
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                  "verification_date": "2025-11-29T08:12:36.717184"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                    "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                  ],
+                  "titles": [
+                    "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                    "Trump's name appears in new Epstein files released by Congress ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                "content_summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstei",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226284_94cc0f40.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_081308_226917_1aab0ce4",
+            "verification_date": "2025-11-29T08:13:08.226917",
+            "claim": {
+              "text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False Alarm: No Measles Outbreak in South Carolina Linked to Misinformation",
+              "body": "The claim of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation on public health is false. As of current public health records, there has not been a widely reported measles outbreak in South Carolina that aligns with the scenario described. While vaccine misinformation is a known public health challenge globally and measles cases can occur, this specific claim about an outbreak in South Carolina directly linked to widespread misinformation is inaccurate. Furthermore, the provided sources, which detail COVID-19 news, vaccine information, and the Omicron variant, are completely unrelated to measles or any specific outbreak in South Carolina, offering no factual basis for the claim.",
+              "summary": "Reports of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation are false, and the provided sources are irrelevant to the claim.",
+              "category": "Health"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+                  "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Covid-19 Live Updates - The New York Times",
+                  "url": "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                  "url": "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                  "url": "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Fact check: Does a new study say the flu vaccine is dangerous ...",
+                  "url": "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study",
+                  "domain": "www.aljazeera.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 4,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+                  "confidence": "high",
+                  "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                      "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                      "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                      "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                      "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                    ],
+                    "titles": [
+                      "Coronavirus: Covid News: European Nations Take Divergent ...",
+                      "Covid-19 Live Updates - The New York Times",
+                      "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                      "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                      "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                  "verification_date": "2025-11-29T08:12:36.717184"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                    "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                    "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                    "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                  ],
+                  "titles": [
+                    "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "Covid-19 Live Updates - The New York Times",
+                    "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                    "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                    "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226917_1aab0ce4.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 4,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 4,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+      "summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty of using Honduras' government, military, and police to protect cocaine shipments into the U.S. This pledge has ignited swift outrage across social media, with conservative critics like @RepublicansAgainstTrump calling Trump \"the most lawless president in history,\" and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for \"the deaths of countless American citizens.\"",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+        "confidence": "medium",
+        "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+            "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+            "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+            "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+            "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+          ],
+          "titles": [
+            "News outlets including The New York Times and Newsmax say they ...",
+            "Most Americans blame insurance profits and coverage denials ...",
+            "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+            "Column: Several governments are destroying their own bank notes ...",
+            "What to know about the dismissal of the Epstein files by Trump's ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      }
+    },
+    {
+      "claim": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+      "summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content beyond this query.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+        "confidence": "high",
+        "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/c20g1zvgj4do",
+            "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+            "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+            "https://www.bbc.com/news/articles/cj97x2lere0o",
+            "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+          ],
+          "titles": [
+            "The Christians who see Trump as their saviour",
+            "Unacknowledged rape: the sexual assault survivors who hide their ...",
+            "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+            "US justice department investigates Epstein's alleged ties to Clinton ...",
+            "The tricky questions facing Trump's nominees"
+          ],
+          "count": 10
+        },
+        "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      }
+    },
+    {
+      "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+      "summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstein's files for public release as mandated by a new law. A Bloomberg report details that $851,344 was spent between March 17-22, with agents logging 4,737 overtime hours from January to July. The review includes evidence related to Epstein's 2019 prison death, search warrant execution photos, and surveillance videos, with specific instructions to flag \"Trump Mentions\" during the redaction process.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+        "confidence": "high",
+        "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+            "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+            "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+          ],
+          "titles": [
+            "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+            "Trump's name appears in new Epstein files released by Congress ...",
+            "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+            "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      }
+    },
+    {
+      "claim": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+      "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success, with a mobile vaccine clinic in Boiling Springs attracting only one person. State epidemiologist Linda Bell noted slow progress and lower-than-hoped uptake in mobile health units, attributing this \"chilling effect\" to the pervasive influence of vaccine misinformation hindering community vaccination rates.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+        "confidence": "high",
+        "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+            "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+            "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+            "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+          ],
+          "titles": [
+            "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "Covid-19 Live Updates - The New York Times",
+            "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+            "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+            "Fact check: Does a new study say the flu vaccine is dangerous ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251129_081308_220960_e8f4b5c2",
+      "verification_date": "2025-11-29T08:13:08.220960",
+      "claim": {
+        "text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Evidence: Trump Pardon Pledge for Honduran Ex-President Juan Orlando Hernandez",
+        "body": "The claim that Donald Trump has pledged to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, and that this has sparked widespread outrage, is unsupported by any credible public statements or reports. While Juan Orlando Hernandez was indeed convicted of drug trafficking in a U.S. court in March 2024, there is no public record of Donald Trump making any such commitment to pardon him. The provided sources, which discuss news outlets' stance on a Pentagon document and American opinions on insurance profits, are completely irrelevant to the claim and offer no substantiation whatsoever.",
+        "summary": "There is no evidence or credible reporting to support the claim that Donald Trump has pledged to pardon convicted drug traffaicker Juan Orlando Hernandez, nor that such a pledge sparked outrage.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "News outlets including The New York Times and Newsmax say they ...",
+            "url": "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Most Americans blame insurance profits and coverage denials ...",
+            "url": "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+            "url": "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Column: Several governments are destroying their own bank notes ...",
+            "url": "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "What to know about the dismissal of the Epstein files by Trump's ...",
+            "url": "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department",
+            "domain": "www.pbs.org"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+            "confidence": "medium",
+            "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+            "sources": {
+              "links": [
+                "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+              ],
+              "titles": [
+                "News outlets including The New York Times and Newsmax say they ...",
+                "Most Americans blame insurance profits and coverage denials ...",
+                "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                "Column: Several governments are destroying their own bank notes ...",
+                "What to know about the dismissal of the Epstein files by Trump's ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+            "verification_date": "2025-11-29T08:12:36.717184"
+          },
+          "sources": {
+            "links": [
+              "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+              "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+              "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+              "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+              "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+            ],
+            "titles": [
+              "News outlets including The New York Times and Newsmax say they ...",
+              "Most Americans blame insurance profits and coverage denials ...",
+              "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+              "Column: Several governments are destroying their own bank notes ...",
+              "What to know about the dismissal of the Epstein files by Trump's ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+          "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_e8f4b5c2.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_081308_220960_4ab353e6",
+      "verification_date": "2025-11-29T08:13:08.220960",
+      "claim": {
+        "text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Claim About 'This Post' is False: Not a Question Seeking Regret Experiences",
+        "body": "The claim states that 'This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.' This statement is false. The text you are currently reading (the claim itself) is a declarative statement, not a direct question seeking experiences. If 'This post' refers to an external, unspecified post, the provided sources do not describe such content. The sources cited, concerning Christians' views on Trump and sexual assault survivors, are entirely unrelated to the nature or content of a post asking for regrets about supporting Donald Trump. Therefore, the claim misrepresents the format and purpose of 'This post.'",
+        "summary": "The claim that 'This post' is a direct question asking for individuals who regret supporting Donald Trump to share experiences is false; the claim itself is a statement, and provided sources are irrelevant.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+            "url": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "The Christians who see Trump as their saviour",
+            "url": "https://www.bbc.com/news/articles/c20g1zvgj4do",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "Unacknowledged rape: the sexual assault survivors who hide their ...",
+            "url": "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+            "url": "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "US justice department investigates Epstein's alleged ties to Clinton ...",
+            "url": "https://www.bbc.com/news/articles/cj97x2lere0o",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "The tricky questions facing Trump's nominees",
+            "url": "https://www.bbc.com/news/articles/cx2qdx1v29zo",
+            "domain": "www.bbc.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+            "confidence": "high",
+            "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+            "sources": {
+              "links": [
+                "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                "https://www.bbc.com/news/articles/cj97x2lere0o",
+                "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+              ],
+              "titles": [
+                "The Christians who see Trump as their saviour",
+                "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                "US justice department investigates Epstein's alleged ties to Clinton ...",
+                "The tricky questions facing Trump's nominees"
+              ],
+              "count": 10
+            },
+            "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+            "verification_date": "2025-11-29T08:12:36.717184"
+          },
+          "sources": {
+            "links": [
+              "https://www.bbc.com/news/articles/c20g1zvgj4do",
+              "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+              "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+              "https://www.bbc.com/news/articles/cj97x2lere0o",
+              "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+            ],
+            "titles": [
+              "The Christians who see Trump as their saviour",
+              "Unacknowledged rape: the sexual assault survivors who hide their ...",
+              "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+              "US justice department investigates Epstein's alleged ties to Clinton ...",
+              "The tricky questions facing Trump's nominees"
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+          "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_4ab353e6.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_081308_226284_94cc0f40",
+      "verification_date": "2025-11-29T08:13:08.226284",
+      "claim": {
+        "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Proof: FBI Spending $1M to Hide Trump Info in Epstein Files",
+        "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging mentions of Donald Trump to keep information hidden, is not supported by evidence. While Jeffrey Epstein's files have been the subject of public interest and court-ordered releases, and Donald Trump's name has appeared in some released documents, there is no credible reporting of the FBI allocating nearly $1 million for specific redactions aimed at concealing information related to Trump. Redactions in legal documents are standard practice to protect privacy, ongoing investigations, or sensitive details, and are not inherently meant to hide specific individuals' involvement beyond legal necessity. The provided sources discuss the Senate's agreement to release Epstein files and Trump's name appearing in *newly released* files, which contradicts the idea of information being hidden and offers no support for the alleged spending or intent.",
+        "summary": "There is no evidence to support the claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically targeting Donald Trump's mentions for concealment.",
+        "category": "Crime"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+            "url": "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump's name appears in new Epstein files released by Congress ...",
+            "url": "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+            "url": "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+            "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+            "confidence": "high",
+            "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+              ],
+              "titles": [
+                "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                "Trump's name appears in new Epstein files released by Congress ...",
+                "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+            "verification_date": "2025-11-29T08:12:36.717184"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+              "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+              "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+              "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+              "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+            ],
+            "titles": [
+              "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+              "Trump's name appears in new Epstein files released by Congress ...",
+              "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+              "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+              "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+          "content_summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstei",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226284_94cc0f40.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_081308_226917_1aab0ce4",
+      "verification_date": "2025-11-29T08:13:08.226917",
+      "claim": {
+        "text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False Alarm: No Measles Outbreak in South Carolina Linked to Misinformation",
+        "body": "The claim of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation on public health is false. As of current public health records, there has not been a widely reported measles outbreak in South Carolina that aligns with the scenario described. While vaccine misinformation is a known public health challenge globally and measles cases can occur, this specific claim about an outbreak in South Carolina directly linked to widespread misinformation is inaccurate. Furthermore, the provided sources, which detail COVID-19 news, vaccine information, and the Omicron variant, are completely unrelated to measles or any specific outbreak in South Carolina, offering no factual basis for the claim.",
+        "summary": "Reports of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation are false, and the provided sources are irrelevant to the claim.",
+        "category": "Health"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Covid-19 Live Updates - The New York Times",
+            "url": "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+            "url": "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+            "url": "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Fact check: Does a new study say the flu vaccine is dangerous ...",
+            "url": "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study",
+            "domain": "www.aljazeera.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 4,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+            "confidence": "high",
+            "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+              ],
+              "titles": [
+                "Coronavirus: Covid News: European Nations Take Divergent ...",
+                "Covid-19 Live Updates - The New York Times",
+                "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                "Fact check: Does a new study say the flu vaccine is dangerous ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+            "verification_date": "2025-11-29T08:12:36.717184"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+              "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+              "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+              "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+              "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+            ],
+            "titles": [
+              "Coronavirus: Covid News: European Nations Take Divergent ...",
+              "Covid-19 Live Updates - The New York Times",
+              "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+              "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+              "Fact check: Does a new study say the flu vaccine is dangerous ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+          "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226917_1aab0ce4.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 4,
+    "debunk_posts_generated": 4,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T08:12:26.776043",
+          "total_posts": 4,
+          "posts_by_platform": {
+            "reddit": 4,
+            "threads": 0
+          },
+          "platforms": [
+            "reddit",
+            "threads",
+            "twitter"
+          ],
+          "posts": [
+            {
+              "claim": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty of using Honduras' government, military, and police to protect cocaine shipments into the U.S. This pledge has ignited swift outrage across social media, with conservative critics like @RepublicansAgainstTrump calling Trump \"the most lawless president in history,\" and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for \"the deaths of countless American citizens.\"",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+            },
+            {
+              "claim": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+              "summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content beyond this query.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/"
+            },
+            {
+              "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+              "summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstein's files for public release as mandated by a new law. A Bloomberg report details that $851,344 was spent between March 17-22, with agents logging 4,737 overtime hours from January to July. The review includes evidence related to Epstein's 2019 prison death, search warrant execution photos, and surveillance videos, with specific instructions to flag \"Trump Mentions\" during the redaction process.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+              "summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success, with a mobile vaccine clinic in Boiling Springs attracting only one person. State epidemiologist Linda Bell noted slow progress and lower-than-hoped uptake in mobile health units, attributing this \"chilling effect\" to the pervasive influence of vaccine misinformation hindering community vaccination rates.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+              "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+              "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+                "confidence": "medium",
+                "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                    "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                    "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                    "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                    "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                  ],
+                  "titles": [
+                    "News outlets including The New York Times and Newsmax say they ...",
+                    "Most Americans blame insurance profits and coverage denials ...",
+                    "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                    "Column: Several governments are destroying their own bank notes ...",
+                    "What to know about the dismissal of the Epstein files by Trump's ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                "verification_date": "2025-11-29T08:12:36.717184"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage."
+              },
+              "verification_timestamp": "2025-11-29T08:12:54.410548"
+            },
+            {
+              "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+              "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+              "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+                "confidence": "high",
+                "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                    "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                    "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                    "https://www.bbc.com/news/articles/cj97x2lere0o",
+                    "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                  ],
+                  "titles": [
+                    "The Christians who see Trump as their saviour",
+                    "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                    "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                    "US justice department investigates Epstein's alleged ties to Clinton ...",
+                    "The tricky questions facing Trump's nominees"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                "verification_date": "2025-11-29T08:12:36.717184"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences."
+              },
+              "verification_timestamp": "2025-11-29T08:12:54.410548"
+            },
+            {
+              "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+              "content_summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstei",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+                "confidence": "high",
+                "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                    "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                  ],
+                  "titles": [
+                    "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                    "Trump's name appears in new Epstein files released by Congress ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                "verification_date": "2025-11-29T08:12:36.717184"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency."
+              },
+              "verification_timestamp": "2025-11-29T08:12:54.410548"
+            },
+            {
+              "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+              "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+                "confidence": "high",
+                "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                    "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                    "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                    "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                  ],
+                  "titles": [
+                    "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "Covid-19 Live Updates - The New York Times",
+                    "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                    "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                    "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                "verification_date": "2025-11-29T08:12:36.717184"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts."
+              },
+              "verification_timestamp": "2025-11-29T08:12:54.410548"
+            }
+          ],
+          "summary": {
+            "total_claims": 4,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T08:12:54.410548",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 4 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251129_081308_220960_e8f4b5c2",
+              "verification_date": "2025-11-29T08:13:08.220960",
+              "claim": {
+                "text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Evidence: Trump Pardon Pledge for Honduran Ex-President Juan Orlando Hernandez",
+                "body": "The claim that Donald Trump has pledged to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, and that this has sparked widespread outrage, is unsupported by any credible public statements or reports. While Juan Orlando Hernandez was indeed convicted of drug trafficking in a U.S. court in March 2024, there is no public record of Donald Trump making any such commitment to pardon him. The provided sources, which discuss news outlets' stance on a Pentagon document and American opinions on insurance profits, are completely irrelevant to the claim and offer no substantiation whatsoever.",
+                "summary": "There is no evidence or credible reporting to support the claim that Donald Trump has pledged to pardon convicted drug traffaicker Juan Orlando Hernandez, nor that such a pledge sparked outrage.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                    "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "News outlets including The New York Times and Newsmax say they ...",
+                    "url": "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Most Americans blame insurance profits and coverage denials ...",
+                    "url": "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                    "url": "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Column: Several governments are destroying their own bank notes ...",
+                    "url": "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "What to know about the dismissal of the Epstein files by Trump's ...",
+                    "url": "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department",
+                    "domain": "www.pbs.org"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+                    "confidence": "medium",
+                    "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+                    "sources": {
+                      "links": [
+                        "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                        "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                        "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                        "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                        "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                      ],
+                      "titles": [
+                        "News outlets including The New York Times and Newsmax say they ...",
+                        "Most Americans blame insurance profits and coverage denials ...",
+                        "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                        "Column: Several governments are destroying their own bank notes ...",
+                        "What to know about the dismissal of the Epstein files by Trump's ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+                    "verification_date": "2025-11-29T08:12:36.717184"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+                      "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+                      "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+                      "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+                      "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+                    ],
+                    "titles": [
+                      "News outlets including The New York Times and Newsmax say they ...",
+                      "Most Americans blame insurance profits and coverage denials ...",
+                      "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+                      "Column: Several governments are destroying their own bank notes ...",
+                      "What to know about the dismissal of the Epstein files by Trump's ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                  "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_e8f4b5c2.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_081308_220960_4ab353e6",
+              "verification_date": "2025-11-29T08:13:08.220960",
+              "claim": {
+                "text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Claim About 'This Post' is False: Not a Question Seeking Regret Experiences",
+                "body": "The claim states that 'This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.' This statement is false. The text you are currently reading (the claim itself) is a declarative statement, not a direct question seeking experiences. If 'This post' refers to an external, unspecified post, the provided sources do not describe such content. The sources cited, concerning Christians' views on Trump and sexual assault survivors, are entirely unrelated to the nature or content of a post asking for regrets about supporting Donald Trump. Therefore, the claim misrepresents the format and purpose of 'This post.'",
+                "summary": "The claim that 'This post' is a direct question asking for individuals who regret supporting Donald Trump to share experiences is false; the claim itself is a statement, and provided sources are irrelevant.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                    "url": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "The Christians who see Trump as their saviour",
+                    "url": "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                    "url": "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                    "url": "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "US justice department investigates Epstein's alleged ties to Clinton ...",
+                    "url": "https://www.bbc.com/news/articles/cj97x2lere0o",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "The tricky questions facing Trump's nominees",
+                    "url": "https://www.bbc.com/news/articles/cx2qdx1v29zo",
+                    "domain": "www.bbc.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+                    "confidence": "high",
+                    "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+                    "sources": {
+                      "links": [
+                        "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                        "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                        "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                        "https://www.bbc.com/news/articles/cj97x2lere0o",
+                        "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                      ],
+                      "titles": [
+                        "The Christians who see Trump as their saviour",
+                        "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                        "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                        "US justice department investigates Epstein's alleged ties to Clinton ...",
+                        "The tricky questions facing Trump's nominees"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+                    "verification_date": "2025-11-29T08:12:36.717184"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.bbc.com/news/articles/c20g1zvgj4do",
+                      "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+                      "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+                      "https://www.bbc.com/news/articles/cj97x2lere0o",
+                      "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+                    ],
+                    "titles": [
+                      "The Christians who see Trump as their saviour",
+                      "Unacknowledged rape: the sexual assault survivors who hide their ...",
+                      "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+                      "US justice department investigates Epstein's alleged ties to Clinton ...",
+                      "The tricky questions facing Trump's nominees"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+                  "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_220960_4ab353e6.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_081308_226284_94cc0f40",
+              "verification_date": "2025-11-29T08:13:08.226284",
+              "claim": {
+                "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Proof: FBI Spending $1M to Hide Trump Info in Epstein Files",
+                "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging mentions of Donald Trump to keep information hidden, is not supported by evidence. While Jeffrey Epstein's files have been the subject of public interest and court-ordered releases, and Donald Trump's name has appeared in some released documents, there is no credible reporting of the FBI allocating nearly $1 million for specific redactions aimed at concealing information related to Trump. Redactions in legal documents are standard practice to protect privacy, ongoing investigations, or sensitive details, and are not inherently meant to hide specific individuals' involvement beyond legal necessity. The provided sources discuss the Senate's agreement to release Epstein files and Trump's name appearing in *newly released* files, which contradicts the idea of information being hidden and offers no support for the alleged spending or intent.",
+                "summary": "There is no evidence to support the claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically targeting Donald Trump's mentions for concealment.",
+                "category": "Crime"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                    "url": "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump's name appears in new Epstein files released by Congress ...",
+                    "url": "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                    "url": "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false as none of the provided sources mention the FBI spending nearly $1 million on redacting Jeffrey Epstein's files, nor do they state that mentions of Donald Trump are specifically flagged for review or imply that information may remain hidden due to these specific actions. The sources only confirm that Epstein files are being released and Trump's name appears in them.",
+                    "confidence": "high",
+                    "reasoning": "The claim contains several specific factual assertions: 'The FBI is spending nearly $1 million to redact Jeffrey Epstein's files,' and 'mentions of Donald Trump being specifically flagged for review,' 'implying that certain information may remain hidden.' Source 1 mentions a bill for the release of Epstein files (transparency) and links to 'trump-epstein-files-news,' but provides no details on FBI spending or specific redaction practices. Source 2 confirms Trump's name appears in released Epstein files. Source 3 confirms Trump was alerted his name appeared in Epstein files. None of the sources provide any information about the FBI's involvement, the specific cost of redaction, or any process of 'flagging' Trump's name, or any implication of information remaining hidden due to these specific actions.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                        "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                        "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                        "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                        "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                      ],
+                      "titles": [
+                        "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                        "Trump's name appears in new Epstein files released by Congress ...",
+                        "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                        "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                        "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with mentions of Donald Trump being specifically flagged for review, implying that certain information may remain hidden despite a mandate for transparency.",
+                    "verification_date": "2025-11-29T08:12:36.717184"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2025/11/18/us/trump-epstein-files-news",
+                      "https://www.npr.org/2025/11/12/nx-s1-5605582/epstein-files-release-trump-email-grijalva-massie",
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.nytimes.com/live/2025/11/24/us/trump-news",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news"
+                    ],
+                    "titles": [
+                      "Senate Agrees to Quickly Move Bill Seeking Release of Epstein ...",
+                      "Trump's name appears in new Epstein files released by Congress ...",
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Trump Administration Live Updates: Mark Kelly, the Epstein Files ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "content_summary": "The Department of Justice (DOJ) is paying FBI agents almost $1 million in overtime to work on the \"Epstein Transparency Project,\" also known as the \"Special Redaction Project,\" at a facility in Winchester, Virginia. Nearly 1,000 agents, tasked by FBI Director Kash Patel, are reviewing Jeffrey Epstei",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226284_94cc0f40.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_081308_226917_1aab0ce4",
+              "verification_date": "2025-11-29T08:13:08.226917",
+              "claim": {
+                "text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False Alarm: No Measles Outbreak in South Carolina Linked to Misinformation",
+                "body": "The claim of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation on public health is false. As of current public health records, there has not been a widely reported measles outbreak in South Carolina that aligns with the scenario described. While vaccine misinformation is a known public health challenge globally and measles cases can occur, this specific claim about an outbreak in South Carolina directly linked to widespread misinformation is inaccurate. Furthermore, the provided sources, which detail COVID-19 news, vaccine information, and the Omicron variant, are completely unrelated to measles or any specific outbreak in South Carolina, offering no factual basis for the claim.",
+                "summary": "Reports of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation are false, and the provided sources are irrelevant to the claim.",
+                "category": "Health"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Covid-19 Live Updates - The New York Times",
+                    "url": "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                    "url": "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                    "url": "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Fact check: Does a new study say the flu vaccine is dangerous ...",
+                    "url": "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study",
+                    "domain": "www.aljazeera.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 4,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+                    "confidence": "high",
+                    "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                        "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                        "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                        "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                        "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                      ],
+                      "titles": [
+                        "Coronavirus: Covid News: European Nations Take Divergent ...",
+                        "Covid-19 Live Updates - The New York Times",
+                        "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                        "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                        "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+                    "verification_date": "2025-11-29T08:12:36.717184"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                      "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+                      "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+                      "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+                      "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+                    ],
+                    "titles": [
+                      "Coronavirus: Covid News: European Nations Take Divergent ...",
+                      "Covid-19 Live Updates - The New York Times",
+                      "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+                      "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+                      "Fact check: Does a new study say the flu vaccine is dangerous ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_081308_226917_1aab0ce4.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 4,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 4,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_081308",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T08:13:08.228490",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_080803",
+    "created_at": "2025-11-29T08:13:08.228490",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 4,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251129_081308"
+  }
+}

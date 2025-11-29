@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_081308_220960_e8f4b5c2",
+  "verification_date": "2025-11-29T08:13:08.220960",
+  "claim": {
+    "text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Evidence: Trump Pardon Pledge for Honduran Ex-President Juan Orlando Hernandez",
+    "body": "The claim that Donald Trump has pledged to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, and that this has sparked widespread outrage, is unsupported by any credible public statements or reports. While Juan Orlando Hernandez was indeed convicted of drug trafficking in a U.S. court in March 2024, there is no public record of Donald Trump making any such commitment to pardon him. The provided sources, which discuss news outlets' stance on a Pentagon document and American opinions on insurance profits, are completely irrelevant to the claim and offer no substantiation whatsoever.",
+    "summary": "There is no evidence or credible reporting to support the claim that Donald Trump has pledged to pardon convicted drug traffaicker Juan Orlando Hernandez, nor that such a pledge sparked outrage.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+        "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "News outlets including The New York Times and Newsmax say they ...",
+        "url": "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Most Americans blame insurance profits and coverage denials ...",
+        "url": "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+        "url": "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Column: Several governments are destroying their own bank notes ...",
+        "url": "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "What to know about the dismissal of the Epstein files by Trump's ...",
+        "url": "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department",
+        "domain": "www.pbs.org"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is partially supported but lacks evidence for the 'widespread outrage' aspect. Sources confirm Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, who is serving a drug trafficking sentence. However, none of the provided sources offer any information or evidence regarding whether this pledge has 'sparked widespread outrage'.",
+        "confidence": "medium",
+        "reasoning": "Sources 1 and 3 explicitly state that 'Trump says he plans to pardon former Honduran president serving drug trafficking sentence,' and both snippets clearly refer to Juan Orlando Hernandez. This verifies the first part of the claim (Trump's pledge to pardon Hernandez, a convicted drug trafficker). However, the crucial second part of the claim, 'has sparked widespread outrage,' is not mentioned or evidenced in any of the provided sources. Therefore, the claim cannot be fully verified as true or false.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+            "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+            "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+            "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+            "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+          ],
+          "titles": [
+            "News outlets including The New York Times and Newsmax say they ...",
+            "Most Americans blame insurance profits and coverage denials ...",
+            "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+            "Column: Several governments are destroying their own bank notes ...",
+            "What to know about the dismissal of the Epstein files by Trump's ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's pledge to pardon former Honduran president Juan Orlando Hernandez, a convicted drug trafficker, has sparked widespread outrage.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      },
+      "sources": {
+        "links": [
+          "https://www.pbs.org/newshour/politics/news-outlets-including-the-new-york-times-and-newsmax-say-they-wont-sign-pentagon-rules-document",
+          "https://www.pbs.org/newshour/politics/most-americans-blame-insurance-profits-and-coverage-denials-alongside-killer-in-unitedhealthcare-ceo-death-poll-finds",
+          "https://www.pbs.org/newshour/nation/medical-examiner-dismisses-doubts-about-epstein-autopsy",
+          "https://www.pbs.org/newshour/economy/column-governments-trashing-large-bank-notes-fight-corruption-working",
+          "https://www.pbs.org/newshour/politics/what-to-know-about-the-dismissal-of-the-epstein-files-by-trumps-justice-department"
+        ],
+        "titles": [
+          "News outlets including The New York Times and Newsmax say they ...",
+          "Most Americans blame insurance profits and coverage denials ...",
+          "Medical examiner dismisses doubts about Epstein autopsy | PBS ...",
+          "Column: Several governments are destroying their own bank notes ...",
+          "What to know about the dismissal of the Epstein files by Trump's ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+      "content_summary": "President Donald Trump announced his intent to issue a \"Full and Complete pardon\" to former Honduran president Juan Orlando Hernandez, who was extradited to the U.S. in 2024 and is currently serving a 45-year federal sentence for conspiring to traffic 400 tons of cocaine. Hernandez was found guilty ",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

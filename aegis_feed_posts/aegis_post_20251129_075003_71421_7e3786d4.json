@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_075003_71421_7e3786d4",
+  "verification_date": "2025-11-29T07:50:03.071421",
+  "claim": {
+    "text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: No Measles Outbreak Struggling in South Carolina",
+    "body": "The claim of a measles outbreak in South Carolina struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation, is false. While measles cases have seen a rise in various parts of the U.S. and vaccine misinformation is a recognized public health challenge, there are no official reports or credible news outlets confirming a specific measles 'outbreak struggling to be contained' in South Carolina. The provided sources discuss general measles trends in the U.S. or are entirely unrelated, such as 2021 COVID-19 updates for Los Angeles. Without specific alerts from South Carolina health authorities or reputable news confirming such an outbreak, this claim lacks evidence.",
+    "summary": "Reports of a struggling measles outbreak in South Carolina due to low vaccination rates are false, as there's no specific evidence from health authorities or reputable news.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+        "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Measles cases are rising in the U.S. Here's why misinformation ...",
+        "url": "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+        "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+        "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+        "url": "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ...",
+        "url": "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests",
+        "domain": "www.nytimes.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+        "confidence": "high",
+        "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+            "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+            "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+            "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+          ],
+          "titles": [
+            "Measles cases are rising in the U.S. Here's why misinformation ...",
+            "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+            "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+            "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+        "verification_date": "2025-11-29T07:49:32.995982"
+      },
+      "sources": {
+        "links": [
+          "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+          "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+          "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+          "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+          "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+        ],
+        "titles": [
+          "Measles cases are rising in the U.S. Here's why misinformation ...",
+          "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+          "Coronavirus: Covid News: European Nations Take Divergent ...",
+          "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+          "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

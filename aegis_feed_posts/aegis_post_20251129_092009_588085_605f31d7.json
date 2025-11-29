@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_092009_588085_605f31d7",
+  "verification_date": "2025-11-29T09:20:09.588085",
+  "claim": {
+    "text": "The post provides a list of countries purportedly having the \"most unattractive men\" in 2025.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Basis: Ranking 'Most Unattractive Men' by Country is Subjective & Flawed",
+    "body": "A claim refers to a post that purportedly lists countries with the 'most unattractive men' in 2025. This claim is verifiably false as attractiveness is inherently subjective, culturally influenced, and cannot be objectively measured or ranked across entire populations of countries, especially for a future year. Such lists are typically clickbait, based on no scientific methodology, and often promote discriminatory stereotypes. There is no legitimate or credible source that can compile such a ranking, and any attempt to do so is based on personal bias or sensationalism rather than fact.",
+    "summary": "The concept of objectively ranking countries by the 'most unattractive men' is subjective and without any credible basis, making any such list inherently flawed and false.",
+    "category": "Other"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post provides a list of countries purportedly having the \"most unattractive men\" in 2025.",
+        "url": "https://twitter.com/IndianGems_/status/1994377608671514812",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 6,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The post provides a list of countries purportedly having the \"most unattractive men\" in 2025.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The post provides a list of countries purportedly having the \"most unattractive men\" in 2025.",
+          "claim_context": "The post presents a subjective ranked list titled \"Countries with the most unattractive men in 2025.\" The list includes 17 countries, starting with Bangladesh, Pakistan, Egypt, Maldives, and Ethiopia in the top five, and also featuring countries such as the United States, China, and Spain.",
+          "claim_date": "2025-11-29T09:19:53.388711",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/IndianGems_/status/1994377608671514812",
+      "content_summary": "The post presents a subjective ranked list titled \"Countries with the most unattractive men in 2025.\" The list includes 17 countries, starting with Bangladesh, Pakistan, Egypt, Maldives, and Ethiopia in the top five, and also featuring countries such as the United States, China, and Spain.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

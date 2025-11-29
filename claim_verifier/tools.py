@@ -6,6 +6,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from .config import config
+import re
+import os
 
 
 class TextFactChecker:
@@ -20,26 +22,232 @@ class TextFactChecker:
         genai.configure(api_key=config.GEMINI_API_KEY)
         self.model = genai.GenerativeModel(config.GEMINI_MODEL)
         
+        # Initialize media verifiers (lazy loaded)
+        self._image_verifier = None
+        self._video_verifier = None
+        
         if not self.api_key:
             raise ValueError("Google Custom Search API key is required")
         if not self.search_engine_id:
             raise ValueError("Google Custom Search Engine ID (cx) is required")
     
-    async def verify(self, text_input: str, claim_context: str = "Unknown context", claim_date: str = "Unknown date") -> Dict[str, Any]:
+    @property
+    def image_verifier(self):
+        """Lazy load image verifier"""
+        if self._image_verifier is None:
+            try:
+                from image_verifier import ImageVerifier
+                self._image_verifier = ImageVerifier(api_key=getattr(config, 'SERP_API_KEY', None))
+                print("✅ Image verifier loaded successfully")
+            except Exception as e:
+                print(f"⚠️ Image verifier not available: {e}")
+                self._image_verifier = False  # Mark as unavailable
+        return self._image_verifier if self._image_verifier is not False else None
+    
+    @property
+    def video_verifier(self):
+        """Lazy load video verifier"""
+        if self._video_verifier is None:
+            try:
+                from video_verifier import VideoVerifier
+                self._video_verifier = VideoVerifier(api_key=getattr(config, 'SERP_API_KEY', None))
+                print("✅ Video verifier loaded successfully")
+            except Exception as e:
+                print(f"⚠️ Video verifier not available: {e}")
+                self._video_verifier = False  # Mark as unavailable
+        return self._video_verifier if self._video_verifier is not False else None
+    
+    def _detect_media_in_claim(self, claim_context: str, claim_data: Dict[str, Any] = None) -> Dict[str, Any]:
+        """
+        Detect if the claim involves media (images or videos)
+        
+        Args:
+            claim_context: The context text of the claim
+            claim_data: Additional claim data that might contain media URLs
+            
+        Returns:
+            Dictionary with media detection results
+        """
+        media_info = {
+            'has_media': False,
+            'media_type': None,
+            'media_urls': [],
+            'media_description': None
+        }
+        
+        # Check for media URLs in claim data
+        if claim_data:
+            # Check for direct media URLs
+            for key in ['url', 'link', 'media_url', 'image_url', 'video_url', 'post_url']:
+                if key in claim_data and claim_data[key]:
+                    url = claim_data[key]
+                    if self._is_image_url(url):
+                        media_info['has_media'] = True
+                        media_info['media_type'] = 'image'
+                        media_info['media_urls'].append(url)
+                    elif self._is_video_url(url):
+                        media_info['has_media'] = True
+                        media_info['media_type'] = 'video'
+                        media_info['media_urls'].append(url)
+            
+            # Check for content_source indicating media
+            if 'content_source' in claim_data:
+                source = claim_data['content_source']
+                if 'scraped' in source or 'image' in source.lower():
+                    media_info['has_media'] = True
+                    if not media_info['media_type']:
+                        media_info['media_type'] = 'image'
+        
+        # Check text content for media indicators
+        media_keywords = [
+            'image', 'photo', 'picture', 'video', 'footage', 'clip',
+            'screenshot', 'viral video', 'viral image', 'shows video',
+            'shows image', 'in the image', 'in the video', 'this video',
+            'this image', 'frame', 'visual'
+        ]
+        
+        text_lower = claim_context.lower()
+        if any(keyword in text_lower for keyword in media_keywords):
+            media_info['has_media'] = True
+            if 'video' in text_lower or 'footage' in text_lower or 'clip' in text_lower:
+                if not media_info['media_type']:
+                    media_info['media_type'] = 'video'
+                media_info['media_description'] = 'Text mentions video content'
+            elif 'image' in text_lower or 'photo' in text_lower or 'picture' in text_lower:
+                if not media_info['media_type']:
+                    media_info['media_type'] = 'image'
+                media_info['media_description'] = 'Text mentions image content'
+        
+        # Extract URLs from text
+        url_pattern = r'https?://[^\s<>"]+|www\.[^\s<>"]+'
+        found_urls = re.findall(url_pattern, claim_context)
+        for url in found_urls:
+            if self._is_image_url(url):
+                media_info['has_media'] = True
+                media_info['media_type'] = 'image'
+                media_info['media_urls'].append(url)
+            elif self._is_video_url(url):
+                media_info['has_media'] = True
+                media_info['media_type'] = 'video'
+                media_info['media_urls'].append(url)
+        
+        return media_info
+    
+    def _is_image_url(self, url: str) -> bool:
+        """Check if URL points to an image"""
+        if not url:
+            return False
+        url_lower = url.lower()
+        image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg']
+        image_domains = ['i.redd.it', 'imgur.com', 'i.imgur.com', 'pbs.twimg.com']
+        
+        return (any(url_lower.endswith(ext) for ext in image_extensions) or
+                any(domain in url_lower for domain in image_domains))
+    
+    def _is_video_url(self, url: str) -> bool:
+        """Check if URL points to a video"""
+        if not url:
+            return False
+        url_lower = url.lower()
+        video_extensions = ['.mp4', '.mov', '.avi', '.mkv', '.webm', '.m4v']
+        video_domains = ['youtube.com', 'youtu.be', 'vimeo.com', 'tiktok.com',
+                        'instagram.com', 'facebook.com', 'twitter.com', 'x.com']
+        
+        return (any(url_lower.endswith(ext) for ext in video_extensions) or
+                any(domain in url_lower for domain in video_domains))
+    
+    async def _verify_media_content(self, media_info: Dict[str, Any], claim_context: str, claim_date: str) -> Optional[Dict[str, Any]]:
+        """
+        Run media verification (image or video) as additional context
+        
+        Args:
+            media_info: Media detection information
+            claim_context: The claim context
+            claim_date: The claim date
+            
+        Returns:
+            Media verification results or None if no media or verifier unavailable
+        """
+        if not media_info.get('has_media'):
+            return None
+        
+        try:
+            media_type = media_info.get('media_type')
+            media_urls = media_info.get('media_urls', [])
+            
+            if media_type == 'image' and self.image_verifier:
+                print(f"🔍 Running image verification for additional context...")
+                # Use first image URL if available
+                image_url = media_urls[0] if media_urls else None
+                
+                result = await self.image_verifier.verify(
+                    image_url=image_url,
+                    claim_context=claim_context,
+                    claim_date=claim_date
+                )
+                
+                return {
+                    'media_type': 'image',
+                    'verification_result': result,
+                    'analysis_summary': result.get('summary') or result.get('message', 'Image analysis completed'),
+                    'verdict': result.get('verdict', 'uncertain'),
+                    'confidence': result.get('confidence', 'medium')
+                }
+            
+            elif media_type == 'video' and self.video_verifier:
+                print(f"🔍 Running video verification for additional context...")
+                # Use first video URL if available
+                video_url = media_urls[0] if media_urls else None
+                
+                result = await self.video_verifier.verify(
+                    video_url=video_url,
+                    claim_context=claim_context,
+                    claim_date=claim_date
+                )
+                
+                return {
+                    'media_type': 'video',
+                    'verification_result': result,
+                    'analysis_summary': result.get('message', 'Video analysis completed'),
+                    'verdict': result.get('verified', False),
+                    'details': result.get('details', {})
+                }
+            
+            else:
+                print(f"⚠️ Media detected but verifier not available for type: {media_type}")
+                return None
+                
+        except Exception as e:
+            print(f"⚠️ Media verification failed: {e}")
+            return None
+    
+    async def verify(self, text_input: str, claim_context: str = "Unknown context", claim_date: str = "Unknown date", claim_data: Dict[str, Any] = None) -> Dict[str, Any]:
         """
         Verify a textual claim using Google Custom Search API with fact-checking sites
+        Enhanced with optional media verification for additional context
         
         Args:
             text_input: The text claim to verify
             claim_context: Context about the claim
             claim_date: Date when the claim was made
+            claim_data: Additional claim data (may contain media URLs)
             
         Returns:
-            Dictionary containing verification results
+            Dictionary containing verification results with optional media analysis
         """
         try:
             print(f"Starting verification for: {text_input}")
-            # Search for fact-checked claims related to the input text
+            
+            # Step 1: Detect if claim involves media
+            media_info = self._detect_media_in_claim(claim_context, claim_data)
+            media_analysis = None
+            
+            # Step 2: Run media verification if media detected (as additional context)
+            if media_info.get('has_media'):
+                print(f"📸 Media detected: {media_info['media_type']} - Running additional media verification...")
+                media_analysis = await self._verify_media_content(media_info, claim_context, claim_date)
+            
+            # Step 3: Search for fact-checked claims related to the input text
             search_results = await self._search_claims(text_input)
             
             if not search_results:
@@ -58,14 +266,15 @@ class TextFactChecker:
                     "verification_date": claim_date
                 }
             
-            # Analyze the search results
-            analysis = self._analyze_results(search_results, text_input)
+            # Step 4: Analyze the search results (with media analysis as additional context)
+            analysis = self._analyze_results(search_results, text_input, media_analysis=media_analysis)
             
             # Extract source links for clean output
             source_links = [result.get("link", "") for result in search_results[:5] if result.get("link")]
             source_titles = [result.get("title", "") for result in search_results[:5] if result.get("title")]
             
-            return {
+            # Prepare final result
+            result = {
                 "verified": analysis["verified"],
                 "verdict": analysis["verdict"],
                 "message": analysis["message"],
@@ -79,6 +288,18 @@ class TextFactChecker:
                 "claim_text": text_input,
                 "verification_date": claim_date
             }
+            
+            # Include media analysis if available
+            if media_analysis:
+                result["media_analysis"] = {
+                    "type": media_analysis.get('media_type'),
+                    "summary": media_analysis.get('analysis_summary'),
+                    "verdict": media_analysis.get('verdict'),
+                    "confidence": media_analysis.get('confidence')
+                }
+                print(f"✅ Media analysis included: {media_analysis.get('media_type')} verification completed")
+            
+            return result
             
         except Exception as e:
             return {
@@ -98,7 +319,7 @@ class TextFactChecker:
         Verify multiple claims in a single batch using optimized Gemini processing
         
         Args:
-            claims_batch: List of claim dictionaries with keys: text_input, claim_context, claim_date
+            claims_batch: List of claim dictionaries with keys: text_input, claim_context, claim_date, original_content
             
         Returns:
             List of verification results for each claim
@@ -112,10 +333,26 @@ class TextFactChecker:
                 text_input = claim_data.get('text_input', '')
                 print(f"Searching for claim {i+1}/{len(claims_batch)}: {text_input[:50]}...")
                 
+                # Detect media in claim
+                claim_context = claim_data.get('claim_context', '')
+                original_content = claim_data.get('original_content', {})
+                media_info = self._detect_media_in_claim(claim_context, original_content)
+                
+                # Run media verification if detected
+                media_analysis = None
+                if media_info.get('has_media'):
+                    print(f"📸 Media detected in claim {i+1}: {media_info['media_type']} - Running verification...")
+                    media_analysis = await self._verify_media_content(
+                        media_info, 
+                        claim_context, 
+                        claim_data.get('claim_date', 'Unknown date')
+                    )
+                
                 search_results = await self._search_claims(text_input)
                 search_results_list.append({
                     'claim_data': claim_data,
-                    'search_results': search_results
+                    'search_results': search_results,
+                    'media_analysis': media_analysis
                 })
             
             # Batch analyze all claims with Gemini in a single call
@@ -126,9 +363,10 @@ class TextFactChecker:
             for i, (claim_item, analysis) in enumerate(zip(search_results_list, batch_analysis)):
                 claim_data = claim_item['claim_data']
                 search_results = claim_item['search_results']
+                media_analysis = claim_item.get('media_analysis')
                 
                 if not search_results:
-                    verification_results.append({
+                    result = {
                         "verified": False,
                         "verdict": "no_content",
                         "message": "No fact-checked information found for this claim",
@@ -141,14 +379,17 @@ class TextFactChecker:
                         },
                         "claim_text": claim_data.get('text_input', ''),
                         "verification_date": claim_data.get('claim_date', 'Unknown date')
-                    })
+                    }
+                    if media_analysis:
+                        result['media_analysis'] = media_analysis
+                    verification_results.append(result)
                     continue
                 
                 # Extract source links for clean output
                 source_links = [result.get("link", "") for result in search_results[:5] if result.get("link")]
                 source_titles = [result.get("title", "") for result in search_results[:5] if result.get("title")]
                 
-                verification_results.append({
+                result = {
                     "verified": analysis["verified"],
                     "verdict": analysis["verdict"],
                     "message": analysis["message"],
@@ -161,7 +402,13 @@ class TextFactChecker:
                     },
                     "claim_text": claim_data.get('text_input', ''),
                     "verification_date": claim_data.get('claim_date', 'Unknown date')
-                })
+                }
+                
+                # Add media analysis if available
+                if media_analysis:
+                    result['media_analysis'] = media_analysis
+                    
+                verification_results.append(result)
             
             print(f"Batch verification completed for {len(verification_results)} claims")
             return verification_results
@@ -305,13 +552,15 @@ Respond in this exact JSON format:
         except Exception as e:
             print(f"Failed to create alternative queries with LLM: {e}")
     
-    def _analyze_results(self, results: List[Dict[str, Any]], original_text: str) -> Dict[str, Any]:
+    def _analyze_results(self, results: List[Dict[str, Any]], original_text: str, media_analysis: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Analyze the search results using Gemini AI to determine overall verdict
+        Enhanced with optional media analysis as additional context
         
         Args:
             results: List of search results from the API
             original_text: The original text being verified
+            media_analysis: Optional media verification results (image/video analysis)
             
         Returns:
             Analysis results including verdict and message
@@ -344,9 +593,9 @@ Respond in this exact JSON format:
                 "message": "No relevant fact-checked information found for this specific claim"
             }
         
-        # Use Gemini to analyze the results
+        # Use Gemini to analyze the results (with media analysis as additional context)
         try:
-            analysis = self._analyze_with_gemini(original_text, relevant_results)
+            analysis = self._analyze_with_gemini(original_text, relevant_results, media_analysis=media_analysis)
             return analysis
         except Exception as e:
             print(f"Gemini analysis failed: {str(e)}")
@@ -499,13 +748,15 @@ Respond in this exact JSON format:
         
         return 0.0
     
-    def _analyze_with_gemini(self, original_text: str, results: List[Dict[str, Any]]) -> Dict[str, Any]:
+    def _analyze_with_gemini(self, original_text: str, results: List[Dict[str, Any]], media_analysis: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Use Gemini AI to analyze fact-check results and determine verdict
+        Enhanced with optional media analysis as additional context
         
         Args:
             original_text: The original claim being verified
             results: List of relevant search results
+            media_analysis: Optional media verification results for additional context
             
         Returns:
             Analysis results with verdict and message
@@ -518,10 +769,29 @@ Respond in this exact JSON format:
             link = result.get("link", "")
             results_text += f"{i}. Title: {title}\n   Snippet: {snippet}\n   Link: {link}\n\n"
         
-        prompt = f"""
-You are a fact-checking expert. Analyze the following claim against the provided fact-checking sources.
+        # Add media analysis section if available
+        media_context = ""
+        if media_analysis:
+            media_type = media_analysis.get('media_type', 'unknown')
+            media_summary = media_analysis.get('analysis_summary', 'No summary available')
+            media_verdict = media_analysis.get('verdict', 'uncertain')
+            media_confidence = media_analysis.get('confidence', 'unknown')
+            
+            media_context = f"""
 
-CLAIM TO VERIFY: "{original_text}"
+ADDITIONAL CONTEXT - {media_type.upper()} VERIFICATION:
+The claim involves {media_type} content. An independent {media_type} verification analysis was performed:
+- Verdict: {media_verdict}
+- Confidence: {media_confidence}
+- Analysis: {media_summary}
+
+This {media_type} analysis provides additional context but should be considered alongside the fact-checking sources below.
+"""
+        
+        prompt = f"""
+You are a fact-checking expert. Analyze the following claim against the provided fact-checking sources and any additional context.
+
+CLAIM TO VERIFY: "{original_text}"{media_context}
 
 FACT-CHECKING SOURCES:
 {results_text}
@@ -603,10 +873,17 @@ INSTRUCTIONS:
             for i, item in enumerate(search_results_list, 1):
                 claim_data = item['claim_data']
                 search_results = item['search_results']
+                media_analysis = item.get('media_analysis')
                 claim_text = claim_data.get('text_input', f'Claim {i}')
                 
                 claims_text += f"\n--- CLAIM {i} ---\n"
                 claims_text += f"CLAIM TO VERIFY: \"{claim_text}\"\n\n"
+                
+                # Add media analysis as additional context
+                if media_analysis:
+                    claims_text += "ADDITIONAL CONTEXT - MEDIA ANALYSIS:\n"
+                    claims_text += f"Media Type: {media_analysis.get('media_type', 'Unknown')}\n"
+                    claims_text += f"Summary: {media_analysis.get('summary', 'No summary available')}\n\n"
                 
                 if search_results:
                     claims_text += "FACT-CHECKING SOURCES:\n"

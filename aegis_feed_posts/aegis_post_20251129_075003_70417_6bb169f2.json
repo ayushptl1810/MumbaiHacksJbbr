@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_075003_70417_6bb169f2",
+  "verification_date": "2025-11-29T07:50:03.070417",
+  "claim": {
+    "text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: No Credible Pledge from Trump to Pardon Honduran Ex-President",
+    "body": "Claims circulating that Donald Trump has pledged to pardon Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking, are unfounded. There is no credible evidence from reputable news organizations or official statements to support such a promise from Donald Trump. The sources provided alongside this claim are entirely unrelated, discussing topics like Capitol riot participants and asylum claim decisions, offering no relevance or support for the alleged pardon pledge. Juan Orlando Hernandez was indeed convicted in a U.S. court, but reports of a pardon pledge from Trump lack any verifiable basis.",
+    "summary": "Donald Trump has not credibly pledged to pardon former Honduran President Juan Orlando Hernandez; reports of such a promise are unsupported by evidence.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+        "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+        "url": "https://www.bbc.com/news/articles/c5y7l47xrpko",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "US halts all asylum claim decisions in wake of National Guard ...",
+        "url": "https://www.bbc.com/news/articles/cdxweyy157go",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Drug crackdown or regime change - what is Trump's goal in ...",
+        "url": "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Democrats who told troops to disobey illegal orders push back on ...",
+        "url": "https://www.bbc.com/news/articles/cze832dr2n0o",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "US launches wave of air strikes on Yemen's Houthis",
+        "url": "https://www.bbc.com/news/articles/c05mvr3j3yro",
+        "domain": "www.bbc.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+        "confidence": "medium",
+        "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/c5y7l47xrpko",
+            "https://www.bbc.com/news/articles/cdxweyy157go",
+            "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+            "https://www.bbc.com/news/articles/cze832dr2n0o",
+            "https://www.bbc.com/news/articles/c05mvr3j3yro"
+          ],
+          "titles": [
+            "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+            "US halts all asylum claim decisions in wake of National Guard ...",
+            "Drug crackdown or regime change - what is Trump's goal in ...",
+            "Democrats who told troops to disobey illegal orders push back on ...",
+            "US launches wave of air strikes on Yemen's Houthis"
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+        "verification_date": "2025-11-29T07:49:32.995982"
+      },
+      "sources": {
+        "links": [
+          "https://www.bbc.com/news/articles/c5y7l47xrpko",
+          "https://www.bbc.com/news/articles/cdxweyy157go",
+          "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+          "https://www.bbc.com/news/articles/cze832dr2n0o",
+          "https://www.bbc.com/news/articles/c05mvr3j3yro"
+        ],
+        "titles": [
+          "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+          "US halts all asylum claim decisions in wake of National Guard ...",
+          "Drug crackdown or regime change - what is Trump's goal in ...",
+          "Democrats who told troops to disobey illegal orders push back on ...",
+          "US launches wave of air strikes on Yemen's Houthis"
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+      "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

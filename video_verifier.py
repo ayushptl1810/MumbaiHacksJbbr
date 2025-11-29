@@ -8,8 +8,13 @@ import subprocess
 import json
 import asyncio
 
-from .image_verifier import ImageVerifier
-from .youtube_api import YouTubeDataAPI
+from image_verifier import ImageVerifier
+try:
+    from youtube_api import YouTubeDataAPI
+    YOUTUBE_API_AVAILABLE = True
+except ImportError:
+    YOUTUBE_API_AVAILABLE = False
+    print("Warning: youtube_api not available - YouTube verification will be limited")
 from config import config
 import time
 
@@ -28,8 +33,8 @@ class VideoVerifier:
         # Initialize image verifier for frame analysis
         self.image_verifier = ImageVerifier(api_key)
         
-        # Initialize YouTube Data API client
-        self.youtube_api = YouTubeDataAPI(api_key)
+        # Initialize YouTube Data API client (optional)
+        self.youtube_api = YouTubeDataAPI(api_key) if YOUTUBE_API_AVAILABLE else None
         
         # Video processing parameters
         self.frame_interval = 4  # Extract frame every 4 seconds

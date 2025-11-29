@@ -1,0 +1,1318 @@
+{
+  "success": true,
+  "message": "Successfully processed 11 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T09:04:28.615265",
+        "total_posts": 11,
+        "posts_by_platform": {
+          "reddit": 0,
+          "threads": 0
+        },
+        "platforms": [
+          "twitter"
+        ],
+        "posts": [
+          {
+            "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+            "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post claims the groom was killed defending his land, asserting that Israeli occupation forces turned a day of joy into a day of tragedy.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957"
+          },
+          {
+            "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+            "summary": "Two Palestinian solidarity activists were reportedly abducted by Israeli settlers and occupation forces tonight in Tuwani, southern occupied West Bank. The post states that settlers from the Havat Maon outpost, disguised in Israeli military uniforms, intercepted the activists on a public road.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089"
+          },
+          {
+            "claim": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+            "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which the post attributes to being already weakened after two years of continuous Israeli airstrikes and bombardments.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077"
+          },
+          {
+            "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+            "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post claims he was violently assaulted and his home was vandalized prior to his detention.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322"
+          },
+          {
+            "claim": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "summary": "Israeli settlers who reportedly breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634"
+          },
+          {
+            "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+            "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178"
+          },
+          {
+            "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+            "summary": "Following an event described as an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp are depicted as continuing to shoulder the burden of survival and protection for their families and community in a place still reeling from destruction and loss.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289"
+          },
+          {
+            "claim": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+            "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336"
+          },
+          {
+            "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+            "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was reportedly taken to secure a settler incursion into the area.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312"
+          },
+          {
+            "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+            "summary": "Israeli National Security Minister Itamar Ben-Gvir reportedly moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin, even as UN officials demand a full probe into what they describe as a summary execution.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205"
+          },
+          {
+            "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+            "summary": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and what the post describes as the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 11 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+            "content_summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post claims the groom was killed defending his land, asserting that Israeli occupation forces turned a day of joy into a day of tragedy.",
+            "source": "https://twitter.com/QudsNen/status/1994506855725633957",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking source is an Al Jazeera sitemap and does not contain any information about Hassan Mohammad Abdul-Razzaq al-Saadi, his death, or the alleged circumstances in Beit Jann, Syria. Therefore, the claim cannot be verified.",
+              "confidence": "high",
+              "reasoning": "The source provided (Al Jazeera sitemap) is a list of tags and names, and the name 'Hassan Mohammad Abdul-Razzaq al-Saadi' is not present. The snippet offers no details relevant to the claim, making it impossible to confirm or deny.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/sitemap"
+                ],
+                "titles": [
+                  "Site Map | Al Jazeera"
+                ],
+                "count": 1
+              },
+              "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+            "content_summary": "Two Palestinian solidarity activists were reportedly abducted by Israeli settlers and occupation forces tonight in Tuwani, southern occupied West Bank. The post states that settlers from the Havat Maon outpost, disguised in Israeli military uniforms, intercepted the activists on a public road.",
+            "source": "https://twitter.com/QudsNen/status/1994550317271204089",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While the sources confirm the presence of Israeli settlers and occupation forces in the West Bank and mention settler attacks on Palestinians, none of the snippets specifically corroborate the abduction of 'two Palestinian solidarity activists' in 'Tuwani, southern occupied West Bank.' The information provided is too general to verify the specific event detailed in the claim.",
+              "confidence": "medium",
+              "reasoning": "Source 1 discusses Israeli settlers in the West Bank, Source 2 mentions Israeli activists showing solidarity with Palestinians, and Source 3 notes settler attacks on Palestinians in the West Bank. However, none of these snippets contain information about an abduction of two solidarity activists in Tuwani, southern occupied West Bank. The claim's specific details are not supported.",
+              "sources": {
+                "links": [
+                  "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+                  "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+                  "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqcRhRHwcPrKM2Rieq0IefPgjWouH0JsIYjQ-dyO_MNRH76ZUTvz_X3L&gaa_ts=692a6d58&gaa_sig=FusHuncMjrIE1927Rd2YB7TiHY3gZCKAxCa8LG29MrAJ3-fO4DLNWCBk1Zdv9OGdT53IcVGlXtpkV-3nUNbaMw%3D%3D"
+                ],
+                "titles": [
+                  "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+                  "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+                  "War Shifts Global Dynamics"
+                ],
+                "count": 3
+              },
+              "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+            "content_summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which the post attributes to being already weakened after two years of continuous Israeli airstrikes and bombardments.",
+            "source": "https://twitter.com/QudsNen/status/1994566809412948077",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim states that surgical operating rooms in Gaza's hospitals were flooded. However, the provided sources discuss flooding events in the West Midlands (UK) and London (UK) at different hospitals, and one source is entirely irrelevant. None of the sources provide any information about flooding in Gaza's hospitals.",
+              "confidence": "high",
+              "reasoning": "Source 1 details heavy rain and flooding in the UK's West Midlands. Source 2 describes flooding at Whipps Cross Hospital in London. Source 3 is an irrelevant New York Times author page. There is no mention of Gaza, its hospitals, or any flooding there in any of the provided sources.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/articles/cp31ggzqn3zo",
+                  "https://www.bbc.com/news/uk-england-london-57971381",
+                  "https://www.nytimes.com/by/nailah-morgan?page=9",
+                  "https://www.bbc.com/news/articles/c99ry7x925eo",
+                  "https://www.bbc.com/news/uk-england-55795526"
+                ],
+                "titles": [
+                  "Heavy rain and snow causes disruption across West Midlands",
+                  "Whipps Cross Hospital patients evacuated after flooding",
+                  "Nailah Morgan - Page 9 - The New York Times",
+                  "Spain flood death toll expected to rise as dozens missing",
+                  "Coronavirus and flooding: Shropshire and Worcestershire ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+            "content_summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post claims he was violently assaulted and his home was vandalized prior to his detention.",
+            "source": "https://twitter.com/QudsNen/status/1994555805300134322",
+            "verification": {
+              "verified": false,
+              "verdict": "no_content",
+              "message": "No fact-checked information found for this claim",
+              "confidence": "low",
+              "reasoning": "No reliable sources found to verify this claim",
+              "sources": {
+                "links": [],
+                "titles": [],
+                "count": 0
+              },
+              "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "content_summary": "Israeli settlers who reportedly breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "source": "https://twitter.com/QudsNen/status/1994541231834378634",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "One source confirms Israeli military monitoring and activity near the Syrian border, which provides geographic context. However, none of the sources provide any evidence of Israeli settlers breaching the border, releasing a video, or declaring an intention to establish a new settlement in Quneitra. The specific details of the claim are not corroborated.",
+              "confidence": "medium",
+              "reasoning": "Source 1 mentions Israeli forces monitoring events in Syria near the border. Sources 2 and 3 are irrelevant. While Israeli presence and border monitoring are noted, there is no information about settlers breaching the border, creating a video, or establishing a new settlement, which are key components of the claim.",
+              "sources": {
+                "links": [
+                  "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+                  "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqcnbH7KomXDTAgGcrFwkVlRW-8J0c54qM2anyr5aLGIyplcKas5Ahue&gaa_ts=692a6d5f&gaa_sig=K_6JBt2Qf5MKbZxqpFCjAN8OONT6Utw6oFOT3MiIKQ9545YTJWnZ9-6eUXK_SSMNzmcQOKOXUPi0bY_h3_4jsQ%3D%3D",
+                  "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+                ],
+                "titles": [
+                  "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+                  "Trump Pares Tariffs as Stocks Plunge",
+                  "Daily Maverick Top Read Summaries"
+                ],
+                "count": 3
+              },
+              "claim_text": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 4,
+              "extracted_claim": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+            "content_summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "source": "https://twitter.com/QudsNen/status/1994518249724416178",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The sources confirm the existence of Palestinian detainees and Israeli forces' actions involving Palestinians. One source lists individuals with similar names (Ramadan, Jum'a) but in a different context (children killed in Gaza). However, none of the sources specifically mention the abduction of 'former Palestinian detainee Jum’a Ramadan' from 'Zeita Jamma’in, south of Nablus.' Therefore, the specific event cannot be verified.",
+              "confidence": "medium",
+              "reasoning": "Source 1 lists Palestinian children killed in Gaza, including names like 'Ramadan' and 'Jum'a,' but not the specific individual or context of the claim. Source 2 broadly mentions Israeli forces shooting Palestinians. Source 3 discusses Palestinian prisoners. While relevant terms appear, the specific details of the abduction of Jum'a Ramadan from Zeita Jamma'in are not found in any of the snippets.",
+              "sources": {
+                "links": [
+                  "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                  "https://www.theguardian.com/world/2025/aug/20/malaysian-state-threatens-to-jail-muslim-men-who-skip-friday-prayers",
+                  "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+                ],
+                "titles": [
+                  "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                  "Malaysian state threatens to jail Muslim men who skip Friday ...",
+                  "Full list: The Palestinian prisoners | News | Al Jazeera"
+                ],
+                "count": 3
+              },
+              "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 5,
+              "extracted_claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+            "content_summary": "Following an event described as an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp are depicted as continuing to shoulder the burden of survival and protection for their families and community in a place still reeling from destruction and loss.",
+            "source": "https://twitter.com/QudsNen/status/1994535023760859289",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources confirm an Israeli attack on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, which killed at least 13 people. This aligns with the description of a 'massacre.' While the sources do not explicitly state 'women continue to bear the burden of survival and protection,' this is a plausible consequence of such an event in a refugee camp.",
+              "confidence": "high",
+              "reasoning": "Source 1 explicitly states 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13...' and 'The attack killed people living in Ain al-Hilweh' on 'Nov 18, 2025'. Source 3 reiterates this, 'Israeli attack on Palestinian refugee camp in Lebanon kills at least 13' on 'Nov 18, 2025'. Source 2 mentions an earlier attack on Ein el-Hilweh. The core event of an Israeli attack leading to multiple deaths in Ain al-Hilweh on the specified date is strongly corroborated.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+                  "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+                  "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+                  "https://www.bbc.com/news/articles/c0l73j781y9o",
+                  "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon"
+                ],
+                "titles": [
+                  "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+                  "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+                  "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+                  "Lebanon says Israeli strike killed 13 people near Palestinian ...",
+                  "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera"
+                ],
+                "count": 10
+              },
+              "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 6,
+              "extracted_claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+            "content_summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+            "source": "https://twitter.com/QudsNen/status/1994495159300493336",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The sources discuss Palestinian children killed in Gaza and mention individuals with the surname 'Badwan.' However, none of the sources identify a Palestinian child specifically named 'Ahmed Mohammad Badwan' who died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip. A 'Muhammad Izzat Badwan' was mentioned but was detained and released, not deceased.",
+              "confidence": "high",
+              "reasoning": "Source 1 lists Palestinian children killed in Gaza but does not include 'Ahmed Mohammad Badwan.' Source 2 mentions other deaths in Gaza but not this specific individual. Source 3 mentions a 'Muhammad Izzat Badwan' who was detained and released, which contradicts the claim of death and specific name. The claim's details regarding the child's full name and cause of death are not supported.",
+              "sources": {
+                "links": [
+                  "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                  "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+                  "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+                  "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank",
+                  "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead"
+                ],
+                "titles": [
+                  "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                  "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+                  "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+                  "Five Palestinians killed by Israeli forces in occupied West Bank ...",
+                  "Gaza under siege: naming the dead | Human Rights News | Al Jazeera"
+                ],
+                "count": 10
+              },
+              "claim_text": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 7,
+              "extracted_claim": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+            "content_summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was reportedly taken to secure a settler incursion into the area.",
+            "source": "https://twitter.com/QudsNen/status/1994492626259546312",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The sources confirm the presence of Israeli forces in Hebron and report incidents involving Palestinian women. However, none of the snippets provide specific details about a 'pregnant woman' being prevented from leaving her home in 'Ras Cemetery' (a highly specific location) to secure a 'settler incursion.' The claim lacks specific corroboration.",
+              "confidence": "medium",
+              "reasoning": "Sources 1, 2, and 3 all confirm Israeli army presence and incidents involving Palestinian women and Israeli forces near Hebron. However, none of the snippets mention a pregnant woman, the specific location 'Ras Cemetery,' or the stated purpose of 'securing a settler incursion.' The general context is there, but the specific event is not detailed.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2016/6/24/israel-kills-palestinian-woman-in-occupied-west-bank",
+                  "https://www.aljazeera.com/news/2015/9/22/young-palestinian-woman-shot-by-israeli-forces-dies",
+                  "https://www.theguardian.com/world/2016/mar/25/un-envoy-condemns-palestinian-killing-by-israeli-soldier-hebron",
+                  "https://www.aljazeera.com/news/liveblog/2025/1/25/live-israel-hamas-exchange-of-gaza-captives-for-jailed-palestinians-due",
+                  "https://www.aljazeera.com/news/2024/4/21/two-palestinians-shot-dead-as-israel-continues-deadly-raids-in-west-bank"
+                ],
+                "titles": [
+                  "Israel kills Palestinian woman in occupied West Bank | Conflict ...",
+                  "Young Palestinian woman shot by Israeli forces dies | Occupied ...",
+                  "UN envoy condemns Palestinian attacker's 'gruesome' killing by ...",
+                  "Updates: Israel raids homes of freed Palestinians, shoots at Gaza ...",
+                  "Three Palestinians killed in West Bank as Israel continues raids ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 8,
+              "extracted_claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+            "content_summary": "Israeli National Security Minister Itamar Ben-Gvir reportedly moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin, even as UN officials demand a full probe into what they describe as a summary execution.",
+            "source": "https://twitter.com/QudsNen/status/1994526267966984205",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The source confirms Itamar Ben-Gvir's position as Israeli National Security Minister and his far-right political stance. However, it does not provide any evidence that he 'moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin' or that there were 'UN demands for a full probe.' The specific action claimed is not supported by the snippet.",
+              "confidence": "medium",
+              "reasoning": "Source 1 confirms Itamar Ben-Gvir's role as National Security Minister and his political leanings. This provides context but does not mention any actions by him to stop an investigation concerning soldiers, specific killings in Jenin, or UN demands for a probe, which are central to the claim.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/features/2024/7/19/how-israeli-settlements-are-taking-over-the-west-bank-as-gaza-war-rages"
+                ],
+                "titles": [
+                  "How Israeli settlements are taking over the West Bank as Gaza war ..."
+                ],
+                "count": 1
+              },
+              "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 9,
+              "extracted_claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          },
+          {
+            "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+            "content_summary": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and what the post describes as the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+            "source": "https://twitter.com/QudsNen/status/1994493332479701417",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The sources confirm that demonstrations took place in Milan, Italy, on specific dates in 2025. One source mentions the 'Israeli offensive in Rafah.' However, none of the snippets explicitly state that these Milan demonstrations were part of a 'general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.' The specific reasons for the protest are not corroborated.",
+              "confidence": "medium",
+              "reasoning": "Sources 1 and 3 confirm demonstrations in Milan, Italy, on Feb 26, 2025, and Apr 7, 2025, respectively. Source 2 mentions an 'Israeli offensive in Rafah, southern Gaza Strip.' While protests in Milan and the Gaza conflict are noted, the snippets (which are from image sitemaps) do not provide the detailed reasons for the Milan demonstrations as listed in the claim.",
+              "sources": {
+                "links": [
+                  "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                  "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqep-p7BxZuw9HnAidjxh-x-mGq6ttSu2hh4YFKXXhgKM7cKTWYvVxbe&gaa_ts=692a6d85&gaa_sig=GNTIslh_98uEpST_ZXodpQC9PnaXDmC1nfj9Uv9EruFV_TdPw3WBIyS1sLpjcTMZH6ckrBLLm74QhPcoS8-inQ%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqf7T83zYuJjaePLZLrWIMKq3NvTytEVZVXw29gPxDmcmIeT7AJeFll2&gaa_ts=692a6d85&gaa_sig=lgE3KwPesVPJEvK_HvlyFjkZIwfiZEVinu5ffCSe7ie9FrTknFVkMCEKkgZSXC3re8ogfpdL10cNY4o6JT_9eA%3D%3D"
+                ],
+                "titles": [
+                  "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                  "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+                  "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+                ],
+                "count": 7
+              },
+              "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "verification_date": "2025-11-29T09:04:39.428425"
+            },
+            "claim_metadata": {
+              "post_index": 10,
+              "extracted_claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza."
+            },
+            "verification_timestamp": "2025-11-29T09:05:56.908027"
+          }
+        ],
+        "summary": {
+          "total_claims": 11,
+          "successfully_verified": 1,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T09:05:56.908027",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 11,
+          "batch_size": 11,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": false,
+        "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "debunk_posts": [],
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 10,
+          "batch_size": 10,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+      "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post claims the groom was killed defending his land, asserting that Israeli occupation forces turned a day of joy into a day of tragedy.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking source is an Al Jazeera sitemap and does not contain any information about Hassan Mohammad Abdul-Razzaq al-Saadi, his death, or the alleged circumstances in Beit Jann, Syria. Therefore, the claim cannot be verified.",
+        "confidence": "high",
+        "reasoning": "The source provided (Al Jazeera sitemap) is a list of tags and names, and the name 'Hassan Mohammad Abdul-Razzaq al-Saadi' is not present. The snippet offers no details relevant to the claim, making it impossible to confirm or deny.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/sitemap"
+          ],
+          "titles": [
+            "Site Map | Al Jazeera"
+          ],
+          "count": 1
+        },
+        "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+      "summary": "Two Palestinian solidarity activists were reportedly abducted by Israeli settlers and occupation forces tonight in Tuwani, southern occupied West Bank. The post states that settlers from the Havat Maon outpost, disguised in Israeli military uniforms, intercepted the activists on a public road.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While the sources confirm the presence of Israeli settlers and occupation forces in the West Bank and mention settler attacks on Palestinians, none of the snippets specifically corroborate the abduction of 'two Palestinian solidarity activists' in 'Tuwani, southern occupied West Bank.' The information provided is too general to verify the specific event detailed in the claim.",
+        "confidence": "medium",
+        "reasoning": "Source 1 discusses Israeli settlers in the West Bank, Source 2 mentions Israeli activists showing solidarity with Palestinians, and Source 3 notes settler attacks on Palestinians in the West Bank. However, none of these snippets contain information about an abduction of two solidarity activists in Tuwani, southern occupied West Bank. The claim's specific details are not supported.",
+        "sources": {
+          "links": [
+            "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+            "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+            "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqcRhRHwcPrKM2Rieq0IefPgjWouH0JsIYjQ-dyO_MNRH76ZUTvz_X3L&gaa_ts=692a6d58&gaa_sig=FusHuncMjrIE1927Rd2YB7TiHY3gZCKAxCa8LG29MrAJ3-fO4DLNWCBk1Zdv9OGdT53IcVGlXtpkV-3nUNbaMw%3D%3D"
+          ],
+          "titles": [
+            "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+            "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+            "War Shifts Global Dynamics"
+          ],
+          "count": 3
+        },
+        "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+      "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which the post attributes to being already weakened after two years of continuous Israeli airstrikes and bombardments.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim states that surgical operating rooms in Gaza's hospitals were flooded. However, the provided sources discuss flooding events in the West Midlands (UK) and London (UK) at different hospitals, and one source is entirely irrelevant. None of the sources provide any information about flooding in Gaza's hospitals.",
+        "confidence": "high",
+        "reasoning": "Source 1 details heavy rain and flooding in the UK's West Midlands. Source 2 describes flooding at Whipps Cross Hospital in London. Source 3 is an irrelevant New York Times author page. There is no mention of Gaza, its hospitals, or any flooding there in any of the provided sources.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/cp31ggzqn3zo",
+            "https://www.bbc.com/news/uk-england-london-57971381",
+            "https://www.nytimes.com/by/nailah-morgan?page=9",
+            "https://www.bbc.com/news/articles/c99ry7x925eo",
+            "https://www.bbc.com/news/uk-england-55795526"
+          ],
+          "titles": [
+            "Heavy rain and snow causes disruption across West Midlands",
+            "Whipps Cross Hospital patients evacuated after flooding",
+            "Nailah Morgan - Page 9 - The New York Times",
+            "Spain flood death toll expected to rise as dozens missing",
+            "Coronavirus and flooding: Shropshire and Worcestershire ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+      "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post claims he was violently assaulted and his home was vandalized prior to his detention.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322",
+      "verification": {
+        "verified": false,
+        "verdict": "no_content",
+        "message": "No fact-checked information found for this claim",
+        "confidence": "low",
+        "reasoning": "No reliable sources found to verify this claim",
+        "sources": {
+          "links": [],
+          "titles": [],
+          "count": 0
+        },
+        "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+      "summary": "Israeli settlers who reportedly breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "One source confirms Israeli military monitoring and activity near the Syrian border, which provides geographic context. However, none of the sources provide any evidence of Israeli settlers breaching the border, releasing a video, or declaring an intention to establish a new settlement in Quneitra. The specific details of the claim are not corroborated.",
+        "confidence": "medium",
+        "reasoning": "Source 1 mentions Israeli forces monitoring events in Syria near the border. Sources 2 and 3 are irrelevant. While Israeli presence and border monitoring are noted, there is no information about settlers breaching the border, creating a video, or establishing a new settlement, which are key components of the claim.",
+        "sources": {
+          "links": [
+            "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+            "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqcnbH7KomXDTAgGcrFwkVlRW-8J0c54qM2anyr5aLGIyplcKas5Ahue&gaa_ts=692a6d5f&gaa_sig=K_6JBt2Qf5MKbZxqpFCjAN8OONT6Utw6oFOT3MiIKQ9545YTJWnZ9-6eUXK_SSMNzmcQOKOXUPi0bY_h3_4jsQ%3D%3D",
+            "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+          ],
+          "titles": [
+            "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+            "Trump Pares Tariffs as Stocks Plunge",
+            "Daily Maverick Top Read Summaries"
+          ],
+          "count": 3
+        },
+        "claim_text": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+      "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The sources confirm the existence of Palestinian detainees and Israeli forces' actions involving Palestinians. One source lists individuals with similar names (Ramadan, Jum'a) but in a different context (children killed in Gaza). However, none of the sources specifically mention the abduction of 'former Palestinian detainee Jum’a Ramadan' from 'Zeita Jamma’in, south of Nablus.' Therefore, the specific event cannot be verified.",
+        "confidence": "medium",
+        "reasoning": "Source 1 lists Palestinian children killed in Gaza, including names like 'Ramadan' and 'Jum'a,' but not the specific individual or context of the claim. Source 2 broadly mentions Israeli forces shooting Palestinians. Source 3 discusses Palestinian prisoners. While relevant terms appear, the specific details of the abduction of Jum'a Ramadan from Zeita Jamma'in are not found in any of the snippets.",
+        "sources": {
+          "links": [
+            "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+            "https://www.theguardian.com/world/2025/aug/20/malaysian-state-threatens-to-jail-muslim-men-who-skip-friday-prayers",
+            "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+          ],
+          "titles": [
+            "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+            "Malaysian state threatens to jail Muslim men who skip Friday ...",
+            "Full list: The Palestinian prisoners | News | Al Jazeera"
+          ],
+          "count": 3
+        },
+        "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+      "summary": "Following an event described as an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp are depicted as continuing to shoulder the burden of survival and protection for their families and community in a place still reeling from destruction and loss.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources confirm an Israeli attack on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, which killed at least 13 people. This aligns with the description of a 'massacre.' While the sources do not explicitly state 'women continue to bear the burden of survival and protection,' this is a plausible consequence of such an event in a refugee camp.",
+        "confidence": "high",
+        "reasoning": "Source 1 explicitly states 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13...' and 'The attack killed people living in Ain al-Hilweh' on 'Nov 18, 2025'. Source 3 reiterates this, 'Israeli attack on Palestinian refugee camp in Lebanon kills at least 13' on 'Nov 18, 2025'. Source 2 mentions an earlier attack on Ein el-Hilweh. The core event of an Israeli attack leading to multiple deaths in Ain al-Hilweh on the specified date is strongly corroborated.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+            "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+            "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+            "https://www.bbc.com/news/articles/c0l73j781y9o",
+            "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon"
+          ],
+          "titles": [
+            "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+            "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+            "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+            "Lebanon says Israeli strike killed 13 people near Palestinian ...",
+            "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera"
+          ],
+          "count": 10
+        },
+        "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+      "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The sources discuss Palestinian children killed in Gaza and mention individuals with the surname 'Badwan.' However, none of the sources identify a Palestinian child specifically named 'Ahmed Mohammad Badwan' who died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip. A 'Muhammad Izzat Badwan' was mentioned but was detained and released, not deceased.",
+        "confidence": "high",
+        "reasoning": "Source 1 lists Palestinian children killed in Gaza but does not include 'Ahmed Mohammad Badwan.' Source 2 mentions other deaths in Gaza but not this specific individual. Source 3 mentions a 'Muhammad Izzat Badwan' who was detained and released, which contradicts the claim of death and specific name. The claim's details regarding the child's full name and cause of death are not supported.",
+        "sources": {
+          "links": [
+            "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+            "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+            "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+            "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank",
+            "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead"
+          ],
+          "titles": [
+            "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+            "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+            "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+            "Five Palestinians killed by Israeli forces in occupied West Bank ...",
+            "Gaza under siege: naming the dead | Human Rights News | Al Jazeera"
+          ],
+          "count": 10
+        },
+        "claim_text": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+      "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was reportedly taken to secure a settler incursion into the area.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The sources confirm the presence of Israeli forces in Hebron and report incidents involving Palestinian women. However, none of the snippets provide specific details about a 'pregnant woman' being prevented from leaving her home in 'Ras Cemetery' (a highly specific location) to secure a 'settler incursion.' The claim lacks specific corroboration.",
+        "confidence": "medium",
+        "reasoning": "Sources 1, 2, and 3 all confirm Israeli army presence and incidents involving Palestinian women and Israeli forces near Hebron. However, none of the snippets mention a pregnant woman, the specific location 'Ras Cemetery,' or the stated purpose of 'securing a settler incursion.' The general context is there, but the specific event is not detailed.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2016/6/24/israel-kills-palestinian-woman-in-occupied-west-bank",
+            "https://www.aljazeera.com/news/2015/9/22/young-palestinian-woman-shot-by-israeli-forces-dies",
+            "https://www.theguardian.com/world/2016/mar/25/un-envoy-condemns-palestinian-killing-by-israeli-soldier-hebron",
+            "https://www.aljazeera.com/news/liveblog/2025/1/25/live-israel-hamas-exchange-of-gaza-captives-for-jailed-palestinians-due",
+            "https://www.aljazeera.com/news/2024/4/21/two-palestinians-shot-dead-as-israel-continues-deadly-raids-in-west-bank"
+          ],
+          "titles": [
+            "Israel kills Palestinian woman in occupied West Bank | Conflict ...",
+            "Young Palestinian woman shot by Israeli forces dies | Occupied ...",
+            "UN envoy condemns Palestinian attacker's 'gruesome' killing by ...",
+            "Updates: Israel raids homes of freed Palestinians, shoots at Gaza ...",
+            "Three Palestinians killed in West Bank as Israel continues raids ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+      "summary": "Israeli National Security Minister Itamar Ben-Gvir reportedly moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin, even as UN officials demand a full probe into what they describe as a summary execution.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The source confirms Itamar Ben-Gvir's position as Israeli National Security Minister and his far-right political stance. However, it does not provide any evidence that he 'moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin' or that there were 'UN demands for a full probe.' The specific action claimed is not supported by the snippet.",
+        "confidence": "medium",
+        "reasoning": "Source 1 confirms Itamar Ben-Gvir's role as National Security Minister and his political leanings. This provides context but does not mention any actions by him to stop an investigation concerning soldiers, specific killings in Jenin, or UN demands for a probe, which are central to the claim.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/features/2024/7/19/how-israeli-settlements-are-taking-over-the-west-bank-as-gaza-war-rages"
+          ],
+          "titles": [
+            "How Israeli settlements are taking over the West Bank as Gaza war ..."
+          ],
+          "count": 1
+        },
+        "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    },
+    {
+      "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+      "summary": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and what the post describes as the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The sources confirm that demonstrations took place in Milan, Italy, on specific dates in 2025. One source mentions the 'Israeli offensive in Rafah.' However, none of the snippets explicitly state that these Milan demonstrations were part of a 'general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.' The specific reasons for the protest are not corroborated.",
+        "confidence": "medium",
+        "reasoning": "Sources 1 and 3 confirm demonstrations in Milan, Italy, on Feb 26, 2025, and Apr 7, 2025, respectively. Source 2 mentions an 'Israeli offensive in Rafah, southern Gaza Strip.' While protests in Milan and the Gaza conflict are noted, the snippets (which are from image sitemaps) do not provide the detailed reasons for the Milan demonstrations as listed in the claim.",
+        "sources": {
+          "links": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqep-p7BxZuw9HnAidjxh-x-mGq6ttSu2hh4YFKXXhgKM7cKTWYvVxbe&gaa_ts=692a6d85&gaa_sig=GNTIslh_98uEpST_ZXodpQC9PnaXDmC1nfj9Uv9EruFV_TdPw3WBIyS1sLpjcTMZH6ckrBLLm74QhPcoS8-inQ%3D%3D",
+            "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqf7T83zYuJjaePLZLrWIMKq3NvTytEVZVXw29gPxDmcmIeT7AJeFll2&gaa_ts=692a6d85&gaa_sig=lgE3KwPesVPJEvK_HvlyFjkZIwfiZEVinu5ffCSe7ie9FrTknFVkMCEKkgZSXC3re8ogfpdL10cNY4o6JT_9eA%3D%3D"
+          ],
+          "titles": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+            "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+          ],
+          "count": 7
+        },
+        "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+        "verification_date": "2025-11-29T09:04:39.428425"
+      }
+    }
+  ],
+  "debunk_posts": [],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 11,
+      "batch_size": 11,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 10,
+      "batch_size": 10,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 11,
+    "debunk_posts_generated": 0,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T09:04:28.615265",
+          "total_posts": 11,
+          "posts_by_platform": {
+            "reddit": 0,
+            "threads": 0
+          },
+          "platforms": [
+            "twitter"
+          ],
+          "posts": [
+            {
+              "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+              "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post claims the groom was killed defending his land, asserting that Israeli occupation forces turned a day of joy into a day of tragedy.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957"
+            },
+            {
+              "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "summary": "Two Palestinian solidarity activists were reportedly abducted by Israeli settlers and occupation forces tonight in Tuwani, southern occupied West Bank. The post states that settlers from the Havat Maon outpost, disguised in Israeli military uniforms, intercepted the activists on a public road.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089"
+            },
+            {
+              "claim": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+              "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which the post attributes to being already weakened after two years of continuous Israeli airstrikes and bombardments.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077"
+            },
+            {
+              "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+              "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post claims he was violently assaulted and his home was vandalized prior to his detention.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322"
+            },
+            {
+              "claim": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "summary": "Israeli settlers who reportedly breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634"
+            },
+            {
+              "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+              "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178"
+            },
+            {
+              "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+              "summary": "Following an event described as an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp are depicted as continuing to shoulder the burden of survival and protection for their families and community in a place still reeling from destruction and loss.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289"
+            },
+            {
+              "claim": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336"
+            },
+            {
+              "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+              "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was reportedly taken to secure a settler incursion into the area.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312"
+            },
+            {
+              "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+              "summary": "Israeli National Security Minister Itamar Ben-Gvir reportedly moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin, even as UN officials demand a full probe into what they describe as a summary execution.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205"
+            },
+            {
+              "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "summary": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and what the post describes as the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 11 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+              "content_summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post claims the groom was killed defending his land, asserting that Israeli occupation forces turned a day of joy into a day of tragedy.",
+              "source": "https://twitter.com/QudsNen/status/1994506855725633957",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking source is an Al Jazeera sitemap and does not contain any information about Hassan Mohammad Abdul-Razzaq al-Saadi, his death, or the alleged circumstances in Beit Jann, Syria. Therefore, the claim cannot be verified.",
+                "confidence": "high",
+                "reasoning": "The source provided (Al Jazeera sitemap) is a list of tags and names, and the name 'Hassan Mohammad Abdul-Razzaq al-Saadi' is not present. The snippet offers no details relevant to the claim, making it impossible to confirm or deny.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/sitemap"
+                  ],
+                  "titles": [
+                    "Site Map | Al Jazeera"
+                  ],
+                  "count": 1
+                },
+                "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed by Israeli forces in Beit Jann, Syria, on his wedding day while confronting an incursion."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "content_summary": "Two Palestinian solidarity activists were reportedly abducted by Israeli settlers and occupation forces tonight in Tuwani, southern occupied West Bank. The post states that settlers from the Havat Maon outpost, disguised in Israeli military uniforms, intercepted the activists on a public road.",
+              "source": "https://twitter.com/QudsNen/status/1994550317271204089",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While the sources confirm the presence of Israeli settlers and occupation forces in the West Bank and mention settler attacks on Palestinians, none of the snippets specifically corroborate the abduction of 'two Palestinian solidarity activists' in 'Tuwani, southern occupied West Bank.' The information provided is too general to verify the specific event detailed in the claim.",
+                "confidence": "medium",
+                "reasoning": "Source 1 discusses Israeli settlers in the West Bank, Source 2 mentions Israeli activists showing solidarity with Palestinians, and Source 3 notes settler attacks on Palestinians in the West Bank. However, none of these snippets contain information about an abduction of two solidarity activists in Tuwani, southern occupied West Bank. The claim's specific details are not supported.",
+                "sources": {
+                  "links": [
+                    "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+                    "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+                    "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqcRhRHwcPrKM2Rieq0IefPgjWouH0JsIYjQ-dyO_MNRH76ZUTvz_X3L&gaa_ts=692a6d58&gaa_sig=FusHuncMjrIE1927Rd2YB7TiHY3gZCKAxCa8LG29MrAJ3-fO4DLNWCBk1Zdv9OGdT53IcVGlXtpkV-3nUNbaMw%3D%3D"
+                  ],
+                  "titles": [
+                    "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+                    "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+                    "War Shifts Global Dynamics"
+                  ],
+                  "count": 3
+                },
+                "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+              "content_summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which the post attributes to being already weakened after two years of continuous Israeli airstrikes and bombardments.",
+              "source": "https://twitter.com/QudsNen/status/1994566809412948077",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim states that surgical operating rooms in Gaza's hospitals were flooded. However, the provided sources discuss flooding events in the West Midlands (UK) and London (UK) at different hospitals, and one source is entirely irrelevant. None of the sources provide any information about flooding in Gaza's hospitals.",
+                "confidence": "high",
+                "reasoning": "Source 1 details heavy rain and flooding in the UK's West Midlands. Source 2 describes flooding at Whipps Cross Hospital in London. Source 3 is an irrelevant New York Times author page. There is no mention of Gaza, its hospitals, or any flooding there in any of the provided sources.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/cp31ggzqn3zo",
+                    "https://www.bbc.com/news/uk-england-london-57971381",
+                    "https://www.nytimes.com/by/nailah-morgan?page=9",
+                    "https://www.bbc.com/news/articles/c99ry7x925eo",
+                    "https://www.bbc.com/news/uk-england-55795526"
+                  ],
+                  "titles": [
+                    "Heavy rain and snow causes disruption across West Midlands",
+                    "Whipps Cross Hospital patients evacuated after flooding",
+                    "Nailah Morgan - Page 9 - The New York Times",
+                    "Spain flood death toll expected to rise as dozens missing",
+                    "Coronavirus and flooding: Shropshire and Worcestershire ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "Surgical operating rooms in Gaza’s hospitals were flooded by rainwater during a recent winter storm."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+              "content_summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post claims he was violently assaulted and his home was vandalized prior to his detention.",
+              "source": "https://twitter.com/QudsNen/status/1994555805300134322",
+              "verification": {
+                "verified": false,
+                "verdict": "no_content",
+                "message": "No fact-checked information found for this claim",
+                "confidence": "low",
+                "reasoning": "No reliable sources found to verify this claim",
+                "sources": {
+                  "links": [],
+                  "titles": [],
+                  "count": 0
+                },
+                "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin, after violently assaulting him and vandalizing his home."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "content_summary": "Israeli settlers who reportedly breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "source": "https://twitter.com/QudsNen/status/1994541231834378634",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "One source confirms Israeli military monitoring and activity near the Syrian border, which provides geographic context. However, none of the sources provide any evidence of Israeli settlers breaching the border, releasing a video, or declaring an intention to establish a new settlement in Quneitra. The specific details of the claim are not corroborated.",
+                "confidence": "medium",
+                "reasoning": "Source 1 mentions Israeli forces monitoring events in Syria near the border. Sources 2 and 3 are irrelevant. While Israeli presence and border monitoring are noted, there is no information about settlers breaching the border, creating a video, or establishing a new settlement, which are key components of the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+                    "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqcnbH7KomXDTAgGcrFwkVlRW-8J0c54qM2anyr5aLGIyplcKas5Ahue&gaa_ts=692a6d5f&gaa_sig=K_6JBt2Qf5MKbZxqpFCjAN8OONT6Utw6oFOT3MiIKQ9545YTJWnZ9-6eUXK_SSMNzmcQOKOXUPi0bY_h3_4jsQ%3D%3D",
+                    "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+                  ],
+                  "titles": [
+                    "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+                    "Trump Pares Tariffs as Stocks Plunge",
+                    "Daily Maverick Top Read Summaries"
+                  ],
+                  "count": 3
+                },
+                "claim_text": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 4,
+                "extracted_claim": "Israeli settlers who breached the border into Syria released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+              "content_summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "source": "https://twitter.com/QudsNen/status/1994518249724416178",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The sources confirm the existence of Palestinian detainees and Israeli forces' actions involving Palestinians. One source lists individuals with similar names (Ramadan, Jum'a) but in a different context (children killed in Gaza). However, none of the sources specifically mention the abduction of 'former Palestinian detainee Jum’a Ramadan' from 'Zeita Jamma’in, south of Nablus.' Therefore, the specific event cannot be verified.",
+                "confidence": "medium",
+                "reasoning": "Source 1 lists Palestinian children killed in Gaza, including names like 'Ramadan' and 'Jum'a,' but not the specific individual or context of the claim. Source 2 broadly mentions Israeli forces shooting Palestinians. Source 3 discusses Palestinian prisoners. While relevant terms appear, the specific details of the abduction of Jum'a Ramadan from Zeita Jamma'in are not found in any of the snippets.",
+                "sources": {
+                  "links": [
+                    "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                    "https://www.theguardian.com/world/2025/aug/20/malaysian-state-threatens-to-jail-muslim-men-who-skip-friday-prayers",
+                    "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+                  ],
+                  "titles": [
+                    "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                    "Malaysian state threatens to jail Muslim men who skip Friday ...",
+                    "Full list: The Palestinian prisoners | News | Al Jazeera"
+                  ],
+                  "count": 3
+                },
+                "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 5,
+                "extracted_claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from Zeita Jamma’in, south of Nablus."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+              "content_summary": "Following an event described as an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp are depicted as continuing to shoulder the burden of survival and protection for their families and community in a place still reeling from destruction and loss.",
+              "source": "https://twitter.com/QudsNen/status/1994535023760859289",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources confirm an Israeli attack on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, which killed at least 13 people. This aligns with the description of a 'massacre.' While the sources do not explicitly state 'women continue to bear the burden of survival and protection,' this is a plausible consequence of such an event in a refugee camp.",
+                "confidence": "high",
+                "reasoning": "Source 1 explicitly states 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13...' and 'The attack killed people living in Ain al-Hilweh' on 'Nov 18, 2025'. Source 3 reiterates this, 'Israeli attack on Palestinian refugee camp in Lebanon kills at least 13' on 'Nov 18, 2025'. Source 2 mentions an earlier attack on Ein el-Hilweh. The core event of an Israeli attack leading to multiple deaths in Ain al-Hilweh on the specified date is strongly corroborated.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+                    "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+                    "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+                    "https://www.bbc.com/news/articles/c0l73j781y9o",
+                    "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon"
+                  ],
+                  "titles": [
+                    "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+                    "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+                    "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+                    "Lebanon says Israeli strike killed 13 people near Palestinian ...",
+                    "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 6,
+                "extracted_claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection for their families after an Israeli massacre on November 18, 2025."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "content_summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+              "source": "https://twitter.com/QudsNen/status/1994495159300493336",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The sources discuss Palestinian children killed in Gaza and mention individuals with the surname 'Badwan.' However, none of the sources identify a Palestinian child specifically named 'Ahmed Mohammad Badwan' who died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip. A 'Muhammad Izzat Badwan' was mentioned but was detained and released, not deceased.",
+                "confidence": "high",
+                "reasoning": "Source 1 lists Palestinian children killed in Gaza but does not include 'Ahmed Mohammad Badwan.' Source 2 mentions other deaths in Gaza but not this specific individual. Source 3 mentions a 'Muhammad Izzat Badwan' who was detained and released, which contradicts the claim of death and specific name. The claim's details regarding the child's full name and cause of death are not supported.",
+                "sources": {
+                  "links": [
+                    "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                    "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+                    "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+                    "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank",
+                    "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead"
+                  ],
+                  "titles": [
+                    "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                    "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+                    "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+                    "Five Palestinians killed by Israeli forces in occupied West Bank ...",
+                    "Gaza under siege: naming the dead | Human Rights News | Al Jazeera"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 7,
+                "extracted_claim": "Palestinian child Ahmed Mohammad Badwan died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+              "content_summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was reportedly taken to secure a settler incursion into the area.",
+              "source": "https://twitter.com/QudsNen/status/1994492626259546312",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The sources confirm the presence of Israeli forces in Hebron and report incidents involving Palestinian women. However, none of the snippets provide specific details about a 'pregnant woman' being prevented from leaving her home in 'Ras Cemetery' (a highly specific location) to secure a 'settler incursion.' The claim lacks specific corroboration.",
+                "confidence": "medium",
+                "reasoning": "Sources 1, 2, and 3 all confirm Israeli army presence and incidents involving Palestinian women and Israeli forces near Hebron. However, none of the snippets mention a pregnant woman, the specific location 'Ras Cemetery,' or the stated purpose of 'securing a settler incursion.' The general context is there, but the specific event is not detailed.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2016/6/24/israel-kills-palestinian-woman-in-occupied-west-bank",
+                    "https://www.aljazeera.com/news/2015/9/22/young-palestinian-woman-shot-by-israeli-forces-dies",
+                    "https://www.theguardian.com/world/2016/mar/25/un-envoy-condemns-palestinian-killing-by-israeli-soldier-hebron",
+                    "https://www.aljazeera.com/news/liveblog/2025/1/25/live-israel-hamas-exchange-of-gaza-captives-for-jailed-palestinians-due",
+                    "https://www.aljazeera.com/news/2024/4/21/two-palestinians-shot-dead-as-israel-continues-deadly-raids-in-west-bank"
+                  ],
+                  "titles": [
+                    "Israel kills Palestinian woman in occupied West Bank | Conflict ...",
+                    "Young Palestinian woman shot by Israeli forces dies | Occupied ...",
+                    "UN envoy condemns Palestinian attacker's 'gruesome' killing by ...",
+                    "Updates: Israel raids homes of freed Palestinians, shoots at Gaza ...",
+                    "Three Palestinians killed in West Bank as Israel continues raids ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 8,
+                "extracted_claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in Ras Cemetery, south of Hebron, to secure a settler incursion."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+              "content_summary": "Israeli National Security Minister Itamar Ben-Gvir reportedly moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin, even as UN officials demand a full probe into what they describe as a summary execution.",
+              "source": "https://twitter.com/QudsNen/status/1994526267966984205",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The source confirms Itamar Ben-Gvir's position as Israeli National Security Minister and his far-right political stance. However, it does not provide any evidence that he 'moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin' or that there were 'UN demands for a full probe.' The specific action claimed is not supported by the snippet.",
+                "confidence": "medium",
+                "reasoning": "Source 1 confirms Itamar Ben-Gvir's role as National Security Minister and his political leanings. This provides context but does not mention any actions by him to stop an investigation concerning soldiers, specific killings in Jenin, or UN demands for a probe, which are central to the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/features/2024/7/19/how-israeli-settlements-are-taking-over-the-west-bank-as-gaza-war-rages"
+                  ],
+                  "titles": [
+                    "How Israeli settlements are taking over the West Bank as Gaza war ..."
+                  ],
+                  "count": 1
+                },
+                "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 9,
+                "extracted_claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            },
+            {
+              "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "content_summary": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and what the post describes as the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+              "source": "https://twitter.com/QudsNen/status/1994493332479701417",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The sources confirm that demonstrations took place in Milan, Italy, on specific dates in 2025. One source mentions the 'Israeli offensive in Rafah.' However, none of the snippets explicitly state that these Milan demonstrations were part of a 'general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.' The specific reasons for the protest are not corroborated.",
+                "confidence": "medium",
+                "reasoning": "Sources 1 and 3 confirm demonstrations in Milan, Italy, on Feb 26, 2025, and Apr 7, 2025, respectively. Source 2 mentions an 'Israeli offensive in Rafah, southern Gaza Strip.' While protests in Milan and the Gaza conflict are noted, the snippets (which are from image sitemaps) do not provide the detailed reasons for the Milan demonstrations as listed in the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                    "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqep-p7BxZuw9HnAidjxh-x-mGq6ttSu2hh4YFKXXhgKM7cKTWYvVxbe&gaa_ts=692a6d85&gaa_sig=GNTIslh_98uEpST_ZXodpQC9PnaXDmC1nfj9Uv9EruFV_TdPw3WBIyS1sLpjcTMZH6ckrBLLm74QhPcoS8-inQ%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqf7T83zYuJjaePLZLrWIMKq3NvTytEVZVXw29gPxDmcmIeT7AJeFll2&gaa_ts=692a6d85&gaa_sig=lgE3KwPesVPJEvK_HvlyFjkZIwfiZEVinu5ffCSe7ie9FrTknFVkMCEKkgZSXC3re8ogfpdL10cNY4o6JT_9eA%3D%3D"
+                  ],
+                  "titles": [
+                    "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                    "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+                    "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+                  ],
+                  "count": 7
+                },
+                "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+                "verification_date": "2025-11-29T09:04:39.428425"
+              },
+              "claim_metadata": {
+                "post_index": 10,
+                "extracted_claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza."
+              },
+              "verification_timestamp": "2025-11-29T09:05:56.908027"
+            }
+          ],
+          "summary": {
+            "total_claims": 11,
+            "successfully_verified": 1,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T09:05:56.908027",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 11,
+            "batch_size": 11,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": false,
+          "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "debunk_posts": [],
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 10,
+            "batch_size": 10,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_090620",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T09:06:20.138598",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_090000",
+    "created_at": "2025-11-29T09:06:20.138598",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "message": "No debunk posts to store"
+  }
+}

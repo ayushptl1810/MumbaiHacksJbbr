@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_081308_220960_4ab353e6",
+  "verification_date": "2025-11-29T08:13:08.220960",
+  "claim": {
+    "text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Claim About 'This Post' is False: Not a Question Seeking Regret Experiences",
+    "body": "The claim states that 'This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.' This statement is false. The text you are currently reading (the claim itself) is a declarative statement, not a direct question seeking experiences. If 'This post' refers to an external, unspecified post, the provided sources do not describe such content. The sources cited, concerning Christians' views on Trump and sexual assault survivors, are entirely unrelated to the nature or content of a post asking for regrets about supporting Donald Trump. Therefore, the claim misrepresents the format and purpose of 'This post.'",
+    "summary": "The claim that 'This post' is a direct question asking for individuals who regret supporting Donald Trump to share experiences is false; the claim itself is a statement, and provided sources are irrelevant.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+        "url": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "The Christians who see Trump as their saviour",
+        "url": "https://www.bbc.com/news/articles/c20g1zvgj4do",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "Unacknowledged rape: the sexual assault survivors who hide their ...",
+        "url": "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+        "url": "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "US justice department investigates Epstein's alleged ties to Clinton ...",
+        "url": "https://www.bbc.com/news/articles/cj97x2lere0o",
+        "domain": "www.bbc.com"
+      },
+      {
+        "title": "The tricky questions facing Trump's nominees",
+        "url": "https://www.bbc.com/news/articles/cx2qdx1v29zo",
+        "domain": "www.bbc.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources describe or refer to a 'post' that asks individuals who regret supporting Donald Trump to share their experiences. The sources are news articles discussing various topics, none of which align with the description of 'this post'.",
+        "confidence": "high",
+        "reasoning": "The claim describes a specific type of 'post.' Source 1 discusses general support for Trump among Christians, not a question about regret. Source 2 discusses regret in the context of sexual assault, which is completely unrelated to Trump support or a specific post. Source 3 is about a podcast on hunting, which is entirely irrelevant. No source directly or indirectly supports the existence or nature of the described 'post.'",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/c20g1zvgj4do",
+            "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+            "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+            "https://www.bbc.com/news/articles/cj97x2lere0o",
+            "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+          ],
+          "titles": [
+            "The Christians who see Trump as their saviour",
+            "Unacknowledged rape: the sexual assault survivors who hide their ...",
+            "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+            "US justice department investigates Epstein's alleged ties to Clinton ...",
+            "The tricky questions facing Trump's nominees"
+          ],
+          "count": 10
+        },
+        "claim_text": "This post is a direct question asking for individuals who regret supporting Donald Trump to share their experiences.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      },
+      "sources": {
+        "links": [
+          "https://www.bbc.com/news/articles/c20g1zvgj4do",
+          "https://www.theguardian.com/society/2021/aug/26/unacknowledged-the-sexual-assault-survivors-who-hide-their-trauma-even-from-themselves",
+          "https://www.nytimes.com/2025/11/27/podcasts/the-daily/eating-what-you-kill-this-thanksgiving.html",
+          "https://www.bbc.com/news/articles/cj97x2lere0o",
+          "https://www.bbc.com/news/articles/cx2qdx1v29zo"
+        ],
+        "titles": [
+          "The Christians who see Trump as their saviour",
+          "Unacknowledged rape: the sexual assault survivors who hide their ...",
+          "Eating What You Kill This Thanksgiving, With Hunter Steven Rinella ...",
+          "US justice department investigates Epstein's alleged ties to Clinton ...",
+          "The tricky questions facing Trump's nominees"
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+      "content_summary": "This Reddit post, presented as a question in its title, directly asks for input from users who regret their past support for Donald Trump. It serves as an open invitation for individuals to share their perspectives and reasons for their changed views. The post itself contains no additional content b",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

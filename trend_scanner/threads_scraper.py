@@ -213,6 +213,40 @@ class ThreadsScraper:
             logger.error(f"Error scraping thread {url}: {e}")
             return None
     
+    def _scrape_with_playwright(self, url: str) -> Optional[str]:
+        """
+        Helper method to scrape using Playwright (runs in separate thread if needed)
+        
+        Args:
+            url: URL to scrape
+            
+        Returns:
+            HTML content or None
+        """
+        try:
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(headless=self.headless)
+                context = browser.new_context(
+                    viewport={"width": 1920, "height": 1080},
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                )
+                page = context.new_page()
+                
+                logger.info(f"Scraping Threads profile: {url}")
+                page.goto(url, wait_until="domcontentloaded")
+                
+                try:
+                    page.wait_for_selector("[data-pressable-container=true]", timeout=10000)
+                except PlaywrightTimeout:
+                    logger.warning(f"Timeout waiting for profile content on {url}")
+                
+                html_content = page.content()
+                browser.close()
+                return html_content
+        except Exception as e:
+            logger.error(f"Playwright scraping error for {url}: {e}")
+            return None
+    
     def scrape_profile(self, url: str, include_threads: bool = True) -> Optional[Dict[str, Any]]:
         """
         Scrape a Threads profile and optionally their recent posts
@@ -233,47 +267,45 @@ class ThreadsScraper:
                 return self._cache[cache_key]
         
         try:
-            with sync_playwright() as pw:
-                # Launch browser
-                browser = pw.chromium.launch(headless=self.headless)
-                context = browser.new_context(
-                    viewport={"width": 1920, "height": 1080},
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                )
-                page = context.new_page()
+            # Use a separate thread to avoid asyncio subprocess issues on Windows
+            import asyncio
+            loop = None
+            try:
+                loop = asyncio.get_running_loop()
+            except RuntimeError:
+                pass
+            
+            if loop:
+                # Running in async context - use thread pool
+                import concurrent.futures
+                with concurrent.futures.ThreadPoolExecutor() as executor:
+                    future = executor.submit(self._scrape_with_playwright, url)
+                    html_content = future.result(timeout=30)
+            else:
+                # Not in async context - use directly
+                html_content = self._scrape_with_playwright(url)
+            
+            if not html_content:
+                return None
+            
+            # Parse with Parsel
+            selector = Selector(html_content)
+            hidden_datasets = selector.css('script[type="application/json"][data-sjs]::text').getall()
+            
+            parsed = {
+                "user": {},
+                "threads": [],
+            }
+            
+            # Find profile and thread data
+            for hidden_dataset in hidden_datasets:
+                if '"ScheduledServerJS"' not in hidden_dataset:
+                    continue
                 
-                # Navigate to profile
-                logger.info(f"Scraping Threads profile: {url}")
-                page.goto(url, wait_until="domcontentloaded")
+                is_profile = 'follower_count' in hidden_dataset
+                is_threads = 'thread_items' in hidden_dataset
                 
-                # Wait for content
-                try:
-                    page.wait_for_selector("[data-pressable-container=true]", timeout=10000)
-                except PlaywrightTimeout:
-                    logger.warning(f"Timeout waiting for profile content on {url}")
-                
-                # Get page content
-                html_content = page.content()
-                browser.close()
-                
-                # Parse with Parsel
-                selector = Selector(html_content)
-                hidden_datasets = selector.css('script[type="application/json"][data-sjs]::text').getall()
-                
-                parsed = {
-                    "user": {},
-                    "threads": [],
-                }
-                
-                # Find profile and thread data
-                for hidden_dataset in hidden_datasets:
-                    if '"ScheduledServerJS"' not in hidden_dataset:
-                        continue
-                    
-                    is_profile = 'follower_count' in hidden_dataset
-                    is_threads = 'thread_items' in hidden_dataset
-                    
-                    if not is_profile and not is_threads:
+                if not is_profile and not is_threads:
                         continue
                     
                     try:

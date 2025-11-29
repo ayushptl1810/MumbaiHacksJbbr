@@ -48,13 +48,13 @@ TARGET_TELEGRAM_CHANNELS = [
 TARGET_TWITTER_ACCOUNTS = [
     # Add Twitter usernames here (without @), e.g.:
     #'elonmusk',
-   # 'QudsNen',
-    #'NupurSharmaBJP',
-    #'IndianGems_',
-    #'WeDravidians' 
+    #'QudsNen',
+    'NupurSharmaBJP',
+    'IndianGems_',
+    'WeDravidians' 
     #'va_shiva',
-    #'Gurudev',
-    #'PypAyurved'
+    'Gurudev',
+    'PypAyurved'
     #'dhruv_rathee',
     #'MAGANationX'
     

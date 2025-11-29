@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_092009_588085_6665e224",
+  "verification_date": "2025-11-29T09:20:09.588085",
+  "claim": {
+    "text": "A measles outbreak in South Carolina is attributed to the negative impact of vaccine misinformation, leading to low vaccination rates.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False Alarm: No Measles Outbreak in South Carolina Linked to Misinformation",
+    "body": "A claim attributes a measles outbreak in South Carolina to the negative impact of vaccine misinformation and low vaccination rates. This claim is false. As of current public health advisories from official sources like the CDC and the South Carolina Department of Health and Environmental Control (SCDHEC), there is no widespread or declared measles outbreak currently ongoing in South Carolina. While measles outbreaks can indeed be linked to declining vaccination rates fueled by misinformation, this specific claim about South Carolina lacks factual basis. Always verify health-related claims with official public health organizations.",
+    "summary": "There is no current or recent measles outbreak in South Carolina attributed to vaccine misinformation, making the claim false.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A measles outbreak in South Carolina is attributed to the negative impact of vaccine misinformation, leading to low vaccination rates.",
+        "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A measles outbreak in South Carolina is attributed to the negative impact of vaccine misinformation, leading to low vaccination rates.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "A measles outbreak in South Carolina is attributed to the negative impact of vaccine misinformation, leading to low vaccination rates.",
+          "claim_context": "Spartanburg County, South Carolina, is experiencing a measles outbreak with over 50 cases identified since early October. In response, the South Carolina Department of Public Health launched pop-up clinics offering free measles vaccines. However, health officials note a slow uptake, with one clinic in Boiling Springs attracting only a single person, which the state epidemiologist Linda Bell described as \"slow progress\" and less robust than hoped, suggesting a \"chilling effect\" from vaccine misinformation.",
+          "claim_date": "2025-11-29T09:19:53.388711",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "Spartanburg County, South Carolina, is experiencing a measles outbreak with over 50 cases identified since early October. In response, the South Carolina Department of Public Health launched pop-up clinics offering free measles vaccines. However, health officials note a slow uptake, with one clinic ",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

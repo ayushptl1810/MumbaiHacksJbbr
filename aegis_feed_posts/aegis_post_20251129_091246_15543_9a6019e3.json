@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091246_15543_9a6019e3",
+  "verification_date": "2025-11-29T09:12:46.015543",
+  "claim": {
+    "text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Gaza Hospital Operating Rooms Flooded? Claim Lacks Verification",
+    "body": "The claim that rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm is unverified. While Gaza's infrastructure, including its hospitals, faces significant challenges and is vulnerable to severe weather due to ongoing conflict and resource shortages, there are no widespread, credible reports or photographic/video evidence from medical authorities, international aid organizations, or independent news agencies confirming that *surgical operating rooms* specifically were inundated by rainwater to the extent claimed during a recent winter storm. Localized flooding of other areas within hospital compounds may occur, but the direct flooding of sterile operating environments as described in the claim has not been substantiated by reliable sources.",
+    "summary": "The claim of rainwater flooding surgical operating rooms in Gaza hospitals during a winter storm is unverified and lacks credible evidence from reliable sources.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm.",
+        "url": "https://twitter.com/QudsNen/status/1994566809412948077",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm.",
+          "claim_context": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which were already weakened after two years of continuous Israeli airstrikes and bombardments.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/QudsNen/status/1994566809412948077",
+      "content_summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. The water entered through cracks and gaps in the walls and corners of hospital rooms, which were already weakened after two years of continuous Israeli airstrikes and bombardments.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

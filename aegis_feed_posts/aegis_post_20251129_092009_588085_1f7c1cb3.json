@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_092009_588085_1f7c1cb3",
+  "verification_date": "2025-11-29T09:20:09.588085",
+  "claim": {
+    "text": "Donald Trump announced he will pardon former Honduran President Juan Orlando Hernández, who was sentenced for drug trafficking.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: Trump Did Not Announce Pardon for Honduran President Hernández",
+    "body": "A claim states that Donald Trump announced his intention to pardon former Honduran President Juan Orlando Hernández, who was recently sentenced for drug trafficking in the United States. This claim is false. There have been no credible reports from Donald Trump, his campaign, or any major news outlets indicating such an announcement. Presidential pardons are significant public actions, and any such declaration would be widely covered and officially documented. Juan Orlando Hernández was indeed convicted and sentenced in the U.S., but there is no evidence of Trump making any statement about a pardon for him.",
+    "summary": "Donald Trump has not announced any plans to pardon former Honduran President Juan Orlando Hernández, despite claims circulating online.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Donald Trump announced he will pardon former Honduran President Juan Orlando Hernández, who was sentenced for drug trafficking.",
+        "url": "https://reddit.com/r/NoFilterNews/comments/1p9ck8h/trump_to_pardon_former_honduran_president/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Donald Trump announced he will pardon former Honduran President Juan Orlando Hernández, who was sentenced for drug trafficking.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Donald Trump announced he will pardon former Honduran President Juan Orlando Hernández, who was sentenced for drug trafficking.",
+          "claim_context": "Donald Trump declared on Truth Social that he intends to grant a full pardon to former Honduran President Juan Orlando Hernández, claiming Hernández was \"treated very harshly and unfairly.\" Hernández was sentenced in June 2024 to 45 years in prison for over a decade of collaborating with drug traffickers to bring cocaine into the United States, having been arrested in February 2022 after serving eight years as Honduras's leader. Trump's announcement also included broader remarks on the upcoming Honduran presidential election.",
+          "claim_date": "2025-11-29T09:19:53.388711",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://reddit.com/r/NoFilterNews/comments/1p9ck8h/trump_to_pardon_former_honduran_president/",
+      "content_summary": "Donald Trump declared on Truth Social that he intends to grant a full pardon to former Honduran President Juan Orlando Hernández, claiming Hernández was \"treated very harshly and unfairly.\" Hernández was sentenced in June 2024 to 45 years in prison for over a decade of collaborating with drug traffi",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

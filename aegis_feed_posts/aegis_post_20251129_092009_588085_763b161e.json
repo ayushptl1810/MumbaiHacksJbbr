@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_092009_588085_763b161e",
+  "verification_date": "2025-11-29T09:20:09.588085",
+  "claim": {
+    "text": "The user is seeking individuals who regret supporting Donald Trump.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unverified: Is Someone Seeking Regretful Trump Supporters?",
+    "body": "A claim circulating suggests that 'the user' is actively seeking individuals who regret their support for Donald Trump. However, this claim is highly unspecific and lacks any verifiable context or evidence. Without identifying who 'the user' is, where this search is taking place, or any supporting information, it's impossible to confirm the truthfulness of such a statement. Claims that are too vague to be identified or corroborated should be treated with skepticism. There is no credible public information to substantiate this specific claim.",
+    "summary": "The claim that an unidentified 'user' is seeking individuals who regret supporting Donald Trump is unverified due to a complete lack of specific context or evidence.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The user is seeking individuals who regret supporting Donald Trump.",
+        "url": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 1,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The user is seeking individuals who regret supporting Donald Trump.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "The user is seeking individuals who regret supporting Donald Trump.",
+          "claim_context": "A Reddit post in the r/NoFilterNews subreddit asks for personal accounts from at least one person who regrets supporting Donald Trump.",
+          "claim_date": "2025-11-29T09:19:53.388711",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=The+user+is+seeking+individuals+who+regret+supporting+Donald+Trump.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://reddit.com/r/NoFilterNews/comments/1p9ba5z/can_i_hear_from_at_least_one_person_who_regrets/",
+      "content_summary": "A Reddit post in the r/NoFilterNews subreddit asks for personal accounts from at least one person who regrets supporting Donald Trump.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

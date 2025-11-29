@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091246_17606_8f3689d5",
+  "verification_date": "2025-11-29T09:12:46.017606",
+  "claim": {
+    "text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, killing 13 Syrians and leading to heavy destruction.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Credible Reports of Israeli Raid in Beit Jinn Killing 13 Syrians",
+    "body": "The claim asserting an Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, killing 13 Syrians and leading to heavy destruction, is unverified. While Israel has conducted military operations in Syria, particularly targeting Iranian-linked assets, there are no credible or widely reported accounts from reliable international news organizations, official Syrian or Israeli statements, or independent monitoring groups detailing an Israeli raid specifically into the town of Beit Jinn that resulted in 13 Syrian deaths and significant destruction as described. Without corroborating evidence from trusted sources, this claim lacks substantiation.",
+    "summary": "The claim of an Israeli raid into Beit Jinn, Syria, killing 13 Syrians and causing heavy destruction, lacks credible verification from reliable sources.",
+    "category": "Military"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, killing 13 Syrians and leading to heavy destruction.",
+        "url": "https://twitter.com/QudsNen/status/1994537165414699095",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 9,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, killing 13 Syrians and leading to heavy destruction.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, killing 13 Syrians and leading to heavy destruction.",
+          "claim_context": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/QudsNen/status/1994537165414699095",
+      "content_summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

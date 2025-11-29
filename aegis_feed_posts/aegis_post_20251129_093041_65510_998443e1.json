@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_093041_65510_998443e1",
+  "verification_date": "2025-11-29T09:30:41.065510",
+  "claim": {
+    "text": "The method of repairing a flyover crack is so poor that it's considered an international embarrassment, worse than expected even in developing nations.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Unsubstantiated: 'Embarrassing' Flyover Repair Claim Lacks Details",
+    "body": "The claim describes a flyover crack repair method as being so poor that it constitutes an 'international embarrassment,' worse than expected even in developing nations. Our verification finds this claim to be unsubstantiated. The verdict is 'uncertain' and 'false,' meaning there is no evidence to support this serious allegation. Crucially, the claim fails to specify *which* flyover is being discussed or its geographical location, making any attempt to verify the repair method impossible. Additionally, the sources provided are entirely irrelevant: one is an opinion piece on an author, and the other is a sports article. Neither offers any information pertinent to infrastructure, engineering, or flyover repairs. Without specific details and credible, relevant sources, this generalized criticism of a flyover repair cannot be confirmed.",
+    "summary": "The claim about an internationally embarrassing flyover crack repair is unverified, lacking specific details and supported by entirely irrelevant sources.",
+    "category": "Other"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The method of repairing a flyover crack is so poor that it's considered an international embarrassment, worse than expected even in developing nations.",
+        "url": "https://twitter.com/IndianGems_/status/1994340420571283515",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Opinion | Barbara Kingsolver Thinks Urban Liberals Have It All ...",
+        "url": "https://www.nytimes.com/2023/07/21/opinion/ezra-klein-podcast-barbara-kingsolver.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "'I was the mascot. It was my birthday. We lost 11-2' – Marine and me ...",
+        "url": "https://www.nytimes.com/athletic/2163997/2020/11/04/marine-fa-cup-non-league-simon-hughes/",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Trump Returns to Washington After Putin Talks Yield No Ukraine ...",
+        "url": "https://www.nytimes.com/live/2025/08/15/world/trump-putin-meeting-alaska",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Carter Rose From Humble Roots to Faithful Statesman - The New ...",
+        "url": "https://www.nytimes.com/live/2024/12/29/us/jimmy-carter",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Their Star-Crossed Bromance Implodes in Spectacular Fashion",
+        "url": "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqed9g_CBP5D3EYF03i7Fdpt0XUGwDI5_xL2v3kbYY5hA_S2DlKXmK6-&gaa_ts=692a7342&gaa_sig=IiAiXNIgGXbi-u1u-aueLtaVrwIbSwS5wOqa4V12tFZwbc25dEq2xY9bfbgJnDTSSeEaXWNZn0vLuZSEIGj7DA%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 6,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The method of repairing a flyover crack is so poor that it's considered an international embarrassment, worse than expected even in developing nations.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources are entirely irrelevant to the claim about a poorly repaired flyover crack being an international embarrassment.",
+        "confidence": "high",
+        "reasoning": "Sources 1, 2, and 3 discuss topics unrelated to infrastructure, flyovers, repairs, or international embarrassment. They cover an author's novel, a football match, and a political meeting between Trump and Putin, respectively.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2023/07/21/opinion/ezra-klein-podcast-barbara-kingsolver.html",
+            "https://www.nytimes.com/athletic/2163997/2020/11/04/marine-fa-cup-non-league-simon-hughes/",
+            "https://www.nytimes.com/live/2025/08/15/world/trump-putin-meeting-alaska",
+            "https://www.nytimes.com/live/2024/12/29/us/jimmy-carter",
+            "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqed9g_CBP5D3EYF03i7Fdpt0XUGwDI5_xL2v3kbYY5hA_S2DlKXmK6-&gaa_ts=692a7342&gaa_sig=IiAiXNIgGXbi-u1u-aueLtaVrwIbSwS5wOqa4V12tFZwbc25dEq2xY9bfbgJnDTSSeEaXWNZn0vLuZSEIGj7DA%3D%3D"
+          ],
+          "titles": [
+            "Opinion | Barbara Kingsolver Thinks Urban Liberals Have It All ...",
+            "'I was the mascot. It was my birthday. We lost 11-2' – Marine and me ...",
+            "Trump Returns to Washington After Putin Talks Yield No Ukraine ...",
+            "Carter Rose From Humble Roots to Faithful Statesman - The New ...",
+            "Their Star-Crossed Bromance Implodes in Spectacular Fashion"
+          ],
+          "count": 8
+        },
+        "claim_text": "The method of repairing a flyover crack is so poor that it's considered an international embarrassment, worse than expected even in developing nations.",
+        "verification_date": "2025-11-29T09:29:53.271810"
+      },
+      "sources": {
+        "links": [
+          "https://www.nytimes.com/2023/07/21/opinion/ezra-klein-podcast-barbara-kingsolver.html",
+          "https://www.nytimes.com/athletic/2163997/2020/11/04/marine-fa-cup-non-league-simon-hughes/",
+          "https://www.nytimes.com/live/2025/08/15/world/trump-putin-meeting-alaska",
+          "https://www.nytimes.com/live/2024/12/29/us/jimmy-carter",
+          "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqed9g_CBP5D3EYF03i7Fdpt0XUGwDI5_xL2v3kbYY5hA_S2DlKXmK6-&gaa_ts=692a7342&gaa_sig=IiAiXNIgGXbi-u1u-aueLtaVrwIbSwS5wOqa4V12tFZwbc25dEq2xY9bfbgJnDTSSeEaXWNZn0vLuZSEIGj7DA%3D%3D"
+        ],
+        "titles": [
+          "Opinion | Barbara Kingsolver Thinks Urban Liberals Have It All ...",
+          "'I was the mascot. It was my birthday. We lost 11-2' – Marine and me ...",
+          "Trump Returns to Washington After Putin Talks Yield No Ukraine ...",
+          "Carter Rose From Humble Roots to Faithful Statesman - The New ...",
+          "Their Star-Crossed Bromance Implodes in Spectacular Fashion"
+        ],
+        "count": 8
+      },
+      "source": "https://twitter.com/IndianGems_/status/1994340420571283515",
+      "content_summary": "The post severely criticizes the shoddy repair of a crack on a flyover, stating that such poor quality work would be unacceptable even in \"3rd world countries\" or under regimes like the Taliban. The author expresses concern that this level of infrastructure maintenance is making the country an \"inte",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

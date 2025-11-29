@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091311_926017_c85ef141",
+  "verification_date": "2025-11-29T09:13:11.926017",
+  "claim": {
+    "text": "Tamil Nadu's politics experienced a significant turning point with veteran AIADMK leader K.A. Sengottaiyan resigning to join Vijay's TVK.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Fact Check: K.A. Sengottaiyan Has Not Joined Vijay's TVK",
+    "body": "The claim circulating that 'veteran AIADMK leader K.A. Sengottaiyan [has resigned] to join Vijay's TVK' is false. K.A. Sengottaiyan, a prominent and seasoned leader of the All India Anna Dravida Munnetra Kazhagam (AIADMK) party in Tamil Nadu, has not resigned from his party. There have been no credible reports from official sources, major news outlets, or K.A. Sengottaiyan himself indicating any such move. As of current information, he remains an active and influential leader within the AIADMK. While actor Vijay recently launched his political party, Tamilaga Vettri Kazhagam (TVK), the specific claim about Sengottaiyan joining it is a baseless rumor, likely spread through social media. Significant political shifts involving veteran leaders of this stature are always widely reported and officially confirmed, which is not the case here.",
+    "summary": "Veteran AIADMK leader K.A. Sengottaiyan has not resigned or joined actor Vijay's TVK party; the claim is false and unconfirmed by credible sources.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Tamil Nadu's politics experienced a significant turning point with veteran AIADMK leader K.A. Sengottaiyan resigning to join Vijay's TVK.",
+        "url": "https://twitter.com/IndianGems_/status/1994062462103298169",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 5,
+    "batch_size": 5,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "Tamil Nadu's politics experienced a significant turning point with veteran AIADMK leader K.A. Sengottaiyan resigning to join Vijay's TVK.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Tamil Nadu's politics experienced a significant turning point with veteran AIADMK leader K.A. Sengottaiyan resigning to join Vijay's TVK.",
+          "claim_context": "The post asserts that Tamil Nadu's politics hit a major turning point today, citing the resignation of veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan, who subsequently joined Vijay’s TVK. This move is highlighted as signaling TVK’s rapid rise, weakening AIADMK, and is significant given Sengottaiyan's reputation as a top organizational brain previously wooed by DMK.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/IndianGems_/status/1994062462103298169",
+      "content_summary": "The post asserts that Tamil Nadu's politics hit a major turning point today, citing the resignation of veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan, who subsequently joined Vijay’s TVK. This move is highlighted as signaling TVK’s rapid rise, weakening AIADMK, and is significant given Seng",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

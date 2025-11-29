@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091246_17606_38382b26",
+  "verification_date": "2025-11-29T09:12:46.017606",
+  "claim": {
+    "text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Evidence of Ben-Gvir Stopping Jenin Investigation Despite UN Demands",
+    "body": "The claim that Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe, is currently unsubstantiated. While Minister Ben-Gvir is known for his controversial stance on security matters, and the UN frequently calls for investigations into such incidents, there are no credible reports from official Israeli government sources, judicial bodies, the UN itself, or major international news agencies confirming that Ben-Gvir specifically intervened to halt an investigation into this particular event. Without verifiable evidence from reliable sources, the claim of his direct intervention to stop an investigation remains unproven.",
+    "summary": "There is no credible evidence confirming Israeli Minister Itamar Ben-Gvir stopped an investigation into soldiers killing two Palestinians in Jenin despite UN demands.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+        "url": "https://twitter.com/QudsNen/status/1994526267966984205",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 8,
+    "batch_size": 10,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop an investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN demands for a full probe.",
+          "claim_context": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action comes even as UN officials are demanding a full probe into the alleged summary execution.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/QudsNen/status/1994526267966984205",
+      "content_summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action comes even as UN officials are demanding a full probe into the alleged summary execution.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

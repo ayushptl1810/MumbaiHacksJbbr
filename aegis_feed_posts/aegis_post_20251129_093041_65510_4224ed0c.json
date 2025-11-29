@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_093041_65510_4224ed0c",
+  "verification_date": "2025-11-29T09:30:41.065510",
+  "claim": {
+    "text": "A measles outbreak in South Carolina, with over 50 cases, demonstrates the negative impact of vaccine misinformation as public health efforts to vaccinate are poorly attended.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Measles Outbreak Location Misidentified: Not SC, But West Texas",
+    "body": "The claim asserts a measles outbreak in South Carolina with over 50 cases, linking it to vaccine misinformation and low vaccination rates. However, our verification reveals that the specific details of this claim are false. While vaccine misinformation is a known public health concern, the primary source cited (PBS) actually reports on a measles outbreak in *West Texas*, where cases have risen to 90, not South Carolina with over 50 cases. The other source provides general information about measles boosters. Therefore, the geographical location and case numbers specified in the claim are incorrect. It is important to distinguish between general health concerns and specific, verifiable outbreak details.",
+    "summary": "The claim of a measles outbreak with over 50 cases in South Carolina is false; reported outbreaks have been in West Texas with higher case numbers.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A measles outbreak in South Carolina, with over 50 cases, demonstrates the negative impact of vaccine misinformation as public health efforts to vaccinate are poorly attended.",
+        "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Do adults need a measles booster? An epidemiologist explains who ...",
+        "url": "https://www.pbs.org/newshour/health/do-adults-need-a-measles-booster-an-epidemiologist-explains-who-is-immune",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "What to know about the measles outbreak in West Texas as cases ...",
+        "url": "https://www.pbs.org/newshour/health/what-to-know-about-the-measles-outbreak-in-west-texas-as-cases-rise-to-90",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "There's a measles outbreak. Do you need another shot? | PBS News",
+        "url": "https://www.pbs.org/newshour/science/theres-a-measles-outbreak-do-you-need-another-shot",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Anti-science bills hit statehouses, attacking longstanding public ...",
+        "url": "https://www.pbs.org/newshour/health/anti-science-bills-hit-statehouses-attacking-longstanding-public-health-protections",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Covid-19 Live Updates - The New York Times",
+        "url": "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+        "domain": "www.nytimes.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A measles outbreak in South Carolina, with over 50 cases, demonstrates the negative impact of vaccine misinformation as public health efforts to vaccinate are poorly attended.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim states a measles outbreak occurred in South Carolina with over 50 cases. However, the provided sources refer to a measles outbreak in West Texas with cases rising to 90, not South Carolina.",
+        "confidence": "high",
+        "reasoning": "Source 2 explicitly states, 'What to know about the measles outbreak in West Texas as cases rise to 90', directly contradicting the claim's location (South Carolina) and slightly differing in case count (over 50 vs. 90 in Texas). Sources 1 and 3 discuss measles generally or the importance of vaccination but do not mention a South Carolina outbreak with the specified details.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/health/do-adults-need-a-measles-booster-an-epidemiologist-explains-who-is-immune",
+            "https://www.pbs.org/newshour/health/what-to-know-about-the-measles-outbreak-in-west-texas-as-cases-rise-to-90",
+            "https://www.pbs.org/newshour/science/theres-a-measles-outbreak-do-you-need-another-shot",
+            "https://www.pbs.org/newshour/health/anti-science-bills-hit-statehouses-attacking-longstanding-public-health-protections",
+            "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine"
+          ],
+          "titles": [
+            "Do adults need a measles booster? An epidemiologist explains who ...",
+            "What to know about the measles outbreak in West Texas as cases ...",
+            "There's a measles outbreak. Do you need another shot? | PBS News",
+            "Anti-science bills hit statehouses, attacking longstanding public ...",
+            "Covid-19 Live Updates - The New York Times"
+          ],
+          "count": 10
+        },
+        "claim_text": "A measles outbreak in South Carolina, with over 50 cases, demonstrates the negative impact of vaccine misinformation as public health efforts to vaccinate are poorly attended.",
+        "verification_date": "2025-11-29T09:29:53.271810"
+      },
+      "sources": {
+        "links": [
+          "https://www.pbs.org/newshour/health/do-adults-need-a-measles-booster-an-epidemiologist-explains-who-is-immune",
+          "https://www.pbs.org/newshour/health/what-to-know-about-the-measles-outbreak-in-west-texas-as-cases-rise-to-90",
+          "https://www.pbs.org/newshour/science/theres-a-measles-outbreak-do-you-need-another-shot",
+          "https://www.pbs.org/newshour/health/anti-science-bills-hit-statehouses-attacking-longstanding-public-health-protections",
+          "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine"
+        ],
+        "titles": [
+          "Do adults need a measles booster? An epidemiologist explains who ...",
+          "What to know about the measles outbreak in West Texas as cases ...",
+          "There's a measles outbreak. Do you need another shot? | PBS News",
+          "Anti-science bills hit statehouses, attacking longstanding public ...",
+          "Covid-19 Live Updates - The New York Times"
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "Spartanburg County, South Carolina, is experiencing a measles outbreak with over 50 identified cases since early October. The South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines, but attendance has been notably low, with one clinic in Boiling Springs seein",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

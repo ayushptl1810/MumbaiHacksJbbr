@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091311_917119_d0bb73c4",
+  "verification_date": "2025-11-29T09:13:11.917119",
+  "claim": {
+    "text": "Dubai's roads are completely free of dust despite being surrounded by desert.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Dubai's Dust-Free Roads? A Desert Myth Busted",
+    "body": "The claim that 'Dubai's roads are completely free of dust despite being surrounded by desert' is false. While Dubai is renowned for its modern infrastructure and invests significantly in maintaining urban cleanliness, achieving a state of 'completely free' of dust in a desert environment is practically impossible. Dubai is situated in an arid desert region, making it inherently susceptible to wind-blown sand and dust from its natural surroundings. Sandstorms and general atmospheric dust are common occurrences, inevitably leading to dust accumulation on roads and public spaces. Authorities deploy extensive cleaning efforts, including street sweeping and washing, but these are ongoing battles to manage dust, not a permanent eradication. To claim total freedom from dust contradicts the fundamental realities of its geographical location and climate.",
+    "summary": "Dubai's roads are not completely free of dust due to its desert environment, despite extensive cleaning efforts to manage it.",
+    "category": "Other"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Dubai's roads are completely free of dust despite being surrounded by desert.",
+        "url": "https://twitter.com/IndianGems_/status/1994271340204007725",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 5,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "Dubai's roads are completely free of dust despite being surrounded by desert.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "Dubai's roads are completely free of dust despite being surrounded by desert.",
+          "claim_context": "The post raises a question about Dubai's road cleanliness, stating that its roads are completely free of dust despite the city being surrounded by desert, implying a notable achievement or curiosity.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/IndianGems_/status/1994271340204007725",
+      "content_summary": "The post raises a question about Dubai's road cleanliness, stating that its roads are completely free of dust despite the city being surrounded by desert, implying a notable achievement or curiosity.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "post_id": "aegis_post_20251129_091311_917119_fb6b7592",
+  "verification_date": "2025-11-29T09:13:11.917119",
+  "claim": {
+    "text": "A flyover repair method is substandard and makes the country an international joke.",
+    "verdict": "error",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Flyover Repair Claims: Debunking Exaggerated & Unsubstantiated Accusations",
+    "body": "The assertion that 'A flyover repair method is substandard and makes the country an international joke' is unsubstantiated and highly exaggerated. Without specific details about the particular flyover, the exact repair method in question, or the country to which the claim refers, it is impossible to verify its truthfulness. Furthermore, attributing a country's entire international reputation or making it an 'international joke' based on a single, unspecified infrastructure repair method is a significant overstatement. While issues with infrastructure quality or specific construction/repair projects can occur in any nation, isolated incidents or perceived shortcomings do not typically define an entire country's engineering standards or lead to such widespread international ridicule. Such claims often lack credible evidence and tend to generalize specific instances into sweeping, negative judgments that are not representative of a nation's overall infrastructure capabilities.",
+    "summary": "The claim about an unspecified flyover repair method being substandard and making a country an 'international joke' is an unsubstantiated and exaggerated generalization.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A flyover repair method is substandard and makes the country an international joke.",
+        "url": "https://twitter.com/IndianGems_/status/1994340420571283515",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [],
+    "total_sources": 1
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 5,
+    "total_batch_number": 2,
+    "original_verification": {
+      "claim_text": "A flyover repair method is substandard and makes the country an international joke.",
+      "verification": {
+        "verified": false,
+        "verdict": "error",
+        "message": "Error during batch fact-checking: API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10",
+        "details": {
+          "claim_text": "A flyover repair method is substandard and makes the country an international joke.",
+          "claim_context": "The post criticizes a specific repair method for a crack on a flyover, stating that such a repair quality is unacceptable even in '3rd world countries like Taliban,' suggesting it makes the country an 'international joke' due to perceived poor infrastructure standards.",
+          "claim_date": "2025-11-29T09:11:36.760990",
+          "error": "API request failed: 429 Client Error: Too Many Requests for url: https://www.googleapis.com/customsearch/v1?q=A+flyover+repair+method+is+substandard+and+makes+the+country+an+international+joke.&key=AIzaSyDw4VD_CYlAtYOeU9i6tUoMXkH6weSquk8&cx=753153aafcb4447fd&num=10"
+        }
+      },
+      "sources": {},
+      "source": "https://twitter.com/IndianGems_/status/1994340420571283515",
+      "content_summary": "The post criticizes a specific repair method for a crack on a flyover, stating that such a repair quality is unacceptable even in '3rd world countries like Taliban,' suggesting it makes the country an 'international joke' due to perceived poor infrastructure standards.",
+      "verified": false,
+      "verdict": "error"
+    }
+  }
+}

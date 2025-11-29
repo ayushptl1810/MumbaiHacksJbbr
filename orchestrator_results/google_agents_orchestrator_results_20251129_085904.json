@@ -1,0 +1,1978 @@
+{
+  "success": true,
+  "message": "Successfully processed 17 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T08:56:48.869906",
+        "total_posts": 17,
+        "posts_by_platform": {
+          "reddit": 0,
+          "threads": 0
+        },
+        "platforms": [
+          "twitter"
+        ],
+        "posts": [
+          {
+            "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+            "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post asserts he was killed defending his land, claiming Israeli occupation forces turned a day of joy into a day of tragedy.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957"
+          },
+          {
+            "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+            "summary": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank. The settlers, from the Havat Maon outpost, were disguised in Israeli military uniforms and intercepted the activists on a public road.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089"
+          },
+          {
+            "claim": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+            "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. Water entered through cracks and gaps in the walls and corners of hospital rooms, which are described as already weakened after two years of continuous Israeli airstrikes and bombardments.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077"
+          },
+          {
+            "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+            "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post states that he was violently assaulted and his home was vandalized during the incident.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322"
+          },
+          {
+            "claim": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "summary": "Israeli settlers who breached the border into Syria have released a video. In the video, they declared their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634"
+          },
+          {
+            "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178"
+          },
+          {
+            "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+            "summary": "Following an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp continue to shoulder the burden of survival and protection for their families and community. The camp is described as still reeling from destruction and loss, with women being crucial for resilience.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289"
+          },
+          {
+            "claim": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+            "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336"
+          },
+          {
+            "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+            "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was taken to secure a settler incursion into the area.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312"
+          },
+          {
+            "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+            "summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action occurred despite UN officials demanding a full probe into what they describe as a summary execution.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205"
+          },
+          {
+            "claim": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+            "summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994537165414699095"
+          },
+          {
+            "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+            "summary": "A demonstration was held in Milan, Italy, as part of the general strike against the war economy, European rearmament, social inequality, and the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417"
+          },
+          {
+            "claim": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+            "summary": "Early Friday morning, an armed unit from the Israeli army carried out an incursion into Beit Jinn, Syria. Local residents immediately resisted, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/QudsNen/status/1994499416011706606"
+          },
+          {
+            "claim": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+            "summary": "The post outlines a scenario where an individual pays substantial taxes (30% income tax, 30% vehicle tax, 18% GST on insurance, up to 60% tax on fuel). Despite these payments, they get injured on an unexpected speed breaker, remain immobile for 6 months, incur medical bills of ₹6 lakh, and lose their job, highlighting a perceived failure of public services.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/IndianGems_/status/1993972125930324264"
+          },
+          {
+            "claim": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+            "summary": "The post criticizes a specific repair of a crack on a flyover, stating that such a repair method is unacceptable, even in \"3rd world countries like Taliban.\" The author claims this poor infrastructure maintenance makes the country an international joke.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/IndianGems_/status/1994340420571283515"
+          },
+          {
+            "claim": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+            "summary": "The post provides a list of countries purportedly having the 'most unattractive men in 2025.' The list includes Bangladesh at number one, followed by Pakistan, Egypt, Maldives, Ethiopia, Kenya, Nigeria, Philippines, Nepal, Sri Lanka, South Africa, Iraq, United States, Indonesia, China, and Spain.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/IndianGems_/status/1994377608671514812"
+          },
+          {
+            "claim": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+            "summary": "The post asserts that Tamil Nadu politics has reached a big turning point today. This is due to veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigning from his party and joining Vijay’s TVK. His switch, described as a top organizational brain being wooed by DMK, signals TVK’s rapid rise and weakens AIADMK.",
+            "platform": "twitter",
+            "Post_link": "https://twitter.com/IndianGems_/status/1994062462103298169"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 17 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+            "content_summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post asserts he was killed defending his land, claiming Israeli occupation forces turned a day of joy into a day of tragedy.",
+            "source": "https://twitter.com/QudsNen/status/1994506855725633957",
+            "verification": {
+              "verified": false,
+              "verdict": "no_content",
+              "message": "No fact-checked information found for this claim",
+              "confidence": "low",
+              "reasoning": "No reliable sources found to verify this claim",
+              "sources": {
+                "links": [],
+                "titles": [],
+                "count": 0
+              },
+              "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+            "content_summary": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank. The settlers, from the Havat Maon outpost, were disguised in Israeli military uniforms and intercepted the activists on a public road.",
+            "source": "https://twitter.com/QudsNen/status/1994550317271204089",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources offer general context about Israeli settlers and activism in the West Bank but do not contain any specific information about the abduction of two Palestinian solidarity activists in Tuwani as described in the claim.",
+              "confidence": "low",
+              "reasoning": "Source 1 discusses Trump's victory and settlers' hopes for annexation. Source 2 mentions Israeli activists showing solidarity with Palestinians. Source 3 notes settler attacks on Palestinians. None of these snippets confirm the specific event of two Palestinian solidarity activists being abducted by Israeli settlers and occupation forces in Tuwani.",
+              "sources": {
+                "links": [
+                  "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+                  "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+                  "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqeqv2HsE8avglltwOkyYlCizqtHesrvC3c5UweWzd7dCl20pg60XacC&gaa_ts=692a6b92&gaa_sig=ZGizC79ABKyOMR6EDxF9rbZLa4qylAp1-dCfonrbiST9Dj-Leug2gdTbIdOUoqBOWVhfyxmyiQrno_zugjjIuw%3D%3D"
+                ],
+                "titles": [
+                  "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+                  "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+                  "War Shifts Global Dynamics"
+                ],
+                "count": 3
+              },
+              "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+            "content_summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. Water entered through cracks and gaps in the walls and corners of hospital rooms, which are described as already weakened after two years of continuous Israeli airstrikes and bombardments.",
+            "source": "https://twitter.com/QudsNen/status/1994566809412948077",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "None of the provided fact-checking sources contain any information about rainwater flooding surgical operating rooms in Gaza’s hospitals or any exacerbation of damage from Israeli airstrikes.",
+              "confidence": "low",
+              "reasoning": "The sources discuss different aspects of the Israeli-Palestinian conflict, such as peace plans (Source 1), hostage releases and fuel delivery (Source 2), and troop movements (Source 3), but none of them address the specific claim regarding hospital flooding in Gaza.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/by/nailah-morgan?page=9",
+                  "https://www.wsj.com/public/resources/documents/b1Gq2sOd5euiUIuNIbw9-WSJNewsPaper-10-24-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqfSmc-VSp1adbajVM9mlqPVGwOrt0u1gwr9bJLzIizvw2CIZg89a8RJ&gaa_ts=692a6b93&gaa_sig=hkgZkOoMHvfpB9EcO48JyHqjqXBl1_c2v9-qPBH1vYd3odeT0J0oILXx8HSh5mYUynRmLQmkDJIGs7MBJlCfpw%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/9FcoEtpUqsoiyJ7ghbOJ-WSJNewsPaper-10-31-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqddlKdSPYoHQJ0B936IbTsuRkE6LGAp9PG-oEOy7-VrKK0ujCEhHfau&gaa_ts=692a6b93&gaa_sig=bzwsfZGf6slMYRCxHV9uIkPaHPHxvjUmjwKeoYoNWZGA7R4TgjJJ29Tlskymwkx9jBnNQRWfXMdIxDecScIcxQ%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/tQKWHmxJ6tY6sM76v8dN-WSJNewsPaper-9-28-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqeS4eeuTW39_3CFtLNEjXGBFEgoxPA2nMTZLka2_jmQ0hCJxrqeW9UQ&gaa_ts=692a6b93&gaa_sig=0h-GxtFseqwC4r0dk6G4rTCc3865HSRSEfWbYEwGyAjZ8nEX1TzvAarU4yEHs4y6w1MCymE9MbX8gLgkRAOc4A%3D%3D",
+                  "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+                ],
+                "titles": [
+                  "Nailah Morgan - Page 9 - The New York Times",
+                  "Two More Hostages Set Free",
+                  "Israeli Troops Push Toward Gaza City",
+                  "Israel Targets Hezbollah Chief In Powerful Beirut Airstrike",
+                  "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+                ],
+                "count": 10
+              },
+              "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+            "content_summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post states that he was violently assaulted and his home was vandalized during the incident.",
+            "source": "https://twitter.com/QudsNen/status/1994555805300134322",
+            "verification": {
+              "verified": false,
+              "verdict": "no_content",
+              "message": "No fact-checked information found for this claim",
+              "confidence": "low",
+              "reasoning": "No reliable sources found to verify this claim",
+              "sources": {
+                "links": [],
+                "titles": [],
+                "count": 0
+              },
+              "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "content_summary": "Israeli settlers who breached the border into Syria have released a video. In the video, they declared their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+            "source": "https://twitter.com/QudsNen/status/1994541231834378634",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources do not confirm that Israeli settlers breached the border into Syria, released a video, or declared intentions to establish a new Jewish settlement in Quneitra. Source 1 mentions general events near the Syrian border, but the other sources are irrelevant.",
+              "confidence": "low",
+              "reasoning": "Source 1 mentions the IDF monitoring events in Syria and repelling an attack near the border but does not support the specific details of the claim. Sources 2 and 3 are completely unrelated to the claim.",
+              "sources": {
+                "links": [
+                  "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+                  "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfsJfX2GZwPp-6lQfK0m8Qd6_yK_lK84iDo9F-AdgcCVyoT3XPc6BHb&gaa_ts=692a6b99&gaa_sig=CedP0UOOWgp4kXhdLC_Nq9isbMjH7HxbXoXaQ0zLcvifR3ch2eGTLxxTX8pnHPyMkZHk4_7SNM_h3Pp501GOkA%3D%3D",
+                  "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+                ],
+                "titles": [
+                  "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+                  "Trump Pares Tariffs as Stocks Plunge",
+                  "Daily Maverick Top Read Summaries"
+                ],
+                "count": 3
+              },
+              "claim_text": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 4,
+              "extracted_claim": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "content_summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+            "source": "https://twitter.com/QudsNen/status/1994518249724416178",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided source lists a 'Fahim Ramadan Sirhan Ibrahim' as a Palestinian prisoner from 2011 but does not mention 'Jum’a Ramadan' being abducted recently from Zeita Jamma’in.",
+              "confidence": "low",
+              "reasoning": "Source 1 is a list of Palestinian prisoners from 2011, containing a partial name match ('Ramadan'). However, it does not confirm the specific first name 'Jum'a', the location of abduction (Zeita Jamma’in), or the event of a recent abduction as described in the claim.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+                ],
+                "titles": [
+                  "Full list: The Palestinian prisoners | News | Al Jazeera"
+                ],
+                "count": 1
+              },
+              "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 5,
+              "extracted_claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+            "content_summary": "Following an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp continue to shoulder the burden of survival and protection for their families and community. The camp is described as still reeling from destruction and loss, with women being crucial for ",
+            "source": "https://twitter.com/QudsNen/status/1994535023760859289",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources confirm an Israeli airstrike on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, resulting in casualties, which supports the core of the claim about a deadly event.",
+              "confidence": "high",
+              "reasoning": "Source 1 explicitly states, 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ... Nov 18, 2025 ... The attack killed people living in Ain al-Hilweh'. Source 3, dated '4 days ago' (implying Nov 2025), reports 'At least 13 civilians, including 11 children, were killed in the Israeli strike on Ein El-Hilweh camp'. Source 2 also mentions an attack on 'Ein el-Hilweh'. These sources strongly corroborate the occurrence of a deadly Israeli strike on the specified camp and date, which would indeed cause significant burden on residents, including women.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+                  "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+                  "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon",
+                  "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+                  "https://www.bbc.com/news/articles/c0l73j781y9o"
+                ],
+                "titles": [
+                  "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+                  "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+                  "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera",
+                  "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+                  "Lebanon says Israeli strike killed 13 people near Palestinian ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 6,
+              "extracted_claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+            "content_summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+            "source": "https://twitter.com/QudsNen/status/1994495159300493336",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While one source mentions a 'Mohammad Sharif Badwan' dying in Gaza in 2018, it does not confirm the child's name as 'Ahmed Mohammad Badwan' or specify the cause of death as lack of medical resources and inability to access treatment outside the Strip.",
+              "confidence": "medium",
+              "reasoning": "Source 2 mentions 'Mohammad Sharif Badwan' dying in Gaza in 2018, which has a similar last name but a different first name from 'Ahmed Mohammad Badwan'. The source also does not specify that the individual was a child or died due to a lack of medical resources and access to treatment outside the Strip. Source 1 lists other children killed but not 'Ahmed Mohammad Badwan'. Source 3 discusses general medical aid issues in Gaza but doesn't link it to this specific child.",
+              "sources": {
+                "links": [
+                  "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                  "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+                  "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+                  "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead",
+                  "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank"
+                ],
+                "titles": [
+                  "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                  "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+                  "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+                  "Gaza under siege: naming the dead | Human Rights News | Al Jazeera",
+                  "Five Palestinians killed by Israeli forces in occupied West Bank ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 7,
+              "extracted_claim": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+            "content_summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was taken to secure a settler incursion into the area.",
+            "source": "https://twitter.com/QudsNen/status/1994492626259546312",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "The sources extensively document Israeli occupation forces imposing severe movement restrictions and denying access to medical care for Palestinians in Hebron, making the scenario described in the claim highly plausible within that documented context.",
+              "confidence": "medium",
+              "reasoning": "Source 1 states that soldiers 'deny access to medical care' and that 'onerous movement restrictions mean residents cannot access basic services' in Hebron. Source 2 describes Israeli soldiers occupying homes and imposing 'more restrictions on movement' for Palestinians in Hebron. Source 3 further discusses Israeli restrictions hampering travel in Hebron. While none of the snippets explicitly detail the exact event of a pregnant woman being prevented from leaving her home in the Ras Cemetery area to secure a settler incursion, the general patterns of movement restrictions, denial of access, and security operations related to settlers in Hebron are strongly corroborated, supporting the plausibility of such a scenario.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2023/11/5/like-a-prison-the-palestinians-in-hebron-living-under-israeli-lockdown",
+                  "https://www.aljazeera.com/news/2015/9/23/a-lifetime-of-restrictions-for-palestinians-in-hebron",
+                  "https://www.nytimes.com/interactive/2024/10/13/world/middleeast/west-bank-roads.html",
+                  "https://www.haaretz.com/israel-news/2023-10-24/ty-article/.premium/israeli-army-expels-palestinian-activist-from-hebron-home-amid-increasing-restrictions/0000018b-6129-d307-adbb-6539a3aa0000",
+                  "https://www.aljazeera.com/news/2015/11/9/qa-israels-predawn-raid-on-a-youth-activist-centre"
+                ],
+                "titles": [
+                  "'Like a prison': The Palestinians in Hebron living under Israeli ...",
+                  "A lifetime of restrictions for Palestinians in Hebron | Human Rights ...",
+                  "Roadblocked - The New York Times",
+                  "Israeli Army Expels Palestinian Activist From Hebron Home Amid ...",
+                  "Q&A: Israel's predawn raid on a youth activist centre | Human Rights ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 8,
+              "extracted_claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+            "content_summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action occurred despite UN officials demanding a full probe into what they describe as a summary execution.",
+            "source": "https://twitter.com/QudsNen/status/1994526267966984205",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple recent sources confirm that Israeli National Security Minister Itamar Ben-Gvir took a stance that implies stopping or hindering investigations into soldiers who killed two Palestinians in Jenin, despite calls for a probe.",
+              "confidence": "high",
+              "reasoning": "Source 1 mentions 'Israeli troops kill two Palestinians in Jenin' and then refers to 'Israel's far-right National Security Minister Itamar Ben-Gvir' in the context of 'investigations' and 'heinous extrajudicial shootings'. Source 2 explicitly states, 'Shortly after the killings in Jenin, Netanyahu's National Security Minister Itamar Ben-Gvir ... investigation. “We already know what the”', strongly implying his prejudgment or opposition to a full investigation. Source 3 reiterates Ben-Gvir's stance regarding 'Israeli forces' and the 'investigation'. The collective evidence clearly indicates Ben-Gvir's intervention or strong opinion against a full investigation, consistent with 'moved to stop the investigation', and the context of demands for a probe is present.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/2025/11/27/israeli-troops-kill-two-palestinians-in-jenin-as-they-try-to-surrender",
+                  "https://www.aljazeera.com/news/2025/11/28/jenin-killings-highlight-israeli-system-of-total-impunity-rights-groups",
+                  "https://www.aljazeera.com/news/2025/11/28/jenin-killings-latest-example-of-israels-shoot-to-kill-policy",
+                  "https://www.haaretz.com/israel-news/2025-11-28/ty-article/.premium/israeli-authorities-to-investigate-officer-recorded-killing-surrendered-palestinians/0000019a-c9b9-db55-a7bb-edfd2d920001",
+                  "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4"
+                ],
+                "titles": [
+                  "Israeli troops kill two Palestinians in Jenin as they try to surrender ...",
+                  "Jenin killings highlight Israeli system of 'total impunity': Rights ...",
+                  "Jenin killings latest example of Israeli indifference to Palestinian ...",
+                  "Border Policemen Claim Self-defense in Probe, After Video Shows ...",
+                  "Updates: Israel strikes Palestine, Lebanon, Syria threatening ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 9,
+              "extracted_claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+            "content_summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+            "source": "https://twitter.com/QudsNen/status/1994537165414699095",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources directly confirm an Israeli raid into Beit Jinn, Syria, which resulted in the killing of at least 13 people.",
+              "confidence": "high",
+              "reasoning": "Source 2 states, 'Video shows funeral processions in Syria's Beit Jinn, after Israeli raids and missile strikes killed at least 13 people.' Source 3 reports, 'Thirteen killed in deadliest Israeli raid for months in southern Syria. Israel said it was targeting militants in the village of Beit'. Both sources explicitly corroborate the Israeli raid in Beit Jinn, Syria, and the killing of at least 13 people ('a dozen Syrians' is 12, so 13 fits). 'Heavy destruction' is a reasonable inference from 'missile strikes' and a 'deadliest Israeli raid'.",
+              "sources": {
+                "links": [
+                  "https://www.aljazeera.com/news/liveblog/2025/1/22/live-israel-kills-10-in-the-west-bank-120-bodies-found-in-gaza-in-2-days",
+                  "https://www.aljazeera.com/news/liveblog/2025/9/12/live-israel-kills-dozens-in-gaza-unsc-condemns-doha-attack",
+                  "https://www.bbc.com/news/articles/cvgx3zjvjg3o",
+                  "https://www.aljazeera.com/news/2025/7/16/ceasefire-collapses-in-syrias-suwayda-as-israel-threatens-escalation",
+                  "https://www.aljazeera.com/news/liveblog/2025/11/19/live-13-killed-in-israeli-air-attack-on-refugee-camp-in-lebanon"
+                ],
+                "titles": [
+                  "Updates: Israel's deadly West Bank attack mirrors military action in ...",
+                  "Updates: Israel kills 65 in Gaza, Qatari PM meets top US officials ...",
+                  "Lebanon: Satellite imagery reveals intensity of Israeli bombing",
+                  "Israel hits Syrian army HQ, near Damascus palace as Suwayda ...",
+                  "Updates: Israeli attacks on Gaza kill 28; warplanes bomb south ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 10,
+              "extracted_claim": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+            "content_summary": "A demonstration was held in Milan, Italy, as part of the general strike against the war economy, European rearmament, social inequality, and the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+            "source": "https://twitter.com/QudsNen/status/1994493332479701417",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While demonstrations in Milan, Italy, are confirmed for early 2025, and the Israeli offensive in Gaza was ongoing, the provided snippets do not explicitly state that a specific demonstration in Milan was for all the reasons listed in the claim.",
+              "confidence": "medium",
+              "reasoning": "Source 1 confirms a 'National demonstration' in Milan on Feb 26, 2025, for 'public services'. Source 3 confirms another event in Milan on April 7, 2025. Source 2 mentions the 'Israeli offensive in Rafah' as a separate event in Jan 2025. While it is plausible that a demonstration in Milan could encompass these broad political and social issues, the snippets do not explicitly link a specific Milan protest to the entire list of claimed motivations (war economy, European rearmament, social inequality, and Israeli genocide in Gaza).",
+              "sources": {
+                "links": [
+                  "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                  "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf7on2fW8arIG2xf6fsS5eJVO79x7K5Fp9GNjbIhJyffJB8Ql1kT2f6&gaa_ts=692a6bbe&gaa_sig=UH_NhBj6LKocbaJ7-_mMQSWIynSt-6E5LtL19zks3TsXCjRR5IqceZ02sgzJg-gutLpdZv3lOc7QliFZPLcUZA%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfe61c_YmO15qkmFYlfvvV78zoYXv2jyT9aSV4DgfMgWx2Y3KSZE_TG&gaa_ts=692a6bbe&gaa_sig=EkdHeCM8eVtym4zwQSwSy6ldP1er6LVn6klq-sZuexUxE0zkvhl8qtO74SmgiDZ-bez05smLV1CzbTcl2N_OKg%3D%3D"
+                ],
+                "titles": [
+                  "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                  "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                  "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+                  "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+                ],
+                "count": 7
+              },
+              "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 11,
+              "extracted_claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+            "content_summary": "Early Friday morning, an armed unit from the Israeli army carried out an incursion into Beit Jinn, Syria. Local residents immediately resisted, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+            "source": "https://twitter.com/QudsNen/status/1994499416011706606",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources confirm an Israeli army incursion into Beit Jinn, Syria, where residents offered resistance and at least 13 Syrians were killed.",
+              "confidence": "high",
+              "reasoning": "Source 1 mentions 'Israeli forces entered the village of Beit Jin' and confirms 'at least 13 people' killed. Source 2 directly states that 'troops moved in around 3 a.m. local time and were met by 'slight resistance,''. Source 3 also refers to an 'incursion into the town of Beit Jinn' and 'Two Syrian children are among those killed'. The killing of 'a dozen Syrians' (13 people) and resistance from residents are clearly supported. The claim does not provide evidence for 'injuries to Israeli soldiers', but the primary elements of the claim are strongly corroborated.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/world/israeli-forces-kill-at-least-13-people-in-raid-on-syrian-village-officials-and-residents-say",
+                  "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+                  "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+                  "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+                  "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups"
+                ],
+                "titles": [
+                  "Israeli forces kill at least 13 people in raid on Syrian village, officials ...",
+                  "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+                  "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+                  "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+                  "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 12,
+              "extracted_claim": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+            "content_summary": "The post outlines a scenario where an individual pays substantial taxes (30% income tax, 30% vehicle tax, 18% GST on insurance, up to 60% tax on fuel). Despite these payments, they get injured on an unexpected speed breaker, remain immobile for 6 months, incur medical bills of ₹6 lakh, and lose thei",
+            "source": "https://twitter.com/IndianGems_/status/1993972125930324264",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided sources do not contain information about high taxes, public infrastructure failures leading to personal and financial hardship, or any post illustrating such a scenario.",
+              "confidence": "high",
+              "reasoning": "Source 1 discusses carbon offsets. Source 2 discusses bird flu and public health response. Source 3 is a general link to a news website. None of these sources are relevant to the claim about taxes, infrastructure failures, or personal/financial hardship.",
+              "sources": {
+                "links": [
+                  "https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe",
+                  "https://www.pbs.org/newshour/health/how-america-lost-control-of-the-bird-flu-and-raised-the-risk-of-another-pandemic",
+                  "https://www.wsj.com/?gaa_at=eafs&gaa_n=AWEtsqdqGz_MGSliJCZdge-3-RCqtDGyZN9eXmJ7qJyOUWLTgKcSXI6-Fkkp&gaa_ts=692a6bc0&gaa_sig=TS8hGZQvy4mRctleUM4AxXCWQQR-Cm84MqmO3LGMvRzHuTm0jBusiPuqGKDNhcd8alX4KLOvdGcp8NvKbBqcig%3D%3D",
+                  "https://www.theguardian.com/commentisfree/2023/jun/03/electric-vehicles-early-adopter-petrol-car-ev-environment-rowan-atkinson",
+                  "https://www.nytimes.com/2024/01/31/upshot/san-francisco-drug-crisis.html"
+                ],
+                "titles": [
+                  "Revealed: more than 90% of rainforest carbon offsets by biggest ...",
+                  "How America lost control of the bird flu and raised the risk of another ...",
+                  "The Wall Street Journal & Breaking News, Business, Financial and ...",
+                  "I love electric vehicles – and was an early adopter. But increasingly I ...",
+                  "Can San Francisco Solve Its Drug Crisis? Five Things to Consider ..."
+                ],
+                "count": 8
+              },
+              "claim_text": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 13,
+              "extracted_claim": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+            "content_summary": "The post criticizes a specific repair of a crack on a flyover, stating that such a repair method is unacceptable, even in \"3rd world countries like Taliban.\" The author claims this poor infrastructure maintenance makes the country an international joke.",
+            "source": "https://twitter.com/IndianGems_/status/1994340420571283515",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "One source describes a catastrophic overpass collapse in Kolkata due to poor infrastructure, which strongly supports the underlying idea of severe infrastructure quality issues leading to negative perceptions.",
+              "confidence": "medium",
+              "reasoning": "Source 1 details a major 'Overpass Project in Kolkata' where 'A 330-foot slab of steel and concrete slammed down on a street'. This is a clear instance of severe infrastructure failure. While the claim mentions a 'poorly repaired crack' and 'becoming an international joke', the catastrophic collapse described in the source provides compelling evidence of significant infrastructure quality problems that would lead to public criticism and could be seen as damaging a country's reputation.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2016/04/04/world/asia/before-collapse-overpass-project-in-kolkata-made-our-lives-hell-for-years.html",
+                  "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdl1vQpEHHAQOrrjyabb0DARTEaPubTg4CXPuii7oA0ST_VRqMH3bqY&gaa_ts=692a6bc0&gaa_sig=3R_8TcGceKDxIZokdJFO6FKzYo_InIEyRhcnuzkBuBhwVB-8iLD5I68G_wKO5Z9L26WZRPuUOsEtxK8vvswXbQ%3D%3D"
+                ],
+                "titles": [
+                  "Overpass Project in Kolkata 'Made Our Lives Hell' for Years Before ...",
+                  "Their Star-Crossed Bromance Implodes in Spectacular Fashion"
+                ],
+                "count": 2
+              },
+              "claim_text": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 14,
+              "extracted_claim": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality."
+            },
+            "verification_timestamp": "2025-11-29T08:58:34.416490"
+          },
+          {
+            "claim_text": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+            "content_summary": "The post provides a list of countries purportedly having the 'most unattractive men in 2025.' The list includes Bangladesh at number one, followed by Pakistan, Egypt, Maldives, Ethiopia, Kenya, Nigeria, Philippines, Nepal, Sri Lanka, South Africa, Iraq, United States, Indonesia, China, and Spain.",
+            "source": "https://twitter.com/IndianGems_/status/1994377608671514812",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking sources contain no information regarding a list of countries with the most unattractive men or Bangladesh's ranking in such a list. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+              "confidence": "high",
+              "reasoning": "Source 1 discusses India's economy and Mr. Modi's tenure. Source 2 talks about a global study on 'nature-connected' nations. Source 3 is a general description of The New York Times. None of these snippets include any data or discussion related to the attractiveness of men in different countries or Bangladesh's ranking. Consequently, there is no evidence to support or deny the claim.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/world-asia-india-68823827",
+                  "https://www.theguardian.com/environment/2025/nov/01/britain-one-of-least-nature-connected-nations-in-world-with-nepal-the-most",
+                  "https://www.nytimes.com/",
+                  "https://www.nytimes.com/live/2025/07/28/nyregion/nyc-shooting",
+                  "https://www.nytimes.com/interactive/2018/05/31/theater/best-25-plays.html"
+                ],
+                "titles": [
+                  "India's economy: The good, bad and ugly in six charts",
+                  "Britain one of least 'nature-connected' nations in world – with Nepal ...",
+                  "The New York Times - Breaking News, US News, World News and ...",
+                  "Gunman Kills 4, Including Police Officer, in Midtown Manhattan ...",
+                  "The Great Work Continues: The 25 Best American Plays Since ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 15,
+              "extracted_claim": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first."
+            },
+            "verification_timestamp": "2025-11-29T08:58:42.908405"
+          },
+          {
+            "claim_text": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+            "content_summary": "The post asserts that Tamil Nadu politics has reached a big turning point today. This is due to veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigning from his party and joining Vijay’s TVK. His switch, described as a top organizational brain being wooed by DMK, signals TVK’s rapid rise a",
+            "source": "https://twitter.com/IndianGems_/status/1994062462103298169",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking sources do not contain any information about K.A. Sengottaiyan's resignation from AIADMK or his alleged move to Vijay's TVK. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+              "confidence": "high",
+              "reasoning": "Source 1 focuses on women's voting records in Bihar. Source 2 provides live updates from the Tamil Nadu Assembly Elections 2021 results, mentioning the change of power from AIADMK to DMK. Neither source makes any mention of K.A. Sengottaiyan, his status within AIADMK, or any affiliation with a party named Vijay's TVK. Without relevant information, the claim cannot be substantiated or disproven.",
+              "sources": {
+                "links": [
+                  "https://indianexpress.com/article/political-pulse/women-voting-records-bihar-turnout-exceed-men-10361728/",
+                  "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-assembly-elections-2021-results-live-updates/article34462337.ece"
+                ],
+                "titles": [
+                  "Women shatter voting records in Bihar, turnout 8.8% more, exceed ...",
+                  "Tamil Nadu Assembly Elections 2021 results | Live updates - The ..."
+                ],
+                "count": 2
+              },
+              "claim_text": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+              "verification_date": "2025-11-29T08:57:04.908866"
+            },
+            "claim_metadata": {
+              "post_index": 16,
+              "extracted_claim": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics."
+            },
+            "verification_timestamp": "2025-11-29T08:58:42.908405"
+          }
+        ],
+        "summary": {
+          "total_claims": 17,
+          "successfully_verified": 6,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 2
+        },
+        "timestamp": "2025-11-29T08:58:42.908405",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 17,
+          "batch_size": 15,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": false,
+        "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+        "debunk_posts": [],
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 11,
+          "batch_size": 10,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+      "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post asserts he was killed defending his land, claiming Israeli occupation forces turned a day of joy into a day of tragedy.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957",
+      "verification": {
+        "verified": false,
+        "verdict": "no_content",
+        "message": "No fact-checked information found for this claim",
+        "confidence": "low",
+        "reasoning": "No reliable sources found to verify this claim",
+        "sources": {
+          "links": [],
+          "titles": [],
+          "count": 0
+        },
+        "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+      "summary": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank. The settlers, from the Havat Maon outpost, were disguised in Israeli military uniforms and intercepted the activists on a public road.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources offer general context about Israeli settlers and activism in the West Bank but do not contain any specific information about the abduction of two Palestinian solidarity activists in Tuwani as described in the claim.",
+        "confidence": "low",
+        "reasoning": "Source 1 discusses Trump's victory and settlers' hopes for annexation. Source 2 mentions Israeli activists showing solidarity with Palestinians. Source 3 notes settler attacks on Palestinians. None of these snippets confirm the specific event of two Palestinian solidarity activists being abducted by Israeli settlers and occupation forces in Tuwani.",
+        "sources": {
+          "links": [
+            "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+            "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+            "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqeqv2HsE8avglltwOkyYlCizqtHesrvC3c5UweWzd7dCl20pg60XacC&gaa_ts=692a6b92&gaa_sig=ZGizC79ABKyOMR6EDxF9rbZLa4qylAp1-dCfonrbiST9Dj-Leug2gdTbIdOUoqBOWVhfyxmyiQrno_zugjjIuw%3D%3D"
+          ],
+          "titles": [
+            "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+            "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+            "War Shifts Global Dynamics"
+          ],
+          "count": 3
+        },
+        "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+      "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. Water entered through cracks and gaps in the walls and corners of hospital rooms, which are described as already weakened after two years of continuous Israeli airstrikes and bombardments.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "None of the provided fact-checking sources contain any information about rainwater flooding surgical operating rooms in Gaza’s hospitals or any exacerbation of damage from Israeli airstrikes.",
+        "confidence": "low",
+        "reasoning": "The sources discuss different aspects of the Israeli-Palestinian conflict, such as peace plans (Source 1), hostage releases and fuel delivery (Source 2), and troop movements (Source 3), but none of them address the specific claim regarding hospital flooding in Gaza.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/by/nailah-morgan?page=9",
+            "https://www.wsj.com/public/resources/documents/b1Gq2sOd5euiUIuNIbw9-WSJNewsPaper-10-24-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqfSmc-VSp1adbajVM9mlqPVGwOrt0u1gwr9bJLzIizvw2CIZg89a8RJ&gaa_ts=692a6b93&gaa_sig=hkgZkOoMHvfpB9EcO48JyHqjqXBl1_c2v9-qPBH1vYd3odeT0J0oILXx8HSh5mYUynRmLQmkDJIGs7MBJlCfpw%3D%3D",
+            "https://www.wsj.com/public/resources/documents/9FcoEtpUqsoiyJ7ghbOJ-WSJNewsPaper-10-31-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqddlKdSPYoHQJ0B936IbTsuRkE6LGAp9PG-oEOy7-VrKK0ujCEhHfau&gaa_ts=692a6b93&gaa_sig=bzwsfZGf6slMYRCxHV9uIkPaHPHxvjUmjwKeoYoNWZGA7R4TgjJJ29Tlskymwkx9jBnNQRWfXMdIxDecScIcxQ%3D%3D",
+            "https://www.wsj.com/public/resources/documents/tQKWHmxJ6tY6sM76v8dN-WSJNewsPaper-9-28-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqeS4eeuTW39_3CFtLNEjXGBFEgoxPA2nMTZLka2_jmQ0hCJxrqeW9UQ&gaa_ts=692a6b93&gaa_sig=0h-GxtFseqwC4r0dk6G4rTCc3865HSRSEfWbYEwGyAjZ8nEX1TzvAarU4yEHs4y6w1MCymE9MbX8gLgkRAOc4A%3D%3D",
+            "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+          ],
+          "titles": [
+            "Nailah Morgan - Page 9 - The New York Times",
+            "Two More Hostages Set Free",
+            "Israeli Troops Push Toward Gaza City",
+            "Israel Targets Hezbollah Chief In Powerful Beirut Airstrike",
+            "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+          ],
+          "count": 10
+        },
+        "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+      "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post states that he was violently assaulted and his home was vandalized during the incident.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322",
+      "verification": {
+        "verified": false,
+        "verdict": "no_content",
+        "message": "No fact-checked information found for this claim",
+        "confidence": "low",
+        "reasoning": "No reliable sources found to verify this claim",
+        "sources": {
+          "links": [],
+          "titles": [],
+          "count": 0
+        },
+        "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+      "summary": "Israeli settlers who breached the border into Syria have released a video. In the video, they declared their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not confirm that Israeli settlers breached the border into Syria, released a video, or declared intentions to establish a new Jewish settlement in Quneitra. Source 1 mentions general events near the Syrian border, but the other sources are irrelevant.",
+        "confidence": "low",
+        "reasoning": "Source 1 mentions the IDF monitoring events in Syria and repelling an attack near the border but does not support the specific details of the claim. Sources 2 and 3 are completely unrelated to the claim.",
+        "sources": {
+          "links": [
+            "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+            "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfsJfX2GZwPp-6lQfK0m8Qd6_yK_lK84iDo9F-AdgcCVyoT3XPc6BHb&gaa_ts=692a6b99&gaa_sig=CedP0UOOWgp4kXhdLC_Nq9isbMjH7HxbXoXaQ0zLcvifR3ch2eGTLxxTX8pnHPyMkZHk4_7SNM_h3Pp501GOkA%3D%3D",
+            "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+          ],
+          "titles": [
+            "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+            "Trump Pares Tariffs as Stocks Plunge",
+            "Daily Maverick Top Read Summaries"
+          ],
+          "count": 3
+        },
+        "claim_text": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+      "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided source lists a 'Fahim Ramadan Sirhan Ibrahim' as a Palestinian prisoner from 2011 but does not mention 'Jum’a Ramadan' being abducted recently from Zeita Jamma’in.",
+        "confidence": "low",
+        "reasoning": "Source 1 is a list of Palestinian prisoners from 2011, containing a partial name match ('Ramadan'). However, it does not confirm the specific first name 'Jum'a', the location of abduction (Zeita Jamma’in), or the event of a recent abduction as described in the claim.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+          ],
+          "titles": [
+            "Full list: The Palestinian prisoners | News | Al Jazeera"
+          ],
+          "count": 1
+        },
+        "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+      "summary": "Following an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp continue to shoulder the burden of survival and protection for their families and community. The camp is described as still reeling from destruction and loss, with women being crucial for resilience.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources confirm an Israeli airstrike on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, resulting in casualties, which supports the core of the claim about a deadly event.",
+        "confidence": "high",
+        "reasoning": "Source 1 explicitly states, 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ... Nov 18, 2025 ... The attack killed people living in Ain al-Hilweh'. Source 3, dated '4 days ago' (implying Nov 2025), reports 'At least 13 civilians, including 11 children, were killed in the Israeli strike on Ein El-Hilweh camp'. Source 2 also mentions an attack on 'Ein el-Hilweh'. These sources strongly corroborate the occurrence of a deadly Israeli strike on the specified camp and date, which would indeed cause significant burden on residents, including women.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+            "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+            "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon",
+            "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+            "https://www.bbc.com/news/articles/c0l73j781y9o"
+          ],
+          "titles": [
+            "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+            "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+            "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera",
+            "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+            "Lebanon says Israeli strike killed 13 people near Palestinian ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+      "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While one source mentions a 'Mohammad Sharif Badwan' dying in Gaza in 2018, it does not confirm the child's name as 'Ahmed Mohammad Badwan' or specify the cause of death as lack of medical resources and inability to access treatment outside the Strip.",
+        "confidence": "medium",
+        "reasoning": "Source 2 mentions 'Mohammad Sharif Badwan' dying in Gaza in 2018, which has a similar last name but a different first name from 'Ahmed Mohammad Badwan'. The source also does not specify that the individual was a child or died due to a lack of medical resources and access to treatment outside the Strip. Source 1 lists other children killed but not 'Ahmed Mohammad Badwan'. Source 3 discusses general medical aid issues in Gaza but doesn't link it to this specific child.",
+        "sources": {
+          "links": [
+            "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+            "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+            "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+            "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead",
+            "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank"
+          ],
+          "titles": [
+            "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+            "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+            "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+            "Gaza under siege: naming the dead | Human Rights News | Al Jazeera",
+            "Five Palestinians killed by Israeli forces in occupied West Bank ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+      "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was taken to secure a settler incursion into the area.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "The sources extensively document Israeli occupation forces imposing severe movement restrictions and denying access to medical care for Palestinians in Hebron, making the scenario described in the claim highly plausible within that documented context.",
+        "confidence": "medium",
+        "reasoning": "Source 1 states that soldiers 'deny access to medical care' and that 'onerous movement restrictions mean residents cannot access basic services' in Hebron. Source 2 describes Israeli soldiers occupying homes and imposing 'more restrictions on movement' for Palestinians in Hebron. Source 3 further discusses Israeli restrictions hampering travel in Hebron. While none of the snippets explicitly detail the exact event of a pregnant woman being prevented from leaving her home in the Ras Cemetery area to secure a settler incursion, the general patterns of movement restrictions, denial of access, and security operations related to settlers in Hebron are strongly corroborated, supporting the plausibility of such a scenario.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2023/11/5/like-a-prison-the-palestinians-in-hebron-living-under-israeli-lockdown",
+            "https://www.aljazeera.com/news/2015/9/23/a-lifetime-of-restrictions-for-palestinians-in-hebron",
+            "https://www.nytimes.com/interactive/2024/10/13/world/middleeast/west-bank-roads.html",
+            "https://www.haaretz.com/israel-news/2023-10-24/ty-article/.premium/israeli-army-expels-palestinian-activist-from-hebron-home-amid-increasing-restrictions/0000018b-6129-d307-adbb-6539a3aa0000",
+            "https://www.aljazeera.com/news/2015/11/9/qa-israels-predawn-raid-on-a-youth-activist-centre"
+          ],
+          "titles": [
+            "'Like a prison': The Palestinians in Hebron living under Israeli ...",
+            "A lifetime of restrictions for Palestinians in Hebron | Human Rights ...",
+            "Roadblocked - The New York Times",
+            "Israeli Army Expels Palestinian Activist From Hebron Home Amid ...",
+            "Q&A: Israel's predawn raid on a youth activist centre | Human Rights ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+      "summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action occurred despite UN officials demanding a full probe into what they describe as a summary execution.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple recent sources confirm that Israeli National Security Minister Itamar Ben-Gvir took a stance that implies stopping or hindering investigations into soldiers who killed two Palestinians in Jenin, despite calls for a probe.",
+        "confidence": "high",
+        "reasoning": "Source 1 mentions 'Israeli troops kill two Palestinians in Jenin' and then refers to 'Israel's far-right National Security Minister Itamar Ben-Gvir' in the context of 'investigations' and 'heinous extrajudicial shootings'. Source 2 explicitly states, 'Shortly after the killings in Jenin, Netanyahu's National Security Minister Itamar Ben-Gvir ... investigation. “We already know what the”', strongly implying his prejudgment or opposition to a full investigation. Source 3 reiterates Ben-Gvir's stance regarding 'Israeli forces' and the 'investigation'. The collective evidence clearly indicates Ben-Gvir's intervention or strong opinion against a full investigation, consistent with 'moved to stop the investigation', and the context of demands for a probe is present.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/2025/11/27/israeli-troops-kill-two-palestinians-in-jenin-as-they-try-to-surrender",
+            "https://www.aljazeera.com/news/2025/11/28/jenin-killings-highlight-israeli-system-of-total-impunity-rights-groups",
+            "https://www.aljazeera.com/news/2025/11/28/jenin-killings-latest-example-of-israels-shoot-to-kill-policy",
+            "https://www.haaretz.com/israel-news/2025-11-28/ty-article/.premium/israeli-authorities-to-investigate-officer-recorded-killing-surrendered-palestinians/0000019a-c9b9-db55-a7bb-edfd2d920001",
+            "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4"
+          ],
+          "titles": [
+            "Israeli troops kill two Palestinians in Jenin as they try to surrender ...",
+            "Jenin killings highlight Israeli system of 'total impunity': Rights ...",
+            "Jenin killings latest example of Israeli indifference to Palestinian ...",
+            "Border Policemen Claim Self-defense in Probe, After Video Shows ...",
+            "Updates: Israel strikes Palestine, Lebanon, Syria threatening ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+      "summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994537165414699095",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources directly confirm an Israeli raid into Beit Jinn, Syria, which resulted in the killing of at least 13 people.",
+        "confidence": "high",
+        "reasoning": "Source 2 states, 'Video shows funeral processions in Syria's Beit Jinn, after Israeli raids and missile strikes killed at least 13 people.' Source 3 reports, 'Thirteen killed in deadliest Israeli raid for months in southern Syria. Israel said it was targeting militants in the village of Beit'. Both sources explicitly corroborate the Israeli raid in Beit Jinn, Syria, and the killing of at least 13 people ('a dozen Syrians' is 12, so 13 fits). 'Heavy destruction' is a reasonable inference from 'missile strikes' and a 'deadliest Israeli raid'.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/liveblog/2025/1/22/live-israel-kills-10-in-the-west-bank-120-bodies-found-in-gaza-in-2-days",
+            "https://www.aljazeera.com/news/liveblog/2025/9/12/live-israel-kills-dozens-in-gaza-unsc-condemns-doha-attack",
+            "https://www.bbc.com/news/articles/cvgx3zjvjg3o",
+            "https://www.aljazeera.com/news/2025/7/16/ceasefire-collapses-in-syrias-suwayda-as-israel-threatens-escalation",
+            "https://www.aljazeera.com/news/liveblog/2025/11/19/live-13-killed-in-israeli-air-attack-on-refugee-camp-in-lebanon"
+          ],
+          "titles": [
+            "Updates: Israel's deadly West Bank attack mirrors military action in ...",
+            "Updates: Israel kills 65 in Gaza, Qatari PM meets top US officials ...",
+            "Lebanon: Satellite imagery reveals intensity of Israeli bombing",
+            "Israel hits Syrian army HQ, near Damascus palace as Suwayda ...",
+            "Updates: Israeli attacks on Gaza kill 28; warplanes bomb south ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+      "summary": "A demonstration was held in Milan, Italy, as part of the general strike against the war economy, European rearmament, social inequality, and the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While demonstrations in Milan, Italy, are confirmed for early 2025, and the Israeli offensive in Gaza was ongoing, the provided snippets do not explicitly state that a specific demonstration in Milan was for all the reasons listed in the claim.",
+        "confidence": "medium",
+        "reasoning": "Source 1 confirms a 'National demonstration' in Milan on Feb 26, 2025, for 'public services'. Source 3 confirms another event in Milan on April 7, 2025. Source 2 mentions the 'Israeli offensive in Rafah' as a separate event in Jan 2025. While it is plausible that a demonstration in Milan could encompass these broad political and social issues, the snippets do not explicitly link a specific Milan protest to the entire list of claimed motivations (war economy, European rearmament, social inequality, and Israeli genocide in Gaza).",
+        "sources": {
+          "links": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf7on2fW8arIG2xf6fsS5eJVO79x7K5Fp9GNjbIhJyffJB8Ql1kT2f6&gaa_ts=692a6bbe&gaa_sig=UH_NhBj6LKocbaJ7-_mMQSWIynSt-6E5LtL19zks3TsXCjRR5IqceZ02sgzJg-gutLpdZv3lOc7QliFZPLcUZA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfe61c_YmO15qkmFYlfvvV78zoYXv2jyT9aSV4DgfMgWx2Y3KSZE_TG&gaa_ts=692a6bbe&gaa_sig=EkdHeCM8eVtym4zwQSwSy6ldP1er6LVn6klq-sZuexUxE0zkvhl8qtO74SmgiDZ-bez05smLV1CzbTcl2N_OKg%3D%3D"
+          ],
+          "titles": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+            "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+          ],
+          "count": 7
+        },
+        "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+      "summary": "Early Friday morning, an armed unit from the Israeli army carried out an incursion into Beit Jinn, Syria. Local residents immediately resisted, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/QudsNen/status/1994499416011706606",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources confirm an Israeli army incursion into Beit Jinn, Syria, where residents offered resistance and at least 13 Syrians were killed.",
+        "confidence": "high",
+        "reasoning": "Source 1 mentions 'Israeli forces entered the village of Beit Jin' and confirms 'at least 13 people' killed. Source 2 directly states that 'troops moved in around 3 a.m. local time and were met by 'slight resistance,''. Source 3 also refers to an 'incursion into the town of Beit Jinn' and 'Two Syrian children are among those killed'. The killing of 'a dozen Syrians' (13 people) and resistance from residents are clearly supported. The claim does not provide evidence for 'injuries to Israeli soldiers', but the primary elements of the claim are strongly corroborated.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/world/israeli-forces-kill-at-least-13-people-in-raid-on-syrian-village-officials-and-residents-say",
+            "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+            "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+            "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+            "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups"
+          ],
+          "titles": [
+            "Israeli forces kill at least 13 people in raid on Syrian village, officials ...",
+            "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+            "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+            "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+            "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+      "summary": "The post outlines a scenario where an individual pays substantial taxes (30% income tax, 30% vehicle tax, 18% GST on insurance, up to 60% tax on fuel). Despite these payments, they get injured on an unexpected speed breaker, remain immobile for 6 months, incur medical bills of ₹6 lakh, and lose their job, highlighting a perceived failure of public services.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/IndianGems_/status/1993972125930324264",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources do not contain information about high taxes, public infrastructure failures leading to personal and financial hardship, or any post illustrating such a scenario.",
+        "confidence": "high",
+        "reasoning": "Source 1 discusses carbon offsets. Source 2 discusses bird flu and public health response. Source 3 is a general link to a news website. None of these sources are relevant to the claim about taxes, infrastructure failures, or personal/financial hardship.",
+        "sources": {
+          "links": [
+            "https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe",
+            "https://www.pbs.org/newshour/health/how-america-lost-control-of-the-bird-flu-and-raised-the-risk-of-another-pandemic",
+            "https://www.wsj.com/?gaa_at=eafs&gaa_n=AWEtsqdqGz_MGSliJCZdge-3-RCqtDGyZN9eXmJ7qJyOUWLTgKcSXI6-Fkkp&gaa_ts=692a6bc0&gaa_sig=TS8hGZQvy4mRctleUM4AxXCWQQR-Cm84MqmO3LGMvRzHuTm0jBusiPuqGKDNhcd8alX4KLOvdGcp8NvKbBqcig%3D%3D",
+            "https://www.theguardian.com/commentisfree/2023/jun/03/electric-vehicles-early-adopter-petrol-car-ev-environment-rowan-atkinson",
+            "https://www.nytimes.com/2024/01/31/upshot/san-francisco-drug-crisis.html"
+          ],
+          "titles": [
+            "Revealed: more than 90% of rainforest carbon offsets by biggest ...",
+            "How America lost control of the bird flu and raised the risk of another ...",
+            "The Wall Street Journal & Breaking News, Business, Financial and ...",
+            "I love electric vehicles – and was an early adopter. But increasingly I ...",
+            "Can San Francisco Solve Its Drug Crisis? Five Things to Consider ..."
+          ],
+          "count": 8
+        },
+        "claim_text": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+      "summary": "The post criticizes a specific repair of a crack on a flyover, stating that such a repair method is unacceptable, even in \"3rd world countries like Taliban.\" The author claims this poor infrastructure maintenance makes the country an international joke.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/IndianGems_/status/1994340420571283515",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "One source describes a catastrophic overpass collapse in Kolkata due to poor infrastructure, which strongly supports the underlying idea of severe infrastructure quality issues leading to negative perceptions.",
+        "confidence": "medium",
+        "reasoning": "Source 1 details a major 'Overpass Project in Kolkata' where 'A 330-foot slab of steel and concrete slammed down on a street'. This is a clear instance of severe infrastructure failure. While the claim mentions a 'poorly repaired crack' and 'becoming an international joke', the catastrophic collapse described in the source provides compelling evidence of significant infrastructure quality problems that would lead to public criticism and could be seen as damaging a country's reputation.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2016/04/04/world/asia/before-collapse-overpass-project-in-kolkata-made-our-lives-hell-for-years.html",
+            "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdl1vQpEHHAQOrrjyabb0DARTEaPubTg4CXPuii7oA0ST_VRqMH3bqY&gaa_ts=692a6bc0&gaa_sig=3R_8TcGceKDxIZokdJFO6FKzYo_InIEyRhcnuzkBuBhwVB-8iLD5I68G_wKO5Z9L26WZRPuUOsEtxK8vvswXbQ%3D%3D"
+          ],
+          "titles": [
+            "Overpass Project in Kolkata 'Made Our Lives Hell' for Years Before ...",
+            "Their Star-Crossed Bromance Implodes in Spectacular Fashion"
+          ],
+          "count": 2
+        },
+        "claim_text": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+      "summary": "The post provides a list of countries purportedly having the 'most unattractive men in 2025.' The list includes Bangladesh at number one, followed by Pakistan, Egypt, Maldives, Ethiopia, Kenya, Nigeria, Philippines, Nepal, Sri Lanka, South Africa, Iraq, United States, Indonesia, China, and Spain.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/IndianGems_/status/1994377608671514812",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking sources contain no information regarding a list of countries with the most unattractive men or Bangladesh's ranking in such a list. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+        "confidence": "high",
+        "reasoning": "Source 1 discusses India's economy and Mr. Modi's tenure. Source 2 talks about a global study on 'nature-connected' nations. Source 3 is a general description of The New York Times. None of these snippets include any data or discussion related to the attractiveness of men in different countries or Bangladesh's ranking. Consequently, there is no evidence to support or deny the claim.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/world-asia-india-68823827",
+            "https://www.theguardian.com/environment/2025/nov/01/britain-one-of-least-nature-connected-nations-in-world-with-nepal-the-most",
+            "https://www.nytimes.com/",
+            "https://www.nytimes.com/live/2025/07/28/nyregion/nyc-shooting",
+            "https://www.nytimes.com/interactive/2018/05/31/theater/best-25-plays.html"
+          ],
+          "titles": [
+            "India's economy: The good, bad and ugly in six charts",
+            "Britain one of least 'nature-connected' nations in world – with Nepal ...",
+            "The New York Times - Breaking News, US News, World News and ...",
+            "Gunman Kills 4, Including Police Officer, in Midtown Manhattan ...",
+            "The Great Work Continues: The 25 Best American Plays Since ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    },
+    {
+      "claim": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+      "summary": "The post asserts that Tamil Nadu politics has reached a big turning point today. This is due to veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigning from his party and joining Vijay’s TVK. His switch, described as a top organizational brain being wooed by DMK, signals TVK’s rapid rise and weakens AIADMK.",
+      "platform": "twitter",
+      "Post_link": "https://twitter.com/IndianGems_/status/1994062462103298169",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking sources do not contain any information about K.A. Sengottaiyan's resignation from AIADMK or his alleged move to Vijay's TVK. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+        "confidence": "high",
+        "reasoning": "Source 1 focuses on women's voting records in Bihar. Source 2 provides live updates from the Tamil Nadu Assembly Elections 2021 results, mentioning the change of power from AIADMK to DMK. Neither source makes any mention of K.A. Sengottaiyan, his status within AIADMK, or any affiliation with a party named Vijay's TVK. Without relevant information, the claim cannot be substantiated or disproven.",
+        "sources": {
+          "links": [
+            "https://indianexpress.com/article/political-pulse/women-voting-records-bihar-turnout-exceed-men-10361728/",
+            "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-assembly-elections-2021-results-live-updates/article34462337.ece"
+          ],
+          "titles": [
+            "Women shatter voting records in Bihar, turnout 8.8% more, exceed ...",
+            "Tamil Nadu Assembly Elections 2021 results | Live updates - The ..."
+          ],
+          "count": 2
+        },
+        "claim_text": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+        "verification_date": "2025-11-29T08:57:04.908866"
+      }
+    }
+  ],
+  "debunk_posts": [],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 17,
+      "batch_size": 15,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 11,
+      "batch_size": 10,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 17,
+    "debunk_posts_generated": 0,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T08:56:48.869906",
+          "total_posts": 17,
+          "posts_by_platform": {
+            "reddit": 0,
+            "threads": 0
+          },
+          "platforms": [
+            "twitter"
+          ],
+          "posts": [
+            {
+              "claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+              "summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post asserts he was killed defending his land, claiming Israeli occupation forces turned a day of joy into a day of tragedy.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994506855725633957"
+            },
+            {
+              "claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "summary": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank. The settlers, from the Havat Maon outpost, were disguised in Israeli military uniforms and intercepted the activists on a public road.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994550317271204089"
+            },
+            {
+              "claim": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+              "summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. Water entered through cracks and gaps in the walls and corners of hospital rooms, which are described as already weakened after two years of continuous Israeli airstrikes and bombardments.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994566809412948077"
+            },
+            {
+              "claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+              "summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post states that he was violently assaulted and his home was vandalized during the incident.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994555805300134322"
+            },
+            {
+              "claim": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "summary": "Israeli settlers who breached the border into Syria have released a video. In the video, they declared their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994541231834378634"
+            },
+            {
+              "claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994518249724416178"
+            },
+            {
+              "claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+              "summary": "Following an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp continue to shoulder the burden of survival and protection for their families and community. The camp is described as still reeling from destruction and loss, with women being crucial for resilience.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994535023760859289"
+            },
+            {
+              "claim": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994495159300493336"
+            },
+            {
+              "claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+              "summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was taken to secure a settler incursion into the area.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994492626259546312"
+            },
+            {
+              "claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+              "summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action occurred despite UN officials demanding a full probe into what they describe as a summary execution.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994526267966984205"
+            },
+            {
+              "claim": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+              "summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994537165414699095"
+            },
+            {
+              "claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "summary": "A demonstration was held in Milan, Italy, as part of the general strike against the war economy, European rearmament, social inequality, and the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994493332479701417"
+            },
+            {
+              "claim": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+              "summary": "Early Friday morning, an armed unit from the Israeli army carried out an incursion into Beit Jinn, Syria. Local residents immediately resisted, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/QudsNen/status/1994499416011706606"
+            },
+            {
+              "claim": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+              "summary": "The post outlines a scenario where an individual pays substantial taxes (30% income tax, 30% vehicle tax, 18% GST on insurance, up to 60% tax on fuel). Despite these payments, they get injured on an unexpected speed breaker, remain immobile for 6 months, incur medical bills of ₹6 lakh, and lose their job, highlighting a perceived failure of public services.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/IndianGems_/status/1993972125930324264"
+            },
+            {
+              "claim": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+              "summary": "The post criticizes a specific repair of a crack on a flyover, stating that such a repair method is unacceptable, even in \"3rd world countries like Taliban.\" The author claims this poor infrastructure maintenance makes the country an international joke.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/IndianGems_/status/1994340420571283515"
+            },
+            {
+              "claim": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+              "summary": "The post provides a list of countries purportedly having the 'most unattractive men in 2025.' The list includes Bangladesh at number one, followed by Pakistan, Egypt, Maldives, Ethiopia, Kenya, Nigeria, Philippines, Nepal, Sri Lanka, South Africa, Iraq, United States, Indonesia, China, and Spain.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/IndianGems_/status/1994377608671514812"
+            },
+            {
+              "claim": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+              "summary": "The post asserts that Tamil Nadu politics has reached a big turning point today. This is due to veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigning from his party and joining Vijay’s TVK. His switch, described as a top organizational brain being wooed by DMK, signals TVK’s rapid rise and weakens AIADMK.",
+              "platform": "twitter",
+              "Post_link": "https://twitter.com/IndianGems_/status/1994062462103298169"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 17 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+              "content_summary": "On his wedding day, Hassan Mohammad Abdul-Razzaq al-Saadi was killed at dawn while confronting an Israeli occupation incursion in the Syrian town of Beit Jann. The post asserts he was killed defending his land, claiming Israeli occupation forces turned a day of joy into a day of tragedy.",
+              "source": "https://twitter.com/QudsNen/status/1994506855725633957",
+              "verification": {
+                "verified": false,
+                "verdict": "no_content",
+                "message": "No fact-checked information found for this claim",
+                "confidence": "low",
+                "reasoning": "No reliable sources found to verify this claim",
+                "sources": {
+                  "links": [],
+                  "titles": [],
+                  "count": 0
+                },
+                "claim_text": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Hassan Mohammad Abdul-Razzaq al-Saadi was killed on his wedding day while confronting an Israeli incursion in Beit Jann, Syria."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+              "content_summary": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank. The settlers, from the Havat Maon outpost, were disguised in Israeli military uniforms and intercepted the activists on a public road.",
+              "source": "https://twitter.com/QudsNen/status/1994550317271204089",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources offer general context about Israeli settlers and activism in the West Bank but do not contain any specific information about the abduction of two Palestinian solidarity activists in Tuwani as described in the claim.",
+                "confidence": "low",
+                "reasoning": "Source 1 discusses Trump's victory and settlers' hopes for annexation. Source 2 mentions Israeli activists showing solidarity with Palestinians. Source 3 notes settler attacks on Palestinians. None of these snippets confirm the specific event of two Palestinian solidarity activists being abducted by Israeli settlers and occupation forces in Tuwani.",
+                "sources": {
+                  "links": [
+                    "https://www.cbc.ca/news/world/settlers-west-bank-1.7385172",
+                    "https://www.haaretz.com/israel-news/2024-02-02/ty-article-magazine/.highlight/meet-the-israelis-physically-blocking-the-ethnic-cleansing-unfolding-in-the-west-bank/0000018d-6609-d37c-a9df-ef8b77200000",
+                    "https://www.wsj.com/public/resources/documents/gwV9H7PgTNNGg1jnacj1-WSJNewsPaper-10-17-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqeqv2HsE8avglltwOkyYlCizqtHesrvC3c5UweWzd7dCl20pg60XacC&gaa_ts=692a6b92&gaa_sig=ZGizC79ABKyOMR6EDxF9rbZLa4qylAp1-dCfonrbiST9Dj-Leug2gdTbIdOUoqBOWVhfyxmyiQrno_zugjjIuw%3D%3D"
+                  ],
+                  "titles": [
+                    "Trump victory a boon to Israeli settlers who hope to annex West Bank",
+                    "Meet the Israelis Who Are Trying to Physically Block the Ethnic ...",
+                    "War Shifts Global Dynamics"
+                  ],
+                  "count": 3
+                },
+                "claim_text": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "Two Palestinian solidarity activists were abducted by Israeli settlers and occupation forces in Tuwani, southern occupied West Bank."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+              "content_summary": "During the latest winter storm, rainwater flooded surgical operating rooms in Gaza’s hospitals. Water entered through cracks and gaps in the walls and corners of hospital rooms, which are described as already weakened after two years of continuous Israeli airstrikes and bombardments.",
+              "source": "https://twitter.com/QudsNen/status/1994566809412948077",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "None of the provided fact-checking sources contain any information about rainwater flooding surgical operating rooms in Gaza’s hospitals or any exacerbation of damage from Israeli airstrikes.",
+                "confidence": "low",
+                "reasoning": "The sources discuss different aspects of the Israeli-Palestinian conflict, such as peace plans (Source 1), hostage releases and fuel delivery (Source 2), and troop movements (Source 3), but none of them address the specific claim regarding hospital flooding in Gaza.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/by/nailah-morgan?page=9",
+                    "https://www.wsj.com/public/resources/documents/b1Gq2sOd5euiUIuNIbw9-WSJNewsPaper-10-24-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqfSmc-VSp1adbajVM9mlqPVGwOrt0u1gwr9bJLzIizvw2CIZg89a8RJ&gaa_ts=692a6b93&gaa_sig=hkgZkOoMHvfpB9EcO48JyHqjqXBl1_c2v9-qPBH1vYd3odeT0J0oILXx8HSh5mYUynRmLQmkDJIGs7MBJlCfpw%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/9FcoEtpUqsoiyJ7ghbOJ-WSJNewsPaper-10-31-2023.pdf?gaa_at=eafs&gaa_n=AWEtsqddlKdSPYoHQJ0B936IbTsuRkE6LGAp9PG-oEOy7-VrKK0ujCEhHfau&gaa_ts=692a6b93&gaa_sig=bzwsfZGf6slMYRCxHV9uIkPaHPHxvjUmjwKeoYoNWZGA7R4TgjJJ29Tlskymwkx9jBnNQRWfXMdIxDecScIcxQ%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/tQKWHmxJ6tY6sM76v8dN-WSJNewsPaper-9-28-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqeS4eeuTW39_3CFtLNEjXGBFEgoxPA2nMTZLka2_jmQ0hCJxrqeW9UQ&gaa_ts=692a6b93&gaa_sig=0h-GxtFseqwC4r0dk6G4rTCc3865HSRSEfWbYEwGyAjZ8nEX1TzvAarU4yEHs4y6w1MCymE9MbX8gLgkRAOc4A%3D%3D",
+                    "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+                  ],
+                  "titles": [
+                    "Nailah Morgan - Page 9 - The New York Times",
+                    "Two More Hostages Set Free",
+                    "Israeli Troops Push Toward Gaza City",
+                    "Israel Targets Hezbollah Chief In Powerful Beirut Airstrike",
+                    "https://www.euronews.com/sitemaps/en/images-2025-5.xml"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "Rainwater flooded surgical operating rooms in Gaza’s hospitals during a recent winter storm, exacerbating damage from Israeli airstrikes."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+              "content_summary": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, west of Jenin in the occupied West Bank. The post states that he was violently assaulted and his home was vandalized during the incident.",
+              "source": "https://twitter.com/QudsNen/status/1994555805300134322",
+              "verification": {
+                "verified": false,
+                "verdict": "no_content",
+                "message": "No fact-checked information found for this claim",
+                "confidence": "low",
+                "reasoning": "No reliable sources found to verify this claim",
+                "sources": {
+                  "links": [],
+                  "titles": [],
+                  "count": 0
+                },
+                "claim_text": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "Israeli occupation forces detained Palestinian Mohammed Rabah Samoudi in Yammoun, West of Jenin, after violently assaulting him and vandalizing his home."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "content_summary": "Israeli settlers who breached the border into Syria have released a video. In the video, they declared their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+              "source": "https://twitter.com/QudsNen/status/1994541231834378634",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources do not confirm that Israeli settlers breached the border into Syria, released a video, or declared intentions to establish a new Jewish settlement in Quneitra. Source 1 mentions general events near the Syrian border, but the other sources are irrelevant.",
+                "confidence": "low",
+                "reasoning": "Source 1 mentions the IDF monitoring events in Syria and repelling an attack near the border but does not support the specific details of the claim. Sources 2 and 3 are completely unrelated to the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.haaretz.com/israel-news/2024-12-07/ty-article-live/israeli-army-deploying-more-troops-to-golan-heights-as-rebel-forces-advance-in-syria/00000193-9e32-d812-a3d3-bfb2ce6e0000",
+                    "https://www.wsj.com/public/resources/documents/AUjBXXRaonIIxXmNpH0v-WSJNewsPaper-3-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfsJfX2GZwPp-6lQfK0m8Qd6_yK_lK84iDo9F-AdgcCVyoT3XPc6BHb&gaa_ts=692a6b99&gaa_sig=CedP0UOOWgp4kXhdLC_Nq9isbMjH7HxbXoXaQ0zLcvifR3ch2eGTLxxTX8pnHPyMkZHk4_7SNM_h3Pp501GOkA%3D%3D",
+                    "https://www.dailymaverick.co.za/article/2025-02-24-whats-cooking-today-biltong-sandwich-spread/?topreads=card"
+                  ],
+                  "titles": [
+                    "IDF Names Officer Killed in Southern Gaza Combat - Israel News",
+                    "Trump Pares Tariffs as Stocks Plunge",
+                    "Daily Maverick Top Read Summaries"
+                  ],
+                  "count": 3
+                },
+                "claim_text": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 4,
+                "extracted_claim": "Israeli settlers who breached the border into Syria have released a video declaring their intention to establish a new Jewish settlement in the Syrian province of Quneitra."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "content_summary": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+              "source": "https://twitter.com/QudsNen/status/1994518249724416178",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided source lists a 'Fahim Ramadan Sirhan Ibrahim' as a Palestinian prisoner from 2011 but does not mention 'Jum’a Ramadan' being abducted recently from Zeita Jamma’in.",
+                "confidence": "low",
+                "reasoning": "Source 1 is a list of Palestinian prisoners from 2011, containing a partial name match ('Ramadan'). However, it does not confirm the specific first name 'Jum'a', the location of abduction (Zeita Jamma’in), or the event of a recent abduction as described in the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2011/10/16/full-list-the-palestinian-prisoners"
+                  ],
+                  "titles": [
+                    "Full list: The Palestinian prisoners | News | Al Jazeera"
+                  ],
+                  "count": 1
+                },
+                "claim_text": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 5,
+                "extracted_claim": "Israeli occupation forces abducted former Palestinian detainee Jum’a Ramadan from the village of Zeita Jamma’in, south of Nablus in the occupied West Bank."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+              "content_summary": "Following an Israeli massacre in Ain al-Hilweh Palestinian refugee camp on November 18, 2025, women in the camp continue to shoulder the burden of survival and protection for their families and community. The camp is described as still reeling from destruction and loss, with women being crucial for ",
+              "source": "https://twitter.com/QudsNen/status/1994535023760859289",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources confirm an Israeli airstrike on the Ain al-Hilweh Palestinian refugee camp on November 18, 2025, resulting in casualties, which supports the core of the claim about a deadly event.",
+                "confidence": "high",
+                "reasoning": "Source 1 explicitly states, 'Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ... Nov 18, 2025 ... The attack killed people living in Ain al-Hilweh'. Source 3, dated '4 days ago' (implying Nov 2025), reports 'At least 13 civilians, including 11 children, were killed in the Israeli strike on Ein El-Hilweh camp'. Source 2 also mentions an attack on 'Ein el-Hilweh'. These sources strongly corroborate the occurrence of a deadly Israeli strike on the specified camp and date, which would indeed cause significant burden on residents, including women.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/11/18/world/middleeast/israel-strike-lebanon-camp.html",
+                    "https://www.aljazeera.com/news/2024/10/1/why-did-israel-attack-lebanons-biggest-palestinian-refugee-camp",
+                    "https://www.aljazeera.com/news/2025/11/25/un-calls-for-probe-into-israels-strikes-on-lebanon",
+                    "https://www.aljazeera.com/news/2025/11/18/israeli-attack-on-palestinian-refugee-camp-in-lebanon-kills-at-least-13",
+                    "https://www.bbc.com/news/articles/c0l73j781y9o"
+                  ],
+                  "titles": [
+                    "Israeli Airstrike on Refugee Camp in Lebanon Kills at Least 13 ...",
+                    "Why did Israel attack Lebanon's biggest Palestinian refugee camp ...",
+                    "UN calls for probe into Israel's strikes on Lebanon | - Al Jazeera",
+                    "Israeli attack on Palestinian refugee camp in Lebanon kills at least 13",
+                    "Lebanon says Israeli strike killed 13 people near Palestinian ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 6,
+                "extracted_claim": "Women in Ain al-Hilweh Palestinian refugee camp continue to bear the burden of survival and protection after an Israeli massacre on November 18, 2025."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+              "content_summary": "The Palestinian child Ahmed Mohammad Badwan passed away in Gaza due to the lack of medical resources and his inability to access treatment outside the Strip. This situation is attributed to the Israeli occupation’s ongoing closure of crossings and blockade of medical supplies.",
+              "source": "https://twitter.com/QudsNen/status/1994495159300493336",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While one source mentions a 'Mohammad Sharif Badwan' dying in Gaza in 2018, it does not confirm the child's name as 'Ahmed Mohammad Badwan' or specify the cause of death as lack of medical resources and inability to access treatment outside the Strip.",
+                "confidence": "medium",
+                "reasoning": "Source 2 mentions 'Mohammad Sharif Badwan' dying in Gaza in 2018, which has a similar last name but a different first name from 'Ahmed Mohammad Badwan'. The source also does not specify that the individual was a child or died due to a lack of medical resources and access to treatment outside the Strip. Source 1 lists other children killed but not 'Ahmed Mohammad Badwan'. Source 3 discusses general medical aid issues in Gaza but doesn't link it to this specific child.",
+                "sources": {
+                  "links": [
+                    "https://interactive.aljazeera.com/aje/2024/israel-war-on-gaza-10000-children-killed/",
+                    "https://www.aljazeera.com/news/2018/11/12/gaza-protests-all-the-latest-updates",
+                    "https://www.aljazeera.com/news/liveblog/2025/4/13/live-israel-threatens-more-attacks-as-it-cuts-off-rafah-from-rest-of-gaza",
+                    "https://www.aljazeera.com/news/2014/8/13/gaza-under-siege-naming-the-dead",
+                    "https://www.aljazeera.com/news/2021/9/26/two-palestinians-killed-by-israeli-forces-in-occupied-west-bank"
+                  ],
+                  "titles": [
+                    "Know their names: Palestinian children killed in Israeli attacks on Gaza",
+                    "Gaza protests: All the latest updates | Hamas News | Al Jazeera",
+                    "Updates: Palestinians flee as Israeli forces continue destruction of ...",
+                    "Gaza under siege: naming the dead | Human Rights News | Al Jazeera",
+                    "Five Palestinians killed by Israeli forces in occupied West Bank ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 7,
+                "extracted_claim": "A Palestinian child, Ahmed Mohammad Badwan, died in Gaza due to a lack of medical resources and inability to access treatment outside the Strip."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+              "content_summary": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron. This action was taken to secure a settler incursion into the area.",
+              "source": "https://twitter.com/QudsNen/status/1994492626259546312",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "The sources extensively document Israeli occupation forces imposing severe movement restrictions and denying access to medical care for Palestinians in Hebron, making the scenario described in the claim highly plausible within that documented context.",
+                "confidence": "medium",
+                "reasoning": "Source 1 states that soldiers 'deny access to medical care' and that 'onerous movement restrictions mean residents cannot access basic services' in Hebron. Source 2 describes Israeli soldiers occupying homes and imposing 'more restrictions on movement' for Palestinians in Hebron. Source 3 further discusses Israeli restrictions hampering travel in Hebron. While none of the snippets explicitly detail the exact event of a pregnant woman being prevented from leaving her home in the Ras Cemetery area to secure a settler incursion, the general patterns of movement restrictions, denial of access, and security operations related to settlers in Hebron are strongly corroborated, supporting the plausibility of such a scenario.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2023/11/5/like-a-prison-the-palestinians-in-hebron-living-under-israeli-lockdown",
+                    "https://www.aljazeera.com/news/2015/9/23/a-lifetime-of-restrictions-for-palestinians-in-hebron",
+                    "https://www.nytimes.com/interactive/2024/10/13/world/middleeast/west-bank-roads.html",
+                    "https://www.haaretz.com/israel-news/2023-10-24/ty-article/.premium/israeli-army-expels-palestinian-activist-from-hebron-home-amid-increasing-restrictions/0000018b-6129-d307-adbb-6539a3aa0000",
+                    "https://www.aljazeera.com/news/2015/11/9/qa-israels-predawn-raid-on-a-youth-activist-centre"
+                  ],
+                  "titles": [
+                    "'Like a prison': The Palestinians in Hebron living under Israeli ...",
+                    "A lifetime of restrictions for Palestinians in Hebron | Human Rights ...",
+                    "Roadblocked - The New York Times",
+                    "Israeli Army Expels Palestinian Activist From Hebron Home Amid ...",
+                    "Q&A: Israel's predawn raid on a youth activist centre | Human Rights ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 8,
+                "extracted_claim": "Israeli occupation soldiers prevented a pregnant woman from leaving her home in the Ras Cemetery area, south of Hebron, to secure a settler incursion."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+              "content_summary": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who shot and killed two unarmed Palestinians in Jenin. This action occurred despite UN officials demanding a full probe into what they describe as a summary execution.",
+              "source": "https://twitter.com/QudsNen/status/1994526267966984205",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple recent sources confirm that Israeli National Security Minister Itamar Ben-Gvir took a stance that implies stopping or hindering investigations into soldiers who killed two Palestinians in Jenin, despite calls for a probe.",
+                "confidence": "high",
+                "reasoning": "Source 1 mentions 'Israeli troops kill two Palestinians in Jenin' and then refers to 'Israel's far-right National Security Minister Itamar Ben-Gvir' in the context of 'investigations' and 'heinous extrajudicial shootings'. Source 2 explicitly states, 'Shortly after the killings in Jenin, Netanyahu's National Security Minister Itamar Ben-Gvir ... investigation. “We already know what the”', strongly implying his prejudgment or opposition to a full investigation. Source 3 reiterates Ben-Gvir's stance regarding 'Israeli forces' and the 'investigation'. The collective evidence clearly indicates Ben-Gvir's intervention or strong opinion against a full investigation, consistent with 'moved to stop the investigation', and the context of demands for a probe is present.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/2025/11/27/israeli-troops-kill-two-palestinians-in-jenin-as-they-try-to-surrender",
+                    "https://www.aljazeera.com/news/2025/11/28/jenin-killings-highlight-israeli-system-of-total-impunity-rights-groups",
+                    "https://www.aljazeera.com/news/2025/11/28/jenin-killings-latest-example-of-israels-shoot-to-kill-policy",
+                    "https://www.haaretz.com/israel-news/2025-11-28/ty-article/.premium/israeli-authorities-to-investigate-officer-recorded-killing-surrendered-palestinians/0000019a-c9b9-db55-a7bb-edfd2d920001",
+                    "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4"
+                  ],
+                  "titles": [
+                    "Israeli troops kill two Palestinians in Jenin as they try to surrender ...",
+                    "Jenin killings highlight Israeli system of 'total impunity': Rights ...",
+                    "Jenin killings latest example of Israeli indifference to Palestinian ...",
+                    "Border Policemen Claim Self-defense in Probe, After Video Shows ...",
+                    "Updates: Israel strikes Palestine, Lebanon, Syria threatening ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 9,
+                "extracted_claim": "Israeli National Security Minister Itamar Ben-Gvir moved to stop the investigation into soldiers who killed two unarmed Palestinians in Jenin, despite UN officials demanding a full probe."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+              "content_summary": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes with residents, leading to the killing of 13 Syrians and heavy destruction. The post provides a recap explaining how the incursion unfolded and why the village became a target.",
+              "source": "https://twitter.com/QudsNen/status/1994537165414699095",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources directly confirm an Israeli raid into Beit Jinn, Syria, which resulted in the killing of at least 13 people.",
+                "confidence": "high",
+                "reasoning": "Source 2 states, 'Video shows funeral processions in Syria's Beit Jinn, after Israeli raids and missile strikes killed at least 13 people.' Source 3 reports, 'Thirteen killed in deadliest Israeli raid for months in southern Syria. Israel said it was targeting militants in the village of Beit'. Both sources explicitly corroborate the Israeli raid in Beit Jinn, Syria, and the killing of at least 13 people ('a dozen Syrians' is 12, so 13 fits). 'Heavy destruction' is a reasonable inference from 'missile strikes' and a 'deadliest Israeli raid'.",
+                "sources": {
+                  "links": [
+                    "https://www.aljazeera.com/news/liveblog/2025/1/22/live-israel-kills-10-in-the-west-bank-120-bodies-found-in-gaza-in-2-days",
+                    "https://www.aljazeera.com/news/liveblog/2025/9/12/live-israel-kills-dozens-in-gaza-unsc-condemns-doha-attack",
+                    "https://www.bbc.com/news/articles/cvgx3zjvjg3o",
+                    "https://www.aljazeera.com/news/2025/7/16/ceasefire-collapses-in-syrias-suwayda-as-israel-threatens-escalation",
+                    "https://www.aljazeera.com/news/liveblog/2025/11/19/live-13-killed-in-israeli-air-attack-on-refugee-camp-in-lebanon"
+                  ],
+                  "titles": [
+                    "Updates: Israel's deadly West Bank attack mirrors military action in ...",
+                    "Updates: Israel kills 65 in Gaza, Qatari PM meets top US officials ...",
+                    "Lebanon: Satellite imagery reveals intensity of Israeli bombing",
+                    "Israel hits Syrian army HQ, near Damascus palace as Suwayda ...",
+                    "Updates: Israeli attacks on Gaza kill 28; warplanes bomb south ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 10,
+                "extracted_claim": "An Israeli raid into the Syrian town of Beit Jinn triggered deadly clashes, resulting in the killing of 13 Syrians and heavy destruction."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+              "content_summary": "A demonstration was held in Milan, Italy, as part of the general strike against the war economy, European rearmament, social inequality, and the ongoing Israeli genocide in Gaza. The march was held in solidarity with the Palestinian people and their resistance.",
+              "source": "https://twitter.com/QudsNen/status/1994493332479701417",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While demonstrations in Milan, Italy, are confirmed for early 2025, and the Israeli offensive in Gaza was ongoing, the provided snippets do not explicitly state that a specific demonstration in Milan was for all the reasons listed in the claim.",
+                "confidence": "medium",
+                "reasoning": "Source 1 confirms a 'National demonstration' in Milan on Feb 26, 2025, for 'public services'. Source 3 confirms another event in Milan on April 7, 2025. Source 2 mentions the 'Israeli offensive in Rafah' as a separate event in Jan 2025. While it is plausible that a demonstration in Milan could encompass these broad political and social issues, the snippets do not explicitly link a specific Milan protest to the entire list of claimed motivations (war economy, European rearmament, social inequality, and Israeli genocide in Gaza).",
+                "sources": {
+                  "links": [
+                    "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                    "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf7on2fW8arIG2xf6fsS5eJVO79x7K5Fp9GNjbIhJyffJB8Ql1kT2f6&gaa_ts=692a6bbe&gaa_sig=UH_NhBj6LKocbaJ7-_mMQSWIynSt-6E5LtL19zks3TsXCjRR5IqceZ02sgzJg-gutLpdZv3lOc7QliFZPLcUZA%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/FXMyangrqYVYJahUAD1f-WSJNewsPaper-1-27-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfe61c_YmO15qkmFYlfvvV78zoYXv2jyT9aSV4DgfMgWx2Y3KSZE_TG&gaa_ts=692a6bbe&gaa_sig=EkdHeCM8eVtym4zwQSwSy6ldP1er6LVn6klq-sZuexUxE0zkvhl8qtO74SmgiDZ-bez05smLV1CzbTcl2N_OKg%3D%3D"
+                  ],
+                  "titles": [
+                    "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+                    "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+                    "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+                    "World Court Rejects Demand To Order a Cease-Fire in Gaza"
+                  ],
+                  "count": 7
+                },
+                "claim_text": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 11,
+                "extracted_claim": "A demonstration was held in Milan, Italy, as part of a general strike against the war economy, European rearmament, social inequality, and the Israeli genocide in Gaza."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+              "content_summary": "Early Friday morning, an armed unit from the Israeli army carried out an incursion into Beit Jinn, Syria. Local residents immediately resisted, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+              "source": "https://twitter.com/QudsNen/status/1994499416011706606",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources confirm an Israeli army incursion into Beit Jinn, Syria, where residents offered resistance and at least 13 Syrians were killed.",
+                "confidence": "high",
+                "reasoning": "Source 1 mentions 'Israeli forces entered the village of Beit Jin' and confirms 'at least 13 people' killed. Source 2 directly states that 'troops moved in around 3 a.m. local time and were met by 'slight resistance,''. Source 3 also refers to an 'incursion into the town of Beit Jinn' and 'Two Syrian children are among those killed'. The killing of 'a dozen Syrians' (13 people) and resistance from residents are clearly supported. The claim does not provide evidence for 'injuries to Israeli soldiers', but the primary elements of the claim are strongly corroborated.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/world/israeli-forces-kill-at-least-13-people-in-raid-on-syrian-village-officials-and-residents-say",
+                    "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+                    "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+                    "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+                    "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups"
+                  ],
+                  "titles": [
+                    "Israeli forces kill at least 13 people in raid on Syrian village, officials ...",
+                    "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+                    "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+                    "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+                    "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 12,
+                "extracted_claim": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the killing of a dozen Syrians and injuries to Israeli soldiers."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+              "content_summary": "The post outlines a scenario where an individual pays substantial taxes (30% income tax, 30% vehicle tax, 18% GST on insurance, up to 60% tax on fuel). Despite these payments, they get injured on an unexpected speed breaker, remain immobile for 6 months, incur medical bills of ₹6 lakh, and lose thei",
+              "source": "https://twitter.com/IndianGems_/status/1993972125930324264",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided sources do not contain information about high taxes, public infrastructure failures leading to personal and financial hardship, or any post illustrating such a scenario.",
+                "confidence": "high",
+                "reasoning": "Source 1 discusses carbon offsets. Source 2 discusses bird flu and public health response. Source 3 is a general link to a news website. None of these sources are relevant to the claim about taxes, infrastructure failures, or personal/financial hardship.",
+                "sources": {
+                  "links": [
+                    "https://www.theguardian.com/environment/2023/jan/18/revealed-forest-carbon-offsets-biggest-provider-worthless-verra-aoe",
+                    "https://www.pbs.org/newshour/health/how-america-lost-control-of-the-bird-flu-and-raised-the-risk-of-another-pandemic",
+                    "https://www.wsj.com/?gaa_at=eafs&gaa_n=AWEtsqdqGz_MGSliJCZdge-3-RCqtDGyZN9eXmJ7qJyOUWLTgKcSXI6-Fkkp&gaa_ts=692a6bc0&gaa_sig=TS8hGZQvy4mRctleUM4AxXCWQQR-Cm84MqmO3LGMvRzHuTm0jBusiPuqGKDNhcd8alX4KLOvdGcp8NvKbBqcig%3D%3D",
+                    "https://www.theguardian.com/commentisfree/2023/jun/03/electric-vehicles-early-adopter-petrol-car-ev-environment-rowan-atkinson",
+                    "https://www.nytimes.com/2024/01/31/upshot/san-francisco-drug-crisis.html"
+                  ],
+                  "titles": [
+                    "Revealed: more than 90% of rainforest carbon offsets by biggest ...",
+                    "How America lost control of the bird flu and raised the risk of another ...",
+                    "The Wall Street Journal & Breaking News, Business, Financial and ...",
+                    "I love electric vehicles – and was an early adopter. But increasingly I ...",
+                    "Can San Francisco Solve Its Drug Crisis? Five Things to Consider ..."
+                  ],
+                  "count": 8
+                },
+                "claim_text": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 13,
+                "extracted_claim": "The post illustrates a scenario where high taxes are paid, but public infrastructure failures lead to severe personal and financial hardship."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+              "content_summary": "The post criticizes a specific repair of a crack on a flyover, stating that such a repair method is unacceptable, even in \"3rd world countries like Taliban.\" The author claims this poor infrastructure maintenance makes the country an international joke.",
+              "source": "https://twitter.com/IndianGems_/status/1994340420571283515",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "One source describes a catastrophic overpass collapse in Kolkata due to poor infrastructure, which strongly supports the underlying idea of severe infrastructure quality issues leading to negative perceptions.",
+                "confidence": "medium",
+                "reasoning": "Source 1 details a major 'Overpass Project in Kolkata' where 'A 330-foot slab of steel and concrete slammed down on a street'. This is a clear instance of severe infrastructure failure. While the claim mentions a 'poorly repaired crack' and 'becoming an international joke', the catastrophic collapse described in the source provides compelling evidence of significant infrastructure quality problems that would lead to public criticism and could be seen as damaging a country's reputation.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2016/04/04/world/asia/before-collapse-overpass-project-in-kolkata-made-our-lives-hell-for-years.html",
+                    "https://www.wsj.com/public/resources/documents/s2QEvjtYRzQzQAMYbfbZ-WSJNewsPaper-6-7-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdl1vQpEHHAQOrrjyabb0DARTEaPubTg4CXPuii7oA0ST_VRqMH3bqY&gaa_ts=692a6bc0&gaa_sig=3R_8TcGceKDxIZokdJFO6FKzYo_InIEyRhcnuzkBuBhwVB-8iLD5I68G_wKO5Z9L26WZRPuUOsEtxK8vvswXbQ%3D%3D"
+                  ],
+                  "titles": [
+                    "Overpass Project in Kolkata 'Made Our Lives Hell' for Years Before ...",
+                    "Their Star-Crossed Bromance Implodes in Spectacular Fashion"
+                  ],
+                  "count": 2
+                },
+                "claim_text": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 14,
+                "extracted_claim": "A poorly repaired crack on a flyover is presented as evidence that the country is becoming an international joke due to infrastructure quality."
+              },
+              "verification_timestamp": "2025-11-29T08:58:34.416490"
+            },
+            {
+              "claim_text": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+              "content_summary": "The post provides a list of countries purportedly having the 'most unattractive men in 2025.' The list includes Bangladesh at number one, followed by Pakistan, Egypt, Maldives, Ethiopia, Kenya, Nigeria, Philippines, Nepal, Sri Lanka, South Africa, Iraq, United States, Indonesia, China, and Spain.",
+              "source": "https://twitter.com/IndianGems_/status/1994377608671514812",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking sources contain no information regarding a list of countries with the most unattractive men or Bangladesh's ranking in such a list. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+                "confidence": "high",
+                "reasoning": "Source 1 discusses India's economy and Mr. Modi's tenure. Source 2 talks about a global study on 'nature-connected' nations. Source 3 is a general description of The New York Times. None of these snippets include any data or discussion related to the attractiveness of men in different countries or Bangladesh's ranking. Consequently, there is no evidence to support or deny the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/world-asia-india-68823827",
+                    "https://www.theguardian.com/environment/2025/nov/01/britain-one-of-least-nature-connected-nations-in-world-with-nepal-the-most",
+                    "https://www.nytimes.com/",
+                    "https://www.nytimes.com/live/2025/07/28/nyregion/nyc-shooting",
+                    "https://www.nytimes.com/interactive/2018/05/31/theater/best-25-plays.html"
+                  ],
+                  "titles": [
+                    "India's economy: The good, bad and ugly in six charts",
+                    "Britain one of least 'nature-connected' nations in world – with Nepal ...",
+                    "The New York Times - Breaking News, US News, World News and ...",
+                    "Gunman Kills 4, Including Police Officer, in Midtown Manhattan ...",
+                    "The Great Work Continues: The 25 Best American Plays Since ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 15,
+                "extracted_claim": "The post lists countries with the most unattractive men in 2025, with Bangladesh ranked first."
+              },
+              "verification_timestamp": "2025-11-29T08:58:42.908405"
+            },
+            {
+              "claim_text": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+              "content_summary": "The post asserts that Tamil Nadu politics has reached a big turning point today. This is due to veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigning from his party and joining Vijay’s TVK. His switch, described as a top organizational brain being wooed by DMK, signals TVK’s rapid rise a",
+              "source": "https://twitter.com/IndianGems_/status/1994062462103298169",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking sources do not contain any information about K.A. Sengottaiyan's resignation from AIADMK or his alleged move to Vijay's TVK. Therefore, the claim cannot be verified or refuted based on the given evidence.",
+                "confidence": "high",
+                "reasoning": "Source 1 focuses on women's voting records in Bihar. Source 2 provides live updates from the Tamil Nadu Assembly Elections 2021 results, mentioning the change of power from AIADMK to DMK. Neither source makes any mention of K.A. Sengottaiyan, his status within AIADMK, or any affiliation with a party named Vijay's TVK. Without relevant information, the claim cannot be substantiated or disproven.",
+                "sources": {
+                  "links": [
+                    "https://indianexpress.com/article/political-pulse/women-voting-records-bihar-turnout-exceed-men-10361728/",
+                    "https://www.thehindu.com/elections/tamil-nadu-assembly/tamil-nadu-assembly-elections-2021-results-live-updates/article34462337.ece"
+                  ],
+                  "titles": [
+                    "Women shatter voting records in Bihar, turnout 8.8% more, exceed ...",
+                    "Tamil Nadu Assembly Elections 2021 results | Live updates - The ..."
+                  ],
+                  "count": 2
+                },
+                "claim_text": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics.",
+                "verification_date": "2025-11-29T08:57:04.908866"
+              },
+              "claim_metadata": {
+                "post_index": 16,
+                "extracted_claim": "Veteran AIADMK leader and 10-time MLA K.A. Sengottaiyan resigned and joined Vijay’s TVK, indicating a significant turning point in Tamil Nadu politics."
+              },
+              "verification_timestamp": "2025-11-29T08:58:42.908405"
+            }
+          ],
+          "summary": {
+            "total_claims": 17,
+            "successfully_verified": 6,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 2
+          },
+          "timestamp": "2025-11-29T08:58:42.908405",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 17,
+            "batch_size": 15,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": false,
+          "message": "Batch processing failed: 'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "error": "'ExplanationAgent' object has no attribute '_classify_category_fallback'",
+          "debunk_posts": [],
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 11,
+            "batch_size": 10,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_085904",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T08:59:04.348927",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_085416",
+    "created_at": "2025-11-29T08:59:04.348927",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "message": "No debunk posts to store"
+  }
+}

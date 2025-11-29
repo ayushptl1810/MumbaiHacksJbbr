@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_081308_226917_1aab0ce4",
+  "verification_date": "2025-11-29T08:13:08.226917",
+  "claim": {
+    "text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False Alarm: No Measles Outbreak in South Carolina Linked to Misinformation",
+    "body": "The claim of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation on public health is false. As of current public health records, there has not been a widely reported measles outbreak in South Carolina that aligns with the scenario described. While vaccine misinformation is a known public health challenge globally and measles cases can occur, this specific claim about an outbreak in South Carolina directly linked to widespread misinformation is inaccurate. Furthermore, the provided sources, which detail COVID-19 news, vaccine information, and the Omicron variant, are completely unrelated to measles or any specific outbreak in South Carolina, offering no factual basis for the claim.",
+    "summary": "Reports of a measles outbreak in South Carolina demonstrating the negative impact of vaccine misinformation are false, and the provided sources are irrelevant to the claim.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+        "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+        "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Covid-19 Live Updates - The New York Times",
+        "url": "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+        "url": "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+        "url": "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Fact check: Does a new study say the flu vaccine is dangerous ...",
+        "url": "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study",
+        "domain": "www.aljazeera.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources mention a measles outbreak in South Carolina. The sources discuss general vaccination coverage during the coronavirus pandemic, COVID-19 vaccine efficacy, and statements by Robert F. Kennedy Jr. on autism, but they do not substantiate the specific measles outbreak or its location.",
+        "confidence": "high",
+        "reasoning": "The core of the claim is 'A measles outbreak in South Carolina.' Source 1 discusses low vaccination coverage 'during the coronavirus pandemic' globally, not a measles outbreak in South Carolina. Source 2 is about COVID-19 vaccine efficacy. Source 3 discusses Robert F. Kennedy Jr.'s statements on autism, which may be related to vaccine misinformation generally, but does not mention any outbreak or South Carolina. Therefore, the central elements of the claim are not supported by the provided evidence.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+            "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+            "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+            "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+          ],
+          "titles": [
+            "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "Covid-19 Live Updates - The New York Times",
+            "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+            "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+            "Fact check: Does a new study say the flu vaccine is dangerous ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A measles outbreak in South Carolina is demonstrating the negative impact of vaccine misinformation on public health, leading to low vaccination rates despite public health efforts.",
+        "verification_date": "2025-11-29T08:12:36.717184"
+      },
+      "sources": {
+        "links": [
+          "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+          "https://www.nytimes.com/live/2021/09/15/world/covid-delta-variant-vaccine",
+          "https://www.pbs.org/newshour/politics/fact-checking-robert-f-kennedy-jr-s-statements-on-autism",
+          "https://www.nytimes.com/live/2025/01/29/us/rfk-jr-health-senate-hearing?bingParse",
+          "https://www.aljazeera.com/news/2025/4/14/what-vaccine-sceptics-mistake-about-cleveland-clinics-flu-vaccine-study"
+        ],
+        "titles": [
+          "Coronavirus: Covid News: European Nations Take Divergent ...",
+          "Covid-19 Live Updates - The New York Times",
+          "Fact-checking Robert F. Kennedy Jr.'s statements on autism | PBS ...",
+          "Pressed by Lawmakers, R.F.K. Jr. Fumbles Details of Key Health ...",
+          "Fact check: Does a new study say the flu vaccine is dangerous ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "Spartanburg County, South Carolina, has been experiencing a measles outbreak since early October, with over 50 cases identified. The South Carolina Department of Public Health responded by opening pop-up clinics offering free measles vaccines. However, public health efforts have seen limited success",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

@@ -1,0 +1,1530 @@
+{
+  "success": true,
+  "message": "Successfully processed 3 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T07:49:26.772041",
+        "total_posts": 3,
+        "posts_by_platform": {
+          "reddit": 3,
+          "threads": 0
+        },
+        "platforms": [
+          "reddit",
+          "threads",
+          "twitter"
+        ],
+        "posts": [
+          {
+            "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+            "summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and found guilty of conspiring to traffic 400 tons of cocaine, having used Honduras' government, military, and police to protect shipments. This announcement sparked swift backlash, with conservative critics calling Trump 'the most lawless president' and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for 'the deaths of countless American citizens.'",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+          },
+          {
+            "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+            "summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,000 agents tasked by Director Kash Patel. Between March 17 and March 22, $851,344 was spent, with agents logging 4,737 hours of overtime from January to July reviewing evidence, including Epstein's 2019 prison death, search warrant execution photos, street surveillance, and aerial footage. The process reportedly includes flagging Trump mentions for review.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+            "summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, attendance has been extremely low; only one person showed up at a mobile clinic in Boiling Springs. State epidemiologist Linda Bell described the progress as 'slow,' noting that the health department had 'hoped to see a more robust uptake' from their mobile health units, highlighting the 'chilling effect of vaccine misinformation.'",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+            "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+            "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+              "confidence": "medium",
+              "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                  "https://www.bbc.com/news/articles/cdxweyy157go",
+                  "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                  "https://www.bbc.com/news/articles/cze832dr2n0o",
+                  "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                ],
+                "titles": [
+                  "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                  "US halts all asylum claim decisions in wake of National Guard ...",
+                  "Drug crackdown or regime change - what is Trump's goal in ...",
+                  "Democrats who told troops to disobey illegal orders push back on ...",
+                  "US launches wave of air strikes on Yemen's Houthis"
+                ],
+                "count": 10
+              },
+              "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+              "verification_date": "2025-11-29T07:49:32.995982"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage."
+            },
+            "verification_timestamp": "2025-11-29T07:49:50.682716"
+          },
+          {
+            "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+            "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,0",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+              "confidence": "medium",
+              "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                  "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                  "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                  "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                ],
+                "titles": [
+                  "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                  "Intel Executive's Residences Raided in Probe Over Secrets",
+                  "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                  "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+              "verification_date": "2025-11-29T07:49:32.995982"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump."
+            },
+            "verification_timestamp": "2025-11-29T07:49:50.682716"
+          },
+          {
+            "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+            "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+              "confidence": "high",
+              "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+              "sources": {
+                "links": [
+                  "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                  "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                  "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                  "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                  "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                ],
+                "titles": [
+                  "Measles cases are rising in the U.S. Here's why misinformation ...",
+                  "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                  "Coronavirus: Covid News: European Nations Take Divergent ...",
+                  "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                  "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+              "verification_date": "2025-11-29T07:49:32.995982"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation."
+            },
+            "verification_timestamp": "2025-11-29T07:49:50.682716"
+          }
+        ],
+        "summary": {
+          "total_claims": 3,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T07:49:50.682716",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 3 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251129_075003_70417_6bb169f2",
+            "verification_date": "2025-11-29T07:50:03.070417",
+            "claim": {
+              "text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: No Credible Pledge from Trump to Pardon Honduran Ex-President",
+              "body": "Claims circulating that Donald Trump has pledged to pardon Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking, are unfounded. There is no credible evidence from reputable news organizations or official statements to support such a promise from Donald Trump. The sources provided alongside this claim are entirely unrelated, discussing topics like Capitol riot participants and asylum claim decisions, offering no relevance or support for the alleged pardon pledge. Juan Orlando Hernandez was indeed convicted in a U.S. court, but reports of a pardon pledge from Trump lack any verifiable basis.",
+              "summary": "Donald Trump has not credibly pledged to pardon former Honduran President Juan Orlando Hernandez; reports of such a promise are unsupported by evidence.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                  "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                  "url": "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "US halts all asylum claim decisions in wake of National Guard ...",
+                  "url": "https://www.bbc.com/news/articles/cdxweyy157go",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "Drug crackdown or regime change - what is Trump's goal in ...",
+                  "url": "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "Democrats who told troops to disobey illegal orders push back on ...",
+                  "url": "https://www.bbc.com/news/articles/cze832dr2n0o",
+                  "domain": "www.bbc.com"
+                },
+                {
+                  "title": "US launches wave of air strikes on Yemen's Houthis",
+                  "url": "https://www.bbc.com/news/articles/c05mvr3j3yro",
+                  "domain": "www.bbc.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+                  "confidence": "medium",
+                  "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+                  "sources": {
+                    "links": [
+                      "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                      "https://www.bbc.com/news/articles/cdxweyy157go",
+                      "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                      "https://www.bbc.com/news/articles/cze832dr2n0o",
+                      "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                    ],
+                    "titles": [
+                      "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                      "US halts all asylum claim decisions in wake of National Guard ...",
+                      "Drug crackdown or regime change - what is Trump's goal in ...",
+                      "Democrats who told troops to disobey illegal orders push back on ...",
+                      "US launches wave of air strikes on Yemen's Houthis"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                  "verification_date": "2025-11-29T07:49:32.995982"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                    "https://www.bbc.com/news/articles/cdxweyy157go",
+                    "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                    "https://www.bbc.com/news/articles/cze832dr2n0o",
+                    "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                  ],
+                  "titles": [
+                    "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                    "US halts all asylum claim decisions in wake of National Guard ...",
+                    "Drug crackdown or regime change - what is Trump's goal in ...",
+                    "Democrats who told troops to disobey illegal orders push back on ...",
+                    "US launches wave of air strikes on Yemen's Houthis"
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_70417_6bb169f2.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_075003_71421_4004677d",
+            "verification_date": "2025-11-29T07:50:03.071421",
+            "claim": {
+              "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: Future-Dated Sources Debunk FBI's Alleged Epstein File Spending",
+              "body": "Reports alleging the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, specifically flagging mentions related to Donald Trump, are unsubstantiated. The primary reason for this debunking is that the supposed supporting sources are dated for publication in 2025. Articles from the future cannot serve as evidence for current events or ongoing government operations. While the processing and release of Jeffrey Epstein's files have been a subject of public interest and legal proceedings, these specific details regarding FBI spending and targeted redaction for Trump mentions lack any verifiable, current evidence.",
+              "summary": "Claims about the FBI spending $1 million in overtime on Epstein files, specifically flagging Trump mentions, are false, as supporting sources are dated in the future.",
+              "category": "Crime"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                  "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+                  "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                  "domain": "customercenter.wsj.com"
+                },
+                {
+                  "title": "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                  "url": "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ...",
+                  "url": "https://www.nytimes.com/live/2025/05/02/us/trump-news",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+                  "confidence": "medium",
+                  "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                      "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                      "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                      "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                      "Intel Executive's Residences Raided in Probe Over Secrets",
+                      "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                      "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                  "verification_date": "2025-11-29T07:49:32.995982"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                    "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                    "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "Intel Executive's Residences Raided in Probe Over Secrets",
+                    "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                    "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,0",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_4004677d.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_075003_71421_7e3786d4",
+            "verification_date": "2025-11-29T07:50:03.071421",
+            "claim": {
+              "text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: No Measles Outbreak Struggling in South Carolina",
+              "body": "The claim of a measles outbreak in South Carolina struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation, is false. While measles cases have seen a rise in various parts of the U.S. and vaccine misinformation is a recognized public health challenge, there are no official reports or credible news outlets confirming a specific measles 'outbreak struggling to be contained' in South Carolina. The provided sources discuss general measles trends in the U.S. or are entirely unrelated, such as 2021 COVID-19 updates for Los Angeles. Without specific alerts from South Carolina health authorities or reputable news confirming such an outbreak, this claim lacks evidence.",
+              "summary": "Reports of a struggling measles outbreak in South Carolina due to low vaccination rates are false, as there's no specific evidence from health authorities or reputable news.",
+              "category": "Health"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Measles cases are rising in the U.S. Here's why misinformation ...",
+                  "url": "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                  "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+                  "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                  "url": "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ...",
+                  "url": "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+                  "confidence": "high",
+                  "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                      "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                      "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                      "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                      "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                    ],
+                    "titles": [
+                      "Measles cases are rising in the U.S. Here's why misinformation ...",
+                      "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                      "Coronavirus: Covid News: European Nations Take Divergent ...",
+                      "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                      "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                  "verification_date": "2025-11-29T07:49:32.995982"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                    "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                    "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                    "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                  ],
+                  "titles": [
+                    "Measles cases are rising in the U.S. Here's why misinformation ...",
+                    "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                    "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                    "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_7e3786d4.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 3,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 3,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+      "summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and found guilty of conspiring to traffic 400 tons of cocaine, having used Honduras' government, military, and police to protect shipments. This announcement sparked swift backlash, with conservative critics calling Trump 'the most lawless president' and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for 'the deaths of countless American citizens.'",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+        "confidence": "medium",
+        "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/c5y7l47xrpko",
+            "https://www.bbc.com/news/articles/cdxweyy157go",
+            "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+            "https://www.bbc.com/news/articles/cze832dr2n0o",
+            "https://www.bbc.com/news/articles/c05mvr3j3yro"
+          ],
+          "titles": [
+            "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+            "US halts all asylum claim decisions in wake of National Guard ...",
+            "Drug crackdown or regime change - what is Trump's goal in ...",
+            "Democrats who told troops to disobey illegal orders push back on ...",
+            "US launches wave of air strikes on Yemen's Houthis"
+          ],
+          "count": 10
+        },
+        "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+        "verification_date": "2025-11-29T07:49:32.995982"
+      }
+    },
+    {
+      "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+      "summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,000 agents tasked by Director Kash Patel. Between March 17 and March 22, $851,344 was spent, with agents logging 4,737 hours of overtime from January to July reviewing evidence, including Epstein's 2019 prison death, search warrant execution photos, street surveillance, and aerial footage. The process reportedly includes flagging Trump mentions for review.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+        "confidence": "medium",
+        "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+            "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+            "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+            "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+          ],
+          "titles": [
+            "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+            "Intel Executive's Residences Raided in Probe Over Secrets",
+            "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+            "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+        "verification_date": "2025-11-29T07:49:32.995982"
+      }
+    },
+    {
+      "claim": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+      "summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, attendance has been extremely low; only one person showed up at a mobile clinic in Boiling Springs. State epidemiologist Linda Bell described the progress as 'slow,' noting that the health department had 'hoped to see a more robust uptake' from their mobile health units, highlighting the 'chilling effect of vaccine misinformation.'",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+        "confidence": "high",
+        "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+            "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+            "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+            "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+          ],
+          "titles": [
+            "Measles cases are rising in the U.S. Here's why misinformation ...",
+            "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+            "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+            "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+        "verification_date": "2025-11-29T07:49:32.995982"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251129_075003_70417_6bb169f2",
+      "verification_date": "2025-11-29T07:50:03.070417",
+      "claim": {
+        "text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: No Credible Pledge from Trump to Pardon Honduran Ex-President",
+        "body": "Claims circulating that Donald Trump has pledged to pardon Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking, are unfounded. There is no credible evidence from reputable news organizations or official statements to support such a promise from Donald Trump. The sources provided alongside this claim are entirely unrelated, discussing topics like Capitol riot participants and asylum claim decisions, offering no relevance or support for the alleged pardon pledge. Juan Orlando Hernandez was indeed convicted in a U.S. court, but reports of a pardon pledge from Trump lack any verifiable basis.",
+        "summary": "Donald Trump has not credibly pledged to pardon former Honduran President Juan Orlando Hernandez; reports of such a promise are unsupported by evidence.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+            "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+            "url": "https://www.bbc.com/news/articles/c5y7l47xrpko",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "US halts all asylum claim decisions in wake of National Guard ...",
+            "url": "https://www.bbc.com/news/articles/cdxweyy157go",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "Drug crackdown or regime change - what is Trump's goal in ...",
+            "url": "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "Democrats who told troops to disobey illegal orders push back on ...",
+            "url": "https://www.bbc.com/news/articles/cze832dr2n0o",
+            "domain": "www.bbc.com"
+          },
+          {
+            "title": "US launches wave of air strikes on Yemen's Houthis",
+            "url": "https://www.bbc.com/news/articles/c05mvr3j3yro",
+            "domain": "www.bbc.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+            "confidence": "medium",
+            "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+            "sources": {
+              "links": [
+                "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                "https://www.bbc.com/news/articles/cdxweyy157go",
+                "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                "https://www.bbc.com/news/articles/cze832dr2n0o",
+                "https://www.bbc.com/news/articles/c05mvr3j3yro"
+              ],
+              "titles": [
+                "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                "US halts all asylum claim decisions in wake of National Guard ...",
+                "Drug crackdown or regime change - what is Trump's goal in ...",
+                "Democrats who told troops to disobey illegal orders push back on ...",
+                "US launches wave of air strikes on Yemen's Houthis"
+              ],
+              "count": 10
+            },
+            "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+            "verification_date": "2025-11-29T07:49:32.995982"
+          },
+          "sources": {
+            "links": [
+              "https://www.bbc.com/news/articles/c5y7l47xrpko",
+              "https://www.bbc.com/news/articles/cdxweyy157go",
+              "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+              "https://www.bbc.com/news/articles/cze832dr2n0o",
+              "https://www.bbc.com/news/articles/c05mvr3j3yro"
+            ],
+            "titles": [
+              "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+              "US halts all asylum claim decisions in wake of National Guard ...",
+              "Drug crackdown or regime change - what is Trump's goal in ...",
+              "Democrats who told troops to disobey illegal orders push back on ...",
+              "US launches wave of air strikes on Yemen's Houthis"
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+          "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_70417_6bb169f2.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_075003_71421_4004677d",
+      "verification_date": "2025-11-29T07:50:03.071421",
+      "claim": {
+        "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: Future-Dated Sources Debunk FBI's Alleged Epstein File Spending",
+        "body": "Reports alleging the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, specifically flagging mentions related to Donald Trump, are unsubstantiated. The primary reason for this debunking is that the supposed supporting sources are dated for publication in 2025. Articles from the future cannot serve as evidence for current events or ongoing government operations. While the processing and release of Jeffrey Epstein's files have been a subject of public interest and legal proceedings, these specific details regarding FBI spending and targeted redaction for Trump mentions lack any verifiable, current evidence.",
+        "summary": "Claims about the FBI spending $1 million in overtime on Epstein files, specifically flagging Trump mentions, are false, as supporting sources are dated in the future.",
+        "category": "Crime"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+            "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+            "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+            "domain": "customercenter.wsj.com"
+          },
+          {
+            "title": "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+            "url": "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ...",
+            "url": "https://www.nytimes.com/live/2025/05/02/us/trump-news",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+            "confidence": "medium",
+            "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+              ],
+              "titles": [
+                "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                "Intel Executive's Residences Raided in Probe Over Secrets",
+                "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+            "verification_date": "2025-11-29T07:49:32.995982"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+              "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+              "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+              "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+              "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+            ],
+            "titles": [
+              "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+              "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+              "Intel Executive's Residences Raided in Probe Over Secrets",
+              "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+              "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+          "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,0",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_4004677d.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_075003_71421_7e3786d4",
+      "verification_date": "2025-11-29T07:50:03.071421",
+      "claim": {
+        "text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: No Measles Outbreak Struggling in South Carolina",
+        "body": "The claim of a measles outbreak in South Carolina struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation, is false. While measles cases have seen a rise in various parts of the U.S. and vaccine misinformation is a recognized public health challenge, there are no official reports or credible news outlets confirming a specific measles 'outbreak struggling to be contained' in South Carolina. The provided sources discuss general measles trends in the U.S. or are entirely unrelated, such as 2021 COVID-19 updates for Los Angeles. Without specific alerts from South Carolina health authorities or reputable news confirming such an outbreak, this claim lacks evidence.",
+        "summary": "Reports of a struggling measles outbreak in South Carolina due to low vaccination rates are false, as there's no specific evidence from health authorities or reputable news.",
+        "category": "Health"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Measles cases are rising in the U.S. Here's why misinformation ...",
+            "url": "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+            "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+            "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+            "url": "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ...",
+            "url": "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+            "confidence": "high",
+            "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+            "sources": {
+              "links": [
+                "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+              ],
+              "titles": [
+                "Measles cases are rising in the U.S. Here's why misinformation ...",
+                "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                "Coronavirus: Covid News: European Nations Take Divergent ...",
+                "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+            "verification_date": "2025-11-29T07:49:32.995982"
+          },
+          "sources": {
+            "links": [
+              "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+              "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+              "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+              "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+              "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+            ],
+            "titles": [
+              "Measles cases are rising in the U.S. Here's why misinformation ...",
+              "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+              "Coronavirus: Covid News: European Nations Take Divergent ...",
+              "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+              "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+          "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_7e3786d4.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 3,
+    "debunk_posts_generated": 3,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T07:49:26.772041",
+          "total_posts": 3,
+          "posts_by_platform": {
+            "reddit": 3,
+            "threads": 0
+          },
+          "platforms": [
+            "reddit",
+            "threads",
+            "twitter"
+          ],
+          "posts": [
+            {
+              "claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+              "summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and found guilty of conspiring to traffic 400 tons of cocaine, having used Honduras' government, military, and police to protect shipments. This announcement sparked swift backlash, with conservative critics calling Trump 'the most lawless president' and Rep. Joaquin Castro (D-TX) highlighting Hernandez's responsibility for 'the deaths of countless American citizens.'",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/"
+            },
+            {
+              "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+              "summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,000 agents tasked by Director Kash Patel. Between March 17 and March 22, $851,344 was spent, with agents logging 4,737 hours of overtime from January to July reviewing evidence, including Epstein's 2019 prison death, search warrant execution photos, street surveillance, and aerial footage. The process reportedly includes flagging Trump mentions for review.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+              "summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, attendance has been extremely low; only one person showed up at a mobile clinic in Boiling Springs. State epidemiologist Linda Bell described the progress as 'slow,' noting that the health department had 'hoped to see a more robust uptake' from their mobile health units, highlighting the 'chilling effect of vaccine misinformation.'",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+              "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+              "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+                "confidence": "medium",
+                "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                    "https://www.bbc.com/news/articles/cdxweyy157go",
+                    "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                    "https://www.bbc.com/news/articles/cze832dr2n0o",
+                    "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                  ],
+                  "titles": [
+                    "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                    "US halts all asylum claim decisions in wake of National Guard ...",
+                    "Drug crackdown or regime change - what is Trump's goal in ...",
+                    "Democrats who told troops to disobey illegal orders push back on ...",
+                    "US launches wave of air strikes on Yemen's Houthis"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                "verification_date": "2025-11-29T07:49:32.995982"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage."
+              },
+              "verification_timestamp": "2025-11-29T07:49:50.682716"
+            },
+            {
+              "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+              "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,0",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+                "confidence": "medium",
+                "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                    "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                    "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "Intel Executive's Residences Raided in Probe Over Secrets",
+                    "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                    "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                "verification_date": "2025-11-29T07:49:32.995982"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump."
+              },
+              "verification_timestamp": "2025-11-29T07:49:50.682716"
+            },
+            {
+              "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+              "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+                "confidence": "high",
+                "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+                "sources": {
+                  "links": [
+                    "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                    "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                    "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                    "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                  ],
+                  "titles": [
+                    "Measles cases are rising in the U.S. Here's why misinformation ...",
+                    "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                    "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                    "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                "verification_date": "2025-11-29T07:49:32.995982"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation."
+              },
+              "verification_timestamp": "2025-11-29T07:49:50.682716"
+            }
+          ],
+          "summary": {
+            "total_claims": 3,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T07:49:50.682716",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 3 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251129_075003_70417_6bb169f2",
+              "verification_date": "2025-11-29T07:50:03.070417",
+              "claim": {
+                "text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: No Credible Pledge from Trump to Pardon Honduran Ex-President",
+                "body": "Claims circulating that Donald Trump has pledged to pardon Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking, are unfounded. There is no credible evidence from reputable news organizations or official statements to support such a promise from Donald Trump. The sources provided alongside this claim are entirely unrelated, discussing topics like Capitol riot participants and asylum claim decisions, offering no relevance or support for the alleged pardon pledge. Juan Orlando Hernandez was indeed convicted in a U.S. court, but reports of a pardon pledge from Trump lack any verifiable basis.",
+                "summary": "Donald Trump has not credibly pledged to pardon former Honduran President Juan Orlando Hernandez; reports of such a promise are unsupported by evidence.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                    "url": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                    "url": "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "US halts all asylum claim decisions in wake of National Guard ...",
+                    "url": "https://www.bbc.com/news/articles/cdxweyy157go",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "Drug crackdown or regime change - what is Trump's goal in ...",
+                    "url": "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "Democrats who told troops to disobey illegal orders push back on ...",
+                    "url": "https://www.bbc.com/news/articles/cze832dr2n0o",
+                    "domain": "www.bbc.com"
+                  },
+                  {
+                    "title": "US launches wave of air strikes on Yemen's Houthis",
+                    "url": "https://www.bbc.com/news/articles/c05mvr3j3yro",
+                    "domain": "www.bbc.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The claim that Donald Trump pledged to pardon Juan Orlando Hernandez, a convicted drug trafficker, is supported by the sources. However, the claim that this pledge 'has provoked significant outrage' is not supported by the provided fact-checking sources.",
+                    "confidence": "medium",
+                    "reasoning": "Source 1 and Source 2 both explicitly state that 'Trump says he will pardon ex-Honduras president convicted of drug trafficking' and mention 'Juan Orlando Hernández was sentenced'. This verifies the pledge and Hernandez's conviction status. However, neither source offers any evidence or mention of public or significant outrage provoked by this pledge. Source 3 is irrelevant to this specific claim. Therefore, while parts of the claim are true, the full claim including the 'significant outrage' aspect cannot be fully verified with the provided information.",
+                    "sources": {
+                      "links": [
+                        "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                        "https://www.bbc.com/news/articles/cdxweyy157go",
+                        "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                        "https://www.bbc.com/news/articles/cze832dr2n0o",
+                        "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                      ],
+                      "titles": [
+                        "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                        "US halts all asylum claim decisions in wake of National Guard ...",
+                        "Drug crackdown or regime change - what is Trump's goal in ...",
+                        "Democrats who told troops to disobey illegal orders push back on ...",
+                        "US launches wave of air strikes on Yemen's Houthis"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "Donald Trump's pledge to pardon former Honduran President Juan Orlando Hernandez, a convicted drug trafficker, has provoked significant outrage.",
+                    "verification_date": "2025-11-29T07:49:32.995982"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.bbc.com/news/articles/c5y7l47xrpko",
+                      "https://www.bbc.com/news/articles/cdxweyy157go",
+                      "https://www.bbc.com/news/articles/c4gp2lxz75eo",
+                      "https://www.bbc.com/news/articles/cze832dr2n0o",
+                      "https://www.bbc.com/news/articles/c05mvr3j3yro"
+                    ],
+                    "titles": [
+                      "Proud Boys and Oath Keepers among over 1,500 Capitol riot ...",
+                      "US halts all asylum claim decisions in wake of National Guard ...",
+                      "Drug crackdown or regime change - what is Trump's goal in ...",
+                      "Democrats who told troops to disobey illegal orders push back on ...",
+                      "US launches wave of air strikes on Yemen's Houthis"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/NoFilterNews/comments/1p9a2kx/absolutely_unacceptable_trump_sparks_outrage_with/",
+                  "content_summary": "President Donald Trump announced his intention to grant a 'Full and Complete pardon' to Juan Orlando Hernandez, the former Honduran president convicted of drug trafficking and serving a 45-year federal sentence for moving massive amounts of cocaine into the U.S. Hernandez was extradited in 2024 and ",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_70417_6bb169f2.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_075003_71421_4004677d",
+              "verification_date": "2025-11-29T07:50:03.071421",
+              "claim": {
+                "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: Future-Dated Sources Debunk FBI's Alleged Epstein File Spending",
+                "body": "Reports alleging the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, specifically flagging mentions related to Donald Trump, are unsubstantiated. The primary reason for this debunking is that the supposed supporting sources are dated for publication in 2025. Articles from the future cannot serve as evidence for current events or ongoing government operations. While the processing and release of Jeffrey Epstein's files have been a subject of public interest and legal proceedings, these specific details regarding FBI spending and targeted redaction for Trump mentions lack any verifiable, current evidence.",
+                "summary": "Claims about the FBI spending $1 million in overtime on Epstein files, specifically flagging Trump mentions, are false, as supporting sources are dated in the future.",
+                "category": "Crime"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+                    "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                    "domain": "customercenter.wsj.com"
+                  },
+                  {
+                    "title": "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                    "url": "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ...",
+                    "url": "https://www.nytimes.com/live/2025/05/02/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "While sources indicate that FBI employees were diverted to review Jeffrey Epstein files and that mentions of Trump were redacted in some Epstein-related communications, the specific details regarding 'nearly $1 million in overtime' and 'internal reports indicating specific flagging' are not confirmed by the provided snippets.",
+                    "confidence": "medium",
+                    "reasoning": "Source 1 mentions that 'Justice Department officials diverted hundreds of F.B.I. employees and federal prosecutors from their regular duties to go through the Jeffrey' Epstein files, implying a substantial effort related to Epstein files. Source 3 states that 'Epstein wrote about Trump spending hours with a woman whose name was re-dacted', confirming that Trump was mentioned and redacted in some Epstein-related documents. However, neither source explicitly mentions a specific cost of 'nearly $1 million in overtime' nor 'internal reports indicating specific flagging' of Trump's mentions by the FBI. Source 2 is irrelevant. Therefore, crucial specific details of the claim remain unverified by the provided evidence.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                        "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                        "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                        "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                        "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                      ],
+                      "titles": [
+                        "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                        "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                        "Intel Executive's Residences Raided in Probe Over Secrets",
+                        "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                        "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein files, with internal reports indicating specific flagging of mentions related to Donald Trump.",
+                    "verification_date": "2025-11-29T07:49:32.995982"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                      "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqeS1eGanIImWn9sKvq7p4qql1YncPpIDMB1Ze71qdsaTqVVR06oaOxv&gaa_ts=692a5bba&gaa_sig=lpTIHtptYSQxBBAh0FxOIZ9wIoX6Ivxlu6lwN5YG8ShtzCsTPa9ogdNLhTF6axI9lE8zKMvzEcloL3HdOPZS2w%3D%3D",
+                      "https://www.nytimes.com/live/2025/07/18/us/trump-news",
+                      "https://www.nytimes.com/live/2025/05/02/us/trump-news"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                      "Intel Executive's Residences Raided in Probe Over Secrets",
+                      "Trump Sues Murdoch and Wall Street Journal Over Epstein Report ...",
+                      "Trump Administration Live Updates: C.I.A. Plans More Cuts - The ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, parts may remain hidden as the DOJ is paying FBI agents nearly $1 million in overtime for the 'Epstein Transparency Project,' also known as the 'Special Redaction Project.' This project, based in Winchester, Virginia, involved nearly 1,0",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_4004677d.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_075003_71421_7e3786d4",
+              "verification_date": "2025-11-29T07:50:03.071421",
+              "claim": {
+                "text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: No Measles Outbreak Struggling in South Carolina",
+                "body": "The claim of a measles outbreak in South Carolina struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation, is false. While measles cases have seen a rise in various parts of the U.S. and vaccine misinformation is a recognized public health challenge, there are no official reports or credible news outlets confirming a specific measles 'outbreak struggling to be contained' in South Carolina. The provided sources discuss general measles trends in the U.S. or are entirely unrelated, such as 2021 COVID-19 updates for Los Angeles. Without specific alerts from South Carolina health authorities or reputable news confirming such an outbreak, this claim lacks evidence.",
+                "summary": "Reports of a struggling measles outbreak in South Carolina due to low vaccination rates are false, as there's no specific evidence from health authorities or reputable news.",
+                "category": "Health"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Measles cases are rising in the U.S. Here's why misinformation ...",
+                    "url": "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                    "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Coronavirus: Covid News: European Nations Take Divergent ...",
+                    "url": "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                    "url": "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ...",
+                    "url": "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false because none of the provided sources mention a measles outbreak specifically in 'South Carolina'. While one source discusses a general rise in U.S. measles cases due to low vaccination and misinformation, it does not confirm the specific geographic location mentioned in the claim.",
+                    "confidence": "high",
+                    "reasoning": "Source 1 states that 'Measles cases are rising in the U.S.' and attributes this to 'disrupted by the COVID pandemic and misinformation, measles vaccination among schoolchildren has declined dangerously'. This supports the general concept of rising measles cases, low vaccination uptake, and the impact of misinformation. However, no part of Source 1, Source 2 (about COVID-19), or Source 3 (about COVID-19) makes any mention of 'South Carolina' or a measles outbreak specifically in that state. Since a key geographical detail of the claim is unverified by the sources, the claim as a whole cannot be substantiated as true and is therefore false based on the lack of supporting evidence for this specific detail.",
+                    "sources": {
+                      "links": [
+                        "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                        "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                        "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                        "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                        "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                      ],
+                      "titles": [
+                        "Measles cases are rising in the U.S. Here's why misinformation ...",
+                        "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                        "Coronavirus: Covid News: European Nations Take Divergent ...",
+                        "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                        "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "A measles outbreak in South Carolina is struggling to be contained due to low vaccination uptake, illustrating the impact of vaccine misinformation.",
+                    "verification_date": "2025-11-29T07:49:32.995982"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.pbs.org/newshour/health/measles-cases-are-rising-in-the-u-s-heres-why-misinformation-about-the-vaccine-persists-today",
+                      "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+                      "https://www.nytimes.com/live/2022/01/26/world/omicron-covid-vaccine-tests",
+                      "https://www.nytimes.com/interactive/2025/health/measles-outbreak-map.html",
+                      "https://www.nytimes.com/live/2022/01/24/world/omicron-covid-vaccine-tests"
+                    ],
+                    "titles": [
+                      "Measles cases are rising in the U.S. Here's why misinformation ...",
+                      "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+                      "Coronavirus: Covid News: European Nations Take Divergent ...",
+                      "Tracking Measles in the U.S.: Latest Maps and Cases - The New ...",
+                      "Covid News: China Lifts Lockdown on the Residents of Xi'an - The ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "content_summary": "South Carolina's Spartanburg County has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened pop-up clinics offering free measles vaccines. Despite these efforts and officials encouraging vaccination, ",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_075003_71421_7e3786d4.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 3,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 3,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_075003",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T07:50:03.073422",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_074604",
+    "created_at": "2025-11-29T07:50:03.073422",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 3,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251129_075003"
+  }
+}
