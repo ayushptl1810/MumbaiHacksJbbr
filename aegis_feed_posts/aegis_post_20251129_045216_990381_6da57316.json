@@ -1,0 +1,83 @@
+{
+  "post_id": "aegis_post_20251129_045216_990381_6da57316",
+  "verification_date": "2025-11-29T04:52:16.990381",
+  "claim": {
+    "text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: No Measles Outbreak Linked to Misinformation Reported in Spartanburg County, SC",
+    "body": "The assertion of a measles outbreak in Spartanburg County, South Carolina, linked to vaccine misinformation and resulting in low public health engagement, is false. Public health agencies closely monitor and report on infectious disease outbreaks. There have been no credible reports from the South Carolina Department of Health and Environmental Control (DHEC) or major news outlets confirming a significant measles outbreak matching this description in Spartanburg County. The sources provided to support this claim are entirely unrelated – one discusses Amazon's online pharmacy business, and the other is a website sitemap – offering no evidence for the alleged outbreak. While vaccine misinformation is a real public health concern, this specific claim about an outbreak in Spartanburg County is not supported by facts.",
+    "summary": "Claims of a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation are false, with no credible public health reports or evidence supporting such an event.",
+    "category": "Health"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+        "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+        "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+        "url": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+        "domain": "www.euronews.com"
+      }
+    ],
+    "total_sources": 3
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 2,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+        "confidence": "high",
+        "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+            "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+          ],
+          "titles": [
+            "Amazon Takes On Pharmacies By Selling Medications Online",
+            "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+          ],
+          "count": 2
+        },
+        "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+        "verification_date": "2025-11-29T04:51:48.111890"
+      },
+      "sources": {
+        "links": [
+          "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+          "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+        ],
+        "titles": [
+          "Amazon Takes On Pharmacies By Selling Medications Online",
+          "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+        ],
+        "count": 2
+      },
+      "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

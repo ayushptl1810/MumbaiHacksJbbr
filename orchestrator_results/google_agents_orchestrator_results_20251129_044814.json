@@ -1,0 +1,1845 @@
+{
+  "success": true,
+  "message": "Successfully processed 4 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T04:47:17.739196",
+        "total_posts": 4,
+        "posts_by_platform": {
+          "reddit": 2,
+          "threads": 2
+        },
+        "platforms": [
+          "reddit",
+          "threads"
+        ],
+        "posts": [
+          {
+            "claim": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+            "summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a facility in Winchester, Virginia. FBI Director Kash Patel tasked nearly 1,000 agents to review the evidence, which includes the investigation into Epstein's 2019 prison death, search warrant photos, street surveillance, and aerial footage. During this review, mentions of Donald Trump were flagged, implying that evidence linked to Trump may remain hidden from public view.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+            "summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake has been notably low, with only one person attending a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell expressed disappointment over the slow progress and low response from mobile health units, directly linking the lack of public engagement to the 'chilling effect of vaccine misinformation'.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          },
+          {
+            "claim": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+            "summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-queen-fairy-land theatrics,\" implying a preference for a more conventional and traditional festive aesthetic.",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+          },
+          {
+            "claim": "The post advocates for deportation and directs users to participate in a poll.",
+            "summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+            "content_summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Proje",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+              "confidence": "medium",
+              "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                  "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                ],
+                "titles": [
+                  "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                  "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                  "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+              "verification_date": "2025-11-29T04:47:26.369535"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review."
+            },
+            "verification_timestamp": "2025-11-29T04:47:56.205572"
+          },
+          {
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+            "content_summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake ha",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+              "confidence": "high",
+              "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+              "sources": {
+                "links": [
+                  "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                ],
+                "titles": [
+                  "Amazon Takes On Pharmacies By Selling Medications Online"
+                ],
+                "count": 1
+              },
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+              "verification_date": "2025-11-29T04:47:26.369535"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation."
+            },
+            "verification_timestamp": "2025-11-29T04:47:56.205572"
+          },
+          {
+            "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+            "content_summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-que",
+            "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+              "confidence": "medium",
+              "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                  "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                  "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                  "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                  "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                ],
+                "titles": [
+                  "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                  "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                  "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                  "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                  "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+              "verification_date": "2025-11-29T04:47:26.369535"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\""
+            },
+            "verification_timestamp": "2025-11-29T04:47:56.205572"
+          },
+          {
+            "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+            "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+            "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+              "confidence": "high",
+              "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                  "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                  "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                  "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                  "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                ],
+                "titles": [
+                  "Trump seeks to bypass immigration courts to speed deportations ...",
+                  "Trump Administration Directs Judges to Deny Asylum Without ...",
+                  "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                  "My Life as an Undocumented Immigrant - The New York Times",
+                  "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+              "verification_date": "2025-11-29T04:47:26.369535"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "The post advocates for deportation and directs users to participate in a poll."
+            },
+            "verification_timestamp": "2025-11-29T04:47:56.205572"
+          }
+        ],
+        "summary": {
+          "total_claims": 4,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T04:47:56.205572",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 4 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251129_044814_321119_e2df55dc",
+            "verification_date": "2025-11-29T04:48:14.321119",
+            "claim": {
+              "text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+              "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credible evidence from current, verifiable sources to support the assertion that the FBI spent $1 million on such redactions or that specific mentions of Donald Trump were flagged in this context. Misinformation often uses future-dated or irrelevant sources to create a false sense of legitimacy, making it crucial to verify information against current and authoritative sources.",
+              "summary": "The claim about the FBI spending $1 million to redact Epstein files and flagging Trump mentions is false, relying on future-dated, non-existent sources.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                  "url": "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                  "url": "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Exclusive | Justice Department Told Trump in May That His Name Is ...",
+                  "url": "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D",
+                  "domain": "www.wsj.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+                  "confidence": "medium",
+                  "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                      "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                      "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                  "verification_date": "2025-11-29T04:47:26.369535"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                    "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                    "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                "content_summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Proje",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_321119_e2df55dc.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_044814_322207_901aa26a",
+            "verification_date": "2025-11-29T04:48:14.322207",
+            "claim": {
+              "text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Measles Outbreak in Spartanburg County Linked to Misinformation",
+              "body": "A claim states that Spartanburg County, South Carolina, is experiencing a measles outbreak with slow vaccination uptake, attributed to vaccine misinformation. This claim is false. Our review found no credible reports or official health alerts from state or local health authorities confirming a current measles outbreak in Spartanburg County, nor any data indicating unusually slow vaccination uptake due to misinformation in that specific area. The single source provided to support this claim, an article from 2020 about Amazon selling medications online, is completely unrelated to a measles outbreak or vaccination rates in South Carolina. Misleading claims often use irrelevant sources to appear legitimate. Always check official health advisories from reputable health organizations for accurate public health information.",
+              "summary": "The claim of a measles outbreak and slow vaccine uptake in Spartanburg County due to misinformation is false and supported by an irrelevant source.",
+              "category": "Health"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+                  "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D",
+                  "domain": "www.wsj.com"
+                }
+              ],
+              "total_sources": 2
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+                  "confidence": "high",
+                  "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                    ],
+                    "titles": [
+                      "Amazon Takes On Pharmacies By Selling Medications Online"
+                    ],
+                    "count": 1
+                  },
+                  "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                  "verification_date": "2025-11-29T04:47:26.369535"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                  ],
+                  "titles": [
+                    "Amazon Takes On Pharmacies By Selling Medications Online"
+                  ],
+                  "count": 1
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                "content_summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake ha",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_901aa26a.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_044814_322207_7455e72c",
+            "verification_date": "2025-11-29T04:48:14.322207",
+            "claim": {
+              "text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Basis for Claim on Melania Trump's Future White House Decor",
+              "body": "A claim suggests that a future Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\" This claim is false. It presents subjective opinions and speculation about future events as facts. The language used to describe current decorations is inflammatory and unsubstantiated. The provided sources do not support the claim: one article from 2020 describes Melania Trump's *past* decorations as \"unconventionally traditional,\" which doesn't directly align with the \"classy\" assertion for a future event. The other source, from 2024, discusses Melania Trump declining a White House invitation and is irrelevant to Christmas décor. Claims based on speculative comparisons and subjective preferences, especially those criticizing current administrations with strong, biased language, should be viewed critically.",
+              "summary": "The claim about Melania Trump's future White House decor restoring \"classy tradition\" compared to current \"theatrics\" is false, based on speculation and unsupported by the provided sources.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                  "url": "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                  "url": "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                  "url": "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                  "url": "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Melania Trump tapes reveal complaints on Christmas and migrant ...",
+                  "url": "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff",
+                  "domain": "www.theguardian.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+                  "confidence": "medium",
+                  "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                      "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                      "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                      "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                      "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                    ],
+                    "titles": [
+                      "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                      "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                      "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                      "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                      "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                  "verification_date": "2025-11-29T04:47:26.369535"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                    "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                    "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                    "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                    "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                  ],
+                  "titles": [
+                    "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                    "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                    "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                    "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                    "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                "content_summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-que",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_7455e72c.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_044814_322207_5e7f43d2",
+            "verification_date": "2025-11-29T04:48:14.322207",
+            "claim": {
+              "text": "The post advocates for deportation and directs users to participate in a poll.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Claim About 'Post Advocating Deportation & Poll' Is Unsubstantiated",
+              "body": "A circulating claim describes an unspecified \"post\" that advocates for deportation and directs users to participate in a poll. Our investigation found this claim to be false. No specific \"post\" matching this description was identified or provided for verification. The sources offered to support this claim are articles from 2025 discussing broader Trump administration policies regarding immigration, asylum, and expediting deportations. These future-dated articles, while relevant to the general topic of deportation policy, *do not mention or describe any specific online post advocating deportation or including a poll* as stated in the claim. Without an actual post to evaluate, and with the provided sources being irrelevant to the existence of such a specific social media interaction, the claim cannot be substantiated.",
+              "summary": "The claim about a specific \"post\" advocating deportation and directing users to a poll is false, as no such post was identified, and the provided sources are irrelevant.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The post advocates for deportation and directs users to participate in a poll.",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Trump seeks to bypass immigration courts to speed deportations ...",
+                  "url": "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "Trump Administration Directs Judges to Deny Asylum Without ...",
+                  "url": "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                  "url": "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "My Life as an Undocumented Immigrant - The New York Times",
+                  "url": "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "From LA wildfires to hurricanes, immigrants help rebuild after ...",
+                  "url": "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many",
+                  "domain": "www.pbs.org"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 4,
+              "batch_size": 4,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+                  "confidence": "high",
+                  "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                      "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                      "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                      "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                      "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                    ],
+                    "titles": [
+                      "Trump seeks to bypass immigration courts to speed deportations ...",
+                      "Trump Administration Directs Judges to Deny Asylum Without ...",
+                      "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                      "My Life as an Undocumented Immigrant - The New York Times",
+                      "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+                  "verification_date": "2025-11-29T04:47:26.369535"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                    "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                    "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                    "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                    "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                  ],
+                  "titles": [
+                    "Trump seeks to bypass immigration courts to speed deportations ...",
+                    "Trump Administration Directs Judges to Deny Asylum Without ...",
+                    "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                    "My Life as an Undocumented Immigrant - The New York Times",
+                    "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+                "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_5e7f43d2.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 4,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 4,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+      "summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a facility in Winchester, Virginia. FBI Director Kash Patel tasked nearly 1,000 agents to review the evidence, which includes the investigation into Epstein's 2019 prison death, search warrant photos, street surveillance, and aerial footage. During this review, mentions of Donald Trump were flagged, implying that evidence linked to Trump may remain hidden from public view.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+        "confidence": "medium",
+        "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+            "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+          ],
+          "titles": [
+            "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+            "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+            "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+        "verification_date": "2025-11-29T04:47:26.369535"
+      }
+    },
+    {
+      "claim": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+      "summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake has been notably low, with only one person attending a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell expressed disappointment over the slow progress and low response from mobile health units, directly linking the lack of public engagement to the 'chilling effect of vaccine misinformation'.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+        "confidence": "high",
+        "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+          ],
+          "titles": [
+            "Amazon Takes On Pharmacies By Selling Medications Online"
+          ],
+          "count": 1
+        },
+        "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+        "verification_date": "2025-11-29T04:47:26.369535"
+      }
+    },
+    {
+      "claim": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+      "summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-queen-fairy-land theatrics,\" implying a preference for a more conventional and traditional festive aesthetic.",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+        "confidence": "medium",
+        "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+            "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+            "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+            "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+            "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+          ],
+          "titles": [
+            "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+            "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+            "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+            "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+            "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+        "verification_date": "2025-11-29T04:47:26.369535"
+      }
+    },
+    {
+      "claim": "The post advocates for deportation and directs users to participate in a poll.",
+      "summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+        "confidence": "high",
+        "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+            "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+            "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+            "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+            "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+          ],
+          "titles": [
+            "Trump seeks to bypass immigration courts to speed deportations ...",
+            "Trump Administration Directs Judges to Deny Asylum Without ...",
+            "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+            "My Life as an Undocumented Immigrant - The New York Times",
+            "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+        "verification_date": "2025-11-29T04:47:26.369535"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251129_044814_321119_e2df55dc",
+      "verification_date": "2025-11-29T04:48:14.321119",
+      "claim": {
+        "text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+        "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credible evidence from current, verifiable sources to support the assertion that the FBI spent $1 million on such redactions or that specific mentions of Donald Trump were flagged in this context. Misinformation often uses future-dated or irrelevant sources to create a false sense of legitimacy, making it crucial to verify information against current and authoritative sources.",
+        "summary": "The claim about the FBI spending $1 million to redact Epstein files and flagging Trump mentions is false, relying on future-dated, non-existent sources.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+            "url": "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+            "url": "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Exclusive | Justice Department Told Trump in May That His Name Is ...",
+            "url": "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D",
+            "domain": "www.wsj.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+            "confidence": "medium",
+            "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+              ],
+              "titles": [
+                "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+            "verification_date": "2025-11-29T04:47:26.369535"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+              "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+              "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+              "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+              "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+            ],
+            "titles": [
+              "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+              "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+              "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+              "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+              "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+          "content_summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Proje",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_321119_e2df55dc.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_044814_322207_901aa26a",
+      "verification_date": "2025-11-29T04:48:14.322207",
+      "claim": {
+        "text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Measles Outbreak in Spartanburg County Linked to Misinformation",
+        "body": "A claim states that Spartanburg County, South Carolina, is experiencing a measles outbreak with slow vaccination uptake, attributed to vaccine misinformation. This claim is false. Our review found no credible reports or official health alerts from state or local health authorities confirming a current measles outbreak in Spartanburg County, nor any data indicating unusually slow vaccination uptake due to misinformation in that specific area. The single source provided to support this claim, an article from 2020 about Amazon selling medications online, is completely unrelated to a measles outbreak or vaccination rates in South Carolina. Misleading claims often use irrelevant sources to appear legitimate. Always check official health advisories from reputable health organizations for accurate public health information.",
+        "summary": "The claim of a measles outbreak and slow vaccine uptake in Spartanburg County due to misinformation is false and supported by an irrelevant source.",
+        "category": "Health"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+            "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D",
+            "domain": "www.wsj.com"
+          }
+        ],
+        "total_sources": 2
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+            "confidence": "high",
+            "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+            "sources": {
+              "links": [
+                "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+              ],
+              "titles": [
+                "Amazon Takes On Pharmacies By Selling Medications Online"
+              ],
+              "count": 1
+            },
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+            "verification_date": "2025-11-29T04:47:26.369535"
+          },
+          "sources": {
+            "links": [
+              "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+            ],
+            "titles": [
+              "Amazon Takes On Pharmacies By Selling Medications Online"
+            ],
+            "count": 1
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+          "content_summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake ha",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_901aa26a.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_044814_322207_7455e72c",
+      "verification_date": "2025-11-29T04:48:14.322207",
+      "claim": {
+        "text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Basis for Claim on Melania Trump's Future White House Decor",
+        "body": "A claim suggests that a future Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\" This claim is false. It presents subjective opinions and speculation about future events as facts. The language used to describe current decorations is inflammatory and unsubstantiated. The provided sources do not support the claim: one article from 2020 describes Melania Trump's *past* decorations as \"unconventionally traditional,\" which doesn't directly align with the \"classy\" assertion for a future event. The other source, from 2024, discusses Melania Trump declining a White House invitation and is irrelevant to Christmas décor. Claims based on speculative comparisons and subjective preferences, especially those criticizing current administrations with strong, biased language, should be viewed critically.",
+        "summary": "The claim about Melania Trump's future White House decor restoring \"classy tradition\" compared to current \"theatrics\" is false, based on speculation and unsupported by the provided sources.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+            "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+            "url": "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+            "url": "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+            "url": "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+            "url": "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Melania Trump tapes reveal complaints on Christmas and migrant ...",
+            "url": "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff",
+            "domain": "www.theguardian.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+            "confidence": "medium",
+            "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+              ],
+              "titles": [
+                "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+            "verification_date": "2025-11-29T04:47:26.369535"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+              "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+              "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+              "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+              "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+            ],
+            "titles": [
+              "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+              "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+              "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+              "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+              "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+            ],
+            "count": 10
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+          "content_summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-que",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_7455e72c.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_044814_322207_5e7f43d2",
+      "verification_date": "2025-11-29T04:48:14.322207",
+      "claim": {
+        "text": "The post advocates for deportation and directs users to participate in a poll.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Claim About 'Post Advocating Deportation & Poll' Is Unsubstantiated",
+        "body": "A circulating claim describes an unspecified \"post\" that advocates for deportation and directs users to participate in a poll. Our investigation found this claim to be false. No specific \"post\" matching this description was identified or provided for verification. The sources offered to support this claim are articles from 2025 discussing broader Trump administration policies regarding immigration, asylum, and expediting deportations. These future-dated articles, while relevant to the general topic of deportation policy, *do not mention or describe any specific online post advocating deportation or including a poll* as stated in the claim. Without an actual post to evaluate, and with the provided sources being irrelevant to the existence of such a specific social media interaction, the claim cannot be substantiated.",
+        "summary": "The claim about a specific \"post\" advocating deportation and directing users to a poll is false, as no such post was identified, and the provided sources are irrelevant.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The post advocates for deportation and directs users to participate in a poll.",
+            "url": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Trump seeks to bypass immigration courts to speed deportations ...",
+            "url": "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "Trump Administration Directs Judges to Deny Asylum Without ...",
+            "url": "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+            "url": "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "My Life as an Undocumented Immigrant - The New York Times",
+            "url": "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "From LA wildfires to hurricanes, immigrants help rebuild after ...",
+            "url": "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many",
+            "domain": "www.pbs.org"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 4,
+        "batch_size": 4,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+            "confidence": "high",
+            "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+              ],
+              "titles": [
+                "Trump seeks to bypass immigration courts to speed deportations ...",
+                "Trump Administration Directs Judges to Deny Asylum Without ...",
+                "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                "My Life as an Undocumented Immigrant - The New York Times",
+                "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+            "verification_date": "2025-11-29T04:47:26.369535"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+              "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+              "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+              "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+              "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+            ],
+            "titles": [
+              "Trump seeks to bypass immigration courts to speed deportations ...",
+              "Trump Administration Directs Judges to Deny Asylum Without ...",
+              "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+              "My Life as an Undocumented Immigrant - The New York Times",
+              "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+            ],
+            "count": 10
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+          "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_5e7f43d2.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 4,
+    "debunk_posts_generated": 4,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T04:47:17.739196",
+          "total_posts": 4,
+          "posts_by_platform": {
+            "reddit": 2,
+            "threads": 2
+          },
+          "platforms": [
+            "reddit",
+            "threads"
+          ],
+          "posts": [
+            {
+              "claim": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+              "summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a facility in Winchester, Virginia. FBI Director Kash Patel tasked nearly 1,000 agents to review the evidence, which includes the investigation into Epstein's 2019 prison death, search warrant photos, street surveillance, and aerial footage. During this review, mentions of Donald Trump were flagged, implying that evidence linked to Trump may remain hidden from public view.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+              "summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake has been notably low, with only one person attending a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell expressed disappointment over the slow progress and low response from mobile health units, directly linking the lack of public engagement to the 'chilling effect of vaccine misinformation'.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            },
+            {
+              "claim": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+              "summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-queen-fairy-land theatrics,\" implying a preference for a more conventional and traditional festive aesthetic.",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+            },
+            {
+              "claim": "The post advocates for deportation and directs users to participate in a poll.",
+              "summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+              "content_summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Proje",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+                "confidence": "medium",
+                "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                    "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                    "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                "verification_date": "2025-11-29T04:47:26.369535"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review."
+              },
+              "verification_timestamp": "2025-11-29T04:47:56.205572"
+            },
+            {
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+              "content_summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake ha",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+                "confidence": "high",
+                "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                  ],
+                  "titles": [
+                    "Amazon Takes On Pharmacies By Selling Medications Online"
+                  ],
+                  "count": 1
+                },
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                "verification_date": "2025-11-29T04:47:26.369535"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation."
+              },
+              "verification_timestamp": "2025-11-29T04:47:56.205572"
+            },
+            {
+              "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+              "content_summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-que",
+              "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+                "confidence": "medium",
+                "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                    "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                    "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                    "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                    "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                  ],
+                  "titles": [
+                    "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                    "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                    "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                    "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                    "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                "verification_date": "2025-11-29T04:47:26.369535"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\""
+              },
+              "verification_timestamp": "2025-11-29T04:47:56.205572"
+            },
+            {
+              "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+              "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+              "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+                "confidence": "high",
+                "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                    "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                    "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                    "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                    "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                  ],
+                  "titles": [
+                    "Trump seeks to bypass immigration courts to speed deportations ...",
+                    "Trump Administration Directs Judges to Deny Asylum Without ...",
+                    "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                    "My Life as an Undocumented Immigrant - The New York Times",
+                    "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+                "verification_date": "2025-11-29T04:47:26.369535"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "The post advocates for deportation and directs users to participate in a poll."
+              },
+              "verification_timestamp": "2025-11-29T04:47:56.205572"
+            }
+          ],
+          "summary": {
+            "total_claims": 4,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T04:47:56.205572",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 4 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251129_044814_321119_e2df55dc",
+              "verification_date": "2025-11-29T04:48:14.321119",
+              "claim": {
+                "text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+                "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credible evidence from current, verifiable sources to support the assertion that the FBI spent $1 million on such redactions or that specific mentions of Donald Trump were flagged in this context. Misinformation often uses future-dated or irrelevant sources to create a false sense of legitimacy, making it crucial to verify information against current and authoritative sources.",
+                "summary": "The claim about the FBI spending $1 million to redact Epstein files and flagging Trump mentions is false, relying on future-dated, non-existent sources.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                    "url": "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                    "url": "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Exclusive | Justice Department Told Trump in May That His Name Is ...",
+                    "url": "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D",
+                    "domain": "www.wsj.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The claim is uncertain because while one part is supported, the other key part lacks evidence in the provided sources.",
+                    "confidence": "medium",
+                    "reasoning": "The claim has two distinct parts: 1) 'The FBI spent nearly $1 million to redact Jeffrey Epstein's files,' and 2) 'mentions of Donald Trump were flagged during this review.'\n\nRegarding the first part, none of the provided sources mention the FBI spending nearly $1 million on redactions. Source 1 discusses a review by the 'Justice Department' of Epstein files, but provides no specific monetary figure or attributes the cost to the FBI.\n\nRegarding the second part, Source 1 states, 'Attorney General Pam Bondi briefed Mr. Trump that he was mentioned in the [Epstein files].' This directly supports the assertion that mentions of Donald Trump were present and flagged during the review.\n\nSince the claim is a conjunction ('and'), both parts must be substantiated for the entire claim to be true. As the first part regarding the cost and FBI's specific involvement is not supported by the sources, the overall claim remains uncertain despite the verification of the second part.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                        "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                        "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                        "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                        "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                      ],
+                      "titles": [
+                        "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                        "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                        "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                        "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                        "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The FBI spent nearly $1 million to redact Jeffrey Epstein's files, and mentions of Donald Trump were flagged during this review.",
+                    "verification_date": "2025-11-29T04:47:26.369535"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html",
+                      "https://www.pbs.org/newshour/politics/watch-asked-if-his-name-appears-in-epstein-files-trump-claims-comey-obama-and-biden-made-them-up",
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.wsj.com/politics/justice-department-told-trump-name-in-epstein-files-727a8038?gaa_at=eafs&gaa_n=AWEtsqe-CINPt5ozLveinLYy7vBATyN6_ruqNImCEXqzOobCyV91ci0wvqie&gaa_ts=692a310c&gaa_sig=xygwDB1VoGYhsJKpGKSpckCtxTVlypylZx0XoZjPE7FSR94z8bJAjKpvLOKTPFx43IR6O46AkPJk1sMpcU8xEA%3D%3D"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ...",
+                      "WATCH: Asked if his name appears in Epstein files, Trump claims ...",
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Exclusive | Justice Department Told Trump in May That His Name Is ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "content_summary": "The Department of Justice mandated the release of Jeffrey Epstein's files, but the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22, 2025, and 4,737 hours from January-July) on an initiative called the \"Epstein Transparency Project\" or \"Special Redaction Proje",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_321119_e2df55dc.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_044814_322207_901aa26a",
+              "verification_date": "2025-11-29T04:48:14.322207",
+              "claim": {
+                "text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Measles Outbreak in Spartanburg County Linked to Misinformation",
+                "body": "A claim states that Spartanburg County, South Carolina, is experiencing a measles outbreak with slow vaccination uptake, attributed to vaccine misinformation. This claim is false. Our review found no credible reports or official health alerts from state or local health authorities confirming a current measles outbreak in Spartanburg County, nor any data indicating unusually slow vaccination uptake due to misinformation in that specific area. The single source provided to support this claim, an article from 2020 about Amazon selling medications online, is completely unrelated to a measles outbreak or vaccination rates in South Carolina. Misleading claims often use irrelevant sources to appear legitimate. Always check official health advisories from reputable health organizations for accurate public health information.",
+                "summary": "The claim of a measles outbreak and slow vaccine uptake in Spartanburg County due to misinformation is false and supported by an irrelevant source.",
+                "category": "Health"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+                    "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D",
+                    "domain": "www.wsj.com"
+                  }
+                ],
+                "total_sources": 2
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The provided fact-checking source is entirely irrelevant to the claim and offers no information to support or refute it.",
+                    "confidence": "high",
+                    "reasoning": "The claim refers to a measles outbreak in Spartanburg County, South Carolina, slow vaccination uptake, and vaccine misinformation. The sole fact-checking source provided discusses Amazon selling medications online and the basis for COVID-19 vaccines (Moderna, Pfizer-BioNTech) and their efficacy in November 2020. This source contains no mention of measles, Spartanburg County, vaccination rates for measles, or vaccine misinformation related to measles. Therefore, there is no evidence to verify or deny the claim.",
+                    "sources": {
+                      "links": [
+                        "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                      ],
+                      "titles": [
+                        "Amazon Takes On Pharmacies By Selling Medications Online"
+                      ],
+                      "count": 1
+                    },
+                    "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is experiencing slow vaccination uptake at free clinics, which is attributed to the impact of vaccine misinformation.",
+                    "verification_date": "2025-11-29T04:47:26.369535"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D"
+                    ],
+                    "titles": [
+                      "Amazon Takes On Pharmacies By Selling Medications Online"
+                    ],
+                    "count": 1
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "content_summary": "Spartanburg County, South Carolina, is battling a measles outbreak with over 50 identified cases since early October. In response, the South Carolina Department of Public Health opened pop-up clinics in early November, offering free measles vaccines to adults and children. However, vaccine uptake ha",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_901aa26a.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_044814_322207_7455e72c",
+              "verification_date": "2025-11-29T04:48:14.322207",
+              "claim": {
+                "text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Basis for Claim on Melania Trump's Future White House Decor",
+                "body": "A claim suggests that a future Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\" This claim is false. It presents subjective opinions and speculation about future events as facts. The language used to describe current decorations is inflammatory and unsubstantiated. The provided sources do not support the claim: one article from 2020 describes Melania Trump's *past* decorations as \"unconventionally traditional,\" which doesn't directly align with the \"classy\" assertion for a future event. The other source, from 2024, discusses Melania Trump declining a White House invitation and is irrelevant to Christmas décor. Claims based on speculative comparisons and subjective preferences, especially those criticizing current administrations with strong, biased language, should be viewed critically.",
+                "summary": "The claim about Melania Trump's future White House decor restoring \"classy tradition\" compared to current \"theatrics\" is false, based on speculation and unsupported by the provided sources.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                    "url": "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                    "url": "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                    "url": "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                    "url": "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Melania Trump tapes reveal complaints on Christmas and migrant ...",
+                    "url": "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff",
+                    "domain": "www.theguardian.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "While Melania Trump's disapproval of current decorations is suggested, the specific descriptive phrases used in the claim are not directly supported by the sources.",
+                    "confidence": "medium",
+                    "reasoning": "The claim asserts that a Melania Trump White House Christmas would restore 'classy décor' and 'real tradition,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics.'\n\nSource 2 indicates that Melania Trump 'complained about [current] Christmas decorations, which she complained about in profane terms.' This supports the idea of a contrast and her disapproval of the current style. However, the source does not quote her using the exact phrase 'drag-queen-fairy-land theatrics' to describe current decor, nor does it explicitly quote her stating her intention to restore 'classy décor' and 'real tradition' in those specific words.\n\nSource 1 describes Melania Trump's 2020 decorations as 'unconventionally traditional' but does not attribute the specific 'classy décor' or 'real tradition' wording to her intentions or goals. Source 3 is irrelevant, discussing the arrival of a Christmas tree during her tenure.\n\nWhile there is some support for the sentiment of contrast and her likely preference for a different style, the claim uses very specific, strong descriptive language that is not directly found or attributed in the provided sources, making the claim's exact wording uncertain.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                        "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                        "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                        "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                        "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                      ],
+                      "titles": [
+                        "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                        "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                        "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                        "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                        "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "A Melania Trump White House Christmas would restore \"classy décor\" and \"real tradition,\" contrasting with current decorations described as \"drag-queen-fairy-land theatrics.\"",
+                    "verification_date": "2025-11-29T04:47:26.369535"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional",
+                      "https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html",
+                      "https://www.pbs.org/newshour/politics/watch-first-lady-melania-trump-welcomes-arrival-of-white-house-christmas-tree",
+                      "https://www.nytimes.com/2019/12/02/style/melania-trump-white-house-christmas-decorations.html",
+                      "https://www.theguardian.com/us-news/2020/oct/02/melania-trump-tapes-christmas-migrant-children-stephanie-winston-wolkoff"
+                    ],
+                    "titles": [
+                      "Melania Trump's 2020 Christmas Decorations Are Unconventionally ...",
+                      "Melania Trump Declines Jill Biden's White House Invitation - The ...",
+                      "WATCH: First lady Melania Trump welcomes arrival of White House ...",
+                      "Melania Trump Reveals Christmas Décor but Stays Hidden - The ...",
+                      "Melania Trump tapes reveal complaints on Christmas and migrant ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "content_summary": "The post asserts that a Melania Trump-decorated White House Christmas would reintroduce a period of \"glory days\" characterized by \"classy décor\" and \"real tradition.\" It explicitly contrasts this vision with the current White House Christmas decorations, which it disparagingly refers to as \"drag-que",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_7455e72c.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_044814_322207_5e7f43d2",
+              "verification_date": "2025-11-29T04:48:14.322207",
+              "claim": {
+                "text": "The post advocates for deportation and directs users to participate in a poll.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Claim About 'Post Advocating Deportation & Poll' Is Unsubstantiated",
+                "body": "A circulating claim describes an unspecified \"post\" that advocates for deportation and directs users to participate in a poll. Our investigation found this claim to be false. No specific \"post\" matching this description was identified or provided for verification. The sources offered to support this claim are articles from 2025 discussing broader Trump administration policies regarding immigration, asylum, and expediting deportations. These future-dated articles, while relevant to the general topic of deportation policy, *do not mention or describe any specific online post advocating deportation or including a poll* as stated in the claim. Without an actual post to evaluate, and with the provided sources being irrelevant to the existence of such a specific social media interaction, the claim cannot be substantiated.",
+                "summary": "The claim about a specific \"post\" advocating deportation and directing users to a poll is false, as no such post was identified, and the provided sources are irrelevant.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The post advocates for deportation and directs users to participate in a poll.",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Trump seeks to bypass immigration courts to speed deportations ...",
+                    "url": "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "Trump Administration Directs Judges to Deny Asylum Without ...",
+                    "url": "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                    "url": "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "My Life as an Undocumented Immigrant - The New York Times",
+                    "url": "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "From LA wildfires to hurricanes, immigrants help rebuild after ...",
+                    "url": "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many",
+                    "domain": "www.pbs.org"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 4,
+                "batch_size": 4,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+                    "confidence": "high",
+                    "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                        "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                        "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                        "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                        "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                      ],
+                      "titles": [
+                        "Trump seeks to bypass immigration courts to speed deportations ...",
+                        "Trump Administration Directs Judges to Deny Asylum Without ...",
+                        "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                        "My Life as an Undocumented Immigrant - The New York Times",
+                        "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+                    "verification_date": "2025-11-29T04:47:26.369535"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+                      "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+                      "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+                      "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+                      "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+                    ],
+                    "titles": [
+                      "Trump seeks to bypass immigration courts to speed deportations ...",
+                      "Trump Administration Directs Judges to Deny Asylum Without ...",
+                      "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+                      "My Life as an Undocumented Immigrant - The New York Times",
+                      "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+                  "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_044814_322207_5e7f43d2.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 4,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 4,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_044814",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T04:48:14.325225",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_044438",
+    "created_at": "2025-11-29T04:48:14.325225",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 4,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251129_044814"
+  }
+}

@@ -1,0 +1,896 @@
+2025-11-29 04:29:08,090 [INFO] __main__: Orchestrator Agent initialized with Google Agents SDK - Session: orchestrator_session_20251129_042908
+2025-11-29 04:29:08,090 [INFO] __main__: Initializing Google Agents Orchestrator...
+2025-11-29 04:29:08,090 [INFO] __main__: Google Agents Orchestrator initialized successfully
+2025-11-29 04:29:08,090 [INFO] __main__: Initializing Claim Verifier with Google Agents...
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Google Agents Orchestrator initialized successfully
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Created Google Agent: claim_extractor - Claim Extraction Specialist
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Created Google Agent: fact_verifier - Fact Verification Specialist
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Created Google Agent: priority_assessor - Priority Assessment Specialist
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Created Google Agent: report_generator - Report Generation Specialist
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Claim verification agents setup completed with Google Agents SDK
+2025-11-29 04:29:08,090 [INFO] claim_verifier.agents: Claim Verifier Orchestrator initialized with Google Agents SDK
+2025-11-29 04:29:08,090 [INFO] __main__: Initializing Explanation Agent with Google Agents...
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Google Agents Orchestrator initialized for Explanation Agent
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Created Google Agent: content_generator - Content Generation Specialist
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Created Google Agent: source_analyzer - Source Analysis Specialist
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Created Google Agent: post_formatter - Post Formatting Specialist
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Google Agents setup completed for explanation workflow
+2025-11-29 04:29:08,090 [INFO] explanation_agent.agents: Explanation Agent initialized with Google Agents SDK
+2025-11-29 04:29:08,090 [INFO] __main__: Created Google Agent: trend_scanner - Trend Scanning Coordinator
+2025-11-29 04:29:08,090 [INFO] __main__: Created Google Agent: verifier_coordinator - Claim Verification Coordinator
+2025-11-29 04:29:08,090 [INFO] __main__: Created Google Agent: explanation_coordinator - Explanation Generation Coordinator
+2025-11-29 04:29:08,090 [INFO] __main__: Created Google Agent: results_integrator - Results Integration Specialist
+2025-11-29 04:29:08,090 [INFO] __main__: Orchestrator agents setup completed with Google Agents SDK
+2025-11-29 04:29:08,090 [INFO] __main__: Orchestrator Agent fully initialized with Google Agents SDK
+2025-11-29 04:29:08,090 [INFO] __main__: Starting Google Agents orchestrated pipeline: Trend Scanning → Claim Verification
+2025-11-29 04:29:08,090 [INFO] __main__: Step 1: Executing trend scanning with Google Agents...
+2025-11-29 04:29:08,090 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:29:08,090 [INFO] __main__: Executing task 1/1: trend_scanner - Execute comprehensive Reddit trend scanning with AI summarization and claim extraction
+2025-11-29 04:29:08,090 [INFO] __main__: Agent Trend Scanning Coordinator has 1 tools available
+2025-11-29 04:29:08,090 [INFO] __main__: Tool 0: <class 'function'> with methods: []...
+2025-11-29 04:29:08,090 [INFO] __main__: Starting tool detection for task: 'Execute comprehensive Reddit trend scanning with AI summarization and claim extraction'
+2025-11-29 04:29:08,090 [INFO] __main__: Checking conditions:
+2025-11-29 04:29:08,090 [INFO] __main__:   - hasattr(tool, '__call__'): True
+2025-11-29 04:29:08,090 [INFO] __main__:   - 'scan' in task_description.lower(): True
+2025-11-29 04:29:08,090 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:29:08,090 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:29:08,090 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:29:08,090 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:29:08,090 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:29:08,090 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:29:08,090 [INFO] __main__: Agent Trend Scanning Coordinator executing trend scanning tool...
+2025-11-29 04:29:08,098 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-11-29 04:29:08,150 [INFO] trend_scanner.google_agents: PRAW Reddit client authenticated successfully
+2025-11-29 04:29:10,284 [INFO] trend_scanner.tools.reddit_scan_tool: Google Agents SDK initialized successfully
+2025-11-29 04:29:10,450 [INFO] trend_scanner.threads_scraper: ThreadsScraper initialized (headless=True, cache=True)
+2025-11-29 04:29:10,450 [INFO] trend_scanner.tools.threads_scan_tool: ThreadsScraper initialized successfully
+2025-11-29 04:29:10,450 [INFO] trend_scanner.tools.threads_scan_tool: Google Agents SDK initialized for Threads scanner
+2025-11-29 04:29:10,450 [INFO] trend_scanner.google_agents: Threads scanner initialized successfully
+2025-11-29 04:29:10,450 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Google agents created for platforms: Reddit, Threads
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Target subreddits configured: ['NoFilterNews', 'badscience', 'skeptic', 'conspiracytheories']
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Target Threads profiles configured: ['globaltimes_news', 'trumplovernews']
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Starting multi-platform trend scanning (Reddit + Threads)...
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Starting parallel scan across 4 subreddits, 2 Threads profiles
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Starting parallel workflow with 6 tasks
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Executing parallel task 1/6 with agent 'reddit_scanner'
+2025-11-29 04:29:10,454 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/NoFilterNews
+2025-11-29 04:29:10,454 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/NoFilterNews (limit=20, sort=new)
+2025-11-29 04:29:10,454 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:29:13,832 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3223 chars from https://www.themirror.com/news/politics/trump-continues-third-term-fears-1533667
+2025-11-29 04:29:15,104 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3022 chars from https://www.cnn.com/2025/11/27/politics/trump-says-us-land-action-in-venezuela-very-soon?cid%3Dios_app
+2025-11-29 04:29:16,075 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4140 chars from https://www.independent.co.uk/news/world/americas/us-politics/trump-biden-autopen-perjury-charges-b2874633.html
+2025-11-29 04:29:17,945 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3801 chars from https://dailyglitch.com/trump-sends-out-divisive-thanksgiving-post-calling-to-end-millions-of-admissions-from-third-world-countries/
+2025-11-29 04:29:17,950 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 1 posts
+2025-11-29 04:29:17,950 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:29:24,387 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:29:24,387 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 1 posts
+2025-11-29 04:29:24,387 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 1 posts in 1 API call
+2025-11-29 04:29:24,387 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/NoFilterNews (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:29:24,387 [INFO] trend_scanner.google_agents: Executing parallel task 2/6 with agent 'reddit_scanner'
+2025-11-29 04:29:24,387 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/badscience
+2025-11-29 04:29:24,387 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/badscience (limit=20, sort=new)
+2025-11-29 04:29:24,387 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:29:27,055 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:29:27,074 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 225 chars from https://www.youtube.com/watch?v=tQmAeFk05mY
+2025-11-29 04:29:30,586 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2875 chars from https://www.thedailybeast.com/rfk-jr-comes-up-with-new-possible-cause-for-mass-shootings-video-games/
+2025-11-29 04:29:33,971 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5978 chars from https://www.thedailybeast.com//anti-vax-rfk-jr-plans-to-blame-over-the-counter-pain-medication-for-autism/?via=ios
+2025-11-29 04:29:33,971 [WARNING] trend_scanner.scraper: requests.get failed for /r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/: Invalid URL '/r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/': No scheme supplied. Perhaps you meant https:///r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/?
+2025-11-29 04:29:34,469 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8995 chars from https://reeserichardson.blog/2025/05/06/google-scholar-is-still-doing-nothing-about-citation-manipulation/
+2025-11-29 04:29:34,469 [WARNING] trend_scanner.scraper: requests.get failed for /r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/: Invalid URL '/r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/': No scheme supplied. Perhaps you meant https:///r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/?
+2025-11-29 04:29:34,469 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 0 posts
+2025-11-29 04:29:34,469 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 0 posts in 1 API call
+2025-11-29 04:29:34,469 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/badscience (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:29:34,469 [INFO] trend_scanner.google_agents: Executing parallel task 3/6 with agent 'reddit_scanner'
+2025-11-29 04:29:34,469 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/skeptic
+2025-11-29 04:29:34,469 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/skeptic (limit=20, sort=new)
+2025-11-29 04:29:34,469 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:29:35,700 [INFO] trend_scanner.scraper: scraper: newspaper extracted 17254 chars from https://caveatscientia.com/scientific-review-of-superfoods-boon-or-bunk/
+2025-11-29 04:29:36,876 [INFO] trend_scanner.scraper: scraper: newspaper extracted 6621 chars from https://nobreakthroughs.substack.com/p/riding-the-autism-bicycle-to-retraction
+2025-11-29 04:29:39,899 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2186 chars from https://dailyexplain.com/2025/11/28/fbi-spends-nearly-1m-redacting-epstein-files-trump-mentions-flagged-in-review/
+2025-11-29 04:29:41,271 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10134 chars from https://www.cnn.com/2025/11/27/health/south-carolina-measles-misinformation-kff-health-news
+2025-11-29 04:29:41,819 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5998 chars from https://www.theguardian.com/technology/2025/nov/27/partisan-x-posts-increase-political-polarisation-among-users-social-media-research
+2025-11-29 04:29:44,461 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8728 chars from https://retractionwatch.com/2025/11/25/meet-the-researcher-aiming-to-halt-use-of-fundamentally-flawed-database-linking-iq-and-nationality/
+2025-11-29 04:29:47,330 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:29:47,359 [INFO] trend_scanner.scraper: No usable content extracted for https://youtu.be/atbAWMUJxs8?si=McgsCNmare6txU6d
+2025-11-29 04:29:50,480 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2842 chars from https://rudevulture.com/mit-has-built-agent-clones-of-151-million-working-americans-in-order-to-identify-which-jobs-are-most-at-risk/
+2025-11-29 04:29:50,926 [WARNING] trend_scanner.scraper: requests.get failed for https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997: 403 Client Error: Forbidden for url: https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997
+2025-11-29 04:29:51,436 [INFO] trend_scanner.scraper: scraper: readability extracted 8919 chars from https://www.forbes.com/sites/kensilverstein/2025/10/19/uruguays-renewable-charge-a-small-nation-a-big-lesson-for-the-world/
+2025-11-29 04:29:51,436 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 4 posts
+2025-11-29 04:29:51,436 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:30:04,269 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:30:04,269 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 4 posts
+2025-11-29 04:30:04,269 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 4 posts in 1 API call
+2025-11-29 04:30:04,269 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/skeptic (20 posts), scraped 8 links, found 3 trending posts
+2025-11-29 04:30:04,269 [INFO] trend_scanner.google_agents: Executing parallel task 4/6 with agent 'reddit_scanner'
+2025-11-29 04:30:04,269 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/conspiracytheories
+2025-11-29 04:30:04,269 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/conspiracytheories (limit=20, sort=new)
+2025-11-29 04:30:04,269 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:30:07,300 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1417 chars from https://newrepublic.com/post/203762/trump-fbi-redacted-epstein-files
+2025-11-29 04:30:09,319 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8629 chars from https://www.yahoo.com/news/articles/conspiracy-theorists-russian-propagandists-individuals-193105640.html
+2025-11-29 04:30:09,942 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5654 chars from https://economictimes.indiatimes.com/news/international/us/palantir-co-founder-peter-thiel-and-vice-president-jd-vance-ties-explained-see-companys-expanding-reach-inside-government-programs-allegations-against-it-political-debate-grows-trump-administration-government-data-tools-ai-systems-surveillance-concerns-silicon-valley-political-influence-technology-power-government-contracts-privacy-issues/articleshow/125539208.cms?from=mdr
+2025-11-29 04:30:11,835 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3387 chars from https://www.npr.org/2025/11/23/nx-s1-5618242/texas-haiti-gonave-island-plot
+2025-11-29 04:30:13,217 [INFO] trend_scanner.scraper: scraper: newspaper extracted 584 chars from https://newrepublic.com/post/203562/maga-trolls-elon-musk-x-new-feature
+2025-11-29 04:30:13,218 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 0 posts
+2025-11-29 04:30:13,218 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 0 posts in 1 API call
+2025-11-29 04:30:13,218 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/conspiracytheories (20 posts), scraped 5 links, found 0 trending posts
+2025-11-29 04:30:13,219 [INFO] trend_scanner.google_agents: Executing parallel task 5/6 with agent 'threads_scanner'
+2025-11-29 04:30:13,219 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @globaltimes_news
+2025-11-29 04:30:13,219 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @globaltimes_news (limit=10)
+2025-11-29 04:30:24,609 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@globaltimes_news
+2025-11-29 04:30:29,816 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 5 threads
+2025-11-29 04:30:32,371 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 917 chars from https://globaltimes.cn/page/202511/1349127.shtml
+2025-11-29 04:30:32,371 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 0 threads
+2025-11-29 04:30:32,371 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 0 threads in 1 API call
+2025-11-29 04:30:32,371 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @globaltimes_news (5 threads), scraped 1 links, found 0 trending posts
+2025-11-29 04:30:32,371 [INFO] trend_scanner.google_agents: Executing parallel task 6/6 with agent 'threads_scanner'
+2025-11-29 04:30:32,371 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @trumplovernews
+2025-11-29 04:30:32,371 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @trumplovernews (limit=10)
+2025-11-29 04:30:32,810 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@trumplovernews
+2025-11-29 04:30:34,515 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 4 threads
+2025-11-29 04:30:34,519 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 2 threads
+2025-11-29 04:30:34,519 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:30:44,550 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:30:44,550 [INFO] trend_scanner.tools.threads_scan_tool: Batch risk assessment completed for 2 threads
+2025-11-29 04:30:44,550 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 2 threads in 1 API call
+2025-11-29 04:30:44,550 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @trumplovernews (4 threads), scraped 0 links, found 1 trending posts
+2025-11-29 04:30:51,850 [INFO] trend_scanner.google_agents: Executing cross-platform risk assessment
+2025-11-29 04:32:01,340 [INFO] trend_scanner.google_agents: Content Risk Assessor provided with 4 posts from multiple platforms for cross-platform analysis
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Reddit scan: 3 posts
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Threads scan: 0 posts
+2025-11-29 04:32:09,180 [INFO] trend_scanner.google_agents: Processed Threads scan: 1 posts
+2025-11-29 04:32:09,183 [INFO] trend_scanner.google_agents: Multi-platform scan completed - Reddit: 3, Threads: 1, Telegram: 0, Twitter: 0, Total: 4
+2025-11-29 04:32:17,095 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:32:17,095 [INFO] __main__: Found 4 posts from trend scanner, preparing for verification...
+2025-11-29 04:32:17,095 [INFO] __main__: Prepared 4 claims for verification
+2025-11-29 04:32:17,095 [INFO] __main__: Step 2: Executing claim verification with batch processing...
+2025-11-29 04:32:17,095 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:32:17,095 [INFO] __main__: Executing task 1/1: verifier_coordinator - Verify extracted claims using comprehensive fact-checking workflow
+2025-11-29 04:32:17,096 [INFO] __main__: Agent Claim Verification Coordinator has 1 tools available
+2025-11-29 04:32:17,096 [INFO] __main__: Tool 0: <class 'claim_verifier.agents.ClaimVerifierOrchestrator'> with methods: ['claim_extractor', 'fact_checker', 'fact_verifier', 'gemini_api_key', 'google_agents', 'priority_assessor', 'quick_verify', 'report_generator', 'verify_content']...
+2025-11-29 04:32:17,096 [INFO] __main__: Starting tool detection for task: 'Verify extracted claims using comprehensive fact-checking workflow'
+2025-11-29 04:32:17,096 [INFO] __main__: Checking conditions:
+2025-11-29 04:32:17,096 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:32:17,096 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:32:17,096 [INFO] __main__:   - hasattr(tool, 'verify_content'): True
+2025-11-29 04:32:17,096 [INFO] __main__:   - 'verify' in task_description.lower(): True
+2025-11-29 04:32:17,097 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:32:17,097 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:32:17,097 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:32:17,097 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:32:17,097 [INFO] __main__: Agent Claim Verification Coordinator executing claim verification tool with batch processing...
+2025-11-29 04:32:17,097 [INFO] __main__: Processing 4 claims using batch verification...
+2025-11-29 04:32:17,097 [INFO] claim_verifier.agents: Starting Google Agents claim verification for 4 content items with batch processing
+2025-11-29 04:32:17,097 [INFO] claim_verifier.agents: Processing 4 claims in batches of 15
+2025-11-29 04:32:17,097 [INFO] claim_verifier.agents: Processing batch 1: claims 1-4
+2025-11-29 04:32:42,204 [INFO] claim_verifier.agents: Batch verification completed: 4 total claims processed
+2025-11-29 04:32:42,204 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:32:42,204 [INFO] __main__: Extracted 4 verified claims for explanation generation
+2025-11-29 04:32:42,204 [INFO] __main__: Processing 4 verified claims for explanation generation
+2025-11-29 04:32:42,204 [INFO] __main__: Claim 0: verdict='uncertain', verified=False, claim_text='The FBI is spending nearly $1 million in overtime ...'
+2025-11-29 04:32:42,204 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:32:42,204 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:32:42,204 [INFO] __main__: ✅ INCLUDING claim for debunk post: The FBI is spending nearly $1 million in overtime ... (verdict: uncertain)
+2025-11-29 04:32:42,204 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:32:42,204 [INFO] __main__: Claim 1: verdict='false', verified=False, claim_text='The author asserts that authoritarianism is presen...'
+2025-11-29 04:32:42,204 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:32:42,204 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:32:42,204 [INFO] __main__: ✅ INCLUDING claim for debunk post: The author asserts that authoritarianism is presen... (verdict: false)
+2025-11-29 04:32:42,204 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:32:42,204 [INFO] __main__: Claim 2: verdict='true', verified=True, claim_text='A measles outbreak in Spartanburg County, South Ca...'
+2025-11-29 04:32:42,204 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:32:42,204 [INFO] __main__: ❌ EXCLUDING claim from debunk posts: verdict='true', verified=True
+2025-11-29 04:32:42,204 [INFO] __main__: Claim 3: verdict='false', verified=False, claim_text='A Melania Trump-designed White House Christmas wou...'
+2025-11-29 04:32:42,204 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:32:42,204 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:32:42,204 [INFO] __main__: ✅ INCLUDING claim for debunk post: A Melania Trump-designed White House Christmas wou... (verdict: false)
+2025-11-29 04:32:42,204 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:32:42,204 [INFO] __main__: Verdict distribution: {'uncertain': 1, 'false': 2, 'true': 1}
+2025-11-29 04:32:42,204 [INFO] __main__: Total claims for debunk posts: 3 out of 4
+2025-11-29 04:32:42,204 [INFO] __main__: Step 3: Executing explanation generation with batch processing for 3 misinformation claims...
+2025-11-29 04:32:42,204 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:32:42,204 [INFO] __main__: Executing task 1/1: explanation_coordinator - Generate debunk posts for misinformation claims using batch processing
+2025-11-29 04:32:42,204 [INFO] __main__: Agent Explanation Generation Coordinator has 1 tools available
+2025-11-29 04:32:42,204 [INFO] __main__: Tool 0: <class 'explanation_agent.agents.ExplanationAgent'> with methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']...
+2025-11-29 04:32:42,204 [INFO] __main__: Starting tool detection for task: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:32:42,204 [INFO] __main__: Checking conditions:
+2025-11-29 04:32:42,204 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): True
+2025-11-29 04:32:42,204 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:32:42,204 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): True
+2025-11-29 04:32:42,204 [INFO] __main__: Agent Explanation Generation Coordinator executing ExplanationAgent with batch processing...
+2025-11-29 04:32:42,204 [INFO] __main__: Tool type: <class 'explanation_agent.agents.ExplanationAgent'>
+2025-11-29 04:32:42,204 [INFO] __main__: Tool methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']
+2025-11-29 04:32:42,204 [INFO] __main__: Task description: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:32:42,204 [INFO] __main__: Task description contains 'explanation': False
+2025-11-29 04:32:42,204 [INFO] __main__: Tool has batch_create_posts: True
+2025-11-29 04:32:42,204 [INFO] __main__: Received verification_results: 3 items
+2025-11-29 04:32:42,204 [INFO] __main__: Found 3 verification results for explanation generation
+2025-11-29 04:32:42,204 [INFO] __main__: Verification result 0: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:32:42,204 [INFO] __main__: Verification result 1: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:32:42,204 [INFO] __main__: Creating debunk posts for 3 claims using batch processing...
+2025-11-29 04:32:42,204 [INFO] explanation_agent.agents: Creating 3 debunk posts with batch Google Agents processing...
+2025-11-29 04:32:42,210 [INFO] explanation_agent.agents: Processing batch 1: posts 1-3
+2025-11-29 04:32:42,210 [INFO] explanation_agent.agents: Agent Content Generation Specialist executing batch processing tool...
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Raw Gemini response (first 500 chars): ```json
+[
+    {
+        "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+        "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim re
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Cleaned response (first 500 chars): [
+    {
+        "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+        "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim regarding 
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Extracted JSON: [
+    {
+        "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+        "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim regarding 
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Agent Source Analysis Specialist executing batch processing tool...
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Processing batch sources for 3 verification results
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 0: 5 links, 5 titles
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Links: ['https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html', 'https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case']
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Titles: ['How a Frantic Scouring of the Epstein Files Consumed the Justice ...', 'Speaker Johnson says he misspoke about Trump being an FBI ...']
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 0: Created 5 source entries
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 1: 5 links, 5 titles
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Links: ['https://www.npr.org/podcasts/452538775/on-the-media', 'https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html']
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Titles: ['On the Media : NPR', "'The Interview': Curtis Yarvin Says Democracy is Done - The New ..."]
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 1: Created 5 source entries
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 2: 5 links, 5 titles
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Links: ['https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D', 'https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D']
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents:   Titles: ['Lawmakers Reach Deal on Aid Package', 'Retail Investors Grow Queasy In Squeeze of Market Volatility']
+2025-11-29 04:32:58,720 [INFO] explanation_agent.agents: Verification result 2: Created 5 source entries
+2025-11-29 04:32:58,730 [INFO] explanation_agent.agents: Batch source analysis completed: 18 total sources processed
+2025-11-29 04:32:58,730 [INFO] explanation_agent.agents: Batch processing completed: 3 total posts created
+2025-11-29 04:32:58,730 [INFO] __main__: Tool result type: <class 'dict'>
+2025-11-29 04:32:58,730 [INFO] __main__: Tool result keys: ['success', 'message', 'debunk_posts', 'batch_statistics']
+2025-11-29 04:32:58,730 [INFO] __main__: Batch explanation generation completed successfully with 3 posts generated
+2025-11-29 04:32:58,730 [INFO] __main__: ExplanationAgent tool execution completed - tool_used: True
+2025-11-29 04:32:58,730 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:32:58,730 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:32:58,730 [INFO] __main__: Step 4: Processing and combining all results...
+2025-11-29 04:32:58,730 [INFO] __main__: Trend scanning completed: 4 posts
+2025-11-29 04:32:58,730 [INFO] __main__: Claim verification completed: True
+2025-11-29 04:32:58,730 [INFO] __main__: Batch verification processed 4 claims in batches of 4
+2025-11-29 04:32:58,730 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:32:58,730 [INFO] __main__: Batch explanation generation processed 3 claims in batches of 3
+2025-11-29 04:32:58,730 [INFO] __main__: Successfully created 3 debunk posts
+2025-11-29 04:32:58,730 [INFO] __main__: Extracted 3 debunk posts from explanation generation
+2025-11-29 04:32:58,736 [INFO] __main__: Google Agents results saved to: orchestrator_results\google_agents_orchestrator_results_20251129_043258.json
+2025-11-29 04:32:58,736 [INFO] __main__: Saving results to MongoDB...
+2025-11-29 04:32:58,985 [INFO] mongodb_integration: ✅ Successfully connected to MongoDB
+2025-11-29 04:32:59,045 [INFO] mongodb_integration: ✅ Database indexes created successfully
+2025-11-29 04:32:59,046 [INFO] mongodb_integration: ✅ MongoDB collections setup completed
+2025-11-29 04:32:59,050 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_043258_730002_48a3a59e
+2025-11-29 04:32:59,064 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_043258_730578_1efbff25
+2025-11-29 04:32:59,079 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_043258_730578_6c2df5e5
+2025-11-29 04:32:59,079 [INFO] mongodb_integration: 📊 Debunk posts storage completed: 3 stored, 0 skipped, 0 errors
+2025-11-29 04:32:59,079 [INFO] __main__: ✅ Successfully stored 3 debunk posts to MongoDB
+2025-11-29 04:32:59,086 [INFO] mongodb_integration: 🔌 MongoDB connection closed
+2025-11-29 04:32:59,088 [INFO] __main__: Google Agents orchestrated pipeline with batch processing completed successfully
+2025-11-29 04:44:38,085 [INFO] __main__: Orchestrator Agent initialized with Google Agents SDK - Session: orchestrator_session_20251129_044438
+2025-11-29 04:44:38,085 [INFO] __main__: Initializing Google Agents Orchestrator...
+2025-11-29 04:44:38,085 [INFO] __main__: Google Agents Orchestrator initialized successfully
+2025-11-29 04:44:38,085 [INFO] __main__: Initializing Claim Verifier with Google Agents...
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Google Agents Orchestrator initialized successfully
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Created Google Agent: claim_extractor - Claim Extraction Specialist
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Created Google Agent: fact_verifier - Fact Verification Specialist
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Created Google Agent: priority_assessor - Priority Assessment Specialist
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Created Google Agent: report_generator - Report Generation Specialist
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Claim verification agents setup completed with Google Agents SDK
+2025-11-29 04:44:38,085 [INFO] claim_verifier.agents: Claim Verifier Orchestrator initialized with Google Agents SDK
+2025-11-29 04:44:38,085 [INFO] __main__: Initializing Explanation Agent with Google Agents...
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Google Agents Orchestrator initialized for Explanation Agent
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Created Google Agent: content_generator - Content Generation Specialist
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Created Google Agent: source_analyzer - Source Analysis Specialist
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Created Google Agent: post_formatter - Post Formatting Specialist
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Google Agents setup completed for explanation workflow
+2025-11-29 04:44:38,085 [INFO] explanation_agent.agents: Explanation Agent initialized with Google Agents SDK
+2025-11-29 04:44:38,085 [INFO] __main__: Created Google Agent: trend_scanner - Trend Scanning Coordinator
+2025-11-29 04:44:38,085 [INFO] __main__: Created Google Agent: verifier_coordinator - Claim Verification Coordinator
+2025-11-29 04:44:38,085 [INFO] __main__: Created Google Agent: explanation_coordinator - Explanation Generation Coordinator
+2025-11-29 04:44:38,085 [INFO] __main__: Created Google Agent: results_integrator - Results Integration Specialist
+2025-11-29 04:44:38,085 [INFO] __main__: Orchestrator agents setup completed with Google Agents SDK
+2025-11-29 04:44:38,085 [INFO] __main__: Orchestrator Agent fully initialized with Google Agents SDK
+2025-11-29 04:44:38,085 [INFO] __main__: Starting Google Agents orchestrated pipeline: Trend Scanning → Claim Verification
+2025-11-29 04:44:38,085 [INFO] __main__: Step 1: Executing trend scanning with Google Agents...
+2025-11-29 04:44:38,085 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:44:38,085 [INFO] __main__: Executing task 1/1: trend_scanner - Execute comprehensive Reddit trend scanning with AI summarization and claim extraction
+2025-11-29 04:44:38,085 [INFO] __main__: Agent Trend Scanning Coordinator has 1 tools available
+2025-11-29 04:44:38,085 [INFO] __main__: Tool 0: <class 'function'> with methods: []...
+2025-11-29 04:44:38,085 [INFO] __main__: Starting tool detection for task: 'Execute comprehensive Reddit trend scanning with AI summarization and claim extraction'
+2025-11-29 04:44:38,085 [INFO] __main__: Checking conditions:
+2025-11-29 04:44:38,085 [INFO] __main__:   - hasattr(tool, '__call__'): True
+2025-11-29 04:44:38,085 [INFO] __main__:   - 'scan' in task_description.lower(): True
+2025-11-29 04:44:38,085 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:44:38,085 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:44:38,085 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:44:38,091 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:44:38,091 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:44:38,091 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:44:38,092 [INFO] __main__: Agent Trend Scanning Coordinator executing trend scanning tool...
+2025-11-29 04:44:38,094 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-11-29 04:44:38,147 [INFO] trend_scanner.google_agents: PRAW Reddit client authenticated successfully
+2025-11-29 04:44:40,731 [INFO] trend_scanner.tools.reddit_scan_tool: Google Agents SDK initialized successfully
+2025-11-29 04:44:40,787 [INFO] trend_scanner.threads_scraper: ThreadsScraper initialized (headless=True, cache=True)
+2025-11-29 04:44:40,787 [INFO] trend_scanner.tools.threads_scan_tool: ThreadsScraper initialized successfully
+2025-11-29 04:44:40,787 [INFO] trend_scanner.tools.threads_scan_tool: Google Agents SDK initialized for Threads scanner
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Threads scanner initialized successfully
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Google agents created for platforms: Reddit, Threads
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Target subreddits configured: ['NoFilterNews', 'badscience', 'skeptic', 'conspiracytheories']
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Target Threads profiles configured: ['globaltimes_news', 'trumplovernews']
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Starting multi-platform trend scanning (Reddit + Threads)...
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Starting parallel scan across 4 subreddits, 2 Threads profiles
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Starting parallel workflow with 6 tasks
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Executing parallel task 1/6 with agent 'reddit_scanner'
+2025-11-29 04:44:40,787 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/NoFilterNews
+2025-11-29 04:44:40,787 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/NoFilterNews (limit=20, sort=new)
+2025-11-29 04:44:40,787 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:44:44,235 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3223 chars from https://www.themirror.com/news/politics/trump-continues-third-term-fears-1533667
+2025-11-29 04:44:45,830 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3022 chars from https://www.cnn.com/2025/11/27/politics/trump-says-us-land-action-in-venezuela-very-soon?cid%3Dios_app
+2025-11-29 04:44:46,969 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4140 chars from https://www.independent.co.uk/news/world/americas/us-politics/trump-biden-autopen-perjury-charges-b2874633.html
+2025-11-29 04:44:48,981 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3801 chars from https://dailyglitch.com/trump-sends-out-divisive-thanksgiving-post-calling-to-end-millions-of-admissions-from-third-world-countries/
+2025-11-29 04:44:48,981 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 1 posts
+2025-11-29 04:44:48,988 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:44:54,946 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:44:54,952 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 1 posts
+2025-11-29 04:44:54,952 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 1 posts in 1 API call
+2025-11-29 04:44:54,952 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/NoFilterNews (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:44:54,952 [INFO] trend_scanner.google_agents: Executing parallel task 2/6 with agent 'reddit_scanner'
+2025-11-29 04:44:54,952 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/badscience
+2025-11-29 04:44:54,952 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/badscience (limit=20, sort=new)
+2025-11-29 04:44:54,952 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:44:57,829 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:44:57,857 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 225 chars from https://www.youtube.com/watch?v=tQmAeFk05mY
+2025-11-29 04:45:00,769 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2875 chars from https://www.thedailybeast.com/rfk-jr-comes-up-with-new-possible-cause-for-mass-shootings-video-games/
+2025-11-29 04:45:02,763 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5978 chars from https://www.thedailybeast.com//anti-vax-rfk-jr-plans-to-blame-over-the-counter-pain-medication-for-autism/?via=ios
+2025-11-29 04:45:02,763 [WARNING] trend_scanner.scraper: requests.get failed for /r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/: Invalid URL '/r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/': No scheme supplied. Perhaps you meant https:///r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/?
+2025-11-29 04:45:03,401 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8995 chars from https://reeserichardson.blog/2025/05/06/google-scholar-is-still-doing-nothing-about-citation-manipulation/
+2025-11-29 04:45:03,401 [WARNING] trend_scanner.scraper: requests.get failed for /r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/: Invalid URL '/r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/': No scheme supplied. Perhaps you meant https:///r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/?
+2025-11-29 04:45:03,404 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 0 posts
+2025-11-29 04:45:03,404 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 0 posts in 1 API call
+2025-11-29 04:45:03,404 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/badscience (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:45:03,404 [INFO] trend_scanner.google_agents: Executing parallel task 3/6 with agent 'reddit_scanner'
+2025-11-29 04:45:03,404 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/skeptic
+2025-11-29 04:45:03,404 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/skeptic (limit=20, sort=new)
+2025-11-29 04:45:03,404 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:45:04,786 [INFO] trend_scanner.scraper: scraper: newspaper extracted 17254 chars from https://caveatscientia.com/scientific-review-of-superfoods-boon-or-bunk/
+2025-11-29 04:45:06,298 [INFO] trend_scanner.scraper: scraper: newspaper extracted 6621 chars from https://nobreakthroughs.substack.com/p/riding-the-autism-bicycle-to-retraction
+2025-11-29 04:45:09,807 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2186 chars from https://dailyexplain.com/2025/11/28/fbi-spends-nearly-1m-redacting-epstein-files-trump-mentions-flagged-in-review/
+2025-11-29 04:45:11,622 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10134 chars from https://www.cnn.com/2025/11/27/health/south-carolina-measles-misinformation-kff-health-news
+2025-11-29 04:45:12,569 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5998 chars from https://www.theguardian.com/technology/2025/nov/27/partisan-x-posts-increase-political-polarisation-among-users-social-media-research
+2025-11-29 04:45:15,545 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8728 chars from https://retractionwatch.com/2025/11/25/meet-the-researcher-aiming-to-halt-use-of-fundamentally-flawed-database-linking-iq-and-nationality/
+2025-11-29 04:45:18,752 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:45:18,780 [INFO] trend_scanner.scraper: No usable content extracted for https://youtu.be/atbAWMUJxs8?si=McgsCNmare6txU6d
+2025-11-29 04:45:22,135 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2842 chars from https://rudevulture.com/mit-has-built-agent-clones-of-151-million-working-americans-in-order-to-identify-which-jobs-are-most-at-risk/
+2025-11-29 04:45:22,684 [WARNING] trend_scanner.scraper: requests.get failed for https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997: 403 Client Error: Forbidden for url: https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997
+2025-11-29 04:45:23,388 [INFO] trend_scanner.scraper: scraper: readability extracted 8919 chars from https://www.forbes.com/sites/kensilverstein/2025/10/19/uruguays-renewable-charge-a-small-nation-a-big-lesson-for-the-world/
+2025-11-29 04:45:23,389 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 4 posts
+2025-11-29 04:45:23,390 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:45:34,250 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:45:34,251 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 4 posts
+2025-11-29 04:45:34,252 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 4 posts in 1 API call
+2025-11-29 04:45:34,252 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/skeptic (20 posts), scraped 8 links, found 2 trending posts
+2025-11-29 04:45:34,252 [INFO] trend_scanner.google_agents: Executing parallel task 4/6 with agent 'reddit_scanner'
+2025-11-29 04:45:34,252 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/conspiracytheories
+2025-11-29 04:45:34,252 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/conspiracytheories (limit=20, sort=new)
+2025-11-29 04:45:34,252 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:45:37,354 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1417 chars from https://newrepublic.com/post/203762/trump-fbi-redacted-epstein-files
+2025-11-29 04:45:39,960 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8629 chars from https://www.yahoo.com/news/articles/conspiracy-theorists-russian-propagandists-individuals-193105640.html
+2025-11-29 04:45:40,872 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5654 chars from https://economictimes.indiatimes.com/news/international/us/palantir-co-founder-peter-thiel-and-vice-president-jd-vance-ties-explained-see-companys-expanding-reach-inside-government-programs-allegations-against-it-political-debate-grows-trump-administration-government-data-tools-ai-systems-surveillance-concerns-silicon-valley-political-influence-technology-power-government-contracts-privacy-issues/articleshow/125539208.cms?from=mdr
+2025-11-29 04:45:42,365 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3387 chars from https://www.npr.org/2025/11/23/nx-s1-5618242/texas-haiti-gonave-island-plot
+2025-11-29 04:45:44,117 [INFO] trend_scanner.scraper: scraper: newspaper extracted 584 chars from https://newrepublic.com/post/203562/maga-trolls-elon-musk-x-new-feature
+2025-11-29 04:45:44,119 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 0 posts
+2025-11-29 04:45:44,119 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 0 posts in 1 API call
+2025-11-29 04:45:44,120 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/conspiracytheories (20 posts), scraped 5 links, found 0 trending posts
+2025-11-29 04:45:44,120 [INFO] trend_scanner.google_agents: Executing parallel task 5/6 with agent 'threads_scanner'
+2025-11-29 04:45:44,120 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @globaltimes_news
+2025-11-29 04:45:44,121 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @globaltimes_news (limit=10)
+2025-11-29 04:45:44,868 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@globaltimes_news
+2025-11-29 04:45:49,888 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 5 threads
+2025-11-29 04:45:52,955 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 917 chars from https://globaltimes.cn/page/202511/1349127.shtml
+2025-11-29 04:45:52,955 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 0 threads
+2025-11-29 04:45:52,956 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 0 threads in 1 API call
+2025-11-29 04:45:52,956 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @globaltimes_news (5 threads), scraped 1 links, found 0 trending posts
+2025-11-29 04:45:52,956 [INFO] trend_scanner.google_agents: Executing parallel task 6/6 with agent 'threads_scanner'
+2025-11-29 04:45:52,956 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @trumplovernews
+2025-11-29 04:45:52,957 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @trumplovernews (limit=10)
+2025-11-29 04:45:53,699 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@trumplovernews
+2025-11-29 04:45:55,772 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 4 threads
+2025-11-29 04:45:55,783 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 2 threads
+2025-11-29 04:45:55,784 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:46:04,272 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:46:04,280 [INFO] trend_scanner.tools.threads_scan_tool: Batch risk assessment completed for 2 threads
+2025-11-29 04:46:04,280 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 2 threads in 1 API call
+2025-11-29 04:46:04,282 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @trumplovernews (4 threads), scraped 0 links, found 2 trending posts
+2025-11-29 04:46:10,685 [INFO] trend_scanner.google_agents: Executing cross-platform risk assessment
+2025-11-29 04:47:12,547 [INFO] trend_scanner.google_agents: Content Risk Assessor provided with 4 posts from multiple platforms for cross-platform analysis
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Reddit scan: 2 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Threads scan: 0 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Processed Threads scan: 2 posts
+2025-11-29 04:47:17,739 [INFO] trend_scanner.google_agents: Multi-platform scan completed - Reddit: 2, Threads: 2, Telegram: 0, Twitter: 0, Total: 4
+2025-11-29 04:47:26,369 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:47:26,369 [INFO] __main__: Found 4 posts from trend scanner, preparing for verification...
+2025-11-29 04:47:26,369 [INFO] __main__: Prepared 4 claims for verification
+2025-11-29 04:47:26,369 [INFO] __main__: Step 2: Executing claim verification with batch processing...
+2025-11-29 04:47:26,369 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:47:26,369 [INFO] __main__: Executing task 1/1: verifier_coordinator - Verify extracted claims using comprehensive fact-checking workflow
+2025-11-29 04:47:26,369 [INFO] __main__: Agent Claim Verification Coordinator has 1 tools available
+2025-11-29 04:47:26,369 [INFO] __main__: Tool 0: <class 'claim_verifier.agents.ClaimVerifierOrchestrator'> with methods: ['claim_extractor', 'fact_checker', 'fact_verifier', 'gemini_api_key', 'google_agents', 'priority_assessor', 'quick_verify', 'report_generator', 'verify_content']...
+2025-11-29 04:47:26,375 [INFO] __main__: Starting tool detection for task: 'Verify extracted claims using comprehensive fact-checking workflow'
+2025-11-29 04:47:26,375 [INFO] __main__: Checking conditions:
+2025-11-29 04:47:26,375 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:47:26,375 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:47:26,375 [INFO] __main__:   - hasattr(tool, 'verify_content'): True
+2025-11-29 04:47:26,375 [INFO] __main__:   - 'verify' in task_description.lower(): True
+2025-11-29 04:47:26,376 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:47:26,376 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:47:26,376 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:47:26,376 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:47:26,376 [INFO] __main__: Agent Claim Verification Coordinator executing claim verification tool with batch processing...
+2025-11-29 04:47:26,376 [INFO] __main__: Processing 4 claims using batch verification...
+2025-11-29 04:47:26,376 [INFO] claim_verifier.agents: Starting Google Agents claim verification for 4 content items with batch processing
+2025-11-29 04:47:26,377 [INFO] claim_verifier.agents: Processing 4 claims in batches of 15
+2025-11-29 04:47:26,377 [INFO] claim_verifier.agents: Processing batch 1: claims 1-4
+2025-11-29 04:47:56,205 [INFO] claim_verifier.agents: Batch verification completed: 4 total claims processed
+2025-11-29 04:47:56,205 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:47:56,205 [INFO] __main__: Extracted 4 verified claims for explanation generation
+2025-11-29 04:47:56,205 [INFO] __main__: Processing 4 verified claims for explanation generation
+2025-11-29 04:47:56,205 [INFO] __main__: Claim 0: verdict='uncertain', verified=False, claim_text='The FBI spent nearly $1 million to redact Jeffrey ...'
+2025-11-29 04:47:56,205 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:47:56,205 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:47:56,205 [INFO] __main__: ✅ INCLUDING claim for debunk post: The FBI spent nearly $1 million to redact Jeffrey ... (verdict: uncertain)
+2025-11-29 04:47:56,205 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:47:56,205 [INFO] __main__: Claim 1: verdict='uncertain', verified=False, claim_text='A measles outbreak in Spartanburg County, South Ca...'
+2025-11-29 04:47:56,205 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:47:56,205 [INFO] __main__:   Found 1 source links and 1 source titles
+2025-11-29 04:47:56,205 [INFO] __main__: ✅ INCLUDING claim for debunk post: A measles outbreak in Spartanburg County, South Ca... (verdict: uncertain)
+2025-11-29 04:47:56,205 [INFO] __main__:   Sources included: 1 links
+2025-11-29 04:47:56,212 [INFO] __main__: Claim 2: verdict='uncertain', verified=False, claim_text='A Melania Trump White House Christmas would restor...'
+2025-11-29 04:47:56,212 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:47:56,212 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:47:56,212 [INFO] __main__: ✅ INCLUDING claim for debunk post: A Melania Trump White House Christmas would restor... (verdict: uncertain)
+2025-11-29 04:47:56,212 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:47:56,212 [INFO] __main__: Claim 3: verdict='uncertain', verified=False, claim_text='The post advocates for deportation and directs use...'
+2025-11-29 04:47:56,212 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:47:56,212 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:47:56,212 [INFO] __main__: ✅ INCLUDING claim for debunk post: The post advocates for deportation and directs use... (verdict: uncertain)
+2025-11-29 04:47:56,212 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:47:56,212 [INFO] __main__: Verdict distribution: {'uncertain': 4}
+2025-11-29 04:47:56,212 [INFO] __main__: Total claims for debunk posts: 4 out of 4
+2025-11-29 04:47:56,212 [INFO] __main__: Step 3: Executing explanation generation with batch processing for 4 misinformation claims...
+2025-11-29 04:47:56,212 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:47:56,212 [INFO] __main__: Executing task 1/1: explanation_coordinator - Generate debunk posts for misinformation claims using batch processing
+2025-11-29 04:47:56,212 [INFO] __main__: Agent Explanation Generation Coordinator has 1 tools available
+2025-11-29 04:47:56,212 [INFO] __main__: Tool 0: <class 'explanation_agent.agents.ExplanationAgent'> with methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']...
+2025-11-29 04:47:56,212 [INFO] __main__: Starting tool detection for task: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:47:56,212 [INFO] __main__: Checking conditions:
+2025-11-29 04:47:56,212 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): True
+2025-11-29 04:47:56,212 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:47:56,212 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): True
+2025-11-29 04:47:56,212 [INFO] __main__: Agent Explanation Generation Coordinator executing ExplanationAgent with batch processing...
+2025-11-29 04:47:56,212 [INFO] __main__: Tool type: <class 'explanation_agent.agents.ExplanationAgent'>
+2025-11-29 04:47:56,212 [INFO] __main__: Tool methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']
+2025-11-29 04:47:56,212 [INFO] __main__: Task description: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:47:56,212 [INFO] __main__: Task description contains 'explanation': False
+2025-11-29 04:47:56,212 [INFO] __main__: Tool has batch_create_posts: True
+2025-11-29 04:47:56,212 [INFO] __main__: Received verification_results: 4 items
+2025-11-29 04:47:56,212 [INFO] __main__: Found 4 verification results for explanation generation
+2025-11-29 04:47:56,212 [INFO] __main__: Verification result 0: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:47:56,212 [INFO] __main__: Verification result 1: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:47:56,212 [INFO] __main__: Creating debunk posts for 4 claims using batch processing...
+2025-11-29 04:47:56,212 [INFO] explanation_agent.agents: Creating 4 debunk posts with batch Google Agents processing...
+2025-11-29 04:47:56,212 [INFO] explanation_agent.agents: Processing batch 1: posts 1-4
+2025-11-29 04:47:56,212 [INFO] explanation_agent.agents: Agent Content Generation Specialist executing batch processing tool...
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Raw Gemini response (first 500 chars): ```json
+[
+    {
+        "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+        "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credibl
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Cleaned response (first 500 chars): [
+    {
+        "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+        "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credible eviden
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Extracted JSON: [
+    {
+        "heading": "No $1M FBI Epstein Redaction or Trump Flagging Evidence",
+        "body": "A claim circulating online suggests the FBI spent nearly $1 million to redact Jeffrey Epstein's files and specifically flagged mentions of Donald Trump during this process. Our investigation found this claim to be false. The articles cited as sources for this information are dated in 2025, meaning they are hypothetical or speculative and cannot report on past events. There is no credible eviden
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Agent Source Analysis Specialist executing batch processing tool...
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Processing batch sources for 4 verification results
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents: Verification result 0: 5 links, 5 titles
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents:   Links: ['https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html', 'https://www.nytimes.com/2025/07/17/business/epstein-banks-wyden-trump.html']
+2025-11-29 04:48:14,315 [INFO] explanation_agent.agents:   Titles: ['How a Frantic Scouring of the Epstein Files Consumed the Justice ...', "Ron Wyden, a Democrat, Won't Let Go of the Jeffrey Epstein Case ..."]
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents: Verification result 0: Created 5 source entries
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents: Verification result 1: 1 links, 1 titles
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents:   Links: ['https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqfiLWjTjV_-U-t_iQr_l4Czry5G3qyW_jnD1xs7TII8Ptje1c2PTCqD&gaa_ts=692a310c&gaa_sig=3W6iEvedGi1qphD1Obg2W1qZ0IFfuVFAP89_Q2Cnfuu_wiM8iEv__8eFFq8IDwJAXZMiM_-VrVweeqpU90-spg%3D%3D']
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents:   Titles: ['Amazon Takes On Pharmacies By Selling Medications Online']
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents: Verification result 1: Created 1 source entries
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents: Verification result 2: 5 links, 5 titles
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents:   Links: ['https://www.npr.org/2020/12/01/940746188/melania-trumps-2020-christmas-decorations-are-unconventionally-traditional', 'https://www.nytimes.com/2024/11/13/us/politics/melania-trump-biden-white-house-meeting.html']
+2025-11-29 04:48:14,319 [INFO] explanation_agent.agents:   Titles: ["Melania Trump's 2020 Christmas Decorations Are Unconventionally ...", "Melania Trump Declines Jill Biden's White House Invitation - The ..."]
+2025-11-29 04:48:14,320 [INFO] explanation_agent.agents: Verification result 2: Created 5 source entries
+2025-11-29 04:48:14,320 [INFO] explanation_agent.agents: Verification result 3: 5 links, 5 titles
+2025-11-29 04:48:14,320 [INFO] explanation_agent.agents:   Links: ['https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process', 'https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html']
+2025-11-29 04:48:14,320 [INFO] explanation_agent.agents:   Titles: ['Trump seeks to bypass immigration courts to speed deportations ...', 'Trump Administration Directs Judges to Deny Asylum Without ...']
+2025-11-29 04:48:14,321 [INFO] explanation_agent.agents: Verification result 3: Created 5 source entries
+2025-11-29 04:48:14,321 [INFO] explanation_agent.agents: Batch source analysis completed: 20 total sources processed
+2025-11-29 04:48:14,322 [INFO] explanation_agent.agents: Batch processing completed: 4 total posts created
+2025-11-29 04:48:14,322 [INFO] __main__: Tool result type: <class 'dict'>
+2025-11-29 04:48:14,322 [INFO] __main__: Tool result keys: ['success', 'message', 'debunk_posts', 'batch_statistics']
+2025-11-29 04:48:14,325 [INFO] __main__: Batch explanation generation completed successfully with 4 posts generated
+2025-11-29 04:48:14,325 [INFO] __main__: ExplanationAgent tool execution completed - tool_used: True
+2025-11-29 04:48:14,325 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:48:14,325 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:48:14,325 [INFO] __main__: Step 4: Processing and combining all results...
+2025-11-29 04:48:14,325 [INFO] __main__: Trend scanning completed: 4 posts
+2025-11-29 04:48:14,325 [INFO] __main__: Claim verification completed: True
+2025-11-29 04:48:14,325 [INFO] __main__: Batch verification processed 4 claims in batches of 4
+2025-11-29 04:48:14,325 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:48:14,325 [INFO] __main__: Batch explanation generation processed 4 claims in batches of 4
+2025-11-29 04:48:14,325 [INFO] __main__: Successfully created 4 debunk posts
+2025-11-29 04:48:14,325 [INFO] __main__: Extracted 4 debunk posts from explanation generation
+2025-11-29 04:48:14,331 [INFO] __main__: Google Agents results saved to: orchestrator_results\google_agents_orchestrator_results_20251129_044814.json
+2025-11-29 04:48:14,331 [INFO] __main__: Saving results to MongoDB...
+2025-11-29 04:48:14,822 [INFO] mongodb_integration: ✅ Successfully connected to MongoDB
+2025-11-29 04:48:14,887 [INFO] mongodb_integration: ✅ Database indexes created successfully
+2025-11-29 04:48:14,887 [INFO] mongodb_integration: ✅ MongoDB collections setup completed
+2025-11-29 04:48:14,900 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_044814_321119_e2df55dc
+2025-11-29 04:48:14,910 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_044814_322207_901aa26a
+2025-11-29 04:48:14,922 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_044814_322207_7455e72c
+2025-11-29 04:48:14,934 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_044814_322207_5e7f43d2
+2025-11-29 04:48:14,934 [INFO] mongodb_integration: 📊 Debunk posts storage completed: 4 stored, 0 skipped, 0 errors
+2025-11-29 04:48:14,934 [INFO] __main__: ✅ Successfully stored 4 debunk posts to MongoDB
+2025-11-29 04:48:14,940 [INFO] mongodb_integration: 🔌 MongoDB connection closed
+2025-11-29 04:48:14,946 [INFO] __main__: Google Agents orchestrated pipeline with batch processing completed successfully
+2025-11-29 04:49:01,700 [INFO] __main__: Orchestrator Agent initialized with Google Agents SDK - Session: orchestrator_session_20251129_044901
+2025-11-29 04:49:01,700 [INFO] __main__: Initializing Google Agents Orchestrator...
+2025-11-29 04:49:01,700 [INFO] __main__: Google Agents Orchestrator initialized successfully
+2025-11-29 04:49:01,700 [INFO] __main__: Initializing Claim Verifier with Google Agents...
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Google Agents Orchestrator initialized successfully
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Created Google Agent: claim_extractor - Claim Extraction Specialist
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Created Google Agent: fact_verifier - Fact Verification Specialist
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Created Google Agent: priority_assessor - Priority Assessment Specialist
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Created Google Agent: report_generator - Report Generation Specialist
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Claim verification agents setup completed with Google Agents SDK
+2025-11-29 04:49:01,700 [INFO] claim_verifier.agents: Claim Verifier Orchestrator initialized with Google Agents SDK
+2025-11-29 04:49:01,700 [INFO] __main__: Initializing Explanation Agent with Google Agents...
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Google Agents Orchestrator initialized for Explanation Agent
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Created Google Agent: content_generator - Content Generation Specialist
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Created Google Agent: source_analyzer - Source Analysis Specialist
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Created Google Agent: post_formatter - Post Formatting Specialist
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Google Agents setup completed for explanation workflow
+2025-11-29 04:49:01,700 [INFO] explanation_agent.agents: Explanation Agent initialized with Google Agents SDK
+2025-11-29 04:49:01,700 [INFO] __main__: Created Google Agent: trend_scanner - Trend Scanning Coordinator
+2025-11-29 04:49:01,700 [INFO] __main__: Created Google Agent: verifier_coordinator - Claim Verification Coordinator
+2025-11-29 04:49:01,700 [INFO] __main__: Created Google Agent: explanation_coordinator - Explanation Generation Coordinator
+2025-11-29 04:49:01,700 [INFO] __main__: Created Google Agent: results_integrator - Results Integration Specialist
+2025-11-29 04:49:01,700 [INFO] __main__: Orchestrator agents setup completed with Google Agents SDK
+2025-11-29 04:49:01,700 [INFO] __main__: Orchestrator Agent fully initialized with Google Agents SDK
+2025-11-29 04:49:01,700 [INFO] __main__: Starting Google Agents orchestrated pipeline: Trend Scanning → Claim Verification
+2025-11-29 04:49:01,700 [INFO] __main__: Step 1: Executing trend scanning with Google Agents...
+2025-11-29 04:49:01,700 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:49:01,700 [INFO] __main__: Executing task 1/1: trend_scanner - Execute comprehensive Reddit trend scanning with AI summarization and claim extraction
+2025-11-29 04:49:01,700 [INFO] __main__: Agent Trend Scanning Coordinator has 1 tools available
+2025-11-29 04:49:01,700 [INFO] __main__: Tool 0: <class 'function'> with methods: []...
+2025-11-29 04:49:01,700 [INFO] __main__: Starting tool detection for task: 'Execute comprehensive Reddit trend scanning with AI summarization and claim extraction'
+2025-11-29 04:49:01,700 [INFO] __main__: Checking conditions:
+2025-11-29 04:49:01,700 [INFO] __main__:   - hasattr(tool, '__call__'): True
+2025-11-29 04:49:01,700 [INFO] __main__:   - 'scan' in task_description.lower(): True
+2025-11-29 04:49:01,700 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:49:01,700 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:49:01,700 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:49:01,700 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:49:01,700 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:49:01,700 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:49:01,700 [INFO] __main__: Agent Trend Scanning Coordinator executing trend scanning tool...
+2025-11-29 04:49:01,700 [INFO] trend_scanner.google_agents: Google Agents orchestration initialized successfully
+2025-11-29 04:49:01,780 [INFO] trend_scanner.google_agents: PRAW Reddit client authenticated successfully
+2025-11-29 04:49:04,194 [INFO] trend_scanner.tools.reddit_scan_tool: Google Agents SDK initialized successfully
+2025-11-29 04:49:04,271 [INFO] trend_scanner.threads_scraper: ThreadsScraper initialized (headless=True, cache=True)
+2025-11-29 04:49:04,271 [INFO] trend_scanner.tools.threads_scan_tool: ThreadsScraper initialized successfully
+2025-11-29 04:49:04,271 [INFO] trend_scanner.tools.threads_scan_tool: Google Agents SDK initialized for Threads scanner
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Threads scanner initialized successfully
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Enhanced Reddit Trend Scout
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Google agents created for platforms: Reddit, Threads
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Target subreddits configured: ['NoFilterNews', 'badscience', 'skeptic', 'conspiracytheories']
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Target Threads profiles configured: ['globaltimes_news', 'trumplovernews']
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Starting multi-platform trend scanning (Reddit + Threads)...
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: reddit_scanner - Reddit Trend Scout
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: threads_scanner - Threads Trend Scout
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Created Google Agent: risk_assessor - Cross-Platform Content Risk Assessor
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Starting parallel scan across 4 subreddits, 2 Threads profiles
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Starting parallel workflow with 6 tasks
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Executing parallel task 1/6 with agent 'reddit_scanner'
+2025-11-29 04:49:04,271 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/NoFilterNews
+2025-11-29 04:49:04,271 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/NoFilterNews (limit=20, sort=new)
+2025-11-29 04:49:04,271 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:49:07,319 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3223 chars from https://www.themirror.com/news/politics/trump-continues-third-term-fears-1533667
+2025-11-29 04:49:08,462 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3022 chars from https://www.cnn.com/2025/11/27/politics/trump-says-us-land-action-in-venezuela-very-soon?cid%3Dios_app
+2025-11-29 04:49:09,626 [INFO] trend_scanner.scraper: scraper: newspaper extracted 4140 chars from https://www.independent.co.uk/news/world/americas/us-politics/trump-biden-autopen-perjury-charges-b2874633.html
+2025-11-29 04:49:11,547 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3801 chars from https://dailyglitch.com/trump-sends-out-divisive-thanksgiving-post-calling-to-end-millions-of-admissions-from-third-world-countries/
+2025-11-29 04:49:11,547 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 1 posts
+2025-11-29 04:49:11,550 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:49:20,230 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:49:20,234 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 1 posts
+2025-11-29 04:49:20,234 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 1 posts in 1 API call
+2025-11-29 04:49:20,234 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/NoFilterNews (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:49:20,234 [INFO] trend_scanner.google_agents: Executing parallel task 2/6 with agent 'reddit_scanner'
+2025-11-29 04:49:20,234 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/badscience
+2025-11-29 04:49:20,234 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/badscience (limit=20, sort=new)
+2025-11-29 04:49:20,234 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:49:22,957 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:49:22,969 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 225 chars from https://www.youtube.com/watch?v=tQmAeFk05mY
+2025-11-29 04:49:26,141 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2875 chars from https://www.thedailybeast.com/rfk-jr-comes-up-with-new-possible-cause-for-mass-shootings-video-games/
+2025-11-29 04:49:28,085 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5978 chars from https://www.thedailybeast.com//anti-vax-rfk-jr-plans-to-blame-over-the-counter-pain-medication-for-autism/?via=ios
+2025-11-29 04:49:28,090 [WARNING] trend_scanner.scraper: requests.get failed for /r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/: Invalid URL '/r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/': No scheme supplied. Perhaps you meant https:///r/polycritical/comments/1fc3dc4/poly_people_hate_neuroscience_because_it_cures/?
+2025-11-29 04:49:28,519 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8995 chars from https://reeserichardson.blog/2025/05/06/google-scholar-is-still-doing-nothing-about-citation-manipulation/
+2025-11-29 04:49:28,519 [WARNING] trend_scanner.scraper: requests.get failed for /r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/: Invalid URL '/r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/': No scheme supplied. Perhaps you meant https:///r/highdeas/comments/1k2pstj/the_universe_is_a_puzzle/?
+2025-11-29 04:49:28,519 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 0 posts
+2025-11-29 04:49:28,519 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 0 posts in 1 API call
+2025-11-29 04:49:28,519 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/badscience (20 posts), scraped 4 links, found 0 trending posts
+2025-11-29 04:49:28,519 [INFO] trend_scanner.google_agents: Executing parallel task 3/6 with agent 'reddit_scanner'
+2025-11-29 04:49:28,519 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/skeptic
+2025-11-29 04:49:28,519 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/skeptic (limit=20, sort=new)
+2025-11-29 04:49:28,519 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:49:29,630 [INFO] trend_scanner.scraper: scraper: newspaper extracted 17254 chars from https://caveatscientia.com/scientific-review-of-superfoods-boon-or-bunk/
+2025-11-29 04:49:30,134 [INFO] trend_scanner.scraper: scraper: newspaper extracted 6621 chars from https://nobreakthroughs.substack.com/p/riding-the-autism-bicycle-to-retraction
+2025-11-29 04:49:31,035 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2186 chars from https://dailyexplain.com/2025/11/28/fbi-spends-nearly-1m-redacting-epstein-files-trump-mentions-flagged-in-review/
+2025-11-29 04:49:32,158 [INFO] trend_scanner.scraper: scraper: newspaper extracted 10134 chars from https://www.cnn.com/2025/11/27/health/south-carolina-measles-misinformation-kff-health-news
+2025-11-29 04:49:32,715 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5998 chars from https://www.theguardian.com/technology/2025/nov/27/partisan-x-posts-increase-political-polarisation-among-users-social-media-research
+2025-11-29 04:49:35,414 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8728 chars from https://retractionwatch.com/2025/11/25/meet-the-researcher-aiming-to-halt-use-of-fundamentally-flawed-database-linking-iq-and-nationality/
+2025-11-29 04:49:38,240 [INFO] readability.readability: ruthless removal did not work. 
+2025-11-29 04:49:38,266 [INFO] trend_scanner.scraper: No usable content extracted for https://youtu.be/atbAWMUJxs8?si=McgsCNmare6txU6d
+2025-11-29 04:49:41,882 [INFO] trend_scanner.scraper: scraper: newspaper extracted 2842 chars from https://rudevulture.com/mit-has-built-agent-clones-of-151-million-working-americans-in-order-to-identify-which-jobs-are-most-at-risk/
+2025-11-29 04:49:42,369 [WARNING] trend_scanner.scraper: requests.get failed for https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997: 403 Client Error: Forbidden for url: https://www.acpjournals.org/doi/10.7326/ANNALS-25-00997
+2025-11-29 04:49:44,116 [INFO] trend_scanner.scraper: scraper: readability extracted 8919 chars from https://www.forbes.com/sites/kensilverstein/2025/10/19/uruguays-renewable-charge-a-small-nation-a-big-lesson-for-the-world/
+2025-11-29 04:49:44,116 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 4 posts
+2025-11-29 04:49:44,116 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:49:59,450 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:49:59,450 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 4 posts
+2025-11-29 04:49:59,453 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 4 posts in 1 API call
+2025-11-29 04:49:59,453 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/skeptic (20 posts), scraped 8 links, found 2 trending posts
+2025-11-29 04:49:59,453 [INFO] trend_scanner.google_agents: Executing parallel task 4/6 with agent 'reddit_scanner'
+2025-11-29 04:49:59,453 [INFO] trend_scanner.google_agents: Agent Reddit Trend Scout executing Reddit scan for r/conspiracytheories
+2025-11-29 04:49:59,453 [INFO] trend_scanner.tools.reddit_scan_tool: Starting to fetch submissions from r/conspiracytheories (limit=20, sort=new)
+2025-11-29 04:49:59,453 [WARNING] praw: It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2025-11-29 04:50:02,849 [INFO] trend_scanner.scraper: scraper: newspaper extracted 1417 chars from https://newrepublic.com/post/203762/trump-fbi-redacted-epstein-files
+2025-11-29 04:50:04,612 [INFO] trend_scanner.scraper: scraper: newspaper extracted 8629 chars from https://www.yahoo.com/news/articles/conspiracy-theorists-russian-propagandists-individuals-193105640.html
+2025-11-29 04:50:05,280 [INFO] trend_scanner.scraper: scraper: newspaper extracted 5654 chars from https://economictimes.indiatimes.com/news/international/us/palantir-co-founder-peter-thiel-and-vice-president-jd-vance-ties-explained-see-companys-expanding-reach-inside-government-programs-allegations-against-it-political-debate-grows-trump-administration-government-data-tools-ai-systems-surveillance-concerns-silicon-valley-political-influence-technology-power-government-contracts-privacy-issues/articleshow/125539208.cms?from=mdr
+2025-11-29 04:50:06,548 [INFO] trend_scanner.scraper: scraper: newspaper extracted 3387 chars from https://www.npr.org/2025/11/23/nx-s1-5618242/texas-haiti-gonave-island-plot
+2025-11-29 04:50:08,169 [INFO] trend_scanner.scraper: scraper: newspaper extracted 584 chars from https://newrepublic.com/post/203562/maga-trolls-elon-musk-x-new-feature
+2025-11-29 04:50:08,169 [INFO] trend_scanner.tools.reddit_scan_tool: Performing batch risk assessment for 1 posts
+2025-11-29 04:50:08,169 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:50:11,773 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:50:11,773 [INFO] trend_scanner.tools.reddit_scan_tool: Batch risk assessment completed for 1 posts
+2025-11-29 04:50:11,773 [INFO] trend_scanner.tools.reddit_scan_tool: Batch processing: assessed 1 posts in 1 API call
+2025-11-29 04:50:11,773 [INFO] trend_scanner.tools.reddit_scan_tool: Scan summary: Scanned r/conspiracytheories (20 posts), scraped 5 links, found 0 trending posts
+2025-11-29 04:50:11,773 [INFO] trend_scanner.google_agents: Executing parallel task 5/6 with agent 'threads_scanner'
+2025-11-29 04:50:11,773 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @globaltimes_news
+2025-11-29 04:50:11,773 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @globaltimes_news (limit=10)
+2025-11-29 04:50:12,930 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@globaltimes_news
+2025-11-29 04:50:15,580 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 5 threads
+2025-11-29 04:50:18,200 [INFO] trend_scanner.scraper: scraper: bsoup body extracted 917 chars from https://globaltimes.cn/page/202511/1349127.shtml
+2025-11-29 04:50:18,200 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 0 threads
+2025-11-29 04:50:18,200 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 0 threads in 1 API call
+2025-11-29 04:50:18,200 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @globaltimes_news (5 threads), scraped 1 links, found 0 trending posts
+2025-11-29 04:50:18,200 [INFO] trend_scanner.google_agents: Executing parallel task 6/6 with agent 'threads_scanner'
+2025-11-29 04:50:18,200 [INFO] trend_scanner.google_agents: Agent Threads Trend Scout executing Threads scan for @trumplovernews
+2025-11-29 04:50:18,204 [INFO] trend_scanner.tools.threads_scan_tool: Starting Threads scan for @trumplovernews (limit=10)
+2025-11-29 04:50:18,642 [INFO] trend_scanner.threads_scraper: Scraping Threads profile: https://www.threads.net/@trumplovernews
+2025-11-29 04:50:20,292 [INFO] trend_scanner.threads_scraper: Successfully scraped profile with 4 threads
+2025-11-29 04:50:20,307 [INFO] trend_scanner.tools.threads_scan_tool: Performing batch risk assessment for 2 threads
+2025-11-29 04:50:20,308 [INFO] LiteLLM: 
+LiteLLM completion() model= gemini-2.5-flash; provider = gemini
+2025-11-29 04:50:30,713 [INFO] LiteLLM: Wrapper: Completed Call, calling success_handler
+2025-11-29 04:50:30,713 [INFO] trend_scanner.tools.threads_scan_tool: Batch risk assessment completed for 2 threads
+2025-11-29 04:50:30,713 [INFO] trend_scanner.tools.threads_scan_tool: Batch processing: assessed 2 threads in 1 API call
+2025-11-29 04:50:30,713 [INFO] trend_scanner.tools.threads_scan_tool: Scan summary: Scanned @trumplovernews (4 threads), scraped 0 links, found 1 trending posts
+2025-11-29 04:50:35,819 [INFO] trend_scanner.google_agents: Executing cross-platform risk assessment
+2025-11-29 04:51:34,892 [INFO] trend_scanner.google_agents: Content Risk Assessor provided with 3 posts from multiple platforms for cross-platform analysis
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Reddit scan: 2 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Reddit scan: 0 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Threads scan: 0 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Processed Threads scan: 1 posts
+2025-11-29 04:51:40,562 [INFO] trend_scanner.google_agents: Multi-platform scan completed - Reddit: 2, Threads: 1, Telegram: 0, Twitter: 0, Total: 3
+2025-11-29 04:51:48,111 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:51:48,111 [INFO] __main__: Found 3 posts from trend scanner, preparing for verification...
+2025-11-29 04:51:48,111 [INFO] __main__: Prepared 3 claims for verification
+2025-11-29 04:51:48,111 [INFO] __main__: Step 2: Executing claim verification with batch processing...
+2025-11-29 04:51:48,117 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:51:48,117 [INFO] __main__: Executing task 1/1: verifier_coordinator - Verify extracted claims using comprehensive fact-checking workflow
+2025-11-29 04:51:48,117 [INFO] __main__: Agent Claim Verification Coordinator has 1 tools available
+2025-11-29 04:51:48,117 [INFO] __main__: Tool 0: <class 'claim_verifier.agents.ClaimVerifierOrchestrator'> with methods: ['claim_extractor', 'fact_checker', 'fact_verifier', 'gemini_api_key', 'google_agents', 'priority_assessor', 'quick_verify', 'report_generator', 'verify_content']...
+2025-11-29 04:51:48,118 [INFO] __main__: Starting tool detection for task: 'Verify extracted claims using comprehensive fact-checking workflow'
+2025-11-29 04:51:48,118 [INFO] __main__: Checking conditions:
+2025-11-29 04:51:48,118 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:51:48,118 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:51:48,118 [INFO] __main__:   - hasattr(tool, 'verify_content'): True
+2025-11-29 04:51:48,118 [INFO] __main__:   - 'verify' in task_description.lower(): True
+2025-11-29 04:51:48,119 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:51:48,119 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): False
+2025-11-29 04:51:48,119 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:51:48,119 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): False
+2025-11-29 04:51:48,119 [INFO] __main__: Agent Claim Verification Coordinator executing claim verification tool with batch processing...
+2025-11-29 04:51:48,119 [INFO] __main__: Processing 3 claims using batch verification...
+2025-11-29 04:51:48,119 [INFO] claim_verifier.agents: Starting Google Agents claim verification for 3 content items with batch processing
+2025-11-29 04:51:48,119 [INFO] claim_verifier.agents: Processing 3 claims in batches of 15
+2025-11-29 04:51:48,119 [INFO] claim_verifier.agents: Processing batch 1: claims 1-3
+2025-11-29 04:52:04,550 [INFO] claim_verifier.agents: Batch verification completed: 3 total claims processed
+2025-11-29 04:52:04,550 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:52:04,550 [INFO] __main__: Extracted 3 verified claims for explanation generation
+2025-11-29 04:52:04,550 [INFO] __main__: Processing 3 verified claims for explanation generation
+2025-11-29 04:52:04,550 [INFO] __main__: Claim 0: verdict='false', verified=False, claim_text='The FBI is spending nearly $1 million to redact Je...'
+2025-11-29 04:52:04,550 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:52:04,550 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:52:04,550 [INFO] __main__: ✅ INCLUDING claim for debunk post: The FBI is spending nearly $1 million to redact Je... (verdict: false)
+2025-11-29 04:52:04,550 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:52:04,550 [INFO] __main__: Claim 1: verdict='false', verified=False, claim_text='A measles outbreak in Spartanburg County, South Ca...'
+2025-11-29 04:52:04,550 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:52:04,550 [INFO] __main__:   Found 2 source links and 2 source titles
+2025-11-29 04:52:04,550 [INFO] __main__: ✅ INCLUDING claim for debunk post: A measles outbreak in Spartanburg County, South Ca... (verdict: false)
+2025-11-29 04:52:04,550 [INFO] __main__:   Sources included: 2 links
+2025-11-29 04:52:04,550 [INFO] __main__: Claim 2: verdict='false', verified=False, claim_text='A Melania Trump White House Christmas would restor...'
+2025-11-29 04:52:04,550 [INFO] __main__:   Original claim structure keys: ['claim_text', 'content_summary', 'source', 'verification', 'claim_metadata', 'verification_timestamp']
+2025-11-29 04:52:04,550 [INFO] __main__:   Found 5 source links and 5 source titles
+2025-11-29 04:52:04,550 [INFO] __main__: ✅ INCLUDING claim for debunk post: A Melania Trump White House Christmas would restor... (verdict: false)
+2025-11-29 04:52:04,550 [INFO] __main__:   Sources included: 5 links
+2025-11-29 04:52:04,550 [INFO] __main__: Verdict distribution: {'false': 3}
+2025-11-29 04:52:04,550 [INFO] __main__: Total claims for debunk posts: 3 out of 3
+2025-11-29 04:52:04,550 [INFO] __main__: Step 3: Executing explanation generation with batch processing for 3 misinformation claims...
+2025-11-29 04:52:04,550 [INFO] __main__: Starting Google Agents workflow with 1 tasks
+2025-11-29 04:52:04,550 [INFO] __main__: Executing task 1/1: explanation_coordinator - Generate debunk posts for misinformation claims using batch processing
+2025-11-29 04:52:04,550 [INFO] __main__: Agent Explanation Generation Coordinator has 1 tools available
+2025-11-29 04:52:04,550 [INFO] __main__: Tool 0: <class 'explanation_agent.agents.ExplanationAgent'> with methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']...
+2025-11-29 04:52:04,550 [INFO] __main__: Starting tool detection for task: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:52:04,550 [INFO] __main__: Checking conditions:
+2025-11-29 04:52:04,550 [INFO] __main__:   - hasattr(tool, '__call__'): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - 'scan' in task_description.lower(): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - hasattr(tool, 'verify_content'): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - 'verify' in task_description.lower(): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - hasattr(tool, 'execute_workflow'): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - hasattr(tool, 'batch_create_posts'): True
+2025-11-29 04:52:04,550 [INFO] __main__:   - 'explanation' in task_description.lower(): False
+2025-11-29 04:52:04,550 [INFO] __main__:   - hasattr(tool, 'create_debunk_post'): True
+2025-11-29 04:52:04,550 [INFO] __main__: Agent Explanation Generation Coordinator executing ExplanationAgent with batch processing...
+2025-11-29 04:52:04,550 [INFO] __main__: Tool type: <class 'explanation_agent.agents.ExplanationAgent'>
+2025-11-29 04:52:04,550 [INFO] __main__: Tool methods: ['batch_create_posts', 'content_generator', 'create_debunk_post', 'orchestrator', 'source_analyzer']
+2025-11-29 04:52:04,550 [INFO] __main__: Task description: 'Generate debunk posts for misinformation claims using batch processing'
+2025-11-29 04:52:04,550 [INFO] __main__: Task description contains 'explanation': False
+2025-11-29 04:52:04,550 [INFO] __main__: Tool has batch_create_posts: True
+2025-11-29 04:52:04,550 [INFO] __main__: Received verification_results: 3 items
+2025-11-29 04:52:04,550 [INFO] __main__: Found 3 verification results for explanation generation
+2025-11-29 04:52:04,555 [INFO] __main__: Verification result 0: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:52:04,555 [INFO] __main__: Verification result 1: keys = ['claim_text', 'verification', 'sources', 'source', 'content_summary', 'verified', 'verdict']
+2025-11-29 04:52:04,555 [INFO] __main__: Creating debunk posts for 3 claims using batch processing...
+2025-11-29 04:52:04,555 [INFO] explanation_agent.agents: Creating 3 debunk posts with batch Google Agents processing...
+2025-11-29 04:52:04,555 [INFO] explanation_agent.agents: Processing batch 1: posts 1-3
+2025-11-29 04:52:04,556 [INFO] explanation_agent.agents: Agent Content Generation Specialist executing batch processing tool...
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Raw Gemini response (first 500 chars): ```json
+[
+    {
+        "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+        "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public 
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Cleaned response (first 500 chars): [
+    {
+        "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+        "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public and lega
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Extracted JSON: [
+    {
+        "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+        "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public and lega
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Agent Source Analysis Specialist executing batch processing tool...
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Processing batch sources for 3 verification results
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 0: 5 links, 5 titles
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Links: ['https://www.nytimes.com/live/2025/07/23/us/trump-news', 'https://www.nytimes.com/live/2025/09/10/us/trump-news']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Titles: ['Attorney General Alerted Trump His Name Appeared in Epstein Files', 'Republicans Block Senate Vote to Release Epstein Files - The New ...']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 0: Created 5 source entries
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 1: 2 links, 2 titles
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Links: ['https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D', 'https://www.euronews.com/sitemaps/en/images-2024-2.xml']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Titles: ['Amazon Takes On Pharmacies By Selling Medications Online', 'https://www.euronews.com/sitemaps/en/images-2024-2.xml']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 1: Created 2 source entries
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 2: 5 links, 5 titles
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Links: ['https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html', 'https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents:   Titles: ['Answers to Your Current Coronavirus Questions - The New York ...', 'Trump-Zelensky Meeting Implodes']
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Verification result 2: Created 5 source entries
+2025-11-29 04:52:16,990 [INFO] explanation_agent.agents: Batch source analysis completed: 15 total sources processed
+2025-11-29 04:52:16,996 [INFO] explanation_agent.agents: Batch processing completed: 3 total posts created
+2025-11-29 04:52:16,996 [INFO] __main__: Tool result type: <class 'dict'>
+2025-11-29 04:52:16,996 [INFO] __main__: Tool result keys: ['success', 'message', 'debunk_posts', 'batch_statistics']
+2025-11-29 04:52:16,996 [INFO] __main__: Batch explanation generation completed successfully with 3 posts generated
+2025-11-29 04:52:16,996 [INFO] __main__: ExplanationAgent tool execution completed - tool_used: True
+2025-11-29 04:52:16,996 [INFO] __main__: Workflow completed: 1/1 tasks successful
+2025-11-29 04:52:16,996 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:52:16,996 [INFO] __main__: Step 4: Processing and combining all results...
+2025-11-29 04:52:16,997 [INFO] __main__: Trend scanning completed: 3 posts
+2025-11-29 04:52:16,997 [INFO] __main__: Claim verification completed: True
+2025-11-29 04:52:16,997 [INFO] __main__: Batch verification processed 3 claims in batches of 3
+2025-11-29 04:52:16,997 [INFO] __main__: Explanation generation completed: True
+2025-11-29 04:52:16,997 [INFO] __main__: Batch explanation generation processed 3 claims in batches of 3
+2025-11-29 04:52:16,997 [INFO] __main__: Successfully created 3 debunk posts
+2025-11-29 04:52:16,997 [INFO] __main__: Extracted 3 debunk posts from explanation generation
+2025-11-29 04:52:17,000 [INFO] __main__: Google Agents results saved to: orchestrator_results\google_agents_orchestrator_results_20251129_045216.json
+2025-11-29 04:52:17,000 [INFO] __main__: Saving results to MongoDB...
+2025-11-29 04:52:17,500 [INFO] mongodb_integration: ✅ Successfully connected to MongoDB
+2025-11-29 04:52:17,563 [INFO] mongodb_integration: ✅ Database indexes created successfully
+2025-11-29 04:52:17,563 [INFO] mongodb_integration: ✅ MongoDB collections setup completed
+2025-11-29 04:52:17,569 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_045216_990381_803d5f65
+2025-11-29 04:52:17,590 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_045216_990381_6da57316
+2025-11-29 04:52:17,600 [INFO] mongodb_integration: ✅ Stored debunk post: aegis_post_20251129_045216_990381_bce0758b
+2025-11-29 04:52:17,600 [INFO] mongodb_integration: 📊 Debunk posts storage completed: 3 stored, 0 skipped, 0 errors
+2025-11-29 04:52:17,601 [INFO] __main__: ✅ Successfully stored 3 debunk posts to MongoDB
+2025-11-29 04:52:17,607 [INFO] mongodb_integration: 🔌 MongoDB connection closed
+2025-11-29 04:52:17,610 [INFO] __main__: Google Agents orchestrated pipeline with batch processing completed successfully

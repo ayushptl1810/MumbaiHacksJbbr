@@ -1,0 +1,1429 @@
+{
+  "success": true,
+  "message": "Successfully processed 3 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T04:51:40.562017",
+        "total_posts": 3,
+        "posts_by_platform": {
+          "reddit": 2,
+          "threads": 1
+        },
+        "platforms": [
+          "reddit",
+          "threads"
+        ],
+        "posts": [
+          {
+            "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+            "summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special Redaction Project,' involves nearly 1,000 agents and is reportedly flagging 'Trump mentions' during the review, raising concerns that some parts may never be seen by the public.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+            "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clinic seeing only a single person. State epidemiologist Linda Bell acknowledged the slow progress in vaccine uptake, attributing it to the 'chilling effect of vaccine misinformation.'",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          },
+          {
+            "claim": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+            "summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return to Christmas 'the way it’s supposed to be.'",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+            "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+              "confidence": "high",
+              "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                  "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                  "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                  "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                ],
+                "titles": [
+                  "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                  "Comey Indicted After Pressure From Trump - The New York Times",
+                  "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                  "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+              "verification_date": "2025-11-29T04:51:48.111890"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release."
+            },
+            "verification_timestamp": "2025-11-29T04:52:04.550300"
+          },
+          {
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+            "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+              "confidence": "high",
+              "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+              "sources": {
+                "links": [
+                  "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                  "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                ],
+                "titles": [
+                  "Amazon Takes On Pharmacies By Selling Medications Online",
+                  "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                ],
+                "count": 2
+              },
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+              "verification_date": "2025-11-29T04:51:48.111890"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics."
+            },
+            "verification_timestamp": "2025-11-29T04:52:04.550300"
+          },
+          {
+            "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+            "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+            "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+              "confidence": "high",
+              "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                  "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                ],
+                "titles": [
+                  "Answers to Your Current Coronavirus Questions - The New York ...",
+                  "Trump-Zelensky Meeting Implodes",
+                  "Trump Goes All In for Crypto After His $Trump Epiphany",
+                  "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                  "President Signs Megabill Into Law"
+                ],
+                "count": 10
+              },
+              "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+              "verification_date": "2025-11-29T04:51:48.111890"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'."
+            },
+            "verification_timestamp": "2025-11-29T04:52:04.550300"
+          }
+        ],
+        "summary": {
+          "total_claims": 3,
+          "successfully_verified": 0,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T04:52:04.550300",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 3 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251129_045216_990381_803d5f65",
+            "verification_date": "2025-11-29T04:52:16.990381",
+            "claim": {
+              "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+              "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public and legal interest in the release of Epstein-related documents, and redactions are a standard part of document release processes to protect privacy or ongoing investigations, the highly specific details about the cost and the targeting of 'Trump mentions' lack any verifiable evidence. The sources provided alongside this claim are irrelevant or point to non-existent future articles, further indicating its falsehood.",
+              "summary": "Reports of the FBI spending $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions,' are false and lack any credible evidence.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                  "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                  "url": "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Comey Indicted After Pressure From Trump - The New York Times",
+                  "url": "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                  "url": "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Classified Documents: What's in the New Kennedy Files? Spies ...",
+                  "url": "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+                  "confidence": "high",
+                  "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                      "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                      "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                      "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                    ],
+                    "titles": [
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                      "Comey Indicted After Pressure From Trump - The New York Times",
+                      "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                      "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                  "verification_date": "2025-11-29T04:51:48.111890"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                    "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                    "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                    "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                  ],
+                  "titles": [
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                    "Comey Indicted After Pressure From Trump - The New York Times",
+                    "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                    "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_803d5f65.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_045216_990381_6da57316",
+            "verification_date": "2025-11-29T04:52:16.990381",
+            "claim": {
+              "text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: No Measles Outbreak Linked to Misinformation Reported in Spartanburg County, SC",
+              "body": "The assertion of a measles outbreak in Spartanburg County, South Carolina, linked to vaccine misinformation and resulting in low public health engagement, is false. Public health agencies closely monitor and report on infectious disease outbreaks. There have been no credible reports from the South Carolina Department of Health and Environmental Control (DHEC) or major news outlets confirming a significant measles outbreak matching this description in Spartanburg County. The sources provided to support this claim are entirely unrelated – one discusses Amazon's online pharmacy business, and the other is a website sitemap – offering no evidence for the alleged outbreak. While vaccine misinformation is a real public health concern, this specific claim about an outbreak in Spartanburg County is not supported by facts.",
+              "summary": "Claims of a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation are false, with no credible public health reports or evidence supporting such an event.",
+              "category": "Health"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+                  "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+                  "url": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+                  "domain": "www.euronews.com"
+                }
+              ],
+              "total_sources": 3
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+                  "confidence": "high",
+                  "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                      "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                    ],
+                    "titles": [
+                      "Amazon Takes On Pharmacies By Selling Medications Online",
+                      "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                    ],
+                    "count": 2
+                  },
+                  "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                  "verification_date": "2025-11-29T04:51:48.111890"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                    "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                  ],
+                  "titles": [
+                    "Amazon Takes On Pharmacies By Selling Medications Online",
+                    "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                  ],
+                  "count": 2
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_6da57316.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_045216_990381_bce0758b",
+            "verification_date": "2025-11-29T04:52:16.990381",
+            "claim": {
+              "text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "False: White House Christmas Décor Claim is Speculative, Opinion-Based",
+              "body": "The claim suggesting a future Melania Trump White House Christmas would 'restore traditional and classy décor,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics,' is false. This statement is highly speculative and based on subjective opinion rather than verifiable fact. It refers to a hypothetical future event and uses loaded, subjective language to describe both past and present décor choices. Discussions about future White House decorations are purely speculative and cannot be confirmed or denied as factual claims. Furthermore, the sources provided alongside this claim are completely irrelevant, addressing coronavirus questions and a past Trump-Zelensky meeting, offering no support for the decorative claims. Such statements reflect personal preferences rather than an objective reality.",
+              "summary": "The claim about hypothetical future White House Christmas décor under Melania Trump is false, as it's speculative, opinion-based, and lacks any factual basis.",
+              "category": "Politics"
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+                  "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Trump-Zelensky Meeting Implodes",
+                  "url": "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+                  "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                  "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "President Signs Megabill Into Law",
+                  "url": "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D",
+                  "domain": "www.wsj.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+                  "confidence": "high",
+                  "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                      "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                    ],
+                    "titles": [
+                      "Answers to Your Current Coronavirus Questions - The New York ...",
+                      "Trump-Zelensky Meeting Implodes",
+                      "Trump Goes All In for Crypto After His $Trump Epiphany",
+                      "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                      "President Signs Megabill Into Law"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                  "verification_date": "2025-11-29T04:51:48.111890"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                  ],
+                  "titles": [
+                    "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "Trump-Zelensky Meeting Implodes",
+                    "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "President Signs Megabill Into Law"
+                  ],
+                  "count": 10
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_bce0758b.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 3,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 3,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+      "summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special Redaction Project,' involves nearly 1,000 agents and is reportedly flagging 'Trump mentions' during the review, raising concerns that some parts may never be seen by the public.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+        "confidence": "high",
+        "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+            "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+            "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+            "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+          ],
+          "titles": [
+            "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+            "Comey Indicted After Pressure From Trump - The New York Times",
+            "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+            "Classified Documents: What's in the New Kennedy Files? Spies ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+        "verification_date": "2025-11-29T04:51:48.111890"
+      }
+    },
+    {
+      "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+      "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clinic seeing only a single person. State epidemiologist Linda Bell acknowledged the slow progress in vaccine uptake, attributing it to the 'chilling effect of vaccine misinformation.'",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+        "confidence": "high",
+        "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+            "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+          ],
+          "titles": [
+            "Amazon Takes On Pharmacies By Selling Medications Online",
+            "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+          ],
+          "count": 2
+        },
+        "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+        "verification_date": "2025-11-29T04:51:48.111890"
+      }
+    },
+    {
+      "claim": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+      "summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return to Christmas 'the way it’s supposed to be.'",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+        "confidence": "high",
+        "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+            "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+            "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+          ],
+          "titles": [
+            "Answers to Your Current Coronavirus Questions - The New York ...",
+            "Trump-Zelensky Meeting Implodes",
+            "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "President Signs Megabill Into Law"
+          ],
+          "count": 10
+        },
+        "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+        "verification_date": "2025-11-29T04:51:48.111890"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251129_045216_990381_803d5f65",
+      "verification_date": "2025-11-29T04:52:16.990381",
+      "claim": {
+        "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+        "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public and legal interest in the release of Epstein-related documents, and redactions are a standard part of document release processes to protect privacy or ongoing investigations, the highly specific details about the cost and the targeting of 'Trump mentions' lack any verifiable evidence. The sources provided alongside this claim are irrelevant or point to non-existent future articles, further indicating its falsehood.",
+        "summary": "Reports of the FBI spending $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions,' are false and lack any credible evidence.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+            "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+            "url": "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Comey Indicted After Pressure From Trump - The New York Times",
+            "url": "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+            "url": "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Classified Documents: What's in the New Kennedy Files? Spies ...",
+            "url": "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+            "confidence": "high",
+            "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+              ],
+              "titles": [
+                "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                "Comey Indicted After Pressure From Trump - The New York Times",
+                "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                "Classified Documents: What's in the New Kennedy Files? Spies ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+            "verification_date": "2025-11-29T04:51:48.111890"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+              "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+              "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+              "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+              "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+            ],
+            "titles": [
+              "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+              "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+              "Comey Indicted After Pressure From Trump - The New York Times",
+              "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+              "Classified Documents: What's in the New Kennedy Files? Spies ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+          "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_803d5f65.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_045216_990381_6da57316",
+      "verification_date": "2025-11-29T04:52:16.990381",
+      "claim": {
+        "text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: No Measles Outbreak Linked to Misinformation Reported in Spartanburg County, SC",
+        "body": "The assertion of a measles outbreak in Spartanburg County, South Carolina, linked to vaccine misinformation and resulting in low public health engagement, is false. Public health agencies closely monitor and report on infectious disease outbreaks. There have been no credible reports from the South Carolina Department of Health and Environmental Control (DHEC) or major news outlets confirming a significant measles outbreak matching this description in Spartanburg County. The sources provided to support this claim are entirely unrelated – one discusses Amazon's online pharmacy business, and the other is a website sitemap – offering no evidence for the alleged outbreak. While vaccine misinformation is a real public health concern, this specific claim about an outbreak in Spartanburg County is not supported by facts.",
+        "summary": "Claims of a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation are false, with no credible public health reports or evidence supporting such an event.",
+        "category": "Health"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+            "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+            "url": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+            "domain": "www.euronews.com"
+          }
+        ],
+        "total_sources": 3
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+            "confidence": "high",
+            "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+            "sources": {
+              "links": [
+                "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+              ],
+              "titles": [
+                "Amazon Takes On Pharmacies By Selling Medications Online",
+                "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+              ],
+              "count": 2
+            },
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+            "verification_date": "2025-11-29T04:51:48.111890"
+          },
+          "sources": {
+            "links": [
+              "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+              "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+            ],
+            "titles": [
+              "Amazon Takes On Pharmacies By Selling Medications Online",
+              "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+            ],
+            "count": 2
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+          "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_6da57316.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_045216_990381_bce0758b",
+      "verification_date": "2025-11-29T04:52:16.990381",
+      "claim": {
+        "text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "False: White House Christmas Décor Claim is Speculative, Opinion-Based",
+        "body": "The claim suggesting a future Melania Trump White House Christmas would 'restore traditional and classy décor,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics,' is false. This statement is highly speculative and based on subjective opinion rather than verifiable fact. It refers to a hypothetical future event and uses loaded, subjective language to describe both past and present décor choices. Discussions about future White House decorations are purely speculative and cannot be confirmed or denied as factual claims. Furthermore, the sources provided alongside this claim are completely irrelevant, addressing coronavirus questions and a past Trump-Zelensky meeting, offering no support for the decorative claims. Such statements reflect personal preferences rather than an objective reality.",
+        "summary": "The claim about hypothetical future White House Christmas décor under Melania Trump is false, as it's speculative, opinion-based, and lacks any factual basis.",
+        "category": "Politics"
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+            "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+            "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Trump-Zelensky Meeting Implodes",
+            "url": "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "President Signs Megabill Into Law",
+            "url": "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D",
+            "domain": "www.wsj.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+            "confidence": "high",
+            "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+              ],
+              "titles": [
+                "Answers to Your Current Coronavirus Questions - The New York ...",
+                "Trump-Zelensky Meeting Implodes",
+                "Trump Goes All In for Crypto After His $Trump Epiphany",
+                "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                "President Signs Megabill Into Law"
+              ],
+              "count": 10
+            },
+            "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+            "verification_date": "2025-11-29T04:51:48.111890"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+              "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+              "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+              "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+              "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+            ],
+            "titles": [
+              "Answers to Your Current Coronavirus Questions - The New York ...",
+              "Trump-Zelensky Meeting Implodes",
+              "Trump Goes All In for Crypto After His $Trump Epiphany",
+              "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+              "President Signs Megabill Into Law"
+            ],
+            "count": 10
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+          "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_bce0758b.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 3,
+    "debunk_posts_generated": 3,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T04:51:40.562017",
+          "total_posts": 3,
+          "posts_by_platform": {
+            "reddit": 2,
+            "threads": 1
+          },
+          "platforms": [
+            "reddit",
+            "threads"
+          ],
+          "posts": [
+            {
+              "claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+              "summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special Redaction Project,' involves nearly 1,000 agents and is reportedly flagging 'Trump mentions' during the review, raising concerns that some parts may never be seen by the public.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+              "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clinic seeing only a single person. State epidemiologist Linda Bell acknowledged the slow progress in vaccine uptake, attributing it to the 'chilling effect of vaccine misinformation.'",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            },
+            {
+              "claim": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+              "summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return to Christmas 'the way it’s supposed to be.'",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 3 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+              "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+                "confidence": "high",
+                "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                    "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                    "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                    "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                  ],
+                  "titles": [
+                    "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                    "Comey Indicted After Pressure From Trump - The New York Times",
+                    "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                    "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                "verification_date": "2025-11-29T04:51:48.111890"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release."
+              },
+              "verification_timestamp": "2025-11-29T04:52:04.550300"
+            },
+            {
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+              "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+                "confidence": "high",
+                "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                    "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                  ],
+                  "titles": [
+                    "Amazon Takes On Pharmacies By Selling Medications Online",
+                    "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                  ],
+                  "count": 2
+                },
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                "verification_date": "2025-11-29T04:51:48.111890"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics."
+              },
+              "verification_timestamp": "2025-11-29T04:52:04.550300"
+            },
+            {
+              "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+              "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+              "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+                "confidence": "high",
+                "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                  ],
+                  "titles": [
+                    "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "Trump-Zelensky Meeting Implodes",
+                    "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "President Signs Megabill Into Law"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                "verification_date": "2025-11-29T04:51:48.111890"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'."
+              },
+              "verification_timestamp": "2025-11-29T04:52:04.550300"
+            }
+          ],
+          "summary": {
+            "total_claims": 3,
+            "successfully_verified": 0,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T04:52:04.550300",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 3 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251129_045216_990381_803d5f65",
+              "verification_date": "2025-11-29T04:52:16.990381",
+              "claim": {
+                "text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: No Credible Evidence of FBI Spending $1M to Redact Epstein Files for 'Trump Mentions'",
+                "body": "The claim that the FBI is spending nearly $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions' for review and limiting public access, is unsubstantiated. There is no credible public reporting or official statement from the FBI confirming such an expenditure or specific redaction criteria. While there is ongoing public and legal interest in the release of Epstein-related documents, and redactions are a standard part of document release processes to protect privacy or ongoing investigations, the highly specific details about the cost and the targeting of 'Trump mentions' lack any verifiable evidence. The sources provided alongside this claim are irrelevant or point to non-existent future articles, further indicating its falsehood.",
+                "summary": "Reports of the FBI spending $1 million to redact Jeffrey Epstein's files, specifically flagging 'Trump mentions,' are false and lack any credible evidence.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                    "url": "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                    "url": "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Comey Indicted After Pressure From Trump - The New York Times",
+                    "url": "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                    "url": "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Classified Documents: What's in the New Kennedy Files? Spies ...",
+                    "url": "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false. The provided fact-checking sources are all dated in the future (2025), rendering them invalid as evidence for current or past events. Furthermore, even if the dates were ignored, the snippets do not contain information to support the specific details of the FBI's budget, redaction process, or the existence of a law mandating release as described in the claim.",
+                    "confidence": "high",
+                    "reasoning": "1. The claim alleges specific actions by the FBI, including spending nearly $1 million on redacting Jeffrey Epstein's files, flagging 'Trump mentions,' and potential limitation of public access despite a law. \n2. Source 1 mentions Trump's name appearing in Epstein files and an Attorney General informing him, which partially relates to 'Trump mentions' but not FBI redaction or cost. The date is July 29, 2025.\n3. Source 2 mentions 'Republicans Block Senate Vote to Release Epstein Files,' which could imply limited public access but doesn't mention the FBI, redaction costs, or a specific law mandating release. The date is September 10, 2025.\n4. Source 3 is about James Comey's indictment and is irrelevant to Epstein files or redaction costs. The date is September 28, 2025.\n5. Crucially, all provided sources are dated in the future (2025). This means they cannot serve as factual evidence for a current or past event, thus rendering the claim unverifiable and effectively false based on these 'sources'.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                        "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                        "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                        "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                        "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                      ],
+                      "titles": [
+                        "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                        "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                        "Comey Indicted After Pressure From Trump - The New York Times",
+                        "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                        "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The FBI is spending nearly $1 million to redact Jeffrey Epstein's files, with 'Trump mentions' flagged for review, potentially limiting public access despite a law mandating their release.",
+                    "verification_date": "2025-11-29T04:51:48.111890"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/live/2025/07/23/us/trump-news",
+                      "https://www.nytimes.com/live/2025/09/10/us/trump-news",
+                      "https://www.nytimes.com/live/2025/09/25/us/trump-news",
+                      "https://www.nytimes.com/live/2025/08/22/us/trump-news",
+                      "https://www.nytimes.com/live/2025/03/19/us/jfk-assassination-files"
+                    ],
+                    "titles": [
+                      "Attorney General Alerted Trump His Name Appeared in Epstein Files",
+                      "Republicans Block Senate Vote to Release Epstein Files - The New ...",
+                      "Comey Indicted After Pressure From Trump - The New York Times",
+                      "F.B.I. Searches Home and Office of John Bolton, Trump Adviser ...",
+                      "Classified Documents: What's in the New Kennedy Files? Spies ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "content_summary": "Despite a bill mandating the release of Jeffrey Epstein files, the FBI is spending nearly $1 million in overtime (specifically $851,344 between March 17-22 and 4,737 hours of overtime between January and July) to redact them. This effort, referred to as the 'Epstein Transparency Project' or 'Special",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_803d5f65.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_045216_990381_6da57316",
+              "verification_date": "2025-11-29T04:52:16.990381",
+              "claim": {
+                "text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: No Measles Outbreak Linked to Misinformation Reported in Spartanburg County, SC",
+                "body": "The assertion of a measles outbreak in Spartanburg County, South Carolina, linked to vaccine misinformation and resulting in low public health engagement, is false. Public health agencies closely monitor and report on infectious disease outbreaks. There have been no credible reports from the South Carolina Department of Health and Environmental Control (DHEC) or major news outlets confirming a significant measles outbreak matching this description in Spartanburg County. The sources provided to support this claim are entirely unrelated – one discusses Amazon's online pharmacy business, and the other is a website sitemap – offering no evidence for the alleged outbreak. While vaccine misinformation is a real public health concern, this specific claim about an outbreak in Spartanburg County is not supported by facts.",
+                "summary": "Claims of a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation are false, with no credible public health reports or evidence supporting such an event.",
+                "category": "Health"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Amazon Takes On Pharmacies By Selling Medications Online",
+                    "url": "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+                    "url": "https://www.euronews.com/sitemaps/en/images-2024-2.xml",
+                    "domain": "www.euronews.com"
+                  }
+                ],
+                "total_sources": 3
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false. The provided fact-checking sources do not contain any information related to a measles outbreak in Spartanburg County, South Carolina, vaccine misinformation links, low public health engagement, or free vaccine clinics.",
+                    "confidence": "high",
+                    "reasoning": "1. The claim describes a measles outbreak in Spartanburg County, SC, linked to vaccine misinformation and low public health engagement.\n2. Source 1 discusses Amazon selling medications online and the novelty of mRNA vaccines in November 2020. This is irrelevant to a measles outbreak in Spartanburg County, SC.\n3. Source 2 is a sitemap snippet that mentions 'South Carolina State Fairgrounds in Columbia, S.C.' in an image title. It does not mention Spartanburg County, a measles outbreak, vaccine misinformation, public health engagement, or vaccine clinics.\n4. None of the provided sources support any part of the claim.",
+                    "sources": {
+                      "links": [
+                        "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                        "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                      ],
+                      "titles": [
+                        "Amazon Takes On Pharmacies By Selling Medications Online",
+                        "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                      ],
+                      "count": 2
+                    },
+                    "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to low public health engagement despite free vaccine clinics.",
+                    "verification_date": "2025-11-29T04:51:48.111890"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/AhHRUDgZ2MwDKHGNgmth-WSJNewsPaper-11-18-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqcf6lCTlOZyin6Q9U5odEH5mYWkjJ9UBYIVVm6LBU7cOrTE3kS2fZfO&gaa_ts=692a3212&gaa_sig=WL2gyLESDo34RALO_YzXm4ZgE6YC3nfcsf0poZT-HGo5eciqqLbT1TFPpZETKfsK52UbfruiNFVep5p9-Z0dUg%3D%3D",
+                      "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                    ],
+                    "titles": [
+                      "Amazon Takes On Pharmacies By Selling Medications Online",
+                      "https://www.euronews.com/sitemaps/en/images-2024-2.xml"
+                    ],
+                    "count": 2
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+                  "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 identified cases. In response, the South Carolina Department of Public Health opened free pop-up vaccine clinics for adults and children; however, attendance has been notably low, with one clin",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_6da57316.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_045216_990381_bce0758b",
+              "verification_date": "2025-11-29T04:52:16.990381",
+              "claim": {
+                "text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "False: White House Christmas Décor Claim is Speculative, Opinion-Based",
+                "body": "The claim suggesting a future Melania Trump White House Christmas would 'restore traditional and classy décor,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics,' is false. This statement is highly speculative and based on subjective opinion rather than verifiable fact. It refers to a hypothetical future event and uses loaded, subjective language to describe both past and present décor choices. Discussions about future White House decorations are purely speculative and cannot be confirmed or denied as factual claims. Furthermore, the sources provided alongside this claim are completely irrelevant, addressing coronavirus questions and a past Trump-Zelensky meeting, offering no support for the decorative claims. Such statements reflect personal preferences rather than an objective reality.",
+                "summary": "The claim about hypothetical future White House Christmas décor under Melania Trump is false, as it's speculative, opinion-based, and lacks any factual basis.",
+                "category": "Politics"
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+                    "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Trump-Zelensky Meeting Implodes",
+                    "url": "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "President Signs Megabill Into Law",
+                    "url": "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D",
+                    "domain": "www.wsj.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+                    "confidence": "high",
+                    "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                        "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                        "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                        "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                        "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                      ],
+                      "titles": [
+                        "Answers to Your Current Coronavirus Questions - The New York ...",
+                        "Trump-Zelensky Meeting Implodes",
+                        "Trump Goes All In for Crypto After His $Trump Epiphany",
+                        "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                        "President Signs Megabill Into Law"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+                    "verification_date": "2025-11-29T04:51:48.111890"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+                      "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+                    ],
+                    "titles": [
+                      "Answers to Your Current Coronavirus Questions - The New York ...",
+                      "Trump-Zelensky Meeting Implodes",
+                      "Trump Goes All In for Crypto After His $Trump Epiphany",
+                      "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                      "President Signs Megabill Into Law"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_045216_990381_bce0758b.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 3,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 3,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_045216",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T04:52:16.997764",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_044901",
+    "created_at": "2025-11-29T04:52:16.997764",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 3,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251129_045216"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251129_043258_730578_6c2df5e5",
+  "verification_date": "2025-11-29T04:32:58.730578",
+  "claim": {
+    "text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Melania Trump Christmas Decor Claim: Opinion, Not Fact",
+    "body": "A post suggests that a future Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting it with current 'drag-queen-fairy-land theatrics.' This claim is fundamentally an opinion and a subjective value judgment rather than a verifiable statement of fact. Melania Trump is not currently in a position to design White House Christmas decor, making any assertion about her future stylistic choices purely speculative. Furthermore, the characterization of current White House decor as 'drag-queen-fairy-land theatrics' is a highly critical and subjective opinion, not an objective description. The sources provided, both Wall Street Journal links to general newspaper issues from 2020 and 2025, are entirely unrelated to White House Christmas decorations, Melania Trump, or any aspect of this claim, further indicating its lack of factual basis.",
+    "summary": "The claim about Melania Trump's potential White House Christmas decor and its contrast with current styles is a subjective opinion, not a verifiable fact, and is unsupported by the provided sources."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+        "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+        "domain": "www.threads.net"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Lawmakers Reach Deal on Aid Package",
+        "url": "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+        "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "0724_Cover [Print]_19510518.indd",
+        "url": "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+        "domain": "cdn.theatlantic.com"
+      },
+      {
+        "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+        "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Defiant President Pushes On As Allies Discuss Replacement",
+        "url": "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+        "confidence": "high",
+        "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+            "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+            "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+            "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+            "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+          ],
+          "titles": [
+            "Lawmakers Reach Deal on Aid Package",
+            "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "0724_Cover [Print]_19510518.indd",
+            "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "Defiant President Pushes On As Allies Discuss Replacement"
+          ],
+          "count": 10
+        },
+        "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+        "verification_date": "2025-11-29T04:32:17.095160"
+      },
+      "sources": {
+        "links": [
+          "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+          "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+          "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+          "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+          "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+        ],
+        "titles": [
+          "Lawmakers Reach Deal on Aid Package",
+          "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+          "0724_Cover [Print]_19510518.indd",
+          "Trump Goes All In for Crypto After His $Trump Epiphany",
+          "Defiant President Pushes On As Allies Discuss Replacement"
+        ],
+        "count": 10
+      },
+      "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+      "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

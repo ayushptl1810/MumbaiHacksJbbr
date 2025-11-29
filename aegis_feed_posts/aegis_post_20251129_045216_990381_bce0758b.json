@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_045216_990381_bce0758b",
+  "verification_date": "2025-11-29T04:52:16.990381",
+  "claim": {
+    "text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "False: White House Christmas Décor Claim is Speculative, Opinion-Based",
+    "body": "The claim suggesting a future Melania Trump White House Christmas would 'restore traditional and classy décor,' contrasting with current decorations described as 'drag-queen-fairy-land theatrics,' is false. This statement is highly speculative and based on subjective opinion rather than verifiable fact. It refers to a hypothetical future event and uses loaded, subjective language to describe both past and present décor choices. Discussions about future White House decorations are purely speculative and cannot be confirmed or denied as factual claims. Furthermore, the sources provided alongside this claim are completely irrelevant, addressing coronavirus questions and a past Trump-Zelensky meeting, offering no support for the decorative claims. Such statements reflect personal preferences rather than an objective reality.",
+    "summary": "The claim about hypothetical future White House Christmas décor under Melania Trump is false, as it's speculative, opinion-based, and lacks any factual basis.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+        "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+        "domain": "www.threads.net"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Answers to Your Current Coronavirus Questions - The New York ...",
+        "url": "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Trump-Zelensky Meeting Implodes",
+        "url": "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+        "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+        "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+        "domain": "www.wsj.com"
+      },
+      {
+        "title": "President Signs Megabill Into Law",
+        "url": "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 3,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The claim is false. The provided fact-checking sources are either irrelevant to White House Christmas decorations or are future-dated, offering no factual basis to support or refute the claim about Melania Trump's decorating style or a comparison to current decorations.",
+        "confidence": "high",
+        "reasoning": "1. The claim is about Melania Trump's potential or past approach to White House Christmas décor, contrasting it with current decorations.\n2. Source 1 discusses coronavirus questions and tips from March 2021, which is unrelated to White House Christmas decorations.\n3. Source 2 discusses a White House meeting between Trump and Zelensky in March 2024 (a future date from the perspective of this analysis), which is irrelevant to Christmas decorations.\n4. Source 3 discusses government funding and House Democratic leaders in March 2025 (a future date), also irrelevant to Christmas decorations.\n5. None of the provided sources contain any information, direct or indirect, to support or refute the claim regarding Melania Trump's White House Christmas décor or a comparison to current styles.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+            "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+            "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+            "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+            "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+          ],
+          "titles": [
+            "Answers to Your Current Coronavirus Questions - The New York ...",
+            "Trump-Zelensky Meeting Implodes",
+            "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "President Signs Megabill Into Law"
+          ],
+          "count": 10
+        },
+        "claim_text": "A Melania Trump White House Christmas would restore traditional and classy décor, contrasting with current decorations described as 'drag-queen-fairy-land theatrics'.",
+        "verification_date": "2025-11-29T04:51:48.111890"
+      },
+      "sources": {
+        "links": [
+          "https://www.nytimes.com/interactive/2020/world/coronavirus-tips-advice.html",
+          "https://www.wsj.com/public/resources/documents/rOo8HrgVnGDego919P0Y-WSJNewsPaper-3-1-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqf13x23_34YWsPySwSl5ZWcikXm6ZkUW8AZTAx-8sFshovtF2EVAB4m&gaa_ts=692a3213&gaa_sig=Ge4cqoCzvnkfvjkHZouVbAwtWdSStbvS-QsjZqDcc5m9ncIJ0vCrxqOOFKLyUBk9O10-P9Ar7WJ6MM2zflEViA%3D%3D",
+          "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqePWhR-WoGce2Ap2jXYhnbhyD5dxg8eMWAUBjLfUZB0fMsJ66h1_k9B&gaa_ts=692a3213&gaa_sig=s_e4N7LvXanFDqtC4C5Jb9_6OqQ7i9Ymkf1oaFA33asAaIYQR5Yv9DT0_69ywCXLFULxQeDIVejdysY3XopUKw%3D%3D",
+          "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqfEGh1P2rVEbLyoybE344lBYrQ3jijRnKmKiMVE6J0ofA9kwuN8jOLc&gaa_ts=692a3213&gaa_sig=N9BFlNVzX47_wht0uLs4XpdSDojtfclVaQdJTc7O5ZgD-qAlSr0h_fToyB3jzGdpNqdlEu6yAZFUYBMVGdkcfQ%3D%3D",
+          "https://www.wsj.com/public/resources/documents/VSlfGVuaz0W0XcBjmh3V-WSJNewsPaper-7-5-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd9SdftJx4plGzdgIwzYpRy1fWTZf06hp42eVppaIxtj5-lg8Ckf_HO&gaa_ts=692a3213&gaa_sig=3OM-UFg3hzkzuVZOU7xaOGAVOG-tBrkBuwdKSfrdcBADFo_It3tMludDpasD8Kd-7kgn4v1TLrm_hkUOkxF3xQ%3D%3D"
+        ],
+        "titles": [
+          "Answers to Your Current Coronavirus Questions - The New York ...",
+          "Trump-Zelensky Meeting Implodes",
+          "Trump Goes All In for Crypto After His $Trump Epiphany",
+          "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+          "President Signs Megabill Into Law"
+        ],
+        "count": 10
+      },
+      "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+      "content_summary": "The post expresses a desire for a future Melania Trump White House Christmas to reintroduce what it calls 'classy décor' and 'real tradition.' It specifically criticizes the current White House Christmas decorations, referring to them as 'drag-queen-fairy-land theatrics,' and advocates for a return ",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

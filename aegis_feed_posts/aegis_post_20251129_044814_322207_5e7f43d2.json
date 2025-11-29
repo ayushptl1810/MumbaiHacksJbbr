@@ -1,0 +1,110 @@
+{
+  "post_id": "aegis_post_20251129_044814_322207_5e7f43d2",
+  "verification_date": "2025-11-29T04:48:14.322207",
+  "claim": {
+    "text": "The post advocates for deportation and directs users to participate in a poll.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Claim About 'Post Advocating Deportation & Poll' Is Unsubstantiated",
+    "body": "A circulating claim describes an unspecified \"post\" that advocates for deportation and directs users to participate in a poll. Our investigation found this claim to be false. No specific \"post\" matching this description was identified or provided for verification. The sources offered to support this claim are articles from 2025 discussing broader Trump administration policies regarding immigration, asylum, and expediting deportations. These future-dated articles, while relevant to the general topic of deportation policy, *do not mention or describe any specific online post advocating deportation or including a poll* as stated in the claim. Without an actual post to evaluate, and with the provided sources being irrelevant to the existence of such a specific social media interaction, the claim cannot be substantiated.",
+    "summary": "The claim about a specific \"post\" advocating deportation and directing users to a poll is false, as no such post was identified, and the provided sources are irrelevant.",
+    "category": "Politics"
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "The post advocates for deportation and directs users to participate in a poll.",
+        "url": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+        "domain": "www.threads.net"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Trump seeks to bypass immigration courts to speed deportations ...",
+        "url": "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+        "domain": "www.npr.org"
+      },
+      {
+        "title": "Trump Administration Directs Judges to Deny Asylum Without ...",
+        "url": "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+        "url": "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+        "domain": "www.theguardian.com"
+      },
+      {
+        "title": "My Life as an Undocumented Immigrant - The New York Times",
+        "url": "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+        "domain": "www.nytimes.com"
+      },
+      {
+        "title": "From LA wildfires to hurricanes, immigrants help rebuild after ...",
+        "url": "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many",
+        "domain": "www.pbs.org"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 4,
+    "batch_size": 4,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The sources discuss deportation and public polling in a general context related to the Trump administration, but they do not confirm that 'the post' itself advocates for deportation and specifically directs users to participate in a poll.",
+        "confidence": "high",
+        "reasoning": "The claim states that 'The post advocates for deportation and directs users to participate in a poll.'\n\nSources 1 and 2 discuss President Trump's efforts and policies related to speeding up deportations and denying asylum, indicating that deportation was a key part of his administration's agenda. However, these sources do not refer to 'the post' (implying a specific piece of content from which this claim might originate) or state that 'the post' itself advocates for deportation.\n\nSource 3 mentions 'Public polling is showing decreasing support for Trump's immigration agenda, as Americans wake up to the reality that mass deportation means...' This confirms the existence of public polling related to Trump's immigration agenda. However, it does not state that 'the post' *directs users to participate in a poll*. The phrasing in Source 3 refers to external, public polling results, not an interactive poll embedded within or linked by 'the post' itself for user participation.\n\nTherefore, the specific actions attributed to 'the post' in the claim—both advocating for deportation and actively directing users to participate in a poll—are not substantiated by the provided sources.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+            "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+            "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+            "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+            "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+          ],
+          "titles": [
+            "Trump seeks to bypass immigration courts to speed deportations ...",
+            "Trump Administration Directs Judges to Deny Asylum Without ...",
+            "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+            "My Life as an Undocumented Immigrant - The New York Times",
+            "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The post advocates for deportation and directs users to participate in a poll.",
+        "verification_date": "2025-11-29T04:47:26.369535"
+      },
+      "sources": {
+        "links": [
+          "https://www.npr.org/2025/04/29/g-s1-63187/trump-courts-immigration-judges-due-process",
+          "https://www.nytimes.com/2025/04/16/us/immigration-asylum-judges-policy.html",
+          "https://www.theguardian.com/us-news/2025/may/29/trump-ice-arrest-quota",
+          "https://www.nytimes.com/2011/06/26/magazine/my-life-as-an-undocumented-immigrant.html",
+          "https://www.pbs.org/newshour/politics/from-la-wildfires-to-hurricanes-immigrants-help-rebuild-after-disasters-trump-may-deport-many"
+        ],
+        "titles": [
+          "Trump seeks to bypass immigration courts to speed deportations ...",
+          "Trump Administration Directs Judges to Deny Asylum Without ...",
+          "Trump administration sets quota to arrest 3,000 people a day in anti ...",
+          "My Life as an Undocumented Immigrant - The New York Times",
+          "From LA wildfires to hurricanes, immigrants help rebuild after ..."
+        ],
+        "count": 10
+      },
+      "source": "https://www.threads.net/@trumplovernews/post/DRmz2ymEpKS",
+      "content_summary": "This post consists of a forceful and concise call for \"DEPORT!!!\" It also includes an alert emoji and explicitly directs users to a \"POLL HERE\" with a pointing finger emoji, indicating an attempt to engage the audience on the topic of deportation through a survey.",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

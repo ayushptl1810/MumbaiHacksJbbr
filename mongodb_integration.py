@@ -100,12 +100,16 @@ class AegisMongoDB:
             
             for post in debunk_posts:
                 try:
+                    # Extract category from post_content for top-level access
+                    category = post.get('post_content', {}).get('category', 'Other')
+                    
                     # Add MongoDB-specific fields
                     post_doc = {
                         "_id": str(uuid.uuid4()),
                         "post_id": post.get('post_id', str(uuid.uuid4())),
                         "pipeline_run_id": pipeline_run_id,
                         "stored_at": datetime.utcnow(),
+                        "category": category,  # Add category at top level for easy querying
                         **post  # Include all original post data
                     }
                     

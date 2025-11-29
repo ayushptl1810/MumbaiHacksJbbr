@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251129_041539_766781_cc156b4c",
+  "verification_date": "2025-11-29T04:15:39.766781",
+  "claim": {
+    "text": "Vaccine misinformation is contributing to a measles outbreak in South Carolina by discouraging people from getting vaccinated.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "No Confirmed Measles Outbreak from Misinformation in South Carolina",
+    "body": "The claim asserts that vaccine misinformation is fueling a measles outbreak in South Carolina by discouraging vaccination. However, there is no verified information supporting a measles outbreak specifically in South Carolina caused by vaccine misinformation. While measles outbreaks have occurred in various regions, often linked to vaccine hesitancy or refusal, the provided sources discuss outbreaks in other areas, such as those involving Mennonite communities and West Texans who prioritize 'medical freedom' over vaccine mandates. These sources highlight complex reasons behind vaccination choices, which may or may not be solely attributed to 'misinformation.' Therefore, the specific connection between vaccine misinformation and a measles outbreak in South Carolina, as claimed, lacks substantiation in available reports.",
+    "summary": "There is no evidence confirming a measles outbreak in South Carolina directly caused by vaccine misinformation."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "Vaccine misinformation is contributing to a measles outbreak in South Carolina by discouraging people from getting vaccinated.",
+        "url": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+        "domain": "reddit.comhttps:"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "Measles outbreak sparks fears, renews tensions over mandatory ...",
+        "url": "https://www.pbs.org/newshour/show/measles-outbreak-sparks-fears-renews-tensions-over-mandatory-vaccination",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Mennonites, West Texans at center of measles outbreak choose ...",
+        "url": "https://www.pbs.org/newshour/health/mennonites-west-texans-at-center-of-measles-outbreak-choose-medical-freedom-over-vaccine-mandates",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "How vaccine hesitancy is contributing to rising rates of measles and ...",
+        "url": "https://www.pbs.org/newshour/show/how-vaccine-hesitancy-is-contributing-to-rising-rates-of-measles-and-covid",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Misinformation hurts effort to immunize children in Democratic ...",
+        "url": "https://www.pbs.org/newshour/show/misinformation-hurts-effort-to-immunize-children-in-democratic-republic-of-the-congo",
+        "domain": "www.pbs.org"
+      },
+      {
+        "title": "Coronavirus Updates: Covid News: Los Angeles County Will ...",
+        "url": "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates",
+        "domain": "www.nytimes.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 3,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "Vaccine misinformation is contributing to a measles outbreak in South Carolina by discouraging people from getting vaccinated.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "While the provided sources confirm that vaccine misinformation is contributing to vaccine hesitancy and a decline in measles vaccinations, and there have been measles outbreaks, none of the sources specifically link these issues to an outbreak *in South Carolina*. Source 2 explicitly mentions an outbreak in 'the south plains of Texas.'",
+        "confidence": "high",
+        "reasoning": "1. The claim states vaccine misinformation is contributing to a measles outbreak in *South Carolina*. 2. Source 1 mentions 'misinformation that's going out there is about the vaccine itself' in the context of a measles outbreak, supporting the link between misinformation and vaccine issues. 3. Source 3 states 'misinformation have combined to sort of really see this decline in vaccines for both of these infectious diseases, thinking [about measles],' supporting the general connection. 4. However, Source 1 does not specify the location of the measles outbreak. 5. Source 2 explicitly states a measles outbreak on 'the south plains of *Texas*,' not South Carolina. 6. Therefore, the specific geographical claim about *South Carolina* is not supported and is contradicted by evidence pointing to Texas.",
+        "sources": {
+          "links": [
+            "https://www.pbs.org/newshour/show/measles-outbreak-sparks-fears-renews-tensions-over-mandatory-vaccination",
+            "https://www.pbs.org/newshour/health/mennonites-west-texans-at-center-of-measles-outbreak-choose-medical-freedom-over-vaccine-mandates",
+            "https://www.pbs.org/newshour/show/how-vaccine-hesitancy-is-contributing-to-rising-rates-of-measles-and-covid",
+            "https://www.pbs.org/newshour/show/misinformation-hurts-effort-to-immunize-children-in-democratic-republic-of-the-congo",
+            "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates"
+          ],
+          "titles": [
+            "Measles outbreak sparks fears, renews tensions over mandatory ...",
+            "Mennonites, West Texans at center of measles outbreak choose ...",
+            "How vaccine hesitancy is contributing to rising rates of measles and ...",
+            "Misinformation hurts effort to immunize children in Democratic ...",
+            "Coronavirus Updates: Covid News: Los Angeles County Will ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "Vaccine misinformation is contributing to a measles outbreak in South Carolina by discouraging people from getting vaccinated.",
+        "verification_date": "2025-11-29T04:14:38.635247"
+      },
+      "sources": {
+        "links": [
+          "https://www.pbs.org/newshour/show/measles-outbreak-sparks-fears-renews-tensions-over-mandatory-vaccination",
+          "https://www.pbs.org/newshour/health/mennonites-west-texans-at-center-of-measles-outbreak-choose-medical-freedom-over-vaccine-mandates",
+          "https://www.pbs.org/newshour/show/how-vaccine-hesitancy-is-contributing-to-rising-rates-of-measles-and-covid",
+          "https://www.pbs.org/newshour/show/misinformation-hurts-effort-to-immunize-children-in-democratic-republic-of-the-congo",
+          "https://www.nytimes.com/live/2021/07/15/world/covid-variant-vaccine-updates"
+        ],
+        "titles": [
+          "Measles outbreak sparks fears, renews tensions over mandatory ...",
+          "Mennonites, West Texans at center of measles outbreak choose ...",
+          "How vaccine hesitancy is contributing to rising rates of measles and ...",
+          "Misinformation hurts effort to immunize children in Democratic ...",
+          "Coronavirus Updates: Covid News: Los Angeles County Will ..."
+        ],
+        "count": 10
+      },
+      "source": "https://reddit.comhttps://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "content_summary": "South Carolina is experiencing a measles outbreak in Spartanburg County, with over 50 cases identified since early October. The state's Department of Public Health opened mobile pop-up clinics offering free vaccines, but uptake has been minimal, with only one person showing up at a clinic in Boiling",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

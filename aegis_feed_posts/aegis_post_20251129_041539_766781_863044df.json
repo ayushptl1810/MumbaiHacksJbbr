@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251129_041539_766781_863044df",
+  "verification_date": "2025-11-29T04:15:39.766781",
+  "claim": {
+    "text": "A demonstration took place in Milan, Italy, as part of a general strike protesting the war economy, European rearmament, social inequality, and the Israeli actions in Gaza.",
+    "verdict": "uncertain",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Milan Demonstration Details Unconfirmed",
+    "body": "The claim describes a demonstration in Milan, Italy, as part of a general strike protesting the war economy, European rearmament, social inequality, and Israeli actions in Gaza. While such protests are common in major European cities given current global events, the specific details of this alleged demonstration in Milan—including its occurrence, scale, and exact motivations as part of a 'general strike'—remain unconfirmed by reliable direct evidence. The provided sources are sitemap links from Euronews for images, which do not offer specific reports or journalistic coverage verifying the event as described. Without concrete news reports or verifiable accounts of the demonstration, its occurrence and stated purposes cannot be definitively confirmed or refuted.",
+    "summary": "The occurrence and details of a general strike demonstration in Milan protesting specific issues, including Israeli actions in Gaza, remain unconfirmed by available evidence."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "A demonstration took place in Milan, Italy, as part of a general strike protesting the war economy, European rearmament, social inequality, and the Israeli actions in Gaza.",
+        "url": "https://twitter.com/QudsNen/status/1994493332479701417",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+        "url": "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+        "domain": "www.euronews.com"
+      },
+      {
+        "title": "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+        "url": "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+        "domain": "www.euronews.com"
+      },
+      {
+        "title": "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+        "url": "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+        "domain": "www.euronews.com"
+      },
+      {
+        "title": "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+        "url": "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+        "domain": "www.euronews.com"
+      },
+      {
+        "title": "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains",
+        "url": "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdHl6s80QxEdkZ1bqMEXK3AeSbZzEKNvPbFqrQ0dM4BaRZt_UrvLk31&gaa_ts=692a295f&gaa_sig=UU3DY4miH3fhAlAOORhNENanXSixUk7VUtbLQ-m_dY8HnHBIor5rI2KkGq9K4FURBsSPxQYN0h23jA2aTsVfAA%3D%3D",
+        "domain": "www.wsj.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 5,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "A demonstration took place in Milan, Italy, as part of a general strike protesting the war economy, European rearmament, social inequality, and the Israeli actions in Gaza.",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The provided sources are merely sitemap snippets from Euronews, indicating that images or news items related to 'Milan, Italy' existed on specific dates. They do not contain any information about a demonstration, a general strike, the specific reasons for such a protest (war economy, European rearmament, social inequality, Israeli actions in Gaza), or whether such an event actually took place as described in the claim.",
+        "confidence": "high",
+        "reasoning": "1. The claim describes a detailed protest event in Milan, Italy, with specific motivations. 2. Sources 1 and 3 are Euronews sitemap entries which include 'Milan, Italy' and a date (Feb 26, 2025 and Apr 7, 2025). These are not articles or reports, but metadata for images or general news. They provide no context about any events, demonstrations, or their themes. 3. Source 2 discusses a protest in Athens and events in Israel, which are irrelevant to the claim about Milan. 4. None of the provided snippets offer any evidence to confirm or deny the occurrence of a demonstration, let alone one with the specific characteristics mentioned in the claim.",
+        "sources": {
+          "links": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdHl6s80QxEdkZ1bqMEXK3AeSbZzEKNvPbFqrQ0dM4BaRZt_UrvLk31&gaa_ts=692a295f&gaa_sig=UU3DY4miH3fhAlAOORhNENanXSixUk7VUtbLQ-m_dY8HnHBIor5rI2KkGq9K4FURBsSPxQYN0h23jA2aTsVfAA%3D%3D"
+          ],
+          "titles": [
+            "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+            "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+            "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains"
+          ],
+          "count": 10
+        },
+        "claim_text": "A demonstration took place in Milan, Italy, as part of a general strike protesting the war economy, European rearmament, social inequality, and the Israeli actions in Gaza.",
+        "verification_date": "2025-11-29T04:14:38.635247"
+      },
+      "sources": {
+        "links": [
+          "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+          "https://www.wsj.com/public/resources/documents/LGEcU87Kdsz2EuNvB7J9-WSJNewsPaper-3-14-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqdHl6s80QxEdkZ1bqMEXK3AeSbZzEKNvPbFqrQ0dM4BaRZt_UrvLk31&gaa_ts=692a295f&gaa_sig=UU3DY4miH3fhAlAOORhNENanXSixUk7VUtbLQ-m_dY8HnHBIor5rI2KkGq9K4FURBsSPxQYN0h23jA2aTsVfAA%3D%3D"
+        ],
+        "titles": [
+          "https://www.euronews.com/sitemaps/en/images-2025-2.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-6.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-4.xml",
+          "https://www.euronews.com/sitemaps/en/images-2025-1.xml",
+          "Putin Rejects Immediate Pause In Ukraine Fighting Amid Gains"
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/QudsNen/status/1994493332479701417",
+      "content_summary": "A demonstration was held in Milan, Italy, as part of a general strike. The protest was against the war economy, European rearmament, and social inequality, and specifically condemned the \"ongoing Israeli genocide in Gaza.\" The march expressed solidarity with the Palestinian people and their resistan",
+      "verified": false,
+      "verdict": "uncertain"
+    }
+  }
+}

@@ -259,6 +259,17 @@ Create a structured debunk post that:
 1. Has a clear, engaging heading (max {config.MAX_HEADING_LENGTH} characters)
 2. Provides a detailed but accessible body explanation (max {config.MAX_BODY_LENGTH} characters)
 3. Includes a concise summary
+4. Categorizes the claim into ONE of these categories:
+
+CATEGORIES:
+- Politics: election, government, minister, parliament, political, party, bjp, congress, pm, president
+- Technology: ai, tech, app, digital, cyber, internet, computer, software, online, website
+- Health: health, medical, doctor, hospital, covid, vaccine, medicine, disease
+- Crime: police, arrest, crime, murder, theft, fraud, scam, illegal, court, jail
+- Military: army, military, soldier, defense, war, navy, air force, border, weapon
+- Sports: cricket, football, sport, match, player, team, olympics, ipl, game
+- Entertainment: movie, film, actor, actress, bollywood, celebrity, music, video
+- Other: if none of the above categories fit
 
 Guidelines:
 - Use clear, non-technical language
@@ -266,12 +277,14 @@ Guidelines:
 - Include specific facts and evidence
 - Acknowledge uncertainty when appropriate
 - Focus on educating rather than just contradicting
+- Choose the most relevant category based on claim content and keywords
 
 Respond in this exact JSON format:
 {{
     "heading": "Clear, engaging headline about the fact-check result",
-    "body": "Detailed explanation of what the evidence shows, why the claim is true/false/mixed, and what people should know. Include specific facts and context.",
-    "summary": "Concise one-sentence summary of the key finding"
+    "body": "Detailed explanation of what the evidence shows, why the claim is true/false/uncertain, and what people should know. Include specific facts and context.",
+    "summary": "Concise one-sentence summary of the key finding",
+    "category": "Politics|Technology|Health|Crime|Military|Sports|Entertainment|Other"
 }}
 """
         
@@ -291,6 +304,10 @@ Respond in this exact JSON format:
             content_data['heading'] = content_data.get('heading', '')[:config.MAX_HEADING_LENGTH]
             content_data['body'] = content_data.get('body', '')[:config.MAX_BODY_LENGTH]
             
+            # Ensure category is present, fallback if missing
+            if 'category' not in content_data or not content_data['category']:
+                content_data['category'] = self._classify_category_fallback(claim_text)
+            
             return {
                 'success': True,
                 'content': content_data,
@@ -305,7 +322,8 @@ Respond in this exact JSON format:
                 'fallback_content': {
                     'heading': self._generate_fallback_heading(verdict, claim_text),
                     'body': self._generate_fallback_body(reasoning, message),
-                    'summary': message
+                    'summary': message,
+                    'category': self._classify_category_fallback(claim_text)
                 },
                 'confidence_percentage': confidence_percentage
             }
@@ -367,6 +385,17 @@ For each claim, create a structured debunk post with:
 1. Clear, engaging heading (max {config.MAX_HEADING_LENGTH} characters)
 2. Detailed but accessible body explanation (max {config.MAX_BODY_LENGTH} characters)  
 3. Concise summary
+4. Category classification into ONE of these categories:
+
+CATEGORIES:
+- Politics: election, government, minister, parliament, political, party, bjp, congress, pm, president
+- Technology: ai, tech, app, digital, cyber, internet, computer, software, online, website
+- Health: health, medical, doctor, hospital, covid, vaccine, medicine, disease
+- Crime: police, arrest, crime, murder, theft, fraud, scam, illegal, court, jail
+- Military: army, military, soldier, defense, war, navy, air force, border, weapon
+- Sports: cricket, football, sport, match, player, team, olympics, ipl, game
+- Entertainment: movie, film, actor, actress, bollywood, celebrity, music, video
+- Other: if none of the above categories fit
 
 Guidelines:
 - Use clear, non-technical language
@@ -374,6 +403,7 @@ Guidelines:
 - Include specific facts and evidence
 - Acknowledge uncertainty when appropriate
 - Focus on educating rather than just contradicting
+- Choose the most relevant category based on claim content and keywords
 
 Respond with a JSON array containing exactly {len(verification_results)} objects in the same order as the claims above:
 
@@ -382,12 +412,14 @@ Example format:
     {{
         "heading": "Clear, engaging headline about the fact-check result",
         "body": "Detailed explanation of what the evidence shows...",
-        "summary": "Concise one-sentence summary of the key finding"
+        "summary": "Concise one-sentence summary of the key finding",
+        "category": "Politics"
     }},
     {{
         "heading": "Another clear headline...",
         "body": "Another detailed explanation...", 
-        "summary": "Another summary"
+        "summary": "Another summary",
+        "category": "Technology"
     }}
 ]
 """
@@ -436,12 +468,17 @@ Example format:
             # Validate and truncate each content
             for i, content_data in enumerate(batch_contents):
                 verification_result = verification_results[i]
+                claim_text = verification_result.get('claim_text', 'Unknown claim')
                 confidence = verification_result.get('confidence', 'medium')
                 confidence_percentage = self._convert_confidence_to_percentage(confidence)
                 
                 content_data['heading'] = content_data.get('heading', '')[:config.MAX_HEADING_LENGTH]
                 content_data['body'] = content_data.get('body', '')[:config.MAX_BODY_LENGTH]
                 content_data['confidence_percentage'] = confidence_percentage
+                
+                # Ensure category is present, fallback if missing
+                if 'category' not in content_data or not content_data['category']:
+                    content_data['category'] = self._classify_category_fallback(claim_text)
             
             return {
                 'success': True,
@@ -466,7 +503,8 @@ Example format:
                     'heading': self._generate_fallback_heading(verdict, claim_text),
                     'body': self._generate_fallback_body(reasoning, message),
                     'summary': message,
-                    'confidence_percentage': self._convert_confidence_to_percentage(confidence)
+                    'confidence_percentage': self._convert_confidence_to_percentage(confidence),
+                    'category': self._classify_category_fallback(claim_text)
                 })
             
             return {
@@ -490,7 +528,8 @@ Example format:
                     'heading': self._generate_fallback_heading(verdict, claim_text),
                     'body': self._generate_fallback_body(reasoning, message),
                     'summary': message,
-                    'confidence_percentage': self._convert_confidence_to_percentage(confidence)
+                    'confidence_percentage': self._convert_confidence_to_percentage(confidence),
+                    'category': self._classify_category_fallback(claim_text)
                 })
             
             return {
@@ -540,6 +579,44 @@ Example format:
         body += f"Detailed reasoning: {reasoning}"
         
         return body[:config.MAX_BODY_LENGTH]
+    
+    def _classify_category_fallback(self, claim_text: str) -> str:
+        """
+        Fallback method to classify claim category based on keywords
+        Used when LLM doesn't provide category
+        """
+        claim_lower = claim_text.lower()
+        
+        # Define category keywords
+        categories = {
+            'Politics': ['election', 'government', 'minister', 'parliament', 'political', 'party', 
+                        'bjp', 'congress', 'pm', 'president', 'modi', 'rahul', 'vote', 'election commission'],
+            'Technology': ['ai', 'tech', 'app', 'digital', 'cyber', 'internet', 'computer', 
+                          'software', 'online', 'website', 'algorithm', 'data', 'privacy', 'hack'],
+            'Health': ['health', 'medical', 'doctor', 'hospital', 'covid', 'vaccine', 'medicine', 
+                      'disease', 'virus', 'treatment', 'patient', 'symptoms', 'cure'],
+            'Crime': ['police', 'arrest', 'crime', 'murder', 'theft', 'fraud', 'scam', 'illegal', 
+                     'court', 'jail', 'criminal', 'investigation', 'case', 'fir'],
+            'Military': ['army', 'military', 'soldier', 'defense', 'war', 'navy', 'air force', 
+                        'border', 'weapon', 'attack', 'security', 'operation', 'combat'],
+            'Sports': ['cricket', 'football', 'sport', 'match', 'player', 'team', 'olympics', 
+                      'ipl', 'game', 'tournament', 'championship', 'score', 'win'],
+            'Entertainment': ['movie', 'film', 'actor', 'actress', 'bollywood', 'celebrity', 
+                            'music', 'video', 'singer', 'director', 'trailer', 'release', 'box office']
+        }
+        
+        # Count keyword matches for each category
+        category_scores = {}
+        for category, keywords in categories.items():
+            score = sum(1 for keyword in keywords if keyword in claim_lower)
+            if score > 0:
+                category_scores[category] = score
+        
+        # Return category with highest score, or 'Other' if no matches
+        if category_scores:
+            return max(category_scores, key=category_scores.get)
+        else:
+            return 'Other'
 
 
 class SourceAnalyzerTool:
@@ -837,7 +914,8 @@ class ExplanationAgent:
                     verification_result.get('reasoning', 'No reasoning'),
                     verification_result.get('message', 'No message')
                 )),
-                "summary": content_data.get('summary', verification_result.get('message', 'No summary'))
+                "summary": content_data.get('summary', verification_result.get('message', 'No summary')),
+                "category": content_data.get('category', 'Other')
             },
             "sources": {
                 "misinformation_sources": source_data.get('misinformation_sources', []),
@@ -1015,7 +1093,8 @@ class ExplanationAgent:
                                     verification_result.get('reasoning', 'No reasoning'),
                                     verification_result.get('message', 'No message')
                                 )),
-                                "summary": content_data.get('summary', verification_result.get('message', 'No summary'))
+                                "summary": content_data.get('summary', verification_result.get('message', 'No summary')),
+                                "category": content_data.get('category', 'Other')
                             },
                             "sources": {
                                 "misinformation_sources": source_data.get('misinformation_sources', []),
@@ -1060,7 +1139,8 @@ class ExplanationAgent:
                                     verification_result.get('reasoning', 'No reasoning'),
                                     verification_result.get('message', 'No message')
                                 ),
-                                "summary": verification_result.get('message', 'Batch processing failed')
+                                "summary": verification_result.get('message', 'Batch processing failed'),
+                                "category": self._classify_category_fallback(verification_result.get('claim_text', ''))
                             },
                             "sources": {
                                 "misinformation_sources": [],

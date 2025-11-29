@@ -1,0 +1,109 @@
+{
+  "post_id": "aegis_post_20251129_041539_766781_9a1c7492",
+  "verification_date": "2025-11-29T04:15:39.766781",
+  "claim": {
+    "text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the deaths of a dozen Syrians and injuries to Israeli soldiers.",
+    "verdict": "false",
+    "verified": false
+  },
+  "post_content": {
+    "heading": "Details of Alleged Israeli Incursion in Beit Jinn, Syria Unconfirmed",
+    "body": "The claim describes an Israeli army incursion into Beit Jinn, Syria, alleging resistance from local residents, resulting in the deaths of a dozen Syrians and injuries to Israeli soldiers. While there have been reports of Israeli military operations and raids in Syria, including instances leading to Syrian casualties, the specific details of this claim lack full corroboration. Available news reports confirm Israeli military actions in southern Syria resulting in fatalities, with one source mentioning 'at least 13' killed in a raid. However, these reports do not specifically name 'Beit Jinn' as the location, nor do they detail 'resistance from local residents' or 'injuries to Israeli soldiers' during such an incursion. The discrepancies in specific location, the nature of resistance, and casualties on the Israeli side mean that the claim as a whole is not fully supported by the available verified information.",
+    "summary": "Specific details about an Israeli incursion in Beit Jinn, Syria, including local resistance and injuries to Israeli soldiers, are unconfirmed despite reports of Israeli military action in the region."
+  },
+  "sources": {
+    "misinformation_sources": [
+      {
+        "title": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the deaths of a dozen Syrians and injuries to Israeli soldiers.",
+        "url": "https://twitter.com/QudsNen/status/1994499416011706606",
+        "domain": "twitter.com"
+      }
+    ],
+    "confirmation_sources": [
+      {
+        "title": "LIVE: Israel bombs Syria, Gaza after extrajudicial killings in West ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4",
+        "domain": "www.aljazeera.com"
+      },
+      {
+        "title": "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+        "url": "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+        "domain": "www.cbc.ca"
+      },
+      {
+        "title": "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+        "domain": "www.aljazeera.com"
+      },
+      {
+        "title": "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+        "url": "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+        "domain": "www.aljazeera.com"
+      },
+      {
+        "title": "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ...",
+        "url": "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups",
+        "domain": "www.aljazeera.com"
+      }
+    ],
+    "total_sources": 6
+  },
+  "confidence_percentage": 60.0,
+  "metadata": {
+    "agent_version": "2.0",
+    "processing_method": "google_agents_batch_sdk",
+    "batch_position": 6,
+    "batch_size": 6,
+    "total_batch_number": 1,
+    "original_verification": {
+      "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the deaths of a dozen Syrians and injuries to Israeli soldiers.",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "The provided sources confirm that an Israeli army incursion and airstrikes took place in Beit Jinn, Syria, leading to the deaths of at least 13 Syrians and 'slight resistance' from local residents. However, none of the sources mention any injuries to Israeli soldiers. Since a specific part of the claim (injuries to Israeli soldiers) is not supported, the overall claim is false.",
+        "confidence": "high",
+        "reasoning": "1. The claim states an Israeli army incursion into Beit Jinn, Syria, which is confirmed by Sources 1, 2, and 3. 2. The claim states resistance from local residents, which is confirmed by Source 2 ('met by 'slight resistance''). 3. The claim states the deaths of a dozen Syrians (12). Sources 1 and 2 state 'At least 13 Syrians have been killed,' exceeding 'a dozen.' 4. The claim states 'injuries to Israeli soldiers.' However, none of the provided sources (1, 2, or 3) mention any injuries to Israeli soldiers during this incident. 5. As one specific component of the claim (injuries to Israeli soldiers) is not supported by the evidence, the overall claim, as stated, is false.",
+        "sources": {
+          "links": [
+            "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4",
+            "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+            "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+            "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+            "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups"
+          ],
+          "titles": [
+            "LIVE: Israel bombs Syria, Gaza after extrajudicial killings in West ...",
+            "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+            "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+            "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+            "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "An Israeli army incursion into Beit Jinn, Syria, led to resistance from local residents, resulting in the deaths of a dozen Syrians and injuries to Israeli soldiers.",
+        "verification_date": "2025-11-29T04:14:38.635247"
+      },
+      "sources": {
+        "links": [
+          "https://www.aljazeera.com/news/liveblog/2025/11/28/live-israel-4",
+          "https://www.cbc.ca/news/world/southern-syria-israel-9.6996189",
+          "https://www.aljazeera.com/news/liveblog/2025/3/8/syria-live-news-fighting-between-government-forces-and-al-assad-loyalists",
+          "https://www.aljazeera.com/news/liveblog/2025/8/29/live-israel-2",
+          "https://www.aljazeera.com/features/2024/12/15/why-is-the-pa-raiding-jenin-camp-fighting-resistance-groups"
+        ],
+        "titles": [
+          "LIVE: Israel bombs Syria, Gaza after extrajudicial killings in West ...",
+          "Israeli forces kill at least 13 in southern Syria raid, officials and ...",
+          "Syria updates: Gov't forces battle al-Assad loyalists; hundreds killed ...",
+          "Updates: Israel presses Gaza City seizure, UN warns 1mn could be ...",
+          "Why is the PA raiding Jenin camp, fighting the Jenin Brigades ..."
+        ],
+        "count": 10
+      },
+      "source": "https://twitter.com/QudsNen/status/1994499416011706606",
+      "content_summary": "Early Friday morning, an armed unit of the Israeli army conducted an incursion into Beit Jinn, Syria. Local residents resisted the incursion, which reportedly resulted in the deaths of a dozen Syrians and injuries to Israeli soldiers.",
+      "verified": false,
+      "verdict": "false"
+    }
+  }
+}

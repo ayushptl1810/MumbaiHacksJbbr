@@ -33,8 +33,8 @@ TARGET_SUBREDDITS = [
 # Predefined list of Threads profiles to scan (without @ symbol)
 TARGET_THREADS_PROFILES = [
     # Add Threads usernames here, e.g.:
-    #'globaltimes_news',
-    #'trumplovernews',
+    'globaltimes_news',
+    'trumplovernews',
 ]
 
 # Predefined list of Telegram channels to scan (with or without @ symbol)
@@ -48,10 +48,10 @@ TARGET_TELEGRAM_CHANNELS = [
 TARGET_TWITTER_ACCOUNTS = [
     # Add Twitter usernames here (without @), e.g.:
     #'elonmusk',
-    'QudsNen',
-    'NupurSharmaBJP',
+   # 'QudsNen',
+    #'NupurSharmaBJP',
     #'IndianGems_',
-    'WeDravidians' 
+    #'WeDravidians' 
     #'va_shiva',
     #'Gurudev',
     #'PypAyurved'
@@ -65,7 +65,7 @@ TARGET_TWITTER_ACCOUNTS = [
 TWITTER_AUTO_DISCOVER_KEYWORDS = False # If True, automatically fetch trending topics from Twitter
 TARGET_TWITTER_KEYWORDS = [
     # Manually add keywords/hashtags to search (only used if AUTO_DISCOVER is False), e.g.:
-    'PranitMore',
+    #'PranitMore',
     # '#election2024',
 ]
 
@@ -272,7 +272,12 @@ Requirements:
                     else:
                         # Reddit post link
                         if post.get('permalink'):
-                            post_link = f"https://reddit.com{post['permalink']}"
+                            permalink = post['permalink']
+                            # Check if permalink already has full URL
+                            if permalink.startswith('http'):
+                                post_link = permalink
+                            else:
+                                post_link = f"https://reddit.com{permalink}"
                         elif post.get('url') and 'reddit.com' in post.get('url', ''):
                             post_link = post['url']
                         else:
@@ -322,7 +327,11 @@ Requirements:
                         post_link = post.get('url', post.get('permalink', 'https://twitter.com'))
                     else:
                         if post.get('permalink'):
-                            post_link = f"https://reddit.com{post['permalink']}"
+                            permalink = post['permalink']
+                            if permalink.startswith('http'):
+                                post_link = permalink
+                            else:
+                                post_link = f"https://reddit.com{permalink}"
                         elif post.get('url') and 'reddit.com' in post.get('url', ''):
                             post_link = post['url']
                         else:
@@ -367,7 +376,11 @@ Requirements:
                         post_link = f"https://www.threads.net/@{username}"
                 else:
                     if post.get('permalink'):
-                        post_link = f"https://reddit.com{post['permalink']}"
+                        permalink = post['permalink']
+                        if permalink.startswith('http'):
+                            post_link = permalink
+                        else:
+                            post_link = f"https://reddit.com{permalink}"
                     elif post.get('url') and 'reddit.com' in post.get('url', ''):
                         post_link = post['url']
                     else:

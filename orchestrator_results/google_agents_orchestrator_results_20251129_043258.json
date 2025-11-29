@@ -1,0 +1,1623 @@
+{
+  "success": true,
+  "message": "Successfully processed 4 posts with batch fact-checking and explanation generation",
+  "workflow_results": [
+    {
+      "agent_role": "Trend Scanning Coordinator",
+      "result": {
+        "timestamp": "2025-11-29T04:32:09.183944",
+        "total_posts": 4,
+        "posts_by_platform": {
+          "reddit": 3,
+          "threads": 1
+        },
+        "platforms": [
+          "reddit",
+          "threads"
+        ],
+        "posts": [
+          {
+            "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+            "summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility. Between March 17-22, $851,344 was spent, and agents logged 4,737 overtime hours from January to July reviewing evidence, including the 2019 prison death investigation, search warrant execution photos, street surveillance, and aerial footage. Internal reports indicate that \"Trump Mentions\" were flagged during this review process.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+          },
+          {
+            "claim": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+            "summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening phase of a failed state\" and \"the playbook of authoritarianism.\" It further condemns the argument that labeling authoritarian behavior is an incitement to violence, likening it to gaslighting.",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/"
+          },
+          {
+            "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+            "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 cases identified. In response, the South Carolina Department of Public Health opened pop-up clinics in November offering free measles vaccines to both adults and children. Despite these efforts, vaccine uptake has been significantly low, with only one person showing up at a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell attributes the slow progress and poor uptake to the \"chilling effect of vaccine misinformation.\"",
+            "platform": "reddit",
+            "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+          },
+          {
+            "claim": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+            "summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,\" and suggests Melania's style would embody \"Christmas the way it’s supposed to be.\"",
+            "platform": "threads",
+            "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+          }
+        ]
+      }
+    },
+    {
+      "agent_role": "Claim Verification Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+        "verified_claims": [
+          {
+            "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+            "content_summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility.",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "verification": {
+              "verified": false,
+              "verdict": "uncertain",
+              "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+              "confidence": "medium",
+              "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+              "sources": {
+                "links": [
+                  "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                  "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                  "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                  "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                ],
+                "titles": [
+                  "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                  "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                  "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                  "Intel Executive's Residences Raided in Probe Over Secrets"
+                ],
+                "count": 10
+              },
+              "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+              "verification_date": "2025-11-29T04:32:17.095160"
+            },
+            "claim_metadata": {
+              "post_index": 0,
+              "extracted_claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release."
+            },
+            "verification_timestamp": "2025-11-29T04:32:42.204155"
+          },
+          {
+            "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+            "content_summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening",
+            "source": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+              "confidence": "high",
+              "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+              "sources": {
+                "links": [
+                  "https://www.npr.org/podcasts/452538775/on-the-media",
+                  "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                  "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                  "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                  "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                ],
+                "titles": [
+                  "On the Media : NPR",
+                  "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                  "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                  "Evangelical education nearly ruined me. Now the Christian right is ...",
+                  "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                ],
+                "count": 10
+              },
+              "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+              "verification_date": "2025-11-29T04:32:17.095160"
+            },
+            "claim_metadata": {
+              "post_index": 1,
+              "extracted_claim": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions."
+            },
+            "verification_timestamp": "2025-11-29T04:32:42.204155"
+          },
+          {
+            "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+            "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 cases identified. In response, the South Carolina Department of Public Health opened pop-up clinics in November offering free measles vaccines to both adults and children. Despite these efforts",
+            "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+            "verification": {
+              "verified": true,
+              "verdict": "true",
+              "message": "Multiple sources confirm a measles outbreak in Spartanburg County, South Carolina, and implicitly link it to low vaccination rates, which are frequently associated with vaccine misinformation.",
+              "confidence": "medium",
+              "reasoning": "Sources 1, 2, and 3 all explicitly confirm a measles outbreak in Spartanburg County, South Carolina, affecting schoolchildren. Source 3 further reinforces this by mentioning the outbreak in Spartanburg County in the context of 'Routine childhood vaccination rates.' While the sources do not explicitly use the phrases 'vaccine misinformation' or 'very low public uptake of free measles vaccines,' the mention of 'routine childhood vaccination rates' in conjunction with an outbreak strongly implies that low vaccination coverage is a contributing factor. Low vaccination rates are commonly linked to vaccine hesitancy and misinformation in public health contexts. The core elements of the claim (outbreak in Spartanburg, linkage to vaccination status) are supported.",
+              "sources": {
+                "links": [
+                  "https://www.bbc.com/news/articles/cwy747kdzdzo",
+                  "https://www.bbc.co.uk/news/articles/cwy747kdzdzo",
+                  "https://www.npr.org/2025/10/12/nx-s1-5572507/us-measles-outbreaks-texas-south-carolina-utah-minnesota"
+                ],
+                "titles": [
+                  "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+                  "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+                  "U.S. measles cases continue to climb, with outbreaks across the ..."
+                ],
+                "count": 3
+              },
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+              "verification_date": "2025-11-29T04:32:17.095160"
+            },
+            "claim_metadata": {
+              "post_index": 2,
+              "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines."
+            },
+            "verification_timestamp": "2025-11-29T04:32:42.204155"
+          },
+          {
+            "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+            "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+            "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "verification": {
+              "verified": false,
+              "verdict": "false",
+              "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+              "confidence": "high",
+              "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+              "sources": {
+                "links": [
+                  "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                  "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                  "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                  "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                ],
+                "titles": [
+                  "Lawmakers Reach Deal on Aid Package",
+                  "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                  "0724_Cover [Print]_19510518.indd",
+                  "Trump Goes All In for Crypto After His $Trump Epiphany",
+                  "Defiant President Pushes On As Allies Discuss Replacement"
+                ],
+                "count": 10
+              },
+              "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+              "verification_date": "2025-11-29T04:32:17.095160"
+            },
+            "claim_metadata": {
+              "post_index": 3,
+              "extracted_claim": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'"
+            },
+            "verification_timestamp": "2025-11-29T04:32:42.204155"
+          }
+        ],
+        "summary": {
+          "total_claims": 4,
+          "successfully_verified": 1,
+          "verification_errors": 0,
+          "batch_size_used": 15,
+          "total_batches": 1
+        },
+        "timestamp": "2025-11-29T04:32:42.204155",
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 4,
+          "batch_size": 4,
+          "processing_method": "batch_verification"
+        }
+      }
+    },
+    {
+      "agent_role": "Explanation Generation Coordinator",
+      "result": {
+        "success": true,
+        "message": "Successfully created 3 debunk posts using batch processing",
+        "debunk_posts": [
+          {
+            "post_id": "aegis_post_20251129_043258_730002_48a3a59e",
+            "verification_date": "2025-11-29T04:32:58.730002",
+            "claim": {
+              "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+              "verdict": "uncertain",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+              "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim regarding FBI overtime. The sources provided in support of this claim, including a New York Times article and a PBS report, do not substantiate the alleged $1 million FBI expenditure for redactions. Furthermore, one of the cited articles is dated in the future (2025), which raises questions about the factual basis of the claim in the present. Without verifiable information from official channels or confirmed journalistic reports, the assertion about this specific sum and its purpose remains unsubstantiated.",
+              "summary": "There is no verifiable evidence or official confirmation that the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including mentions of Donald Trump."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                  "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                  "url": "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                  "domain": "www.pbs.org"
+                },
+                {
+                  "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                  "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                  "url": "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+                  "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D",
+                  "domain": "customercenter.wsj.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 1,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "uncertain",
+                  "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+                  "confidence": "medium",
+                  "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                      "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                      "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                      "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                      "Intel Executive's Residences Raided in Probe Over Secrets"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                  "verification_date": "2025-11-29T04:32:17.095160"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                    "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                    "Intel Executive's Residences Raided in Probe Over Secrets"
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                "content_summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility.",
+                "verified": false,
+                "verdict": "uncertain"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730002_48a3a59e.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_043258_730578_1efbff25",
+            "verification_date": "2025-11-29T04:32:58.730578",
+            "claim": {
+              "text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Author's Claim on Skeptic Community & Authoritarianism Lacks Specificity",
+              "body": "The claim states that an author asserts authoritarianism is present and that the 'skeptic community' is failing to address it by avoiding political discussions. While prominent figures, such as Curtis Yarvin (mentioned in a New York Times source from 2025), do indeed discuss the state of democracy and present arguments related to authoritarianism, the broader assertion about the 'skeptic community' uniformly failing to engage with political discussions lacks specific, verifiable support. The skeptic community is diverse, with various individuals and groups actively engaging in critical analysis across a wide range of topics, including political issues. It is an overgeneralization to claim that they are collectively avoiding such discussions to the point of 'failing to address' present authoritarianism. The given sources discuss related themes but do not specifically corroborate the precise assertion about the skeptic community's alleged failure.",
+              "summary": "While some authors discuss authoritarianism, the claim that the entire 'skeptic community' is broadly failing to address it by avoiding political discussions is an unsubstantiated generalization."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                  "url": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+                  "domain": "reddit.com"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "On the Media : NPR",
+                  "url": "https://www.npr.org/podcasts/452538775/on-the-media",
+                  "domain": "www.npr.org"
+                },
+                {
+                  "title": "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                  "url": "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                  "url": "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                  "domain": "www.nytimes.com"
+                },
+                {
+                  "title": "Evangelical education nearly ruined me. Now the Christian right is ...",
+                  "url": "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                  "domain": "www.theguardian.com"
+                },
+                {
+                  "title": "How Denmark's Social Democrats Are Succeeding With Stricter ...",
+                  "url": "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html",
+                  "domain": "www.nytimes.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 2,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+                  "confidence": "high",
+                  "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/podcasts/452538775/on-the-media",
+                      "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                      "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                      "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                      "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                    ],
+                    "titles": [
+                      "On the Media : NPR",
+                      "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                      "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                      "Evangelical education nearly ruined me. Now the Christian right is ...",
+                      "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                  "verification_date": "2025-11-29T04:32:17.095160"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/podcasts/452538775/on-the-media",
+                    "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                    "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                    "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                    "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                  ],
+                  "titles": [
+                    "On the Media : NPR",
+                    "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                    "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                    "Evangelical education nearly ruined me. Now the Christian right is ...",
+                    "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                  ],
+                  "count": 10
+                },
+                "source": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+                "content_summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_1efbff25.json"
+          },
+          {
+            "post_id": "aegis_post_20251129_043258_730578_6c2df5e5",
+            "verification_date": "2025-11-29T04:32:58.730578",
+            "claim": {
+              "text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+              "verdict": "false",
+              "verified": false
+            },
+            "post_content": {
+              "heading": "Melania Trump Christmas Decor Claim: Opinion, Not Fact",
+              "body": "A post suggests that a future Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting it with current 'drag-queen-fairy-land theatrics.' This claim is fundamentally an opinion and a subjective value judgment rather than a verifiable statement of fact. Melania Trump is not currently in a position to design White House Christmas decor, making any assertion about her future stylistic choices purely speculative. Furthermore, the characterization of current White House decor as 'drag-queen-fairy-land theatrics' is a highly critical and subjective opinion, not an objective description. The sources provided, both Wall Street Journal links to general newspaper issues from 2020 and 2025, are entirely unrelated to White House Christmas decorations, Melania Trump, or any aspect of this claim, further indicating its lack of factual basis.",
+              "summary": "The claim about Melania Trump's potential White House Christmas decor and its contrast with current styles is a subjective opinion, not a verifiable fact, and is unsupported by the provided sources."
+            },
+            "sources": {
+              "misinformation_sources": [
+                {
+                  "title": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                  "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "domain": "www.threads.net"
+                }
+              ],
+              "confirmation_sources": [
+                {
+                  "title": "Lawmakers Reach Deal on Aid Package",
+                  "url": "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                  "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "0724_Cover [Print]_19510518.indd",
+                  "url": "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                  "domain": "cdn.theatlantic.com"
+                },
+                {
+                  "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+                  "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                  "domain": "www.wsj.com"
+                },
+                {
+                  "title": "Defiant President Pushes On As Allies Discuss Replacement",
+                  "url": "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D",
+                  "domain": "www.wsj.com"
+                }
+              ],
+              "total_sources": 6
+            },
+            "confidence_percentage": 60.0,
+            "metadata": {
+              "agent_version": "2.0",
+              "processing_method": "google_agents_batch_sdk",
+              "batch_position": 3,
+              "batch_size": 3,
+              "total_batch_number": 1,
+              "original_verification": {
+                "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                "verification": {
+                  "verified": false,
+                  "verdict": "false",
+                  "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+                  "confidence": "high",
+                  "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                      "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                      "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                    ],
+                    "titles": [
+                      "Lawmakers Reach Deal on Aid Package",
+                      "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                      "0724_Cover [Print]_19510518.indd",
+                      "Trump Goes All In for Crypto After His $Trump Epiphany",
+                      "Defiant President Pushes On As Allies Discuss Replacement"
+                    ],
+                    "count": 10
+                  },
+                  "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                  "verification_date": "2025-11-29T04:32:17.095160"
+                },
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                    "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                    "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                  ],
+                  "titles": [
+                    "Lawmakers Reach Deal on Aid Package",
+                    "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "0724_Cover [Print]_19510518.indd",
+                    "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "Defiant President Pushes On As Allies Discuss Replacement"
+                  ],
+                  "count": 10
+                },
+                "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+                "verified": false,
+                "verdict": "false"
+              }
+            },
+            "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_6c2df5e5.json"
+          }
+        ],
+        "batch_statistics": {
+          "total_posts": 3,
+          "batch_size_used": 10,
+          "total_batches": 1,
+          "successful_posts": 3,
+          "error_posts": 0
+        },
+        "batch_processing": {
+          "enabled": true,
+          "total_claims": 3,
+          "batch_size": 3,
+          "processing_method": "batch_explanation_generation"
+        }
+      }
+    }
+  ],
+  "final_output": [
+    {
+      "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+      "summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility. Between March 17-22, $851,344 was spent, and agents logged 4,737 overtime hours from January to July reviewing evidence, including the 2019 prison death investigation, search warrant execution photos, street surveillance, and aerial footage. Internal reports indicate that \"Trump Mentions\" were flagged during this review process.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+      "verification": {
+        "verified": false,
+        "verdict": "uncertain",
+        "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+        "confidence": "medium",
+        "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+        "sources": {
+          "links": [
+            "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+            "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+            "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+            "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+          ],
+          "titles": [
+            "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "Speaker Johnson says he misspoke about Trump being an FBI ...",
+            "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+            "Fact-Checking Trump's Epstein Defenses - The New York Times",
+            "Intel Executive's Residences Raided in Probe Over Secrets"
+          ],
+          "count": 10
+        },
+        "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+        "verification_date": "2025-11-29T04:32:17.095160"
+      }
+    },
+    {
+      "claim": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+      "summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening phase of a failed state\" and \"the playbook of authoritarianism.\" It further condemns the argument that labeling authoritarian behavior is an incitement to violence, likening it to gaslighting.",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+        "confidence": "high",
+        "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+        "sources": {
+          "links": [
+            "https://www.npr.org/podcasts/452538775/on-the-media",
+            "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+            "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+            "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+            "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+          ],
+          "titles": [
+            "On the Media : NPR",
+            "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+            "Opinion | Peter Thiel and the Antichrist - The New York Times",
+            "Evangelical education nearly ruined me. Now the Christian right is ...",
+            "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+          ],
+          "count": 10
+        },
+        "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+        "verification_date": "2025-11-29T04:32:17.095160"
+      }
+    },
+    {
+      "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+      "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 cases identified. In response, the South Carolina Department of Public Health opened pop-up clinics in November offering free measles vaccines to both adults and children. Despite these efforts, vaccine uptake has been significantly low, with only one person showing up at a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell attributes the slow progress and poor uptake to the \"chilling effect of vaccine misinformation.\"",
+      "platform": "reddit",
+      "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+      "verification": {
+        "verified": true,
+        "verdict": "true",
+        "message": "Multiple sources confirm a measles outbreak in Spartanburg County, South Carolina, and implicitly link it to low vaccination rates, which are frequently associated with vaccine misinformation.",
+        "confidence": "medium",
+        "reasoning": "Sources 1, 2, and 3 all explicitly confirm a measles outbreak in Spartanburg County, South Carolina, affecting schoolchildren. Source 3 further reinforces this by mentioning the outbreak in Spartanburg County in the context of 'Routine childhood vaccination rates.' While the sources do not explicitly use the phrases 'vaccine misinformation' or 'very low public uptake of free measles vaccines,' the mention of 'routine childhood vaccination rates' in conjunction with an outbreak strongly implies that low vaccination coverage is a contributing factor. Low vaccination rates are commonly linked to vaccine hesitancy and misinformation in public health contexts. The core elements of the claim (outbreak in Spartanburg, linkage to vaccination status) are supported.",
+        "sources": {
+          "links": [
+            "https://www.bbc.com/news/articles/cwy747kdzdzo",
+            "https://www.bbc.co.uk/news/articles/cwy747kdzdzo",
+            "https://www.npr.org/2025/10/12/nx-s1-5572507/us-measles-outbreaks-texas-south-carolina-utah-minnesota"
+          ],
+          "titles": [
+            "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+            "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+            "U.S. measles cases continue to climb, with outbreaks across the ..."
+          ],
+          "count": 3
+        },
+        "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+        "verification_date": "2025-11-29T04:32:17.095160"
+      }
+    },
+    {
+      "claim": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+      "summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,\" and suggests Melania's style would embody \"Christmas the way it’s supposed to be.\"",
+      "platform": "threads",
+      "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+      "verification": {
+        "verified": false,
+        "verdict": "false",
+        "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+        "confidence": "high",
+        "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+        "sources": {
+          "links": [
+            "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+            "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+            "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+            "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+            "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+          ],
+          "titles": [
+            "Lawmakers Reach Deal on Aid Package",
+            "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "0724_Cover [Print]_19510518.indd",
+            "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "Defiant President Pushes On As Allies Discuss Replacement"
+          ],
+          "count": 10
+        },
+        "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+        "verification_date": "2025-11-29T04:32:17.095160"
+      }
+    }
+  ],
+  "debunk_posts": [
+    {
+      "post_id": "aegis_post_20251129_043258_730002_48a3a59e",
+      "verification_date": "2025-11-29T04:32:58.730002",
+      "claim": {
+        "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+        "verdict": "uncertain",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+        "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim regarding FBI overtime. The sources provided in support of this claim, including a New York Times article and a PBS report, do not substantiate the alleged $1 million FBI expenditure for redactions. Furthermore, one of the cited articles is dated in the future (2025), which raises questions about the factual basis of the claim in the present. Without verifiable information from official channels or confirmed journalistic reports, the assertion about this specific sum and its purpose remains unsubstantiated.",
+        "summary": "There is no verifiable evidence or official confirmation that the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including mentions of Donald Trump."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+            "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Speaker Johnson says he misspoke about Trump being an FBI ...",
+            "url": "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+            "domain": "www.pbs.org"
+          },
+          {
+            "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+            "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Fact-Checking Trump's Epstein Defenses - The New York Times",
+            "url": "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+            "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D",
+            "domain": "customercenter.wsj.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 1,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+          "verification": {
+            "verified": false,
+            "verdict": "uncertain",
+            "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+            "confidence": "medium",
+            "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+            "sources": {
+              "links": [
+                "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+              ],
+              "titles": [
+                "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                "Intel Executive's Residences Raided in Probe Over Secrets"
+              ],
+              "count": 10
+            },
+            "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+            "verification_date": "2025-11-29T04:32:17.095160"
+          },
+          "sources": {
+            "links": [
+              "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+              "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+              "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+              "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+              "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+            ],
+            "titles": [
+              "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+              "Speaker Johnson says he misspoke about Trump being an FBI ...",
+              "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+              "Fact-Checking Trump's Epstein Defenses - The New York Times",
+              "Intel Executive's Residences Raided in Probe Over Secrets"
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+          "content_summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility.",
+          "verified": false,
+          "verdict": "uncertain"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730002_48a3a59e.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_043258_730578_1efbff25",
+      "verification_date": "2025-11-29T04:32:58.730578",
+      "claim": {
+        "text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Author's Claim on Skeptic Community & Authoritarianism Lacks Specificity",
+        "body": "The claim states that an author asserts authoritarianism is present and that the 'skeptic community' is failing to address it by avoiding political discussions. While prominent figures, such as Curtis Yarvin (mentioned in a New York Times source from 2025), do indeed discuss the state of democracy and present arguments related to authoritarianism, the broader assertion about the 'skeptic community' uniformly failing to engage with political discussions lacks specific, verifiable support. The skeptic community is diverse, with various individuals and groups actively engaging in critical analysis across a wide range of topics, including political issues. It is an overgeneralization to claim that they are collectively avoiding such discussions to the point of 'failing to address' present authoritarianism. The given sources discuss related themes but do not specifically corroborate the precise assertion about the skeptic community's alleged failure.",
+        "summary": "While some authors discuss authoritarianism, the claim that the entire 'skeptic community' is broadly failing to address it by avoiding political discussions is an unsubstantiated generalization."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+            "url": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+            "domain": "reddit.com"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "On the Media : NPR",
+            "url": "https://www.npr.org/podcasts/452538775/on-the-media",
+            "domain": "www.npr.org"
+          },
+          {
+            "title": "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+            "url": "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Opinion | Peter Thiel and the Antichrist - The New York Times",
+            "url": "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+            "domain": "www.nytimes.com"
+          },
+          {
+            "title": "Evangelical education nearly ruined me. Now the Christian right is ...",
+            "url": "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+            "domain": "www.theguardian.com"
+          },
+          {
+            "title": "How Denmark's Social Democrats Are Succeeding With Stricter ...",
+            "url": "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html",
+            "domain": "www.nytimes.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 2,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+            "confidence": "high",
+            "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+            "sources": {
+              "links": [
+                "https://www.npr.org/podcasts/452538775/on-the-media",
+                "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+              ],
+              "titles": [
+                "On the Media : NPR",
+                "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                "Evangelical education nearly ruined me. Now the Christian right is ...",
+                "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+              ],
+              "count": 10
+            },
+            "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+            "verification_date": "2025-11-29T04:32:17.095160"
+          },
+          "sources": {
+            "links": [
+              "https://www.npr.org/podcasts/452538775/on-the-media",
+              "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+              "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+              "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+              "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+            ],
+            "titles": [
+              "On the Media : NPR",
+              "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+              "Opinion | Peter Thiel and the Antichrist - The New York Times",
+              "Evangelical education nearly ruined me. Now the Christian right is ...",
+              "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+            ],
+            "count": 10
+          },
+          "source": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+          "content_summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_1efbff25.json"
+    },
+    {
+      "post_id": "aegis_post_20251129_043258_730578_6c2df5e5",
+      "verification_date": "2025-11-29T04:32:58.730578",
+      "claim": {
+        "text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+        "verdict": "false",
+        "verified": false
+      },
+      "post_content": {
+        "heading": "Melania Trump Christmas Decor Claim: Opinion, Not Fact",
+        "body": "A post suggests that a future Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting it with current 'drag-queen-fairy-land theatrics.' This claim is fundamentally an opinion and a subjective value judgment rather than a verifiable statement of fact. Melania Trump is not currently in a position to design White House Christmas decor, making any assertion about her future stylistic choices purely speculative. Furthermore, the characterization of current White House decor as 'drag-queen-fairy-land theatrics' is a highly critical and subjective opinion, not an objective description. The sources provided, both Wall Street Journal links to general newspaper issues from 2020 and 2025, are entirely unrelated to White House Christmas decorations, Melania Trump, or any aspect of this claim, further indicating its lack of factual basis.",
+        "summary": "The claim about Melania Trump's potential White House Christmas decor and its contrast with current styles is a subjective opinion, not a verifiable fact, and is unsupported by the provided sources."
+      },
+      "sources": {
+        "misinformation_sources": [
+          {
+            "title": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+            "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+            "domain": "www.threads.net"
+          }
+        ],
+        "confirmation_sources": [
+          {
+            "title": "Lawmakers Reach Deal on Aid Package",
+            "url": "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+            "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "0724_Cover [Print]_19510518.indd",
+            "url": "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+            "domain": "cdn.theatlantic.com"
+          },
+          {
+            "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+            "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+            "domain": "www.wsj.com"
+          },
+          {
+            "title": "Defiant President Pushes On As Allies Discuss Replacement",
+            "url": "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D",
+            "domain": "www.wsj.com"
+          }
+        ],
+        "total_sources": 6
+      },
+      "confidence_percentage": 60.0,
+      "metadata": {
+        "agent_version": "2.0",
+        "processing_method": "google_agents_batch_sdk",
+        "batch_position": 3,
+        "batch_size": 3,
+        "total_batch_number": 1,
+        "original_verification": {
+          "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+          "verification": {
+            "verified": false,
+            "verdict": "false",
+            "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+            "confidence": "high",
+            "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+            "sources": {
+              "links": [
+                "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+              ],
+              "titles": [
+                "Lawmakers Reach Deal on Aid Package",
+                "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                "0724_Cover [Print]_19510518.indd",
+                "Trump Goes All In for Crypto After His $Trump Epiphany",
+                "Defiant President Pushes On As Allies Discuss Replacement"
+              ],
+              "count": 10
+            },
+            "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+            "verification_date": "2025-11-29T04:32:17.095160"
+          },
+          "sources": {
+            "links": [
+              "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+              "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+              "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+              "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+              "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+            ],
+            "titles": [
+              "Lawmakers Reach Deal on Aid Package",
+              "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+              "0724_Cover [Print]_19510518.indd",
+              "Trump Goes All In for Crypto After His $Trump Epiphany",
+              "Defiant President Pushes On As Allies Discuss Replacement"
+            ],
+            "count": 10
+          },
+          "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+          "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+          "verified": false,
+          "verdict": "false"
+        }
+      },
+      "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_6c2df5e5.json"
+    }
+  ],
+  "batch_processing_metadata": {
+    "verification_batch_processing": {
+      "enabled": true,
+      "total_claims": 4,
+      "batch_size": 4,
+      "processing_method": "batch_verification"
+    },
+    "explanation_batch_processing": {
+      "enabled": true,
+      "total_claims": 3,
+      "batch_size": 3,
+      "processing_method": "batch_explanation_generation"
+    }
+  },
+  "summary": {
+    "content_items_processed": 4,
+    "debunk_posts_generated": 3,
+    "agents_executed": 3,
+    "workflow_success": true,
+    "batch_optimization_enabled": true
+  },
+  "google_agents_workflow": {
+    "workflow_results": [
+      {
+        "agent_role": "Trend Scanning Coordinator",
+        "result": {
+          "timestamp": "2025-11-29T04:32:09.183944",
+          "total_posts": 4,
+          "posts_by_platform": {
+            "reddit": 3,
+            "threads": 1
+          },
+          "platforms": [
+            "reddit",
+            "threads"
+          ],
+          "posts": [
+            {
+              "claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+              "summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility. Between March 17-22, $851,344 was spent, and agents logged 4,737 overtime hours from January to July reviewing evidence, including the 2019 prison death investigation, search warrant execution photos, street surveillance, and aerial footage. Internal reports indicate that \"Trump Mentions\" were flagged during this review process.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/"
+            },
+            {
+              "claim": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+              "summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening phase of a failed state\" and \"the playbook of authoritarianism.\" It further condemns the argument that labeling authoritarian behavior is an incitement to violence, likening it to gaslighting.",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/"
+            },
+            {
+              "claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+              "summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 cases identified. In response, the South Carolina Department of Public Health opened pop-up clinics in November offering free measles vaccines to both adults and children. Despite these efforts, vaccine uptake has been significantly low, with only one person showing up at a clinic in Boiling Springs on a particular Monday. State epidemiologist Linda Bell attributes the slow progress and poor uptake to the \"chilling effect of vaccine misinformation.\"",
+              "platform": "reddit",
+              "Post_link": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/"
+            },
+            {
+              "claim": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+              "summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,\" and suggests Melania's style would embody \"Christmas the way it’s supposed to be.\"",
+              "platform": "threads",
+              "Post_link": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv"
+            }
+          ]
+        }
+      },
+      {
+        "agent_role": "Claim Verification Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully verified 4 claims using batch Google Agents fact-checking",
+          "verified_claims": [
+            {
+              "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+              "content_summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility.",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+              "verification": {
+                "verified": false,
+                "verdict": "uncertain",
+                "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+                "confidence": "medium",
+                "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+                "sources": {
+                  "links": [
+                    "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                    "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                    "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                  ],
+                  "titles": [
+                    "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                    "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                    "Intel Executive's Residences Raided in Probe Over Secrets"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                "verification_date": "2025-11-29T04:32:17.095160"
+              },
+              "claim_metadata": {
+                "post_index": 0,
+                "extracted_claim": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release."
+              },
+              "verification_timestamp": "2025-11-29T04:32:42.204155"
+            },
+            {
+              "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+              "content_summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening",
+              "source": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+                "confidence": "high",
+                "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+                "sources": {
+                  "links": [
+                    "https://www.npr.org/podcasts/452538775/on-the-media",
+                    "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                    "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                    "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                    "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                  ],
+                  "titles": [
+                    "On the Media : NPR",
+                    "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                    "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                    "Evangelical education nearly ruined me. Now the Christian right is ...",
+                    "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                  ],
+                  "count": 10
+                },
+                "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                "verification_date": "2025-11-29T04:32:17.095160"
+              },
+              "claim_metadata": {
+                "post_index": 1,
+                "extracted_claim": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions."
+              },
+              "verification_timestamp": "2025-11-29T04:32:42.204155"
+            },
+            {
+              "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+              "content_summary": "Spartanburg County, South Carolina, has been battling a measles outbreak since early October, with over 50 cases identified. In response, the South Carolina Department of Public Health opened pop-up clinics in November offering free measles vaccines to both adults and children. Despite these efforts",
+              "source": "https://reddit.com/r/skeptic/comments/1p8v2ev/south_carolinas_measles_outbreak_shows_chilling/",
+              "verification": {
+                "verified": true,
+                "verdict": "true",
+                "message": "Multiple sources confirm a measles outbreak in Spartanburg County, South Carolina, and implicitly link it to low vaccination rates, which are frequently associated with vaccine misinformation.",
+                "confidence": "medium",
+                "reasoning": "Sources 1, 2, and 3 all explicitly confirm a measles outbreak in Spartanburg County, South Carolina, affecting schoolchildren. Source 3 further reinforces this by mentioning the outbreak in Spartanburg County in the context of 'Routine childhood vaccination rates.' While the sources do not explicitly use the phrases 'vaccine misinformation' or 'very low public uptake of free measles vaccines,' the mention of 'routine childhood vaccination rates' in conjunction with an outbreak strongly implies that low vaccination coverage is a contributing factor. Low vaccination rates are commonly linked to vaccine hesitancy and misinformation in public health contexts. The core elements of the claim (outbreak in Spartanburg, linkage to vaccination status) are supported.",
+                "sources": {
+                  "links": [
+                    "https://www.bbc.com/news/articles/cwy747kdzdzo",
+                    "https://www.bbc.co.uk/news/articles/cwy747kdzdzo",
+                    "https://www.npr.org/2025/10/12/nx-s1-5572507/us-measles-outbreaks-texas-south-carolina-utah-minnesota"
+                  ],
+                  "titles": [
+                    "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+                    "Over 150 schoolchildren quarantined as US measles cases hit 33 ...",
+                    "U.S. measles cases continue to climb, with outbreaks across the ..."
+                  ],
+                  "count": 3
+                },
+                "claim_text": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines.",
+                "verification_date": "2025-11-29T04:32:17.095160"
+              },
+              "claim_metadata": {
+                "post_index": 2,
+                "extracted_claim": "A measles outbreak in Spartanburg County, South Carolina, is linked to vaccine misinformation, leading to very low public uptake of free measles vaccines."
+              },
+              "verification_timestamp": "2025-11-29T04:32:42.204155"
+            },
+            {
+              "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+              "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+              "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+              "verification": {
+                "verified": false,
+                "verdict": "false",
+                "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+                "confidence": "high",
+                "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+                "sources": {
+                  "links": [
+                    "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                    "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                    "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                    "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                  ],
+                  "titles": [
+                    "Lawmakers Reach Deal on Aid Package",
+                    "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "0724_Cover [Print]_19510518.indd",
+                    "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "Defiant President Pushes On As Allies Discuss Replacement"
+                  ],
+                  "count": 10
+                },
+                "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                "verification_date": "2025-11-29T04:32:17.095160"
+              },
+              "claim_metadata": {
+                "post_index": 3,
+                "extracted_claim": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'"
+              },
+              "verification_timestamp": "2025-11-29T04:32:42.204155"
+            }
+          ],
+          "summary": {
+            "total_claims": 4,
+            "successfully_verified": 1,
+            "verification_errors": 0,
+            "batch_size_used": 15,
+            "total_batches": 1
+          },
+          "timestamp": "2025-11-29T04:32:42.204155",
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 4,
+            "batch_size": 4,
+            "processing_method": "batch_verification"
+          }
+        }
+      },
+      {
+        "agent_role": "Explanation Generation Coordinator",
+        "result": {
+          "success": true,
+          "message": "Successfully created 3 debunk posts using batch processing",
+          "debunk_posts": [
+            {
+              "post_id": "aegis_post_20251129_043258_730002_48a3a59e",
+              "verification_date": "2025-11-29T04:32:58.730002",
+              "claim": {
+                "text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                "verdict": "uncertain",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "No Evidence of $1M FBI Overtime for Epstein File Redactions",
+                "body": "A claim circulating suggests the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, specifically mentioning 'Trump-related mentions,' before public release. While public interest in the Epstein files and the involvement of high-profile figures is significant, there is no credible evidence or official reporting to support this specific financial claim regarding FBI overtime. The sources provided in support of this claim, including a New York Times article and a PBS report, do not substantiate the alleged $1 million FBI expenditure for redactions. Furthermore, one of the cited articles is dated in the future (2025), which raises questions about the factual basis of the claim in the present. Without verifiable information from official channels or confirmed journalistic reports, the assertion about this specific sum and its purpose remains unsubstantiated.",
+                "summary": "There is no verifiable evidence or official confirmation that the FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including mentions of Donald Trump."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                    "url": "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                    "url": "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                    "domain": "www.pbs.org"
+                  },
+                  {
+                    "title": "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                    "url": "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                    "url": "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Intel Executive's Residences Raided in Probe Over Secrets",
+                    "url": "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D",
+                    "domain": "customercenter.wsj.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 1,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "uncertain",
+                    "message": "The claim contains elements that are generally plausible or partially supported by the sources, but critical specific details regarding the FBI's direct involvement in redaction, the specific cost, and the exact nature of Trump-related mentions are not explicitly corroborated.",
+                    "confidence": "medium",
+                    "reasoning": "Sources 1, 2, and 3 confirm the existence of Jeffrey Epstein's files, the public interest in their release, and discussions surrounding Trump's connection to the Epstein case. Source 1 mentions a 'frantic scouring of the Epstein Files' by the 'Justice Department' (which includes the FBI) with the goal of satisfying 'President Trump's supporters' through public release, and Source 3 notes President Trump directed the release of all Epstein files. While the process of making files public often involves redaction, none of the provided snippets explicitly state that the **FBI** is spending 'nearly $1 million in overtime to redact' these files. The actor is broader ('Justice Department'), and the specific cost and direct FBI redaction role are not detailed.",
+                    "sources": {
+                      "links": [
+                        "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                        "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                        "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                        "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                        "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                      ],
+                      "titles": [
+                        "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                        "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                        "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                        "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                        "Intel Executive's Residences Raided in Probe Over Secrets"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The FBI is spending nearly $1 million in overtime to redact Jeffrey Epstein's files, including potentially Trump-related mentions, before their public release.",
+                    "verification_date": "2025-11-29T04:32:17.095160"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.nytimes.com/2025/07/24/us/politics/epstein-files-trump-bondi-justice-department-fbi.html",
+                      "https://www.pbs.org/newshour/politics/speaker-johnson-says-he-misspoke-about-trump-being-an-fbi-informant-in-the-epstein-case",
+                      "https://www.nytimes.com/live/2025/11/17/us/trump-news",
+                      "https://www.nytimes.com/2025/08/14/us/politics/fact-check-trump-epstein.html",
+                      "https://customercenter.wsj.com/todaysPaper/?gaa_at=eafs&gaa_n=AWEtsqdqJsEc3KcrfJuYL3H3ibU31FtXy0t-5QfDuk6c8qqSNm0C-FxVQg8y&gaa_ts=692a2d7e&gaa_sig=QCycfqzzAktx3n1_pfeD8k-luZEu5XGOXzboASFhpLOc6VWg9NVN-5jwbOI7xOthSjXdCeVvOVKdW7snV7hzyg%3D%3D"
+                    ],
+                    "titles": [
+                      "How a Frantic Scouring of the Epstein Files Consumed the Justice ...",
+                      "Speaker Johnson says he misspoke about Trump being an FBI ...",
+                      "U.S. Will Sell F-35 Jets to Saudi Arabia, President Says - The New ...",
+                      "Fact-Checking Trump's Epstein Defenses - The New York Times",
+                      "Intel Executive's Residences Raided in Probe Over Secrets"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8v6d8/fbi_dumps_millions_to_scrub_epstein_files_while/",
+                  "content_summary": "A recently signed bill mandates the Department of Justice to release Jeffrey Epstein's files, but the FBI is reportedly spending nearly $1 million in overtime, utilizing almost 1,000 agents, on an effort called the \"Epstein Transparency Project\" or \"Special Redaction Project\" at a Virginia facility.",
+                  "verified": false,
+                  "verdict": "uncertain"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730002_48a3a59e.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_043258_730578_1efbff25",
+              "verification_date": "2025-11-29T04:32:58.730578",
+              "claim": {
+                "text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Author's Claim on Skeptic Community & Authoritarianism Lacks Specificity",
+                "body": "The claim states that an author asserts authoritarianism is present and that the 'skeptic community' is failing to address it by avoiding political discussions. While prominent figures, such as Curtis Yarvin (mentioned in a New York Times source from 2025), do indeed discuss the state of democracy and present arguments related to authoritarianism, the broader assertion about the 'skeptic community' uniformly failing to engage with political discussions lacks specific, verifiable support. The skeptic community is diverse, with various individuals and groups actively engaging in critical analysis across a wide range of topics, including political issues. It is an overgeneralization to claim that they are collectively avoiding such discussions to the point of 'failing to address' present authoritarianism. The given sources discuss related themes but do not specifically corroborate the precise assertion about the skeptic community's alleged failure.",
+                "summary": "While some authors discuss authoritarianism, the claim that the entire 'skeptic community' is broadly failing to address it by avoiding political discussions is an unsubstantiated generalization."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                    "url": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+                    "domain": "reddit.com"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "On the Media : NPR",
+                    "url": "https://www.npr.org/podcasts/452538775/on-the-media",
+                    "domain": "www.npr.org"
+                  },
+                  {
+                    "title": "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                    "url": "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                    "url": "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                    "domain": "www.nytimes.com"
+                  },
+                  {
+                    "title": "Evangelical education nearly ruined me. Now the Christian right is ...",
+                    "url": "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                    "domain": "www.theguardian.com"
+                  },
+                  {
+                    "title": "How Denmark's Social Democrats Are Succeeding With Stricter ...",
+                    "url": "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html",
+                    "domain": "www.nytimes.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 2,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "While one source alludes to a rise in anti-democratic ideas, the central assertion about 'the skeptic community' failing to address authoritarianism by avoiding political discussions is entirely unsupported by the provided evidence.",
+                    "confidence": "high",
+                    "reasoning": "Source 2 describes writer Curtis Yarvin, who 'has long argued for an American monarchy' and whose ideas have gained an audience, which suggests a presence of anti-democratic/authoritarian discourse. However, none of the sources mention 'the skeptic community' whatsoever. Therefore, the claim that this community is 'failing to address' authoritarianism or 'avoiding political discussions' cannot be verified. In fact, Source 1, 'On the Media,' describes a program that 'examine[s] threats to free speech and government transparency,' which is contrary to the idea of avoiding such critical political discussions by a 'skeptic' outlet.",
+                    "sources": {
+                      "links": [
+                        "https://www.npr.org/podcasts/452538775/on-the-media",
+                        "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                        "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                        "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                        "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                      ],
+                      "titles": [
+                        "On the Media : NPR",
+                        "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                        "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                        "Evangelical education nearly ruined me. Now the Christian right is ...",
+                        "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "The author asserts that authoritarianism is present and the skeptic community is failing to address it by avoiding political discussions.",
+                    "verification_date": "2025-11-29T04:32:17.095160"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.npr.org/podcasts/452538775/on-the-media",
+                      "https://www.nytimes.com/2025/01/18/magazine/curtis-yarvin-interview.html",
+                      "https://www.nytimes.com/2025/06/26/opinion/peter-thiel-antichrist-ross-douthat.html",
+                      "https://www.theguardian.com/us-news/2025/feb/12/christianity-schools-republicans",
+                      "https://www.nytimes.com/2025/02/24/magazine/denmark-immigration-policy-progressives.html"
+                    ],
+                    "titles": [
+                      "On the Media : NPR",
+                      "'The Interview': Curtis Yarvin Says Democracy is Done - The New ...",
+                      "Opinion | Peter Thiel and the Antichrist - The New York Times",
+                      "Evangelical education nearly ruined me. Now the Christian right is ...",
+                      "How Denmark's Social Democrats Are Succeeding With Stricter ..."
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://reddit.com/r/skeptic/comments/1p8hhy7/authoritarianism_is_here/",
+                  "content_summary": "The author claims that authoritarianism is evident, criticizing the r/skeptic community for avoiding political discussions, which they believe hinders the community's potential to resist authoritarian governments. The post includes quotes from a linked video describing current events as the \"opening",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_1efbff25.json"
+            },
+            {
+              "post_id": "aegis_post_20251129_043258_730578_6c2df5e5",
+              "verification_date": "2025-11-29T04:32:58.730578",
+              "claim": {
+                "text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                "verdict": "false",
+                "verified": false
+              },
+              "post_content": {
+                "heading": "Melania Trump Christmas Decor Claim: Opinion, Not Fact",
+                "body": "A post suggests that a future Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting it with current 'drag-queen-fairy-land theatrics.' This claim is fundamentally an opinion and a subjective value judgment rather than a verifiable statement of fact. Melania Trump is not currently in a position to design White House Christmas decor, making any assertion about her future stylistic choices purely speculative. Furthermore, the characterization of current White House decor as 'drag-queen-fairy-land theatrics' is a highly critical and subjective opinion, not an objective description. The sources provided, both Wall Street Journal links to general newspaper issues from 2020 and 2025, are entirely unrelated to White House Christmas decorations, Melania Trump, or any aspect of this claim, further indicating its lack of factual basis.",
+                "summary": "The claim about Melania Trump's potential White House Christmas decor and its contrast with current styles is a subjective opinion, not a verifiable fact, and is unsupported by the provided sources."
+              },
+              "sources": {
+                "misinformation_sources": [
+                  {
+                    "title": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                    "url": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                    "domain": "www.threads.net"
+                  }
+                ],
+                "confirmation_sources": [
+                  {
+                    "title": "Lawmakers Reach Deal on Aid Package",
+                    "url": "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                    "url": "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "0724_Cover [Print]_19510518.indd",
+                    "url": "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                    "domain": "cdn.theatlantic.com"
+                  },
+                  {
+                    "title": "Trump Goes All In for Crypto After His $Trump Epiphany",
+                    "url": "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                    "domain": "www.wsj.com"
+                  },
+                  {
+                    "title": "Defiant President Pushes On As Allies Discuss Replacement",
+                    "url": "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D",
+                    "domain": "www.wsj.com"
+                  }
+                ],
+                "total_sources": 6
+              },
+              "confidence_percentage": 60.0,
+              "metadata": {
+                "agent_version": "2.0",
+                "processing_method": "google_agents_batch_sdk",
+                "batch_position": 3,
+                "batch_size": 3,
+                "total_batch_number": 1,
+                "original_verification": {
+                  "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                  "verification": {
+                    "verified": false,
+                    "verdict": "false",
+                    "message": "None of the provided sources support any part of the claim regarding a future Melania Trump-designed White House Christmas, its décor, or the contrasts mentioned.",
+                    "confidence": "high",
+                    "reasoning": "The provided sources offer no evidence to support the claim. Source 1 mentions Melania Trump as First Lady in 2020 but in the context of leaving the White House, not about designing future Christmas decorations. Source 2 refers to a Truth Social post by 'Trump' (presumably Donald Trump), but its content is unrelated to Christmas décor or Melania Trump. Source 3 is completely irrelevant to the claim. There is no mention of 'classy décor,' 'real tradition,' or 'drag-queen-fairy-land theatrics' in any of the snippets.",
+                    "sources": {
+                      "links": [
+                        "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                        "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                        "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                        "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                        "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                      ],
+                      "titles": [
+                        "Lawmakers Reach Deal on Aid Package",
+                        "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                        "0724_Cover [Print]_19510518.indd",
+                        "Trump Goes All In for Crypto After His $Trump Epiphany",
+                        "Defiant President Pushes On As Allies Discuss Replacement"
+                      ],
+                      "count": 10
+                    },
+                    "claim_text": "A Melania Trump-designed White House Christmas would reintroduce 'classy décor' and 'real tradition,' contrasting with what the post describes as current 'drag-queen-fairy-land theatrics.'",
+                    "verification_date": "2025-11-29T04:32:17.095160"
+                  },
+                  "sources": {
+                    "links": [
+                      "https://www.wsj.com/public/resources/documents/JRHL1XKF2KqiA3jwwaDd-WSJNewsPaper-12-21-2020.pdf?gaa_at=eafs&gaa_n=AWEtsqftlErk025m0qQ4NkOu5q78DQZ2GtC8AyhXCwqivmJJylLnvzpXqEBt&gaa_ts=692a2d84&gaa_sig=G8c74exgFU5YUMoKy1VUX4KMWr2dOK1SeS1bfNJslF3-ycru7Tm5gaqIdwXomWJwJeKK9VgzYj1LW04g9f936g%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/ABP9wjJZWmPo7X2PlCkY-WSJNewsPaper-5-24-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqd5BBoKw3fH5FbHzRP3eXvWY-gTEI_uM_x3hza7D8lyFcZ8xOilPMg1&gaa_ts=692a2d84&gaa_sig=A5qYhwtAnCRsstdu2AiobwYjKoXGq25vn44yidi951Dc1Jy_57q815GCmo7e87eTwCyuoDrajIMe_IqF06zCPA%3D%3D",
+                      "https://cdn.theatlantic.com/media/magazine/pdfs/202407.pdf",
+                      "https://www.wsj.com/public/resources/documents/nq3AyblllHEyn0Rm0GU8-WSJNewsPaper-3-8-2025.pdf?gaa_at=eafs&gaa_n=AWEtsqersRidEP0hZk5QRN6oAfctH4SPURupUKNCU4zpkqftt3EcG-07Wcu5&gaa_ts=692a2d84&gaa_sig=Vj-VGduQj3HkMw_183c9nCXL7yfFWf1L79nwH4Z5mPyzGQ_ZpQmZ0AAK7GU7P__5nJvNbD0yH8r2Sh1MhdDDBw%3D%3D",
+                      "https://www.wsj.com/public/resources/documents/3HXnTBv6QHpSKvGY8Npm-WSJNewsPaper-6-29-2024.pdf?gaa_at=eafs&gaa_n=AWEtsqfyCgQ3T8bI3Ep7yCJ59brDrQGizYVneSQ_JTYThT4nxKzZcW5QK-Fy&gaa_ts=692a2d84&gaa_sig=oaihTT9bqU49ke3QhPBpIvt27bNboDHe-uNDlKpCYAJS9kUPt8RELD0Oqnhv2B6CbNOFEaXM9GxP1HQ9ZzWmhQ%3D%3D"
+                    ],
+                    "titles": [
+                      "Lawmakers Reach Deal on Aid Package",
+                      "Retail Investors Grow Queasy In Squeeze of Market Volatility",
+                      "0724_Cover [Print]_19510518.indd",
+                      "Trump Goes All In for Crypto After His $Trump Epiphany",
+                      "Defiant President Pushes On As Allies Discuss Replacement"
+                    ],
+                    "count": 10
+                  },
+                  "source": "https://www.threads.net/@trumplovernews/post/DRm2yf2CGVv",
+                  "content_summary": "The post expresses a desire for Melania Trump to be in charge of the White House Christmas decorations, believing her approach would restore \"classy décor\" and \"real tradition.\" It implicitly criticizes the current White House Christmas aesthetic, referring to it as \"drag-queen-fairy-land theatrics,",
+                  "verified": false,
+                  "verdict": "false"
+                }
+              },
+              "saved_to": "C:\\PF\\Projects\\MumbaiHacks\\explanation_agent\\..\\aegis_feed_posts\\aegis_post_20251129_043258_730578_6c2df5e5.json"
+            }
+          ],
+          "batch_statistics": {
+            "total_posts": 3,
+            "batch_size_used": 10,
+            "total_batches": 1,
+            "successful_posts": 3,
+            "error_posts": 0
+          },
+          "batch_processing": {
+            "enabled": true,
+            "total_claims": 3,
+            "batch_size": 3,
+            "processing_method": "batch_explanation_generation"
+          }
+        }
+      }
+    ],
+    "workflow_id": "orchestrator_workflow_20251129_043258",
+    "completed_tasks": 3,
+    "total_tasks": 3
+  },
+  "timestamp": "2025-11-29T04:32:58.730578",
+  "google_agents_metadata": {
+    "session_id": "orchestrator_session_20251129_042908",
+    "created_at": "2025-11-29T04:32:58.730578",
+    "version": "2.0.0",
+    "orchestration_type": "google_agents_sdk",
+    "agents_used": [
+      "trend_scanner",
+      "verifier_coordinator",
+      "explanation_coordinator",
+      "results_integrator"
+    ]
+  },
+  "mongodb_storage": {
+    "success": true,
+    "stored_posts": 3,
+    "skipped_posts": 0,
+    "pipeline_run_id": "orchestrator_workflow_20251129_043258"
+  }
+}
